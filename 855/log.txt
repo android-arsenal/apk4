@@ -1,0 +1,177 @@
+2018-05-11 15:57:16,093 INFO  DownloadService - Downloading "https://github.com/daimajia/AndroidSwipeLayout/archive/master.zip", attempt 3
+2018-05-11 15:58:16,554 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-05-11 15:58:17,266 INFO  GithubDownloadService - Default branch of this repository: master
+2018-05-11 15:58:17,266 INFO  DownloadService - Downloading "https://github.com/daimajia/AndroidSwipeLayout/archive/master.zip", attempt 3
+2018-05-11 15:59:18,720 DEBUG FullProcessService - Repository https://github.com/daimajia/AndroidSwipeLayout available: true
+2018-05-11 15:59:18,720 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-05-11 15:59:18,721 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/daimajia/AndroidSwipeLayout, /tmp/rdisk/855/src]
+2018-05-11 15:59:20,453 INFO  SysUtils - 
+2018-05-11 15:59:20,457 INFO  GitService - Deleted "/tmp/rdisk/855/src/.git": true
+2018-05-11 15:59:20,460 INFO  FullProcessService - Size of directory with sources: 284 KB
+2018-05-11 15:59:20,460 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/855/src]
+2018-05-11 15:59:20,468 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/855/src/.git/
+
+2018-05-11 15:59:20,471 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/855/src/gradlew
+2018-05-11 15:59:20,474 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/855/src/demo/build.gradle /tmp/rdisk/855/src/library/build.gradle /tmp/rdisk/855/src/build.gradle
+2018-05-11 15:59:20,476 INFO  ProjectBuildService - All script(s): /tmp/rdisk/855/src/settings.gradle /tmp/rdisk/855/src/library/gradle-mvn-push.gradle /tmp/rdisk/855/src/library/build.gradle /tmp/rdisk/855/src/demo/build.gradle /tmp/rdisk/855/src/build.gradle
+2018-05-11 15:59:20,476 INFO  ProjectBuildService - Remote scripts: none
+2018-05-11 15:59:20,476 INFO  ProjectFixService - Fixing project...
+2018-05-11 15:59:20,483 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/855/src/demo/local.properties
+2018-05-11 15:59:20,486 INFO  ProjectFixService - Build info for "/tmp/rdisk/855/src/demo/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=9,targetSdkVersion=<null>]
+2018-05-11 15:59:20,486 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/855/src/demo/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=9,targetSdkVersion=27]
+2018-05-11 15:59:20,487 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/855/src/library/local.properties
+2018-05-11 15:59:20,489 INFO  ProjectFixService - Build info for "/tmp/rdisk/855/src/library/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=9,targetSdkVersion=<null>]
+2018-05-11 15:59:20,489 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/855/src/library/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=9,targetSdkVersion=27]
+2018-05-11 15:59:20,489 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/855/src/local.properties
+2018-05-11 15:59:20,489 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-3.3-all.zip
+2018-05-11 15:59:20,490 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-3.3-bin.zip)
+2018-05-11 15:59:20,492 INFO  ProjectFixService - Build info for "/tmp/rdisk/855/src/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=9,targetSdkVersion=<null>]
+2018-05-11 15:59:20,492 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/855/src/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=9,targetSdkVersion=27]
+2018-05-11 15:59:20,492 INFO  ProjectFixService - Project was maybe fixed
+2018-05-11 15:59:20,493 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-11 15:59:20,493 INFO  SysUtils - Execute command: [/tmp/rdisk/855/src/gradlew, -b, /tmp/rdisk/855/src/demo/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-11 15:59:28,943 INFO  ProjectTaskService - Detected possible tasks: 66
+2018-05-11 15:59:28,944 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-05-11 15:59:28,944 INFO  SysUtils - Execute command: [/tmp/rdisk/855/src/gradlew, -b, /tmp/rdisk/855/src/demo/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-05-11 15:59:52,458 INFO  SysUtils - Configuration on demand is an incubating feature.
+Incremental java compilation is an incubating feature.
+:demo:preBuild UP-TO-DATE
+:demo:preDebugBuild UP-TO-DATE
+:demo:checkDebugManifest
+:demo:preReleaseBuild UP-TO-DATE
+:demo:prepareComAndroidSupportRecyclerviewV72520Library
+:demo:prepareComAndroidSupportSupportCompat2520Library
+:demo:prepareComAndroidSupportSupportCoreUi2520Library
+:demo:prepareComAndroidSupportSupportCoreUtils2520Library
+:demo:prepareComAndroidSupportSupportFragment2520Library
+:demo:prepareComAndroidSupportSupportMediaCompat2520Library
+:demo:prepareComAndroidSupportSupportV42520Library
+:demo:prepareComDaimajiaAndroidanimationsLibrary112Library
+:demo:prepareComDaimajiaEasingLibrary100Library
+:demo:prepareJpWasabeefRecyclerviewAnimators103Library
+:library:preBuild UP-TO-DATE
+:library:preReleaseBuild UP-TO-DATE
+:library:checkReleaseManifest
+:library:preDebugAndroidTestBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:preDebugUnitTestBuild UP-TO-DATE
+:library:preReleaseUnitTestBuild UP-TO-DATE
+:library:prepareComAndroidSupportRecyclerviewV72520Library
+:library:prepareComAndroidSupportSupportCompat2520Library
+:library:prepareComAndroidSupportSupportCoreUi2520Library
+:library:prepareComAndroidSupportSupportCoreUtils2520Library
+:library:prepareComAndroidSupportSupportFragment2520Library
+:library:prepareComAndroidSupportSupportMediaCompat2520Library
+:library:prepareComAndroidSupportSupportV42520Library
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl
+:library:compileReleaseNdk UP-TO-DATE
+:library:compileLint
+:library:copyReleaseLint UP-TO-DATE
+:library:compileReleaseRenderscript
+:library:generateReleaseBuildConfig
+:library:generateReleaseResValues
+:library:generateReleaseResources
+:library:mergeReleaseResources
+:library:processReleaseManifest
+:library:processReleaseResources
+:library:generateReleaseSources
+:library:incrementalReleaseJavaCompilationSafeguard
+:library:javaPreCompileRelease
+:library:compileReleaseJavaWithJavac
+:library:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: /tmp/rdisk/855/src/library/src/main/java/com/daimajia/swipe/adapters/SimpleCursorSwipeAdapter.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /tmp/rdisk/855/src/library/src/main/java/com/daimajia/swipe/adapters/ArraySwipeAdapter.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+:library:extractReleaseAnnotations
+:library:mergeReleaseShaders
+:library:compileReleaseShaders
+:library:generateReleaseAssets
+:library:mergeReleaseAssets
+:library:mergeReleaseProguardFiles
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:packageReleaseResources
+:library:processReleaseJavaRes UP-TO-DATE
+:library:transformResourcesWithMergeJavaResForRelease
+:library:transformClassesAndResourcesWithSyncLibJarsForRelease
+:library:mergeReleaseJniLibFolders
+:library:transformNativeLibsWithMergeJniLibsForRelease
+:library:transformNativeLibsWithStripDebugSymbolForRelease
+:library:transformNativeLibsWithSyncJniLibsForRelease
+:library:bundleRelease
+:demo:prepareDebugDependencies
+:demo:compileDebugAidl
+:demo:compileDebugRenderscript
+:demo:generateDebugBuildConfig
+:demo:generateDebugResValues
+:demo:generateDebugResources
+:demo:mergeDebugResources
+:demo:processDebugManifest
+:demo:processDebugResources
+:demo:generateDebugSources
+:demo:incrementalDebugJavaCompilationSafeguard
+:demo:javaPreCompileDebug
+:demo:compileDebugJavaWithJavac
+:demo:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /tmp/rdisk/855/src/demo/src/main/java/com/daimajia/swipedemo/adapter/ArraySwipeAdapterSample.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+:demo:compileDebugNdk UP-TO-DATE
+:demo:compileDebugSources
+:demo:mergeDebugShaders
+:demo:compileDebugShaders
+:demo:generateDebugAssets
+:demo:mergeDebugAssets
+:demo:transformClassesWithDexForDebug
+:demo:mergeDebugJniLibFolders
+:demo:transformNativeLibsWithMergeJniLibsForDebug
+:demo:transformNativeLibsWithStripDebugSymbolForDebug
+:demo:processDebugJavaRes UP-TO-DATE
+:demo:transformResourcesWithMergeJavaResForDebug
+:demo:validateSigningDebug
+:demo:packageDebug
+:demo:assembleDebug
+:demo:checkReleaseManifest
+:demo:prepareReleaseDependencies
+:demo:compileReleaseAidl
+:demo:compileReleaseRenderscript
+:demo:generateReleaseBuildConfig
+:demo:generateReleaseResValues
+:demo:generateReleaseResources
+:demo:mergeReleaseResources
+:demo:processReleaseManifest
+:demo:processReleaseResources
+:demo:generateReleaseSources
+:demo:incrementalReleaseJavaCompilationSafeguard
+:demo:javaPreCompileRelease
+:demo:compileReleaseJavaWithJavac
+:demo:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /tmp/rdisk/855/src/demo/src/main/java/com/daimajia/swipedemo/adapter/ArraySwipeAdapterSample.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+:demo:compileReleaseNdk UP-TO-DATE
+:demo:compileReleaseSources
+:demo:lintVitalRelease
+:demo:mergeReleaseShaders
+:demo:compileReleaseShaders
+:demo:generateReleaseAssets
+:demo:mergeReleaseAssets
+:demo:transformClassesWithDexForRelease
+:demo:mergeReleaseJniLibFolders
+:demo:transformNativeLibsWithMergeJniLibsForRelease
+:demo:transformNativeLibsWithStripDebugSymbolForRelease
+:demo:processReleaseJavaRes UP-TO-DATE
+:demo:transformResourcesWithMergeJavaResForRelease
+:demo:packageRelease
+:demo:assembleRelease
+:demo:assemble
+:demo:build
+
+BUILD SUCCESSFUL
+
+Total time: 23.266 secs
+
+2018-05-11 15:59:52,478 INFO  FullProcessService - Found APK file: /tmp/rdisk/855/src/demo/build/outputs/apk/demo-release-unsigned.apk

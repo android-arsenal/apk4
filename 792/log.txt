@@ -1,0 +1,139 @@
+2018-05-14 06:19:26,762 INFO  DownloadService - Downloading "https://github.com/daimajia/AndroidViewHover/archive/master.zip", attempt 3
+2018-05-14 06:19:27,641 INFO  DownloadService - Downloaded https://github.com/daimajia/AndroidViewHover/archive/master.zip, attempt 3
+2018-05-14 06:19:27,641 INFO  DownloadService - Size of file "/tmp/rdisk/792/master.zip": 3 MB
+2018-05-14 06:19:27,641 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-05-14 06:19:27,642 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/792/master.zip: true
+2018-05-14 06:19:27,642 DEBUG ZipUtil - Extracting '/tmp/rdisk/792/master.zip' into '/tmp/rdisk/792/src'.
+2018-05-14 06:19:27,672 INFO  FullProcessService - Size of directory with sources: 3 MB
+2018-05-14 06:19:27,672 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/792/src]
+2018-05-14 06:19:27,684 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/792/src/.git/
+
+2018-05-14 06:19:27,686 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/792/src/AndroidViewHover-master/gradlew
+2018-05-14 06:19:27,689 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/792/src/AndroidViewHover-master/demo/build.gradle /tmp/rdisk/792/src/AndroidViewHover-master/library/build.gradle /tmp/rdisk/792/src/AndroidViewHover-master/build.gradle
+2018-05-14 06:19:27,691 INFO  ProjectBuildService - All script(s): /tmp/rdisk/792/src/AndroidViewHover-master/settings.gradle /tmp/rdisk/792/src/AndroidViewHover-master/library/gradle-mvn-push.gradle /tmp/rdisk/792/src/AndroidViewHover-master/library/build.gradle /tmp/rdisk/792/src/AndroidViewHover-master/demo/build.gradle /tmp/rdisk/792/src/AndroidViewHover-master/build.gradle
+2018-05-14 06:19:27,691 INFO  ProjectBuildService - Remote scripts: none
+2018-05-14 06:19:27,691 INFO  ProjectFixService - Fixing project...
+2018-05-14 06:19:27,702 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/792/src/AndroidViewHover-master/demo/local.properties
+2018-05-14 06:19:27,703 INFO  ProjectFixService - Build info for "/tmp/rdisk/792/src/AndroidViewHover-master/demo/build.gradle": [buildToolsVersion=20.0.0,compileSdkVersion=20,minSdkVersion=8,targetSdkVersion=20]
+2018-05-14 06:19:27,703 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/792/src/AndroidViewHover-master/library/local.properties
+2018-05-14 06:19:27,703 INFO  ProjectFixService - Build info for "/tmp/rdisk/792/src/AndroidViewHover-master/library/build.gradle": [buildToolsVersion=20.0.0,compileSdkVersion=20,minSdkVersion=8,targetSdkVersion=20]
+2018-05-14 06:19:27,704 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/792/src/AndroidViewHover-master/local.properties
+2018-05-14 06:19:27,704 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-05-14 06:19:27,704 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-05-14 06:19:27,707 INFO  ProjectFixService - Build info for "/tmp/rdisk/792/src/AndroidViewHover-master/build.gradle": [buildToolsVersion=20.0.0,compileSdkVersion=20,minSdkVersion=8,targetSdkVersion=20]
+2018-05-14 06:19:27,707 INFO  ProjectFixService - Project was maybe fixed
+2018-05-14 06:19:27,707 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-14 06:19:27,707 INFO  SysUtils - Execute command: [/tmp/rdisk/792/src/AndroidViewHover-master/gradlew, -b, /tmp/rdisk/792/src/AndroidViewHover-master/demo/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-14 06:19:40,053 INFO  ProjectTaskService - Detected possible tasks: 59
+2018-05-14 06:19:40,053 INFO  ProjectTaskService - Excluded tasks (17): lintDebug mockableAndroidJar deviceCheck lint uninstallRelease uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest installDebug lintRelease testDebug uninstallDebug
+2018-05-14 06:19:40,054 INFO  SysUtils - Execute command: [/tmp/rdisk/792/src/AndroidViewHover-master/gradlew, -b, /tmp/rdisk/792/src/AndroidViewHover-master/demo/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, uninstallDebug, build]
+2018-05-14 06:20:07,248 INFO  SysUtils - Configuration on demand is an incubating feature.
+:demo:preBuild UP-TO-DATE
+:demo:preDebugBuild UP-TO-DATE
+:demo:compileDebugNdk UP-TO-DATE
+:demo:checkDebugManifest
+:demo:preReleaseBuild UP-TO-DATE
+:library:compileLint
+:library:copyReleaseLint UP-TO-DATE
+:library:preBuild UP-TO-DATE
+:library:preReleaseBuild UP-TO-DATE
+:library:checkReleaseManifest
+:library:preDebugAndroidTestBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:prepareComAndroidSupportSupportV42000Library
+:library:prepareComDaimajiaAndroidanimationsLibrary112Library
+:library:prepareComDaimajiaEasingLibrary100Library
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl
+:library:compileReleaseRenderscript
+:library:generateReleaseBuildConfig
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets
+:library:generateReleaseResValues
+:library:generateReleaseResources
+:library:mergeReleaseResources
+:library:processReleaseManifest
+:library:processReleaseResources
+:library:generateReleaseSources
+:library:compileReleaseJavaNote: /tmp/rdisk/792/src/AndroidViewHover-master/library/src/main/java/com/daimajia/androidviewhover/BlurLayout.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:library:extractReleaseAnnotations
+:library:mergeReleaseProguardFiles
+:library:processReleaseJavaRes UP-TO-DATE
+:library:packageReleaseJar
+:library:compileReleaseNdk UP-TO-DATE
+:library:packageReleaseJniLibs UP-TO-DATE
+:library:packageReleaseLocalJar UP-TO-DATE
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:packageReleaseResources
+:library:bundleRelease
+:demo:prepareAndroidViewHoverMasterLibraryUnspecifiedLibrary
+:demo:prepareComAndroidSupportAppcompatV72000Library
+:demo:prepareComAndroidSupportSupportV42000Library
+:demo:prepareComDaimajiaAndroidanimationsLibrary112Library
+:demo:prepareComDaimajiaEasingLibrary100Library
+:demo:prepareComMakeramenRoundedimageview130Library
+:demo:prepareDebugDependencies
+:demo:compileDebugAidl
+:demo:compileDebugRenderscript
+:demo:generateDebugBuildConfig
+:demo:generateDebugAssets UP-TO-DATE
+:demo:mergeDebugAssets
+:demo:generateDebugResValues
+:demo:generateDebugResources
+:demo:mergeDebugResources
+:demo:processDebugManifest
+:demo:processDebugResources
+:demo:generateDebugSources
+:demo:compileDebugJava
+:demo:preDexDebug
+:demo:dexDebug
+:demo:processDebugJavaRes UP-TO-DATE
+:demo:validateDebugSigning
+:demo:packageDebug
+:demo:zipalignDebug
+:demo:assembleDebug
+:demo:checkReleaseManifest
+:demo:prepareReleaseDependencies
+:demo:compileReleaseAidl
+:demo:compileReleaseRenderscript
+:demo:generateReleaseBuildConfig
+:demo:generateReleaseAssets UP-TO-DATE
+:demo:mergeReleaseAssets
+:demo:generateReleaseResValues
+:demo:generateReleaseResources
+:demo:mergeReleaseResources
+:demo:processReleaseManifest
+:demo:processReleaseResources
+:demo:generateReleaseSources
+:demo:compileReleaseJava
+:demo:lintVitalRelease/tmp/rdisk/792/src/AndroidViewHover-master/demo/src/main/AndroidManifest.xml:11: Error: The <uses-permission> element must be a direct child of the <manifest> root element [WrongManifestParent]
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "WrongManifestParent":
+   The <uses-library> element should be defined as a direct child of the
+   <application> tag, not the <manifest> tag or an <activity> tag. Similarly,
+   a <uses-sdk> tag much be declared at the root level, and so on. This check
+   looks for incorrect declaration locations in the manifest, and complains if
+   an element is found in the wrong place.
+
+   http://developer.android.com/guide/topics/manifest/manifest-intro.html
+
+1 errors, 0 warnings
+
+:demo:compileReleaseNdk UP-TO-DATE
+:demo:preDexRelease
+:demo:dexRelease
+:demo:processReleaseJavaRes UP-TO-DATE
+:demo:packageRelease
+:demo:assembleRelease
+:demo:assemble
+:demo:build
+
+BUILD SUCCESSFUL
+
+Total time: 26.769 secs
+
+2018-05-14 06:20:07,291 INFO  FullProcessService - Found APK file: /tmp/rdisk/792/src/AndroidViewHover-master/demo/build/outputs/apk/demo-release-unsigned.apk

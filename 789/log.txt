@@ -1,0 +1,215 @@
+2018-05-14 06:21:05,415 INFO  DownloadService - Downloading "https://github.com/daimajia/AnimationEasingFunctions/archive/master.zip", attempt 3
+2018-05-14 06:21:05,800 INFO  DownloadService - Downloaded https://github.com/daimajia/AnimationEasingFunctions/archive/master.zip, attempt 3
+2018-05-14 06:21:05,800 INFO  DownloadService - Size of file "/tmp/rdisk/789/master.zip": 155 KB
+2018-05-14 06:21:05,800 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-05-14 06:21:05,800 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/789/master.zip: true
+2018-05-14 06:21:05,801 DEBUG ZipUtil - Extracting '/tmp/rdisk/789/master.zip' into '/tmp/rdisk/789/src'.
+2018-05-14 06:21:05,812 INFO  FullProcessService - Size of directory with sources: 179 KB
+2018-05-14 06:21:05,812 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/789/src]
+2018-05-14 06:21:05,817 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/789/src/.git/
+
+2018-05-14 06:21:05,820 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/789/src/AnimationEasingFunctions-master/gradlew
+2018-05-14 06:21:05,823 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/789/src/AnimationEasingFunctions-master/demo/build.gradle /tmp/rdisk/789/src/AnimationEasingFunctions-master/library/build.gradle /tmp/rdisk/789/src/AnimationEasingFunctions-master/build.gradle
+2018-05-14 06:21:05,826 INFO  ProjectBuildService - All script(s): /tmp/rdisk/789/src/AnimationEasingFunctions-master/settings.gradle /tmp/rdisk/789/src/AnimationEasingFunctions-master/library/gradle-mvn-push.gradle /tmp/rdisk/789/src/AnimationEasingFunctions-master/library/build.gradle /tmp/rdisk/789/src/AnimationEasingFunctions-master/demo/build.gradle /tmp/rdisk/789/src/AnimationEasingFunctions-master/build.gradle
+2018-05-14 06:21:05,826 INFO  ProjectBuildService - Remote scripts: none
+2018-05-14 06:21:05,826 INFO  ProjectFixService - Fixing project...
+2018-05-14 06:21:05,834 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/789/src/AnimationEasingFunctions-master/demo/local.properties
+2018-05-14 06:21:05,835 INFO  ProjectFixService - Build info for "/tmp/rdisk/789/src/AnimationEasingFunctions-master/demo/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=25,minSdkVersion=11,targetSdkVersion=25]
+2018-05-14 06:21:05,835 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/789/src/AnimationEasingFunctions-master/library/local.properties
+2018-05-14 06:21:05,835 INFO  ProjectFixService - Build info for "/tmp/rdisk/789/src/AnimationEasingFunctions-master/library/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=25,minSdkVersion=11,targetSdkVersion=25]
+2018-05-14 06:21:05,836 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/789/src/AnimationEasingFunctions-master/local.properties
+2018-05-14 06:21:05,836 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.14.1-all.zip
+2018-05-14 06:21:05,836 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.14.1-bin.zip)
+2018-05-14 06:21:05,839 INFO  ProjectFixService - Build info for "/tmp/rdisk/789/src/AnimationEasingFunctions-master/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=25,minSdkVersion=11,targetSdkVersion=25]
+2018-05-14 06:21:05,839 INFO  ProjectFixService - Project was maybe fixed
+2018-05-14 06:21:05,839 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-14 06:21:05,839 INFO  SysUtils - Execute command: [/tmp/rdisk/789/src/AnimationEasingFunctions-master/gradlew, -b, /tmp/rdisk/789/src/AnimationEasingFunctions-master/demo/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-14 06:21:14,000 INFO  ProjectTaskService - Detected possible tasks: 69
+2018-05-14 06:21:14,001 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-05-14 06:21:14,001 INFO  SysUtils - Execute command: [/tmp/rdisk/789/src/AnimationEasingFunctions-master/gradlew, -b, /tmp/rdisk/789/src/AnimationEasingFunctions-master/demo/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-05-14 06:21:42,105 INFO  SysUtils - Configuration on demand is an incubating feature.
+Incremental java compilation is an incubating feature.
+:demo:preBuild UP-TO-DATE
+:demo:preDebugBuild UP-TO-DATE
+:demo:checkDebugManifest
+:demo:extractProguardFiles
+:demo:preReleaseBuild
+:library:preBuild UP-TO-DATE
+:library:preReleaseBuild UP-TO-DATE
+:library:checkReleaseManifest
+:library:preDebugAndroidTestBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:preDebugUnitTestBuild UP-TO-DATE
+:library:preReleaseUnitTestBuild UP-TO-DATE
+:library:prepareComAndroidSupportAnimatedVectorDrawable2511Library
+:library:prepareComAndroidSupportAppcompatV72511Library
+:library:prepareComAndroidSupportSupportCompat2511Library
+:library:prepareComAndroidSupportSupportCoreUi2511Library
+:library:prepareComAndroidSupportSupportCoreUtils2511Library
+:library:prepareComAndroidSupportSupportFragment2511Library
+:library:prepareComAndroidSupportSupportMediaCompat2511Library
+:library:prepareComAndroidSupportSupportV42511Library
+:library:prepareComAndroidSupportSupportVectorDrawable2511Library
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl
+:library:compileReleaseNdk UP-TO-DATE
+:library:compileLint
+:library:copyReleaseLint UP-TO-DATE
+:library:compileReleaseRenderscript
+:library:generateReleaseBuildConfig
+:library:generateReleaseResValues
+:library:generateReleaseResources
+:library:mergeReleaseResources
+:library:processReleaseManifest
+:library:processReleaseResources
+:library:generateReleaseSources
+:library:incrementalReleaseJavaCompilationSafeguard
+:library:compileReleaseJavaWithJavac
+:library:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: /tmp/rdisk/789/src/AnimationEasingFunctions-master/library/src/main/java/com/daimajia/easing/Skill.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+:library:extractReleaseAnnotations
+:library:mergeReleaseShaders
+:library:compileReleaseShaders
+:library:generateReleaseAssets
+:library:mergeReleaseAssets
+:library:mergeReleaseProguardFiles
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:packageReleaseResources
+:library:processReleaseJavaRes UP-TO-DATE
+:library:transformResourcesWithMergeJavaResForRelease
+:library:transformClassesAndResourcesWithSyncLibJarsForRelease
+:library:mergeReleaseJniLibFolders
+:library:transformNative_libsWithMergeJniLibsForRelease
+:library:transformNative_libsWithSyncJniLibsForRelease
+:library:bundleRelease
+:demo:prepareAnimationEasingFunctionsMasterLibraryUnspecifiedLibrary
+:demo:prepareComAndroidSupportAnimatedVectorDrawable2511Library
+:demo:prepareComAndroidSupportAppcompatV72511Library
+:demo:prepareComAndroidSupportSupportCompat2511Library
+:demo:prepareComAndroidSupportSupportCoreUi2511Library
+:demo:prepareComAndroidSupportSupportCoreUtils2511Library
+:demo:prepareComAndroidSupportSupportFragment2511Library
+:demo:prepareComAndroidSupportSupportMediaCompat2511Library
+:demo:prepareComAndroidSupportSupportV42511Library
+:demo:prepareComAndroidSupportSupportVectorDrawable2511Library
+:demo:prepareDebugDependencies
+:demo:compileDebugAidl
+:demo:compileDebugRenderscript
+:demo:generateDebugBuildConfig
+:demo:generateDebugResValues
+:demo:generateDebugResources
+:demo:mergeDebugResources
+:demo:processDebugManifest
+:demo:processDebugResources
+:demo:generateDebugSources
+:demo:incrementalDebugJavaCompilationSafeguard
+:demo:compileDebugJavaWithJavac
+:demo:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:demo:compileDebugNdk UP-TO-DATE
+:demo:compileDebugSources
+:demo:mergeDebugShaders
+:demo:compileDebugShaders
+:demo:generateDebugAssets
+:demo:mergeDebugAssets
+:demo:transformClassesWithDexForDebug
+:demo:mergeDebugJniLibFolders
+:demo:transformNative_libsWithMergeJniLibsForDebug
+:demo:processDebugJavaRes UP-TO-DATE
+:demo:transformResourcesWithMergeJavaResForDebug
+:demo:validateSigningDebug
+:demo:packageDebug
+:demo:assembleDebug
+:demo:checkReleaseManifest
+:demo:prepareReleaseDependencies
+:demo:compileReleaseAidl
+:demo:compileReleaseRenderscript
+:demo:generateReleaseBuildConfig
+:demo:generateReleaseResValues
+:demo:generateReleaseResources
+:demo:mergeReleaseResources
+:demo:processReleaseManifest
+:demo:processReleaseResources
+:demo:generateReleaseSources
+:demo:incrementalReleaseJavaCompilationSafeguard
+:demo:compileReleaseJavaWithJavac
+:demo:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:demo:compileReleaseNdk UP-TO-DATE
+:demo:compileReleaseSources
+:demo:lintVitalRelease
+:demo:mergeReleaseShaders
+:demo:compileReleaseShaders
+:demo:generateReleaseAssets
+:demo:mergeReleaseAssets
+:demo:processReleaseJavaRes UP-TO-DATE
+:demo:transformResourcesWithMergeJavaResForRelease
+:demo:transformClassesAndResourcesWithProguardForRelease
+ProGuard, version 5.2.1
+Reading input...
+Reading program jar [/tmp/rdisk/789/src/AnimationEasingFunctions-master/demo/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.1.1/jars/classes.jar] (filtered)
+Reading program jar [/tmp/rdisk/789/src/AnimationEasingFunctions-master/demo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.1/jars/classes.jar] (filtered)
+Reading program jar [/tmp/rdisk/789/src/AnimationEasingFunctions-master/demo/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.1.1/jars/classes.jar] (filtered)
+Reading program jar [/root/Applications/android-sdk/extras/android/m2repository/com/android/support/support-annotations/25.1.1/support-annotations-25.1.1.jar] (filtered)
+Reading program jar [/tmp/rdisk/789/src/AnimationEasingFunctions-master/demo/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.1.1/jars/classes.jar] (filtered)
+Reading program jar [/tmp/rdisk/789/src/AnimationEasingFunctions-master/demo/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.1.1/jars/classes.jar] (filtered)
+Reading program jar [/tmp/rdisk/789/src/AnimationEasingFunctions-master/demo/build/intermediates/exploded-aar/com.android.support/support-v4/25.1.1/jars/classes.jar] (filtered)
+Reading program jar [/tmp/rdisk/789/src/AnimationEasingFunctions-master/demo/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.1.1/jars/classes.jar] (filtered)
+Reading program jar [/tmp/rdisk/789/src/AnimationEasingFunctions-master/demo/build/intermediates/exploded-aar/com.android.support/support-fragment/25.1.1/jars/classes.jar] (filtered)
+Reading program jar [/tmp/rdisk/789/src/AnimationEasingFunctions-master/demo/build/intermediates/exploded-aar/com.android.support/support-compat/25.1.1/jars/classes.jar] (filtered)
+Reading program jar [/tmp/rdisk/789/src/AnimationEasingFunctions-master/demo/build/intermediates/exploded-aar/AnimationEasingFunctions-master/library/unspecified/jars/classes.jar] (filtered)
+Reading program directory [/tmp/rdisk/789/src/AnimationEasingFunctions-master/demo/build/intermediates/classes/release] (filtered)
+Reading library jar [/root/Applications/android-sdk/platforms/android-25/android.jar]
+Reading library jar [/root/Applications/android-sdk/platforms/android-25/optional/org.apache.http.legacy.jar]
+Note: duplicate definition of library class [android.net.http.HttpResponseCache]
+Note: duplicate definition of library class [android.net.http.SslCertificate$DName]
+Note: duplicate definition of library class [android.net.http.SslError]
+Note: duplicate definition of library class [android.net.http.SslCertificate]
+Note: duplicate definition of library class [org.apache.http.params.CoreConnectionPNames]
+Note: duplicate definition of library class [org.apache.http.params.HttpConnectionParams]
+Note: duplicate definition of library class [org.apache.http.params.HttpParams]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.SocketFactory]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.LayeredSocketFactory]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.HostNameResolver]
+Note: duplicate definition of library class [org.apache.http.conn.ConnectTimeoutException]
+Note: there were 11 duplicate class definitions.
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#duplicateclass)
+Initializing...
+Ignoring unused library classes...
+  Original number of library classes: 4237
+  Final number of library classes:    973
+Printing kept classes, fields, and methods...
+Shrinking...
+Printing usage to [/tmp/rdisk/789/src/AnimationEasingFunctions-master/demo/build/outputs/mapping/release/usage.txt]...
+Removing unused program classes and class elements...
+  Original number of program classes: 1700
+  Final number of program classes:    509
+Obfuscating...
+Printing mapping to [/tmp/rdisk/789/src/AnimationEasingFunctions-master/demo/build/outputs/mapping/release/mapping.txt]...
+Writing output...
+Preparing output jar [/tmp/rdisk/789/src/AnimationEasingFunctions-master/demo/build/intermediates/transforms/proguard/release/jars/3/1f/main.jar]
+  Copying resources from program jar [/tmp/rdisk/789/src/AnimationEasingFunctions-master/demo/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.1.1/jars/classes.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/789/src/AnimationEasingFunctions-master/demo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.1/jars/classes.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/789/src/AnimationEasingFunctions-master/demo/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.1.1/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/Applications/android-sdk/extras/android/m2repository/com/android/support/support-annotations/25.1.1/support-annotations-25.1.1.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/789/src/AnimationEasingFunctions-master/demo/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.1.1/jars/classes.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/789/src/AnimationEasingFunctions-master/demo/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.1.1/jars/classes.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/789/src/AnimationEasingFunctions-master/demo/build/intermediates/exploded-aar/com.android.support/support-v4/25.1.1/jars/classes.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/789/src/AnimationEasingFunctions-master/demo/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.1.1/jars/classes.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/789/src/AnimationEasingFunctions-master/demo/build/intermediates/exploded-aar/com.android.support/support-fragment/25.1.1/jars/classes.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/789/src/AnimationEasingFunctions-master/demo/build/intermediates/exploded-aar/com.android.support/support-compat/25.1.1/jars/classes.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/789/src/AnimationEasingFunctions-master/demo/build/intermediates/exploded-aar/AnimationEasingFunctions-master/library/unspecified/jars/classes.jar] (filtered)
+  Copying resources from program directory [/tmp/rdisk/789/src/AnimationEasingFunctions-master/demo/build/intermediates/classes/release] (filtered)
+Printing classes to [/tmp/rdisk/789/src/AnimationEasingFunctions-master/demo/build/outputs/mapping/release/dump.txt]...
+:demo:transformClassesWithDexForRelease
+:demo:mergeReleaseJniLibFolders
+:demo:transformNative_libsWithMergeJniLibsForRelease
+:demo:packageRelease
+:demo:assembleRelease
+:demo:assemble
+:demo:build
+
+BUILD SUCCESSFUL
+
+Total time: 27.492 secs
+
+2018-05-14 06:21:42,198 INFO  FullProcessService - Found APK file: /tmp/rdisk/789/src/AnimationEasingFunctions-master/demo/build/outputs/apk/demo-release-unsigned.apk

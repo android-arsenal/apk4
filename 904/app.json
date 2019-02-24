@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "org.openintents.openpgp.example",
+    "label" : "OpenPGP API Example",
+    "icon" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "versionName" : "7.0",
+    "versionCode" : 6,
+    "installLocation" : null,
+    "minSdkVersion" : "9",
+    "targetSdkVersion" : "23",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "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"
+  },
+  "dexClasses" : 1214,
+  "locales" : [ "", "sl", "fr", "ru", "ja", "zh_TW", "sr", "it", "uk", "de", "es", "zh", "tr", "eu", "cs", "sv", "nl", "pl" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"6\" android:versionName=\"7.0\" package=\"org.openintents.openpgp.example\" platformBuildVersionCode=\"23\" platformBuildVersionName=\"6.0-2704002\">\n\t<uses-sdk android:minSdkVersion=\"9\" android:targetSdkVersion=\"23\" />\n\t<application android:label=\"OpenPGP API Example\" android:icon=\"res/drawable-mdpi-v4/ic_launcher.png\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"OpenPGP API Example\" android:name=\"org.openintents.openpgp.example.BaseActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<activity android:label=\"OpenPGP API\" android:name=\"org.openintents.openpgp.example.OpenPgpApiActivity\" android:windowSoftInputMode=\"0x2\" />\n\t</application>\n</manifest>\n",
+  "fileSize" : 530344,
+  "crc32" : 2226794518,
+  "sha256" : "ee782a45aac736865d5362fdd3d426c3a283672720d8b8b174401c2bec161bec",
+  "buildTime" : 1516127190000
+}

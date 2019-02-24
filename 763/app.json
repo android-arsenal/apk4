@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.jpardogo.android.flabbylistview",
+    "label" : "FlabbyListview",
+    "icon" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "versionName" : "1.0.0",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "10",
+    "targetSdkVersion" : "19",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "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"
+  },
+  "dexClasses" : 886,
+  "locales" : [ "", "sl", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "pt", "ar", "ru", "fa", "sk", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "af", "in", "vi", "fr_CA", "sr", "da", "es", "hy_AM", "tr", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "fr", "ja", "lo_LA", "iw", "de", "en_IN", "es_US", "nb", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"1.0.0\" package=\"com.jpardogo.android.flabbylistview\">\n\t<uses-sdk android:minSdkVersion=\"10\" android:targetSdkVersion=\"19\" />\n\t<application android:theme=\"resourceId:0x7f0b0000\" android:label=\"FlabbyListview\" android:icon=\"res/drawable-mdpi-v4/ic_launcher.png\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"FlabbyListview\" android:name=\"com.jpardogo.android.flabbylistview.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 820135,
+  "crc32" : 2973933126,
+  "sha256" : "d7be854117775047e8ef42831e6d36e80a5441a6aac66f244b8b4840fcafccaf",
+  "buildTime" : 1526279121000
+}

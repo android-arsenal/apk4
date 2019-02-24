@@ -1,0 +1,245 @@
+2018-04-08 13:50:33,048 INFO  DownloadService - Downloading "https://github.com/sromku/android-simple-facebook/archive/master.zip", attempt 3
+2018-04-08 13:50:33,960 INFO  DownloadService - Downloaded https://github.com/sromku/android-simple-facebook/archive/master.zip, attempt 3
+2018-04-08 13:50:33,960 INFO  DownloadService - Size of file "/tmp/rdisk/949/master.zip": 262 KB
+2018-04-08 13:50:33,960 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-08 13:50:33,961 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/949/master.zip: true
+2018-04-08 13:50:33,961 DEBUG ZipUtil - Extracting '/tmp/rdisk/949/master.zip' into '/tmp/rdisk/949/src'.
+2018-04-08 13:50:33,992 INFO  FullProcessService - Size of directory with sources: 625 KB
+2018-04-08 13:50:33,992 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/949/src]
+2018-04-08 13:50:33,997 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/949/src/.git/
+
+2018-04-08 13:50:34,001 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/949/src/android-simple-facebook-master/gradlew
+2018-04-08 13:50:34,006 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/949/src/android-simple-facebook-master/sample/build.gradle /tmp/rdisk/949/src/android-simple-facebook-master/simple-fb/build.gradle /tmp/rdisk/949/src/android-simple-facebook-master/build.gradle
+2018-04-08 13:50:34,011 INFO  ProjectBuildService - All script(s): /tmp/rdisk/949/src/android-simple-facebook-master/simple-fb/build.gradle /tmp/rdisk/949/src/android-simple-facebook-master/settings.gradle /tmp/rdisk/949/src/android-simple-facebook-master/sample/build.gradle /tmp/rdisk/949/src/android-simple-facebook-master/build.gradle
+2018-04-08 13:50:34,011 INFO  DownloadService - Downloading "https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle", attempt 3
+2018-04-08 13:50:34,043 INFO  DownloadService - Downloaded https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle, attempt 3
+2018-04-08 13:50:34,043 INFO  DownloadService - Downloading "https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle", attempt 3
+2018-04-08 13:50:34,071 INFO  DownloadService - Downloaded https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle, attempt 3
+2018-04-08 13:50:34,072 INFO  ProjectBuildService - Remote scripts: https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle
+2018-04-08 13:50:34,072 INFO  ProjectFixService - Fixing project...
+2018-04-08 13:50:34,084 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/949/src/android-simple-facebook-master/sample/local.properties
+2018-04-08 13:50:34,084 INFO  ProjectFixService - Build info for "/tmp/rdisk/949/src/android-simple-facebook-master/sample/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=15,targetSdkVersion=23]
+2018-04-08 13:50:34,084 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/949/src/android-simple-facebook-master/simple-fb/local.properties
+2018-04-08 13:50:34,085 INFO  ProjectFixService - Build info for "/tmp/rdisk/949/src/android-simple-facebook-master/simple-fb/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=15,targetSdkVersion=23]
+2018-04-08 13:50:34,085 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/949/src/android-simple-facebook-master/local.properties
+2018-04-08 13:50:34,086 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-08 13:50:34,086 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-08 13:50:34,087 INFO  ProjectFixService - Build info for "/tmp/rdisk/949/src/android-simple-facebook-master/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=15,targetSdkVersion=23]
+2018-04-08 13:50:34,087 INFO  ProjectFixService - Project was maybe fixed
+2018-04-08 13:50:34,087 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-08 13:50:34,087 INFO  SysUtils - Execute command: [/tmp/rdisk/949/src/android-simple-facebook-master/gradlew, -b, /tmp/rdisk/949/src/android-simple-facebook-master/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-08 13:50:47,335 INFO  ProjectTaskService - Detected possible tasks: 68
+2018-04-08 13:50:47,336 INFO  ProjectTaskService - Excluded tasks (23): lintDebug mockableAndroidJar javadocJar deviceCheck lint javadoc uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installRelease installDebugAndroidTest connectedCheck uninstallAll sourcesJar testRelease test check connectedAndroidTest installDebug lintRelease testDebug connectedAndroidTestDebug uninstallDebug
+2018-04-08 13:50:47,336 INFO  SysUtils - Execute command: [/tmp/rdisk/949/src/android-simple-facebook-master/gradlew, -b, /tmp/rdisk/949/src/android-simple-facebook-master/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, javadocJar, -x, deviceCheck, -x, lint, -x, javadoc, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installRelease, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, sourcesJar, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, -x, uninstallDebug, build]
+2018-04-08 13:50:54,523 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-08 13:50:54,523 INFO  SysUtils - Configuration on demand is an incubating feature.
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Task 'javadocJar' not found in project ':sample'.
+
+* Try:
+Run gradlew tasks to get a list of available tasks. Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.execution.TaskSelectionException: Task 'javadocJar' not found in project ':sample'.
+	at org.gradle.execution.TaskSelector.getSelection(TaskSelector.java:101)
+	at org.gradle.execution.TaskSelector.getFilter(TaskSelector.java:64)
+	at org.gradle.execution.ExcludedTaskFilteringBuildConfigurationAction.configure(ExcludedTaskFilteringBuildConfigurationAction.java:42)
+	at org.gradle.execution.DefaultBuildExecuter.configure(DefaultBuildExecuter.java:42)
+	at org.gradle.execution.DefaultBuildExecuter.access$100(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$1.proceed(DefaultBuildExecuter.java:48)
+	at org.gradle.execution.DefaultTasksBuildExecutionAction.configure(DefaultTasksBuildExecutionAction.java:44)
+	at org.gradle.execution.DefaultBuildExecuter.configure(DefaultBuildExecuter.java:42)
+	at org.gradle.execution.DefaultBuildExecuter.select(DefaultBuildExecuter.java:35)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:142)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:80)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:36)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:51)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:171)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+
+
+BUILD FAILED
+
+Total time: 6.74 secs
+
+2018-04-08 13:50:54,524 ERROR ProjectBuildService - Excluded tasks were detected wrong
+2018-04-08 13:50:54,524 INFO  SysUtils - Execute command: [/tmp/rdisk/949/src/android-simple-facebook-master/gradlew, -b, /tmp/rdisk/949/src/android-simple-facebook-master/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-08 13:51:40,116 INFO  SysUtils - Configuration on demand is an incubating feature.
+:sample:preBuild UP-TO-DATE
+:sample:preDebugBuild UP-TO-DATE
+:sample:checkDebugManifest
+:sample:preReleaseBuild UP-TO-DATE
+:simple-fb:compileLint
+:simple-fb:copyReleaseLint UP-TO-DATE
+:simple-fb:preBuild UP-TO-DATE
+:simple-fb:preReleaseBuild UP-TO-DATE
+:simple-fb:checkReleaseManifest
+:simple-fb:preDebugAndroidTestBuild UP-TO-DATE
+:simple-fb:preDebugBuild UP-TO-DATE
+:simple-fb:preDebugUnitTestBuild UP-TO-DATE
+:simple-fb:preReleaseUnitTestBuild UP-TO-DATE
+:simple-fb:prepareComAndroidSupportSupportV42221Library
+:simple-fb:prepareComFacebookAndroidFacebookAndroidSdk470Library
+:simple-fb:prepareReleaseDependencies
+:simple-fb:compileReleaseAidl
+:simple-fb:compileReleaseRenderscript
+:simple-fb:generateReleaseBuildConfig
+:simple-fb:generateReleaseAssets UP-TO-DATE
+:simple-fb:mergeReleaseAssets
+:simple-fb:generateReleaseResValues
+:simple-fb:generateReleaseResources
+:simple-fb:mergeReleaseResources
+:simple-fb:processReleaseManifest
+:simple-fb:processReleaseResources
+:simple-fb:generateReleaseSources
+:simple-fb:processReleaseJavaRes UP-TO-DATE
+:simple-fb:compileReleaseJavaNote: /tmp/rdisk/949/src/android-simple-facebook-master/simple-fb/src/main/java/com/sromku/simple/fb/actions/InviteAction.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:simple-fb:extractReleaseAnnotations
+:simple-fb:mergeReleaseProguardFiles
+:simple-fb:packageReleaseJar
+:simple-fb:compileReleaseNdk UP-TO-DATE
+:simple-fb:packageReleaseJniLibs UP-TO-DATE
+:simple-fb:packageReleaseLocalJar UP-TO-DATE
+:simple-fb:packageReleaseRenderscript UP-TO-DATE
+:simple-fb:packageReleaseResources
+:simple-fb:bundleRelease
+:sample:prepareComAndroidSupportSupportV42221Library
+:sample:prepareComFacebookAndroidFacebookAndroidSdk470Library
+:sample:prepareComSromkuSimpleFb411Library
+:sample:prepareDebugDependencies
+:sample:compileDebugAidl
+:sample:compileDebugRenderscript
+:sample:generateDebugBuildConfig
+:sample:generateDebugAssets UP-TO-DATE
+:sample:mergeDebugAssets
+:sample:generateDebugResValues
+:sample:generateDebugResources
+:sample:mergeDebugResources
+:sample:processDebugManifest
+:sample:processDebugResources
+:sample:generateDebugSources
+:sample:processDebugJavaRes UP-TO-DATE
+:sample:compileDebugJavaNote: /tmp/rdisk/949/src/android-simple-facebook-master/sample/src/main/java/com/sromku/simple/fb/example/ExamplesAdapter.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /tmp/rdisk/949/src/android-simple-facebook-master/sample/src/main/java/com/sromku/simple/fb/example/utils/Utils.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:sample:compileDebugNdk UP-TO-DATE
+:sample:compileDebugSources
+:sample:preDexDebug
+:sample:dexDebug
+:sample:validateDebugSigning
+:sample:packageDebug
+:sample:zipalignDebug
+:sample:assembleDebug
+:sample:checkReleaseManifest
+:sample:prepareReleaseDependencies
+:sample:compileReleaseAidl
+:sample:compileReleaseRenderscript
+:sample:generateReleaseBuildConfig
+:sample:generateReleaseAssets UP-TO-DATE
+:sample:mergeReleaseAssets
+:sample:generateReleaseResValues
+:sample:generateReleaseResources
+:sample:mergeReleaseResources
+:sample:processReleaseManifest
+:sample:processReleaseResources
+:sample:generateReleaseSources
+:sample:processReleaseJavaRes UP-TO-DATE
+:sample:compileReleaseJavaNote: /tmp/rdisk/949/src/android-simple-facebook-master/sample/src/main/java/com/sromku/simple/fb/example/ExamplesAdapter.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /tmp/rdisk/949/src/android-simple-facebook-master/sample/src/main/java/com/sromku/simple/fb/example/utils/Utils.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:sample:compileReleaseNdk UP-TO-DATE
+:sample:compileReleaseSources
+:sample:lintVitalRelease SKIPPED
+:sample:proguardRelease
+:sample:dexRelease
+:sample:packageRelease
+:sample:zipalignRelease
+:sample:assembleRelease
+:sample:assemble
+:sample:compileLint
+:sample:lint
+Ran lint on variant debug: 30 issues found
+Ran lint on variant release: 30 issues found
+Wrote HTML report to file:/tmp/rdisk/949/src/android-simple-facebook-master/sample/build/outputs/lint-results.html
+Wrote XML report to /tmp/rdisk/949/src/android-simple-facebook-master/sample/build/outputs/lint-results.xml
+:sample:preCompileDebugUnitTestJava
+:sample:preDebugUnitTestBuild UP-TO-DATE
+:sample:prepareDebugUnitTestDependencies
+:sample:processDebugUnitTestJavaRes UP-TO-DATE
+:sample:compileDebugUnitTestJava UP-TO-DATE
+:sample:compileDebugUnitTestSources UP-TO-DATE
+:sample:mockableAndroidJar
+:sample:assembleDebugUnitTest
+:sample:testDebug
+:sample:preCompileReleaseUnitTestJava
+:sample:preReleaseUnitTestBuild UP-TO-DATE
+:sample:prepareReleaseUnitTestDependencies
+:sample:processReleaseUnitTestJavaRes UP-TO-DATE
+:sample:compileReleaseUnitTestJava UP-TO-DATE
+:sample:compileReleaseUnitTestSources UP-TO-DATE
+:sample:assembleReleaseUnitTest
+:sample:testRelease
+:sample:test
+:sample:check
+:sample:build
+
+BUILD SUCCESSFUL
+
+Total time: 45.164 secs
+
+2018-04-08 13:51:40,157 INFO  FullProcessService - Found APK file: /tmp/rdisk/949/src/android-simple-facebook-master/sample/build/outputs/apk/sample-release.apk

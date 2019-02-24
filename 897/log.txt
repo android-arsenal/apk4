@@ -1,0 +1,172 @@
+2018-04-08 16:16:38,775 INFO  DownloadService - Downloading "https://github.com/Mirkoddd/GoogleDateTimePickers/archive/master.zip", attempt 3
+2018-04-08 16:16:41,220 INFO  DownloadService - Downloaded https://github.com/Mirkoddd/GoogleDateTimePickers/archive/master.zip, attempt 3
+2018-04-08 16:16:41,220 INFO  DownloadService - Size of file "/tmp/rdisk/897/master.zip": 3 MB
+2018-04-08 16:16:41,220 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-08 16:16:41,221 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/897/master.zip: true
+2018-04-08 16:16:41,221 DEBUG ZipUtil - Extracting '/tmp/rdisk/897/master.zip' into '/tmp/rdisk/897/src'.
+2018-04-08 16:16:41,289 INFO  FullProcessService - Size of directory with sources: 4 MB
+2018-04-08 16:16:41,289 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/897/src]
+2018-04-08 16:16:41,295 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/897/src/.git/
+
+2018-04-08 16:16:41,306 INFO  ProjectBuildService - Gradle wrapper(s): none
+2018-04-08 16:16:41,306 ERROR ProjectBuildService - Could not detect Gradle wrapper. Default Gradle installation will be used
+2018-04-08 16:16:41,315 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/897/src/GoogleDateTimePickers-master/library/GoogleDateTimePickers/build.gradle
+2018-04-08 16:16:41,325 INFO  ProjectBuildService - All script(s): /tmp/rdisk/897/src/GoogleDateTimePickers-master/library/GoogleDateTimePickers/build.gradle
+2018-04-08 16:16:41,326 INFO  ProjectBuildService - Remote scripts: none
+2018-04-08 16:16:41,326 INFO  ProjectFixService - Fixing project...
+2018-04-08 16:16:41,356 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/897/src/GoogleDateTimePickers-master/library/GoogleDateTimePickers/local.properties
+2018-04-08 16:16:41,357 INFO  ProjectFixService - Build info for "/tmp/rdisk/897/src/GoogleDateTimePickers-master/library/GoogleDateTimePickers/build.gradle": [buildToolsVersion=24.0.2,compileSdkVersion=22,minSdkVersion=14,targetSdkVersion=22]
+2018-04-08 16:16:41,358 INFO  ProjectFixService - Project was maybe fixed
+2018-04-08 16:16:41,358 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-08 16:16:41,358 INFO  SysUtils - Execute command: [gradle, -b, /tmp/rdisk/897/src/GoogleDateTimePickers-master/library/GoogleDateTimePickers/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-08 16:16:48,230 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-08 16:16:48,230 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-08 16:16:48,230 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-08 16:16:48,231 INFO  SysUtils - Execute command: [gradle, -b, /tmp/rdisk/897/src/GoogleDateTimePickers-master/library/GoogleDateTimePickers/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-08 16:16:53,979 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-08 16:16:53,979 INFO  SysUtils - Configuration on demand is an incubating feature.
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Build file '/tmp/rdisk/897/src/GoogleDateTimePickers-master/library/GoogleDateTimePickers/build.gradle' line: 48
+
+* What went wrong:
+A problem occurred evaluating root project 'GoogleDateTimePickers'.
+> Could not get unknown property 'repositoryUrl' for root project 'GoogleDateTimePickers' of type org.gradle.api.Project.
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.GradleScriptException: A problem occurred evaluating root project 'GoogleDateTimePickers'.
+	at org.gradle.groovy.scripts.internal.DefaultScriptRunnerFactory$ScriptRunnerImpl.run(DefaultScriptRunnerFactory.java:92)
+	at org.gradle.configuration.DefaultScriptPluginFactory$ScriptPluginImpl$2.run(DefaultScriptPluginFactory.java:176)
+	at org.gradle.configuration.ProjectScriptTarget.addConfiguration(ProjectScriptTarget.java:77)
+	at org.gradle.configuration.DefaultScriptPluginFactory$ScriptPluginImpl.apply(DefaultScriptPluginFactory.java:181)
+	at org.gradle.configuration.project.BuildScriptProcessor.execute(BuildScriptProcessor.java:39)
+	at org.gradle.configuration.project.BuildScriptProcessor.execute(BuildScriptProcessor.java:26)
+	at org.gradle.configuration.project.ConfigureActionsProjectEvaluator.evaluate(ConfigureActionsProjectEvaluator.java:34)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.doConfigure(LifecycleProjectEvaluator.java:70)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.access$000(LifecycleProjectEvaluator.java:33)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator$1.execute(LifecycleProjectEvaluator.java:53)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator$1.execute(LifecycleProjectEvaluator.java:50)
+	at org.gradle.internal.Transformers$4.transform(Transformers.java:169)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:106)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:61)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.evaluate(LifecycleProjectEvaluator.java:50)
+	at org.gradle.api.internal.project.DefaultProject.evaluate(DefaultProject.java:648)
+	at org.gradle.api.internal.project.DefaultProject.evaluate(DefaultProject.java:126)
+	at org.gradle.execution.TaskPathProjectEvaluator.configure(TaskPathProjectEvaluator.java:35)
+	at org.gradle.configuration.DefaultBuildConfigurer.configure(DefaultBuildConfigurer.java:36)
+	at org.gradle.initialization.DefaultGradleLauncher$ConfigureBuildAction.execute(DefaultGradleLauncher.java:207)
+	at org.gradle.initialization.DefaultGradleLauncher$ConfigureBuildAction.execute(DefaultGradleLauncher.java:204)
+	at org.gradle.internal.Transformers$4.transform(Transformers.java:169)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:106)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:56)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:146)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:112)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:95)
+	at org.gradle.launcher.exec.GradleBuildController.run(GradleBuildController.java:66)
+	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:28)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:41)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.tooling.internal.provider.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:75)
+	at org.gradle.tooling.internal.provider.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:49)
+	at org.gradle.tooling.internal.provider.ServicesSetupBuildActionExecuter.execute(ServicesSetupBuildActionExecuter.java:49)
+	at org.gradle.tooling.internal.provider.ServicesSetupBuildActionExecuter.execute(ServicesSetupBuildActionExecuter.java:31)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:51)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:173)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:281)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:254)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:33)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:247)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:182)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:60)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:37)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+Caused by: groovy.lang.MissingPropertyException: Could not get unknown property 'repositoryUrl' for root project 'GoogleDateTimePickers' of type org.gradle.api.Project.
+	at org.gradle.internal.metaobject.AbstractDynamicObject.getMissingProperty(AbstractDynamicObject.java:85)
+	at org.gradle.internal.metaobject.AbstractDynamicObject.getProperty(AbstractDynamicObject.java:62)
+	at org.gradle.api.internal.project.DefaultProject_Decorated.getProperty(Unknown Source)
+	at build_5bkq0ffyaiccowbj04i17losl$_run_closure3$_closure7$_closure8.doCall(/tmp/rdisk/897/src/GoogleDateTimePickers-master/library/GoogleDateTimePickers/build.gradle:48)
+	at org.gradle.api.internal.ClosureBackedAction.execute(ClosureBackedAction.java:71)
+	at org.gradle.util.ConfigureUtil.configureTarget(ConfigureUtil.java:160)
+	at org.gradle.util.ConfigureUtil.configure(ConfigureUtil.java:106)
+	at org.gradle.util.ConfigureUtil$1.execute(ConfigureUtil.java:123)
+	at org.gradle.api.internal.artifacts.DefaultArtifactRepositoryContainer.addRepository(DefaultArtifactRepositoryContainer.java:87)
+	at org.gradle.api.publication.maven.internal.DefaultMavenRepositoryHandlerConvention.mavenDeployer(DefaultMavenRepositoryHandlerConvention.java:43)
+	at org.gradle.internal.metaobject.BeanDynamicObject$MetaClassAdapter.invokeMethod(BeanDynamicObject.java:464)
+	at org.gradle.internal.metaobject.BeanDynamicObject.invokeMethod(BeanDynamicObject.java:176)
+	at org.gradle.api.internal.plugins.DefaultConvention$ExtensionsDynamicObject.invokeMethod(DefaultConvention.java:308)
+	at org.gradle.internal.metaobject.CompositeDynamicObject.invokeMethod(CompositeDynamicObject.java:96)
+	at org.gradle.internal.metaobject.MixInClosurePropertiesAsMethodsDynamicObject.invokeMethod(MixInClosurePropertiesAsMethodsDynamicObject.java:30)
+	at org.gradle.internal.metaobject.ConfigureDelegate.invokeMethod(ConfigureDelegate.java:59)
+	at build_5bkq0ffyaiccowbj04i17losl$_run_closure3$_closure7.doCall(/tmp/rdisk/897/src/GoogleDateTimePickers-master/library/GoogleDateTimePickers/build.gradle:47)
+	at org.gradle.api.internal.ClosureBackedAction.execute(ClosureBackedAction.java:71)
+	at org.gradle.util.ConfigureUtil.configureTarget(ConfigureUtil.java:160)
+	at org.gradle.util.ConfigureUtil.configureSelf(ConfigureUtil.java:136)
+	at org.gradle.api.internal.artifacts.DefaultArtifactRepositoryContainer.configure(DefaultArtifactRepositoryContainer.java:66)
+	at org.gradle.api.internal.artifacts.DefaultArtifactRepositoryContainer.configure(DefaultArtifactRepositoryContainer.java:33)
+	at org.gradle.util.ConfigureUtil.configure(ConfigureUtil.java:104)
+	at org.gradle.api.tasks.Upload.repositories(Upload.java:123)
+	at org.gradle.internal.metaobject.BeanDynamicObject$MetaClassAdapter.invokeMethod(BeanDynamicObject.java:464)
+	at org.gradle.internal.metaobject.BeanDynamicObject.invokeMethod(BeanDynamicObject.java:176)
+	at org.gradle.internal.metaobject.CompositeDynamicObject.invokeMethod(CompositeDynamicObject.java:96)
+	at org.gradle.internal.metaobject.MixInClosurePropertiesAsMethodsDynamicObject.invokeMethod(MixInClosurePropertiesAsMethodsDynamicObject.java:30)
+	at org.gradle.internal.metaobject.ConfigureDelegate.invokeMethod(ConfigureDelegate.java:59)
+	at build_5bkq0ffyaiccowbj04i17losl$_run_closure3.doCall(/tmp/rdisk/897/src/GoogleDateTimePickers-master/library/GoogleDateTimePickers/build.gradle:46)
+	at org.gradle.api.internal.ClosureBackedAction.execute(ClosureBackedAction.java:71)
+	at org.gradle.util.ConfigureUtil.configureTarget(ConfigureUtil.java:160)
+	at org.gradle.util.ConfigureUtil.configureSelf(ConfigureUtil.java:136)
+	at org.gradle.api.internal.AbstractTask.configure(AbstractTask.java:584)
+	at org.gradle.api.internal.AbstractTask.configure(AbstractTask.java:79)
+	at org.gradle.util.ConfigureUtil.configure(ConfigureUtil.java:104)
+	at org.gradle.api.internal.DefaultNamedDomainObjectCollection$ContainerElementsDynamicObject.invokeMethod(DefaultNamedDomainObjectCollection.java:372)
+	at org.gradle.internal.metaobject.CompositeDynamicObject.invokeMethod(CompositeDynamicObject.java:96)
+	at org.gradle.internal.metaobject.MixInClosurePropertiesAsMethodsDynamicObject.invokeMethod(MixInClosurePropertiesAsMethodsDynamicObject.java:30)
+	at org.gradle.groovy.scripts.BasicScript.invokeMethod(BasicScript.java:107)
+	at org.gradle.groovy.scripts.BasicScript.methodMissing(BasicScript.java:116)
+	at build_5bkq0ffyaiccowbj04i17losl.run(/tmp/rdisk/897/src/GoogleDateTimePickers-master/library/GoogleDateTimePickers/build.gradle:45)
+	at org.gradle.groovy.scripts.internal.DefaultScriptRunnerFactory$ScriptRunnerImpl.run(DefaultScriptRunnerFactory.java:90)
+	... 50 more
+
+
+BUILD FAILED
+
+Total time: 5.529 secs
+
+2018-04-08 16:16:53,986 INFO  FullProcessService - Found APK file: /tmp/rdisk/897/src/GoogleDateTimePickers-master/sample/Pickers Sample/bin/Sample.apk

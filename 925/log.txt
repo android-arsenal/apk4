@@ -1,0 +1,12 @@
+06:25:25.074 [main] INFO  c.g.v.a.s.n.DownloadService - Downloading "https://github.com/WritingMinds/ffmpeg-android/archive/master.zip", attempt 3
+06:25:27.872 [main] INFO  c.g.v.a.s.n.DownloadService - Downloaded https://github.com/WritingMinds/ffmpeg-android/archive/master.zip, attempt 3
+06:25:28.085 [main] DEBUG o.z.z.ZipUtil - Extracting '/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1464999924479-0/master.zip' into '/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1464999924479-0/src'.
+06:25:28.110 [main] INFO  c.g.v.a.s.FullProcessService - Size of directory with sources: 46 KB
+06:25:28.137 [main] INFO  c.g.v.a.s.a.ProjectBuildService - Gradle wrapper(s): none
+06:25:28.137 [main] ERROR c.g.v.a.s.a.ProjectBuildService - Could not detect Gradle wrapper. Default Gradle installation will be used
+06:25:28.141 [main] INFO  c.g.v.a.s.a.ProjectBuildService - Build script(s): none
+06:25:28.146 [main] INFO  c.g.v.a.s.a.ProjectBuildService - All script(s): none
+06:25:28.151 [main] INFO  c.g.v.a.s.a.ProjectBuildService - Remote scripts: none
+06:25:28.152 [main] ERROR c.g.v.a.s.FullProcessService - Project is not correct Gradle project
+06:25:28.152 [main] ERROR c.g.v.a.s.FullProcessService - Project build has not produced APK file
+06:25:28.159 [main] ERROR c.g.v.a.s.FullProcessService - Could not find generated or existed APK file

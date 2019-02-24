@@ -1,0 +1,21 @@
+2018-05-22 09:03:15,554 INFO  DownloadService - Downloading "https://github.com/google/dagger/archive/master.zip", attempt 3
+2018-05-22 09:04:15,556 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-05-22 09:04:16,642 INFO  GithubDownloadService - Default branch of this repository: master
+2018-05-22 09:04:16,643 INFO  DownloadService - Downloading "https://github.com/google/dagger/archive/master.zip", attempt 3
+2018-05-22 09:05:17,540 DEBUG FullProcessService - Repository https://github.com/google/dagger available: true
+2018-05-22 09:05:17,540 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-05-22 09:05:17,540 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/google/dagger, /tmp/rdisk/860/src]
+2018-05-22 09:05:47,167 INFO  SysUtils - 
+2018-05-22 09:05:47,183 INFO  GitService - Deleted "/tmp/rdisk/860/src/.git": true
+2018-05-22 09:05:47,204 INFO  FullProcessService - Size of directory with sources: 26 MB
+2018-05-22 09:05:47,204 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/860/src]
+2018-05-22 09:05:47,215 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/860/src/.git/
+
+2018-05-22 09:05:47,230 INFO  ProjectBuildService - Gradle wrapper(s): none
+2018-05-22 09:05:47,230 ERROR ProjectBuildService - Could not detect Gradle wrapper. Default Gradle installation will be used
+2018-05-22 09:05:47,244 INFO  ProjectBuildService - Build script(s): none
+2018-05-22 09:05:47,257 INFO  ProjectBuildService - All script(s): none
+2018-05-22 09:05:47,257 INFO  ProjectBuildService - Remote scripts: none
+2018-05-22 09:05:47,257 ERROR FullProcessService - Project is not correct Gradle project
+2018-05-22 09:05:47,257 ERROR FullProcessService - Project build has not produced APK file
+2018-05-22 09:05:47,270 ERROR FullProcessService - Could not find generated or existed APK file

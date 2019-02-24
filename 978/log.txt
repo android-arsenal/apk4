@@ -1,0 +1,113 @@
+2018-04-08 13:35:04,724 INFO  DownloadService - Downloading "https://github.com/alexrs/Prefs/archive/master.zip", attempt 3
+2018-04-08 13:35:05,107 INFO  DownloadService - Downloaded https://github.com/alexrs/Prefs/archive/master.zip, attempt 3
+2018-04-08 13:35:05,107 INFO  DownloadService - Size of file "/tmp/rdisk/978/master.zip": 110 KB
+2018-04-08 13:35:05,107 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-08 13:35:05,108 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/978/master.zip: true
+2018-04-08 13:35:05,108 DEBUG ZipUtil - Extracting '/tmp/rdisk/978/master.zip' into '/tmp/rdisk/978/src'.
+2018-04-08 13:35:05,114 INFO  FullProcessService - Size of directory with sources: 119 KB
+2018-04-08 13:35:05,114 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/978/src]
+2018-04-08 13:35:05,119 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/978/src/.git/
+
+2018-04-08 13:35:05,121 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/978/src/Prefs-master/gradlew
+2018-04-08 13:35:05,124 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/978/src/Prefs-master/Prefs-demo/build.gradle /tmp/rdisk/978/src/Prefs-master/Prefs-library/build.gradle /tmp/rdisk/978/src/Prefs-master/build.gradle
+2018-04-08 13:35:05,126 INFO  ProjectBuildService - All script(s): /tmp/rdisk/978/src/Prefs-master/settings.gradle /tmp/rdisk/978/src/Prefs-master/build.gradle /tmp/rdisk/978/src/Prefs-master/Prefs-library/build.gradle /tmp/rdisk/978/src/Prefs-master/Prefs-demo/build.gradle
+2018-04-08 13:35:05,126 INFO  ProjectBuildService - Remote scripts: none
+2018-04-08 13:35:05,126 INFO  ProjectFixService - Fixing project...
+2018-04-08 13:35:05,131 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/978/src/Prefs-master/Prefs-demo/local.properties
+2018-04-08 13:35:05,132 INFO  ProjectFixService - Build info for "/tmp/rdisk/978/src/Prefs-master/Prefs-demo/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=15,targetSdkVersion=22]
+2018-04-08 13:35:05,132 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/978/src/Prefs-master/Prefs-library/local.properties
+2018-04-08 13:35:05,133 INFO  ProjectFixService - Build info for "/tmp/rdisk/978/src/Prefs-master/Prefs-library/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=15,targetSdkVersion=22]
+2018-04-08 13:35:05,133 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/978/src/Prefs-master/local.properties
+2018-04-08 13:35:05,134 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.4-all.zip
+2018-04-08 13:35:05,134 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.4-bin.zip)
+2018-04-08 13:35:05,135 INFO  ProjectFixService - Build info for "/tmp/rdisk/978/src/Prefs-master/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=15,targetSdkVersion=22]
+2018-04-08 13:35:05,135 INFO  ProjectFixService - Project was maybe fixed
+2018-04-08 13:35:05,135 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-08 13:35:05,136 INFO  SysUtils - Execute command: [/tmp/rdisk/978/src/Prefs-master/gradlew, -b, /tmp/rdisk/978/src/Prefs-master/Prefs-demo/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-08 13:35:14,023 INFO  ProjectTaskService - Detected possible tasks: 65
+2018-04-08 13:35:14,024 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest installDebug lintRelease testDebug connectedAndroidTestDebug uninstallDebug
+2018-04-08 13:35:14,024 INFO  SysUtils - Execute command: [/tmp/rdisk/978/src/Prefs-master/gradlew, -b, /tmp/rdisk/978/src/Prefs-master/Prefs-demo/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, -x, uninstallDebug, build]
+2018-04-08 13:35:24,964 INFO  SysUtils - Configuration on demand is an incubating feature.
+:Prefs-demo:preBuild UP-TO-DATE
+:Prefs-demo:preDebugBuild UP-TO-DATE
+:Prefs-demo:checkDebugManifest
+:Prefs-demo:preReleaseBuild UP-TO-DATE
+:Prefs-library:compileLint
+:Prefs-library:copyReleaseLint UP-TO-DATE
+:Prefs-library:mergeReleaseProguardFiles
+:Prefs-library:preBuild UP-TO-DATE
+:Prefs-library:preReleaseBuild UP-TO-DATE
+:Prefs-library:checkReleaseManifest
+:Prefs-library:prepareReleaseDependencies
+:Prefs-library:compileReleaseAidl
+:Prefs-library:compileReleaseRenderscript
+:Prefs-library:generateReleaseBuildConfig
+:Prefs-library:generateReleaseAssets UP-TO-DATE
+:Prefs-library:mergeReleaseAssets
+:Prefs-library:generateReleaseResValues
+:Prefs-library:generateReleaseResources
+:Prefs-library:packageReleaseResources
+:Prefs-library:processReleaseManifest
+:Prefs-library:processReleaseResources
+:Prefs-library:generateReleaseSources
+:Prefs-library:processReleaseJavaRes UP-TO-DATE
+:Prefs-library:compileReleaseJava
+:Prefs-library:packageReleaseJar
+:Prefs-library:compileReleaseNdk UP-TO-DATE
+:Prefs-library:packageReleaseJniLibs UP-TO-DATE
+:Prefs-library:packageReleaseLocalJar UP-TO-DATE
+:Prefs-library:packageReleaseRenderscript UP-TO-DATE
+:Prefs-library:bundleRelease
+:Prefs-demo:preparePrefsMasterPrefsLibraryUnspecifiedLibrary
+:Prefs-demo:prepareDebugDependencies
+:Prefs-demo:compileDebugAidl
+:Prefs-demo:compileDebugRenderscript
+:Prefs-demo:generateDebugBuildConfig
+:Prefs-demo:generateDebugAssets UP-TO-DATE
+:Prefs-demo:mergeDebugAssets
+:Prefs-demo:generateDebugResValues
+:Prefs-demo:generateDebugResources
+:Prefs-demo:mergeDebugResources
+:Prefs-demo:processDebugManifest
+:Prefs-demo:processDebugResources
+:Prefs-demo:generateDebugSources
+:Prefs-demo:processDebugJavaRes UP-TO-DATE
+:Prefs-demo:compileDebugJava
+:Prefs-demo:compileDebugNdk UP-TO-DATE
+:Prefs-demo:compileDebugSources
+:Prefs-demo:preDexDebug
+:Prefs-demo:dexDebug
+:Prefs-demo:validateDebugSigning
+:Prefs-demo:packageDebug
+:Prefs-demo:zipalignDebug
+:Prefs-demo:assembleDebug
+:Prefs-demo:checkReleaseManifest
+:Prefs-demo:prepareReleaseDependencies
+:Prefs-demo:compileReleaseAidl
+:Prefs-demo:compileReleaseRenderscript
+:Prefs-demo:generateReleaseBuildConfig
+:Prefs-demo:generateReleaseAssets UP-TO-DATE
+:Prefs-demo:mergeReleaseAssets
+:Prefs-demo:generateReleaseResValues
+:Prefs-demo:generateReleaseResources
+:Prefs-demo:mergeReleaseResources
+:Prefs-demo:processReleaseManifest
+:Prefs-demo:processReleaseResources
+:Prefs-demo:generateReleaseSources
+:Prefs-demo:processReleaseJavaRes UP-TO-DATE
+:Prefs-demo:compileReleaseJava
+:Prefs-demo:compileReleaseNdk UP-TO-DATE
+:Prefs-demo:compileReleaseSources
+:Prefs-demo:lintVitalRelease
+:Prefs-demo:preDexRelease
+:Prefs-demo:dexRelease
+:Prefs-demo:packageRelease
+:Prefs-demo:assembleRelease
+:Prefs-demo:assemble
+:Prefs-demo:build
+
+BUILD SUCCESSFUL
+
+Total time: 10.526 secs
+
+2018-04-08 13:35:24,974 INFO  FullProcessService - Found APK file: /tmp/rdisk/978/src/Prefs-master/Prefs-demo/build/outputs/apk/Prefs-demo-release-unsigned.apk

@@ -1,0 +1,160 @@
+2018-04-09 17:31:08,636 INFO  DownloadService - Downloading "https://github.com/mikepenz/Android-ActionItemBadge/archive/master.zip", attempt 3
+2018-04-09 17:31:09,143 INFO  DownloadService - Downloaded https://github.com/mikepenz/Android-ActionItemBadge/archive/master.zip, attempt 3
+2018-04-09 17:31:09,143 INFO  DownloadService - Size of file "/tmp/rdisk/755/master.zip": 757 KB
+2018-04-09 17:31:09,143 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-09 17:31:09,143 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/755/master.zip: true
+2018-04-09 17:31:09,144 DEBUG ZipUtil - Extracting '/tmp/rdisk/755/master.zip' into '/tmp/rdisk/755/src'.
+2018-04-09 17:31:09,163 INFO  FullProcessService - Size of directory with sources: 889 KB
+2018-04-09 17:31:09,163 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/755/src]
+2018-04-09 17:31:09,170 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/755/src/.git/
+
+2018-04-09 17:31:09,174 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/755/src/Android-ActionItemBadge-master/gradlew
+2018-04-09 17:31:09,177 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/755/src/Android-ActionItemBadge-master/app/build.gradle /tmp/rdisk/755/src/Android-ActionItemBadge-master/library/build.gradle /tmp/rdisk/755/src/Android-ActionItemBadge-master/build.gradle
+2018-04-09 17:31:09,180 INFO  ProjectBuildService - All script(s): /tmp/rdisk/755/src/Android-ActionItemBadge-master/settings.gradle /tmp/rdisk/755/src/Android-ActionItemBadge-master/library/gradle-mvn-push.gradle /tmp/rdisk/755/src/Android-ActionItemBadge-master/library/gradle-jcenter-push.gradle /tmp/rdisk/755/src/Android-ActionItemBadge-master/library/build.gradle /tmp/rdisk/755/src/Android-ActionItemBadge-master/build.gradle /tmp/rdisk/755/src/Android-ActionItemBadge-master/app/build.gradle
+2018-04-09 17:31:09,181 INFO  ProjectBuildService - Remote scripts: none
+2018-04-09 17:31:09,181 INFO  ProjectFixService - Fixing project...
+2018-04-09 17:31:09,191 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/755/src/Android-ActionItemBadge-master/app/local.properties
+2018-04-09 17:31:09,194 INFO  ProjectFixService - Build info for "/tmp/rdisk/755/src/Android-ActionItemBadge-master/app/build.gradle": [buildToolsVersion=27.0.0,compileSdkVersion=27,minSdkVersion=14,targetSdkVersion=27]
+2018-04-09 17:31:09,194 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/755/src/Android-ActionItemBadge-master/library/local.properties
+2018-04-09 17:31:09,196 INFO  ProjectFixService - Build info for "/tmp/rdisk/755/src/Android-ActionItemBadge-master/library/build.gradle": [buildToolsVersion=27.0.0,compileSdkVersion=27,minSdkVersion=14,targetSdkVersion=27]
+2018-04-09 17:31:09,196 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/755/src/Android-ActionItemBadge-master/local.properties
+2018-04-09 17:31:09,197 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-4.1-all.zip
+2018-04-09 17:31:09,197 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-4.1-bin.zip)
+2018-04-09 17:31:09,199 INFO  ProjectFixService - Build info for "/tmp/rdisk/755/src/Android-ActionItemBadge-master/build.gradle": [buildToolsVersion=27.0.0,compileSdkVersion=27,minSdkVersion=14,targetSdkVersion=27]
+2018-04-09 17:31:09,199 INFO  ProjectFixService - Project was maybe fixed
+2018-04-09 17:31:09,199 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-09 17:31:09,199 INFO  SysUtils - Execute command: [/tmp/rdisk/755/src/Android-ActionItemBadge-master/gradlew, -b, /tmp/rdisk/755/src/Android-ActionItemBadge-master/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-09 17:31:17,064 INFO  ProjectTaskService - Detected possible tasks: 66
+2018-04-09 17:31:17,064 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-09 17:31:17,064 INFO  SysUtils - Execute command: [/tmp/rdisk/755/src/Android-ActionItemBadge-master/gradlew, -b, /tmp/rdisk/755/src/Android-ActionItemBadge-master/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-09 17:31:55,051 INFO  SysUtils - Configuration on demand is an incubating feature.
+Configuration 'compile' in project ':app' is deprecated. Use 'implementation' instead.
+:app:preBuild UP-TO-DATE
+:library:preBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:checkDebugManifest
+:library:processDebugManifest
+:app:preDebugBuild
+:library:compileDebugAidl
+:app:compileDebugAidl
+:library:packageDebugRenderscript NO-SOURCE
+:app:compileDebugRenderscript
+:app:checkDebugManifest
+:app:generateDebugBuildConfig
+:app:prepareLintJar
+:app:generateDebugResValues
+:app:generateDebugResources
+:library:compileDebugRenderscript
+:library:generateDebugResValues
+:library:generateDebugResources
+:library:packageDebugResources
+:app:mergeDebugResources
+:app:createDebugCompatibleScreenManifests
+:app:processDebugManifest
+:app:splitsDiscoveryTaskDebug
+:library:platformAttrExtractor
+:library:generateDebugBuildConfig
+:library:prepareLintJar
+:library:javaPreCompileDebug
+:library:processDebugJavaRes NO-SOURCE
+:app:compileDebugNdk NO-SOURCE
+:app:mergeDebugShaders
+:app:compileDebugShaders
+:app:generateDebugAssets
+:library:mergeDebugShaders
+:library:compileDebugShaders
+:library:generateDebugAssets
+:library:mergeDebugAssets
+:app:mergeDebugAssets
+:app:mergeDebugJniLibFolders
+:library:compileDebugNdk NO-SOURCE
+:library:mergeDebugJniLibFolders
+:library:transformNativeLibsWithMergeJniLibsForDebug
+:library:transformNativeLibsWithStripDebugSymbolForDebug
+:library:transformNativeLibsWithIntermediateJniLibsForDebug
+:app:processDebugJavaRes NO-SOURCE
+:app:validateSigningDebug
+:library:preReleaseBuild UP-TO-DATE
+:library:checkReleaseManifest
+:library:processReleaseManifest
+:app:preReleaseBuild
+:library:compileReleaseAidl
+:app:compileReleaseAidl
+:library:packageReleaseRenderscript NO-SOURCE
+:app:compileReleaseRenderscript
+:app:checkReleaseManifest
+:app:generateReleaseBuildConfig
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:library:compileReleaseRenderscript
+:library:generateReleaseResValues
+:library:generateReleaseResources
+:library:packageReleaseResources
+:app:mergeReleaseResources
+:app:createReleaseCompatibleScreenManifests
+:app:processReleaseManifest
+:app:splitsDiscoveryTaskRelease
+:library:generateReleaseBuildConfig
+:library:javaPreCompileRelease
+:library:processReleaseJavaRes NO-SOURCE
+:app:compileReleaseNdk NO-SOURCE
+:app:mergeReleaseShaders
+:app:compileReleaseShaders
+:app:generateReleaseAssets
+:library:mergeReleaseShaders
+:library:compileReleaseShaders
+:library:generateReleaseAssets
+:library:mergeReleaseAssets
+:app:mergeReleaseAssets
+:app:mergeReleaseJniLibFolders
+:library:compileReleaseNdk NO-SOURCE
+:library:mergeReleaseJniLibFolders
+:library:transformNativeLibsWithMergeJniLibsForRelease
+:library:transformNativeLibsWithStripDebugSymbolForRelease
+:library:transformNativeLibsWithIntermediateJniLibsForRelease
+:app:processReleaseJavaRes NO-SOURCE
+:library:processDebugResources
+:app:processDebugResources
+:app:generateDebugSources
+:library:generateDebugSources
+:library:compileDebugJavaWithJavacNote: /tmp/rdisk/755/src/Android-ActionItemBadge-master/library/src/main/java/com/mikepenz/actionitembadge/library/utils/UIUtil.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:library:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:app:javaPreCompileDebug
+:app:compileDebugJavaWithJavac
+:app:compileDebugSources
+:app:transformClassesWithDexBuilderForDebug
+:app:transformDexArchiveWithExternalLibsDexMergerForDebug
+:app:transformDexArchiveWithDexMergerForDebug
+:app:transformNativeLibsWithMergeJniLibsForDebug
+:app:transformNativeLibsWithStripDebugSymbolForDebug
+:app:transformResourcesWithMergeJavaResForDebug
+:app:packageDebug
+:app:assembleDebug
+:library:processReleaseResources
+:app:processReleaseResources
+:app:generateReleaseSources
+:library:generateReleaseSources
+:library:compileReleaseJavaWithJavacNote: /tmp/rdisk/755/src/Android-ActionItemBadge-master/library/src/main/java/com/mikepenz/actionitembadge/library/utils/UIUtil.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:library:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease
+:app:javaPreCompileRelease
+:app:compileReleaseJavaWithJavac
+:app:compileReleaseSources
+:app:transformClassesWithPreDexForRelease
+:app:transformDexWithDexForRelease
+:app:transformNativeLibsWithMergeJniLibsForRelease
+:app:transformNativeLibsWithStripDebugSymbolForRelease
+:app:transformResourcesWithMergeJavaResForRelease
+:app:packageRelease
+:app:lintVitalRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL in 37s
+88 actionable tasks: 88 executed
+
+2018-04-09 17:31:55,118 INFO  FullProcessService - Found APK file: /tmp/rdisk/755/src/Android-ActionItemBadge-master/app/build/outputs/apk/debug/app-debug.apk

@@ -1,0 +1,462 @@
+2018-04-09 11:06:30,258 INFO  DownloadService - Downloading "https://github.com/koush/AndroidAsync/archive/master.zip", attempt 3
+2018-04-09 11:06:30,736 INFO  DownloadService - Downloaded https://github.com/koush/AndroidAsync/archive/master.zip, attempt 3
+2018-04-09 11:06:30,736 INFO  DownloadService - Size of file "/tmp/rdisk/831/master.zip": 803 KB
+2018-04-09 11:06:30,736 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-09 11:06:30,737 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/831/master.zip: true
+2018-04-09 11:06:30,737 DEBUG ZipUtil - Extracting '/tmp/rdisk/831/master.zip' into '/tmp/rdisk/831/src'.
+2018-04-09 11:06:30,783 INFO  FullProcessService - Size of directory with sources: 1 MB
+2018-04-09 11:06:30,784 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/831/src]
+2018-04-09 11:06:30,795 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/831/src/.git/
+
+2018-04-09 11:06:30,801 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/831/src/AndroidAsync-master/gradlew
+2018-04-09 11:06:30,808 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/831/src/AndroidAsync-master/AndroidAsync/build.gradle /tmp/rdisk/831/src/AndroidAsync-master/AndroidAsyncSample/build.gradle /tmp/rdisk/831/src/AndroidAsync-master/AndroidAsyncStetho/build.gradle /tmp/rdisk/831/src/AndroidAsync-master/build.gradle
+2018-04-09 11:06:30,814 INFO  ProjectBuildService - All script(s): /tmp/rdisk/831/src/AndroidAsync-master/settings.gradle /tmp/rdisk/831/src/AndroidAsync-master/build.gradle /tmp/rdisk/831/src/AndroidAsync-master/AndroidAsyncStetho/build.gradle /tmp/rdisk/831/src/AndroidAsync-master/AndroidAsyncSample/build.gradle /tmp/rdisk/831/src/AndroidAsync-master/AndroidAsync/build.gradle
+2018-04-09 11:06:30,815 INFO  DownloadService - Downloading "https://raw.githubusercontent.com/koush/mvn-repo/master/maven.gradle", attempt 3
+2018-04-09 11:06:31,007 INFO  DownloadService - Downloaded https://raw.githubusercontent.com/koush/mvn-repo/master/maven.gradle, attempt 3
+2018-04-09 11:06:31,007 INFO  ProjectBuildService - Remote scripts: https://raw.githubusercontent.com/koush/mvn-repo/master/maven.gradle
+2018-04-09 11:06:31,007 INFO  ProjectFixService - Fixing project...
+2018-04-09 11:06:31,022 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/831/src/AndroidAsync-master/AndroidAsync/local.properties
+2018-04-09 11:06:31,023 INFO  ProjectFixService - Build info for "/tmp/rdisk/831/src/AndroidAsync-master/AndroidAsync/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=9,targetSdkVersion=24]
+2018-04-09 11:06:31,023 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/831/src/AndroidAsync-master/AndroidAsync/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=9,targetSdkVersion=24]
+2018-04-09 11:06:31,026 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/831/src/AndroidAsync-master/AndroidAsyncSample/local.properties
+2018-04-09 11:06:31,027 INFO  ProjectFixService - Build info for "/tmp/rdisk/831/src/AndroidAsync-master/AndroidAsyncSample/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=9,targetSdkVersion=24]
+2018-04-09 11:06:31,027 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/831/src/AndroidAsync-master/AndroidAsyncSample/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=9,targetSdkVersion=24]
+2018-04-09 11:06:31,028 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/831/src/AndroidAsync-master/AndroidAsyncStetho/local.properties
+2018-04-09 11:06:31,029 INFO  ProjectFixService - Build info for "/tmp/rdisk/831/src/AndroidAsync-master/AndroidAsyncStetho/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=9,targetSdkVersion=22]
+2018-04-09 11:06:31,029 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/831/src/AndroidAsync-master/AndroidAsyncStetho/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=9,targetSdkVersion=22]
+2018-04-09 11:06:31,030 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/831/src/AndroidAsync-master/local.properties
+2018-04-09 11:06:31,030 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-3.1-all.zip
+2018-04-09 11:06:31,031 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-3.1-bin.zip)
+2018-04-09 11:06:31,032 INFO  ProjectFixService - Build info for "/tmp/rdisk/831/src/AndroidAsync-master/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=9,targetSdkVersion=22]
+2018-04-09 11:06:31,033 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/831/src/AndroidAsync-master/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=9,targetSdkVersion=22]
+2018-04-09 11:06:31,033 INFO  ProjectFixService - Project was maybe fixed
+2018-04-09 11:06:31,033 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-09 11:06:31,033 INFO  SysUtils - Execute command: [/tmp/rdisk/831/src/AndroidAsync-master/gradlew, -b, /tmp/rdisk/831/src/AndroidAsync-master/AndroidAsync/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-09 11:06:40,721 INFO  ProjectTaskService - Detected possible tasks: 70
+2018-04-09 11:06:40,721 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar androidJavadocs deviceCheck lint androidSourcesJar testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll androidJavadocsJar test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-09 11:06:40,722 INFO  SysUtils - Execute command: [/tmp/rdisk/831/src/AndroidAsync-master/gradlew, -b, /tmp/rdisk/831/src/AndroidAsync-master/AndroidAsync/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, androidJavadocs, -x, deviceCheck, -x, lint, -x, androidSourcesJar, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, androidJavadocsJar, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-09 11:06:47,200 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-09 11:06:47,200 INFO  SysUtils - Configuration on demand is an incubating feature.
+Incremental java compilation is an incubating feature.
+The TaskInputs.source(Object) method has been deprecated and is scheduled to be removed in Gradle 4.0. Please use TaskInputs.file(Object).skipWhenEmpty() instead.
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Task 'androidJavadocs' not found in project ':AndroidAsync'.
+
+* Try:
+Run gradlew tasks to get a list of available tasks. Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.execution.TaskSelectionException: Task 'androidJavadocs' not found in project ':AndroidAsync'.
+	at org.gradle.execution.TaskSelector.getSelection(TaskSelector.java:100)
+	at org.gradle.execution.TaskSelector.getFilter(TaskSelector.java:63)
+	at org.gradle.execution.ExcludedTaskFilteringBuildConfigurationAction.configure(ExcludedTaskFilteringBuildConfigurationAction.java:42)
+	at org.gradle.execution.DefaultBuildConfigurationActionExecuter.configure(DefaultBuildConfigurationActionExecuter.java:48)
+	at org.gradle.execution.DefaultBuildConfigurationActionExecuter.select(DefaultBuildConfigurationActionExecuter.java:36)
+	at org.gradle.initialization.DefaultGradleLauncher$3.run(DefaultGradleLauncher.java:175)
+	at org.gradle.internal.Factories$1.create(Factories.java:22)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:91)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:53)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:172)
+	at org.gradle.initialization.DefaultGradleLauncher.access$200(DefaultGradleLauncher.java:33)
+	at org.gradle.initialization.DefaultGradleLauncher$1.create(DefaultGradleLauncher.java:112)
+	at org.gradle.initialization.DefaultGradleLauncher$1.create(DefaultGradleLauncher.java:106)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:91)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:63)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:92)
+	at org.gradle.launcher.exec.GradleBuildController.run(GradleBuildController.java:66)
+	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:28)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:41)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.tooling.internal.provider.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:79)
+	at org.gradle.tooling.internal.provider.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:51)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:51)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:173)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:244)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:217)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:33)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:174)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:60)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:37)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:30)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:129)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:61)
+
+
+BUILD FAILED
+
+Total time: 6.1 secs
+
+2018-04-09 11:06:47,200 ERROR ProjectBuildService - Excluded tasks were detected wrong
+2018-04-09 11:06:47,201 INFO  SysUtils - Execute command: [/tmp/rdisk/831/src/AndroidAsync-master/gradlew, -b, /tmp/rdisk/831/src/AndroidAsync-master/AndroidAsync/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-09 11:07:07,868 INFO  SysUtils - Configuration on demand is an incubating feature.
+Incremental java compilation is an incubating feature.
+The TaskInputs.source(Object) method has been deprecated and is scheduled to be removed in Gradle 4.0. Please use TaskInputs.file(Object).skipWhenEmpty() instead.
+:AndroidAsync:preBuild UP-TO-DATE
+:AndroidAsync:preDebugBuild UP-TO-DATE
+:AndroidAsync:checkDebugManifest
+:AndroidAsync:prepareDebugDependencies
+:AndroidAsync:compileDebugAidl
+:AndroidAsync:compileDebugNdk UP-TO-DATE
+:AndroidAsync:compileLint
+:AndroidAsync:copyDebugLint UP-TO-DATE
+:AndroidAsync:mergeDebugShaders
+:AndroidAsync:compileDebugShaders
+:AndroidAsync:generateDebugAssets
+:AndroidAsync:mergeDebugAssets
+:AndroidAsync:mergeDebugProguardFiles
+:AndroidAsync:packageDebugRenderscript UP-TO-DATE
+:AndroidAsync:compileDebugRenderscript
+:AndroidAsync:generateDebugResValues
+:AndroidAsync:generateDebugResources
+:AndroidAsync:packageDebugResources
+:AndroidAsync:processDebugManifest
+:AndroidAsync:generateDebugBuildConfig
+:AndroidAsync:processDebugResources
+:AndroidAsync:generateDebugSources
+:AndroidAsync:incrementalDebugJavaCompilationSafeguard
+:AndroidAsync:compileDebugJavaWithJavac
+:AndroidAsync:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+:AndroidAsync:processDebugJavaRes UP-TO-DATE
+:AndroidAsync:transformResourcesWithMergeJavaResForDebug
+:AndroidAsync:transformClassesAndResourcesWithSyncLibJarsForDebug
+:AndroidAsync:mergeDebugJniLibFolders
+:AndroidAsync:transformNative_libsWithMergeJniLibsForDebug
+:AndroidAsync:transformNative_libsWithSyncJniLibsForDebug
+:AndroidAsync:bundleDebug
+:AndroidAsync:compileDebugSources
+:AndroidAsync:assembleDebug
+:AndroidAsync:preReleaseBuild UP-TO-DATE
+:AndroidAsync:checkReleaseManifest
+:AndroidAsync:prepareReleaseDependencies
+:AndroidAsync:compileReleaseAidl
+:AndroidAsync:compileReleaseNdk UP-TO-DATE
+:AndroidAsync:copyReleaseLint UP-TO-DATE
+:AndroidAsync:mergeReleaseShaders
+:AndroidAsync:compileReleaseShaders
+:AndroidAsync:generateReleaseAssets
+:AndroidAsync:mergeReleaseAssets
+:AndroidAsync:mergeReleaseProguardFiles
+:AndroidAsync:packageReleaseRenderscript UP-TO-DATE
+:AndroidAsync:compileReleaseRenderscript
+:AndroidAsync:generateReleaseResValues
+:AndroidAsync:generateReleaseResources
+:AndroidAsync:packageReleaseResources
+:AndroidAsync:processReleaseManifest
+:AndroidAsync:generateReleaseBuildConfig
+:AndroidAsync:processReleaseResources
+:AndroidAsync:generateReleaseSources
+:AndroidAsync:incrementalReleaseJavaCompilationSafeguard
+:AndroidAsync:compileReleaseJavaWithJavac
+:AndroidAsync:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+:AndroidAsync:processReleaseJavaRes UP-TO-DATE
+:AndroidAsync:transformResourcesWithMergeJavaResForRelease
+:AndroidAsync:transformClassesAndResourcesWithSyncLibJarsForRelease
+:AndroidAsync:mergeReleaseJniLibFolders
+:AndroidAsync:transformNative_libsWithMergeJniLibsForRelease
+:AndroidAsync:transformNative_libsWithSyncJniLibsForRelease
+:AndroidAsync:bundleRelease
+:AndroidAsync:compileReleaseSources
+:AndroidAsync:assembleRelease
+:AndroidAsync:assemble
+:AndroidAsync:lint
+Ran lint on variant release: 46 issues found
+Ran lint on variant debug: 46 issues found
+Wrote HTML report to file:///tmp/rdisk/831/src/AndroidAsync-master/AndroidAsync/build/outputs/lint-results-debug.html
+Wrote XML report to file:///tmp/rdisk/831/src/AndroidAsync-master/AndroidAsync/build/outputs/lint-results-debug.xml
+:AndroidAsync:incrementalDebugUnitTestJavaCompilationSafeguard UP-TO-DATE
+:AndroidAsync:preDebugUnitTestBuild UP-TO-DATE
+:AndroidAsync:prepareDebugUnitTestDependencies
+:AndroidAsync:compileDebugUnitTestJavaWithJavac UP-TO-DATE
+:AndroidAsync:processDebugUnitTestJavaRes UP-TO-DATE
+:AndroidAsync:compileDebugUnitTestSources UP-TO-DATE
+:AndroidAsync:mockableAndroidJar
+:AndroidAsync:assembleDebugUnitTest
+:AndroidAsync:testDebugUnitTest UP-TO-DATE
+:AndroidAsync:incrementalReleaseUnitTestJavaCompilationSafeguard UP-TO-DATE
+:AndroidAsync:preReleaseUnitTestBuild UP-TO-DATE
+:AndroidAsync:prepareReleaseUnitTestDependencies
+:AndroidAsync:compileReleaseUnitTestJavaWithJavac UP-TO-DATE
+:AndroidAsync:processReleaseUnitTestJavaRes UP-TO-DATE
+:AndroidAsync:compileReleaseUnitTestSources UP-TO-DATE
+:AndroidAsync:assembleReleaseUnitTest
+:AndroidAsync:testReleaseUnitTest UP-TO-DATE
+:AndroidAsync:test UP-TO-DATE
+:AndroidAsync:check
+:AndroidAsync:build
+
+BUILD SUCCESSFUL
+
+Total time: 20.451 secs
+
+2018-04-09 11:07:07,894 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-09 11:07:07,895 INFO  SysUtils - Execute command: [/tmp/rdisk/831/src/AndroidAsync-master/gradlew, -b, /tmp/rdisk/831/src/AndroidAsync-master/AndroidAsyncSample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-09 11:07:15,037 INFO  ProjectTaskService - Detected possible tasks: 74
+2018-04-09 11:07:15,037 INFO  ProjectTaskService - Excluded tasks (22): lintDebug mockableAndroidJar androidJavadocs deviceCheck lint androidSourcesJar testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll androidJavadocsJar test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-09 11:07:15,037 INFO  SysUtils - Execute command: [/tmp/rdisk/831/src/AndroidAsync-master/gradlew, -b, /tmp/rdisk/831/src/AndroidAsync-master/AndroidAsyncSample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, androidJavadocs, -x, deviceCheck, -x, lint, -x, androidSourcesJar, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, androidJavadocsJar, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-09 11:07:21,660 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-09 11:07:21,660 INFO  SysUtils - Configuration on demand is an incubating feature.
+Incremental java compilation is an incubating feature.
+The TaskInputs.source(Object) method has been deprecated and is scheduled to be removed in Gradle 4.0. Please use TaskInputs.file(Object).skipWhenEmpty() instead.
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Task 'androidJavadocs' not found in project ':AndroidAsyncSample'.
+
+* Try:
+Run gradlew tasks to get a list of available tasks. Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.execution.TaskSelectionException: Task 'androidJavadocs' not found in project ':AndroidAsyncSample'.
+	at org.gradle.execution.TaskSelector.getSelection(TaskSelector.java:100)
+	at org.gradle.execution.TaskSelector.getFilter(TaskSelector.java:63)
+	at org.gradle.execution.ExcludedTaskFilteringBuildConfigurationAction.configure(ExcludedTaskFilteringBuildConfigurationAction.java:42)
+	at org.gradle.execution.DefaultBuildConfigurationActionExecuter.configure(DefaultBuildConfigurationActionExecuter.java:48)
+	at org.gradle.execution.DefaultBuildConfigurationActionExecuter.select(DefaultBuildConfigurationActionExecuter.java:36)
+	at org.gradle.initialization.DefaultGradleLauncher$3.run(DefaultGradleLauncher.java:175)
+	at org.gradle.internal.Factories$1.create(Factories.java:22)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:91)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:53)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:172)
+	at org.gradle.initialization.DefaultGradleLauncher.access$200(DefaultGradleLauncher.java:33)
+	at org.gradle.initialization.DefaultGradleLauncher$1.create(DefaultGradleLauncher.java:112)
+	at org.gradle.initialization.DefaultGradleLauncher$1.create(DefaultGradleLauncher.java:106)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:91)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:63)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:92)
+	at org.gradle.launcher.exec.GradleBuildController.run(GradleBuildController.java:66)
+	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:28)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:41)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.tooling.internal.provider.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:79)
+	at org.gradle.tooling.internal.provider.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:51)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:51)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:173)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:244)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:217)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:33)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:174)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:60)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:37)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:30)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:129)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:61)
+
+
+BUILD FAILED
+
+Total time: 6.32 secs
+
+2018-04-09 11:07:21,660 ERROR ProjectBuildService - Excluded tasks were detected wrong
+2018-04-09 11:07:21,660 INFO  SysUtils - Execute command: [/tmp/rdisk/831/src/AndroidAsync-master/gradlew, -b, /tmp/rdisk/831/src/AndroidAsync-master/AndroidAsyncSample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-09 11:07:36,792 INFO  SysUtils - Configuration on demand is an incubating feature.
+Incremental java compilation is an incubating feature.
+The TaskInputs.source(Object) method has been deprecated and is scheduled to be removed in Gradle 4.0. Please use TaskInputs.file(Object).skipWhenEmpty() instead.
+:AndroidAsync:preBuild UP-TO-DATE
+:AndroidAsync:preReleaseBuild UP-TO-DATE
+:AndroidAsync:checkReleaseManifest
+:AndroidAsync:prepareReleaseDependencies
+:AndroidAsync:compileReleaseAidl UP-TO-DATE
+:AndroidAsync:compileReleaseNdk UP-TO-DATE
+:AndroidAsync:compileLint UP-TO-DATE
+:AndroidAsync:copyReleaseLint UP-TO-DATE
+:AndroidAsync:mergeReleaseShaders UP-TO-DATE
+:AndroidAsync:compileReleaseShaders UP-TO-DATE
+:AndroidAsync:generateReleaseAssets UP-TO-DATE
+:AndroidAsync:mergeReleaseAssets UP-TO-DATE
+:AndroidAsync:mergeReleaseProguardFiles UP-TO-DATE
+:AndroidAsync:packageReleaseRenderscript UP-TO-DATE
+:AndroidAsync:compileReleaseRenderscript UP-TO-DATE
+:AndroidAsync:generateReleaseResValues UP-TO-DATE
+:AndroidAsync:generateReleaseResources UP-TO-DATE
+:AndroidAsync:packageReleaseResources UP-TO-DATE
+:AndroidAsync:processReleaseManifest UP-TO-DATE
+:AndroidAsync:generateReleaseBuildConfig UP-TO-DATE
+:AndroidAsync:processReleaseResources UP-TO-DATE
+:AndroidAsync:generateReleaseSources UP-TO-DATE
+:AndroidAsync:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:AndroidAsync:compileReleaseJavaWithJavac UP-TO-DATE
+:AndroidAsync:processReleaseJavaRes UP-TO-DATE
+:AndroidAsync:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:AndroidAsync:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:AndroidAsync:mergeReleaseJniLibFolders UP-TO-DATE
+:AndroidAsync:transformNative_libsWithMergeJniLibsForRelease UP-TO-DATE
+:AndroidAsync:transformNative_libsWithSyncJniLibsForRelease UP-TO-DATE
+:AndroidAsync:bundleRelease UP-TO-DATE
+:AndroidAsyncSample:preBuild UP-TO-DATE
+:AndroidAsyncSample:preDebugBuild UP-TO-DATE
+:AndroidAsyncSample:checkDebugManifest
+:AndroidAsyncSample:preReleaseBuild UP-TO-DATE
+:AndroidAsyncSample:prepareAndroidAsyncMasterAndroidAsyncUnspecifiedLibrary
+:AndroidAsyncSample:prepareDebugDependencies
+:AndroidAsyncSample:compileDebugAidl
+:AndroidAsyncSample:compileDebugRenderscript
+:AndroidAsyncSample:generateDebugBuildConfig
+:AndroidAsyncSample:generateDebugResValues
+:AndroidAsyncSample:generateDebugResources
+:AndroidAsyncSample:mergeDebugResources
+:AndroidAsyncSample:processDebugManifest
+:AndroidAsyncSample:processDebugResources
+:AndroidAsyncSample:generateDebugSources
+:AndroidAsyncSample:incrementalDebugJavaCompilationSafeguard
+:AndroidAsyncSample:compileDebugJavaWithJavac
+:AndroidAsyncSample:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: /tmp/rdisk/831/src/AndroidAsync-master/AndroidAsyncSample/src/com/koushikdutta/async/sample/MainActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+:AndroidAsyncSample:compileDebugNdk UP-TO-DATE
+:AndroidAsyncSample:compileDebugSources
+:AndroidAsyncSample:mergeDebugShaders
+:AndroidAsyncSample:compileDebugShaders
+:AndroidAsyncSample:generateDebugAssets
+:AndroidAsyncSample:mergeDebugAssets
+:AndroidAsyncSample:transformClassesWithDexForDebug
+:AndroidAsyncSample:mergeDebugJniLibFolders
+:AndroidAsyncSample:transformNative_libsWithMergeJniLibsForDebug
+:AndroidAsyncSample:processDebugJavaRes UP-TO-DATE
+:AndroidAsyncSample:transformResourcesWithMergeJavaResForDebug
+:AndroidAsyncSample:validateSigningDebug
+:AndroidAsyncSample:packageDebug
+:AndroidAsyncSample:assembleDebug
+:AndroidAsyncSample:checkReleaseManifest
+:AndroidAsyncSample:prepareReleaseDependencies
+:AndroidAsyncSample:compileReleaseAidl
+:AndroidAsyncSample:compileReleaseRenderscript
+:AndroidAsyncSample:generateReleaseBuildConfig
+:AndroidAsyncSample:generateReleaseResValues
+:AndroidAsyncSample:generateReleaseResources
+:AndroidAsyncSample:mergeReleaseResources
+:AndroidAsyncSample:processReleaseManifest
+:AndroidAsyncSample:processReleaseResources
+:AndroidAsyncSample:generateReleaseSources
+:AndroidAsyncSample:incrementalReleaseJavaCompilationSafeguard
+:AndroidAsyncSample:compileReleaseJavaWithJavac
+:AndroidAsyncSample:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: /tmp/rdisk/831/src/AndroidAsync-master/AndroidAsyncSample/src/com/koushikdutta/async/sample/MainActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+:AndroidAsyncSample:compileReleaseNdk UP-TO-DATE
+:AndroidAsyncSample:compileReleaseSources
+:AndroidAsyncSample:lintVitalRelease
+:AndroidAsyncSample:mergeReleaseShaders
+:AndroidAsyncSample:compileReleaseShaders
+:AndroidAsyncSample:generateReleaseAssets
+:AndroidAsyncSample:mergeReleaseAssets
+:AndroidAsyncSample:transformClassesWithDexForRelease
+:AndroidAsyncSample:mergeReleaseJniLibFolders
+:AndroidAsyncSample:transformNative_libsWithMergeJniLibsForRelease
+:AndroidAsyncSample:processReleaseJavaRes UP-TO-DATE
+:AndroidAsyncSample:transformResourcesWithMergeJavaResForRelease
+:AndroidAsyncSample:packageRelease
+:AndroidAsyncSample:assembleRelease
+:AndroidAsyncSample:assemble
+:AndroidAsyncSample:lint
+Ran lint on variant debug: 17 issues found
+Ran lint on variant release: 17 issues found
+Wrote HTML report to file:///tmp/rdisk/831/src/AndroidAsync-master/AndroidAsyncSample/build/outputs/lint-results-debug.html
+Wrote XML report to file:///tmp/rdisk/831/src/AndroidAsync-master/AndroidAsyncSample/build/outputs/lint-results-debug.xml
+:AndroidAsyncSample:incrementalDebugUnitTestJavaCompilationSafeguard UP-TO-DATE
+:AndroidAsyncSample:preDebugUnitTestBuild UP-TO-DATE
+:AndroidAsyncSample:prepareDebugUnitTestDependencies
+:AndroidAsyncSample:compileDebugUnitTestJavaWithJavac UP-TO-DATE
+:AndroidAsyncSample:processDebugUnitTestJavaRes UP-TO-DATE
+:AndroidAsyncSample:compileDebugUnitTestSources UP-TO-DATE
+:AndroidAsyncSample:mockableAndroidJar
+:AndroidAsyncSample:assembleDebugUnitTest
+:AndroidAsyncSample:testDebugUnitTest UP-TO-DATE
+:AndroidAsyncSample:incrementalReleaseUnitTestJavaCompilationSafeguard UP-TO-DATE
+:AndroidAsyncSample:preReleaseUnitTestBuild UP-TO-DATE
+:AndroidAsyncSample:prepareReleaseUnitTestDependencies
+:AndroidAsyncSample:compileReleaseUnitTestJavaWithJavac UP-TO-DATE
+:AndroidAsyncSample:processReleaseUnitTestJavaRes UP-TO-DATE
+:AndroidAsyncSample:compileReleaseUnitTestSources UP-TO-DATE
+:AndroidAsyncSample:assembleReleaseUnitTest
+:AndroidAsyncSample:testReleaseUnitTest UP-TO-DATE
+:AndroidAsyncSample:test UP-TO-DATE
+:AndroidAsyncSample:check
+:AndroidAsyncSample:build
+
+BUILD SUCCESSFUL
+
+Total time: 14.422 secs
+
+2018-04-09 11:07:36,837 INFO  FullProcessService - Found APK file: /tmp/rdisk/831/src/AndroidAsync-master/AndroidAsyncSample/build/outputs/apk/AndroidAsyncSample-release-unsigned.apk

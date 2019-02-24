@@ -1,0 +1,196 @@
+2018-04-08 13:33:20,757 INFO  DownloadService - Downloading "https://github.com/wada811/Android-DialogFragments/archive/master.zip", attempt 3
+2018-04-08 13:33:21,444 INFO  DownloadService - Downloaded https://github.com/wada811/Android-DialogFragments/archive/master.zip, attempt 3
+2018-04-08 13:33:21,444 INFO  DownloadService - Size of file "/tmp/rdisk/983/master.zip": 561 KB
+2018-04-08 13:33:21,444 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-08 13:33:21,445 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/983/master.zip: true
+2018-04-08 13:33:21,445 DEBUG ZipUtil - Extracting '/tmp/rdisk/983/master.zip' into '/tmp/rdisk/983/src'.
+2018-04-08 13:33:21,475 INFO  FullProcessService - Size of directory with sources: 790 KB
+2018-04-08 13:33:21,475 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/983/src]
+2018-04-08 13:33:21,493 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/983/src/.git/
+
+2018-04-08 13:33:21,500 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/983/src/Android-DialogFragments-master/gradlew
+2018-04-08 13:33:21,506 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/983/src/Android-DialogFragments-master/library/build.gradle /tmp/rdisk/983/src/Android-DialogFragments-master/sample/build.gradle /tmp/rdisk/983/src/Android-DialogFragments-master/build.gradle
+2018-04-08 13:33:21,511 INFO  ProjectBuildService - All script(s): /tmp/rdisk/983/src/Android-DialogFragments-master/settings.gradle /tmp/rdisk/983/src/Android-DialogFragments-master/sample/build.gradle /tmp/rdisk/983/src/Android-DialogFragments-master/library/build.gradle /tmp/rdisk/983/src/Android-DialogFragments-master/build.gradle
+2018-04-08 13:33:21,511 INFO  ProjectBuildService - Remote scripts: none
+2018-04-08 13:33:21,511 INFO  ProjectFixService - Fixing project...
+2018-04-08 13:33:21,525 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/983/src/Android-DialogFragments-master/library/local.properties
+2018-04-08 13:33:21,525 INFO  ProjectFixService - Build info for "/tmp/rdisk/983/src/Android-DialogFragments-master/library/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=8,targetSdkVersion=22]
+2018-04-08 13:33:21,526 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/983/src/Android-DialogFragments-master/sample/local.properties
+2018-04-08 13:33:21,526 INFO  ProjectFixService - Build info for "/tmp/rdisk/983/src/Android-DialogFragments-master/sample/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=8,targetSdkVersion=22]
+2018-04-08 13:33:21,527 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/983/src/Android-DialogFragments-master/local.properties
+2018-04-08 13:33:21,527 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-08 13:33:21,528 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-08 13:33:21,529 INFO  ProjectFixService - Build info for "/tmp/rdisk/983/src/Android-DialogFragments-master/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=8,targetSdkVersion=22]
+2018-04-08 13:33:21,529 INFO  ProjectFixService - Project was maybe fixed
+2018-04-08 13:33:21,530 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-08 13:33:21,530 INFO  SysUtils - Execute command: [/tmp/rdisk/983/src/Android-DialogFragments-master/gradlew, -b, /tmp/rdisk/983/src/Android-DialogFragments-master/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-08 13:33:29,690 INFO  ProjectTaskService - Detected possible tasks: 63
+2018-04-08 13:33:29,691 INFO  ProjectTaskService - Excluded tasks (14): lintDebug mockableAndroidJar deviceCheck lint uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest lintRelease testDebug
+2018-04-08 13:33:29,691 INFO  SysUtils - Execute command: [/tmp/rdisk/983/src/Android-DialogFragments-master/gradlew, -b, /tmp/rdisk/983/src/Android-DialogFragments-master/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, lintRelease, -x, testDebug, build]
+2018-04-08 13:33:41,131 INFO  SysUtils - Configuration on demand is an incubating feature.
+:library:compileLint
+:library:copyDebugLint UP-TO-DATE
+:library:preBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:checkDebugManifest
+:library:preDebugAndroidTestBuild UP-TO-DATE
+:library:preReleaseBuild UP-TO-DATE
+:library:prepareComAndroidSupportAppcompatV72211Library
+:library:prepareComAndroidSupportSupportV42211Library
+:library:prepareDebugDependencies
+:library:compileDebugAidl
+:library:compileDebugRenderscript
+:library:generateDebugBuildConfig
+:library:generateDebugAssets UP-TO-DATE
+:library:mergeDebugAssets
+:library:generateDebugResValues
+:library:generateDebugResources
+:library:mergeDebugResources
+:library:processDebugManifest
+:library:processDebugResources
+:library:generateDebugSources
+:library:compileDebugJava
+:library:extractDebugAnnotations
+:library:mergeDebugProguardFiles
+:library:processDebugJavaRes UP-TO-DATE
+:library:packageDebugJar
+:library:compileDebugNdk UP-TO-DATE
+:library:packageDebugJniLibs UP-TO-DATE
+:library:packageDebugLocalJar UP-TO-DATE
+:library:packageDebugRenderscript UP-TO-DATE
+:library:packageDebugResources
+:library:bundleDebug
+:library:assembleDebug
+:library:copyReleaseLint UP-TO-DATE
+:library:checkReleaseManifest
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl
+:library:compileReleaseRenderscript
+:library:generateReleaseBuildConfig
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets
+:library:generateReleaseResValues
+:library:generateReleaseResources
+:library:mergeReleaseResources
+:library:processReleaseManifest
+:library:processReleaseResources
+:library:generateReleaseSources
+:library:compileReleaseJava
+:library:extractReleaseAnnotations
+:library:mergeReleaseProguardFiles
+:library:processReleaseJavaRes UP-TO-DATE
+:library:packageReleaseJar
+:library:compileReleaseNdk UP-TO-DATE
+:library:packageReleaseJniLibs UP-TO-DATE
+:library:packageReleaseLocalJar UP-TO-DATE
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:packageReleaseResources
+:library:bundleRelease
+:library:assembleRelease
+:library:assemble
+:library:build
+
+BUILD SUCCESSFUL
+
+Total time: 11.001 secs
+
+2018-04-08 13:33:41,171 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-08 13:33:41,171 INFO  SysUtils - Execute command: [/tmp/rdisk/983/src/Android-DialogFragments-master/gradlew, -b, /tmp/rdisk/983/src/Android-DialogFragments-master/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-08 13:33:47,204 INFO  ProjectTaskService - Detected possible tasks: 59
+2018-04-08 13:33:47,204 INFO  ProjectTaskService - Excluded tasks (17): lintDebug mockableAndroidJar deviceCheck lint uninstallRelease uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest installDebug lintRelease testDebug uninstallDebug
+2018-04-08 13:33:47,204 INFO  SysUtils - Execute command: [/tmp/rdisk/983/src/Android-DialogFragments-master/gradlew, -b, /tmp/rdisk/983/src/Android-DialogFragments-master/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, uninstallDebug, build]
+2018-04-08 13:34:16,402 INFO  SysUtils - Configuration on demand is an incubating feature.
+:sample:preBuild UP-TO-DATE
+:sample:preDebugBuild UP-TO-DATE
+:sample:compileDebugNdk UP-TO-DATE
+:library:compileLint
+:library:copyReleaseLint UP-TO-DATE
+:library:preBuild UP-TO-DATE
+:library:preReleaseBuild UP-TO-DATE
+:library:checkReleaseManifest
+:library:preDebugAndroidTestBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:prepareComAndroidSupportAppcompatV72211Library UP-TO-DATE
+:library:prepareComAndroidSupportSupportV42211Library UP-TO-DATE
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl UP-TO-DATE
+:library:compileReleaseRenderscript UP-TO-DATE
+:library:generateReleaseBuildConfig UP-TO-DATE
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets UP-TO-DATE
+:library:generateReleaseResValues UP-TO-DATE
+:library:generateReleaseResources UP-TO-DATE
+:library:mergeReleaseResources UP-TO-DATE
+:library:processReleaseManifest UP-TO-DATE
+:library:processReleaseResources UP-TO-DATE
+:library:generateReleaseSources UP-TO-DATE
+:library:compileReleaseJava UP-TO-DATE
+:library:extractReleaseAnnotations UP-TO-DATE
+:library:mergeReleaseProguardFiles UP-TO-DATE
+:library:processReleaseJavaRes UP-TO-DATE
+:library:packageReleaseJar UP-TO-DATE
+:library:compileReleaseNdk UP-TO-DATE
+:library:packageReleaseJniLibs UP-TO-DATE
+:library:packageReleaseLocalJar UP-TO-DATE
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:packageReleaseResources UP-TO-DATE
+:library:bundleRelease UP-TO-DATE
+:sample:checkDebugManifest
+:sample:preReleaseBuild UP-TO-DATE
+:sample:prepareAndroidDialogFragmentsMasterLibraryUnspecifiedLibrary
+:sample:prepareComAndroidSupportAppcompatV72211Library
+:sample:prepareComAndroidSupportSupportV42211Library
+:sample:prepareDebugDependencies
+:sample:compileDebugAidl
+:sample:compileDebugRenderscript
+:sample:generateDebugBuildConfig
+:sample:generateDebugAssets UP-TO-DATE
+:sample:mergeDebugAssets
+:sample:generateDebugResValues
+:sample:generateDebugResources
+:sample:mergeDebugResources
+:sample:processDebugManifest
+:sample:processDebugResources
+:sample:generateDebugSources
+:sample:compileDebugJavaNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:sample:preDexDebug
+:sample:dexDebug
+:sample:processDebugJavaRes UP-TO-DATE
+:sample:validateDebugSigning
+:sample:packageDebug
+:sample:zipalignDebug
+:sample:assembleDebug
+:sample:checkReleaseManifest
+:sample:prepareReleaseDependencies
+:sample:compileReleaseAidl
+:sample:compileReleaseRenderscript
+:sample:generateReleaseBuildConfig
+:sample:generateReleaseAssets UP-TO-DATE
+:sample:mergeReleaseAssets
+:sample:generateReleaseResValues
+:sample:generateReleaseResources
+:sample:mergeReleaseResources
+Process list not empty
+:sample:processReleaseManifest
+:sample:processReleaseResources
+:sample:generateReleaseSources
+:sample:compileReleaseJavaNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:sample:lintVitalRelease
+:sample:compileReleaseNdk UP-TO-DATE
+:sample:proguardRelease
+:sample:dexRelease
+:sample:processReleaseJavaRes UP-TO-DATE
+:sample:packageRelease
+:sample:assembleRelease
+:sample:assemble
+:sample:build
+
+BUILD SUCCESSFUL
+
+Total time: 28.764 secs
+
+2018-04-08 13:34:16,480 INFO  FullProcessService - Found APK file: /tmp/rdisk/983/src/Android-DialogFragments-master/sample/build/outputs/apk/sample-release-unsigned.apk

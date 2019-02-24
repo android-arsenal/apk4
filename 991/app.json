@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "it.moondroid.colormixerdemo.demo",
+    "label" : "ColorMixer Demo",
+    "icon" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "versionName" : "1.0",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "11",
+    "targetSdkVersion" : "19",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAFCElEQVRo3u2Zb0yVVRzHP1y4CNgVBHMFiEZDzS2IZKZra9ZsFq3mKtt8oVuzN6w21kqntnqRL6y1tppjLbU0p3PjRWY4awnVKvDPzLmCcCpOUnDM0nvBe71wuc+3FzzXLle4nOeRi77gd/d9dzjn8z3n+Z3zOweYjMm4S0LyIFUhbUb6CakLqd/WZSzrF6LRLYRCS6ivT7+bwNOQqpGOIVlIGkMW0egp+vpeZuXK9DsNn49Ubwh+q/r7v+P48Vl3Cr4U6bQr8HgNDHRy4sSjQNpEwhchddw2fEyRSDcHDpRPjAnJi9QybvAxBYN/sXr1zIkwsG7c4WM6e7YOyEwlfAHS1ZQZiERCrF+/KHWfkvRWyuBjOnlyB5CdKgMnUm7A778EzDZF8jiAnwGUpzzHpk27n7Vry03ZPA66XgB4U24gLc1DVVU5kDG+BqLRogk7ZwoKikwny8kKZE2YAY8nx9RAhoMVCBJNhyagEfgT6AZCgM9Ou0pgObA4cWqiwK/AYeAU8DcQBKYCxUAFsAxYOoTU1zcwvpsPyvtqbrSOmRIYqEzic4n+kNAnQiXC6Fck9KGyNtd+YE/LuMA/L3SxFykbQwNI0Cwq54uTyMnPK9Rxne6ODqpv60ATShPaKBSNbdJPGcPvFGQKEDmIr80NLLYHsywiPT28DaS7NfCukBV/yuwyhk8fgo/Ji9hvZqBu+LFmdXay0VGu2vAvxs98TCGk2UnhjwimDIePyYdoTQ5/n1BvwqCWReTIEV4x3jGFZgpdGe2s3zcqfFAwb2T4mBYiIqMb2DHKoOEwl2tqKDU18GnyC620akQDHyeHj2nXyPAvjLTkcWpr4zNgyljwBSOs4i26jvTEMPiIYJaZgXJEdDj8IqHAGIOGw/iXLGH+WAZeNS0bA0jP3jTQZAYPIo1hW+uTQlcNB62vZ11iQicmxtPGRSPwLfA+kMUPTnYIaBy6dr0DfA9MN/zTefNYCtyTbAXa3RTx51iu10A+gxWYClqzCp12MVBXF2eAB5LVQq7eaB7kItuBjxgqlX4DzgD/2tQFQBnwuF3x5F90d7j6fMwAcpMZyHHXdQiAPOAlWwbNHUdGBpmJjJ6ET+iGu66zU9o8FpEIkcT6KNFAl7uui1PaPBa9vQSAyKgGLKw/3HX9SEqbx6Kzk0tA36gGwoR/dNf1Mgd3XmfN46OlhVbg2ugNaCmysIIuXmglCs1q7QVIg8630GCQYEkJa8bKIE+AwE53DzpbzAxsc/di1NBAE1A1ZlXaQEPZIIMB52P0SZQmh3/Y/n+Nw857e+mdO5fXTQ9tTyutbyReZsz0s4R3ZPgcpN+dw0ejRDdtYrud+savKFnnOb/D3adUJ5E2HD4daa+7T2fvXg4Bzzh+1pnDnLw22r50txJ1/6/EFKQ97mZ+zx4OASsSywcnkXeQg+/d4IaLnDiswdLCQTU7hw8ECGzYwBfAc7cDf7M+WsGKpUc5+k2YcMiEwY8/sJvdByuK8t9sbGRfMEjAdKvcv5+msjJq7R0n2+RYMYl0IL+SyooaaqorqKgqpLDEhy/Xi9fbT//ANa75z3HuUhNNbdvYdtyPvx04C1BaykO1tVQvXMhjxcXMyc1lemYmmQMDRPx+Ahcu0N3cTPvWrRzr6aEdOA1ctZ/0xsVAvJGpwAxbuXH31DDgB67YlXQIsOJO/By7sr7XLlxjSdkPBIB/bAVNwCdjMsYp/gP/cvnT+qdXwQAAAABJRU5ErkJggg=="
+  },
+  "dexClasses" : 749,
+  "locales" : [ "", "sl", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "pt", "ar", "ru", "fa", "sk", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "af", "in", "vi", "fr_CA", "sr", "da", "es", "hy_AM", "tr", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "fr", "ja", "lo_LA", "iw", "de", "en_IN", "es_US", "nb", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"1.0\" package=\"it.moondroid.colormixerdemo.demo\">\n\t<uses-sdk android:minSdkVersion=\"11\" android:targetSdkVersion=\"19\" />\n\t<application android:theme=\"resourceId:0x7f0b0000\" android:label=\"ColorMixer Demo\" android:icon=\"res/drawable-mdpi-v4/ic_launcher.png\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"ColorMixer Demo\" android:name=\"it.moondroid.colormixerdemo.demo.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 674299,
+  "crc32" : 4142850556,
+  "sha256" : "0535e64bc92f41558191da24adfc5a1e98822e1ff21da3c4cb3d288f7715186e",
+  "buildTime" : 1523193583000
+}

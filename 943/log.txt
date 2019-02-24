@@ -1,0 +1,103 @@
+2018-04-08 15:20:11,985 INFO  DownloadService - Downloading "https://github.com/emmaguy/clean-status-bar/archive/master.zip", attempt 3
+2018-04-08 15:20:13,042 INFO  DownloadService - Downloaded https://github.com/emmaguy/clean-status-bar/archive/master.zip, attempt 3
+2018-04-08 15:20:13,042 INFO  DownloadService - Size of file "/tmp/rdisk/943/master.zip": 2 MB
+2018-04-08 15:20:13,043 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-08 15:20:13,043 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/943/master.zip: true
+2018-04-08 15:20:13,043 DEBUG ZipUtil - Extracting '/tmp/rdisk/943/master.zip' into '/tmp/rdisk/943/src'.
+2018-04-08 15:20:13,098 INFO  FullProcessService - Size of directory with sources: 3 MB
+2018-04-08 15:20:13,099 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/943/src]
+2018-04-08 15:20:13,104 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/943/src/.git/
+
+2018-04-08 15:20:13,108 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/943/src/clean-status-bar-master/gradlew
+2018-04-08 15:20:13,113 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/943/src/clean-status-bar-master/app/build.gradle /tmp/rdisk/943/src/clean-status-bar-master/build.gradle
+2018-04-08 15:20:13,117 INFO  ProjectBuildService - All script(s): /tmp/rdisk/943/src/clean-status-bar-master/settings.gradle /tmp/rdisk/943/src/clean-status-bar-master/build.gradle /tmp/rdisk/943/src/clean-status-bar-master/app/build.gradle
+2018-04-08 15:20:13,117 INFO  ProjectBuildService - Remote scripts: none
+2018-04-08 15:20:13,117 INFO  ProjectFixService - Fixing project...
+2018-04-08 15:20:13,127 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/943/src/clean-status-bar-master/app/local.properties
+2018-04-08 15:20:13,128 INFO  ProjectFixService - Build info for "/tmp/rdisk/943/src/clean-status-bar-master/app/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=15,targetSdkVersion=22]
+2018-04-08 15:20:13,128 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/943/src/clean-status-bar-master/local.properties
+2018-04-08 15:20:13,128 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.7-all.zip
+2018-04-08 15:20:13,129 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.7-bin.zip)
+2018-04-08 15:20:13,130 INFO  ProjectFixService - Build info for "/tmp/rdisk/943/src/clean-status-bar-master/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=15,targetSdkVersion=22]
+2018-04-08 15:20:13,130 INFO  ProjectFixService - Project was maybe fixed
+2018-04-08 15:20:13,130 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-08 15:20:13,130 INFO  SysUtils - Execute command: [/tmp/rdisk/943/src/clean-status-bar-master/gradlew, -b, /tmp/rdisk/943/src/clean-status-bar-master/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-08 15:20:23,112 INFO  ProjectTaskService - Detected possible tasks: 67
+2018-04-08 15:20:23,112 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-08 15:20:23,113 INFO  SysUtils - Execute command: [/tmp/rdisk/943/src/clean-status-bar-master/gradlew, -b, /tmp/rdisk/943/src/clean-status-bar-master/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-08 15:20:46,280 INFO  SysUtils - Configuration on demand is an incubating feature.
+signing.properties not found
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:app:prepareComAndroidSupportAppcompatV72301Library
+:app:prepareComAndroidSupportDesign2301Library
+:app:prepareComAndroidSupportSupportV42301Library
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+AAPT: /tmp/rdisk/943/src/clean-status-bar-master/app/src/main/res/drawable-ldrtl-xxhdpi/stat_sys_signal_4_fully.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/943/src/clean-status-bar-master/app/src/main/res/drawable-ldrtl-hdpi/stat_sys_signal_4_fully.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/943/src/clean-status-bar-master/app/src/main/res/drawable-ldrtl-mdpi/stat_sys_signal_4_fully.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT err(357417065) : No Delegate set : lost message:/tmp/rdisk/943/src/clean-status-bar-master/app/src/main/res/drawable-ldrtl-xhdpi/stat_sys_signal_4_fully.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+:app:processDebugManifest
+:app:processDebugResourcesUnknown source file : warning: string 'xposed_integration' has no default translation.
+
+
+:app:generateDebugSources
+:app:processDebugJavaRes UP-TO-DATE
+:app:compileDebugJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources
+:app:preDexDebug
+:app:dexDebug
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+AAPT: /tmp/rdisk/943/src/clean-status-bar-master/app/src/main/res/drawable-ldrtl-hdpi/stat_sys_signal_4_fully.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/943/src/clean-status-bar-master/app/src/main/res/drawable-ldrtl-xxhdpi/stat_sys_signal_4_fully.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/943/src/clean-status-bar-master/app/src/main/res/drawable-ldrtl-xhdpi/stat_sys_signal_4_fully.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/943/src/clean-status-bar-master/app/src/main/res/drawable-ldrtl-mdpi/stat_sys_signal_4_fully.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+:app:processReleaseManifest
+:app:processReleaseResourcesUnknown source file : warning: string 'xposed_integration' has no default translation.
+
+
+:app:generateReleaseSources
+:app:processReleaseJavaRes UP-TO-DATE
+:app:compileReleaseJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:app:compileReleaseNdk UP-TO-DATE
+:app:compileReleaseSources
+:app:preDexRelease
+:app:dexRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 22.73 secs
+
+2018-04-08 15:20:46,324 INFO  FullProcessService - Found APK file: /tmp/rdisk/943/src/clean-status-bar-master/app/build/outputs/apk/app-debug.apk

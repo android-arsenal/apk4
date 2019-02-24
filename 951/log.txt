@@ -1,0 +1,859 @@
+2018-04-08 13:49:27,424 INFO  DownloadService - Downloading "https://github.com/sromku/android-simple-storage/archive/master.zip", attempt 3
+2018-04-08 13:49:28,021 INFO  DownloadService - Downloaded https://github.com/sromku/android-simple-storage/archive/master.zip, attempt 3
+2018-04-08 13:49:28,021 INFO  DownloadService - Size of file "/tmp/rdisk/951/master.zip": 574 KB
+2018-04-08 13:49:28,021 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-08 13:49:28,021 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/951/master.zip: true
+2018-04-08 13:49:28,021 DEBUG ZipUtil - Extracting '/tmp/rdisk/951/master.zip' into '/tmp/rdisk/951/src'.
+2018-04-08 13:49:28,038 INFO  FullProcessService - Size of directory with sources: 899 KB
+2018-04-08 13:49:28,038 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/951/src]
+2018-04-08 13:49:28,043 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/951/src/.git/
+
+2018-04-08 13:49:28,046 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/951/src/android-storage-master/gradlew
+2018-04-08 13:49:28,049 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/951/src/android-storage-master/app/build.gradle /tmp/rdisk/951/src/android-storage-master/storage/build.gradle /tmp/rdisk/951/src/android-storage-master/build.gradle
+2018-04-08 13:49:28,052 INFO  ProjectBuildService - All script(s): /tmp/rdisk/951/src/android-storage-master/storage/build.gradle /tmp/rdisk/951/src/android-storage-master/settings.gradle /tmp/rdisk/951/src/android-storage-master/build.gradle /tmp/rdisk/951/src/android-storage-master/app/build.gradle
+2018-04-08 13:49:28,053 INFO  DownloadService - Downloading "https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle", attempt 3
+2018-04-08 13:49:28,185 INFO  DownloadService - Downloaded https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle, attempt 3
+2018-04-08 13:49:28,186 INFO  DownloadService - Downloading "https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle", attempt 3
+2018-04-08 13:49:28,315 INFO  DownloadService - Downloaded https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle, attempt 3
+2018-04-08 13:49:28,315 INFO  ProjectBuildService - Remote scripts: https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle
+2018-04-08 13:49:28,315 INFO  ProjectFixService - Fixing project...
+2018-04-08 13:49:28,323 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/951/src/android-storage-master/app/local.properties
+2018-04-08 13:49:28,323 INFO  ProjectFixService - Build info for "/tmp/rdisk/951/src/android-storage-master/app/build.gradle": [buildToolsVersion=25.0.3,compileSdkVersion=25,minSdkVersion=14,targetSdkVersion=25]
+2018-04-08 13:49:28,324 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/951/src/android-storage-master/storage/local.properties
+2018-04-08 13:49:28,324 INFO  ProjectFixService - Build info for "/tmp/rdisk/951/src/android-storage-master/storage/build.gradle": [buildToolsVersion=25.0.3,compileSdkVersion=25,minSdkVersion=14,targetSdkVersion=25]
+2018-04-08 13:49:28,324 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/951/src/android-storage-master/local.properties
+2018-04-08 13:49:28,325 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-3.3-all.zip
+2018-04-08 13:49:28,325 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-3.3-bin.zip)
+2018-04-08 13:49:28,326 INFO  ProjectFixService - Build info for "/tmp/rdisk/951/src/android-storage-master/build.gradle": [buildToolsVersion=25.0.3,compileSdkVersion=25,minSdkVersion=14,targetSdkVersion=25]
+2018-04-08 13:49:28,326 INFO  ProjectFixService - Project was maybe fixed
+2018-04-08 13:49:28,326 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-08 13:49:28,326 INFO  SysUtils - Execute command: [/tmp/rdisk/951/src/android-storage-master/gradlew, -b, /tmp/rdisk/951/src/android-storage-master/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-08 13:49:36,120 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-08 13:49:36,120 INFO  ProjectTaskService - Detected possible tasks: 3
+2018-04-08 13:49:36,120 INFO  ProjectTaskService - Excluded tasks (3): sourcesJar javadocJar javadoc
+2018-04-08 13:49:36,120 INFO  SysUtils - Execute command: [/tmp/rdisk/951/src/android-storage-master/gradlew, -b, /tmp/rdisk/951/src/android-storage-master/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, sourcesJar, -x, javadocJar, -x, javadoc, build]
+2018-04-08 13:49:44,989 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-08 13:49:44,990 INFO  SysUtils - Configuration on demand is an incubating feature.
+Incremental java compilation is an incubating feature.
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Task 'sourcesJar' not found in project ':app'. Some candidates are: 'sourceSets'.
+
+* Try:
+Run gradlew tasks to get a list of available tasks. Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.execution.TaskSelectionException: Task 'sourcesJar' not found in project ':app'. Some candidates are: 'sourceSets'.
+	at org.gradle.execution.TaskSelector.getSelection(TaskSelector.java:116)
+	at org.gradle.execution.TaskSelector.getFilter(TaskSelector.java:66)
+	at org.gradle.execution.ExcludedTaskFilteringBuildConfigurationAction.configure(ExcludedTaskFilteringBuildConfigurationAction.java:42)
+	at org.gradle.execution.DefaultBuildConfigurationActionExecuter.configure(DefaultBuildConfigurationActionExecuter.java:48)
+	at org.gradle.execution.DefaultBuildConfigurationActionExecuter.select(DefaultBuildConfigurationActionExecuter.java:36)
+	at org.gradle.initialization.DefaultGradleLauncher$2.execute(DefaultGradleLauncher.java:185)
+	at org.gradle.initialization.DefaultGradleLauncher$2.execute(DefaultGradleLauncher.java:182)
+	at org.gradle.internal.Transformers$4.transform(Transformers.java:169)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:106)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:56)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:182)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:119)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:102)
+	at org.gradle.launcher.exec.GradleBuildController.run(GradleBuildController.java:71)
+	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:28)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:41)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.tooling.internal.provider.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:75)
+	at org.gradle.tooling.internal.provider.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:49)
+	at org.gradle.tooling.internal.provider.ServicesSetupBuildActionExecuter.execute(ServicesSetupBuildActionExecuter.java:44)
+	at org.gradle.tooling.internal.provider.ServicesSetupBuildActionExecuter.execute(ServicesSetupBuildActionExecuter.java:29)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:51)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:173)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:244)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:217)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:33)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:174)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:60)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:37)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:30)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:129)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:61)
+
+
+BUILD FAILED
+
+Total time: 8.57 secs
+
+2018-04-08 13:49:44,990 ERROR ProjectBuildService - Excluded tasks were detected wrong
+2018-04-08 13:49:44,990 INFO  SysUtils - Execute command: [/tmp/rdisk/951/src/android-storage-master/gradlew, -b, /tmp/rdisk/951/src/android-storage-master/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-08 13:49:56,583 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:69)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-08 13:49:56,583 INFO  SysUtils - Configuration on demand is an incubating feature.
+Incremental java compilation is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:app:prepareComAndroidSupportAnimatedVectorDrawable2531Library
+:app:prepareComAndroidSupportAppcompatV72531Library
+:app:prepareComAndroidSupportConstraintConstraintLayout102Library
+:app:prepareComAndroidSupportDesign2531Library
+:app:prepareComAndroidSupportRecyclerviewV72531Library
+:app:prepareComAndroidSupportSupportCompat2531Library
+:app:prepareComAndroidSupportSupportCoreUi2531Library
+:app:prepareComAndroidSupportSupportCoreUtils2531Library
+:app:prepareComAndroidSupportSupportFragment2531Library
+:app:prepareComAndroidSupportSupportMediaCompat2531Library
+:app:prepareComAndroidSupportSupportV42531Library
+:app:prepareComAndroidSupportSupportVectorDrawable2531Library
+:app:prepareComAndroidSupportTransition2531Library
+:storage:preBuild UP-TO-DATE
+:storage:preReleaseBuild UP-TO-DATE
+:storage:checkReleaseManifest
+:storage:prepareReleaseDependencies
+:storage:compileReleaseAidl
+:storage:compileReleaseNdk UP-TO-DATE
+:storage:compileLint
+:storage:copyReleaseLint UP-TO-DATE
+:storage:mergeReleaseShaders
+:storage:compileReleaseShaders
+:storage:generateReleaseAssets
+:storage:mergeReleaseAssets
+:storage:mergeReleaseProguardFiles
+:storage:packageReleaseRenderscript UP-TO-DATE
+:storage:compileReleaseRenderscript
+:storage:generateReleaseResValues
+:storage:generateReleaseResources
+:storage:packageReleaseResources
+:storage:processReleaseManifest
+:storage:generateReleaseBuildConfig
+:storage:processReleaseResources
+:storage:generateReleaseSources
+:storage:incrementalReleaseJavaCompilationSafeguard
+:storage:javaPreCompileRelease
+:storage:compileReleaseJavaWithJavac
+:storage:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+/tmp/rdisk/951/src/android-storage-master/storage/src/main/java/com/snatik/storage/security/CipherTransformationType.java:32: warning: '_' used as an identifier
+	private static final String _ = "/";
+	                            ^
+  (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/rdisk/951/src/android-storage-master/storage/src/main/java/com/snatik/storage/security/CipherTransformationType.java:34: warning: '_' used as an identifier
+	public static final String AES_CBC_NoPadding = CipherAlgorithmType.AES + _ + CipherModeType.CBC + _ + CipherPaddingType.NoPadding;
+	                                                                         ^
+  (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/rdisk/951/src/android-storage-master/storage/src/main/java/com/snatik/storage/security/CipherTransformationType.java:34: warning: '_' used as an identifier
+	public static final String AES_CBC_NoPadding = CipherAlgorithmType.AES + _ + CipherModeType.CBC + _ + CipherPaddingType.NoPadding;
+	                                                                                                  ^
+  (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/rdisk/951/src/android-storage-master/storage/src/main/java/com/snatik/storage/security/CipherTransformationType.java:35: warning: '_' used as an identifier
+	public static final String AES_CBC_PKCS5Padding = CipherAlgorithmType.AES + _ + CipherModeType.CBC + _ + CipherPaddingType.PKCS5Padding;
+	                                                                            ^
+  (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/rdisk/951/src/android-storage-master/storage/src/main/java/com/snatik/storage/security/CipherTransformationType.java:35: warning: '_' used as an identifier
+	public static final String AES_CBC_PKCS5Padding = CipherAlgorithmType.AES + _ + CipherModeType.CBC + _ + CipherPaddingType.PKCS5Padding;
+	                                                                                                     ^
+  (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/rdisk/951/src/android-storage-master/storage/src/main/java/com/snatik/storage/security/CipherTransformationType.java:36: warning: '_' used as an identifier
+	public static final String AES_ECB_NoPadding = CipherAlgorithmType.AES + _ + CipherModeType.ECB + _ + CipherPaddingType.NoPadding;
+	                                                                         ^
+  (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/rdisk/951/src/android-storage-master/storage/src/main/java/com/snatik/storage/security/CipherTransformationType.java:36: warning: '_' used as an identifier
+	public static final String AES_ECB_NoPadding = CipherAlgorithmType.AES + _ + CipherModeType.ECB + _ + CipherPaddingType.NoPadding;
+	                                                                                                  ^
+  (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/rdisk/951/src/android-storage-master/storage/src/main/java/com/snatik/storage/security/CipherTransformationType.java:37: warning: '_' used as an identifier
+	public static final String AES_ECB_PKCS5Padding = CipherAlgorithmType.AES + _ + CipherModeType.ECB + _ + CipherPaddingType.PKCS5Padding;
+	                                                                            ^
+  (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/rdisk/951/src/android-storage-master/storage/src/main/java/com/snatik/storage/security/CipherTransformationType.java:37: warning: '_' used as an identifier
+	public static final String AES_ECB_PKCS5Padding = CipherAlgorithmType.AES + _ + CipherModeType.ECB + _ + CipherPaddingType.PKCS5Padding;
+	                                                                                                     ^
+  (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/rdisk/951/src/android-storage-master/storage/src/main/java/com/snatik/storage/security/CipherTransformationType.java:39: warning: '_' used as an identifier
+	public static final String DES_CBC_NoPadding = CipherAlgorithmType.DES + _ + CipherModeType.CBC + _ + CipherPaddingType.NoPadding;
+	                                                                         ^
+  (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/rdisk/951/src/android-storage-master/storage/src/main/java/com/snatik/storage/security/CipherTransformationType.java:39: warning: '_' used as an identifier
+	public static final String DES_CBC_NoPadding = CipherAlgorithmType.DES + _ + CipherModeType.CBC + _ + CipherPaddingType.NoPadding;
+	                                                                                                  ^
+  (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/rdisk/951/src/android-storage-master/storage/src/main/java/com/snatik/storage/security/CipherTransformationType.java:40: warning: '_' used as an identifier
+	public static final String DES_CBC_PKCS5Padding = CipherAlgorithmType.DES + _ + CipherModeType.CBC + _ + CipherPaddingType.PKCS5Padding;
+	                                                                            ^
+  (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/rdisk/951/src/android-storage-master/storage/src/main/java/com/snatik/storage/security/CipherTransformationType.java:40: warning: '_' used as an identifier
+	public static final String DES_CBC_PKCS5Padding = CipherAlgorithmType.DES + _ + CipherModeType.CBC + _ + CipherPaddingType.PKCS5Padding;
+	                                                                                                     ^
+  (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/rdisk/951/src/android-storage-master/storage/src/main/java/com/snatik/storage/security/CipherTransformationType.java:41: warning: '_' used as an identifier
+	public static final String DES_ECB_NoPadding = CipherAlgorithmType.DES + _ + CipherModeType.ECB + _ + CipherPaddingType.NoPadding;
+	                                                                         ^
+  (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/rdisk/951/src/android-storage-master/storage/src/main/java/com/snatik/storage/security/CipherTransformationType.java:41: warning: '_' used as an identifier
+	public static final String DES_ECB_NoPadding = CipherAlgorithmType.DES + _ + CipherModeType.ECB + _ + CipherPaddingType.NoPadding;
+	                                                                                                  ^
+  (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/rdisk/951/src/android-storage-master/storage/src/main/java/com/snatik/storage/security/CipherTransformationType.java:42: warning: '_' used as an identifier
+	public static final String DES_ECB_PKCS5Padding = CipherAlgorithmType.DES + _ + CipherModeType.ECB + _ + CipherPaddingType.PKCS5Padding;
+	                                                                            ^
+  (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/rdisk/951/src/android-storage-master/storage/src/main/java/com/snatik/storage/security/CipherTransformationType.java:42: warning: '_' used as an identifier
+	public static final String DES_ECB_PKCS5Padding = CipherAlgorithmType.DES + _ + CipherModeType.ECB + _ + CipherPaddingType.PKCS5Padding;
+	                                                                                                     ^
+  (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/rdisk/951/src/android-storage-master/storage/src/main/java/com/snatik/storage/security/CipherTransformationType.java:44: warning: '_' used as an identifier
+	public static final String DESede_CBC_NoPadding = CipherAlgorithmType.DESede + _ + CipherModeType.CBC + _ + CipherPaddingType.NoPadding;
+	                                                                               ^
+  (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/rdisk/951/src/android-storage-master/storage/src/main/java/com/snatik/storage/security/CipherTransformationType.java:44: warning: '_' used as an identifier
+	public static final String DESede_CBC_NoPadding = CipherAlgorithmType.DESede + _ + CipherModeType.CBC + _ + CipherPaddingType.NoPadding;
+	                                                                                                        ^
+  (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/rdisk/951/src/android-storage-master/storage/src/main/java/com/snatik/storage/security/CipherTransformationType.java:45: warning: '_' used as an identifier
+	public static final String DESede_CBC_PKCS5Padding = CipherAlgorithmType.DESede + _ + CipherModeType.CBC + _ + CipherPaddingType.PKCS5Padding;
+	                                                                                  ^
+  (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/rdisk/951/src/android-storage-master/storage/src/main/java/com/snatik/storage/security/CipherTransformationType.java:45: warning: '_' used as an identifier
+	public static final String DESede_CBC_PKCS5Padding = CipherAlgorithmType.DESede + _ + CipherModeType.CBC + _ + CipherPaddingType.PKCS5Padding;
+	                                                                                                           ^
+  (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/rdisk/951/src/android-storage-master/storage/src/main/java/com/snatik/storage/security/CipherTransformationType.java:46: warning: '_' used as an identifier
+	public static final String DESede_ECB_NoPadding = CipherAlgorithmType.DESede + _ + CipherModeType.ECB + _ + CipherPaddingType.NoPadding;
+	                                                                               ^
+  (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/rdisk/951/src/android-storage-master/storage/src/main/java/com/snatik/storage/security/CipherTransformationType.java:46: warning: '_' used as an identifier
+	public static final String DESede_ECB_NoPadding = CipherAlgorithmType.DESede + _ + CipherModeType.ECB + _ + CipherPaddingType.NoPadding;
+	                                                                                                        ^
+  (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/rdisk/951/src/android-storage-master/storage/src/main/java/com/snatik/storage/security/CipherTransformationType.java:47: warning: '_' used as an identifier
+	public static final String DESede_ECB_PKCS5Padding = CipherAlgorithmType.DESede + _ + CipherModeType.ECB + _ + CipherPaddingType.PKCS5Padding;
+	                                                                                  ^
+  (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/rdisk/951/src/android-storage-master/storage/src/main/java/com/snatik/storage/security/CipherTransformationType.java:47: warning: '_' used as an identifier
+	public static final String DESede_ECB_PKCS5Padding = CipherAlgorithmType.DESede + _ + CipherModeType.ECB + _ + CipherPaddingType.PKCS5Padding;
+	                                                                                                           ^
+  (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/rdisk/951/src/android-storage-master/storage/src/main/java/com/snatik/storage/security/CipherTransformationType.java:49: warning: '_' used as an identifier
+	public static final String RSA_ECB_PKCS1Padding = CipherAlgorithmType.RSA + _ + CipherModeType.ECB + _ + CipherPaddingType.PKCS1Padding;
+	                                                                            ^
+  (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/rdisk/951/src/android-storage-master/storage/src/main/java/com/snatik/storage/security/CipherTransformationType.java:49: warning: '_' used as an identifier
+	public static final String RSA_ECB_PKCS1Padding = CipherAlgorithmType.RSA + _ + CipherModeType.ECB + _ + CipherPaddingType.PKCS1Padding;
+	                                                                                                     ^
+  (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/rdisk/951/src/android-storage-master/storage/src/main/java/com/snatik/storage/security/CipherTransformationType.java:50: warning: '_' used as an identifier
+	public static final String RSA_ECB_OAEPWithSHA_1AndMGF1Padding = CipherAlgorithmType.RSA + _ + CipherModeType.ECB + _ + CipherPaddingType.OAEPWithSHA_1AndMGF1Padding;
+	                                                                                           ^
+  (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/rdisk/951/src/android-storage-master/storage/src/main/java/com/snatik/storage/security/CipherTransformationType.java:50: warning: '_' used as an identifier
+	public static final String RSA_ECB_OAEPWithSHA_1AndMGF1Padding = CipherAlgorithmType.RSA + _ + CipherModeType.ECB + _ + CipherPaddingType.OAEPWithSHA_1AndMGF1Padding;
+	                                                                                                                    ^
+  (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/rdisk/951/src/android-storage-master/storage/src/main/java/com/snatik/storage/security/CipherTransformationType.java:51: warning: '_' used as an identifier
+	public static final String RSA_ECB_OAEPWithSHA_256AndMGF1Padding = CipherAlgorithmType.RSA + _ + CipherModeType.ECB + _ + CipherPaddingType.OAEPWithSHA_256AndMGF1Padding;
+	                                                                                             ^
+  (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/rdisk/951/src/android-storage-master/storage/src/main/java/com/snatik/storage/security/CipherTransformationType.java:51: warning: '_' used as an identifier
+	public static final String RSA_ECB_OAEPWithSHA_256AndMGF1Padding = CipherAlgorithmType.RSA + _ + CipherModeType.ECB + _ + CipherPaddingType.OAEPWithSHA_256AndMGF1Padding;
+	                                                                                                                      ^
+  (use of '_' as an identifier might not be supported in releases after Java SE 8)
+Note: /tmp/rdisk/951/src/android-storage-master/storage/src/main/java/com/snatik/storage/Storage.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+31 warnings
+:storage:processReleaseJavaRes UP-TO-DATE
+:storage:transformResourcesWithMergeJavaResForRelease
+:storage:transformClassesAndResourcesWithSyncLibJarsForRelease
+:storage:mergeReleaseJniLibFolders
+:storage:transformNativeLibsWithMergeJniLibsForRelease
+:storage:transformNativeLibsWithStripDebugSymbolForRelease
+:storage:transformNativeLibsWithSyncJniLibsForRelease
+:storage:bundleRelease
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+java.awt.AWTError: Can't connect to X11 window server using ':0.0' as the value of the DISPLAY variable.
+:app:mergeDebugResources FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:mergeDebugResources'.
+> java.awt.AWTError: Can't connect to X11 window server using ':0.0' as the value of the DISPLAY variable.
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':app:mergeDebugResources'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:84)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:55)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:62)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:88)
+	at org.gradle.api.internal.tasks.execution.ResolveTaskArtifactStateTaskExecuter.execute(ResolveTaskArtifactStateTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:51)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:54)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:34)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker$1.execute(DefaultTaskGraphExecuter.java:236)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker$1.execute(DefaultTaskGraphExecuter.java:228)
+	at org.gradle.internal.Transformers$4.transform(Transformers.java:169)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:106)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:61)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:228)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:215)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:77)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:58)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:32)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:113)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.access$000(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$1.proceed(DefaultBuildExecuter.java:43)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:30)
+	at org.gradle.initialization.DefaultGradleLauncher$3.execute(DefaultGradleLauncher.java:196)
+	at org.gradle.initialization.DefaultGradleLauncher$3.execute(DefaultGradleLauncher.java:193)
+	at org.gradle.internal.Transformers$4.transform(Transformers.java:169)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:106)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:56)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:193)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:119)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:102)
+	at org.gradle.launcher.exec.GradleBuildController.run(GradleBuildController.java:71)
+	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:28)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:41)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.tooling.internal.provider.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:75)
+	at org.gradle.tooling.internal.provider.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:49)
+	at org.gradle.tooling.internal.provider.ServicesSetupBuildActionExecuter.execute(ServicesSetupBuildActionExecuter.java:44)
+	at org.gradle.tooling.internal.provider.ServicesSetupBuildActionExecuter.execute(ServicesSetupBuildActionExecuter.java:29)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:51)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:173)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:244)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:217)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:33)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:174)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:60)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:37)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:30)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:129)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:61)
+Caused by: com.android.build.gradle.tasks.ResourceException: java.awt.AWTError: Can't connect to X11 window server using ':0.0' as the value of the DISPLAY variable.
+	at com.android.build.gradle.tasks.MergeResources.doFullTaskAction(MergeResources.java:166)
+	at com.android.build.gradle.internal.tasks.IncrementalTask.taskAction(IncrementalTask.java:88)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:73)
+	at org.gradle.api.internal.project.taskfactory.DefaultTaskClassInfoStore$IncrementalTaskAction.doExecute(DefaultTaskClassInfoStore.java:163)
+	at org.gradle.api.internal.project.taskfactory.DefaultTaskClassInfoStore$StandardTaskAction.execute(DefaultTaskClassInfoStore.java:134)
+	at org.gradle.api.internal.project.taskfactory.DefaultTaskClassInfoStore$StandardTaskAction.execute(DefaultTaskClassInfoStore.java:123)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:95)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:76)
+	... 62 more
+Caused by: java.awt.AWTError: Can't connect to X11 window server using ':0.0' as the value of the DISPLAY variable.
+	at com.android.ide.common.res2.MergeWriter.end(MergeWriter.java:54)
+	at com.android.ide.common.res2.MergedResourceWriter.end(MergedResourceWriter.java:220)
+	at com.android.ide.common.res2.DataMerger.mergeData(DataMerger.java:301)
+	at com.android.ide.common.res2.ResourceMerger.mergeData(ResourceMerger.java:410)
+	at com.android.build.gradle.tasks.MergeResources.doFullTaskAction(MergeResources.java:159)
+	... 69 more
+Caused by: java.lang.RuntimeException: java.awt.AWTError: Can't connect to X11 window server using ':0.0' as the value of the DISPLAY variable.
+	at com.android.ide.common.internal.WaitableExecutor.waitForTasksWithQuickFail(WaitableExecutor.java:147)
+	at com.android.ide.common.res2.MergeWriter.end(MergeWriter.java:50)
+	... 73 more
+Caused by: java.awt.AWTError: Can't connect to X11 window server using ':0.0' as the value of the DISPLAY variable.
+	at com.android.ide.common.vectordrawable.VdTree.drawIntoImage(VdTree.java:87)
+	at com.android.ide.common.vectordrawable.VdPreview.getPreviewFromVectorTree(VdPreview.java:349)
+	at com.android.ide.common.vectordrawable.VdPreview.getPreviewFromVectorXml(VdPreview.java:285)
+	at com.android.builder.png.VectorDrawableRenderer.generateFile(VectorDrawableRenderer.java:152)
+	at com.android.ide.common.res2.MergedResourceWriter.lambda$addItem$1(MergedResourceWriter.java:333)
+
+
+BUILD FAILED
+
+Total time: 11.325 secs
+
+2018-04-08 13:49:56,601 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-08 13:49:56,601 INFO  SysUtils - Execute command: [/tmp/rdisk/951/src/android-storage-master/gradlew, -b, /tmp/rdisk/951/src/android-storage-master/storage/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-08 13:50:04,477 INFO  ProjectTaskService - Detected possible tasks: 69
+2018-04-08 13:50:04,477 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar javadocJar deviceCheck lint testReleaseUnitTest javadoc deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll sourcesJar test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-08 13:50:04,477 INFO  SysUtils - Execute command: [/tmp/rdisk/951/src/android-storage-master/gradlew, -b, /tmp/rdisk/951/src/android-storage-master/storage/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, javadocJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, javadoc, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, sourcesJar, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-08 13:50:14,034 INFO  SysUtils - Configuration on demand is an incubating feature.
+Incremental java compilation is an incubating feature.
+:storage:preBuild UP-TO-DATE
+:storage:preDebugBuild UP-TO-DATE
+:storage:checkDebugManifest
+:storage:prepareDebugDependencies
+:storage:compileDebugAidl
+:storage:compileDebugNdk UP-TO-DATE
+:storage:compileLint UP-TO-DATE
+:storage:copyDebugLint UP-TO-DATE
+:storage:mergeDebugShaders
+:storage:compileDebugShaders
+:storage:generateDebugAssets
+:storage:mergeDebugAssets
+:storage:mergeDebugProguardFiles
+:storage:packageDebugRenderscript UP-TO-DATE
+:storage:compileDebugRenderscript
+:storage:generateDebugResValues
+:storage:generateDebugResources
+:storage:packageDebugResources
+:storage:processDebugManifest
+:storage:generateDebugBuildConfig
+:storage:processDebugResources
+:storage:generateDebugSources
+:storage:incrementalDebugJavaCompilationSafeguard
+:storage:javaPreCompileDebug
+:storage:compileDebugJavaWithJavac
+:storage:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+/tmp/rdisk/951/src/android-storage-master/storage/src/main/java/com/snatik/storage/security/CipherTransformationType.java:32: warning: '_' used as an identifier
+	private static final String _ = "/";
+	                            ^
+  (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/rdisk/951/src/android-storage-master/storage/src/main/java/com/snatik/storage/security/CipherTransformationType.java:34: warning: '_' used as an identifier
+	public static final String AES_CBC_NoPadding = CipherAlgorithmType.AES + _ + CipherModeType.CBC + _ + CipherPaddingType.NoPadding;
+	                                                                         ^
+  (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/rdisk/951/src/android-storage-master/storage/src/main/java/com/snatik/storage/security/CipherTransformationType.java:34: warning: '_' used as an identifier
+	public static final String AES_CBC_NoPadding = CipherAlgorithmType.AES + _ + CipherModeType.CBC + _ + CipherPaddingType.NoPadding;
+	                                                                                                  ^
+  (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/rdisk/951/src/android-storage-master/storage/src/main/java/com/snatik/storage/security/CipherTransformationType.java:35: warning: '_' used as an identifier
+	public static final String AES_CBC_PKCS5Padding = CipherAlgorithmType.AES + _ + CipherModeType.CBC + _ + CipherPaddingType.PKCS5Padding;
+	                                                                            ^
+  (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/rdisk/951/src/android-storage-master/storage/src/main/java/com/snatik/storage/security/CipherTransformationType.java:35: warning: '_' used as an identifier
+	public static final String AES_CBC_PKCS5Padding = CipherAlgorithmType.AES + _ + CipherModeType.CBC + _ + CipherPaddingType.PKCS5Padding;
+	                                                                                                     ^
+  (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/rdisk/951/src/android-storage-master/storage/src/main/java/com/snatik/storage/security/CipherTransformationType.java:36: warning: '_' used as an identifier
+	public static final String AES_ECB_NoPadding = CipherAlgorithmType.AES + _ + CipherModeType.ECB + _ + CipherPaddingType.NoPadding;
+	                                                                         ^
+  (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/rdisk/951/src/android-storage-master/storage/src/main/java/com/snatik/storage/security/CipherTransformationType.java:36: warning: '_' used as an identifier
+	public static final String AES_ECB_NoPadding = CipherAlgorithmType.AES + _ + CipherModeType.ECB + _ + CipherPaddingType.NoPadding;
+	                                                                                                  ^
+  (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/rdisk/951/src/android-storage-master/storage/src/main/java/com/snatik/storage/security/CipherTransformationType.java:37: warning: '_' used as an identifier
+	public static final String AES_ECB_PKCS5Padding = CipherAlgorithmType.AES + _ + CipherModeType.ECB + _ + CipherPaddingType.PKCS5Padding;
+	                                                                            ^
+  (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/rdisk/951/src/android-storage-master/storage/src/main/java/com/snatik/storage/security/CipherTransformationType.java:37: warning: '_' used as an identifier
+	public static final String AES_ECB_PKCS5Padding = CipherAlgorithmType.AES + _ + CipherModeType.ECB + _ + CipherPaddingType.PKCS5Padding;
+	                                                                                                     ^
+  (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/rdisk/951/src/android-storage-master/storage/src/main/java/com/snatik/storage/security/CipherTransformationType.java:39: warning: '_' used as an identifier
+	public static final String DES_CBC_NoPadding = CipherAlgorithmType.DES + _ + CipherModeType.CBC + _ + CipherPaddingType.NoPadding;
+	                                                                         ^
+  (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/rdisk/951/src/android-storage-master/storage/src/main/java/com/snatik/storage/security/CipherTransformationType.java:39: warning: '_' used as an identifier
+	public static final String DES_CBC_NoPadding = CipherAlgorithmType.DES + _ + CipherModeType.CBC + _ + CipherPaddingType.NoPadding;
+	                                                                                                  ^
+  (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/rdisk/951/src/android-storage-master/storage/src/main/java/com/snatik/storage/security/CipherTransformationType.java:40: warning: '_' used as an identifier
+	public static final String DES_CBC_PKCS5Padding = CipherAlgorithmType.DES + _ + CipherModeType.CBC + _ + CipherPaddingType.PKCS5Padding;
+	                                                                            ^
+  (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/rdisk/951/src/android-storage-master/storage/src/main/java/com/snatik/storage/security/CipherTransformationType.java:40: warning: '_' used as an identifier
+	public static final String DES_CBC_PKCS5Padding = CipherAlgorithmType.DES + _ + CipherModeType.CBC + _ + CipherPaddingType.PKCS5Padding;
+	                                                                                                     ^
+  (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/rdisk/951/src/android-storage-master/storage/src/main/java/com/snatik/storage/security/CipherTransformationType.java:41: warning: '_' used as an identifier
+	public static final String DES_ECB_NoPadding = CipherAlgorithmType.DES + _ + CipherModeType.ECB + _ + CipherPaddingType.NoPadding;
+	                                                                         ^
+  (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/rdisk/951/src/android-storage-master/storage/src/main/java/com/snatik/storage/security/CipherTransformationType.java:41: warning: '_' used as an identifier
+	public static final String DES_ECB_NoPadding = CipherAlgorithmType.DES + _ + CipherModeType.ECB + _ + CipherPaddingType.NoPadding;
+	                                                                                                  ^
+  (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/rdisk/951/src/android-storage-master/storage/src/main/java/com/snatik/storage/security/CipherTransformationType.java:42: warning: '_' used as an identifier
+	public static final String DES_ECB_PKCS5Padding = CipherAlgorithmType.DES + _ + CipherModeType.ECB + _ + CipherPaddingType.PKCS5Padding;
+	                                                                            ^
+  (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/rdisk/951/src/android-storage-master/storage/src/main/java/com/snatik/storage/security/CipherTransformationType.java:42: warning: '_' used as an identifier
+	public static final String DES_ECB_PKCS5Padding = CipherAlgorithmType.DES + _ + CipherModeType.ECB + _ + CipherPaddingType.PKCS5Padding;
+	                                                                                                     ^
+  (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/rdisk/951/src/android-storage-master/storage/src/main/java/com/snatik/storage/security/CipherTransformationType.java:44: warning: '_' used as an identifier
+	public static final String DESede_CBC_NoPadding = CipherAlgorithmType.DESede + _ + CipherModeType.CBC + _ + CipherPaddingType.NoPadding;
+	                                                                               ^
+  (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/rdisk/951/src/android-storage-master/storage/src/main/java/com/snatik/storage/security/CipherTransformationType.java:44: warning: '_' used as an identifier
+	public static final String DESede_CBC_NoPadding = CipherAlgorithmType.DESede + _ + CipherModeType.CBC + _ + CipherPaddingType.NoPadding;
+	                                                                                                        ^
+  (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/rdisk/951/src/android-storage-master/storage/src/main/java/com/snatik/storage/security/CipherTransformationType.java:45: warning: '_' used as an identifier
+	public static final String DESede_CBC_PKCS5Padding = CipherAlgorithmType.DESede + _ + CipherModeType.CBC + _ + CipherPaddingType.PKCS5Padding;
+	                                                                                  ^
+  (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/rdisk/951/src/android-storage-master/storage/src/main/java/com/snatik/storage/security/CipherTransformationType.java:45: warning: '_' used as an identifier
+	public static final String DESede_CBC_PKCS5Padding = CipherAlgorithmType.DESede + _ + CipherModeType.CBC + _ + CipherPaddingType.PKCS5Padding;
+	                                                                                                           ^
+  (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/rdisk/951/src/android-storage-master/storage/src/main/java/com/snatik/storage/security/CipherTransformationType.java:46: warning: '_' used as an identifier
+	public static final String DESede_ECB_NoPadding = CipherAlgorithmType.DESede + _ + CipherModeType.ECB + _ + CipherPaddingType.NoPadding;
+	                                                                               ^
+  (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/rdisk/951/src/android-storage-master/storage/src/main/java/com/snatik/storage/security/CipherTransformationType.java:46: warning: '_' used as an identifier
+	public static final String DESede_ECB_NoPadding = CipherAlgorithmType.DESede + _ + CipherModeType.ECB + _ + CipherPaddingType.NoPadding;
+	                                                                                                        ^
+  (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/rdisk/951/src/android-storage-master/storage/src/main/java/com/snatik/storage/security/CipherTransformationType.java:47: warning: '_' used as an identifier
+	public static final String DESede_ECB_PKCS5Padding = CipherAlgorithmType.DESede + _ + CipherModeType.ECB + _ + CipherPaddingType.PKCS5Padding;
+	                                                                                  ^
+  (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/rdisk/951/src/android-storage-master/storage/src/main/java/com/snatik/storage/security/CipherTransformationType.java:47: warning: '_' used as an identifier
+	public static final String DESede_ECB_PKCS5Padding = CipherAlgorithmType.DESede + _ + CipherModeType.ECB + _ + CipherPaddingType.PKCS5Padding;
+	                                                                                                           ^
+  (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/rdisk/951/src/android-storage-master/storage/src/main/java/com/snatik/storage/security/CipherTransformationType.java:49: warning: '_' used as an identifier
+	public static final String RSA_ECB_PKCS1Padding = CipherAlgorithmType.RSA + _ + CipherModeType.ECB + _ + CipherPaddingType.PKCS1Padding;
+	                                                                            ^
+  (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/rdisk/951/src/android-storage-master/storage/src/main/java/com/snatik/storage/security/CipherTransformationType.java:49: warning: '_' used as an identifier
+	public static final String RSA_ECB_PKCS1Padding = CipherAlgorithmType.RSA + _ + CipherModeType.ECB + _ + CipherPaddingType.PKCS1Padding;
+	                                                                                                     ^
+  (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/rdisk/951/src/android-storage-master/storage/src/main/java/com/snatik/storage/security/CipherTransformationType.java:50: warning: '_' used as an identifier
+	public static final String RSA_ECB_OAEPWithSHA_1AndMGF1Padding = CipherAlgorithmType.RSA + _ + CipherModeType.ECB + _ + CipherPaddingType.OAEPWithSHA_1AndMGF1Padding;
+	                                                                                           ^
+  (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/rdisk/951/src/android-storage-master/storage/src/main/java/com/snatik/storage/security/CipherTransformationType.java:50: warning: '_' used as an identifier
+	public static final String RSA_ECB_OAEPWithSHA_1AndMGF1Padding = CipherAlgorithmType.RSA + _ + CipherModeType.ECB + _ + CipherPaddingType.OAEPWithSHA_1AndMGF1Padding;
+	                                                                                                                    ^
+  (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/rdisk/951/src/android-storage-master/storage/src/main/java/com/snatik/storage/security/CipherTransformationType.java:51: warning: '_' used as an identifier
+	public static final String RSA_ECB_OAEPWithSHA_256AndMGF1Padding = CipherAlgorithmType.RSA + _ + CipherModeType.ECB + _ + CipherPaddingType.OAEPWithSHA_256AndMGF1Padding;
+	                                                                                             ^
+  (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/rdisk/951/src/android-storage-master/storage/src/main/java/com/snatik/storage/security/CipherTransformationType.java:51: warning: '_' used as an identifier
+	public static final String RSA_ECB_OAEPWithSHA_256AndMGF1Padding = CipherAlgorithmType.RSA + _ + CipherModeType.ECB + _ + CipherPaddingType.OAEPWithSHA_256AndMGF1Padding;
+	                                                                                                                      ^
+  (use of '_' as an identifier might not be supported in releases after Java SE 8)
+Note: /tmp/rdisk/951/src/android-storage-master/storage/src/main/java/com/snatik/storage/Storage.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+31 warnings
+:storage:processDebugJavaRes UP-TO-DATE
+:storage:transformResourcesWithMergeJavaResForDebug
+:storage:transformClassesAndResourcesWithSyncLibJarsForDebug
+:storage:mergeDebugJniLibFolders
+:storage:transformNativeLibsWithMergeJniLibsForDebug
+:storage:transformNativeLibsWithStripDebugSymbolForDebug
+:storage:transformNativeLibsWithSyncJniLibsForDebug
+:storage:bundleDebug
+:storage:compileDebugSources
+:storage:assembleDebug
+:storage:preReleaseBuild UP-TO-DATE
+:storage:checkReleaseManifest
+:storage:prepareReleaseDependencies
+:storage:compileReleaseAidl UP-TO-DATE
+:storage:compileReleaseNdk UP-TO-DATE
+:storage:copyReleaseLint UP-TO-DATE
+:storage:mergeReleaseShaders UP-TO-DATE
+:storage:compileReleaseShaders UP-TO-DATE
+:storage:generateReleaseAssets UP-TO-DATE
+:storage:mergeReleaseAssets UP-TO-DATE
+:storage:mergeReleaseProguardFiles UP-TO-DATE
+:storage:packageReleaseRenderscript UP-TO-DATE
+:storage:compileReleaseRenderscript UP-TO-DATE
+:storage:generateReleaseResValues UP-TO-DATE
+:storage:generateReleaseResources UP-TO-DATE
+:storage:packageReleaseResources UP-TO-DATE
+:storage:processReleaseManifest UP-TO-DATE
+:storage:generateReleaseBuildConfig UP-TO-DATE
+:storage:processReleaseResources UP-TO-DATE
+:storage:generateReleaseSources UP-TO-DATE
+:storage:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:storage:javaPreCompileRelease
+:storage:compileReleaseJavaWithJavac UP-TO-DATE
+:storage:processReleaseJavaRes UP-TO-DATE
+:storage:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:storage:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:storage:mergeReleaseJniLibFolders UP-TO-DATE
+:storage:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:storage:transformNativeLibsWithStripDebugSymbolForRelease UP-TO-DATE
+:storage:transformNativeLibsWithSyncJniLibsForRelease UP-TO-DATE
+:storage:bundleRelease UP-TO-DATE
+:storage:compileReleaseSources UP-TO-DATE
+:storage:assembleRelease UP-TO-DATE
+:storage:assemble
+:storage:build
+
+BUILD SUCCESSFUL
+
+Total time: 9.319 secs
+
+2018-04-08 13:50:14,054 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-08 13:50:14,054 INFO  SysUtils - Execute command: [/tmp/rdisk/951/src/android-storage-master/gradlew, -b, /tmp/rdisk/951/src/android-storage-master/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-08 13:50:22,119 INFO  ProjectTaskService - Detected possible tasks: 72
+2018-04-08 13:50:22,120 INFO  ProjectTaskService - Excluded tasks (22): lintDebug mockableAndroidJar javadocJar deviceCheck lint testReleaseUnitTest javadoc uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll sourcesJar test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-08 13:50:22,120 INFO  SysUtils - Execute command: [/tmp/rdisk/951/src/android-storage-master/gradlew, -b, /tmp/rdisk/951/src/android-storage-master/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, javadocJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, javadoc, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, sourcesJar, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-08 13:50:31,865 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-08 13:50:31,865 INFO  SysUtils - Configuration on demand is an incubating feature.
+Incremental java compilation is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:app:prepareComAndroidSupportAnimatedVectorDrawable2531Library
+:app:prepareComAndroidSupportAppcompatV72531Library
+:app:prepareComAndroidSupportConstraintConstraintLayout102Library
+:app:prepareComAndroidSupportDesign2531Library
+:app:prepareComAndroidSupportRecyclerviewV72531Library
+:app:prepareComAndroidSupportSupportCompat2531Library
+:app:prepareComAndroidSupportSupportCoreUi2531Library
+:app:prepareComAndroidSupportSupportCoreUtils2531Library
+:app:prepareComAndroidSupportSupportFragment2531Library
+:app:prepareComAndroidSupportSupportMediaCompat2531Library
+:app:prepareComAndroidSupportSupportV42531Library
+:app:prepareComAndroidSupportSupportVectorDrawable2531Library
+:app:prepareComAndroidSupportTransition2531Library
+:storage:preBuild UP-TO-DATE
+:storage:preReleaseBuild UP-TO-DATE
+:storage:checkReleaseManifest
+:storage:prepareReleaseDependencies
+:storage:compileReleaseAidl UP-TO-DATE
+:storage:compileReleaseNdk UP-TO-DATE
+:storage:compileLint UP-TO-DATE
+:storage:copyReleaseLint UP-TO-DATE
+:storage:mergeReleaseShaders UP-TO-DATE
+:storage:compileReleaseShaders UP-TO-DATE
+:storage:generateReleaseAssets UP-TO-DATE
+:storage:mergeReleaseAssets UP-TO-DATE
+:storage:mergeReleaseProguardFiles UP-TO-DATE
+:storage:packageReleaseRenderscript UP-TO-DATE
+:storage:compileReleaseRenderscript UP-TO-DATE
+:storage:generateReleaseResValues UP-TO-DATE
+:storage:generateReleaseResources UP-TO-DATE
+:storage:packageReleaseResources UP-TO-DATE
+:storage:processReleaseManifest UP-TO-DATE
+:storage:generateReleaseBuildConfig UP-TO-DATE
+:storage:processReleaseResources UP-TO-DATE
+:storage:generateReleaseSources UP-TO-DATE
+:storage:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:storage:javaPreCompileRelease
+:storage:compileReleaseJavaWithJavac UP-TO-DATE
+:storage:processReleaseJavaRes UP-TO-DATE
+:storage:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:storage:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:storage:mergeReleaseJniLibFolders UP-TO-DATE
+:storage:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:storage:transformNativeLibsWithStripDebugSymbolForRelease UP-TO-DATE
+:storage:transformNativeLibsWithSyncJniLibsForRelease UP-TO-DATE
+:storage:bundleRelease UP-TO-DATE
+:app:prepareDebugDependencies
+:app:compileDebugAidl UP-TO-DATE
+:app:compileDebugRenderscript UP-TO-DATE
+:app:generateDebugBuildConfig UP-TO-DATE
+:app:generateDebugResValues UP-TO-DATE
+:app:generateDebugResources UP-TO-DATE
+:app:mergeDebugResources
+java.awt.AWTError: Can't connect to X11 window server using ':0.0' as the value of the DISPLAY variable.
+:app:mergeDebugResources FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:mergeDebugResources'.
+> java.awt.AWTError: Can't connect to X11 window server using ':0.0' as the value of the DISPLAY variable.
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':app:mergeDebugResources'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:84)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:55)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:62)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:88)
+	at org.gradle.api.internal.tasks.execution.ResolveTaskArtifactStateTaskExecuter.execute(ResolveTaskArtifactStateTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:51)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:54)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:34)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker$1.execute(DefaultTaskGraphExecuter.java:236)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker$1.execute(DefaultTaskGraphExecuter.java:228)
+	at org.gradle.internal.Transformers$4.transform(Transformers.java:169)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:106)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:61)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:228)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:215)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:77)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:58)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:32)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:113)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.access$000(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$1.proceed(DefaultBuildExecuter.java:43)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:30)
+	at org.gradle.initialization.DefaultGradleLauncher$3.execute(DefaultGradleLauncher.java:196)
+	at org.gradle.initialization.DefaultGradleLauncher$3.execute(DefaultGradleLauncher.java:193)
+	at org.gradle.internal.Transformers$4.transform(Transformers.java:169)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:106)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:56)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:193)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:119)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:102)
+	at org.gradle.launcher.exec.GradleBuildController.run(GradleBuildController.java:71)
+	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:28)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:41)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.tooling.internal.provider.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:75)
+	at org.gradle.tooling.internal.provider.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:49)
+	at org.gradle.tooling.internal.provider.ServicesSetupBuildActionExecuter.execute(ServicesSetupBuildActionExecuter.java:44)
+	at org.gradle.tooling.internal.provider.ServicesSetupBuildActionExecuter.execute(ServicesSetupBuildActionExecuter.java:29)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:51)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:173)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:244)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:217)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:33)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:174)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:60)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:37)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:30)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:129)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:61)
+Caused by: com.android.build.gradle.tasks.ResourceException: java.awt.AWTError: Can't connect to X11 window server using ':0.0' as the value of the DISPLAY variable.
+	at com.android.build.gradle.tasks.MergeResources.doFullTaskAction(MergeResources.java:166)
+	at com.android.build.gradle.internal.tasks.IncrementalTask.taskAction(IncrementalTask.java:88)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:73)
+	at org.gradle.api.internal.project.taskfactory.DefaultTaskClassInfoStore$IncrementalTaskAction.doExecute(DefaultTaskClassInfoStore.java:163)
+	at org.gradle.api.internal.project.taskfactory.DefaultTaskClassInfoStore$StandardTaskAction.execute(DefaultTaskClassInfoStore.java:134)
+	at org.gradle.api.internal.project.taskfactory.DefaultTaskClassInfoStore$StandardTaskAction.execute(DefaultTaskClassInfoStore.java:123)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:95)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:76)
+	... 62 more
+Caused by: java.awt.AWTError: Can't connect to X11 window server using ':0.0' as the value of the DISPLAY variable.
+	at com.android.ide.common.res2.MergeWriter.end(MergeWriter.java:54)
+	at com.android.ide.common.res2.MergedResourceWriter.end(MergedResourceWriter.java:220)
+	at com.android.ide.common.res2.DataMerger.mergeData(DataMerger.java:301)
+	at com.android.ide.common.res2.ResourceMerger.mergeData(ResourceMerger.java:410)
+	at com.android.build.gradle.tasks.MergeResources.doFullTaskAction(MergeResources.java:159)
+	... 69 more
+Caused by: java.lang.RuntimeException: java.awt.AWTError: Can't connect to X11 window server using ':0.0' as the value of the DISPLAY variable.
+	at com.android.ide.common.internal.WaitableExecutor.waitForTasksWithQuickFail(WaitableExecutor.java:147)
+	at com.android.ide.common.res2.MergeWriter.end(MergeWriter.java:50)
+	... 73 more
+Caused by: java.awt.AWTError: Can't connect to X11 window server using ':0.0' as the value of the DISPLAY variable.
+	at com.android.ide.common.vectordrawable.VdTree.drawIntoImage(VdTree.java:87)
+	at com.android.ide.common.vectordrawable.VdPreview.getPreviewFromVectorTree(VdPreview.java:349)
+	at com.android.ide.common.vectordrawable.VdPreview.getPreviewFromVectorXml(VdPreview.java:285)
+	at com.android.builder.png.VectorDrawableRenderer.generateFile(VectorDrawableRenderer.java:152)
+	at com.android.ide.common.res2.MergedResourceWriter.lambda$addItem$1(MergedResourceWriter.java:333)
+
+
+BUILD FAILED
+
+Total time: 9.274 secs
+
+2018-04-08 13:50:31,885 ERROR FullProcessService - Project build has not produced APK file
+2018-04-08 13:50:31,904 ERROR FullProcessService - Could not find generated or existed APK file

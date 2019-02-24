@@ -1,0 +1,4 @@
+{
+  "in.championswimmer.sfg.lib" : [ "BuildConfig", "GestureAnalyser", "GestureAnalyser$GestureType", "SimpleFingerGestures", "SimpleFingerGestures$OnFingerGestureListener" ],
+  "in.championswimmer.sfg.sample" : [ "BuildConfig", "MainActivity", "MainActivity$1", "MainActivity$2", "R", "R$attr", "R$dimen", "R$drawable", "R$id", "R$layout", "R$menu", "R$string", "R$style" ]
+}

@@ -1,0 +1,84 @@
+2018-04-09 09:33:15,788 INFO  DownloadService - Downloading "https://github.com/MichaelEvans/uber-java/archive/master.zip", attempt 3
+2018-04-09 09:33:16,313 INFO  DownloadService - Downloaded https://github.com/MichaelEvans/uber-java/archive/master.zip, attempt 3
+2018-04-09 09:33:16,313 INFO  DownloadService - Size of file "/tmp/rdisk/861/master.zip": 188 KB
+2018-04-09 09:33:16,314 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-09 09:33:16,314 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/861/master.zip: true
+2018-04-09 09:33:16,314 DEBUG ZipUtil - Extracting '/tmp/rdisk/861/master.zip' into '/tmp/rdisk/861/src'.
+2018-04-09 09:33:16,325 INFO  FullProcessService - Size of directory with sources: 256 KB
+2018-04-09 09:33:16,325 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/861/src]
+2018-04-09 09:33:16,329 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/861/src/.git/
+
+2018-04-09 09:33:16,332 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/861/src/uber-java-master/gradlew
+2018-04-09 09:33:16,335 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/861/src/uber-java-master/app/build.gradle /tmp/rdisk/861/src/uber-java-master/library/build.gradle /tmp/rdisk/861/src/uber-java-master/build.gradle
+2018-04-09 09:33:16,338 INFO  ProjectBuildService - All script(s): /tmp/rdisk/861/src/uber-java-master/settings.gradle /tmp/rdisk/861/src/uber-java-master/library/build.gradle /tmp/rdisk/861/src/uber-java-master/build.gradle /tmp/rdisk/861/src/uber-java-master/app/build.gradle
+2018-04-09 09:33:16,338 INFO  ProjectBuildService - Remote scripts: none
+2018-04-09 09:33:16,338 INFO  ProjectFixService - Fixing project...
+2018-04-09 09:33:16,344 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/861/src/uber-java-master/app/local.properties
+2018-04-09 09:33:16,345 INFO  ProjectFixService - Build info for "/tmp/rdisk/861/src/uber-java-master/app/build.gradle": [buildToolsVersion=20.0.0,compileSdkVersion=20,minSdkVersion=15,targetSdkVersion=20]
+2018-04-09 09:33:16,345 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/861/src/uber-java-master/library/local.properties
+2018-04-09 09:33:16,345 INFO  ProjectFixService - Build info for "/tmp/rdisk/861/src/uber-java-master/library/build.gradle": [buildToolsVersion=20.0.0,compileSdkVersion=19,minSdkVersion=8,targetSdkVersion=19]
+2018-04-09 09:33:16,345 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/861/src/uber-java-master/local.properties
+2018-04-09 09:33:16,346 INFO  WrapperPropertiesFixService - Gradle wrapper: http://services.gradle.org/distributions/gradle-1.12-all.zip
+2018-04-09 09:33:16,357 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (http://services.gradle.org/distributions/gradle-1.12-bin.zip)
+2018-04-09 09:33:16,358 INFO  ProjectFixService - Build info for "/tmp/rdisk/861/src/uber-java-master/build.gradle": [buildToolsVersion=20.0.0,compileSdkVersion=19,minSdkVersion=8,targetSdkVersion=19]
+2018-04-09 09:33:16,358 INFO  ProjectFixService - Project was maybe fixed
+2018-04-09 09:33:16,358 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-09 09:33:16,358 INFO  SysUtils - Execute command: [/tmp/rdisk/861/src/uber-java-master/gradlew, -b, /tmp/rdisk/861/src/uber-java-master/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-09 09:33:25,277 INFO  ProjectTaskService - Detected possible tasks: 48
+2018-04-09 09:33:25,277 INFO  ProjectTaskService - Excluded tasks (11): lintDebug deviceCheck lint uninstallRelease connectedCheck uninstallAll check connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-09 09:33:25,277 INFO  SysUtils - Execute command: [/tmp/rdisk/861/src/uber-java-master/gradlew, -b, /tmp/rdisk/861/src/uber-java-master/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-09 09:33:34,606 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:preBuild
+:app:compileDebugNdk
+:app:preDebugBuild
+:app:checkDebugManifest
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:compileDebugJava
+:app:preDexDebug
+:app:dexDebug
+:app:processDebugJavaRes UP-TO-DATE
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:preReleaseBuild
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:compileReleaseJava
+:app:lintVitalRelease
+:app:compileReleaseNdk
+:app:preDexRelease
+:app:dexRelease
+:app:processReleaseJavaRes UP-TO-DATE
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 8.898 secs
+
+2018-04-09 09:33:34,614 INFO  FullProcessService - Found APK file: /tmp/rdisk/861/src/uber-java-master/app/build/outputs/apk/app-debug.apk

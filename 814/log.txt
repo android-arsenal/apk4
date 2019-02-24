@@ -1,0 +1,10 @@
+2018-04-09 11:11:56,422 INFO  DownloadService - Downloading "https://github.com/dkmeteor/SmoothTransition/archive/master.zip", attempt 3
+2018-04-09 11:11:59,006 INFO  DownloadService - Downloaded https://github.com/dkmeteor/SmoothTransition/archive/master.zip, attempt 3
+2018-04-09 11:11:59,006 INFO  DownloadService - Size of file "/tmp/rdisk/814/master.zip": 2 MB
+2018-04-09 11:11:59,006 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-09 11:11:59,006 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/814/master.zip: false
+2018-04-09 11:11:59,006 INFO  FullProcessService - Archive with sources does not contain any build script
+2018-04-09 11:11:59,006 ERROR FullProcessService - Could not find directory with sources
+2018-04-09 11:11:59,006 ERROR FullProcessService - Project will not be processed
+2018-04-09 11:11:59,006 ERROR FullProcessService - Project build has not produced APK file
+2018-04-09 11:11:59,007 ERROR FullProcessService - Could not find generated or existed APK file

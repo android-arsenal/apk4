@@ -1,0 +1,160 @@
+2018-05-11 15:52:24,952 INFO  DownloadService - Downloading "https://github.com/stormzhang/9GAG/archive/master.zip", attempt 3
+2018-05-11 15:53:25,670 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-05-11 15:53:26,495 INFO  GithubDownloadService - Default branch of this repository: master
+2018-05-11 15:53:26,495 INFO  DownloadService - Downloading "https://github.com/stormzhang/9GAG/archive/master.zip", attempt 3
+2018-05-11 15:54:27,909 DEBUG FullProcessService - Repository https://github.com/stormzhang/9GAG available: true
+2018-05-11 15:54:27,909 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-05-11 15:54:27,909 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/stormzhang/9GAG, /tmp/rdisk/867/src]
+2018-05-11 15:54:30,034 INFO  SysUtils - 
+2018-05-11 15:54:30,039 INFO  GitService - Deleted "/tmp/rdisk/867/src/.git": true
+2018-05-11 15:54:30,044 INFO  FullProcessService - Size of directory with sources: 1 MB
+2018-05-11 15:54:30,044 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/867/src]
+2018-05-11 15:54:30,048 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/867/src/.git/
+
+2018-05-11 15:54:30,052 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/867/src/gradlew
+2018-05-11 15:54:30,055 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/867/src/app/build.gradle /tmp/rdisk/867/src/extras/ShimmerAndroid/build.gradle /tmp/rdisk/867/src/build.gradle
+2018-05-11 15:54:30,059 INFO  ProjectBuildService - All script(s): /tmp/rdisk/867/src/settings.gradle /tmp/rdisk/867/src/extras/ShimmerAndroid/build.gradle /tmp/rdisk/867/src/config.gradle /tmp/rdisk/867/src/build.gradle /tmp/rdisk/867/src/app/build.gradle
+2018-05-11 15:54:30,059 INFO  ProjectBuildService - Remote scripts: none
+2018-05-11 15:54:30,059 INFO  ProjectFixService - Fixing project...
+2018-05-11 15:54:30,067 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/867/src/app/local.properties
+2018-05-11 15:54:30,069 INFO  ProjectFixService - Build info for "/tmp/rdisk/867/src/app/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-05-11 15:54:30,069 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/867/src/app/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-11 15:54:30,070 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/867/src/extras/ShimmerAndroid/local.properties
+2018-05-11 15:54:30,072 INFO  ProjectFixService - Build info for "/tmp/rdisk/867/src/extras/ShimmerAndroid/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-05-11 15:54:30,072 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/867/src/extras/ShimmerAndroid/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-11 15:54:30,073 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/867/src/local.properties
+2018-05-11 15:54:30,073 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-05-11 15:54:30,073 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-05-11 15:54:30,075 INFO  ProjectFixService - Build info for "/tmp/rdisk/867/src/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-05-11 15:54:30,075 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/867/src/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-11 15:54:30,076 INFO  ProjectFixService - Project was maybe fixed
+2018-05-11 15:54:30,076 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-11 15:54:30,076 INFO  SysUtils - Execute command: [/tmp/rdisk/867/src/gradlew, -b, /tmp/rdisk/867/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-11 15:54:36,699 INFO  ProjectTaskService - Detected possible tasks: 66
+2018-05-11 15:54:36,699 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-05-11 15:54:36,700 INFO  SysUtils - Execute command: [/tmp/rdisk/867/src/gradlew, -b, /tmp/rdisk/867/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-05-11 15:55:03,845 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:extras:ShimmerAndroid:preBuild UP-TO-DATE
+:extras:ShimmerAndroid:preReleaseBuild UP-TO-DATE
+:extras:ShimmerAndroid:compileReleaseNdk UP-TO-DATE
+:extras:ShimmerAndroid:compileLint
+:extras:ShimmerAndroid:copyReleaseLint UP-TO-DATE
+:extras:ShimmerAndroid:mergeReleaseProguardFiles
+:extras:ShimmerAndroid:packageReleaseRenderscript UP-TO-DATE
+:extras:ShimmerAndroid:checkReleaseManifest
+:extras:ShimmerAndroid:prepareReleaseDependencies
+:extras:ShimmerAndroid:compileReleaseRenderscript
+:extras:ShimmerAndroid:generateReleaseResValues
+:extras:ShimmerAndroid:generateReleaseResources
+:extras:ShimmerAndroid:packageReleaseResources
+:extras:ShimmerAndroid:compileReleaseAidl
+:extras:ShimmerAndroid:generateReleaseBuildConfig
+:extras:ShimmerAndroid:generateReleaseAssets UP-TO-DATE
+:extras:ShimmerAndroid:mergeReleaseAssets
+:extras:ShimmerAndroid:processReleaseManifest
+:extras:ShimmerAndroid:processReleaseResources
+:extras:ShimmerAndroid:generateReleaseSources
+:extras:ShimmerAndroid:compileReleaseJavaWithJavac
+:extras:ShimmerAndroid:processReleaseJavaRes UP-TO-DATE
+:extras:ShimmerAndroid:transformResourcesWithMergeJavaResForRelease
+:extras:ShimmerAndroid:transformClassesAndResourcesWithSyncLibJarsForRelease
+:extras:ShimmerAndroid:mergeReleaseJniLibFolders
+:extras:ShimmerAndroid:transformNative_libsWithMergeJniLibsForRelease
+:extras:ShimmerAndroid:transformNative_libsWithSyncJniLibsForRelease
+:extras:ShimmerAndroid:bundleRelease
+:app:prepareComAlexvasilkovFoldableLayout101Library
+:app:prepareComAndroidSupportSupportV42311Library
+:app:prepareComEtsyAndroidGridLibrary105Library
+:app:prepareSrcExtrasShimmerAndroidUnspecifiedLibrary
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+AAPT: /tmp/rdisk/867/src/app/src/main/res/drawable-xhdpi/listitem_feed_bg.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/867/src/app/build/intermediates/exploded-aar/src.extras/ShimmerAndroid/unspecified/res/drawable-nodpi-v4/spot_mask.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/867/src/app/src/main/res/drawable-xhdpi/ic_action_overflow.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/867/src/app/src/main/res/drawable-xhdpi/ic_refresh.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/867/src/app/src/main/res/drawable-xhdpi/bg.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/867/src/app/src/main/res/drawable-xhdpi/shadow_left.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/867/src/app/src/main/res/drawable-nodpi/wave.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/867/src/app/src/main/res/drawable-xhdpi/icon.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/867/src/app/src/main/res/drawable-xhdpi/shadow_right.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/867/src/app/src/main/res/drawable-xhdpi/shadow_bottom.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/867/src/app/src/main/res/drawable-xhdpi/listitem_feed_pressed.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT err(Facade for 1770796844) : No Delegate set : lost message:/tmp/rdisk/867/src/app/src/main/res/drawable-xhdpi/ic_drawer.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:compileDebugJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources
+:app:transformClassesWithDexForDebug
+:app:mergeDebugJniLibFolders
+:app:transformNative_libsWithMergeJniLibsForDebug
+:app:processDebugJavaRes UP-TO-DATE
+:app:transformResourcesWithMergeJavaResForDebug
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+AAPT: /tmp/rdisk/867/src/app/src/main/res/drawable-xhdpi/listitem_feed_bg.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/867/src/app/src/main/res/drawable-xhdpi/ic_refresh.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/867/src/app/src/main/res/drawable-xhdpi/ic_action_overflow.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/867/src/app/build/intermediates/exploded-aar/src.extras/ShimmerAndroid/unspecified/res/drawable-nodpi-v4/spot_mask.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/867/src/app/src/main/res/drawable-xhdpi/bg.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/867/src/app/src/main/res/drawable-xhdpi/icon.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/867/src/app/src/main/res/drawable-xhdpi/shadow_right.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/867/src/app/src/main/res/drawable-xhdpi/shadow_bottom.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/867/src/app/src/main/res/drawable-xhdpi/listitem_feed_pressed.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/867/src/app/src/main/res/drawable-nodpi/wave.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT err(Facade for 1759878407) : No Delegate set : lost message:/tmp/rdisk/867/src/app/src/main/res/drawable-xhdpi/shadow_left.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/867/src/app/src/main/res/drawable-xhdpi/ic_drawer.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:compileReleaseJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:app:compileReleaseNdk UP-TO-DATE
+:app:compileReleaseSources
+:app:lintVitalRelease
+:app:transformClassesWithDexForRelease
+:app:mergeReleaseJniLibFolders
+:app:transformNative_libsWithMergeJniLibsForRelease
+:app:processReleaseJavaRes UP-TO-DATE
+:app:transformResourcesWithMergeJavaResForRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 26.697 secs
+
+2018-05-11 15:55:03,864 INFO  FullProcessService - Found APK file: /tmp/rdisk/867/src/app/build/outputs/apk/app-debug.apk

@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "net.simplyadvanced.examplekeyboardlessedittext.app",
+    "label" : "KeyboardlessEditText",
+    "icon" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "versionName" : "1.0.2",
+    "versionCode" : 2,
+    "installLocation" : null,
+    "minSdkVersion" : "8",
+    "targetSdkVersion" : "19",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAABCFBMVEUAAAD/eAD/eQD/dgD/egD/ewD/dwD/eQD/dwD/VQD/eQD/eAD/eAD/eQD/eAD/eAD/eQD/egD/eQD/fAD/eAD/ZgD/eAD/eAD/eAD/eQD/eAD/eQD/eQD/eAD/egD/eQD/dwD/gAD/eAD/eAD/eQD/dgD/eAD/eAD/eAD/dQD/dwD/dwD/dwD/dgD/dwD/eAD/eQD/eQD/ewD/eQD/eQD/eAD/dwD/eAD/eAD/cwD/eQD/eAD/eQD/eQD/dwD/eAD/eQD/bQD/dgD/eQD/ewD/egD/eAD/eAD/eAD/eAD/AAD/eAD/egD/eAD/eAD/eQD/eAD/eAD/dgD/cQD/eAD/eAD/gAD/dwCqIv0nAAAAWHRSTlMAJJQnQR1LE14DX5NgPf9EcDKBIaIFpP2mOew/Y+Esco8EkeCSNjHMahhpHmc0TUJQhR+DJlNPZLUUpVVUKj4zKAccFRsX8OPD+wH2GWhiUllXOBLW8wyNYiFGrQAAARlJREFUSMft1MlSwlAQQNFLBEGFhyJOQVBUUMR5QBAnwBGnOP//n9gdslAKF1KKLnIXfaqS6sV7VQn4+f1hAcuy+gjKtEL0K2EiygCDMocgarkFvIWYMSbOsEwzQkIZJamMMS5zAiaNW6zbhSnbtlNMp6UMM0qIWSXLnMx5WEi75Xp2S/lFbYmCskxRWWFVWWNdSbGh5D8c2phNtpRtdpQEQSXKrlJir/2WvrWQKWsRKvtSlYJywKFyRE45JqicdHvoWrFVHepCA06FM9CHYQh574u1T2cw5hxsoQwXwiXZKyFJ89p733bo31y4uW11B/eO46SgJMRpPgiPUHW8Gj3/8p7SHXv+cqFiOvbycwuvVsfe/N+k3//oHQQ9PxZqwTKSAAAAAElFTkSuQmCC"
+  },
+  "dexClasses" : 742,
+  "locales" : [ "", "sl", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "pt", "ar", "ru", "fa", "sk", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "af", "in", "vi", "fr_CA", "sr", "da", "es", "hy_AM", "tr", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "fr", "ja", "lo_LA", "iw", "de", "en_IN", "es_US", "nb", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"2\" android:versionName=\"1.0.2\" package=\"net.simplyadvanced.examplekeyboardlessedittext.app\">\n\t<uses-sdk android:minSdkVersion=\"8\" android:targetSdkVersion=\"19\" />\n\t<application android:theme=\"resourceId:0x7f0b0000\" android:label=\"KeyboardlessEditText\" android:icon=\"res/drawable-mdpi-v4/ic_launcher.png\" android:debuggable=\"true\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"KeyboardlessEditText\" android:name=\"net.simplyadvanced.examplekeyboardlessedittext.app.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 770262,
+  "crc32" : 870699537,
+  "sha256" : "f7945b1d2d7f40b9f9b2855d12001b8340d02aca862e2c94b12aefe1d83ed89e",
+  "buildTime" : 1523266481000
+}

@@ -1,0 +1,122 @@
+2018-04-09 14:24:10,886 INFO  DownloadService - Downloading "https://github.com/sd6352051/NiftyDialogEffects/archive/master.zip", attempt 3
+2018-04-09 14:24:11,273 INFO  DownloadService - Downloaded https://github.com/sd6352051/NiftyDialogEffects/archive/master.zip, attempt 3
+2018-04-09 14:24:11,273 INFO  DownloadService - Size of file "/tmp/rdisk/772/master.zip": 158 KB
+2018-04-09 14:24:11,273 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-09 14:24:11,273 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/772/master.zip: true
+2018-04-09 14:24:11,274 DEBUG ZipUtil - Extracting '/tmp/rdisk/772/master.zip' into '/tmp/rdisk/772/src'.
+2018-04-09 14:24:11,286 INFO  FullProcessService - Size of directory with sources: 190 KB
+2018-04-09 14:24:11,286 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/772/src]
+2018-04-09 14:24:11,291 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/772/src/.git/
+
+2018-04-09 14:24:11,294 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/772/src/NiftyDialogEffects-master/gradlew
+2018-04-09 14:24:11,298 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/772/src/NiftyDialogEffects-master/app/build.gradle /tmp/rdisk/772/src/NiftyDialogEffects-master/library/build.gradle /tmp/rdisk/772/src/NiftyDialogEffects-master/build.gradle
+2018-04-09 14:24:11,301 INFO  ProjectBuildService - All script(s): /tmp/rdisk/772/src/NiftyDialogEffects-master/settings.gradle /tmp/rdisk/772/src/NiftyDialogEffects-master/library/gradle-mvn-push.gradle /tmp/rdisk/772/src/NiftyDialogEffects-master/library/build.gradle /tmp/rdisk/772/src/NiftyDialogEffects-master/build.gradle /tmp/rdisk/772/src/NiftyDialogEffects-master/app/build.gradle
+2018-04-09 14:24:11,301 INFO  ProjectBuildService - Remote scripts: none
+2018-04-09 14:24:11,301 INFO  ProjectFixService - Fixing project...
+2018-04-09 14:24:11,312 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/772/src/NiftyDialogEffects-master/app/local.properties
+2018-04-09 14:24:11,312 INFO  ProjectFixService - Build info for "/tmp/rdisk/772/src/NiftyDialogEffects-master/app/build.gradle": [buildToolsVersion=25.0.3,compileSdkVersion=26,minSdkVersion=14,targetSdkVersion=26]
+2018-04-09 14:24:11,312 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/772/src/NiftyDialogEffects-master/library/local.properties
+2018-04-09 14:24:11,313 INFO  ProjectFixService - Build info for "/tmp/rdisk/772/src/NiftyDialogEffects-master/library/build.gradle": [buildToolsVersion=25.0.3,compileSdkVersion=26,minSdkVersion=14,targetSdkVersion=26]
+2018-04-09 14:24:11,313 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/772/src/NiftyDialogEffects-master/local.properties
+2018-04-09 14:24:11,314 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.14.1-bin.zip
+2018-04-09 14:24:11,316 INFO  ProjectFixService - Build info for "/tmp/rdisk/772/src/NiftyDialogEffects-master/build.gradle": [buildToolsVersion=25.0.3,compileSdkVersion=26,minSdkVersion=14,targetSdkVersion=26]
+2018-04-09 14:24:11,316 INFO  ProjectFixService - Project was maybe fixed
+2018-04-09 14:24:11,316 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-09 14:24:11,316 INFO  SysUtils - Execute command: [/tmp/rdisk/772/src/NiftyDialogEffects-master/gradlew, -b, /tmp/rdisk/772/src/NiftyDialogEffects-master/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-09 14:24:19,802 INFO  ProjectTaskService - Detected possible tasks: 68
+2018-04-09 14:24:19,802 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-09 14:24:19,802 INFO  SysUtils - Execute command: [/tmp/rdisk/772/src/NiftyDialogEffects-master/gradlew, -b, /tmp/rdisk/772/src/NiftyDialogEffects-master/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-09 14:24:32,246 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:library:preBuild UP-TO-DATE
+:library:preReleaseBuild UP-TO-DATE
+:library:compileReleaseNdk UP-TO-DATE
+:library:compileLint
+:library:copyReleaseLint UP-TO-DATE
+:library:mergeReleaseProguardFiles
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:checkReleaseManifest
+:library:prepareReleaseDependencies
+:library:compileReleaseRenderscript
+:library:generateReleaseResValues
+:library:generateReleaseResources
+:library:packageReleaseResources
+:library:compileReleaseAidl
+:library:generateReleaseBuildConfig
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets
+:library:processReleaseManifest
+:library:processReleaseResources
+:library:generateReleaseSources
+:library:compileReleaseJavaWithJavac
+:library:processReleaseJavaRes UP-TO-DATE
+:library:transformResourcesWithMergeJavaResForRelease
+:library:transformClassesAndResourcesWithSyncLibJarsForRelease
+:library:mergeReleaseJniLibFolders
+:library:transformNative_libsWithMergeJniLibsForRelease
+:library:transformNative_libsWithSyncJniLibsForRelease
+:library:bundleRelease
+:app:prepareComGithubSd6352051LibraryUnspecifiedLibrary
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:compileDebugJavaWithJavacNote: /tmp/rdisk/772/src/NiftyDialogEffects-master/app/src/main/java/com/gitonway/lee/niftymodaldialogeffects/MainActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources
+:app:transformClassesWithDexForDebug
+:app:mergeDebugJniLibFolders
+:app:transformNative_libsWithMergeJniLibsForDebug
+:app:processDebugJavaRes UP-TO-DATE
+:app:transformResourcesWithMergeJavaResForDebug
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:compileReleaseJavaWithJavacNote: /tmp/rdisk/772/src/NiftyDialogEffects-master/app/src/main/java/com/gitonway/lee/niftymodaldialogeffects/MainActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:app:compileReleaseNdk UP-TO-DATE
+:app:compileReleaseSources
+:app:lintVitalRelease
+:app:transformClassesWithDexForRelease
+:app:mergeReleaseJniLibFolders
+:app:transformNative_libsWithMergeJniLibsForRelease
+:app:processReleaseJavaRes UP-TO-DATE
+:app:transformResourcesWithMergeJavaResForRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 12.019 secs
+
+2018-04-09 14:24:32,261 INFO  FullProcessService - Found APK file: /tmp/rdisk/772/src/NiftyDialogEffects-master/app/build/outputs/apk/app-debug.apk

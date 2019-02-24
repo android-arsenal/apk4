@@ -1,0 +1,238 @@
+2018-04-08 15:19:09,213 INFO  DownloadService - Downloading "https://github.com/anupcowkur/Reservoir/archive/master.zip", attempt 3
+2018-04-08 15:19:09,579 INFO  DownloadService - Downloaded https://github.com/anupcowkur/Reservoir/archive/master.zip, attempt 3
+2018-04-08 15:19:09,579 INFO  DownloadService - Size of file "/tmp/rdisk/945/master.zip": 70 KB
+2018-04-08 15:19:09,579 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-08 15:19:09,580 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/945/master.zip: true
+2018-04-08 15:19:09,580 DEBUG ZipUtil - Extracting '/tmp/rdisk/945/master.zip' into '/tmp/rdisk/945/src'.
+2018-04-08 15:19:09,587 INFO  FullProcessService - Size of directory with sources: 112 KB
+2018-04-08 15:19:09,587 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/945/src]
+2018-04-08 15:19:09,592 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/945/src/.git/
+
+2018-04-08 15:19:09,594 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/945/src/Reservoir-master/gradlew
+2018-04-08 15:19:09,596 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/945/src/Reservoir-master/Library/build.gradle /tmp/rdisk/945/src/Reservoir-master/Sample/build.gradle /tmp/rdisk/945/src/Reservoir-master/build.gradle
+2018-04-08 15:19:09,598 INFO  ProjectBuildService - All script(s): /tmp/rdisk/945/src/Reservoir-master/settings.gradle /tmp/rdisk/945/src/Reservoir-master/build.gradle /tmp/rdisk/945/src/Reservoir-master/Sample/build.gradle /tmp/rdisk/945/src/Reservoir-master/Library/build.gradle
+2018-04-08 15:19:09,599 INFO  ProjectBuildService - Remote scripts: none
+2018-04-08 15:19:09,599 INFO  ProjectFixService - Fixing project...
+2018-04-08 15:19:09,604 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/945/src/Reservoir-master/Library/local.properties
+2018-04-08 15:19:09,604 INFO  ProjectFixService - Build info for "/tmp/rdisk/945/src/Reservoir-master/Library/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=23,minSdkVersion=9,targetSdkVersion=23]
+2018-04-08 15:19:09,605 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/945/src/Reservoir-master/Sample/local.properties
+2018-04-08 15:19:09,605 INFO  ProjectFixService - Build info for "/tmp/rdisk/945/src/Reservoir-master/Sample/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=23,minSdkVersion=9,targetSdkVersion=23]
+2018-04-08 15:19:09,606 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/945/src/Reservoir-master/local.properties
+2018-04-08 15:19:09,606 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-3.3-all.zip
+2018-04-08 15:19:09,606 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-3.3-bin.zip)
+2018-04-08 15:19:09,608 INFO  ProjectFixService - Build info for "/tmp/rdisk/945/src/Reservoir-master/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=23,minSdkVersion=9,targetSdkVersion=23]
+2018-04-08 15:19:09,608 INFO  ProjectFixService - Project was maybe fixed
+2018-04-08 15:19:09,608 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-08 15:19:09,608 INFO  SysUtils - Execute command: [/tmp/rdisk/945/src/Reservoir-master/gradlew, -b, /tmp/rdisk/945/src/Reservoir-master/Library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-08 15:19:17,704 INFO  ProjectTaskService - Detected possible tasks: 63
+2018-04-08 15:19:17,704 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-08 15:19:17,704 INFO  SysUtils - Execute command: [/tmp/rdisk/945/src/Reservoir-master/gradlew, -b, /tmp/rdisk/945/src/Reservoir-master/Library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-08 15:19:26,955 INFO  SysUtils - Configuration on demand is an incubating feature.
+Incremental java compilation is an incubating feature.
+:Library:preBuild UP-TO-DATE
+:Library:preDebugBuild UP-TO-DATE
+:Library:checkDebugManifest
+:Library:preDebugAndroidTestBuild UP-TO-DATE
+:Library:preDebugUnitTestBuild UP-TO-DATE
+:Library:preReleaseBuild UP-TO-DATE
+:Library:preReleaseUnitTestBuild UP-TO-DATE
+:Library:prepareIoReactivexRxandroid121Library
+:Library:prepareDebugDependencies
+:Library:compileDebugAidl
+:Library:compileDebugNdk UP-TO-DATE
+:Library:compileLint
+:Library:copyDebugLint UP-TO-DATE
+:Library:mergeDebugShaders
+:Library:compileDebugShaders
+:Library:generateDebugAssets
+:Library:mergeDebugAssets
+:Library:mergeDebugProguardFiles
+:Library:packageDebugRenderscript UP-TO-DATE
+:Library:compileDebugRenderscript
+:Library:generateDebugResValues
+:Library:generateDebugResources
+:Library:packageDebugResources
+:Library:processDebugManifest
+:Library:generateDebugBuildConfig
+:Library:processDebugResources
+:Library:generateDebugSources
+:Library:incrementalDebugJavaCompilationSafeguard
+:Library:javaPreCompileDebug
+:Library:compileDebugJavaWithJavac
+:Library:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: /tmp/rdisk/945/src/Reservoir-master/Library/src/main/java/com/anupcowkur/reservoir/Reservoir.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+:Library:processDebugJavaRes UP-TO-DATE
+:Library:transformResourcesWithMergeJavaResForDebug
+:Library:transformClassesAndResourcesWithSyncLibJarsForDebug
+:Library:mergeDebugJniLibFolders
+:Library:transformNativeLibsWithMergeJniLibsForDebug
+:Library:transformNativeLibsWithStripDebugSymbolForDebug
+:Library:transformNativeLibsWithSyncJniLibsForDebug
+:Library:bundleDebug
+:Library:compileDebugSources
+:Library:assembleDebug
+:Library:checkReleaseManifest
+:Library:prepareReleaseDependencies
+:Library:compileReleaseAidl
+:Library:compileReleaseNdk UP-TO-DATE
+:Library:copyReleaseLint UP-TO-DATE
+:Library:mergeReleaseShaders
+:Library:compileReleaseShaders
+:Library:generateReleaseAssets
+:Library:mergeReleaseAssets
+:Library:mergeReleaseProguardFiles
+:Library:packageReleaseRenderscript UP-TO-DATE
+:Library:compileReleaseRenderscript
+:Library:generateReleaseResValues
+:Library:generateReleaseResources
+:Library:packageReleaseResources
+:Library:processReleaseManifest
+:Library:generateReleaseBuildConfig
+:Library:processReleaseResources
+:Library:generateReleaseSources
+:Library:incrementalReleaseJavaCompilationSafeguard
+:Library:javaPreCompileRelease
+:Library:compileReleaseJavaWithJavac
+:Library:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: /tmp/rdisk/945/src/Reservoir-master/Library/src/main/java/com/anupcowkur/reservoir/Reservoir.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+:Library:processReleaseJavaRes UP-TO-DATE
+:Library:transformResourcesWithMergeJavaResForRelease
+:Library:transformClassesAndResourcesWithSyncLibJarsForRelease
+:Library:mergeReleaseJniLibFolders
+:Library:transformNativeLibsWithMergeJniLibsForRelease
+:Library:transformNativeLibsWithStripDebugSymbolForRelease
+:Library:transformNativeLibsWithSyncJniLibsForRelease
+:Library:bundleRelease
+:Library:compileReleaseSources
+:Library:assembleRelease
+:Library:assemble
+:Library:build
+
+BUILD SUCCESSFUL
+
+Total time: 8.739 secs
+
+2018-04-08 15:19:26,962 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-08 15:19:26,963 INFO  SysUtils - Execute command: [/tmp/rdisk/945/src/Reservoir-master/gradlew, -b, /tmp/rdisk/945/src/Reservoir-master/Sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-08 15:19:35,055 INFO  ProjectTaskService - Detected possible tasks: 66
+2018-04-08 15:19:35,055 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-08 15:19:35,056 INFO  SysUtils - Execute command: [/tmp/rdisk/945/src/Reservoir-master/gradlew, -b, /tmp/rdisk/945/src/Reservoir-master/Sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-08 15:20:02,871 INFO  SysUtils - Configuration on demand is an incubating feature.
+Incremental java compilation is an incubating feature.
+:Library:preBuild UP-TO-DATE
+:Library:preReleaseBuild UP-TO-DATE
+:Library:checkReleaseManifest
+:Library:preDebugAndroidTestBuild UP-TO-DATE
+:Library:preDebugBuild UP-TO-DATE
+:Library:preDebugUnitTestBuild UP-TO-DATE
+:Library:preReleaseUnitTestBuild UP-TO-DATE
+:Library:prepareIoReactivexRxandroid121Library
+:Library:prepareReleaseDependencies
+:Library:compileReleaseAidl UP-TO-DATE
+:Library:compileReleaseNdk UP-TO-DATE
+:Library:compileLint UP-TO-DATE
+:Library:copyReleaseLint UP-TO-DATE
+:Library:mergeReleaseShaders UP-TO-DATE
+:Library:compileReleaseShaders UP-TO-DATE
+:Library:generateReleaseAssets UP-TO-DATE
+:Library:mergeReleaseAssets UP-TO-DATE
+:Library:mergeReleaseProguardFiles UP-TO-DATE
+:Library:packageReleaseRenderscript UP-TO-DATE
+:Library:compileReleaseRenderscript UP-TO-DATE
+:Library:generateReleaseResValues UP-TO-DATE
+:Library:generateReleaseResources UP-TO-DATE
+:Library:packageReleaseResources UP-TO-DATE
+:Library:processReleaseManifest UP-TO-DATE
+:Library:generateReleaseBuildConfig UP-TO-DATE
+:Library:processReleaseResources UP-TO-DATE
+:Library:generateReleaseSources UP-TO-DATE
+:Library:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:Library:javaPreCompileRelease
+:Library:compileReleaseJavaWithJavac UP-TO-DATE
+:Library:processReleaseJavaRes UP-TO-DATE
+:Library:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:Library:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:Library:mergeReleaseJniLibFolders UP-TO-DATE
+:Library:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:Library:transformNativeLibsWithStripDebugSymbolForRelease UP-TO-DATE
+:Library:transformNativeLibsWithSyncJniLibsForRelease UP-TO-DATE
+:Library:bundleRelease UP-TO-DATE
+:Sample:preBuild UP-TO-DATE
+:Sample:preDebugBuild UP-TO-DATE
+:Sample:checkDebugManifest
+:Sample:preDebugAndroidTestBuild UP-TO-DATE
+:Sample:preReleaseBuild UP-TO-DATE
+:Sample:prepareComAndroidSupportAnimatedVectorDrawable2340Library
+:Sample:prepareComAndroidSupportAppcompatV72340Library
+:Sample:prepareComAndroidSupportSupportV42340Library
+:Sample:prepareComAndroidSupportSupportVectorDrawable2340Library
+:Sample:prepareIoReactivexRxandroid121Library
+:Sample:prepareDebugDependencies
+:Sample:compileDebugAidl
+:Sample:compileDebugRenderscript
+:Sample:generateDebugBuildConfig
+:Sample:generateDebugResValues
+:Sample:generateDebugResources
+:Sample:mergeDebugResources
+:Sample:processDebugManifest
+:Sample:processDebugResources
+:Sample:generateDebugSources
+:Sample:incrementalDebugJavaCompilationSafeguard
+:Sample:javaPreCompileDebug
+:Sample:compileDebugJavaWithJavac
+:Sample:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:Sample:compileDebugNdk UP-TO-DATE
+:Sample:compileDebugSources
+:Sample:mergeDebugShaders
+:Sample:compileDebugShaders
+:Sample:generateDebugAssets
+:Sample:mergeDebugAssets
+:Sample:transformClassesWithDexForDebug
+:Sample:mergeDebugJniLibFolders
+:Sample:transformNativeLibsWithMergeJniLibsForDebug
+:Sample:transformNativeLibsWithStripDebugSymbolForDebug
+:Sample:processDebugJavaRes UP-TO-DATE
+:Sample:transformResourcesWithMergeJavaResForDebug
+:Sample:validateSigningDebug
+:Sample:packageDebug
+:Sample:assembleDebug
+:Sample:checkReleaseManifest
+:Sample:prepareReleaseDependencies
+:Sample:compileReleaseAidl
+:Sample:compileReleaseRenderscript
+:Sample:generateReleaseBuildConfig
+:Sample:generateReleaseResValues
+:Sample:generateReleaseResources
+:Sample:mergeReleaseResources
+:Sample:processReleaseManifest
+:Sample:processReleaseResources
+:Sample:generateReleaseSources
+:Sample:incrementalReleaseJavaCompilationSafeguard
+:Sample:javaPreCompileRelease
+:Sample:compileReleaseJavaWithJavac
+:Sample:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:Sample:compileReleaseNdk UP-TO-DATE
+:Sample:compileReleaseSources
+:Sample:lintVitalRelease
+:Sample:mergeReleaseShaders
+:Sample:compileReleaseShaders
+:Sample:generateReleaseAssets
+:Sample:mergeReleaseAssets
+:Sample:transformClassesWithDexForRelease
+:Sample:mergeReleaseJniLibFolders
+:Sample:transformNativeLibsWithMergeJniLibsForRelease
+:Sample:transformNativeLibsWithStripDebugSymbolForRelease
+:Sample:processReleaseJavaRes UP-TO-DATE
+:Sample:transformResourcesWithMergeJavaResForRelease
+:Sample:packageRelease
+:Sample:assembleRelease
+:Sample:assemble
+:Sample:build
+
+BUILD SUCCESSFUL
+
+Total time: 27.545 secs
+
+2018-04-08 15:20:02,920 INFO  FullProcessService - Found APK file: /tmp/rdisk/945/src/Reservoir-master/Sample/build/outputs/apk/Sample-release-unsigned.apk

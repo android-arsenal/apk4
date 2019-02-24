@@ -1,0 +1,6 @@
+{
+  "nl.nl2312.mimicry" : [ "BuildConfig" ],
+  "nl.nl2312.mimicry.library" : [ "MimicryAdapter", "MimicryAdapter$GridMimicRow", "MimicryAdapter$GridMimicRow$1", "MimicryAdapter$OnMimicryItemClickedListener" ],
+  "nl.nl2312.mimicry.sample" : [ "BuildConfig", "MainActivity", "MainActivity$1", "R", "R$attr", "R$drawable", "R$layout", "R$string" ],
+  "nl.nl2312.mimicry.sample.adapters" : [ "ImagesAdapter", "MergeAdapter", "MergeAdapter$1", "MergeAdapter$CascadeDataSetObserver", "ViewHolderAdapter" ]
+}

@@ -1,0 +1,4 @@
+{
+  "hotchemi.android.rate" : [ "AppRate", "BuildConfig", "DialogManager", "DialogManager$1", "DialogManager$2", "DialogManager$3", "DialogOptions", "IntentHelper", "OnClickButtonListener", "PreferenceHelper", "R", "R$string", "R$style", "StoreType", "UriHelper", "Utils" ],
+  "hotchemi.android.rate.sample" : [ "BuildConfig", "MainActivity", "MainActivity$1", "R", "R$attr", "R$dimen", "R$drawable", "R$layout", "R$string", "R$style" ]
+}

@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.faizmalkani.floatingactionbutton",
+    "label" : "Floating Action Button",
+    "icon" : "res/drawable-mdpi/ic_launcher.png",
+    "versionName" : "1.0",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "15",
+    "targetSdkVersion" : "19",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-mdpi/ic_launcher.png",
+    "density" : 0,
+    "data" : "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"
+  },
+  "dexClasses" : 515,
+  "locales" : [ "" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"1.0\" package=\"com.faizmalkani.floatingactionbutton\">\n\t<uses-sdk android:minSdkVersion=\"15\" android:targetSdkVersion=\"19\" />\n\t<application android:theme=\"@android:style/Theme.Holo.Light.DarkActionBar\" android:label=\"Floating Action Button\" android:icon=\"res/drawable-mdpi/ic_launcher.png\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"Floating Action Button\" android:name=\"com.faizmalkani.floatingactionbutton.sample.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<activity android:label=\"Floating Action Button\" android:name=\"com.faizmalkani.floatingactionbutton.sample.About\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.DEFAULT\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 306597,
+  "crc32" : 20743189,
+  "sha256" : "52ae2e981fa98f7a2f3f5ded2e2d3c79e2c1f737de6621f472afdeb8c252dcd2",
+  "buildTime" : 1523283820000
+}

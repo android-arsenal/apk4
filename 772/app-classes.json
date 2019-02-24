@@ -1,0 +1,5 @@
+{
+  "com.gitonway.lee.niftymodaldialogeffects" : [ "BuildConfig", "MainActivity", "MainActivity$1", "MainActivity$2", "R", "R$attr", "R$color", "R$dimen", "R$drawable", "R$id", "R$layout", "R$menu", "R$string", "R$style" ],
+  "com.gitonway.lee.niftymodaldialogeffects.lib" : [ "BuildConfig", "ColorUtils", "Effectstype", "NiftyDialogBuilder", "NiftyDialogBuilder$1", "NiftyDialogBuilder$2", "R", "R$color", "R$dimen", "R$drawable", "R$id", "R$layout", "R$style" ],
+  "com.gitonway.lee.niftymodaldialogeffects.lib.effects" : [ "BaseEffects", "FadeIn", "Fall", "FlipH", "FlipV", "NewsPaper", "RotateBottom", "RotateLeft", "Shake", "SideFall", "SlideBottom", "SlideLeft", "SlideRight", "SlideTop", "Slit" ]
+}

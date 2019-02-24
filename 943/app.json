@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.emmaguy.cleanstatusbar.debug",
+    "label" : "Clean Status Bar",
+    "icon" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "versionName" : "1.1.4",
+    "versionCode" : 18,
+    "installLocation" : null,
+    "minSdkVersion" : "15",
+    "targetSdkVersion" : "22",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ "android.permission.SYSTEM_ALERT_WINDOW" ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAABSlBMVEUAAADLy8vLy8vLy8vKysrMzMzKysrJycnLy8vLy8u5ubnDw8MAAABvb28AAQEHHyoRTmkZcZkZcpoQR18DDBGAgIB6fn8zaYEfjL0os/IptvZmv+eBiIupqan////a8v5Wxfgyuffo9/7j4+P8/v9Vxfhfyfn4/f86vPeF1vqM2Psrt/bC6v3p+P7V8f2q4vxgyflUxfii4Pv+//900PozufeV2/v7/v/M7v0st/Y8vffz+/9Yxvih3/ul4fxBv/fy+//h9f45vPd00Pk4u/fC6/2G1vr0+/9Pw/gxuffe9P550vrb8/41uvfR7/39/v9ozPlmy/m35/wqtvbD6/3w+v9IwfhdyPn9//+H1vq05vzS8P0uuPZJwfj3/P9jyvmk4Pyr4/xDv/fl9v47vPeX3PuA1PrN7v0vuPaE1fpTxfjg9f570vrP7/1hiSU+AAAAbnRSTlMA//3ehg/CiuP+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////xdVoWwAAAEdSURBVEjHzdM3T0NBEARgP8DknBlgwcbEh0mGZ0zOJplkcs6Z/99yVyBBcdJshafaYj5NcbpQKIfjOZKXXxBWAZPCsBJ4RVpQrAUlWuD9Dyh1pMwFyh2pyB1QWVVdU1tX7wYNf9LY1NyC1jZztbuA/E5HJ4BI1J5dDIh1mz56hAa9fRb080AGTN8f5EF8aHhkdCzBg/GJIPlzM2AyhalpBUjOALOiAHPA/IICLC4BgSjAMrASV4BVH1gTHqTXgY1NBQjMG28JD7YzQGqHB7t7ZmA/wYODLJA9FBocHZuBk1MenNlvcC40uLg0/atrGsRu7MCt0ODO9u/TNHh4tOBJaPBs+5koDV5eLXgTGrzbfuSDB7aPT9EB/0sBcibf4qZofgL+GGUAAAAASUVORK5CYII="
+  },
+  "dexClasses" : 1729,
+  "locales" : [ "", "az_AZ", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "en_US", "th", "sq_AL", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bn_BD", "fa", "gu_IN", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "pa_IN", "af", "en_AU", "in", "vi", "fr_CA", "sr", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"18\" android:versionName=\"1.1.4\" package=\"com.emmaguy.cleanstatusbar.debug\" platformBuildVersionCode=\"23\" platformBuildVersionName=\"6.0-2704002\">\n\t<uses-sdk android:minSdkVersion=\"15\" android:targetSdkVersion=\"22\" />\n\t<uses-permission android:name=\"android.permission.SYSTEM_ALERT_WINDOW\" />\n\t<application android:theme=\"resourceId:0x7f08007f\" android:label=\"Clean Status Bar\" android:icon=\"res/drawable-mdpi-v4/ic_launcher.png\" android:debuggable=\"true\" android:allowBackup=\"true\">\n\t\t<service android:name=\"com.emmaguy.cleanstatusbar.CleanStatusBarService\" android:exported=\"false\" />\n\t\t<activity android:label=\"Clean Status Bar\" android:name=\"com.emmaguy.cleanstatusbar.MainActivity\" android:launchMode=\"singleInstance\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<receiver android:name=\"com.emmaguy.cleanstatusbar.ToggleReceiver\" android:enabled=\"true\" android:exported=\"true\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"com.emmaguy.cleanstatusbar.TOGGLE\" />\n\t\t\t</intent-filter>\n\t\t</receiver>\n\t</application>\n</manifest>\n",
+  "fileSize" : 1485493,
+  "crc32" : 682238047,
+  "sha256" : "7f58e63a3e6c29183159c4d0df16e4aafe01e34d4f8d6d7f89350370d537dace",
+  "buildTime" : 1523200842000
+}

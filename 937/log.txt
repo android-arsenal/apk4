@@ -1,0 +1,136 @@
+2018-04-08 15:22:24,073 INFO  DownloadService - Downloading "https://github.com/kikoso/AppRate-for-Android/archive/master.zip", attempt 3
+2018-04-08 15:22:25,746 INFO  DownloadService - Downloaded https://github.com/kikoso/AppRate-for-Android/archive/master.zip, attempt 3
+2018-04-08 15:22:25,747 INFO  DownloadService - Size of file "/tmp/rdisk/937/master.zip": 212 KB
+2018-04-08 15:22:25,747 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-08 15:22:25,747 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/937/master.zip: true
+2018-04-08 15:22:25,747 DEBUG ZipUtil - Extracting '/tmp/rdisk/937/master.zip' into '/tmp/rdisk/937/src'.
+2018-04-08 15:22:25,758 INFO  FullProcessService - Size of directory with sources: 232 KB
+2018-04-08 15:22:25,758 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/937/src]
+2018-04-08 15:22:25,762 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/937/src/.git/
+
+2018-04-08 15:22:25,766 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/937/src/AppRate-for-Android-master/gradlew
+2018-04-08 15:22:25,769 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/937/src/AppRate-for-Android-master/AppRate-Demo/build.gradle /tmp/rdisk/937/src/AppRate-for-Android-master/AppRate/build.gradle /tmp/rdisk/937/src/AppRate-for-Android-master/build.gradle
+2018-04-08 15:22:25,772 INFO  ProjectBuildService - All script(s): /tmp/rdisk/937/src/AppRate-for-Android-master/settings.gradle /tmp/rdisk/937/src/AppRate-for-Android-master/build.gradle /tmp/rdisk/937/src/AppRate-for-Android-master/AppRate/build.gradle /tmp/rdisk/937/src/AppRate-for-Android-master/AppRate-Demo/build.gradle
+2018-04-08 15:22:25,772 INFO  ProjectBuildService - Remote scripts: none
+2018-04-08 15:22:25,772 INFO  ProjectFixService - Fixing project...
+2018-04-08 15:22:25,779 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/937/src/AppRate-for-Android-master/AppRate-Demo/local.properties
+2018-04-08 15:22:25,780 INFO  ProjectFixService - Build info for "/tmp/rdisk/937/src/AppRate-for-Android-master/AppRate-Demo/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=25,minSdkVersion=14,targetSdkVersion=25]
+2018-04-08 15:22:25,780 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/937/src/AppRate-for-Android-master/AppRate/local.properties
+2018-04-08 15:22:25,781 INFO  ProjectFixService - Build info for "/tmp/rdisk/937/src/AppRate-for-Android-master/AppRate/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=25,minSdkVersion=14,targetSdkVersion=25]
+2018-04-08 15:22:25,781 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/937/src/AppRate-for-Android-master/local.properties
+2018-04-08 15:22:25,782 INFO  WrapperPropertiesFixService - Gradle wrapper: http://services.gradle.org/distributions/gradle-3.3-all.zip
+2018-04-08 15:22:25,782 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (http://services.gradle.org/distributions/gradle-3.3-bin.zip)
+2018-04-08 15:22:25,783 INFO  ProjectFixService - Build info for "/tmp/rdisk/937/src/AppRate-for-Android-master/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=25,minSdkVersion=14,targetSdkVersion=25]
+2018-04-08 15:22:25,783 INFO  ProjectFixService - Project was maybe fixed
+2018-04-08 15:22:25,783 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-08 15:22:25,783 INFO  SysUtils - Execute command: [/tmp/rdisk/937/src/AppRate-for-Android-master/gradlew, -b, /tmp/rdisk/937/src/AppRate-for-Android-master/AppRate-Demo/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-08 15:22:34,851 INFO  ProjectTaskService - Detected possible tasks: 66
+2018-04-08 15:22:34,851 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-08 15:22:34,852 INFO  SysUtils - Execute command: [/tmp/rdisk/937/src/AppRate-for-Android-master/gradlew, -b, /tmp/rdisk/937/src/AppRate-for-Android-master/AppRate-Demo/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-08 15:22:46,088 INFO  SysUtils - Configuration on demand is an incubating feature.
+Incremental java compilation is an incubating feature.
+:AppRate:preBuild UP-TO-DATE
+:AppRate:preReleaseBuild UP-TO-DATE
+:AppRate:checkReleaseManifest
+:AppRate:prepareReleaseDependencies
+:AppRate:compileReleaseAidl
+:AppRate:compileReleaseNdk UP-TO-DATE
+:AppRate:compileLint
+:AppRate:copyReleaseLint UP-TO-DATE
+:AppRate:mergeReleaseShaders
+:AppRate:compileReleaseShaders
+:AppRate:generateReleaseAssets
+:AppRate:mergeReleaseAssets
+:AppRate:mergeReleaseProguardFiles
+:AppRate:packageReleaseRenderscript UP-TO-DATE
+:AppRate:compileReleaseRenderscript
+:AppRate:generateReleaseResValues
+:AppRate:generateReleaseResources
+:AppRate:packageReleaseResources
+:AppRate:processReleaseManifest
+:AppRate:generateReleaseBuildConfig
+:AppRate:processReleaseResources
+:AppRate:generateReleaseSources
+:AppRate:incrementalReleaseJavaCompilationSafeguard
+:AppRate:javaPreCompileRelease
+:AppRate:compileReleaseJavaWithJavac
+:AppRate:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:AppRate:processReleaseJavaRes UP-TO-DATE
+:AppRate:transformResourcesWithMergeJavaResForRelease
+:AppRate:transformClassesAndResourcesWithSyncLibJarsForRelease
+:AppRate:mergeReleaseJniLibFolders
+:AppRate:transformNativeLibsWithMergeJniLibsForRelease
+:AppRate:transformNativeLibsWithStripDebugSymbolForRelease
+:AppRate:transformNativeLibsWithSyncJniLibsForRelease
+:AppRate:bundleRelease
+:AppRate-Demo:preBuild UP-TO-DATE
+:AppRate-Demo:preDebugBuild UP-TO-DATE
+:AppRate-Demo:checkDebugManifest
+:AppRate-Demo:prepareDebugDependencies
+:AppRate-Demo:compileDebugAidl
+:AppRate-Demo:compileDebugRenderscript
+:AppRate-Demo:generateDebugBuildConfig
+:AppRate-Demo:generateDebugResValues
+:AppRate-Demo:generateDebugResources
+:AppRate-Demo:mergeDebugResources
+:AppRate-Demo:processDebugManifest
+:AppRate-Demo:processDebugResources
+:AppRate-Demo:generateDebugSources
+:AppRate-Demo:incrementalDebugJavaCompilationSafeguard
+:AppRate-Demo:javaPreCompileDebug
+:AppRate-Demo:compileDebugJavaWithJavac
+:AppRate-Demo:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:AppRate-Demo:compileDebugNdk UP-TO-DATE
+:AppRate-Demo:compileDebugSources
+:AppRate-Demo:mergeDebugShaders
+:AppRate-Demo:compileDebugShaders
+:AppRate-Demo:generateDebugAssets
+:AppRate-Demo:mergeDebugAssets
+:AppRate-Demo:transformClassesWithDexForDebug
+:AppRate-Demo:mergeDebugJniLibFolders
+:AppRate-Demo:transformNativeLibsWithMergeJniLibsForDebug
+:AppRate-Demo:transformNativeLibsWithStripDebugSymbolForDebug
+:AppRate-Demo:processDebugJavaRes UP-TO-DATE
+:AppRate-Demo:transformResourcesWithMergeJavaResForDebug
+:AppRate-Demo:validateSigningDebug
+:AppRate-Demo:packageDebug
+:AppRate-Demo:assembleDebug
+:AppRate-Demo:preReleaseBuild UP-TO-DATE
+:AppRate-Demo:checkReleaseManifest
+:AppRate-Demo:prepareReleaseDependencies
+:AppRate-Demo:compileReleaseAidl
+:AppRate-Demo:compileReleaseRenderscript
+:AppRate-Demo:generateReleaseBuildConfig
+:AppRate-Demo:generateReleaseResValues
+:AppRate-Demo:generateReleaseResources
+:AppRate-Demo:mergeReleaseResources
+:AppRate-Demo:processReleaseManifest
+:AppRate-Demo:processReleaseResources
+:AppRate-Demo:generateReleaseSources
+:AppRate-Demo:incrementalReleaseJavaCompilationSafeguard
+:AppRate-Demo:javaPreCompileRelease
+:AppRate-Demo:compileReleaseJavaWithJavac
+:AppRate-Demo:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:AppRate-Demo:compileReleaseNdk UP-TO-DATE
+:AppRate-Demo:compileReleaseSources
+:AppRate-Demo:lintVitalRelease
+:AppRate-Demo:mergeReleaseShaders
+:AppRate-Demo:compileReleaseShaders
+:AppRate-Demo:generateReleaseAssets
+:AppRate-Demo:mergeReleaseAssets
+:AppRate-Demo:transformClassesWithDexForRelease
+:AppRate-Demo:mergeReleaseJniLibFolders
+:AppRate-Demo:transformNativeLibsWithMergeJniLibsForRelease
+:AppRate-Demo:transformNativeLibsWithStripDebugSymbolForRelease
+:AppRate-Demo:processReleaseJavaRes UP-TO-DATE
+:AppRate-Demo:transformResourcesWithMergeJavaResForRelease
+:AppRate-Demo:packageRelease
+:AppRate-Demo:assembleRelease
+:AppRate-Demo:assemble
+:AppRate-Demo:build
+
+BUILD SUCCESSFUL
+
+Total time: 11.014 secs
+
+2018-04-08 15:22:46,102 INFO  FullProcessService - Found APK file: /tmp/rdisk/937/src/AppRate-for-Android-master/AppRate-Demo/build/outputs/apk/AppRate-Demo-release-unsigned.apk

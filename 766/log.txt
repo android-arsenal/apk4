@@ -1,0 +1,113 @@
+2018-04-09 14:27:38,734 INFO  DownloadService - Downloading "https://github.com/glomadrian/Android-Material-circular-button/archive/master.zip", attempt 3
+2018-04-09 14:27:42,444 INFO  DownloadService - Downloaded https://github.com/glomadrian/Android-Material-circular-button/archive/master.zip, attempt 3
+2018-04-09 14:27:42,444 INFO  DownloadService - Size of file "/tmp/rdisk/766/master.zip": 2 MB
+2018-04-09 14:27:42,444 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-09 14:27:42,445 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/766/master.zip: true
+2018-04-09 14:27:42,445 DEBUG ZipUtil - Extracting '/tmp/rdisk/766/master.zip' into '/tmp/rdisk/766/src'.
+2018-04-09 14:27:42,475 INFO  FullProcessService - Size of directory with sources: 2 MB
+2018-04-09 14:27:42,475 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/766/src]
+2018-04-09 14:27:42,486 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/766/src/.git/
+
+2018-04-09 14:27:42,489 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/766/src/Android-Material-circular-button-master/gradlew
+2018-04-09 14:27:42,492 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/766/src/Android-Material-circular-button-master/app/build.gradle /tmp/rdisk/766/src/Android-Material-circular-button-master/circularbuttonanimatedcolor/build.gradle /tmp/rdisk/766/src/Android-Material-circular-button-master/materialCircularButton/build.gradle /tmp/rdisk/766/src/Android-Material-circular-button-master/build.gradle
+2018-04-09 14:27:42,496 INFO  ProjectBuildService - All script(s): /tmp/rdisk/766/src/Android-Material-circular-button-master/settings.gradle /tmp/rdisk/766/src/Android-Material-circular-button-master/materialCircularButton/build.gradle /tmp/rdisk/766/src/Android-Material-circular-button-master/circularbuttonanimatedcolor/build.gradle /tmp/rdisk/766/src/Android-Material-circular-button-master/build.gradle /tmp/rdisk/766/src/Android-Material-circular-button-master/app/build.gradle
+2018-04-09 14:27:42,496 INFO  ProjectBuildService - Remote scripts: none
+2018-04-09 14:27:42,496 INFO  ProjectFixService - Fixing project...
+2018-04-09 14:27:42,504 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/766/src/Android-Material-circular-button-master/app/local.properties
+2018-04-09 14:27:42,504 INFO  ProjectFixService - Build info for "/tmp/rdisk/766/src/Android-Material-circular-button-master/app/build.gradle": [buildToolsVersion=20.0.0,compileSdkVersion=19,minSdkVersion=16,targetSdkVersion=19]
+2018-04-09 14:27:42,504 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/766/src/Android-Material-circular-button-master/circularbuttonanimatedcolor/local.properties
+2018-04-09 14:27:42,505 INFO  ProjectFixService - Build info for "/tmp/rdisk/766/src/Android-Material-circular-button-master/circularbuttonanimatedcolor/build.gradle": [buildToolsVersion=20.0.0,compileSdkVersion=16,minSdkVersion=16,targetSdkVersion=16]
+2018-04-09 14:27:42,505 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/766/src/Android-Material-circular-button-master/materialCircularButton/local.properties
+2018-04-09 14:27:42,505 INFO  ProjectFixService - Build info for "/tmp/rdisk/766/src/Android-Material-circular-button-master/materialCircularButton/build.gradle": [buildToolsVersion=20.0.0,compileSdkVersion=19,minSdkVersion=16,targetSdkVersion=19]
+2018-04-09 14:27:42,506 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/766/src/Android-Material-circular-button-master/local.properties
+2018-04-09 14:27:42,506 INFO  WrapperPropertiesFixService - Gradle wrapper: http://services.gradle.org/distributions/gradle-1.12-all.zip
+2018-04-09 14:27:42,506 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (http://services.gradle.org/distributions/gradle-1.12-bin.zip)
+2018-04-09 14:27:42,507 INFO  ProjectFixService - Build info for "/tmp/rdisk/766/src/Android-Material-circular-button-master/build.gradle": [buildToolsVersion=20.0.0,compileSdkVersion=19,minSdkVersion=16,targetSdkVersion=19]
+2018-04-09 14:27:42,507 INFO  ProjectFixService - Project was maybe fixed
+2018-04-09 14:27:42,507 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-09 14:27:42,507 INFO  SysUtils - Execute command: [/tmp/rdisk/766/src/Android-Material-circular-button-master/gradlew, -b, /tmp/rdisk/766/src/Android-Material-circular-button-master/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-09 14:27:51,075 INFO  ProjectTaskService - Detected possible tasks: 48
+2018-04-09 14:27:51,075 INFO  ProjectTaskService - Excluded tasks (11): lintDebug deviceCheck lint uninstallRelease connectedCheck uninstallAll check connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-09 14:27:51,075 INFO  SysUtils - Execute command: [/tmp/rdisk/766/src/Android-Material-circular-button-master/gradlew, -b, /tmp/rdisk/766/src/Android-Material-circular-button-master/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-09 14:28:05,183 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:preBuild
+:app:compileDebugNdk
+:app:preDebugBuild
+:app:checkDebugManifest
+:app:preReleaseBuild
+:materialCircularButton:compileLint
+:materialCircularButton:copyReleaseLint UP-TO-DATE
+:materialCircularButton:mergeReleaseProguardFiles
+:materialCircularButton:preBuild
+:materialCircularButton:preReleaseBuild
+:materialCircularButton:checkReleaseManifest
+:materialCircularButton:prepareReleaseDependencies
+:materialCircularButton:compileReleaseAidl
+:materialCircularButton:compileReleaseRenderscript
+:materialCircularButton:generateReleaseBuildConfig
+:materialCircularButton:generateReleaseAssets UP-TO-DATE
+:materialCircularButton:mergeReleaseAssets
+:materialCircularButton:generateReleaseResValues
+:materialCircularButton:generateReleaseResources
+:materialCircularButton:packageReleaseResources
+:materialCircularButton:processReleaseManifest
+:materialCircularButton:processReleaseResources
+:materialCircularButton:generateReleaseSources
+:materialCircularButton:compileReleaseJava
+:materialCircularButton:processReleaseJavaRes UP-TO-DATE
+:materialCircularButton:packageReleaseJar
+:materialCircularButton:compileReleaseNdk
+:materialCircularButton:packageReleaseJniLibs UP-TO-DATE
+:materialCircularButton:packageReleaseLocalJar UP-TO-DATE
+:materialCircularButton:packageReleaseRenderscript UP-TO-DATE
+:materialCircularButton:bundleRelease
+:app:prepareAndroidMaterialCircularButtonMasterMaterialCircularButtonUnspecifiedLibrary
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:compileDebugJava
+:app:preDexDebug
+:app:dexDebug
+:app:processDebugJavaRes UP-TO-DATE
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:compileReleaseJava
+:app:lintVitalRelease
+:app:compileReleaseNdk
+:app:preDexRelease
+:app:dexRelease
+:app:processReleaseJavaRes UP-TO-DATE
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 13.668 secs
+
+2018-04-09 14:28:05,194 INFO  FullProcessService - Found APK file: /tmp/rdisk/766/src/Android-Material-circular-button-master/app/build/outputs/apk/app-debug.apk

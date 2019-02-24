@@ -1,0 +1,36 @@
+{
+  "meta" : {
+    "packageName" : "com.db.williamchartdemo",
+    "label" : "williamchart",
+    "icon" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "versionName" : "2.4.0",
+    "versionCode" : 16,
+    "installLocation" : null,
+    "minSdkVersion" : "20",
+    "targetSdkVersion" : "25",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ {
+      "name" : "android.hardware.type.watch",
+      "required" : false
+    } ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "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"
+  },
+  "dexClasses" : 2785,
+  "locales" : [ "", "sl", "bg", "mr", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "mn", "fi", "lv", "mk", "uz", "eu", "bs", "sw", "pt_PT", "tl", "th", "bn", "ar", "ru", "gl", "kn", "az", "fa", "sk", "ms", "es_�$", "ml", "gu", "kk", "et", "hi", "cs", "sv", "pa", "el", "lo", "nl", "hu", "af", "hy", "in", "vi", "fr_CA", "ky", "sr", "km", "pt_BR", "da", "be", "es", "tr", "ne", "ro", "hr", "am", "lt", "pl", "zh_CN", "my", "ka", "sq", "fr", "ur", "ja", "is", "si", "iw", "de", "es_US", "nb", "ca", "ta", "en_GB", "te" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"16\" android:versionName=\"2.4.0\" package=\"com.db.williamchartdemo\" platformBuildVersionCode=\"25\" platformBuildVersionName=\"7.1.1\">\n\t<uses-sdk android:minSdkVersion=\"20\" android:targetSdkVersion=\"25\" />\n\t<uses-feature android:name=\"android.hardware.type.watch\" />\n\t<application android:theme=\"@android:style/Theme.DeviceDefault\" android:label=\"williamchart\" android:icon=\"res/drawable-mdpi-v4/ic_launcher.png\" android:allowBackup=\"true\" android:supportsRtl=\"true\">\n\t\t<activity android:label=\"williamchart\" android:name=\"com.db.williamchartwear.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<uses-library android:name=\"com.google.android.wearable\" android:required=\"false\" />\n\t\t<activity android:theme=\"@android:style/Theme.Translucent.NoTitleBar\" android:name=\"com.google.android.gms.common.api.GoogleApiActivity\" android:exported=\"false\" />\n\t\t<meta-data android:name=\"com.google.android.gms.version\" android:value=\"10240000\" />\n\t</application>\n</manifest>\n",
+  "fileSize" : 1544822,
+  "crc32" : 4048691242,
+  "sha256" : "bb5971e4a4be96464977ad5b15074220b93952c88c75eedaf551b03d6653e292",
+  "buildTime" : 1526279028000
+}

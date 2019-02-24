@@ -1,0 +1,29 @@
+{
+  "meta" : {
+    "packageName" : "com.getbase.floatingactionbutton.sample",
+    "label" : "Floating Action Button",
+    "icon" : null,
+    "versionName" : "1.0",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "14",
+    "targetSdkVersion" : "22",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : null,
+  "dexClasses" : 27,
+  "locales" : [ "" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"1.0\" package=\"com.getbase.floatingactionbutton.sample\" platformBuildVersionCode=\"22\" platformBuildVersionName=\"5.1.1-1819727\">\n\t<uses-sdk android:minSdkVersion=\"14\" android:targetSdkVersion=\"22\" />\n\t<application android:theme=\"resourceId:0x7f080000\" android:label=\"Floating Action Button\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"Floating Action Button\" android:name=\"com.getbase.floatingactionbutton.sample.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 88546,
+  "crc32" : 1312772951,
+  "sha256" : "7a79f1088aad93ddde043d08ccf99ece783ab4a2be54e9f5814d65bbbb34d1ef",
+  "buildTime" : 1526053072000
+}

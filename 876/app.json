@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "groovyx.example",
+    "label" : "Groovy Sample",
+    "icon" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "versionName" : "1.0.0",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "16",
+    "targetSdkVersion" : "26",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ "android.permission.INTERNET" ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "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"
+  },
+  "dexClasses" : 2582,
+  "locales" : [ "", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bn_BD", "fa", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "af", "in", "vi", "fr_CA", "sr", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"1.0.0\" package=\"groovyx.example\">\n\t<uses-sdk android:minSdkVersion=\"16\" android:targetSdkVersion=\"26\" />\n\t<uses-permission android:name=\"android.permission.INTERNET\" />\n\t<application android:label=\"Groovy Sample\" android:icon=\"res/mipmap-mdpi-v4/ic_launcher.png\" android:name=\"groovyx.example.GroovySampleApplication\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"Groovy Sample\" android:name=\"groovyx.example.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 1501900,
+  "crc32" : 389161594,
+  "sha256" : "3ad905fa5080a9f0819000fec5f76ac183a44dc21873c83e325b790efd7265c6",
+  "buildTime" : 1523205257000
+}

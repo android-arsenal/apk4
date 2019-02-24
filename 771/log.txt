@@ -1,0 +1,584 @@
+2018-04-09 14:24:33,084 INFO  DownloadService - Downloading "https://github.com/tripadvisor/android-clockseekbar/archive/master.zip", attempt 3
+2018-04-09 14:24:33,885 INFO  DownloadService - Downloaded https://github.com/tripadvisor/android-clockseekbar/archive/master.zip, attempt 3
+2018-04-09 14:24:33,885 INFO  DownloadService - Size of file "/tmp/rdisk/771/master.zip": 3 MB
+2018-04-09 14:24:33,885 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-09 14:24:33,886 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/771/master.zip: true
+2018-04-09 14:24:33,886 DEBUG ZipUtil - Extracting '/tmp/rdisk/771/master.zip' into '/tmp/rdisk/771/src'.
+2018-04-09 14:24:33,936 INFO  FullProcessService - Size of directory with sources: 3 MB
+2018-04-09 14:24:33,936 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/771/src]
+2018-04-09 14:24:33,940 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/771/src/.git/
+
+2018-04-09 14:24:33,945 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/771/src/android-clockseekbar-master/sample/gradlew /tmp/rdisk/771/src/android-clockseekbar-master/lib/gradlew /tmp/rdisk/771/src/android-clockseekbar-master/gradlew
+2018-04-09 14:24:33,950 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/771/src/android-clockseekbar-master/lib/build.gradle /tmp/rdisk/771/src/android-clockseekbar-master/sample/build.gradle /tmp/rdisk/771/src/android-clockseekbar-master/build.gradle
+2018-04-09 14:24:33,954 INFO  ProjectBuildService - All script(s): /tmp/rdisk/771/src/android-clockseekbar-master/settings.gradle /tmp/rdisk/771/src/android-clockseekbar-master/sample/build.gradle /tmp/rdisk/771/src/android-clockseekbar-master/lib/build.gradle /tmp/rdisk/771/src/android-clockseekbar-master/build.gradle
+2018-04-09 14:24:33,955 INFO  ProjectBuildService - Remote scripts: none
+2018-04-09 14:24:33,955 INFO  ProjectFixService - Fixing project...
+2018-04-09 14:24:33,966 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/771/src/android-clockseekbar-master/lib/local.properties
+2018-04-09 14:24:33,966 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.4-all.zip
+2018-04-09 14:24:33,966 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.4-bin.zip)
+2018-04-09 14:24:33,967 INFO  ProjectFixService - Build info for "/tmp/rdisk/771/src/android-clockseekbar-master/lib/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=14,targetSdkVersion=21]
+2018-04-09 14:24:33,967 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/771/src/android-clockseekbar-master/sample/local.properties
+2018-04-09 14:24:33,967 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-1.10-bin.zip
+2018-04-09 14:24:33,968 INFO  ProjectFixService - Build info for "/tmp/rdisk/771/src/android-clockseekbar-master/sample/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=14,targetSdkVersion=21]
+2018-04-09 14:24:33,968 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/771/src/android-clockseekbar-master/local.properties
+2018-04-09 14:24:33,968 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.4-all.zip
+2018-04-09 14:24:33,969 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.4-bin.zip)
+2018-04-09 14:24:33,970 INFO  ProjectFixService - Build info for "/tmp/rdisk/771/src/android-clockseekbar-master/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=14,targetSdkVersion=21]
+2018-04-09 14:24:33,970 INFO  ProjectFixService - Project was maybe fixed
+2018-04-09 14:24:33,970 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-09 14:24:33,970 INFO  SysUtils - Execute command: [/tmp/rdisk/771/src/android-clockseekbar-master/lib/gradlew, -b, /tmp/rdisk/771/src/android-clockseekbar-master/lib/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-09 14:24:45,875 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-09 14:24:45,875 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-09 14:24:45,875 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-09 14:24:45,875 INFO  SysUtils - Execute command: [/tmp/rdisk/771/src/android-clockseekbar-master/lib/gradlew, -b, /tmp/rdisk/771/src/android-clockseekbar-master/lib/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-09 14:25:04,932 INFO  SysUtils - Configuration on demand is an incubating feature.
+:lib:compileLint
+:lib:copyDebugLint UP-TO-DATE
+:lib:mergeDebugProguardFiles
+:lib:preBuild UP-TO-DATE
+:lib:preDebugBuild UP-TO-DATE
+:lib:checkDebugManifest
+:lib:prepareDebugDependencies
+:lib:compileDebugAidl
+:lib:compileDebugRenderscript
+:lib:generateDebugBuildConfig
+:lib:generateDebugAssets UP-TO-DATE
+:lib:mergeDebugAssets
+:lib:generateDebugResValues
+:lib:generateDebugResources
+:lib:packageDebugResources
+:lib:processDebugManifest
+:lib:processDebugResources
+:lib:generateDebugSources
+:lib:processDebugJavaRes UP-TO-DATE
+:lib:compileDebugJavaWithJavac
+:lib:packageDebugJar
+:lib:compileDebugNdk UP-TO-DATE
+:lib:packageDebugJniLibs UP-TO-DATE
+:lib:packageDebugLocalJar UP-TO-DATE
+:lib:packageDebugRenderscript UP-TO-DATE
+:lib:bundleDebug
+:lib:compileDebugSources
+:lib:assembleDebug
+:lib:copyReleaseLint UP-TO-DATE
+:lib:mergeReleaseProguardFiles
+:lib:preReleaseBuild UP-TO-DATE
+:lib:checkReleaseManifest
+:lib:prepareReleaseDependencies
+:lib:compileReleaseAidl
+:lib:compileReleaseRenderscript
+:lib:generateReleaseBuildConfig
+:lib:generateReleaseAssets UP-TO-DATE
+:lib:mergeReleaseAssets
+:lib:generateReleaseResValues
+:lib:generateReleaseResources
+:lib:packageReleaseResources
+:lib:processReleaseManifest
+:lib:processReleaseResources
+:lib:generateReleaseSources
+:lib:processReleaseJavaRes UP-TO-DATE
+:lib:compileReleaseJavaWithJavac
+:lib:packageReleaseJar
+:lib:compileReleaseNdk UP-TO-DATE
+:lib:packageReleaseJniLibs UP-TO-DATE
+:lib:packageReleaseLocalJar UP-TO-DATE
+:lib:packageReleaseRenderscript UP-TO-DATE
+:lib:bundleRelease
+:lib:compileReleaseSources
+:lib:assembleRelease
+:lib:assemble
+:lib:lint
+Ran lint on variant release: 9 issues found
+Ran lint on variant debug: 9 issues found
+/tmp/rdisk/771/src/android-clockseekbar-master/lib: Error: Unknown issue id "InlineApi" [LintError]
+/tmp/rdisk/771/src/android-clockseekbar-master/lib: Error: Unknown issue id "MisplacedStatement" [LintError]
+/tmp/rdisk/771/src/android-clockseekbar-master/lib/src/main/java/com/tripadvisor/seekbar/ClockView.java:74: Error: Call requires API level 21 (current min is 14): android.widget.TextView#setLetterSpacing [NewApi]
+            mTimeText.setLetterSpacing(LETTER_SPACING);
+                      ~~~~~~~~~~~~~~~~
+/tmp/rdisk/771/src/android-clockseekbar-master/lib/src/main/java/com/tripadvisor/seekbar/ClockView.java:76: Error: Call requires API level 21 (current min is 14): android.widget.TextView#setLetterSpacing [NewApi]
+            mTimeMeridianText.setLetterSpacing(LETTER_SPACING);
+                              ~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "NewApi":
+   This check scans through all the Android API calls in the application and
+   warns about any calls that are not available on all versions targeted by
+   this application (according to its minimum SDK attribute in the manifest).
+
+   If you really want to use this API and don't need to support older devices
+   just set the minSdkVersion in your build.gradle or AndroidManifest.xml
+   files.
+
+   If your code is deliberately accessing newer APIs, and you have ensured
+   (e.g. with conditional execution) that this code will only ever be called
+   on a supported platform, then you can annotate your class or method with
+   the @TargetApi annotation specifying the local minimum SDK to apply, such
+   as @TargetApi(11), such that this check considers 11 rather than your
+   manifest file's minimum SDK as the required API level.
+
+   If you are deliberately setting android: attributes in style definitions,
+   make sure you place this in a values-vNN folder in order to avoid running
+   into runtime conflicts on certain devices where manufacturers have added
+   custom attributes whose ids conflict with the new ones on later platforms.
+
+   Similarly, you can use tools:targetApi="11" in an XML file to indicate that
+   the element will only be inflated in an adequate context.
+
+/tmp/rdisk/771/src/android-clockseekbar-master/lib/build.gradle:6: Warning: A newer version of com.android.tools.build:gradle than 1.3.0 is available: 2.3.0 [NewerVersionAvailable]
+        classpath 'com.android.tools.build:gradle:1.3.0'
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/rdisk/771/src/android-clockseekbar-master/lib/build.gradle:98: Warning: A newer version of joda-time:joda-time than 2.3 is available: 2.9.9 [NewerVersionAvailable]
+    compile 'joda-time:joda-time:2.3'
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "NewerVersionAvailable":
+   This detector checks with a central repository to see if there are newer
+   versions available for the dependencies used by this project. This is
+   similar to the GradleDependency check, which checks for newer versions
+   available in the Android SDK tools and libraries, but this works with any
+   MavenCentral dependency, and connects to the library every time, which
+   makes it more flexible but also much slower.
+
+/tmp/rdisk/771/src/android-clockseekbar-master/lib/src/main/res/drawable-xxhdpi: Warning: Missing the following drawables in drawable-xxhdpi: clock_dial.png (found in drawable-mdpi, drawable-hdpi, drawable-xhdpi) [IconDensities]
+
+   Explanation for issues of type "IconDensities":
+   Icons will look best if a custom version is provided for each of the major
+   screen density classes (low, medium, high, extra high). This lint check
+   identifies icons which do not have complete coverage across the densities.
+
+   Low density is not really used much anymore, so this check ignores the ldpi
+   density. To force lint to include it, set the environment variable
+   ANDROID_LINT_INCLUDE_LDPI=true. For more information on current density
+   usage, see http://developer.android.com/resources/dashboard/screens.html
+
+   http://developer.android.com/guide/practices/screens_support.html
+
+/tmp/rdisk/771/src/android-clockseekbar-master/lib/src/main/res: Warning: Missing density variation folders in src/main/res: drawable-xxxhdpi [IconMissingDensityFolder]
+
+   Explanation for issues of type "IconMissingDensityFolder":
+   Icons will look best if a custom version is provided for each of the major
+   screen density classes (low, medium, high, extra-high, extra-extra-high).
+   This lint check identifies folders which are missing, such as
+   drawable-hdpi.
+
+   Low density is not really used much anymore, so this check ignores the ldpi
+   density. To force lint to include it, set the environment variable
+   ANDROID_LINT_INCLUDE_LDPI=true. For more information on current density
+   usage, see http://developer.android.com/resources/dashboard/screens.html
+
+   http://developer.android.com/guide/practices/screens_support.html
+
+4 errors, 4 warnings
+Wrote HTML report to file:/tmp/rdisk/771/src/android-clockseekbar-master/lib/build/outputs/lint-results.html
+Wrote XML report to /tmp/rdisk/771/src/android-clockseekbar-master/lib/build/outputs/lint-results.xml
+:lib:preDebugUnitTestBuild UP-TO-DATE
+:lib:prepareDebugUnitTestDependencies
+:lib:processDebugUnitTestJavaRes UP-TO-DATE
+:lib:compileDebugUnitTestJavaWithJavac UP-TO-DATE
+:lib:compileDebugUnitTestSources UP-TO-DATE
+:lib:mockableAndroidJar
+:lib:assembleDebugUnitTest
+:lib:testDebugUnitTest
+:lib:preReleaseUnitTestBuild UP-TO-DATE
+:lib:prepareReleaseUnitTestDependencies
+:lib:processReleaseUnitTestJavaRes UP-TO-DATE
+:lib:compileReleaseUnitTestJavaWithJavac UP-TO-DATE
+:lib:compileReleaseUnitTestSources UP-TO-DATE
+:lib:assembleReleaseUnitTest
+:lib:testReleaseUnitTest
+:lib:test
+:lib:check
+:lib:build
+
+BUILD SUCCESSFUL
+
+Total time: 18.611 secs
+
+2018-04-09 14:25:04,945 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-09 14:25:04,945 INFO  SysUtils - Execute command: [/tmp/rdisk/771/src/android-clockseekbar-master/sample/gradlew, -b, /tmp/rdisk/771/src/android-clockseekbar-master/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-09 14:25:18,229 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-09 14:25:18,229 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-09 14:25:18,229 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-09 14:25:18,229 INFO  SysUtils - Execute command: [/tmp/rdisk/771/src/android-clockseekbar-master/sample/gradlew, -b, /tmp/rdisk/771/src/android-clockseekbar-master/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-09 14:25:21,642 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-09 14:25:21,642 INFO  SysUtils - Configuration on demand is an incubating feature.
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Build file '/tmp/rdisk/771/src/android-clockseekbar-master/sample/build.gradle' line: 1
+
+* What went wrong:
+A problem occurred evaluating project ':sample'.
+> Could not create plugin of type 'AppPlugin'.
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.GradleScriptException: A problem occurred evaluating project ':sample'.
+	at org.gradle.groovy.scripts.internal.DefaultScriptRunnerFactory$ScriptRunnerImpl.run(DefaultScriptRunnerFactory.java:54)
+	at org.gradle.configuration.DefaultScriptPluginFactory$ScriptPluginImpl.apply(DefaultScriptPluginFactory.java:156)
+	at org.gradle.configuration.project.BuildScriptProcessor.execute(BuildScriptProcessor.java:38)
+	at org.gradle.configuration.project.BuildScriptProcessor.execute(BuildScriptProcessor.java:25)
+	at org.gradle.configuration.project.ConfigureActionsProjectEvaluator.evaluate(ConfigureActionsProjectEvaluator.java:34)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.evaluate(LifecycleProjectEvaluator.java:55)
+	at org.gradle.api.internal.project.AbstractProject.evaluate(AbstractProject.java:507)
+	at org.gradle.api.internal.project.AbstractProject.evaluate(AbstractProject.java:82)
+	at org.gradle.execution.TaskPathProjectEvaluator.evaluateByPath(TaskPathProjectEvaluator.java:41)
+	at org.gradle.execution.ProjectEvaluatingAction.configure(ProjectEvaluatingAction.java:50)
+	at org.gradle.execution.DefaultBuildExecuter.configure(DefaultBuildExecuter.java:42)
+	at org.gradle.execution.DefaultBuildExecuter.select(DefaultBuildExecuter.java:35)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:155)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:113)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:81)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:64)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:50)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:171)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:201)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:174)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:170)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:139)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:46)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.Main.main(Main.java:37)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:50)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:32)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:30)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:127)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:55)
+Caused by: org.gradle.api.plugins.PluginInstantiationException: Could not create plugin of type 'AppPlugin'.
+	at org.gradle.api.internal.plugins.DefaultPluginRegistry.loadPlugin(DefaultPluginRegistry.java:69)
+	at org.gradle.api.internal.plugins.DefaultPluginContainer.providePlugin(DefaultPluginContainer.java:103)
+	at org.gradle.api.internal.plugins.DefaultPluginContainer.addPluginInternal(DefaultPluginContainer.java:68)
+	at org.gradle.api.internal.plugins.DefaultPluginContainer.apply(DefaultPluginContainer.java:34)
+	at org.gradle.api.internal.plugins.DefaultObjectConfigurationAction.applyPlugin(DefaultObjectConfigurationAction.java:101)
+	at org.gradle.api.internal.plugins.DefaultObjectConfigurationAction.access$200(DefaultObjectConfigurationAction.java:32)
+	at org.gradle.api.internal.plugins.DefaultObjectConfigurationAction$3.run(DefaultObjectConfigurationAction.java:72)
+	at org.gradle.api.internal.plugins.DefaultObjectConfigurationAction.execute(DefaultObjectConfigurationAction.java:114)
+	at org.gradle.api.internal.project.AbstractPluginAware.apply(AbstractPluginAware.java:39)
+	at org.gradle.api.Project$apply.call(Unknown Source)
+	at org.gradle.api.internal.project.ProjectScript.apply(ProjectScript.groovy:34)
+	at org.gradle.api.Script$apply.callCurrent(Unknown Source)
+	at build_3qbrv39ahpk3if83dvitom411i.run(/tmp/rdisk/771/src/android-clockseekbar-master/sample/build.gradle:1)
+	at org.gradle.groovy.scripts.internal.DefaultScriptRunnerFactory$ScriptRunnerImpl.run(DefaultScriptRunnerFactory.java:52)
+	... 36 more
+Caused by: java.lang.NoClassDefFoundError: org/codehaus/groovy/runtime/StringGroovyMethods
+	at com.android.build.gradle.BasePlugin.<init>(BasePlugin.groovy:135)
+	at com.android.build.gradle.AppPlugin.<init>(AppPlugin.groovy:39)
+	at org.gradle.api.internal.DependencyInjectingInstantiator.newInstance(DependencyInjectingInstantiator.java:62)
+	at org.gradle.api.internal.plugins.DefaultPluginRegistry.loadPlugin(DefaultPluginRegistry.java:67)
+	... 49 more
+Caused by: java.lang.ClassNotFoundException: org.codehaus.groovy.runtime.StringGroovyMethods
+	... 53 more
+
+
+BUILD FAILED
+
+Total time: 2.989 secs
+
+2018-04-09 14:25:21,656 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-09 14:25:21,657 INFO  SysUtils - Execute command: [/tmp/rdisk/771/src/android-clockseekbar-master/gradlew, -b, /tmp/rdisk/771/src/android-clockseekbar-master/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-09 14:25:28,485 INFO  ProjectTaskService - Detected possible tasks: 69
+2018-04-09 14:25:28,485 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-09 14:25:28,485 INFO  SysUtils - Execute command: [/tmp/rdisk/771/src/android-clockseekbar-master/gradlew, -b, /tmp/rdisk/771/src/android-clockseekbar-master/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-09 14:25:56,675 INFO  SysUtils - Configuration on demand is an incubating feature.
+:lib:compileLint
+:lib:copyDebugLint UP-TO-DATE
+:lib:mergeDebugProguardFiles UP-TO-DATE
+:lib:preBuild UP-TO-DATE
+:lib:preDebugBuild UP-TO-DATE
+:lib:checkDebugManifest
+:lib:prepareDebugDependencies
+:lib:compileDebugAidl UP-TO-DATE
+:lib:compileDebugRenderscript UP-TO-DATE
+:lib:generateDebugBuildConfig UP-TO-DATE
+:lib:generateDebugAssets UP-TO-DATE
+:lib:mergeDebugAssets UP-TO-DATE
+:lib:generateDebugResValues UP-TO-DATE
+:lib:generateDebugResources UP-TO-DATE
+:lib:packageDebugResources UP-TO-DATE
+:lib:processDebugManifest UP-TO-DATE
+:lib:processDebugResources UP-TO-DATE
+:lib:generateDebugSources UP-TO-DATE
+:lib:processDebugJavaRes UP-TO-DATE
+:lib:compileDebugJavaWithJavac UP-TO-DATE
+:lib:packageDebugJar UP-TO-DATE
+:lib:compileDebugNdk UP-TO-DATE
+:lib:packageDebugJniLibs UP-TO-DATE
+:lib:packageDebugLocalJar UP-TO-DATE
+:lib:packageDebugRenderscript UP-TO-DATE
+:lib:bundleDebug UP-TO-DATE
+:lib:compileDebugSources UP-TO-DATE
+:lib:assembleDebug UP-TO-DATE
+:lib:copyReleaseLint UP-TO-DATE
+:lib:mergeReleaseProguardFiles UP-TO-DATE
+:lib:preReleaseBuild UP-TO-DATE
+:lib:checkReleaseManifest
+:lib:prepareReleaseDependencies
+:lib:compileReleaseAidl UP-TO-DATE
+:lib:compileReleaseRenderscript UP-TO-DATE
+:lib:generateReleaseBuildConfig UP-TO-DATE
+:lib:generateReleaseAssets UP-TO-DATE
+:lib:mergeReleaseAssets UP-TO-DATE
+:lib:generateReleaseResValues UP-TO-DATE
+:lib:generateReleaseResources UP-TO-DATE
+:lib:packageReleaseResources UP-TO-DATE
+:lib:processReleaseManifest UP-TO-DATE
+:lib:processReleaseResources UP-TO-DATE
+:lib:generateReleaseSources UP-TO-DATE
+:lib:processReleaseJavaRes UP-TO-DATE
+:lib:compileReleaseJavaWithJavac UP-TO-DATE
+:lib:packageReleaseJar UP-TO-DATE
+:lib:compileReleaseNdk UP-TO-DATE
+:lib:packageReleaseJniLibs UP-TO-DATE
+:lib:packageReleaseLocalJar UP-TO-DATE
+:lib:packageReleaseRenderscript UP-TO-DATE
+:lib:bundleRelease UP-TO-DATE
+:lib:compileReleaseSources UP-TO-DATE
+:lib:assembleRelease UP-TO-DATE
+:lib:assemble UP-TO-DATE
+:lib:build
+:sample:preBuild UP-TO-DATE
+:sample:preDebugBuild UP-TO-DATE
+:sample:checkDebugManifest
+:sample:preReleaseBuild UP-TO-DATE
+:sample:prepareAndroidClockseekbarMasterLibUnspecifiedLibrary
+:sample:prepareComAndroidSupportAppcompatV72103Library
+:sample:prepareComAndroidSupportSupportV42103Library
+:sample:prepareDebugDependencies
+:sample:compileDebugAidl
+:sample:compileDebugRenderscript
+:sample:generateDebugBuildConfig
+:sample:generateDebugAssets UP-TO-DATE
+:sample:mergeDebugAssets
+:sample:generateDebugResValues
+:sample:generateDebugResources
+:sample:mergeDebugResourcesUnknown source file : /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-mdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/intermediates/exploded-aar/android-clockseekbar-master/lib/unspecified/res/drawable-xhdpi/scrubber_control_pressed_holo_green.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/intermediates/exploded-aar/android-clockseekbar-master/lib/unspecified/res/drawable-mdpi/scrubber_control_pressed_holo_orange.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/intermediates/exploded-aar/android-clockseekbar-master/lib/unspecified/res/drawable-xhdpi/time_longhand.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/intermediates/exploded-aar/android-clockseekbar-master/lib/unspecified/res/drawable-mdpi/scrubber_control_normal_holo_green.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/intermediates/exploded-aar/android-clockseekbar-master/lib/unspecified/res/drawable-hdpi/scrubber_control_normal_holo_red.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/intermediates/exploded-aar/android-clockseekbar-master/lib/unspecified/res/drawable-mdpi/scrubber_control_normal_holo_red.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/intermediates/exploded-aar/android-clockseekbar-master/lib/unspecified/res/drawable-xxhdpi/scrubber_control_pressed_holo_green.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/intermediates/exploded-aar/android-clockseekbar-master/lib/unspecified/res/drawable-xxhdpi/time_longhand.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/intermediates/exploded-aar/android-clockseekbar-master/lib/unspecified/res/drawable-xhdpi/scrubber_control_normal_holo_green.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/intermediates/exploded-aar/android-clockseekbar-master/lib/unspecified/res/drawable-xxhdpi/scrubber_control_normal_holo_orange.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/intermediates/exploded-aar/android-clockseekbar-master/lib/unspecified/res/drawable-xxhdpi/scrubber_control_normal_holo_red.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/intermediates/exploded-aar/android-clockseekbar-master/lib/unspecified/res/drawable-xhdpi/scrubber_control_pressed_holo_red.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/intermediates/exploded-aar/android-clockseekbar-master/lib/unspecified/res/drawable-xhdpi/time_shorthand.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/intermediates/exploded-aar/android-clockseekbar-master/lib/unspecified/res/drawable-mdpi/scrubber_control_normal_holo_orange.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_spinner_mtrl_am_alpha.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/intermediates/exploded-aar/android-clockseekbar-master/lib/unspecified/res/drawable-hdpi/scrubber_control_pressed_holo_orange.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/intermediates/exploded-aar/android-clockseekbar-master/lib/unspecified/res/drawable-hdpi/scrubber_control_pressed_holo_green.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/intermediates/exploded-aar/android-clockseekbar-master/lib/unspecified/res/drawable-hdpi/time_longhand.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/intermediates/exploded-aar/android-clockseekbar-master/lib/unspecified/res/drawable-xxhdpi/scrubber_control_pressed_holo_orange.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/intermediates/exploded-aar/android-clockseekbar-master/lib/unspecified/res/drawable-mdpi/scrubber_control_pressed_holo_green.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/intermediates/exploded-aar/android-clockseekbar-master/lib/unspecified/res/drawable-xhdpi/scrubber_control_normal_holo_red.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/intermediates/exploded-aar/android-clockseekbar-master/lib/unspecified/res/drawable-xhdpi/scrubber_control_pressed_holo_orange.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/intermediates/exploded-aar/android-clockseekbar-master/lib/unspecified/res/drawable-hdpi/scrubber_control_pressed_holo_red.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/intermediates/exploded-aar/android-clockseekbar-master/lib/unspecified/res/drawable-xhdpi/scrubber_control_normal_holo_orange.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/intermediates/exploded-aar/android-clockseekbar-master/lib/unspecified/res/drawable-mdpi/time_shorthand.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/intermediates/exploded-aar/android-clockseekbar-master/lib/unspecified/res/drawable-hdpi/scrubber_control_normal_holo_green.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/intermediates/exploded-aar/android-clockseekbar-master/lib/unspecified/res/drawable-xxhdpi/time_shorthand.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/intermediates/exploded-aar/android-clockseekbar-master/lib/unspecified/res/drawable-xxhdpi/scrubber_control_normal_holo_green.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/intermediates/exploded-aar/android-clockseekbar-master/lib/unspecified/res/drawable-hdpi/time_shorthand.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/intermediates/exploded-aar/android-clockseekbar-master/lib/unspecified/res/drawable-hdpi/scrubber_control_normal_holo_orange.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/intermediates/exploded-aar/android-clockseekbar-master/lib/unspecified/res/drawable-mdpi/scrubber_control_pressed_holo_red.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/intermediates/exploded-aar/android-clockseekbar-master/lib/unspecified/res/drawable-xxhdpi/scrubber_control_pressed_holo_red.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/intermediates/exploded-aar/android-clockseekbar-master/lib/unspecified/res/drawable-mdpi/time_longhand.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+
+:sample:processDebugManifest
+:sample:processDebugResources
+:sample:generateDebugSources
+:sample:processDebugJavaRes UP-TO-DATE
+:sample:compileDebugJavaWithJavac
+:sample:compileDebugNdk UP-TO-DATE
+:sample:compileDebugSources
+:sample:preDexDebug
+:sample:dexDebug
+:sample:validateDebugSigning
+:sample:packageDebug
+:sample:zipalignDebug
+:sample:assembleDebug
+:sample:checkReleaseManifest
+:sample:prepareReleaseDependencies
+:sample:compileReleaseAidl
+:sample:compileReleaseRenderscript
+:sample:generateReleaseBuildConfig
+:sample:generateReleaseAssets UP-TO-DATE
+:sample:mergeReleaseAssets
+:sample:generateReleaseResValues
+:sample:generateReleaseResources
+:sample:mergeReleaseResourcesUnknown source file : /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/intermediates/exploded-aar/android-clockseekbar-master/lib/unspecified/res/drawable-xhdpi/scrubber_control_pressed_holo_green.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-mdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/intermediates/exploded-aar/android-clockseekbar-master/lib/unspecified/res/drawable-xhdpi/time_longhand.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/intermediates/exploded-aar/android-clockseekbar-master/lib/unspecified/res/drawable-mdpi/scrubber_control_pressed_holo_orange.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/intermediates/exploded-aar/android-clockseekbar-master/lib/unspecified/res/drawable-mdpi/scrubber_control_normal_holo_green.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/intermediates/exploded-aar/android-clockseekbar-master/lib/unspecified/res/drawable-mdpi/scrubber_control_normal_holo_red.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/intermediates/exploded-aar/android-clockseekbar-master/lib/unspecified/res/drawable-hdpi/scrubber_control_normal_holo_red.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/intermediates/exploded-aar/android-clockseekbar-master/lib/unspecified/res/drawable-xxhdpi/scrubber_control_pressed_holo_green.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/intermediates/exploded-aar/android-clockseekbar-master/lib/unspecified/res/drawable-xxhdpi/time_longhand.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/intermediates/exploded-aar/android-clockseekbar-master/lib/unspecified/res/drawable-xhdpi/scrubber_control_normal_holo_green.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/intermediates/exploded-aar/android-clockseekbar-master/lib/unspecified/res/drawable-xxhdpi/scrubber_control_normal_holo_orange.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/intermediates/exploded-aar/android-clockseekbar-master/lib/unspecified/res/drawable-xxhdpi/scrubber_control_normal_holo_red.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/intermediates/exploded-aar/android-clockseekbar-master/lib/unspecified/res/drawable-xhdpi/scrubber_control_pressed_holo_red.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/intermediates/exploded-aar/android-clockseekbar-master/lib/unspecified/res/drawable-xhdpi/time_shorthand.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/intermediates/exploded-aar/android-clockseekbar-master/lib/unspecified/res/drawable-mdpi/scrubber_control_normal_holo_orange.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_spinner_mtrl_am_alpha.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/intermediates/exploded-aar/android-clockseekbar-master/lib/unspecified/res/drawable-hdpi/scrubber_control_pressed_holo_orange.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/intermediates/exploded-aar/android-clockseekbar-master/lib/unspecified/res/drawable-hdpi/scrubber_control_pressed_holo_green.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/intermediates/exploded-aar/android-clockseekbar-master/lib/unspecified/res/drawable-hdpi/time_longhand.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/intermediates/exploded-aar/android-clockseekbar-master/lib/unspecified/res/drawable-xxhdpi/scrubber_control_pressed_holo_orange.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/intermediates/exploded-aar/android-clockseekbar-master/lib/unspecified/res/drawable-mdpi/scrubber_control_pressed_holo_green.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/intermediates/exploded-aar/android-clockseekbar-master/lib/unspecified/res/drawable-xhdpi/scrubber_control_normal_holo_red.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/intermediates/exploded-aar/android-clockseekbar-master/lib/unspecified/res/drawable-xhdpi/scrubber_control_pressed_holo_orange.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/intermediates/exploded-aar/android-clockseekbar-master/lib/unspecified/res/drawable-hdpi/scrubber_control_pressed_holo_red.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/intermediates/exploded-aar/android-clockseekbar-master/lib/unspecified/res/drawable-xhdpi/scrubber_control_normal_holo_orange.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/intermediates/exploded-aar/android-clockseekbar-master/lib/unspecified/res/drawable-mdpi/time_shorthand.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/intermediates/exploded-aar/android-clockseekbar-master/lib/unspecified/res/drawable-hdpi/scrubber_control_normal_holo_green.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/intermediates/exploded-aar/android-clockseekbar-master/lib/unspecified/res/drawable-xxhdpi/time_shorthand.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/intermediates/exploded-aar/android-clockseekbar-master/lib/unspecified/res/drawable-xxhdpi/scrubber_control_normal_holo_green.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/intermediates/exploded-aar/android-clockseekbar-master/lib/unspecified/res/drawable-hdpi/time_shorthand.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/intermediates/exploded-aar/android-clockseekbar-master/lib/unspecified/res/drawable-mdpi/scrubber_control_pressed_holo_red.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/intermediates/exploded-aar/android-clockseekbar-master/lib/unspecified/res/drawable-hdpi/scrubber_control_normal_holo_orange.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/intermediates/exploded-aar/android-clockseekbar-master/lib/unspecified/res/drawable-xxhdpi/scrubber_control_pressed_holo_red.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/intermediates/exploded-aar/android-clockseekbar-master/lib/unspecified/res/drawable-mdpi/time_longhand.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+
+:sample:processReleaseManifest
+:sample:processReleaseResources
+:sample:generateReleaseSources
+:sample:processReleaseJavaRes UP-TO-DATE
+:sample:compileReleaseJavaWithJavac
+:sample:compileReleaseNdk UP-TO-DATE
+:sample:compileReleaseSources
+:sample:lintVitalRelease
+:sample:preDexRelease
+:sample:dexRelease
+:sample:packageRelease
+:sample:assembleRelease
+:sample:assemble
+:sample:build
+
+BUILD SUCCESSFUL
+
+Total time: 27.729 secs
+
+2018-04-09 14:25:56,722 INFO  FullProcessService - Found APK file: /tmp/rdisk/771/src/android-clockseekbar-master/sample/build/outputs/apk/sample-release-unsigned.apk

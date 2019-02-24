@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.fernanependocejas.android10.sample.presentation",
+    "label" : "Android Clean Architecture",
+    "icon" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "versionName" : "1.0",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "15",
+    "targetSdkVersion" : "21",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ "android.permission.INTERNET", "android.permission.ACCESS_NETWORK_STATE", "android.permission.WRITE_EXTERNAL_STORAGE" ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAC+lBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFBQU2NjZGRkZDRERDQ0NHR0dKSkoHBweIiYnt7e3v8PDu7+/g4eHT1NTV1tY3Nzf19vbt7u75+vp9fX0ICAgGBgYNDg7p6urq6+v29/dra2sYGBhqamptbW0gHx8fHx9sbGxrbGwZGhpkZGRPUFDNzc3Mzc1aW1teXl7R0tLJyclNTk5kZWVpaWlQUVE0NDQrKytWVlY4OTklJiZEQ0NlZGRUVFSwsLCtra1dXl5iYmK0tLSpqqpPT09mZWUoKSmbnJydnZ0zMzOcnZ0qKippamp0dHT09fXx8vL7/PzIycmZm5uen5/9///w8fHz9PTy8/Po6enr7OyCg4O0tbXk5OSNjo6Ojo6YmJiXmJiQkJCDhITAwcGnp6esra3v7+8wMDDc3t4NDQ2JiYlXVVXs7e04ODhxcXHe4OAXFxdRUVFqa2vf4OBJSUlXV1dubm5JSkqZmprb3NwWFhaOj4+EhISJiorq6uq9vr6ur6+tr6/R09MVFRWurq48PDwICQkJCQlwcXHe39+Pj49NTU1bW1tycnLd3t6Li4tSUlLs7OwxMTFoaGiVlpaXl5eWlpaMi4uUlZXLzMxBQUFZWVn29vZISEgZGRl5enrp6elzdHR0dXVzc3N+f3/n6Oj///+SkpJ3d3fLy8vKy8vJysrh4uLS0tILDAz3+PgvLy+enp7i4+PZ2trS09POz8/39/c7Ozuio6Py9PTQ0dEMDAwQEBD4+fmhoqKdnp6am5ujo6Pt7++Ympqbm5unqKijpKSlpaWoqamztLSkpaXR0dENDAwRERHLzc0WFxfPz886Ozv4+Pjb29tVVlZYWFhTU1PY2dl6e3tWV1dVVVW8vb3h4eGgoKDf4eHu7u7u8PDP0NAKCQkPDw8yMjI2NzcmJiYpKSklJSU5OjrX2NgiIiIoKCiwsbHs7u7k5eXg4OBERERHSEhFRETyE2PoAAAAEHRSTlMAInOzwb8HeN7+Cp954nK0pCfXBgAAAvlJREFUSMdjYAACRiZmFlYCgIWZiZEBAtjYOTgFiACcHOxsIPVc3AJEA24uoAYeARIAD9D9vEBaUEhYBA5ExcShQEwUISosJAhUyMvIwAekJCSlpGXgQFpWTh4M5GSRRaUkJYBK+Rj4gaSCtKISHMgoq6iqqamrq6mpqijLIMQVpRWASvkZWICksLSSBhxoamnr6OrpGxgaGWtraSLElaSFgUpZGFiBpIgMigYTUzNzC0sraxtbFA0yIkClrNg02Nk7ODqZOLu4ahOpwc3dw9PL28fXz59IDboBgUEOwYEhoWFEagiHRVM4kRr0YBr0CGqIUFaO1IyKjokFg5jouPgEZeXEJFwakjUDU1JS09IzMrPAIDM7JzcvJSW/QBOHBpnkQgEB3aJipMRWIi4gUKqVjEtDWbmAQEVlFZKG7GoBAUvFgdQA9ENNLYqGOgGBepwaypIbxBubmluQNLS21TW2R+IKJc2Ozq7uHvleJA3pVn1d0WW4g7V/wsRJk5GdNMV94kR8fnAQEGhA9fRUAYFphEIJ2Q9TCAfr9BnIMT1zFl4Ns+cICMyVCZqXOX/BwpJFmUBq8RIBgaXLcGtYvmLFylUqq9esXbd+w8aKNeGbNtevWKEdgUuDpqbVlq3btqsCRXYs3rkL5KTde7Zu2ZuMOz9EJiRo7QPFQ8v+AwdBGg5tOBwhjTfHJUUeOQoUOWa+MxikIfZ4EqEsmrztRMjJU6dlz/SdPRlybp+MBmEN5y9cPH2pVunyiYtXDhHWkBR59RpQ5PoNiJNOEnRSUjzY0zdvHbgN9vROIjVUwUKJsIbIIxOBIkdv3Ckk0kkyd73v3X9g8jDxkf39x0+eJhIO1mfPT4U0PX/x0jMrJLDpyCuMUEKrUJIiX78BirzdsvMdyEkhSE6CVihoVVZZxN73Hz5++vxFuf7rx2+fvitjVFnolaL0jz3b9jzbo1Tw89eePc80pTEqRYxq97fYnz/LxX6Lii0H0n8xq12SK3bSmw4kN05IbP4AAIj4l838uu+SAAAAAElFTkSuQmCC"
+  },
+  "dexClasses" : 3389,
+  "locales" : [ "" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"1.0\" package=\"com.fernanependocejas.android10.sample.presentation\" platformBuildVersionCode=\"21\" platformBuildVersionName=\"5.0.1-1624448\">\n\t<uses-sdk android:minSdkVersion=\"15\" android:targetSdkVersion=\"21\" />\n\t<uses-permission android:name=\"android.permission.INTERNET\" />\n\t<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />\n\t<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />\n\t<application android:theme=\"resourceId:0x7f040001\" android:label=\"Android Clean Architecture\" android:icon=\"res/drawable-mdpi-v4/ic_launcher.png\" android:name=\"com.fernandocejas.android10.sample.presentation.AndroidApplication\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"Android Clean Architecture\" android:name=\"com.fernandocejas.android10.sample.presentation.view.activity.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<activity android:label=\"Users List\" android:name=\"com.fernandocejas.android10.sample.presentation.view.activity.UserListActivity\" />\n\t\t<activity android:label=\"User Details\" android:name=\"com.fernandocejas.android10.sample.presentation.view.activity.UserDetailsActivity\" />\n\t\t<activity android:label=\"RecyclerViewTestActivity\" android:name=\"android.support.v7.widget.TestActivity\" />\n\t\t<service android:name=\"com.squareup.leakcanary.internal.HeapAnalyzerService\" android:enabled=\"false\" android:process=\":leakcanary\" />\n\t\t<service android:name=\"com.squareup.leakcanary.DisplayLeakService\" android:enabled=\"false\" />\n\t\t<activity android:theme=\"resourceId:0x7f040000\" android:label=\"Leaks\" android:icon=\"res/drawable-mdpi-v4/__leak_canary_icon.png\" android:name=\"com.squareup.leakcanary.internal.DisplayLeakActivity\" android:enabled=\"false\" android:taskAffinity=\"com.squareup.leakcanary\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 1476826,
+  "crc32" : 3211806171,
+  "sha256" : "e27aaa2b5e4a4bf5a84e7712036d102c9fd18f5597c605b0912942ef6342d62f",
+  "buildTime" : 1526053464000
+}

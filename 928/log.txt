@@ -1,0 +1,276 @@
+2018-05-11 15:41:14,401 INFO  DownloadService - Downloading "https://github.com/pushtorefresh/storio/archive/master.zip", attempt 3
+2018-05-11 15:41:15,238 INFO  DownloadService - Downloaded https://github.com/pushtorefresh/storio/archive/master.zip, attempt 3
+2018-05-11 15:41:15,239 INFO  DownloadService - Size of file "/tmp/rdisk/928/master.zip": 831 KB
+2018-05-11 15:41:15,239 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-05-11 15:41:15,240 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/928/master.zip: true
+2018-05-11 15:41:15,240 DEBUG ZipUtil - Extracting '/tmp/rdisk/928/master.zip' into '/tmp/rdisk/928/src'.
+2018-05-11 15:41:15,350 INFO  FullProcessService - Size of directory with sources: 2 MB
+2018-05-11 15:41:15,350 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/928/src]
+2018-05-11 15:41:15,363 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/928/src/.git/
+
+2018-05-11 15:41:15,381 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/928/src/storio-master/gradlew
+2018-05-11 15:41:15,402 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/928/src/storio-master/storio-basic-sample-app/build.gradle /tmp/rdisk/928/src/storio-master/storio-common/build.gradle /tmp/rdisk/928/src/storio-master/storio-content-resolver-annotations-processor-test/build.gradle /tmp/rdisk/928/src/storio-master/storio-content-resolver/build.gradle /tmp/rdisk/928/src/storio-master/storio-sample-app/build.gradle /tmp/rdisk/928/src/storio-master/storio-sqlite-annotations-processor-test/build.gradle /tmp/rdisk/928/src/storio-master/storio-sqlite/build.gradle /tmp/rdisk/928/src/storio-master/storio-test-common/build.gradle /tmp/rdisk/928/src/storio-master/storio-test-without-rxjava/build.gradle /tmp/rdisk/928/src/storio-master/build.gradle /tmp/rdisk/928/src/storio-master/storio-common-annotations-processor/build.gradle /tmp/rdisk/928/src/storio-master/storio-content-resolver-annotations-processor/build.gradle /tmp/rdisk/928/src/storio-master/storio-content-resolver-annotations/build.gradle /tmp/rdisk/928/src/storio-master/storio-sqlite-annotations-processor/build.gradle /tmp/rdisk/928/src/storio-master/storio-sqlite-annotations/build.gradle
+2018-05-11 15:41:15,420 INFO  ProjectBuildService - All script(s): /tmp/rdisk/928/src/storio-master/storio-test-without-rxjava/build.gradle /tmp/rdisk/928/src/storio-master/storio-test-common/build.gradle /tmp/rdisk/928/src/storio-master/storio-sqlite/build.gradle /tmp/rdisk/928/src/storio-master/storio-sqlite-annotations/build.gradle /tmp/rdisk/928/src/storio-master/storio-sqlite-annotations-processor/build.gradle /tmp/rdisk/928/src/storio-master/storio-sqlite-annotations-processor-test/build.gradle /tmp/rdisk/928/src/storio-master/storio-sample-app/build.gradle /tmp/rdisk/928/src/storio-master/storio-content-resolver/build.gradle /tmp/rdisk/928/src/storio-master/storio-content-resolver-annotations/build.gradle /tmp/rdisk/928/src/storio-master/storio-content-resolver-annotations-processor/build.gradle /tmp/rdisk/928/src/storio-master/storio-content-resolver-annotations-processor-test/build.gradle /tmp/rdisk/928/src/storio-master/storio-common/build.gradle /tmp/rdisk/928/src/storio-master/storio-common-annotations-processor/build.gradle /tmp/rdisk/928/src/storio-master/storio-basic-sample-app/build.gradle /tmp/rdisk/928/src/storio-master/settings.gradle /tmp/rdisk/928/src/storio-master/gradle/publish-java-lib.gradle /tmp/rdisk/928/src/storio-master/gradle/publish-android-lib.gradle /tmp/rdisk/928/src/storio-master/gradle/jacoco-non-android.gradle /tmp/rdisk/928/src/storio-master/gradle/jacoco-android.gradle /tmp/rdisk/928/src/storio-master/gradle/checkstyle.gradle /tmp/rdisk/928/src/storio-master/build.workaround-missing-resource.gradle /tmp/rdisk/928/src/storio-master/build.gradle
+2018-05-11 15:41:15,422 INFO  ProjectBuildService - Remote scripts: none
+2018-05-11 15:41:15,422 INFO  ProjectFixService - Fixing project...
+2018-05-11 15:41:15,477 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/928/src/storio-master/storio-basic-sample-app/local.properties
+2018-05-11 15:41:15,487 INFO  ProjectFixService - Build info for "/tmp/rdisk/928/src/storio-master/storio-basic-sample-app/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=27,minSdkVersion=15,targetSdkVersion=<null>]
+2018-05-11 15:41:15,488 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/928/src/storio-master/storio-basic-sample-app/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=15,targetSdkVersion=27]
+2018-05-11 15:41:15,488 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/928/src/storio-master/storio-common/local.properties
+2018-05-11 15:41:15,500 INFO  ProjectFixService - Build info for "/tmp/rdisk/928/src/storio-master/storio-common/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=27,minSdkVersion=15,targetSdkVersion=<null>]
+2018-05-11 15:41:15,500 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/928/src/storio-master/storio-common/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=15,targetSdkVersion=27]
+2018-05-11 15:41:15,500 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/928/src/storio-master/storio-content-resolver-annotations-processor-test/local.properties
+2018-05-11 15:41:15,512 INFO  ProjectFixService - Build info for "/tmp/rdisk/928/src/storio-master/storio-content-resolver-annotations-processor-test/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=27,minSdkVersion=15,targetSdkVersion=<null>]
+2018-05-11 15:41:15,512 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/928/src/storio-master/storio-content-resolver-annotations-processor-test/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=15,targetSdkVersion=27]
+2018-05-11 15:41:15,512 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/928/src/storio-master/storio-content-resolver/local.properties
+2018-05-11 15:41:15,523 INFO  ProjectFixService - Build info for "/tmp/rdisk/928/src/storio-master/storio-content-resolver/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=27,minSdkVersion=15,targetSdkVersion=<null>]
+2018-05-11 15:41:15,524 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/928/src/storio-master/storio-content-resolver/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=15,targetSdkVersion=27]
+2018-05-11 15:41:15,524 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/928/src/storio-master/storio-sample-app/local.properties
+2018-05-11 15:41:15,535 INFO  ProjectFixService - Build info for "/tmp/rdisk/928/src/storio-master/storio-sample-app/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=27,minSdkVersion=15,targetSdkVersion=<null>]
+2018-05-11 15:41:15,535 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/928/src/storio-master/storio-sample-app/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=15,targetSdkVersion=27]
+2018-05-11 15:41:15,535 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/928/src/storio-master/storio-sqlite-annotations-processor-test/local.properties
+2018-05-11 15:41:15,546 INFO  ProjectFixService - Build info for "/tmp/rdisk/928/src/storio-master/storio-sqlite-annotations-processor-test/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=27,minSdkVersion=15,targetSdkVersion=<null>]
+2018-05-11 15:41:15,546 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/928/src/storio-master/storio-sqlite-annotations-processor-test/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=15,targetSdkVersion=27]
+2018-05-11 15:41:15,547 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/928/src/storio-master/storio-sqlite/local.properties
+2018-05-11 15:41:15,558 INFO  ProjectFixService - Build info for "/tmp/rdisk/928/src/storio-master/storio-sqlite/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=27,minSdkVersion=15,targetSdkVersion=<null>]
+2018-05-11 15:41:15,558 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/928/src/storio-master/storio-sqlite/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=15,targetSdkVersion=27]
+2018-05-11 15:41:15,558 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/928/src/storio-master/storio-test-common/local.properties
+2018-05-11 15:41:15,569 INFO  ProjectFixService - Build info for "/tmp/rdisk/928/src/storio-master/storio-test-common/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=27,minSdkVersion=15,targetSdkVersion=<null>]
+2018-05-11 15:41:15,569 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/928/src/storio-master/storio-test-common/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=15,targetSdkVersion=27]
+2018-05-11 15:41:15,569 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/928/src/storio-master/storio-test-without-rxjava/local.properties
+2018-05-11 15:41:15,580 INFO  ProjectFixService - Build info for "/tmp/rdisk/928/src/storio-master/storio-test-without-rxjava/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=27,minSdkVersion=15,targetSdkVersion=<null>]
+2018-05-11 15:41:15,581 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/928/src/storio-master/storio-test-without-rxjava/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=15,targetSdkVersion=27]
+2018-05-11 15:41:15,581 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/928/src/storio-master/local.properties
+2018-05-11 15:41:15,582 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-4.2.1-bin.zip
+2018-05-11 15:41:15,590 INFO  ProjectFixService - Build info for "/tmp/rdisk/928/src/storio-master/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=27,minSdkVersion=14,targetSdkVersion=<null>]
+2018-05-11 15:41:15,590 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/928/src/storio-master/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=14,targetSdkVersion=27]
+2018-05-11 15:41:15,592 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/928/src/storio-master/storio-common-annotations-processor/local.properties
+2018-05-11 15:41:15,603 INFO  ProjectFixService - Build info for "/tmp/rdisk/928/src/storio-master/storio-common-annotations-processor/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=27,minSdkVersion=15,targetSdkVersion=<null>]
+2018-05-11 15:41:15,603 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/928/src/storio-master/storio-common-annotations-processor/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=15,targetSdkVersion=27]
+2018-05-11 15:41:15,604 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/928/src/storio-master/storio-content-resolver-annotations-processor/local.properties
+2018-05-11 15:41:15,615 INFO  ProjectFixService - Build info for "/tmp/rdisk/928/src/storio-master/storio-content-resolver-annotations-processor/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=27,minSdkVersion=15,targetSdkVersion=<null>]
+2018-05-11 15:41:15,615 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/928/src/storio-master/storio-content-resolver-annotations-processor/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=15,targetSdkVersion=27]
+2018-05-11 15:41:15,615 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/928/src/storio-master/storio-content-resolver-annotations/local.properties
+2018-05-11 15:41:15,626 INFO  ProjectFixService - Build info for "/tmp/rdisk/928/src/storio-master/storio-content-resolver-annotations/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=27,minSdkVersion=15,targetSdkVersion=<null>]
+2018-05-11 15:41:15,626 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/928/src/storio-master/storio-content-resolver-annotations/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=15,targetSdkVersion=27]
+2018-05-11 15:41:15,626 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/928/src/storio-master/storio-sqlite-annotations-processor/local.properties
+2018-05-11 15:41:15,637 INFO  ProjectFixService - Build info for "/tmp/rdisk/928/src/storio-master/storio-sqlite-annotations-processor/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=27,minSdkVersion=15,targetSdkVersion=<null>]
+2018-05-11 15:41:15,637 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/928/src/storio-master/storio-sqlite-annotations-processor/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=15,targetSdkVersion=27]
+2018-05-11 15:41:15,638 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/928/src/storio-master/storio-sqlite-annotations/local.properties
+2018-05-11 15:41:15,648 INFO  ProjectFixService - Build info for "/tmp/rdisk/928/src/storio-master/storio-sqlite-annotations/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=27,minSdkVersion=15,targetSdkVersion=<null>]
+2018-05-11 15:41:15,648 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/928/src/storio-master/storio-sqlite-annotations/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=15,targetSdkVersion=27]
+2018-05-11 15:41:15,649 INFO  ProjectFixService - Project was maybe fixed
+2018-05-11 15:41:15,649 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-11 15:41:15,649 INFO  SysUtils - Execute command: [/tmp/rdisk/928/src/storio-master/gradlew, -b, /tmp/rdisk/928/src/storio-master/storio-basic-sample-app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-11 15:41:25,310 INFO  ProjectTaskService - Detected possible tasks: 67
+2018-05-11 15:41:25,310 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-05-11 15:41:25,310 INFO  SysUtils - Execute command: [/tmp/rdisk/928/src/storio-master/gradlew, -b, /tmp/rdisk/928/src/storio-master/storio-basic-sample-app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-05-11 15:42:20,262 INFO  SysUtils - Configuration on demand is an incubating feature.
+:storio-basic-sample-app:preBuild UP-TO-DATE
+:storio-common:preBuild UP-TO-DATE
+:storio-common:preReleaseBuild UP-TO-DATE
+:storio-common:checkReleaseManifest
+:storio-common:processReleaseManifest
+:storio-sqlite:preBuild UP-TO-DATE
+:storio-sqlite:preReleaseBuild UP-TO-DATE
+:storio-sqlite:checkReleaseManifest
+:storio-sqlite:processReleaseManifest
+:storio-basic-sample-app:preDebugBuild
+:storio-common:compileReleaseAidl
+:storio-sqlite:compileReleaseAidl
+:storio-basic-sample-app:compileDebugAidl
+:storio-common:packageReleaseRenderscript NO-SOURCE
+:storio-sqlite:packageReleaseRenderscript NO-SOURCE
+:storio-basic-sample-app:compileDebugRenderscript
+:storio-basic-sample-app:checkDebugManifest
+:storio-basic-sample-app:generateDebugBuildConfig
+:storio-basic-sample-app:prepareLintJar
+:storio-basic-sample-app:generateDebugResValues
+:storio-basic-sample-app:generateDebugResources
+:storio-common:compileReleaseRenderscript
+:storio-common:generateReleaseResValues
+:storio-common:generateReleaseResources
+:storio-common:packageReleaseResources
+:storio-sqlite:compileReleaseRenderscript
+:storio-sqlite:generateReleaseResValues
+:storio-sqlite:generateReleaseResources
+:storio-sqlite:packageReleaseResources
+:storio-basic-sample-app:mergeDebugResources
+:storio-basic-sample-app:createDebugCompatibleScreenManifests
+:storio-basic-sample-app:processDebugManifest
+:storio-basic-sample-app:splitsDiscoveryTaskDebug
+:storio-common:platformAttrExtractor
+:storio-sqlite:platformAttrExtractor
+:storio-common:generateReleaseBuildConfig
+:storio-common:prepareLintJar
+:storio-common:javaPreCompileRelease
+:storio-common:processReleaseJavaRes NO-SOURCE
+:storio-common-annotations-processor:compileKotlin
+:storio-common-annotations-processor:compileJava NO-SOURCE
+:storio-common-annotations-processor:processResources NO-SOURCE
+:storio-common-annotations-processor:classes UP-TO-DATE
+:storio-common-annotations-processor:jar
+:storio-sqlite:generateReleaseBuildConfig
+:storio-sqlite:prepareLintJar
+:storio-sqlite:processReleaseJavaRes NO-SOURCE
+:storio-sqlite-annotations:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.6
+1 warning
+
+:storio-sqlite-annotations:processResources NO-SOURCE
+:storio-sqlite-annotations:classes
+:storio-sqlite-annotations:jar
+:storio-sqlite-annotations-processor:compileKotlin
+:storio-sqlite-annotations-processor:compileJava
+:storio-sqlite-annotations-processor:processResources NO-SOURCE
+:storio-sqlite-annotations-processor:classes
+:storio-sqlite-annotations-processor:jar
+:storio-basic-sample-app:compileDebugNdk NO-SOURCE
+:storio-basic-sample-app:mergeDebugShaders
+:storio-basic-sample-app:compileDebugShaders
+:storio-basic-sample-app:generateDebugAssets
+:storio-common:mergeReleaseShaders
+:storio-common:compileReleaseShaders
+:storio-common:generateReleaseAssets
+:storio-common:mergeReleaseAssets
+:storio-sqlite:mergeReleaseShaders
+:storio-sqlite:compileReleaseShaders
+:storio-sqlite:generateReleaseAssets
+:storio-sqlite:mergeReleaseAssets
+:storio-basic-sample-app:mergeDebugAssets
+:storio-basic-sample-app:mergeDebugJniLibFolders
+:storio-common:compileReleaseNdk NO-SOURCE
+:storio-common:mergeReleaseJniLibFolders
+:storio-common:transformNativeLibsWithMergeJniLibsForRelease
+:storio-common:transformNativeLibsWithStripDebugSymbolForRelease
+:storio-common:transformNativeLibsWithIntermediateJniLibsForRelease
+:storio-sqlite:compileReleaseNdk NO-SOURCE
+:storio-sqlite:mergeReleaseJniLibFolders
+:storio-sqlite:transformNativeLibsWithMergeJniLibsForRelease
+:storio-sqlite:transformNativeLibsWithStripDebugSymbolForRelease
+:storio-sqlite:transformNativeLibsWithIntermediateJniLibsForRelease
+:storio-basic-sample-app:processDebugJavaRes NO-SOURCE
+:storio-basic-sample-app:validateSigningDebug
+:storio-basic-sample-app:preReleaseBuild
+:storio-basic-sample-app:compileReleaseAidl
+:storio-basic-sample-app:compileReleaseRenderscript
+:storio-basic-sample-app:checkReleaseManifest
+:storio-basic-sample-app:generateReleaseBuildConfig
+:storio-basic-sample-app:generateReleaseResValues
+:storio-basic-sample-app:generateReleaseResources
+:storio-basic-sample-app:mergeReleaseResources
+:storio-basic-sample-app:createReleaseCompatibleScreenManifests
+:storio-basic-sample-app:processReleaseManifest
+:storio-basic-sample-app:splitsDiscoveryTaskRelease
+:storio-basic-sample-app:compileReleaseNdk NO-SOURCE
+:storio-basic-sample-app:mergeReleaseShaders
+:storio-basic-sample-app:compileReleaseShaders
+:storio-basic-sample-app:generateReleaseAssets
+:storio-basic-sample-app:mergeReleaseAssets
+:storio-basic-sample-app:mergeReleaseJniLibFolders
+:storio-basic-sample-app:processReleaseJavaRes NO-SOURCE
+:storio-common:processReleaseResources
+:storio-sqlite:processReleaseResources
+:storio-basic-sample-app:processDebugResources
+:storio-basic-sample-app:generateDebugSources
+:storio-common:generateReleaseSources
+:storio-common:compileReleaseJavaWithJavacNote: /tmp/rdisk/928/src/storio-master/storio-common/src/main/java/com/pushtorefresh/storio3/Optional.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:storio-common:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease
+:storio-sqlite:generateReleaseSources
+:storio-sqlite:javaPreCompileRelease
+:storio-sqlite:compileReleaseJavaWithJavacNote: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:storio-sqlite:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease
+:storio-basic-sample-app:javaPreCompileDebug
+:storio-basic-sample-app:compileDebugJavaWithJavac
+:storio-basic-sample-app:compileDebugSources
+:storio-basic-sample-app:transformClassesWithDexBuilderForDebug
+:storio-basic-sample-app:transformDexArchiveWithExternalLibsDexMergerForDebug
+:storio-basic-sample-app:transformDexArchiveWithDexMergerForDebug
+:storio-basic-sample-app:transformNativeLibsWithMergeJniLibsForDebug
+:storio-basic-sample-app:transformNativeLibsWithStripDebugSymbolForDebug
+:storio-basic-sample-app:transformResourcesWithMergeJavaResForDebug
+:storio-basic-sample-app:packageDebug
+:storio-basic-sample-app:assembleDebug
+:storio-basic-sample-app:processReleaseResources
+:storio-basic-sample-app:generateReleaseSources
+:storio-basic-sample-app:javaPreCompileRelease
+:storio-basic-sample-app:compileReleaseJavaWithJavac
+:storio-basic-sample-app:compileReleaseSources
+:storio-basic-sample-app:lintVitalRelease
+Gradle now uses separate output directories for each JVM language, but this build assumes a single directory for all classes from a source set. This behaviour has been deprecated and is scheduled to be removed in Gradle 5.0
+	at org.gradle.api.internal.tasks.DefaultSourceSetOutput.getClassesDir(DefaultSourceSetOutput.java:80)
+	at org.gradle.api.internal.tasks.DefaultSourceSetOutput_Decorated.getClassesDir(Unknown Source)
+	at com.android.build.gradle.internal.LintGradleProject$ProjectSearch.getProject(LintGradleProject.java:839)
+	at com.android.build.gradle.internal.LintGradleProject$ProjectSearch.getProject(LintGradleProject.java:981)
+	at com.android.build.gradle.internal.LintGradleProject$ProjectSearch.getProject(LintGradleProject.java:784)
+	at com.android.build.gradle.internal.LintGradleClient.createLintRequest(LintGradleClient.java:182)
+	at com.android.tools.lint.LintCliClient.run(LintCliClient.java:149)
+	at com.android.build.gradle.internal.LintGradleClient.run(LintGradleClient.java:197)
+	at com.android.build.gradle.tasks.LintBaseTask.runLint(LintBaseTask.java:198)
+	at com.android.build.gradle.tasks.LintPerVariantTask.lintSingleVariant(LintPerVariantTask.java:53)
+	at com.android.build.gradle.tasks.LintPerVariantTask.lint(LintPerVariantTask.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:73)
+	at org.gradle.api.internal.project.taskfactory.DefaultTaskClassInfoStore$StandardTaskAction.doExecute(DefaultTaskClassInfoStore.java:142)
+	at org.gradle.api.internal.project.taskfactory.DefaultTaskClassInfoStore$StandardTaskAction.execute(DefaultTaskClassInfoStore.java:135)
+	at org.gradle.api.internal.project.taskfactory.DefaultTaskClassInfoStore$StandardTaskAction.execute(DefaultTaskClassInfoStore.java:122)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:762)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:729)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter$1.run(ExecuteActionsTaskExecuter.java:121)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:336)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:328)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.execute(DefaultBuildOperationExecutor.java:199)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:110)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:110)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:92)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:70)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:62)
+	at org.gradle.api.internal.tasks.execution.ResolveTaskOutputCachingStateExecuter.execute(ResolveTaskOutputCachingStateExecuter.java:54)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:97)
+	at org.gradle.api.internal.tasks.execution.CleanupStaleOutputsExecuter.execute(CleanupStaleOutputsExecuter.java:87)
+	at org.gradle.api.internal.tasks.execution.ResolveTaskArtifactStateTaskExecuter.execute(ResolveTaskArtifactStateTaskExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:54)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:34)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker$1.run(DefaultTaskGraphExecuter.java:248)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:336)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:328)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.execute(DefaultBuildOperationExecutor.java:199)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:110)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:241)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:230)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker.processTask(DefaultTaskPlanExecutor.java:123)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker.access$200(DefaultTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker$1.execute(DefaultTaskPlanExecutor.java:104)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker$1.execute(DefaultTaskPlanExecutor.java:98)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionPlan.execute(DefaultTaskExecutionPlan.java:625)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionPlan.executeWithTask(DefaultTaskExecutionPlan.java:580)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker.run(DefaultTaskPlanExecutor.java:98)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.lang.Thread.run(Thread.java:748)
+:storio-basic-sample-app:transformClassesWithPreDexForRelease
+:storio-basic-sample-app:transformDexWithDexForRelease
+:storio-basic-sample-app:transformNativeLibsWithMergeJniLibsForRelease
+:storio-basic-sample-app:transformNativeLibsWithStripDebugSymbolForRelease
+:storio-basic-sample-app:transformResourcesWithMergeJavaResForRelease
+:storio-basic-sample-app:packageRelease
+:storio-basic-sample-app:assembleRelease
+:storio-basic-sample-app:assemble
+:storio-basic-sample-app:build
+
+BUILD SUCCESSFUL in 54s
+97 actionable tasks: 97 executed
+
+2018-05-11 15:42:20,335 INFO  FullProcessService - Found APK file: /tmp/rdisk/928/src/storio-master/storio-basic-sample-app/build/outputs/apk/release/storio-basic-sample-app-release-unsigned.apk

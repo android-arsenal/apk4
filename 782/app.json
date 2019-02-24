@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.jpardogo.android.listbuddies",
+    "label" : "ListBuddies",
+    "icon" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "versionName" : "1.1.1",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "10",
+    "targetSdkVersion" : "19",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ "android.permission.INTERNET", "android.permission.WRITE_EXTERNAL_STORAGE" ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAB/lBMVEUAAADw8PD////l5eX////////////////////+/v7+/v7////4+Pj////////////////z8/P+/v78/Pz////////////////////+/v7////7+/v////////9/f36+vrv7+/8/Pz////+/v7////5+fn8/Pz////s7Oz8/Pz////+/v7////////6+vr6+vr////////+/v7////+/v7+/v79/f37+/v////9/f329vb////8/Pz9/f3////////////19fX////////////////////8/Pz////9/f3p6en8/Pz////U1NT+/v77+/v9/f3////+/v7////8/Pz+/v7////////////39/f////+/v7////9/f3///+ysrL+/v7////////////8/Pz29vb+/v77+/v////f39/9/f3////09PT////6+vr////////////////9/f36+vr////////6+vr+/v7u7u7////////////7+/v////////7+/v////////////////9/f3////+/v7////////8/Pz////////////9/f3////////9/f3////////5+fn+/v7+/v7+/v7////6+vr////8/Pz////////8/Pz+/v7y8vL8/Pz////+/v7////////+/v7+/v7///////+/iZRzAAAAqnRSTlMACRAFK5Xb/f/5zXsUCZPxYwu+iwq9YvAX6YZtm/l80hg798/WF5T7BzxvkMgYXRsabKC1r4pHI4NuDxKYUwfT6SregQaxpi3qQSno8gOyIuP0w9iB3RUh4BE9q9B9AQWwH5wCo6mhrQUEeY8MpRqtjPrs4R9Qrh3nJrio3SjKA3XvoBMmW2mjryM2RXdYTy0edRm6Gdid7H9Z5S78i7K7Con+mJno66IyJZEzMAwAAAHFSURBVEjHY2AYBVQAjEzMJKhmYWVj5+Dk4uYhTjkvHzsHBPALEKNeUIgDAYQJqxcR5UAGYiSq5xCXIE69pJS0jCyYJUeUenkFIEdRCcRUJka9iiqYqwZiq2vg0aApoKWtw86hogvh6oF16+NUbmBoZGxiamZuAVXPYAnWYIVDubUNxJMcbLZQETt7ENcBh3pHJ0RQOoNFXFzBHDfs6t09kMJeVgOhnsMTq3ovb+TI8vFFqPfDqt4/ACIbGBQMokIQ6kPDsKkPj4DIukUyMERFx8TGMcQnQEScEvGpT0qGiSSnEKM+1ReuPo0Y9ekZDJlZotnhDAw5ufjU50HV52cwMBQA6UKhhCJ86uNEEeqtCpHDtrgEa4CWQmTLgOoZypHVV1Rij+EqhHoGhmqE+ppa7Oo1wHmkDqKeob6hEaJcvakZR5JrAcu3wtJ3W7lAu7FxR1YnzizQBdbQDVUfzBFY1tPb148ni00Aa5gIZk8KhrhnMi8eDXHgMHcAheCUqUSoZ2CYBlY0fcbMrFlEqWeYPQe13CKknoFhLonqGXznIamfv4CIwrp+IcxVixbzElcf1C5ZClS+bPkKEqoc1ZWTRmtpKgAAkdxdMqiUjzEAAAAASUVORK5CYII="
+  },
+  "dexClasses" : 1210,
+  "locales" : [ "", "sl", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "pt", "ar", "ru", "fa", "sk", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "af", "in", "vi", "fr_CA", "sr", "da", "es", "hy_AM", "tr", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "fr", "ja", "lo_LA", "iw", "de", "en_IN", "es_US", "nb", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"1.1.1\" package=\"com.jpardogo.android.listbuddies\">\n\t<uses-sdk android:minSdkVersion=\"10\" android:targetSdkVersion=\"19\" />\n\t<uses-permission android:name=\"android.permission.INTERNET\" />\n\t<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />\n\t<application android:theme=\"resourceId:0x7f0b003f\" android:label=\"ListBuddies\" android:icon=\"res/drawable-mdpi-v4/ic_launcher.png\" android:name=\"com.jpardogo.android.listbuddies.ListBuddies\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"ListBuddies\" android:name=\"com.jpardogo.android.listbuddies.ui.MainActivity\" android:launchMode=\"singleTop\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<activity android:theme=\"resourceId:0x7f0b0000\" android:label=\"Detail\" android:name=\"com.jpardogo.android.listbuddies.ui.DetailActivity\" android:parentActivityName=\"com.jpardogo.android.listbuddies.ui.MainActivity\">\n\t\t\t<meta-data android:name=\"android.support.PARENT_ACTIVITY\" android:value=\"com.jpardogo.android.listbuddies.ui.MainActivity\" />\n\t\t</activity>\n\t\t<activity android:theme=\"resourceId:0x7f0b0000\" android:label=\"About\" android:name=\"com.jpardogo.android.listbuddies.ui.AboutActivity\" android:parentActivityName=\"com.jpardogo.android.listbuddies.ui.MainActivity\">\n\t\t\t<meta-data android:name=\"android.support.PARENT_ACTIVITY\" android:value=\"com.jpardogo.android.listbuddies.ui.MainActivity\" />\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 2250732,
+  "crc32" : 2209130379,
+  "sha256" : "b0dad69b1e135823a4e3708a8e3d7c019365e9e780caf7176d6c93230a063d51",
+  "buildTime" : 1526278957000
+}

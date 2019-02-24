@@ -1,0 +1,83 @@
+2018-04-09 14:23:50,479 INFO  DownloadService - Downloading "https://github.com/AChep/Header2ActionBar/archive/master.zip", attempt 3
+2018-04-09 14:23:50,969 INFO  DownloadService - Downloaded https://github.com/AChep/Header2ActionBar/archive/master.zip, attempt 3
+2018-04-09 14:23:50,970 INFO  DownloadService - Size of file "/tmp/rdisk/774/master.zip": 1 MB
+2018-04-09 14:23:50,970 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-09 14:23:50,970 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/774/master.zip: true
+2018-04-09 14:23:50,970 DEBUG ZipUtil - Extracting '/tmp/rdisk/774/master.zip' into '/tmp/rdisk/774/src'.
+2018-04-09 14:23:50,984 INFO  FullProcessService - Size of directory with sources: 1 MB
+2018-04-09 14:23:50,984 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/774/src]
+2018-04-09 14:23:50,990 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/774/src/.git/
+
+2018-04-09 14:23:50,993 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/774/src/Header2ActionBar-master/gradlew
+2018-04-09 14:23:50,998 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/774/src/Header2ActionBar-master/Header2ActionBar/build.gradle /tmp/rdisk/774/src/Header2ActionBar-master/sample/Header2ActionBarDemo/build.gradle /tmp/rdisk/774/src/Header2ActionBar-master/build.gradle
+2018-04-09 14:23:51,000 INFO  ProjectBuildService - All script(s): /tmp/rdisk/774/src/Header2ActionBar-master/settings.gradle /tmp/rdisk/774/src/Header2ActionBar-master/sample/Header2ActionBarDemo/build.gradle /tmp/rdisk/774/src/Header2ActionBar-master/build.gradle /tmp/rdisk/774/src/Header2ActionBar-master/Header2ActionBar/build.gradle
+2018-04-09 14:23:51,000 INFO  ProjectBuildService - Remote scripts: none
+2018-04-09 14:23:51,000 INFO  ProjectFixService - Fixing project...
+2018-04-09 14:23:51,007 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/774/src/Header2ActionBar-master/Header2ActionBar/local.properties
+2018-04-09 14:23:51,007 INFO  ProjectFixService - Build info for "/tmp/rdisk/774/src/Header2ActionBar-master/Header2ActionBar/build.gradle": [buildToolsVersion=19.0.0,compileSdkVersion=19,minSdkVersion=14,targetSdkVersion=19]
+2018-04-09 14:23:51,007 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/774/src/Header2ActionBar-master/Header2ActionBar/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=19,minSdkVersion=14,targetSdkVersion=19]
+2018-04-09 14:23:51,008 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/774/src/Header2ActionBar-master/sample/Header2ActionBarDemo/local.properties
+2018-04-09 14:23:51,008 INFO  ProjectFixService - Build info for "/tmp/rdisk/774/src/Header2ActionBar-master/sample/Header2ActionBarDemo/build.gradle": [buildToolsVersion=19.0.0,compileSdkVersion=19,minSdkVersion=14,targetSdkVersion=19]
+2018-04-09 14:23:51,008 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/774/src/Header2ActionBar-master/sample/Header2ActionBarDemo/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=19,minSdkVersion=14,targetSdkVersion=19]
+2018-04-09 14:23:51,009 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/774/src/Header2ActionBar-master/local.properties
+2018-04-09 14:23:51,009 INFO  WrapperPropertiesFixService - Gradle wrapper: http://services.gradle.org/distributions/gradle-1.8-bin.zip
+2018-04-09 14:23:51,010 INFO  ProjectFixService - Build info for "/tmp/rdisk/774/src/Header2ActionBar-master/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=19,minSdkVersion=14,targetSdkVersion=19]
+2018-04-09 14:23:51,011 INFO  ProjectFixService - Project was maybe fixed
+2018-04-09 14:23:51,011 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-09 14:23:51,012 INFO  SysUtils - Execute command: [/tmp/rdisk/774/src/Header2ActionBar-master/gradlew, -b, /tmp/rdisk/774/src/Header2ActionBar-master/Header2ActionBar/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-09 14:24:01,309 INFO  ProjectTaskService - Detected possible tasks: 45
+2018-04-09 14:24:01,310 INFO  ProjectTaskService - Excluded tasks (5): deviceCheck lint connectedCheck uninstallAll check
+2018-04-09 14:24:01,310 INFO  SysUtils - Execute command: [/tmp/rdisk/774/src/Header2ActionBar-master/gradlew, -b, /tmp/rdisk/774/src/Header2ActionBar-master/Header2ActionBar/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, deviceCheck, -x, lint, -x, connectedCheck, -x, uninstallAll, -x, check, build]
+2018-04-09 14:24:07,975 INFO  SysUtils - Configuration on demand is an incubating feature.
+:Header2ActionBar:compileLint
+:Header2ActionBar:copyDebugLint UP-TO-DATE
+:Header2ActionBar:mergeDebugProguardFiles
+:Header2ActionBar:packageDebugAidl UP-TO-DATE
+:Header2ActionBar:preBuild UP-TO-DATE
+:Header2ActionBar:preDebugBuild UP-TO-DATE
+:Header2ActionBar:prepareDebugDependencies
+:Header2ActionBar:compileDebugAidl
+:Header2ActionBar:compileDebugRenderscript
+:Header2ActionBar:generateDebugBuildConfig
+:Header2ActionBar:mergeDebugAssets
+:Header2ActionBar:mergeDebugResources
+:Header2ActionBar:processDebugManifest
+:Header2ActionBar:processDebugResources
+:Header2ActionBar:generateDebugSources
+:Header2ActionBar:compileDebug
+:Header2ActionBar:processDebugJavaRes UP-TO-DATE
+:Header2ActionBar:packageDebugJar
+:Header2ActionBar:packageDebugLocalJar UP-TO-DATE
+:Header2ActionBar:packageDebugRenderscript UP-TO-DATE
+:Header2ActionBar:packageDebugResources
+:Header2ActionBar:bundleDebug
+:Header2ActionBar:assembleDebug
+:Header2ActionBar:copyReleaseLint UP-TO-DATE
+:Header2ActionBar:mergeReleaseProguardFiles
+:Header2ActionBar:packageReleaseAidl UP-TO-DATE
+:Header2ActionBar:preReleaseBuild UP-TO-DATE
+:Header2ActionBar:prepareReleaseDependencies
+:Header2ActionBar:compileReleaseAidl
+:Header2ActionBar:compileReleaseRenderscript
+:Header2ActionBar:generateReleaseBuildConfig
+:Header2ActionBar:mergeReleaseAssets
+:Header2ActionBar:mergeReleaseResources
+:Header2ActionBar:processReleaseManifest
+:Header2ActionBar:processReleaseResources
+:Header2ActionBar:generateReleaseSources
+:Header2ActionBar:compileRelease
+:Header2ActionBar:processReleaseJavaRes UP-TO-DATE
+:Header2ActionBar:packageReleaseJar
+:Header2ActionBar:packageReleaseLocalJar UP-TO-DATE
+:Header2ActionBar:packageReleaseRenderscript UP-TO-DATE
+:Header2ActionBar:packageReleaseResources
+:Header2ActionBar:bundleRelease
+:Header2ActionBar:assembleRelease
+:Header2ActionBar:assemble
+:Header2ActionBar:build
+
+BUILD SUCCESSFUL
+
+Total time: 6.208 secs
+
+2018-04-09 14:24:07,981 INFO  FullProcessService - Found APK file: /tmp/rdisk/774/src/Header2ActionBar-master/sample/Header2ActionBarDemo/Header2ActionBarDemo.apk

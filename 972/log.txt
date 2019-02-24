@@ -1,0 +1,743 @@
+2018-04-08 13:39:44,675 INFO  DownloadService - Downloading "https://github.com/futuresimple/android-schema-utils/archive/master.zip", attempt 3
+2018-04-08 13:39:46,188 INFO  DownloadService - Downloaded https://github.com/futuresimple/android-schema-utils/archive/master.zip, attempt 3
+2018-04-08 13:39:46,189 INFO  DownloadService - Size of file "/tmp/rdisk/972/master.zip": 90 KB
+2018-04-08 13:39:46,189 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-08 13:39:46,189 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/972/master.zip: true
+2018-04-08 13:39:46,189 DEBUG ZipUtil - Extracting '/tmp/rdisk/972/master.zip' into '/tmp/rdisk/972/src'.
+2018-04-08 13:39:46,196 INFO  FullProcessService - Size of directory with sources: 161 KB
+2018-04-08 13:39:46,196 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/972/src]
+2018-04-08 13:39:46,273 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/972/src/.git/
+
+2018-04-08 13:39:46,275 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/972/src/android-schema-utils-master/gradlew
+2018-04-08 13:39:46,277 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/972/src/android-schema-utils-master/library/build.gradle /tmp/rdisk/972/src/android-schema-utils-master/build.gradle
+2018-04-08 13:39:46,279 INFO  ProjectBuildService - All script(s): /tmp/rdisk/972/src/android-schema-utils-master/settings.gradle /tmp/rdisk/972/src/android-schema-utils-master/library/gradle-mvn-push.gradle /tmp/rdisk/972/src/android-schema-utils-master/library/build.gradle /tmp/rdisk/972/src/android-schema-utils-master/build.gradle
+2018-04-08 13:39:46,279 INFO  ProjectBuildService - Remote scripts: none
+2018-04-08 13:39:46,279 INFO  ProjectFixService - Fixing project...
+2018-04-08 13:39:46,286 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/972/src/android-schema-utils-master/library/local.properties
+2018-04-08 13:39:46,287 INFO  ProjectFixService - Build info for "/tmp/rdisk/972/src/android-schema-utils-master/library/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=10,targetSdkVersion=22]
+2018-04-08 13:39:46,287 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/972/src/android-schema-utils-master/local.properties
+2018-04-08 13:39:46,288 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-08 13:39:46,288 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-08 13:39:46,291 INFO  ProjectFixService - Build info for "/tmp/rdisk/972/src/android-schema-utils-master/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=10,targetSdkVersion=22]
+2018-04-08 13:39:46,291 INFO  ProjectFixService - Project was maybe fixed
+2018-04-08 13:39:46,291 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-08 13:39:46,292 INFO  SysUtils - Execute command: [/tmp/rdisk/972/src/android-schema-utils-master/gradlew, -b, /tmp/rdisk/972/src/android-schema-utils-master/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-08 13:39:58,788 INFO  ProjectTaskService - Detected possible tasks: 66
+2018-04-08 13:39:58,789 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-08 13:39:58,790 INFO  SysUtils - Execute command: [/tmp/rdisk/972/src/android-schema-utils-master/gradlew, -b, /tmp/rdisk/972/src/android-schema-utils-master/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-08 13:40:08,543 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-08 13:40:08,544 INFO  SysUtils - Configuration on demand is an incubating feature.
+:library:androidJavadocs/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/autoindexer/SqliteIndex.java:24: error: class SQLiteIndex is public, should be declared in a file named SQLiteIndex.java
+public class SQLiteIndex {
+       ^
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/MigrationsHelper.java:19: error: package com.google.common.base does not exist
+import static com.google.common.base.Preconditions.checkNotNull;
+                                    ^
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/MigrationsHelper.java:19: error: static import only from classes and interfaces
+import static com.google.common.base.Preconditions.checkNotNull;
+^
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/MigrationsHelper.java:20: error: package com.google.common.base does not exist
+import static com.google.common.base.Preconditions.checkState;
+                                    ^
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/MigrationsHelper.java:20: error: static import only from classes and interfaces
+import static com.google.common.base.Preconditions.checkState;
+^
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/MigrationsHelper.java:22: error: package com.google.common.base does not exist
+import com.google.common.base.Joiner;
+                             ^
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/MigrationsHelper.java:23: error: package com.google.common.collect does not exist
+import com.google.common.collect.ImmutableMap;
+                                ^
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/MigrationsHelper.java:24: error: package com.google.common.collect does not exist
+import com.google.common.collect.ImmutableSet;
+                                ^
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/MigrationsHelper.java:25: error: package com.google.common.collect does not exist
+import com.google.common.collect.Iterables;
+                                ^
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/MigrationsHelper.java:26: error: package com.google.common.collect does not exist
+import com.google.common.collect.Sets;
+                                ^
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/MigrationsHelper.java:27: error: package com.google.common.collect.Sets does not exist
+import com.google.common.collect.Sets.SetView;
+                                     ^
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/Schemas.java:19: error: package com.google.common.base does not exist
+import com.google.common.base.Function;
+                             ^
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/Schemas.java:20: error: package com.google.common.base does not exist
+import com.google.common.base.Joiner;
+                             ^
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/Schemas.java:21: error: package com.google.common.base does not exist
+import com.google.common.base.MoreObjects;
+                             ^
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/Schemas.java:22: error: package com.google.common.base does not exist
+import com.google.common.base.Objects;
+                             ^
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/Schemas.java:23: error: package com.google.common.base does not exist
+import com.google.common.base.Preconditions;
+                             ^
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/Schemas.java:24: error: package com.google.common.base does not exist
+import com.google.common.base.Predicate;
+                             ^
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/Schemas.java:25: error: package com.google.common.base does not exist
+import com.google.common.base.Predicates;
+                             ^
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/Schemas.java:26: error: package com.google.common.base does not exist
+import com.google.common.base.Supplier;
+                             ^
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/Schemas.java:27: error: package com.google.common.base does not exist
+import com.google.common.base.Suppliers;
+                             ^
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/Schemas.java:28: error: package com.google.common.cache does not exist
+import com.google.common.cache.CacheBuilder;
+                              ^
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/Schemas.java:29: error: package com.google.common.cache does not exist
+import com.google.common.cache.CacheLoader;
+                              ^
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/Schemas.java:30: error: package com.google.common.cache does not exist
+import com.google.common.cache.LoadingCache;
+                              ^
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/Schemas.java:31: error: package com.google.common.collect does not exist
+import com.google.common.collect.FluentIterable;
+                                ^
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/Schemas.java:32: error: package com.google.common.collect does not exist
+import com.google.common.collect.ImmutableList;
+                                ^
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/Schemas.java:33: error: package com.google.common.collect does not exist
+import com.google.common.collect.ImmutableMap;
+                                ^
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/Schemas.java:34: error: package com.google.common.collect does not exist
+import com.google.common.collect.ImmutableSet;
+                                ^
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/Schemas.java:35: error: package com.google.common.collect does not exist
+import com.google.common.collect.Iterables;
+                                ^
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/Schemas.java:36: error: package com.google.common.collect does not exist
+import com.google.common.collect.Lists;
+                                ^
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/Schemas.java:37: error: package com.google.common.collect does not exist
+import com.google.common.collect.Maps;
+                                ^
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/Schemas.java:38: error: package com.google.common.collect does not exist
+import com.google.common.collect.Sets;
+                                ^
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/Schemas.java:39: error: package com.google.common.collect.Sets does not exist
+import com.google.common.collect.Sets.SetView;
+                                     ^
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/Schemas.java:43: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/MigrationsHelper.java:118: error: cannot find symbol
+  static ImmutableSet<String> getColumns(SQLiteDatabase db, String table) {
+         ^
+  symbol:   class ImmutableSet
+  location: class MigrationsHelper
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/MigrationsHelper.java:78: error: cannot find symbol
+    private final ImmutableMap<String, String> mappings;
+                  ^
+  symbol:   class ImmutableMap
+  location: class TableMigration
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/MigrationsHelper.java:80: error: cannot find symbol
+    private TableMigration(String tableName, String createTableStatement, ImmutableMap<String, String> mappings) {
+                                                                          ^
+  symbol:   class ImmutableMap
+  location: class TableMigration
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/Schemas.java:66: error: cannot find symbol
+  private final ImmutableMap<Integer, Migration[]> mMigrations;
+                ^
+  symbol:   class ImmutableMap
+  location: class Schemas
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/Schemas.java:67: error: cannot find symbol
+  private final ImmutableMap<Integer, ImmutableMap<String, ImmutableList<? extends TableDowngradeOperation>>> mDowngrades;
+                ^
+  symbol:   class ImmutableMap
+  location: class Schemas
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/Schemas.java:67: error: cannot find symbol
+  private final ImmutableMap<Integer, ImmutableMap<String, ImmutableList<? extends TableDowngradeOperation>>> mDowngrades;
+                                      ^
+  symbol:   class ImmutableMap
+  location: class Schemas
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/Schemas.java:67: error: cannot find symbol
+  private final ImmutableMap<Integer, ImmutableMap<String, ImmutableList<? extends TableDowngradeOperation>>> mDowngrades;
+                                                           ^
+  symbol:   class ImmutableList
+  location: class Schemas
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/Schemas.java:68: error: cannot find symbol
+  private final LoadingCache<Integer, ImmutableMap<String, ImmutableList<? extends TableDefinitionOperation>>> mRevisions =
+                ^
+  symbol:   class LoadingCache
+  location: class Schemas
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/Schemas.java:68: error: cannot find symbol
+  private final LoadingCache<Integer, ImmutableMap<String, ImmutableList<? extends TableDefinitionOperation>>> mRevisions =
+                                      ^
+  symbol:   class ImmutableMap
+  location: class Schemas
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/Schemas.java:68: error: cannot find symbol
+  private final LoadingCache<Integer, ImmutableMap<String, ImmutableList<? extends TableDefinitionOperation>>> mRevisions =
+                                                           ^
+  symbol:   class ImmutableList
+  location: class Schemas
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/Schemas.java:94: error: cannot find symbol
+  private final ImmutableList<Release> mReleases;
+                ^
+  symbol:   class ImmutableList
+  location: class Schemas
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/Schemas.java:96: error: cannot find symbol
+  private final Function<Integer, String> mRevisionDescriptionBuilder = new Function<Integer, String>() {
+                ^
+  symbol:   class Function
+  location: class Schemas
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/Schemas.java:112: error: cannot find symbol
+      ImmutableMap<String, ImmutableList<? extends TableDefinitionOperation>> schema,
+      ^
+  symbol:   class ImmutableMap
+  location: class Schemas
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/Schemas.java:112: error: cannot find symbol
+      ImmutableMap<String, ImmutableList<? extends TableDefinitionOperation>> schema,
+                           ^
+  symbol:   class ImmutableList
+  location: class Schemas
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/Schemas.java:113: error: cannot find symbol
+      ImmutableMap<String, ImmutableList<? extends TableDowngradeOperation>> downgrades,
+      ^
+  symbol:   class ImmutableMap
+  location: class Schemas
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/Schemas.java:113: error: cannot find symbol
+      ImmutableMap<String, ImmutableList<? extends TableDowngradeOperation>> downgrades,
+                           ^
+  symbol:   class ImmutableList
+  location: class Schemas
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/Schemas.java:111: error: cannot find symbol
+  private ImmutableMap<String, ImmutableList<? extends TableDefinitionOperation>> merge(
+          ^
+  symbol:   class ImmutableMap
+  location: class Schemas
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/Schemas.java:111: error: cannot find symbol
+  private ImmutableMap<String, ImmutableList<? extends TableDefinitionOperation>> merge(
+                               ^
+  symbol:   class ImmutableList
+  location: class Schemas
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/Schemas.java:245: error: cannot find symbol
+      Map<String, ImmutableList<? extends TableDefinitionOperation>> tables,
+                  ^
+  symbol:   class ImmutableList
+  location: class Schemas
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/Schemas.java:246: error: cannot find symbol
+      ImmutableMap<Integer, ImmutableMap<String, ImmutableList<? extends TableDowngradeOperation>>> downgrades,
+      ^
+  symbol:   class ImmutableMap
+  location: class Schemas
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/Schemas.java:246: error: cannot find symbol
+      ImmutableMap<Integer, ImmutableMap<String, ImmutableList<? extends TableDowngradeOperation>>> downgrades,
+                            ^
+  symbol:   class ImmutableMap
+  location: class Schemas
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/Schemas.java:246: error: cannot find symbol
+      ImmutableMap<Integer, ImmutableMap<String, ImmutableList<? extends TableDowngradeOperation>>> downgrades,
+                                                 ^
+  symbol:   class ImmutableList
+  location: class Schemas
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/Schemas.java:247: error: cannot find symbol
+      ImmutableMap<Integer, Migration[]> migrations,
+      ^
+  symbol:   class ImmutableMap
+  location: class Schemas
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/Schemas.java:248: error: cannot find symbol
+      ImmutableList<Release> releases) {
+      ^
+  symbol:   class ImmutableList
+  location: class Schemas
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/Schemas.java:263: error: cannot find symbol
+  public ImmutableSet<String> getTablesModifiedInRevision(int version) {
+         ^
+  symbol:   class ImmutableSet
+  location: class Schemas
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/Schemas.java:334: error: cannot find symbol
+  private final Supplier<Integer> mCurrentRevision = Suppliers.memoize(new Supplier<Integer>() {
+                ^
+  symbol:   class Supplier
+  location: class Schemas
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/Schemas.java:574: error: cannot find symbol
+  private static void validateTableOperations(String tableName, ImmutableList<? extends TableOperation> operations) {
+                                                                ^
+  symbol:   class ImmutableList
+  location: class Schemas
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/Schemas.java:139: error: package ImmutableList does not exist
+    private ImmutableList.Builder<TableDefinitionOperation> builder;
+                         ^
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/Schemas.java:142: error: cannot find symbol
+    private Function<Integer, String> mRevisionDescriptionBuilder;
+            ^
+  symbol:   class Function
+  location: class DowngradeToDefinitionConverter
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/Schemas.java:144: error: cannot find symbol
+    public ImmutableList<? extends TableDefinitionOperation> convert(ImmutableList<? extends TableDowngradeOperation> downgrades, String table, int targetRevision, Function<Integer, String> revisionDescriptionBuilder) {
+                                                                     ^
+  symbol:   class ImmutableList
+  location: class DowngradeToDefinitionConverter
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/Schemas.java:144: error: cannot find symbol
+    public ImmutableList<? extends TableDefinitionOperation> convert(ImmutableList<? extends TableDowngradeOperation> downgrades, String table, int targetRevision, Function<Integer, String> revisionDescriptionBuilder) {
+                                                                                                                                                                    ^
+  symbol:   class Function
+  location: class DowngradeToDefinitionConverter
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/Schemas.java:144: error: cannot find symbol
+    public ImmutableList<? extends TableDefinitionOperation> convert(ImmutableList<? extends TableDowngradeOperation> downgrades, String table, int targetRevision, Function<Integer, String> revisionDescriptionBuilder) {
+           ^
+  symbol:   class ImmutableList
+  location: class DowngradeToDefinitionConverter
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/Schemas.java:188: error: cannot find symbol
+    private Function<Integer, String> mRevisionDescriptionBuilder;
+            ^
+  symbol:   class Function
+  location: class TableOperationMerger
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/Schemas.java:191: error: cannot find symbol
+    public ImmutableList<? extends TableDefinitionOperation> merge(ImmutableList<? extends TableDefinitionOperation> schema, ImmutableList<? extends TableDowngradeOperation> downgrades, String table, int targetRevision, Function<Integer, String> revisionDescriptionBuilder) {
+                                                                   ^
+  symbol:   class ImmutableList
+  location: class TableOperationMerger
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/Schemas.java:191: error: cannot find symbol
+    public ImmutableList<? extends TableDefinitionOperation> merge(ImmutableList<? extends TableDefinitionOperation> schema, ImmutableList<? extends TableDowngradeOperation> downgrades, String table, int targetRevision, Function<Integer, String> revisionDescriptionBuilder) {
+                                                                                                                             ^
+  symbol:   class ImmutableList
+  location: class TableOperationMerger
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/Schemas.java:191: error: cannot find symbol
+    public ImmutableList<? extends TableDefinitionOperation> merge(ImmutableList<? extends TableDefinitionOperation> schema, ImmutableList<? extends TableDowngradeOperation> downgrades, String table, int targetRevision, Function<Integer, String> revisionDescriptionBuilder) {
+                                                                                                                                                                                                                            ^
+  symbol:   class Function
+  location: class TableOperationMerger
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/Schemas.java:191: error: cannot find symbol
+    public ImmutableList<? extends TableDefinitionOperation> merge(ImmutableList<? extends TableDefinitionOperation> schema, ImmutableList<? extends TableDowngradeOperation> downgrades, String table, int targetRevision, Function<Integer, String> revisionDescriptionBuilder) {
+           ^
+  symbol:   class ImmutableList
+  location: class TableOperationMerger
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/Schemas.java:270: error: cannot find symbol
+    private final ImmutableMap<String, ImmutableList<? extends TableDefinitionOperation>> mTableDefinitions;
+                  ^
+  symbol:   class ImmutableMap
+  location: class Schemas.Schema
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/Schemas.java:270: error: cannot find symbol
+    private final ImmutableMap<String, ImmutableList<? extends TableDefinitionOperation>> mTableDefinitions;
+                                       ^
+  symbol:   class ImmutableList
+  location: class Schemas.Schema
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/Schemas.java:283: error: cannot find symbol
+    public ImmutableSet<String> getTables() {
+           ^
+  symbol:   class ImmutableSet
+  location: class Schemas.Schema
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/Schemas.java:287: error: cannot find symbol
+    public ImmutableSet<String> getColumns(String table) {
+           ^
+  symbol:   class ImmutableSet
+  location: class Schemas.Schema
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/Schemas.java:296: error: package ImmutableSet does not exist
+    ImmutableSet.Builder<String> mBuilder;
+                ^
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/Schemas.java:298: error: cannot find symbol
+    public ImmutableSet<String> getColumns(Iterable<? extends TableDefinitionOperation> operations) {
+           ^
+  symbol:   class ImmutableSet
+  location: class ColumnsGetter
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/Schemas.java:351: error: cannot find symbol
+    public String build(String tableName, ImmutableList<? extends TableDefinitionOperation> operations) {
+                                          ^
+  symbol:   class ImmutableList
+  location: class TableCreateStatementBuilder
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/Schemas.java:557: error: cannot find symbol
+    public TableDowngrade(String tableName, ImmutableList<? extends TableDowngradeOperation> operations) {
+                                            ^
+  symbol:   class ImmutableList
+  location: class TableDowngrade
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/Schemas.java:564: error: cannot find symbol
+    protected final ImmutableList<? extends T> mOperations;
+                    ^
+  symbol:   class ImmutableList
+  location: class SchemaPart<T>
+  where T is a type-variable:
+    T extends TableOperation declared in class SchemaPart
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/Schemas.java:566: error: cannot find symbol
+    private SchemaPart(String tableName, ImmutableList<? extends T> operations) {
+                                         ^
+  symbol:   class ImmutableList
+  location: class SchemaPart<T>
+  where T is a type-variable:
+    T extends TableOperation declared in class SchemaPart
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/Schemas.java:543: error: cannot find symbol
+    public TableDefinition(String tableName, ImmutableList<TableDefinitionOperation> operations) {
+                                             ^
+  symbol:   class ImmutableList
+  location: class TableDefinition
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/Schemas.java:590: error: cannot find symbol
+    private final Map<String, ImmutableList<? extends TableDefinitionOperation>> mTables = Maps.newHashMap();
+                              ^
+  symbol:   class ImmutableList
+  location: class Builder
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/Schemas.java:591: error: package ImmutableMap does not exist
+    private final ImmutableMap.Builder<Integer, ImmutableMap<String, ImmutableList<? extends TableDowngradeOperation>>> mDowngradesBuilder = ImmutableMap.builder();
+                              ^
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/Schemas.java:591: error: cannot find symbol
+    private final ImmutableMap.Builder<Integer, ImmutableMap<String, ImmutableList<? extends TableDowngradeOperation>>> mDowngradesBuilder = ImmutableMap.builder();
+                                                ^
+  symbol:   class ImmutableMap
+  location: class Builder
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/Schemas.java:591: error: cannot find symbol
+    private final ImmutableMap.Builder<Integer, ImmutableMap<String, ImmutableList<? extends TableDowngradeOperation>>> mDowngradesBuilder = ImmutableMap.builder();
+                                                                     ^
+  symbol:   class ImmutableList
+  location: class Builder
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/Schemas.java:592: error: package ImmutableMap does not exist
+    private final ImmutableMap.Builder<Integer, Migration[]> mMigrationsBuilder = ImmutableMap.builder();
+                              ^
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/Schemas.java:593: error: package ImmutableList does not exist
+    private final ImmutableList.Builder<Release> mReleasesBuilder = ImmutableList.builder();
+                               ^
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/Schemas.java:601: error: cannot find symbol
+    private final Map<Integer, ImmutableMap<String, ImmutableList<? extends TableDowngradeOperation>>> mPendingDowngrades = Maps.newHashMap();
+                               ^
+  symbol:   class ImmutableMap
+  location: class Builder
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/Schemas.java:601: error: cannot find symbol
+    private final Map<Integer, ImmutableMap<String, ImmutableList<? extends TableDowngradeOperation>>> mPendingDowngrades = Maps.newHashMap();
+                                                    ^
+  symbol:   class ImmutableList
+  location: class Builder
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/autoindexer/SqliteIndex.java:19: error: package com.google.common.base does not exist
+import com.google.common.base.Joiner;
+                             ^
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/autoindexer/SqliteIndex.java:20: error: package com.google.common.base does not exist
+import com.google.common.base.Objects;
+                             ^
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/autoindexer/SqliteIndex.java:28: error: cannot find symbol
+  private static final Joiner INDEX_NAME_JOINER = Joiner.on("_");
+                       ^
+  symbol:   class Joiner
+  location: class SQLiteIndex
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/autoindexer/AutoIndexer.java:19: error: package com.google.common.base does not exist
+import com.google.common.base.Joiner;
+                             ^
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/autoindexer/AutoIndexer.java:20: error: package com.google.common.base does not exist
+import com.google.common.base.Predicate;
+                             ^
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/autoindexer/AutoIndexer.java:21: error: package com.google.common.collect does not exist
+import com.google.common.collect.Sets;
+                                ^
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/autoindexer/AutoIndexer.java:23: error: package org.chalup.thneed does not exist
+import org.chalup.thneed.ManyToManyRelationship;
+                        ^
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/autoindexer/AutoIndexer.java:24: error: package org.chalup.thneed does not exist
+import org.chalup.thneed.ModelGraph;
+                        ^
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/autoindexer/AutoIndexer.java:25: error: package org.chalup.thneed does not exist
+import org.chalup.thneed.OneToManyRelationship;
+                        ^
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/autoindexer/AutoIndexer.java:26: error: package org.chalup.thneed does not exist
+import org.chalup.thneed.OneToOneRelationship;
+                        ^
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/autoindexer/AutoIndexer.java:27: error: package org.chalup.thneed does not exist
+import org.chalup.thneed.PolymorphicRelationship;
+                        ^
+
+100 warnings
+:library:androidJavadocsJar
+:library:androidSourcesJar
+:library:compileLint
+:library:copyDebugLint UP-TO-DATE
+:library:preBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:checkDebugManifest
+:library:preDebugAndroidTestBuild UP-TO-DATE
+:library:preDebugUnitTestBuild UP-TO-DATE
+:library:preReleaseBuild UP-TO-DATE
+:library:preReleaseUnitTestBuild UP-TO-DATE
+:library:prepareOrgChalupThneedThneed07Library
+:library:prepareDebugDependencies
+:library:compileDebugAidl
+:library:compileDebugRenderscript
+:library:generateDebugBuildConfig
+:library:generateDebugAssets UP-TO-DATE
+:library:mergeDebugAssets
+:library:generateDebugResValues
+:library:generateDebugResources
+:library:mergeDebugResources
+:library:processDebugManifest
+:library:processDebugResources
+:library:generateDebugSources
+:library:processDebugJavaRes UP-TO-DATE
+:library:compileDebugJavaWithJavac/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/autoindexer/SqliteIndex.java:24: error: class SQLiteIndex is public, should be declared in a file named SQLiteIndex.java
+public class SQLiteIndex {
+       ^
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/autoindexer/SqliteIndex.java:47: warning: non-varargs call of varargs method with inexact argument type for last parameter;
+    return INDEX_NAME_JOINER.join(AutoIndexer.AUTO_INDEX_PREFIX, mTable, mColumns);
+                                                                         ^
+  cast to Object for a varargs call
+  cast to Object[] for a non-varargs call and to suppress this warning
+1 error
+1 warning
+ FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':library:compileDebugJavaWithJavac'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':library:compileDebugJavaWithJavac'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:69)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:305)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:88)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:29)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:68)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:55)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:149)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:80)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:36)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:51)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:171)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+Caused by: org.gradle.api.internal.tasks.compile.CompilationFailedException: Compilation failed; see the compiler error output for details.
+	at org.gradle.api.internal.tasks.compile.JdkJavaCompiler.execute(JdkJavaCompiler.java:44)
+	at org.gradle.api.internal.tasks.compile.JdkJavaCompiler.execute(JdkJavaCompiler.java:35)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.delegateAndHandleErrors(NormalizingJavaCompiler.java:97)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.execute(NormalizingJavaCompiler.java:50)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.execute(NormalizingJavaCompiler.java:36)
+	at org.gradle.api.internal.tasks.compile.CleaningJavaCompilerSupport.execute(CleaningJavaCompilerSupport.java:34)
+	at org.gradle.api.internal.tasks.compile.CleaningJavaCompilerSupport.execute(CleaningJavaCompilerSupport.java:25)
+	at org.gradle.api.tasks.compile.JavaCompile.performCompilation(JavaCompile.java:158)
+	at org.gradle.api.tasks.compile.JavaCompile.compile(JavaCompile.java:138)
+	at org.gradle.api.tasks.compile.JavaCompile.compile(JavaCompile.java:92)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:63)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$IncrementalTaskAction.doExecute(AnnotationProcessingTaskFactory.java:235)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:211)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$IncrementalTaskAction.execute(AnnotationProcessingTaskFactory.java:222)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:200)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	... 47 more
+
+
+BUILD FAILED
+
+Total time: 9.274 secs
+
+2018-04-08 13:40:08,550 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-08 13:40:08,551 INFO  SysUtils - Execute command: [/tmp/rdisk/972/src/android-schema-utils-master/gradlew, -b, /tmp/rdisk/972/src/android-schema-utils-master/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-08 13:40:15,242 INFO  ProjectTaskService - Detected possible tasks: 66
+2018-04-08 13:40:15,242 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-08 13:40:15,243 INFO  SysUtils - Execute command: [/tmp/rdisk/972/src/android-schema-utils-master/gradlew, -b, /tmp/rdisk/972/src/android-schema-utils-master/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-08 13:40:22,695 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-08 13:40:22,695 INFO  SysUtils - Configuration on demand is an incubating feature.
+:library:androidJavadocs UP-TO-DATE
+:library:androidJavadocsJar UP-TO-DATE
+:library:androidSourcesJar UP-TO-DATE
+:library:compileLint
+:library:copyDebugLint UP-TO-DATE
+:library:preBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:checkDebugManifest
+:library:preDebugAndroidTestBuild UP-TO-DATE
+:library:preDebugUnitTestBuild UP-TO-DATE
+:library:preReleaseBuild UP-TO-DATE
+:library:preReleaseUnitTestBuild UP-TO-DATE
+:library:prepareOrgChalupThneedThneed07Library UP-TO-DATE
+:library:prepareDebugDependencies
+:library:compileDebugAidl UP-TO-DATE
+:library:compileDebugRenderscript UP-TO-DATE
+:library:generateDebugBuildConfig UP-TO-DATE
+:library:generateDebugAssets UP-TO-DATE
+:library:mergeDebugAssets UP-TO-DATE
+:library:generateDebugResValues UP-TO-DATE
+:library:generateDebugResources UP-TO-DATE
+:library:mergeDebugResources UP-TO-DATE
+:library:processDebugManifest UP-TO-DATE
+:library:processDebugResources UP-TO-DATE
+:library:generateDebugSources UP-TO-DATE
+:library:processDebugJavaRes UP-TO-DATE
+:library:compileDebugJavaWithJavac/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/autoindexer/SqliteIndex.java:24: error: class SQLiteIndex is public, should be declared in a file named SQLiteIndex.java
+public class SQLiteIndex {
+       ^
+/tmp/rdisk/972/src/android-schema-utils-master/library/src/main/java/com/getbase/android/schema/autoindexer/SqliteIndex.java:47: warning: non-varargs call of varargs method with inexact argument type for last parameter;
+    return INDEX_NAME_JOINER.join(AutoIndexer.AUTO_INDEX_PREFIX, mTable, mColumns);
+                                                                         ^
+  cast to Object for a varargs call
+  cast to Object[] for a non-varargs call and to suppress this warning
+1 error
+1 warning
+ FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':library:compileDebugJavaWithJavac'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':library:compileDebugJavaWithJavac'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:69)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:305)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:88)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:29)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:68)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:55)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:149)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:80)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:36)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:51)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:171)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+Caused by: org.gradle.api.internal.tasks.compile.CompilationFailedException: Compilation failed; see the compiler error output for details.
+	at org.gradle.api.internal.tasks.compile.JdkJavaCompiler.execute(JdkJavaCompiler.java:44)
+	at org.gradle.api.internal.tasks.compile.JdkJavaCompiler.execute(JdkJavaCompiler.java:35)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.delegateAndHandleErrors(NormalizingJavaCompiler.java:97)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.execute(NormalizingJavaCompiler.java:50)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.execute(NormalizingJavaCompiler.java:36)
+	at org.gradle.api.internal.tasks.compile.CleaningJavaCompilerSupport.execute(CleaningJavaCompilerSupport.java:34)
+	at org.gradle.api.internal.tasks.compile.CleaningJavaCompilerSupport.execute(CleaningJavaCompilerSupport.java:25)
+	at org.gradle.api.tasks.compile.JavaCompile.performCompilation(JavaCompile.java:158)
+	at org.gradle.api.tasks.compile.JavaCompile.compile(JavaCompile.java:138)
+	at org.gradle.api.tasks.compile.JavaCompile.compile(JavaCompile.java:92)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:63)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$IncrementalTaskAction.doExecute(AnnotationProcessingTaskFactory.java:235)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:211)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$IncrementalTaskAction.execute(AnnotationProcessingTaskFactory.java:222)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:200)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	... 47 more
+
+
+BUILD FAILED
+
+Total time: 6.954 secs
+
+2018-04-08 13:40:22,701 ERROR FullProcessService - Project build has not produced APK file
+2018-04-08 13:40:22,706 ERROR FullProcessService - Could not find generated or existed APK file

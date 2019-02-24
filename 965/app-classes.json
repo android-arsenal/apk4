@@ -1,0 +1,5 @@
+{
+  "android.support.annotation" : [ "Keep" ],
+  "com.getbase.floatingactionbutton" : [ "AddFloatingActionButton", "FloatingActionButton", "FloatingActionsMenu", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q" ],
+  "com.getbase.floatingactionbutton.sample" : [ "MainActivity", "a", "b", "c", "d", "e" ]
+}

@@ -1,0 +1,4 @@
+{
+  "com.achep.header2actionbar" : [ "FadingActionBarHelper", "HeaderFragment", "HeaderFragment$1", "HeaderFragment$2", "HeaderFragment$3", "HeaderFragment$OnHeaderScrollChangedListener", "NotifyingScrollView", "NotifyingScrollView$OnScrollChangedListener" ],
+  "com.achep.header2actionbardemo" : [ "BuildConfig", "ListViewFragment", "ListViewFragment$1", "ListViewFragment$AsyncLoadSomething", "MainActivity", "Project", "R", "R$attr", "R$color", "R$dimen", "R$drawable", "R$id", "R$layout", "R$menu", "R$string", "R$style" ]
+}

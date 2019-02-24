@@ -1,0 +1,194 @@
+2018-04-08 13:32:35,392 INFO  DownloadService - Downloading "https://github.com/futuresimple/forger/archive/master.zip", attempt 3
+2018-04-08 13:32:35,931 INFO  DownloadService - Downloaded https://github.com/futuresimple/forger/archive/master.zip, attempt 3
+2018-04-08 13:32:35,931 INFO  DownloadService - Size of file "/tmp/rdisk/985/master.zip": 120 KB
+2018-04-08 13:32:35,931 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-08 13:32:35,932 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/985/master.zip: true
+2018-04-08 13:32:35,932 DEBUG ZipUtil - Extracting '/tmp/rdisk/985/master.zip' into '/tmp/rdisk/985/src'.
+2018-04-08 13:32:35,943 INFO  FullProcessService - Size of directory with sources: 250 KB
+2018-04-08 13:32:35,943 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/985/src]
+2018-04-08 13:32:35,956 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/985/src/.git/
+
+2018-04-08 13:32:35,959 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/985/src/forger-master/gradlew
+2018-04-08 13:32:35,962 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/985/src/forger-master/library/build.gradle /tmp/rdisk/985/src/forger-master/build.gradle
+2018-04-08 13:32:35,964 INFO  ProjectBuildService - All script(s): /tmp/rdisk/985/src/forger-master/settings.gradle /tmp/rdisk/985/src/forger-master/library/gradle-mvn-push.gradle /tmp/rdisk/985/src/forger-master/library/build.gradle /tmp/rdisk/985/src/forger-master/build.gradle
+2018-04-08 13:32:35,965 INFO  ProjectBuildService - Remote scripts: none
+2018-04-08 13:32:35,965 INFO  ProjectFixService - Fixing project...
+2018-04-08 13:32:35,976 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/985/src/forger-master/library/local.properties
+2018-04-08 13:32:35,976 INFO  ProjectFixService - Build info for "/tmp/rdisk/985/src/forger-master/library/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=10,targetSdkVersion=21]
+2018-04-08 13:32:35,977 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/985/src/forger-master/local.properties
+2018-04-08 13:32:35,977 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-08 13:32:35,977 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-08 13:32:35,981 INFO  ProjectFixService - Build info for "/tmp/rdisk/985/src/forger-master/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=10,targetSdkVersion=21]
+2018-04-08 13:32:35,981 INFO  ProjectFixService - Project was maybe fixed
+2018-04-08 13:32:35,981 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-08 13:32:35,981 INFO  SysUtils - Execute command: [/tmp/rdisk/985/src/forger-master/gradlew, -b, /tmp/rdisk/985/src/forger-master/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-08 13:32:50,428 INFO  ProjectTaskService - Detected possible tasks: 71
+2018-04-08 13:32:50,428 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-08 13:32:50,429 INFO  SysUtils - Execute command: [/tmp/rdisk/985/src/forger-master/gradlew, -b, /tmp/rdisk/985/src/forger-master/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-08 13:33:06,125 INFO  SysUtils - Configuration on demand is an incubating feature.
+:library:androidJavadocsjavadoc: error - Illegal package name: "/tmp/rdisk/985/src/forger-master/library/src/main/java/com/getbase/android/forger/KotlinDataClass.kt"
+
+1 error
+:library:androidJavadocsJar
+:library:androidSourcesJar
+:library:compileLint
+:library:copyDebugLint UP-TO-DATE
+:library:preBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:checkDebugManifest
+:library:preDebugAndroidTestBuild UP-TO-DATE
+:library:preDebugUnitTestBuild UP-TO-DATE
+:library:preReleaseBuild UP-TO-DATE
+:library:preReleaseUnitTestBuild UP-TO-DATE
+:library:prepareOrgChalupMicroormMicroorm070Library
+:library:prepareOrgChalupThneedThneed07Library
+:library:prepareDebugDependencies
+:library:compileDebugAidl
+:library:compileDebugRenderscript
+:library:generateDebugBuildConfig
+:library:generateDebugAssets UP-TO-DATE
+:library:mergeDebugAssets
+:library:generateDebugResValues
+:library:generateDebugResources
+:library:mergeDebugResources
+:library:processDebugManifest
+:library:processDebugResources
+:library:generateDebugSources
+:library:processDebugJavaRes UP-TO-DATE
+:library:compileDebugKotlin
+:library:compileDebugJavaWithJavac
+:library:copyDebugKotlinClasses
+:library:extractDebugAnnotations
+:library:mergeDebugProguardFiles
+:library:packageDebugJar
+:library:compileDebugNdk UP-TO-DATE
+:library:packageDebugJniLibs UP-TO-DATE
+:library:packageDebugLocalJar UP-TO-DATE
+:library:packageDebugRenderscript UP-TO-DATE
+:library:packageDebugResources
+:library:bundleDebug
+:library:compileDebugSources
+:library:assembleDebug
+:library:copyReleaseLint UP-TO-DATE
+:library:checkReleaseManifest
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl
+:library:compileReleaseRenderscript
+:library:generateReleaseBuildConfig
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets
+:library:generateReleaseResValues
+:library:generateReleaseResources
+:library:mergeReleaseResources
+:library:processReleaseManifest
+:library:processReleaseResources
+:library:generateReleaseSources
+:library:processReleaseJavaRes UP-TO-DATE
+:library:compileReleaseKotlin
+:library:compileReleaseJavaWithJavac
+:library:copyReleaseKotlinClasses
+:library:extractReleaseAnnotations
+:library:mergeReleaseProguardFiles
+:library:packageReleaseJar
+:library:compileReleaseNdk UP-TO-DATE
+:library:packageReleaseJniLibs UP-TO-DATE
+:library:packageReleaseLocalJar UP-TO-DATE
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:packageReleaseResources
+:library:bundleRelease
+:library:compileReleaseSources
+:library:assembleRelease
+:library:signArchives SKIPPED
+:library:assemble
+:library:build
+
+BUILD SUCCESSFUL
+
+Total time: 15.157 secs
+
+2018-04-08 13:33:06,135 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-08 13:33:06,135 INFO  SysUtils - Execute command: [/tmp/rdisk/985/src/forger-master/gradlew, -b, /tmp/rdisk/985/src/forger-master/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-08 13:33:13,109 INFO  ProjectTaskService - Detected possible tasks: 71
+2018-04-08 13:33:13,109 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-08 13:33:13,110 INFO  SysUtils - Execute command: [/tmp/rdisk/985/src/forger-master/gradlew, -b, /tmp/rdisk/985/src/forger-master/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-08 13:33:20,277 INFO  SysUtils - Configuration on demand is an incubating feature.
+:library:androidJavadocs UP-TO-DATE
+:library:androidJavadocsJar UP-TO-DATE
+:library:androidSourcesJar UP-TO-DATE
+:library:compileLint
+:library:copyDebugLint UP-TO-DATE
+:library:preBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:checkDebugManifest
+:library:preDebugAndroidTestBuild UP-TO-DATE
+:library:preDebugUnitTestBuild UP-TO-DATE
+:library:preReleaseBuild UP-TO-DATE
+:library:preReleaseUnitTestBuild UP-TO-DATE
+:library:prepareOrgChalupMicroormMicroorm070Library UP-TO-DATE
+:library:prepareOrgChalupThneedThneed07Library UP-TO-DATE
+:library:prepareDebugDependencies
+:library:compileDebugAidl UP-TO-DATE
+:library:compileDebugRenderscript UP-TO-DATE
+:library:generateDebugBuildConfig UP-TO-DATE
+:library:generateDebugAssets UP-TO-DATE
+:library:mergeDebugAssets UP-TO-DATE
+:library:generateDebugResValues UP-TO-DATE
+:library:generateDebugResources UP-TO-DATE
+:library:mergeDebugResources UP-TO-DATE
+:library:processDebugManifest UP-TO-DATE
+:library:processDebugResources UP-TO-DATE
+:library:generateDebugSources UP-TO-DATE
+:library:processDebugJavaRes UP-TO-DATE
+:library:compileDebugKotlin UP-TO-DATE
+:library:compileDebugJavaWithJavac UP-TO-DATE
+:library:copyDebugKotlinClasses UP-TO-DATE
+:library:extractDebugAnnotations UP-TO-DATE
+:library:mergeDebugProguardFiles UP-TO-DATE
+:library:packageDebugJar UP-TO-DATE
+:library:compileDebugNdk UP-TO-DATE
+:library:packageDebugJniLibs UP-TO-DATE
+:library:packageDebugLocalJar UP-TO-DATE
+:library:packageDebugRenderscript UP-TO-DATE
+:library:packageDebugResources UP-TO-DATE
+:library:bundleDebug UP-TO-DATE
+:library:compileDebugSources UP-TO-DATE
+:library:assembleDebug UP-TO-DATE
+:library:copyReleaseLint UP-TO-DATE
+:library:checkReleaseManifest
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl UP-TO-DATE
+:library:compileReleaseRenderscript UP-TO-DATE
+:library:generateReleaseBuildConfig UP-TO-DATE
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets UP-TO-DATE
+:library:generateReleaseResValues UP-TO-DATE
+:library:generateReleaseResources UP-TO-DATE
+:library:mergeReleaseResources UP-TO-DATE
+:library:processReleaseManifest UP-TO-DATE
+:library:processReleaseResources UP-TO-DATE
+:library:generateReleaseSources UP-TO-DATE
+:library:processReleaseJavaRes UP-TO-DATE
+:library:compileReleaseKotlin UP-TO-DATE
+:library:compileReleaseJavaWithJavac UP-TO-DATE
+:library:copyReleaseKotlinClasses UP-TO-DATE
+:library:extractReleaseAnnotations UP-TO-DATE
+:library:mergeReleaseProguardFiles UP-TO-DATE
+:library:packageReleaseJar UP-TO-DATE
+:library:compileReleaseNdk UP-TO-DATE
+:library:packageReleaseJniLibs UP-TO-DATE
+:library:packageReleaseLocalJar UP-TO-DATE
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:packageReleaseResources UP-TO-DATE
+:library:bundleRelease UP-TO-DATE
+:library:compileReleaseSources UP-TO-DATE
+:library:assembleRelease UP-TO-DATE
+:library:signArchives SKIPPED
+:library:assemble UP-TO-DATE
+:library:build
+
+BUILD SUCCESSFUL
+
+Total time: 6.72 secs
+
+2018-04-08 13:33:20,287 ERROR FullProcessService - Project build has not produced APK file
+2018-04-08 13:33:20,299 ERROR FullProcessService - Could not find generated or existed APK file

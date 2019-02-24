@@ -1,0 +1,291 @@
+2018-05-16 03:57:49,065 INFO  DownloadService - Downloading "https://github.com/Instagram/ig-json-parser/archive/master.zip", attempt 3
+2018-05-16 03:57:49,731 INFO  DownloadService - Downloaded https://github.com/Instagram/ig-json-parser/archive/master.zip, attempt 3
+2018-05-16 03:57:49,731 INFO  DownloadService - Size of file "/tmp/rdisk/933/master.zip": 209 KB
+2018-05-16 03:57:49,731 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-05-16 03:57:49,732 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/933/master.zip: true
+2018-05-16 03:57:49,732 DEBUG ZipUtil - Extracting '/tmp/rdisk/933/master.zip' into '/tmp/rdisk/933/src'.
+2018-05-16 03:57:49,758 INFO  FullProcessService - Size of directory with sources: 426 KB
+2018-05-16 03:57:49,758 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/933/src]
+2018-05-16 03:57:49,762 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/933/src/.git/
+
+2018-05-16 03:57:49,776 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/933/src/ig-json-parser-master/gradlew
+2018-05-16 03:57:49,784 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/933/src/ig-json-parser-master/demo/build.gradle /tmp/rdisk/933/src/ig-json-parser-master/demo/igmodel/build.gradle /tmp/rdisk/933/src/ig-json-parser-master/build.gradle /tmp/rdisk/933/src/ig-json-parser-master/common/build.gradle /tmp/rdisk/933/src/ig-json-parser-master/javawriter/build.gradle /tmp/rdisk/933/src/ig-json-parser-master/jitpack-example/build.gradle /tmp/rdisk/933/src/ig-json-parser-master/processor/build.gradle /tmp/rdisk/933/src/ig-json-parser-master/processor/support/build.gradle /tmp/rdisk/933/src/ig-json-parser-master/processor/testuut/build.gradle /tmp/rdisk/933/src/ig-json-parser-master/processor/testuut/dependent/build.gradle /tmp/rdisk/933/src/ig-json-parser-master/processor/testuut/nobodies/build.gradle /tmp/rdisk/933/src/ig-json-parser-master/processor/testuut/noserializers/build.gradle /tmp/rdisk/933/src/ig-json-parser-master/processor/testuut/parent/build.gradle /tmp/rdisk/933/src/ig-json-parser-master/util/build.gradle /tmp/rdisk/933/src/ig-json-parser-master/util/testprocessor/build.gradle /tmp/rdisk/933/src/ig-json-parser-master/util/testuututil/build.gradle
+2018-05-16 03:57:49,791 INFO  ProjectBuildService - All script(s): /tmp/rdisk/933/src/ig-json-parser-master/util/testuututil/build.gradle /tmp/rdisk/933/src/ig-json-parser-master/util/testprocessor/build.gradle /tmp/rdisk/933/src/ig-json-parser-master/util/build.gradle /tmp/rdisk/933/src/ig-json-parser-master/settings.gradle /tmp/rdisk/933/src/ig-json-parser-master/processor/testuut/parent/build.gradle /tmp/rdisk/933/src/ig-json-parser-master/processor/testuut/noserializers/build.gradle /tmp/rdisk/933/src/ig-json-parser-master/processor/testuut/nobodies/build.gradle /tmp/rdisk/933/src/ig-json-parser-master/processor/testuut/dependent/build.gradle /tmp/rdisk/933/src/ig-json-parser-master/processor/testuut/build.gradle /tmp/rdisk/933/src/ig-json-parser-master/processor/support/build.gradle /tmp/rdisk/933/src/ig-json-parser-master/processor/build.gradle /tmp/rdisk/933/src/ig-json-parser-master/jitpack-example/build.gradle /tmp/rdisk/933/src/ig-json-parser-master/javawriter/build.gradle /tmp/rdisk/933/src/ig-json-parser-master/demo/igmodel/build.gradle /tmp/rdisk/933/src/ig-json-parser-master/demo/build.gradle /tmp/rdisk/933/src/ig-json-parser-master/common/build.gradle /tmp/rdisk/933/src/ig-json-parser-master/build.gradle
+2018-05-16 03:57:49,792 INFO  ProjectBuildService - Remote scripts: none
+2018-05-16 03:57:49,792 INFO  ProjectFixService - Fixing project...
+2018-05-16 03:57:49,809 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/933/src/ig-json-parser-master/demo/local.properties
+2018-05-16 03:57:49,810 INFO  ProjectFixService - Build info for "/tmp/rdisk/933/src/ig-json-parser-master/demo/build.gradle": [buildToolsVersion=26.0.2,compileSdkVersion=23,minSdkVersion=10,targetSdkVersion=23]
+2018-05-16 03:57:49,810 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/933/src/ig-json-parser-master/demo/igmodel/local.properties
+2018-05-16 03:57:49,813 INFO  ProjectFixService - Build info for "/tmp/rdisk/933/src/ig-json-parser-master/demo/igmodel/build.gradle": [buildToolsVersion=26.0.2,compileSdkVersion=23,minSdkVersion=10,targetSdkVersion=23]
+2018-05-16 03:57:49,813 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/933/src/ig-json-parser-master/local.properties
+2018-05-16 03:57:49,813 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-4.1-bin.zip
+2018-05-16 03:57:49,819 INFO  ProjectFixService - Build info for "/tmp/rdisk/933/src/ig-json-parser-master/build.gradle": [buildToolsVersion=26.0.2,compileSdkVersion=23,minSdkVersion=10,targetSdkVersion=23]
+2018-05-16 03:57:49,819 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/933/src/ig-json-parser-master/common/local.properties
+2018-05-16 03:57:49,824 INFO  ProjectFixService - Build info for "/tmp/rdisk/933/src/ig-json-parser-master/common/build.gradle": [buildToolsVersion=26.0.2,compileSdkVersion=23,minSdkVersion=10,targetSdkVersion=23]
+2018-05-16 03:57:49,824 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/933/src/ig-json-parser-master/javawriter/local.properties
+2018-05-16 03:57:49,828 INFO  ProjectFixService - Build info for "/tmp/rdisk/933/src/ig-json-parser-master/javawriter/build.gradle": [buildToolsVersion=26.0.2,compileSdkVersion=23,minSdkVersion=10,targetSdkVersion=23]
+2018-05-16 03:57:49,828 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/933/src/ig-json-parser-master/jitpack-example/local.properties
+2018-05-16 03:57:49,833 INFO  ProjectFixService - Build info for "/tmp/rdisk/933/src/ig-json-parser-master/jitpack-example/build.gradle": [buildToolsVersion=26.0.2,compileSdkVersion=23,minSdkVersion=10,targetSdkVersion=23]
+2018-05-16 03:57:49,833 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/933/src/ig-json-parser-master/processor/local.properties
+2018-05-16 03:57:49,837 INFO  ProjectFixService - Build info for "/tmp/rdisk/933/src/ig-json-parser-master/processor/build.gradle": [buildToolsVersion=26.0.2,compileSdkVersion=23,minSdkVersion=10,targetSdkVersion=23]
+2018-05-16 03:57:49,838 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/933/src/ig-json-parser-master/processor/support/local.properties
+2018-05-16 03:57:49,842 INFO  ProjectFixService - Build info for "/tmp/rdisk/933/src/ig-json-parser-master/processor/support/build.gradle": [buildToolsVersion=26.0.2,compileSdkVersion=23,minSdkVersion=10,targetSdkVersion=23]
+2018-05-16 03:57:49,842 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/933/src/ig-json-parser-master/processor/testuut/local.properties
+2018-05-16 03:57:49,847 INFO  ProjectFixService - Build info for "/tmp/rdisk/933/src/ig-json-parser-master/processor/testuut/build.gradle": [buildToolsVersion=26.0.2,compileSdkVersion=23,minSdkVersion=10,targetSdkVersion=23]
+2018-05-16 03:57:49,847 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/933/src/ig-json-parser-master/processor/testuut/dependent/local.properties
+2018-05-16 03:57:49,852 INFO  ProjectFixService - Build info for "/tmp/rdisk/933/src/ig-json-parser-master/processor/testuut/dependent/build.gradle": [buildToolsVersion=26.0.2,compileSdkVersion=23,minSdkVersion=10,targetSdkVersion=23]
+2018-05-16 03:57:49,852 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/933/src/ig-json-parser-master/processor/testuut/nobodies/local.properties
+2018-05-16 03:57:49,856 INFO  ProjectFixService - Build info for "/tmp/rdisk/933/src/ig-json-parser-master/processor/testuut/nobodies/build.gradle": [buildToolsVersion=26.0.2,compileSdkVersion=23,minSdkVersion=10,targetSdkVersion=23]
+2018-05-16 03:57:49,857 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/933/src/ig-json-parser-master/processor/testuut/noserializers/local.properties
+2018-05-16 03:57:49,861 INFO  ProjectFixService - Build info for "/tmp/rdisk/933/src/ig-json-parser-master/processor/testuut/noserializers/build.gradle": [buildToolsVersion=26.0.2,compileSdkVersion=23,minSdkVersion=10,targetSdkVersion=23]
+2018-05-16 03:57:49,861 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/933/src/ig-json-parser-master/processor/testuut/parent/local.properties
+2018-05-16 03:57:49,866 INFO  ProjectFixService - Build info for "/tmp/rdisk/933/src/ig-json-parser-master/processor/testuut/parent/build.gradle": [buildToolsVersion=26.0.2,compileSdkVersion=23,minSdkVersion=10,targetSdkVersion=23]
+2018-05-16 03:57:49,866 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/933/src/ig-json-parser-master/util/local.properties
+2018-05-16 03:57:49,870 INFO  ProjectFixService - Build info for "/tmp/rdisk/933/src/ig-json-parser-master/util/build.gradle": [buildToolsVersion=26.0.2,compileSdkVersion=23,minSdkVersion=10,targetSdkVersion=23]
+2018-05-16 03:57:49,871 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/933/src/ig-json-parser-master/util/testprocessor/local.properties
+2018-05-16 03:57:49,875 INFO  ProjectFixService - Build info for "/tmp/rdisk/933/src/ig-json-parser-master/util/testprocessor/build.gradle": [buildToolsVersion=26.0.2,compileSdkVersion=23,minSdkVersion=10,targetSdkVersion=23]
+2018-05-16 03:57:49,875 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/933/src/ig-json-parser-master/util/testuututil/local.properties
+2018-05-16 03:57:49,879 INFO  ProjectFixService - Build info for "/tmp/rdisk/933/src/ig-json-parser-master/util/testuututil/build.gradle": [buildToolsVersion=26.0.2,compileSdkVersion=23,minSdkVersion=10,targetSdkVersion=23]
+2018-05-16 03:57:49,880 INFO  ProjectFixService - Project was maybe fixed
+2018-05-16 03:57:49,880 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-16 03:57:49,880 INFO  SysUtils - Execute command: [/tmp/rdisk/933/src/ig-json-parser-master/gradlew, -b, /tmp/rdisk/933/src/ig-json-parser-master/demo/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-16 03:57:58,823 INFO  ProjectTaskService - Detected possible tasks: 68
+2018-05-16 03:57:58,823 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-05-16 03:57:58,823 INFO  SysUtils - Execute command: [/tmp/rdisk/933/src/ig-json-parser-master/gradlew, -b, /tmp/rdisk/933/src/ig-json-parser-master/demo/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-05-16 03:58:24,140 INFO  SysUtils - Configuration on demand is an incubating feature.
+:demo:preBuild UP-TO-DATE
+:demo:igmodel:preBuild UP-TO-DATE
+:demo:igmodel:preDebugBuild UP-TO-DATE
+:demo:igmodel:checkDebugManifest
+:demo:igmodel:processDebugManifest
+:demo:preDebugBuild
+:demo:igmodel:compileDebugAidl
+:demo:compileDebugAidl
+:demo:igmodel:packageDebugRenderscript NO-SOURCE
+:demo:compileDebugRenderscript
+:demo:checkDebugManifest
+:demo:generateDebugBuildConfig
+:demo:prepareLintJar
+:demo:generateDebugResValues
+:demo:generateDebugResources
+:demo:igmodel:compileDebugRenderscript
+:demo:igmodel:generateDebugResValues
+:demo:igmodel:generateDebugResources
+:demo:igmodel:packageDebugResources
+:demo:mergeDebugResources
+:demo:createDebugCompatibleScreenManifests
+:demo:processDebugManifest
+:demo:splitsDiscoveryTaskDebug
+:demo:igmodel:platformAttrExtractor
+:common:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.7
+1 warning
+
+:demo:igmodel:processDebugResources
+:demo:processDebugResources
+:demo:generateDebugSources
+:common:processResources NO-SOURCE
+:common:classes
+:common:jar
+:javawriter:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.7
+1 warning
+
+:javawriter:processResources NO-SOURCE
+:javawriter:classes
+:javawriter:jar
+:util:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.7
+Note: /tmp/rdisk/933/src/ig-json-parser-master/util/src/main/java/com/instagram/common/json/annotation/util/TypeUtils.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 warning
+
+:util:processResources NO-SOURCE
+:util:classes
+:util:jar
+:processor:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.7
+1 warning
+
+:processor:processResources
+:processor:classes
+:processor:jar
+:demo:igmodel:generateDebugBuildConfig
+:demo:igmodel:prepareLintJar
+:demo:igmodel:generateDebugSources
+:demo:igmodel:javaPreCompileDebug
+:demo:igmodel:compileDebugJavaWithJavac
+:demo:igmodel:processDebugJavaRes NO-SOURCE
+:demo:igmodel:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:demo:javaPreCompileDebug
+:demo:compileDebugJavaWithJavacNote: /tmp/rdisk/933/src/ig-json-parser-master/demo/src/main/java/com/instagram/common/json/app/BenchmarkStats.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:demo:compileDebugNdk NO-SOURCE
+:demo:compileDebugSources
+:demo:mergeDebugShaders
+:demo:compileDebugShaders
+:demo:generateDebugAssets
+:demo:igmodel:mergeDebugShaders
+:demo:igmodel:compileDebugShaders
+:demo:igmodel:generateDebugAssets
+:demo:igmodel:mergeDebugAssets
+:demo:mergeDebugAssets
+:demo:transformClassesWithDexBuilderForDebug
+:demo:transformDexArchiveWithExternalLibsDexMergerForDebug
+:demo:transformDexArchiveWithDexMergerForDebug
+:demo:mergeDebugJniLibFolders
+:demo:igmodel:compileDebugNdk NO-SOURCE
+:demo:igmodel:mergeDebugJniLibFolders
+:demo:igmodel:transformNativeLibsWithMergeJniLibsForDebug
+:demo:igmodel:transformNativeLibsWithStripDebugSymbolForDebug
+:demo:igmodel:transformNativeLibsWithIntermediateJniLibsForDebug
+:demo:transformNativeLibsWithMergeJniLibsForDebug
+:demo:transformNativeLibsWithStripDebugSymbolForDebug
+:demo:processDebugJavaRes NO-SOURCE
+:demo:transformResourcesWithMergeJavaResForDebug
+:demo:validateSigningDebug
+:demo:packageDebug
+:demo:assembleDebug
+:demo:igmodel:preReleaseBuild UP-TO-DATE
+:demo:igmodel:checkReleaseManifest
+:demo:igmodel:processReleaseManifest
+:demo:preReleaseBuild
+:demo:igmodel:compileReleaseAidl
+:demo:compileReleaseAidl
+:demo:igmodel:packageReleaseRenderscript NO-SOURCE
+:demo:compileReleaseRenderscript
+:demo:checkReleaseManifest
+:demo:generateReleaseBuildConfig
+:demo:generateReleaseResValues
+:demo:generateReleaseResources
+:demo:igmodel:compileReleaseRenderscript
+:demo:igmodel:generateReleaseResValues
+:demo:igmodel:generateReleaseResources
+:demo:igmodel:packageReleaseResources
+:demo:mergeReleaseResources
+:demo:createReleaseCompatibleScreenManifests
+:demo:processReleaseManifest
+:demo:splitsDiscoveryTaskRelease
+:demo:igmodel:processReleaseResources
+:demo:processReleaseResources
+:demo:generateReleaseSources
+:demo:igmodel:generateReleaseBuildConfig
+:demo:igmodel:generateReleaseSources
+:demo:igmodel:javaPreCompileRelease
+:demo:igmodel:compileReleaseJavaWithJavac
+:demo:igmodel:processReleaseJavaRes NO-SOURCE
+:demo:igmodel:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease
+:demo:javaPreCompileRelease
+:demo:compileReleaseJavaWithJavacNote: /tmp/rdisk/933/src/ig-json-parser-master/demo/src/main/java/com/instagram/common/json/app/BenchmarkStats.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:demo:compileReleaseNdk NO-SOURCE
+:demo:compileReleaseSources
+:demo:mergeReleaseShaders
+:demo:compileReleaseShaders
+:demo:generateReleaseAssets
+:demo:igmodel:mergeReleaseShaders
+:demo:igmodel:compileReleaseShaders
+:demo:igmodel:generateReleaseAssets
+:demo:igmodel:mergeReleaseAssets
+:demo:mergeReleaseAssets
+:demo:transformClassesWithPreDexForRelease
+:demo:transformDexWithDexForRelease
+:demo:mergeReleaseJniLibFolders
+:demo:igmodel:compileReleaseNdk NO-SOURCE
+:demo:igmodel:mergeReleaseJniLibFolders
+:demo:igmodel:transformNativeLibsWithMergeJniLibsForRelease
+:demo:igmodel:transformNativeLibsWithStripDebugSymbolForRelease
+:demo:igmodel:transformNativeLibsWithIntermediateJniLibsForRelease
+:demo:transformNativeLibsWithMergeJniLibsForRelease
+:demo:transformNativeLibsWithStripDebugSymbolForRelease
+:demo:processReleaseJavaRes NO-SOURCE
+:demo:transformResourcesWithMergeJavaResForRelease
+:demo:packageRelease
+:demo:lintVitalRelease
+Gradle now uses separate output directories for each JVM language, but this build assumes a single directory for all classes from a source set. This behaviour has been deprecated and is scheduled to be removed in Gradle 5.0
+	at org.gradle.api.internal.tasks.DefaultSourceSetOutput.getClassesDir(DefaultSourceSetOutput.java:80)
+	at org.gradle.api.internal.tasks.DefaultSourceSetOutput_Decorated.getClassesDir(Unknown Source)
+	at com.android.build.gradle.internal.LintGradleProject$ProjectSearch.getProject(LintGradleProject.java:839)
+	at com.android.build.gradle.internal.LintGradleProject$ProjectSearch.getProject(LintGradleProject.java:981)
+	at com.android.build.gradle.internal.LintGradleProject$ProjectSearch.getProject(LintGradleProject.java:784)
+	at com.android.build.gradle.internal.LintGradleProject$ProjectSearch.getProject(LintGradleProject.java:981)
+	at com.android.build.gradle.internal.LintGradleProject$ProjectSearch.getProject(LintGradleProject.java:784)
+	at com.android.build.gradle.internal.LintGradleClient.createLintRequest(LintGradleClient.java:182)
+	at com.android.tools.lint.LintCliClient.run(LintCliClient.java:149)
+	at com.android.build.gradle.internal.LintGradleClient.run(LintGradleClient.java:197)
+	at com.android.build.gradle.tasks.LintBaseTask.runLint(LintBaseTask.java:199)
+	at com.android.build.gradle.tasks.LintPerVariantTask.lintSingleVariant(LintPerVariantTask.java:53)
+	at com.android.build.gradle.tasks.LintPerVariantTask.lint(LintPerVariantTask.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:73)
+	at org.gradle.api.internal.project.taskfactory.DefaultTaskClassInfoStore$StandardTaskAction.doExecute(DefaultTaskClassInfoStore.java:141)
+	at org.gradle.api.internal.project.taskfactory.DefaultTaskClassInfoStore$StandardTaskAction.execute(DefaultTaskClassInfoStore.java:134)
+	at org.gradle.api.internal.project.taskfactory.DefaultTaskClassInfoStore$StandardTaskAction.execute(DefaultTaskClassInfoStore.java:121)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:731)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:705)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter$1.run(ExecuteActionsTaskExecuter.java:122)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:336)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:328)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.execute(DefaultBuildOperationExecutor.java:197)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:107)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:111)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:92)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:70)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:63)
+	at org.gradle.api.internal.tasks.execution.ResolveTaskOutputCachingStateExecuter.execute(ResolveTaskOutputCachingStateExecuter.java:54)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:88)
+	at org.gradle.api.internal.tasks.execution.ResolveTaskArtifactStateTaskExecuter.execute(ResolveTaskArtifactStateTaskExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:54)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:34)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker$1.run(DefaultTaskGraphExecuter.java:248)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:336)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:328)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.execute(DefaultBuildOperationExecutor.java:197)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:107)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:241)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:230)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker.processTask(DefaultTaskPlanExecutor.java:124)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker.access$200(DefaultTaskPlanExecutor.java:80)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker$1.execute(DefaultTaskPlanExecutor.java:105)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker$1.execute(DefaultTaskPlanExecutor.java:99)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionPlan.execute(DefaultTaskExecutionPlan.java:625)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionPlan.executeWithTask(DefaultTaskExecutionPlan.java:580)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker.run(DefaultTaskPlanExecutor.java:99)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.lang.Thread.run(Thread.java:748)
+:demo:assembleRelease
+:demo:assemble
+:demo:build
+:demo:igmodel:extractDebugAnnotations
+:demo:igmodel:mergeDebugConsumerProguardFiles
+:demo:igmodel:transformResourcesWithMergeJavaResForDebug
+:demo:igmodel:transformClassesAndResourcesWithSyncLibJarsForDebug
+:demo:igmodel:transformNativeLibsWithSyncJniLibsForDebug
+:demo:igmodel:bundleDebug
+:demo:igmodel:compileDebugSources
+:demo:igmodel:assembleDebug
+:demo:igmodel:extractReleaseAnnotations
+:demo:igmodel:mergeReleaseConsumerProguardFiles
+:demo:igmodel:transformResourcesWithMergeJavaResForRelease
+:demo:igmodel:transformClassesAndResourcesWithSyncLibJarsForRelease
+:demo:igmodel:transformNativeLibsWithSyncJniLibsForRelease
+:demo:igmodel:bundleRelease
+:demo:igmodel:compileReleaseSources
+:demo:igmodel:mergeReleaseResources
+:demo:igmodel:verifyReleaseResources
+:demo:igmodel:assembleRelease
+:demo:igmodel:assemble
+:demo:igmodel:build
+
+BUILD SUCCESSFUL in 24s
+111 actionable tasks: 111 executed
+
+2018-05-16 03:58:24,169 INFO  FullProcessService - Found APK file: /tmp/rdisk/933/src/ig-json-parser-master/demo/build/outputs/apk/release/demo-release-unsigned.apk

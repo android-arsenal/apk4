@@ -1,0 +1,103 @@
+2018-04-09 11:02:32,695 INFO  DownloadService - Downloading "https://github.com/couchbaselabs/GrocerySync-Android/archive/master.zip", attempt 3
+2018-04-09 11:02:34,365 INFO  DownloadService - Downloaded https://github.com/couchbaselabs/GrocerySync-Android/archive/master.zip, attempt 3
+2018-04-09 11:02:34,365 INFO  DownloadService - Size of file "/tmp/rdisk/843/master.zip": 345 KB
+2018-04-09 11:02:34,365 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-09 11:02:34,366 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/843/master.zip: true
+2018-04-09 11:02:34,366 DEBUG ZipUtil - Extracting '/tmp/rdisk/843/master.zip' into '/tmp/rdisk/843/src'.
+2018-04-09 11:02:34,378 INFO  FullProcessService - Size of directory with sources: 401 KB
+2018-04-09 11:02:34,378 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/843/src]
+2018-04-09 11:02:34,383 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/843/src/.git/
+
+2018-04-09 11:02:34,385 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/843/src/GrocerySync-Android-master/gradlew
+2018-04-09 11:02:34,388 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/843/src/GrocerySync-Android-master/GrocerySync-Android/build.gradle /tmp/rdisk/843/src/GrocerySync-Android-master/build.gradle
+2018-04-09 11:02:34,390 INFO  ProjectBuildService - All script(s): /tmp/rdisk/843/src/GrocerySync-Android-master/settings.gradle /tmp/rdisk/843/src/GrocerySync-Android-master/build.gradle /tmp/rdisk/843/src/GrocerySync-Android-master/GrocerySync-Android/build.gradle
+2018-04-09 11:02:34,391 INFO  ProjectBuildService - Remote scripts: none
+2018-04-09 11:02:34,391 INFO  ProjectFixService - Fixing project...
+2018-04-09 11:02:34,396 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/843/src/GrocerySync-Android-master/GrocerySync-Android/local.properties
+2018-04-09 11:02:34,397 INFO  ProjectFixService - Build info for "/tmp/rdisk/843/src/GrocerySync-Android-master/GrocerySync-Android/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=9,targetSdkVersion=22]
+2018-04-09 11:02:34,397 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/843/src/GrocerySync-Android-master/local.properties
+2018-04-09 11:02:34,398 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.4-all.zip
+2018-04-09 11:02:34,398 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.4-bin.zip)
+2018-04-09 11:02:34,400 INFO  ProjectFixService - Build info for "/tmp/rdisk/843/src/GrocerySync-Android-master/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=9,targetSdkVersion=22]
+2018-04-09 11:02:34,400 INFO  ProjectFixService - Project was maybe fixed
+2018-04-09 11:02:34,400 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-09 11:02:34,400 INFO  SysUtils - Execute command: [/tmp/rdisk/843/src/GrocerySync-Android-master/gradlew, -b, /tmp/rdisk/843/src/GrocerySync-Android-master/GrocerySync-Android/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-09 11:02:43,598 INFO  ProjectTaskService - Detected possible tasks: 68
+2018-04-09 11:02:43,598 INFO  ProjectTaskService - Excluded tasks (20): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll sourcesJar test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-09 11:02:43,599 INFO  SysUtils - Execute command: [/tmp/rdisk/843/src/GrocerySync-Android-master/gradlew, -b, /tmp/rdisk/843/src/GrocerySync-Android-master/GrocerySync-Android/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, sourcesJar, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-09 11:03:18,514 INFO  SysUtils - Configuration on demand is an incubating feature.
+:GrocerySync-Android:preBuild UP-TO-DATE
+:GrocerySync-Android:preDebugBuild UP-TO-DATE
+:GrocerySync-Android:checkDebugManifest
+:GrocerySync-Android:preReleaseBuild UP-TO-DATE
+:GrocerySync-Android:prepareComAndroidSupportAppcompatV72200Library
+:GrocerySync-Android:prepareComAndroidSupportSupportV42200Library
+:GrocerySync-Android:prepareComCouchbaseLiteCouchbaseLiteAndroid000679Library
+:GrocerySync-Android:prepareComCouchbaseLiteCouchbaseLiteAndroidSqliteDefault000679Library
+:GrocerySync-Android:prepareDebugDependencies
+:GrocerySync-Android:compileDebugAidl
+:GrocerySync-Android:compileDebugRenderscript
+:GrocerySync-Android:generateDebugBuildConfig
+:GrocerySync-Android:generateDebugAssets UP-TO-DATE
+:GrocerySync-Android:mergeDebugAssets
+:GrocerySync-Android:generateDebugResValues
+:GrocerySync-Android:generateDebugResources
+:GrocerySync-Android:mergeDebugResources
+AAPT: /tmp/rdisk/843/src/GrocerySync-Android-master/GrocerySync-Android/src/main/res/drawable/item_right_background.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/843/src/GrocerySync-Android-master/GrocerySync-Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/drawable-hdpi-v4/abc_spinner_mtrl_am_alpha.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/843/src/GrocerySync-Android-master/GrocerySync-Android/src/main/res/drawable/list_area___checkbox___unchecked.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/843/src/GrocerySync-Android-master/GrocerySync-Android/src/main/res/drawable/item_left_background.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/843/src/GrocerySync-Android-master/GrocerySync-Android/src/main/res/drawable/list_area___checkbox___checked.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/843/src/GrocerySync-Android-master/GrocerySync-Android/src/main/res/drawable/item_background.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+:GrocerySync-Android:processDebugManifest
+:GrocerySync-Android:processDebugResources
+:GrocerySync-Android:generateDebugSources
+:GrocerySync-Android:processDebugJavaRes UP-TO-DATE
+:GrocerySync-Android:compileDebugJavaWithJavacNote: /tmp/rdisk/843/src/GrocerySync-Android-master/GrocerySync-Android/src/main/java/com/couchbase/grocerysync/GrocerySyncPreferencesActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:GrocerySync-Android:compileDebugNdk UP-TO-DATE
+:GrocerySync-Android:compileDebugSources
+:GrocerySync-Android:preDexDebug
+:GrocerySync-Android:dexDebug
+:GrocerySync-Android:validateDebugSigning
+:GrocerySync-Android:packageDebug
+:GrocerySync-Android:zipalignDebug
+:GrocerySync-Android:assembleDebug
+:GrocerySync-Android:checkReleaseManifest
+:GrocerySync-Android:prepareReleaseDependencies
+:GrocerySync-Android:compileReleaseAidl
+:GrocerySync-Android:compileReleaseRenderscript
+:GrocerySync-Android:generateReleaseBuildConfig
+:GrocerySync-Android:generateReleaseAssets UP-TO-DATE
+:GrocerySync-Android:mergeReleaseAssets
+:GrocerySync-Android:generateReleaseResValues
+:GrocerySync-Android:generateReleaseResources
+:GrocerySync-Android:mergeReleaseResources
+AAPT: /tmp/rdisk/843/src/GrocerySync-Android-master/GrocerySync-Android/src/main/res/drawable/item_right_background.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/843/src/GrocerySync-Android-master/GrocerySync-Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/drawable-hdpi-v4/abc_spinner_mtrl_am_alpha.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/843/src/GrocerySync-Android-master/GrocerySync-Android/src/main/res/drawable/list_area___checkbox___unchecked.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/843/src/GrocerySync-Android-master/GrocerySync-Android/src/main/res/drawable/item_left_background.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/843/src/GrocerySync-Android-master/GrocerySync-Android/src/main/res/drawable/list_area___checkbox___checked.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/843/src/GrocerySync-Android-master/GrocerySync-Android/src/main/res/drawable/item_background.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+:GrocerySync-Android:processReleaseManifest
+:GrocerySync-Android:processReleaseResources
+:GrocerySync-Android:generateReleaseSources
+:GrocerySync-Android:processReleaseJavaRes UP-TO-DATE
+:GrocerySync-Android:compileReleaseJavaWithJavacNote: /tmp/rdisk/843/src/GrocerySync-Android-master/GrocerySync-Android/src/main/java/com/couchbase/grocerysync/GrocerySyncPreferencesActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:GrocerySync-Android:compileReleaseNdk UP-TO-DATE
+:GrocerySync-Android:compileReleaseSources
+:GrocerySync-Android:preDexRelease
+:GrocerySync-Android:dexRelease
+:GrocerySync-Android:packageRelease
+:GrocerySync-Android:assembleRelease
+:GrocerySync-Android:assemble
+:GrocerySync-Android:build
+
+BUILD SUCCESSFUL
+
+Total time: 34.477 secs
+
+2018-04-09 11:03:18,554 INFO  FullProcessService - Found APK file: /tmp/rdisk/843/src/GrocerySync-Android-master/GrocerySync-Android/build/outputs/apk/GrocerySync-Android-release-unsigned.apk

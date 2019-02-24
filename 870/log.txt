@@ -1,0 +1,9 @@
+2018-04-08 16:41:52,085 INFO  DownloadService - Downloading "https://github.com/cesarferreira/AndroidQuickUtils/archive/master.zip", attempt 3
+2018-04-08 16:41:52,086 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-08 16:41:52,451 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-08 16:41:52,452 INFO  DownloadService - Downloading "https://github.com/cesarferreira/AndroidQuickUtils/archive/master.zip", attempt 3
+2018-04-08 16:41:52,452 DEBUG FullProcessService - Repository https://github.com/cesarferreira/AndroidQuickUtils available: false
+2018-04-08 16:41:52,452 ERROR FullProcessService - Could not find directory with sources
+2018-04-08 16:41:52,452 ERROR FullProcessService - Project will not be processed
+2018-04-08 16:41:52,452 ERROR FullProcessService - Project build has not produced APK file
+2018-04-08 16:41:52,453 ERROR FullProcessService - Could not find generated or existed APK file

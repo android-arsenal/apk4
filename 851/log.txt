@@ -1,0 +1,164 @@
+2018-04-09 09:37:40,555 INFO  DownloadService - Downloading "https://github.com/Pkmmte/PkRSS/archive/master.zip", attempt 3
+2018-04-09 09:37:40,955 INFO  DownloadService - Downloaded https://github.com/Pkmmte/PkRSS/archive/master.zip, attempt 3
+2018-04-09 09:37:40,955 INFO  DownloadService - Size of file "/tmp/rdisk/851/master.zip": 95 KB
+2018-04-09 09:37:40,955 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-09 09:37:40,956 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/851/master.zip: true
+2018-04-09 09:37:40,956 DEBUG ZipUtil - Extracting '/tmp/rdisk/851/master.zip' into '/tmp/rdisk/851/src'.
+2018-04-09 09:37:40,962 INFO  FullProcessService - Size of directory with sources: 180 KB
+2018-04-09 09:37:40,962 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/851/src]
+2018-04-09 09:37:40,967 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/851/src/.git/
+
+2018-04-09 09:37:40,969 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/851/src/PkRSS-master/gradlew
+2018-04-09 09:37:40,971 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/851/src/PkRSS-master/pkrss/build.gradle /tmp/rdisk/851/src/PkRSS-master/build.gradle
+2018-04-09 09:37:40,972 INFO  ProjectBuildService - All script(s): /tmp/rdisk/851/src/PkRSS-master/settings.gradle /tmp/rdisk/851/src/PkRSS-master/pkrss/build.gradle /tmp/rdisk/851/src/PkRSS-master/build.gradle
+2018-04-09 09:37:40,975 INFO  DownloadService - Downloading "https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle", attempt 3
+2018-04-09 09:37:41,670 INFO  DownloadService - Downloaded https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle, attempt 3
+2018-04-09 09:37:41,670 INFO  ProjectBuildService - Remote scripts: https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle
+2018-04-09 09:37:41,670 INFO  ProjectFixService - Fixing project...
+2018-04-09 09:37:41,680 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/851/src/PkRSS-master/pkrss/local.properties
+2018-04-09 09:37:41,681 INFO  ProjectFixService - Build info for "/tmp/rdisk/851/src/PkRSS-master/pkrss/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=14,targetSdkVersion=<null>]
+2018-04-09 09:37:41,681 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/851/src/PkRSS-master/pkrss/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=14,targetSdkVersion=27]
+2018-04-09 09:37:41,681 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/851/src/PkRSS-master/local.properties
+2018-04-09 09:37:41,682 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-09 09:37:41,682 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-09 09:37:41,683 INFO  ProjectFixService - Build info for "/tmp/rdisk/851/src/PkRSS-master/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=14,targetSdkVersion=<null>]
+2018-04-09 09:37:41,683 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/851/src/PkRSS-master/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=14,targetSdkVersion=27]
+2018-04-09 09:37:41,683 INFO  ProjectFixService - Project was maybe fixed
+2018-04-09 09:37:41,683 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-09 09:37:41,683 INFO  SysUtils - Execute command: [/tmp/rdisk/851/src/PkRSS-master/gradlew, -b, /tmp/rdisk/851/src/PkRSS-master/pkrss/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-09 09:37:52,110 INFO  ProjectTaskService - Detected possible tasks: 68
+2018-04-09 09:37:52,110 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar androidJavadocs deviceCheck lint androidSourcesJar deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll androidJavadocsJar testRelease test check connectedAndroidTest lintRelease testDebug connectedAndroidTestDebug
+2018-04-09 09:37:52,110 INFO  SysUtils - Execute command: [/tmp/rdisk/851/src/PkRSS-master/gradlew, -b, /tmp/rdisk/851/src/PkRSS-master/pkrss/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, androidJavadocs, -x, deviceCheck, -x, lint, -x, androidSourcesJar, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, androidJavadocsJar, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, build]
+2018-04-09 09:38:01,780 INFO  SysUtils - Configuration on demand is an incubating feature.
+:pkrss:compileLint
+:pkrss:copyDebugLint UP-TO-DATE
+:pkrss:mergeDebugProguardFiles
+:pkrss:preBuild UP-TO-DATE
+:pkrss:preDebugBuild UP-TO-DATE
+:pkrss:checkDebugManifest
+:pkrss:prepareDebugDependencies
+:pkrss:compileDebugAidl
+:pkrss:compileDebugRenderscript
+:pkrss:generateDebugBuildConfig
+:pkrss:generateDebugAssets UP-TO-DATE
+:pkrss:mergeDebugAssets
+:pkrss:generateDebugResValues
+:pkrss:generateDebugResources
+:pkrss:packageDebugResources
+:pkrss:processDebugManifest
+:pkrss:processDebugResources
+:pkrss:generateDebugSources
+:pkrss:processDebugJavaRes UP-TO-DATE
+:pkrss:compileDebugJava
+:pkrss:packageDebugJar
+:pkrss:compileDebugNdk UP-TO-DATE
+:pkrss:packageDebugJniLibs UP-TO-DATE
+:pkrss:packageDebugLocalJar UP-TO-DATE
+:pkrss:packageDebugRenderscript UP-TO-DATE
+:pkrss:bundleDebug
+:pkrss:compileDebugSources
+:pkrss:assembleDebug
+:pkrss:copyReleaseLint UP-TO-DATE
+:pkrss:mergeReleaseProguardFiles
+:pkrss:preReleaseBuild UP-TO-DATE
+:pkrss:checkReleaseManifest
+:pkrss:prepareReleaseDependencies
+:pkrss:compileReleaseAidl
+:pkrss:compileReleaseRenderscript
+:pkrss:generateReleaseBuildConfig
+:pkrss:generateReleaseAssets UP-TO-DATE
+:pkrss:mergeReleaseAssets
+:pkrss:generateReleaseResValues
+:pkrss:generateReleaseResources
+:pkrss:packageReleaseResources
+:pkrss:processReleaseManifest
+:pkrss:processReleaseResources
+:pkrss:generateReleaseSources
+:pkrss:processReleaseJavaRes UP-TO-DATE
+:pkrss:compileReleaseJava
+:pkrss:packageReleaseJar
+:pkrss:compileReleaseNdk UP-TO-DATE
+:pkrss:packageReleaseJniLibs UP-TO-DATE
+:pkrss:packageReleaseLocalJar UP-TO-DATE
+:pkrss:packageReleaseRenderscript UP-TO-DATE
+:pkrss:bundleRelease
+:pkrss:compileReleaseSources
+:pkrss:assembleRelease
+:pkrss:signArchives SKIPPED
+:pkrss:assemble
+:pkrss:build
+
+BUILD SUCCESSFUL
+
+Total time: 9.238 secs
+
+2018-04-09 09:38:01,785 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-09 09:38:01,785 INFO  SysUtils - Execute command: [/tmp/rdisk/851/src/PkRSS-master/gradlew, -b, /tmp/rdisk/851/src/PkRSS-master/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-09 09:38:08,886 INFO  ProjectTaskService - Detected possible tasks: 68
+2018-04-09 09:38:08,887 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar androidJavadocs deviceCheck lint androidSourcesJar deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll androidJavadocsJar testRelease test check connectedAndroidTest lintRelease testDebug connectedAndroidTestDebug
+2018-04-09 09:38:08,887 INFO  SysUtils - Execute command: [/tmp/rdisk/851/src/PkRSS-master/gradlew, -b, /tmp/rdisk/851/src/PkRSS-master/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, androidJavadocs, -x, deviceCheck, -x, lint, -x, androidSourcesJar, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, androidJavadocsJar, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, build]
+2018-04-09 09:38:15,931 INFO  SysUtils - Configuration on demand is an incubating feature.
+:pkrss:compileLint
+:pkrss:copyDebugLint UP-TO-DATE
+:pkrss:mergeDebugProguardFiles UP-TO-DATE
+:pkrss:preBuild UP-TO-DATE
+:pkrss:preDebugBuild UP-TO-DATE
+:pkrss:checkDebugManifest
+:pkrss:prepareDebugDependencies
+:pkrss:compileDebugAidl UP-TO-DATE
+:pkrss:compileDebugRenderscript UP-TO-DATE
+:pkrss:generateDebugBuildConfig UP-TO-DATE
+:pkrss:generateDebugAssets UP-TO-DATE
+:pkrss:mergeDebugAssets UP-TO-DATE
+:pkrss:generateDebugResValues UP-TO-DATE
+:pkrss:generateDebugResources UP-TO-DATE
+:pkrss:packageDebugResources UP-TO-DATE
+:pkrss:processDebugManifest UP-TO-DATE
+:pkrss:processDebugResources UP-TO-DATE
+:pkrss:generateDebugSources UP-TO-DATE
+:pkrss:processDebugJavaRes UP-TO-DATE
+:pkrss:compileDebugJava UP-TO-DATE
+:pkrss:packageDebugJar UP-TO-DATE
+:pkrss:compileDebugNdk UP-TO-DATE
+:pkrss:packageDebugJniLibs UP-TO-DATE
+:pkrss:packageDebugLocalJar UP-TO-DATE
+:pkrss:packageDebugRenderscript UP-TO-DATE
+:pkrss:bundleDebug UP-TO-DATE
+:pkrss:compileDebugSources UP-TO-DATE
+:pkrss:assembleDebug UP-TO-DATE
+:pkrss:copyReleaseLint UP-TO-DATE
+:pkrss:mergeReleaseProguardFiles UP-TO-DATE
+:pkrss:preReleaseBuild UP-TO-DATE
+:pkrss:checkReleaseManifest
+:pkrss:prepareReleaseDependencies
+:pkrss:compileReleaseAidl UP-TO-DATE
+:pkrss:compileReleaseRenderscript UP-TO-DATE
+:pkrss:generateReleaseBuildConfig UP-TO-DATE
+:pkrss:generateReleaseAssets UP-TO-DATE
+:pkrss:mergeReleaseAssets UP-TO-DATE
+:pkrss:generateReleaseResValues UP-TO-DATE
+:pkrss:generateReleaseResources UP-TO-DATE
+:pkrss:packageReleaseResources UP-TO-DATE
+:pkrss:processReleaseManifest UP-TO-DATE
+:pkrss:processReleaseResources UP-TO-DATE
+:pkrss:generateReleaseSources UP-TO-DATE
+:pkrss:processReleaseJavaRes UP-TO-DATE
+:pkrss:compileReleaseJava UP-TO-DATE
+:pkrss:packageReleaseJar UP-TO-DATE
+:pkrss:compileReleaseNdk UP-TO-DATE
+:pkrss:packageReleaseJniLibs UP-TO-DATE
+:pkrss:packageReleaseLocalJar UP-TO-DATE
+:pkrss:packageReleaseRenderscript UP-TO-DATE
+:pkrss:bundleRelease UP-TO-DATE
+:pkrss:compileReleaseSources UP-TO-DATE
+:pkrss:assembleRelease UP-TO-DATE
+:pkrss:signArchives SKIPPED
+:pkrss:assemble
+:pkrss:build
+
+BUILD SUCCESSFUL
+
+Total time: 6.616 secs
+
+2018-04-09 09:38:15,936 ERROR FullProcessService - Project build has not produced APK file
+2018-04-09 09:38:15,941 ERROR FullProcessService - Could not find generated or existed APK file

@@ -1,0 +1,216 @@
+2018-05-14 06:21:45,359 INFO  DownloadService - Downloading "https://github.com/jpardogo/ListBuddies/archive/master.zip", attempt 3
+2018-05-14 06:21:46,564 INFO  DownloadService - Downloaded https://github.com/jpardogo/ListBuddies/archive/master.zip, attempt 3
+2018-05-14 06:21:46,564 INFO  DownloadService - Size of file "/tmp/rdisk/782/master.zip": 5 MB
+2018-05-14 06:21:46,564 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-05-14 06:21:46,564 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/782/master.zip: true
+2018-05-14 06:21:46,565 DEBUG ZipUtil - Extracting '/tmp/rdisk/782/master.zip' into '/tmp/rdisk/782/src'.
+2018-05-14 06:21:46,606 INFO  FullProcessService - Size of directory with sources: 5 MB
+2018-05-14 06:21:46,606 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/782/src]
+2018-05-14 06:21:46,614 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/782/src/.git/
+
+2018-05-14 06:21:46,618 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/782/src/ListBuddies-master/gradlew
+2018-05-14 06:21:46,622 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/782/src/ListBuddies-master/example/build.gradle /tmp/rdisk/782/src/ListBuddies-master/library/build.gradle /tmp/rdisk/782/src/ListBuddies-master/build.gradle
+2018-05-14 06:21:46,627 INFO  ProjectBuildService - All script(s): /tmp/rdisk/782/src/ListBuddies-master/settings.gradle /tmp/rdisk/782/src/ListBuddies-master/library/build.gradle /tmp/rdisk/782/src/ListBuddies-master/example/build.gradle /tmp/rdisk/782/src/ListBuddies-master/build.gradle
+2018-05-14 06:21:46,627 INFO  DownloadService - Downloading "https://raw.githubusercontent.com/jpardogo/gradle-mvn-push/master/gradle-mvn-push.gradle", attempt 3
+2018-05-14 06:21:46,820 INFO  DownloadService - Downloaded https://raw.githubusercontent.com/jpardogo/gradle-mvn-push/master/gradle-mvn-push.gradle, attempt 3
+2018-05-14 06:21:46,820 INFO  ProjectBuildService - Remote scripts: https://raw.githubusercontent.com/jpardogo/gradle-mvn-push/master/gradle-mvn-push.gradle
+2018-05-14 06:21:46,820 INFO  ProjectFixService - Fixing project...
+2018-05-14 06:21:46,835 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/782/src/ListBuddies-master/example/local.properties
+2018-05-14 06:21:46,837 INFO  ProjectFixService - Build info for "/tmp/rdisk/782/src/ListBuddies-master/example/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-05-14 06:21:46,837 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/782/src/ListBuddies-master/example/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-14 06:21:46,838 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/782/src/ListBuddies-master/library/local.properties
+2018-05-14 06:21:46,840 INFO  ProjectFixService - Build info for "/tmp/rdisk/782/src/ListBuddies-master/library/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-05-14 06:21:46,840 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/782/src/ListBuddies-master/library/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-14 06:21:46,841 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/782/src/ListBuddies-master/local.properties
+2018-05-14 06:21:46,841 INFO  WrapperPropertiesFixService - Gradle wrapper: http://services.gradle.org/distributions/gradle-1.11-all.zip
+2018-05-14 06:21:46,841 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (http://services.gradle.org/distributions/gradle-1.11-bin.zip)
+2018-05-14 06:21:46,843 INFO  ProjectFixService - Build info for "/tmp/rdisk/782/src/ListBuddies-master/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-05-14 06:21:46,843 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/782/src/ListBuddies-master/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-14 06:21:46,843 INFO  ProjectFixService - Project was maybe fixed
+2018-05-14 06:21:46,843 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-14 06:21:46,843 INFO  SysUtils - Execute command: [/tmp/rdisk/782/src/ListBuddies-master/gradlew, -b, /tmp/rdisk/782/src/ListBuddies-master/example/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-14 06:21:59,804 INFO  ProjectTaskService - Detected possible tasks: 53
+2018-05-14 06:21:59,804 INFO  ProjectTaskService - Excluded tasks (14): lintDebug androidJavadocs deviceCheck lint androidSourcesJar uninstallRelease connectedCheck uninstallAll androidJavadocsJar check connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-05-14 06:21:59,804 INFO  SysUtils - Execute command: [/tmp/rdisk/782/src/ListBuddies-master/gradlew, -b, /tmp/rdisk/782/src/ListBuddies-master/example/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, androidJavadocs, -x, deviceCheck, -x, lint, -x, androidSourcesJar, -x, uninstallRelease, -x, connectedCheck, -x, uninstallAll, -x, androidJavadocsJar, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-05-14 06:22:06,902 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-05-14 06:22:06,903 INFO  SysUtils - Configuration on demand is an incubating feature.
+Relying on packaging to define the extension of the main artifact has been deprecated and is scheduled to be removed in Gradle 2.0
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Task 'androidJavadocs' not found in project ':example'.
+
+* Try:
+Run gradlew tasks to get a list of available tasks. Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.execution.TaskSelectionException: Task 'androidJavadocs' not found in project ':example'.
+	at org.gradle.execution.TaskSelector.getSelection(TaskSelector.java:69)
+	at org.gradle.execution.ExcludedTaskFilteringBuildConfigurationAction.configure(ExcludedTaskFilteringBuildConfigurationAction.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.configure(DefaultBuildExecuter.java:42)
+	at org.gradle.execution.DefaultBuildExecuter.access$100(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$1.proceed(DefaultBuildExecuter.java:48)
+	at org.gradle.execution.DefaultTasksBuildExecutionAction.configure(DefaultTasksBuildExecutionAction.java:38)
+	at org.gradle.execution.DefaultBuildExecuter.configure(DefaultBuildExecuter.java:42)
+	at org.gradle.execution.DefaultBuildExecuter.access$100(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$1.proceed(DefaultBuildExecuter.java:48)
+	at org.gradle.execution.ProjectEvaluatingAction.configure(ProjectEvaluatingAction.java:52)
+	at org.gradle.execution.DefaultBuildExecuter.configure(DefaultBuildExecuter.java:42)
+	at org.gradle.execution.DefaultBuildExecuter.select(DefaultBuildExecuter.java:35)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:155)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:113)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:81)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:64)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:50)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:171)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:201)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:174)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:170)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:139)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:46)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.Main.main(Main.java:37)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:50)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:32)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:30)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:127)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:58)
+
+
+BUILD FAILED
+
+Total time: 6.636 secs
+
+2018-05-14 06:22:06,903 ERROR ProjectBuildService - Excluded tasks were detected wrong
+2018-05-14 06:22:06,903 INFO  SysUtils - Execute command: [/tmp/rdisk/782/src/ListBuddies-master/gradlew, -b, /tmp/rdisk/782/src/ListBuddies-master/example/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-05-14 06:22:41,638 INFO  SysUtils - Configuration on demand is an incubating feature.
+Relying on packaging to define the extension of the main artifact has been deprecated and is scheduled to be removed in Gradle 2.0
+:example:preBuild
+:example:compileDebugNdk
+:example:preDebugBuild
+:example:checkDebugManifest
+:example:preReleaseBuild
+:library:compileLint
+:library:copyReleaseLint UP-TO-DATE
+:library:preBuild
+:library:preReleaseBuild
+:library:checkReleaseManifest
+:library:preDebugBuild
+:library:preDebugTestBuild
+:library:prepareComAndroidSupportSupportV42000Library
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl
+:library:compileReleaseRenderscript
+:library:generateReleaseBuildConfig
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets
+:library:generateReleaseResValues
+:library:generateReleaseResources
+:library:mergeReleaseResources
+:library:processReleaseManifest
+:library:processReleaseResources
+:library:generateReleaseSources
+:library:compileReleaseJava
+:library:extractReleaseAnnotations
+:library:mergeReleaseProguardFiles
+:library:processReleaseJavaRes UP-TO-DATE
+:library:packageReleaseJar
+:library:compileReleaseNdk
+:library:packageReleaseJniLibs UP-TO-DATE
+:library:packageReleaseLocalJar UP-TO-DATE
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:packageReleaseResources
+:library:bundleRelease
+:example:prepareComAndroidSupportAppcompatV72000Library
+:example:prepareComAndroidSupportSupportV42000Library
+:example:prepareComJpardogoListbuddiesLibrary111Library
+:example:prepareDebugDependencies
+:example:compileDebugAidl
+:example:compileDebugRenderscript
+:example:generateDebugBuildConfig
+:example:generateDebugAssets UP-TO-DATE
+:example:mergeDebugAssets
+:example:generateDebugResValues
+:example:generateDebugResources
+:example:mergeDebugResources
+:example:processDebugManifest
+:example:processDebugResources
+:example:generateDebugSources
+:example:compileDebugJava
+:example:preDexDebug
+:example:dexDebug
+:example:processDebugJavaRes UP-TO-DATE
+:example:validateDebugSigning
+:example:packageDebug
+:example:zipalignDebug
+:example:assembleDebug
+:example:checkReleaseManifest
+:example:prepareReleaseDependencies
+:example:compileReleaseAidl
+:example:compileReleaseRenderscript
+:example:generateReleaseBuildConfig
+:example:generateReleaseAssets UP-TO-DATE
+:example:mergeReleaseAssets
+:example:generateReleaseResValues
+:example:generateReleaseResources
+:example:mergeReleaseResources
+:example:processReleaseManifest
+:example:processReleaseResources
+:example:generateReleaseSources
+:example:compileReleaseJava
+:example:lintVitalRelease SKIPPED
+:example:compileReleaseNdk
+:example:preDexRelease
+:example:dexRelease
+:example:processReleaseJavaRes UP-TO-DATE
+:example:packageRelease
+:example:assembleRelease
+:example:assemble
+:example:compileLint
+:example:lint
+Ran lint on variant debug: 45 issues found
+Ran lint on variant release: 45 issues found
+Wrote HTML report to file:/tmp/rdisk/782/src/ListBuddies-master/example/build/outputs/lint-results.html
+Wrote XML report to /tmp/rdisk/782/src/ListBuddies-master/example/build/outputs/lint-results.xml
+:example:check
+:example:build
+
+BUILD SUCCESSFUL
+
+Total time: 34.29 secs
+
+2018-05-14 06:22:41,682 INFO  FullProcessService - Found APK file: /tmp/rdisk/782/src/ListBuddies-master/example/build/outputs/apk/example-release-unsigned.apk

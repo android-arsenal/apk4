@@ -1,0 +1,195 @@
+2018-05-11 16:02:33,126 INFO  DownloadService - Downloading "https://github.com/freshplanet/ANE-Push-Notification/archive/master.zip", attempt 3
+2018-05-11 16:03:34,264 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-05-11 16:03:35,017 INFO  GithubDownloadService - Default branch of this repository: master
+2018-05-11 16:03:35,017 INFO  DownloadService - Downloading "https://github.com/freshplanet/ANE-Push-Notification/archive/master.zip", attempt 3
+2018-05-11 16:04:36,493 DEBUG FullProcessService - Repository https://github.com/freshplanet/ANE-Push-Notification available: true
+2018-05-11 16:04:36,493 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-05-11 16:04:36,493 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/freshplanet/ANE-Push-Notification, /tmp/rdisk/849/src]
+2018-05-11 16:04:38,931 INFO  SysUtils - 
+2018-05-11 16:04:38,936 INFO  GitService - Deleted "/tmp/rdisk/849/src/.git": true
+2018-05-11 16:04:38,940 INFO  FullProcessService - Size of directory with sources: 3 MB
+2018-05-11 16:04:38,940 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/849/src]
+2018-05-11 16:04:38,945 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/849/src/.git/
+
+2018-05-11 16:04:38,947 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/849/src/android/gradlew
+2018-05-11 16:04:38,950 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/849/src/android/lib/build.gradle /tmp/rdisk/849/src/android/build.gradle
+2018-05-11 16:04:38,953 INFO  ProjectBuildService - All script(s): /tmp/rdisk/849/src/android/settings.gradle /tmp/rdisk/849/src/android/lib/build.gradle /tmp/rdisk/849/src/android/gradle/wrapper.gradle /tmp/rdisk/849/src/android/build.gradle
+2018-05-11 16:04:38,954 INFO  ProjectBuildService - Remote scripts: none
+2018-05-11 16:04:38,954 INFO  ProjectFixService - Fixing project...
+2018-05-11 16:04:38,961 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/849/src/android/lib/local.properties
+2018-05-11 16:04:38,961 INFO  ProjectFixService - Build info for "/tmp/rdisk/849/src/android/lib/build.gradle": [buildToolsVersion=27.0.3,compileSdkVersion=27,minSdkVersion=16,targetSdkVersion=27]
+2018-05-11 16:04:38,961 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/849/src/android/local.properties
+2018-05-11 16:04:38,961 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-4.1-all.zip
+2018-05-11 16:04:38,962 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-4.1-bin.zip)
+2018-05-11 16:04:38,962 INFO  ProjectFixService - Build info for "/tmp/rdisk/849/src/android/build.gradle": [buildToolsVersion=27.0.3,compileSdkVersion=27,minSdkVersion=16,targetSdkVersion=27]
+2018-05-11 16:04:38,963 INFO  ProjectFixService - Project was maybe fixed
+2018-05-11 16:04:38,963 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-11 16:04:38,963 INFO  SysUtils - Execute command: [/tmp/rdisk/849/src/android/gradlew, -b, /tmp/rdisk/849/src/android/lib/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-11 16:04:46,875 INFO  ProjectTaskService - Detected possible tasks: 64
+2018-05-11 16:04:46,876 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-05-11 16:04:46,876 INFO  SysUtils - Execute command: [/tmp/rdisk/849/src/android/gradlew, -b, /tmp/rdisk/849/src/android/lib/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-05-11 16:05:01,977 INFO  SysUtils - Configuration on demand is an incubating feature.
+Configuration 'compile' in project ':lib' is deprecated. Use 'implementation' instead.
+:lib:preBuild UP-TO-DATE
+:lib:preDebugBuild UP-TO-DATE
+:lib:compileDebugAidl
+:lib:compileDebugNdk NO-SOURCE
+:lib:compileDebugRenderscript
+:lib:checkDebugManifest
+:lib:generateDebugBuildConfig
+:lib:prepareLintJar
+:lib:generateDebugResValues
+:lib:generateDebugResources
+:lib:packageDebugResources
+:lib:platformAttrExtractor
+:lib:processDebugManifest
+:lib:javaPreCompileDebug
+:lib:processDebugResources
+:lib:generateDebugSources
+:lib:compileDebugJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /tmp/rdisk/849/src/android/lib/src/main/java/me/leolin/shortcutbadger/impl/OPPOHomeBader.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:lib:extractDebugAnnotations
+:lib:mergeDebugShaders
+:lib:compileDebugShaders
+:lib:generateDebugAssets
+:lib:mergeDebugAssets
+:lib:mergeDebugConsumerProguardFiles
+:lib:packageDebugRenderscript NO-SOURCE
+:lib:processDebugJavaRes NO-SOURCE
+:lib:transformResourcesWithMergeJavaResForDebug
+:lib:transformClassesAndResourcesWithSyncLibJarsForDebug
+:lib:mergeDebugJniLibFolders
+:lib:transformNativeLibsWithMergeJniLibsForDebug
+:lib:transformNativeLibsWithStripDebugSymbolForDebug
+:lib:transformNativeLibsWithSyncJniLibsForDebug
+:lib:bundleDebug
+:lib:compileDebugSources
+:lib:assembleDebug
+:lib:preReleaseBuild UP-TO-DATE
+:lib:compileReleaseAidl
+:lib:compileReleaseNdk NO-SOURCE
+:lib:compileReleaseRenderscript
+:lib:checkReleaseManifest
+:lib:generateReleaseBuildConfig
+:lib:generateReleaseResValues
+:lib:generateReleaseResources
+:lib:packageReleaseResources
+:lib:processReleaseManifest
+:lib:processReleaseResources
+:lib:generateReleaseSources
+:lib:javaPreCompileRelease
+:lib:compileReleaseJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /tmp/rdisk/849/src/android/lib/src/main/java/me/leolin/shortcutbadger/impl/OPPOHomeBader.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:lib:extractReleaseAnnotations
+:lib:mergeReleaseShaders
+:lib:compileReleaseShaders
+:lib:generateReleaseAssets
+:lib:mergeReleaseAssets
+:lib:mergeReleaseConsumerProguardFiles
+:lib:packageReleaseRenderscript NO-SOURCE
+:lib:processReleaseJavaRes NO-SOURCE
+:lib:transformResourcesWithMergeJavaResForRelease
+:lib:transformClassesAndResourcesWithSyncLibJarsForRelease
+:lib:mergeReleaseJniLibFolders
+:lib:transformNativeLibsWithMergeJniLibsForRelease
+:lib:transformNativeLibsWithStripDebugSymbolForRelease
+:lib:transformNativeLibsWithSyncJniLibsForRelease
+:lib:bundleRelease
+:lib:compileReleaseSources
+:lib:mergeReleaseResources
+:lib:verifyReleaseResources
+:lib:assembleRelease
+:lib:assemble
+:lib:build
+
+BUILD SUCCESSFUL in 14s
+48 actionable tasks: 48 executed
+
+2018-05-11 16:05:02,002 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-11 16:05:02,002 INFO  SysUtils - Execute command: [/tmp/rdisk/849/src/android/gradlew, -b, /tmp/rdisk/849/src/android/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-11 16:05:09,351 INFO  ProjectTaskService - Detected possible tasks: 64
+2018-05-11 16:05:09,351 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-05-11 16:05:09,351 INFO  SysUtils - Execute command: [/tmp/rdisk/849/src/android/gradlew, -b, /tmp/rdisk/849/src/android/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-05-11 16:05:17,284 INFO  SysUtils - Configuration on demand is an incubating feature.
+Configuration 'compile' in project ':lib' is deprecated. Use 'implementation' instead.
+:lib:preBuild UP-TO-DATE
+:lib:preDebugBuild UP-TO-DATE
+:lib:compileDebugAidl UP-TO-DATE
+:lib:compileDebugNdk NO-SOURCE
+:lib:compileDebugRenderscript UP-TO-DATE
+:lib:checkDebugManifest UP-TO-DATE
+:lib:generateDebugBuildConfig UP-TO-DATE
+:lib:prepareLintJar UP-TO-DATE
+:lib:generateDebugResValues UP-TO-DATE
+:lib:generateDebugResources UP-TO-DATE
+:lib:packageDebugResources UP-TO-DATE
+:lib:platformAttrExtractor UP-TO-DATE
+:lib:processDebugManifest UP-TO-DATE
+:lib:processDebugResources UP-TO-DATE
+:lib:generateDebugSources UP-TO-DATE
+:lib:javaPreCompileDebug UP-TO-DATE
+:lib:compileDebugJavaWithJavac UP-TO-DATE
+:lib:extractDebugAnnotations UP-TO-DATE
+:lib:mergeDebugShaders UP-TO-DATE
+:lib:compileDebugShaders UP-TO-DATE
+:lib:generateDebugAssets UP-TO-DATE
+:lib:mergeDebugAssets UP-TO-DATE
+:lib:mergeDebugConsumerProguardFiles UP-TO-DATE
+:lib:packageDebugRenderscript NO-SOURCE
+:lib:processDebugJavaRes NO-SOURCE
+:lib:transformResourcesWithMergeJavaResForDebug UP-TO-DATE
+:lib:transformClassesAndResourcesWithSyncLibJarsForDebug UP-TO-DATE
+:lib:mergeDebugJniLibFolders UP-TO-DATE
+:lib:transformNativeLibsWithMergeJniLibsForDebug UP-TO-DATE
+:lib:transformNativeLibsWithStripDebugSymbolForDebug UP-TO-DATE
+:lib:transformNativeLibsWithSyncJniLibsForDebug UP-TO-DATE
+:lib:bundleDebug UP-TO-DATE
+:lib:compileDebugSources UP-TO-DATE
+:lib:assembleDebug UP-TO-DATE
+:lib:preReleaseBuild UP-TO-DATE
+:lib:compileReleaseAidl UP-TO-DATE
+:lib:compileReleaseNdk NO-SOURCE
+:lib:compileReleaseRenderscript UP-TO-DATE
+:lib:checkReleaseManifest UP-TO-DATE
+:lib:generateReleaseBuildConfig UP-TO-DATE
+:lib:generateReleaseResValues UP-TO-DATE
+:lib:generateReleaseResources UP-TO-DATE
+:lib:packageReleaseResources UP-TO-DATE
+:lib:processReleaseManifest UP-TO-DATE
+:lib:processReleaseResources UP-TO-DATE
+:lib:generateReleaseSources UP-TO-DATE
+:lib:javaPreCompileRelease UP-TO-DATE
+:lib:compileReleaseJavaWithJavac UP-TO-DATE
+:lib:extractReleaseAnnotations UP-TO-DATE
+:lib:mergeReleaseShaders UP-TO-DATE
+:lib:compileReleaseShaders UP-TO-DATE
+:lib:generateReleaseAssets UP-TO-DATE
+:lib:mergeReleaseAssets UP-TO-DATE
+:lib:mergeReleaseConsumerProguardFiles UP-TO-DATE
+:lib:packageReleaseRenderscript NO-SOURCE
+:lib:processReleaseJavaRes NO-SOURCE
+:lib:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:lib:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:lib:mergeReleaseJniLibFolders UP-TO-DATE
+:lib:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:lib:transformNativeLibsWithStripDebugSymbolForRelease UP-TO-DATE
+:lib:transformNativeLibsWithSyncJniLibsForRelease UP-TO-DATE
+:lib:bundleRelease UP-TO-DATE
+:lib:compileReleaseSources UP-TO-DATE
+:lib:mergeReleaseResources UP-TO-DATE
+:lib:verifyReleaseResources UP-TO-DATE
+:lib:assembleRelease UP-TO-DATE
+:lib:assemble UP-TO-DATE
+:lib:build
+
+BUILD SUCCESSFUL in 7s
+48 actionable tasks: 48 up-to-date
+
+2018-05-11 16:05:17,310 ERROR FullProcessService - Project build has not produced APK file
+2018-05-11 16:05:17,335 ERROR FullProcessService - Could not find generated or existed APK file

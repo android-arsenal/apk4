@@ -1,0 +1,4 @@
+{
+  "com.android.debug.hv" : [ "BuildConfig", "ViewServer", "ViewServer$1", "ViewServer$NoopViewServer", "ViewServer$UncloseableOutputStream", "ViewServer$ViewServerWorker", "ViewServer$WindowListener" ],
+  "com.android.debug.hv.sample" : [ "BuildConfig", "R", "R$attr", "R$drawable", "R$id", "R$layout", "R$string", "ViewServerActivity" ]
+}

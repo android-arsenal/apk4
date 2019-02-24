@@ -1,0 +1,135 @@
+2018-04-09 14:19:41,472 INFO  DownloadService - Downloading "https://github.com/baoyongzhang/android-ActionSheet/archive/master.zip", attempt 3
+2018-04-09 14:19:41,923 INFO  DownloadService - Downloaded https://github.com/baoyongzhang/android-ActionSheet/archive/master.zip, attempt 3
+2018-04-09 14:19:41,923 INFO  DownloadService - Size of file "/tmp/rdisk/784/master.zip": 168 KB
+2018-04-09 14:19:41,923 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-09 14:19:41,923 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/784/master.zip: true
+2018-04-09 14:19:41,924 DEBUG ZipUtil - Extracting '/tmp/rdisk/784/master.zip' into '/tmp/rdisk/784/src'.
+2018-04-09 14:19:41,934 INFO  FullProcessService - Size of directory with sources: 188 KB
+2018-04-09 14:19:41,934 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/784/src]
+2018-04-09 14:19:41,942 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/784/src/.git/
+
+2018-04-09 14:19:41,945 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/784/src/android-ActionSheet-master/gradlew
+2018-04-09 14:19:41,948 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/784/src/android-ActionSheet-master/demo/build.gradle /tmp/rdisk/784/src/android-ActionSheet-master/library/build.gradle /tmp/rdisk/784/src/android-ActionSheet-master/build.gradle
+2018-04-09 14:19:41,950 INFO  ProjectBuildService - All script(s): /tmp/rdisk/784/src/android-ActionSheet-master/settings.gradle /tmp/rdisk/784/src/android-ActionSheet-master/library/build.gradle /tmp/rdisk/784/src/android-ActionSheet-master/demo/build.gradle /tmp/rdisk/784/src/android-ActionSheet-master/build.gradle
+2018-04-09 14:19:41,951 INFO  ProjectBuildService - Remote scripts: none
+2018-04-09 14:19:41,951 INFO  ProjectFixService - Fixing project...
+2018-04-09 14:19:41,958 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/784/src/android-ActionSheet-master/demo/local.properties
+2018-04-09 14:19:41,961 INFO  ProjectFixService - Build info for "/tmp/rdisk/784/src/android-ActionSheet-master/demo/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=8,targetSdkVersion=22]
+2018-04-09 14:19:41,962 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/784/src/android-ActionSheet-master/library/local.properties
+2018-04-09 14:19:41,963 INFO  ProjectFixService - Build info for "/tmp/rdisk/784/src/android-ActionSheet-master/library/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=8,targetSdkVersion=22]
+2018-04-09 14:19:41,963 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/784/src/android-ActionSheet-master/local.properties
+2018-04-09 14:19:41,965 INFO  ProjectFixService - Build info for "/tmp/rdisk/784/src/android-ActionSheet-master/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=8,targetSdkVersion=22]
+2018-04-09 14:19:41,965 INFO  ProjectFixService - Project was maybe fixed
+2018-04-09 14:19:41,965 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-09 14:19:41,965 INFO  SysUtils - Execute command: [/tmp/rdisk/784/src/android-ActionSheet-master/gradlew, -b, /tmp/rdisk/784/src/android-ActionSheet-master/demo/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-09 14:19:42,108 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-09 14:19:42,108 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-09 14:19:42,109 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-09 14:19:42,110 INFO  SysUtils - Execute command: [/tmp/rdisk/784/src/android-ActionSheet-master/gradlew, -b, /tmp/rdisk/784/src/android-ActionSheet-master/demo/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-09 14:19:42,246 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-09 14:19:42,246 INFO  SysUtils - Exception in thread "main" java.lang.RuntimeException: Wrapper properties file '/tmp/rdisk/784/src/android-ActionSheet-master/gradle/wrapper/gradle-wrapper.properties' does not exist.
+	at org.gradle.wrapper.WrapperExecutor.forWrapperPropertiesFile(WrapperExecutor.java:45)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:60)
+
+2018-04-09 14:19:42,250 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-09 14:19:42,250 INFO  SysUtils - Execute command: [/tmp/rdisk/784/src/android-ActionSheet-master/gradlew, -b, /tmp/rdisk/784/src/android-ActionSheet-master/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-09 14:19:42,384 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-09 14:19:42,384 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-09 14:19:42,384 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-09 14:19:42,385 INFO  SysUtils - Execute command: [/tmp/rdisk/784/src/android-ActionSheet-master/gradlew, -b, /tmp/rdisk/784/src/android-ActionSheet-master/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-09 14:19:42,525 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-09 14:19:42,525 INFO  SysUtils - Exception in thread "main" java.lang.RuntimeException: Wrapper properties file '/tmp/rdisk/784/src/android-ActionSheet-master/gradle/wrapper/gradle-wrapper.properties' does not exist.
+	at org.gradle.wrapper.WrapperExecutor.forWrapperPropertiesFile(WrapperExecutor.java:45)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:60)
+
+2018-04-09 14:19:42,528 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-09 14:19:42,529 INFO  SysUtils - Execute command: [/tmp/rdisk/784/src/android-ActionSheet-master/gradlew, -b, /tmp/rdisk/784/src/android-ActionSheet-master/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-09 14:19:42,677 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-09 14:19:42,678 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-09 14:19:42,678 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-09 14:19:42,678 INFO  SysUtils - Execute command: [/tmp/rdisk/784/src/android-ActionSheet-master/gradlew, -b, /tmp/rdisk/784/src/android-ActionSheet-master/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-09 14:19:42,822 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-09 14:19:42,822 INFO  SysUtils - Exception in thread "main" java.lang.RuntimeException: Wrapper properties file '/tmp/rdisk/784/src/android-ActionSheet-master/gradle/wrapper/gradle-wrapper.properties' does not exist.
+	at org.gradle.wrapper.WrapperExecutor.forWrapperPropertiesFile(WrapperExecutor.java:45)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:60)
+
+2018-04-09 14:19:42,825 ERROR FullProcessService - Project build has not produced APK file
+2018-04-09 14:19:42,827 ERROR FullProcessService - Could not find generated or existed APK file

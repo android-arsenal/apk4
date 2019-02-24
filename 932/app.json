@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.github.siyamed.shapeimageview.sample",
+    "label" : "Shape Image View",
+    "icon" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "versionName" : "1.0",
+    "versionCode" : 3,
+    "installLocation" : null,
+    "minSdkVersion" : "9",
+    "targetSdkVersion" : "23",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ "android.permission.INTERNET", "android.permission.ACCESS_NETWORK_STATE", "android.permission.WRITE_EXTERNAL_STORAGE", "android.permission.READ_EXTERNAL_STORAGE" ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "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"
+  },
+  "dexClasses" : 1570,
+  "locales" : [ "", "az_AZ", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "sq_AL", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bn_BD", "fa", "gu_IN", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "pa_IN", "af", "en_AU", "in", "vi", "fr_CA", "sr", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"3\" android:versionName=\"1.0\" package=\"com.github.siyamed.shapeimageview.sample\" platformBuildVersionCode=\"23\" platformBuildVersionName=\"6.0-2704002\">\n\t<uses-sdk android:minSdkVersion=\"9\" android:targetSdkVersion=\"23\" />\n\t<uses-permission android:name=\"android.permission.INTERNET\" />\n\t<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />\n\t<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />\n\t<uses-permission android:name=\"android.permission.READ_EXTERNAL_STORAGE\" />\n\t<application android:theme=\"resourceId:0x7f08007e\" android:label=\"Shape Image View\" android:icon=\"res/drawable-mdpi-v4/ic_launcher.png\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"Shape Image View\" android:name=\"com.github.siyamed.shapeimageview.sample.SampleActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 1350790,
+  "crc32" : 801864571,
+  "sha256" : "9201f1236b66a99b794f8c18ba0b5c88d79bbb30402cf462cd1a20904634ea9e",
+  "buildTime" : 1523201231000
+}

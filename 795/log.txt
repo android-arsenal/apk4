@@ -1,0 +1,10 @@
+2018-04-09 14:15:43,216 INFO  DownloadService - Downloading "https://github.com/KeepSafe/android-resource-remover/archive/master.zip", attempt 3
+2018-04-09 14:15:43,975 INFO  DownloadService - Downloaded https://github.com/KeepSafe/android-resource-remover/archive/master.zip, attempt 3
+2018-04-09 14:15:43,975 INFO  DownloadService - Size of file "/tmp/rdisk/795/master.zip": 65 KB
+2018-04-09 14:15:43,975 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-09 14:15:43,976 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/795/master.zip: false
+2018-04-09 14:15:43,976 INFO  FullProcessService - Archive with sources does not contain any build script
+2018-04-09 14:15:43,976 ERROR FullProcessService - Could not find directory with sources
+2018-04-09 14:15:43,976 ERROR FullProcessService - Project will not be processed
+2018-04-09 14:15:43,976 ERROR FullProcessService - Project build has not produced APK file
+2018-04-09 14:15:43,977 ERROR FullProcessService - Could not find generated or existed APK file

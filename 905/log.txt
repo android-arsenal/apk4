@@ -1,0 +1,163 @@
+2018-04-08 15:41:43,327 INFO  DownloadService - Downloading "https://github.com/vanatka/auth0client/archive/master.zip", attempt 3
+2018-04-08 15:41:43,832 INFO  DownloadService - Downloaded https://github.com/vanatka/auth0client/archive/master.zip, attempt 3
+2018-04-08 15:41:43,832 INFO  DownloadService - Size of file "/tmp/rdisk/905/master.zip": 182 KB
+2018-04-08 15:41:43,832 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-08 15:41:43,832 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/905/master.zip: true
+2018-04-08 15:41:43,832 DEBUG ZipUtil - Extracting '/tmp/rdisk/905/master.zip' into '/tmp/rdisk/905/src'.
+2018-04-08 15:41:43,843 INFO  FullProcessService - Size of directory with sources: 202 KB
+2018-04-08 15:41:43,843 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/905/src]
+2018-04-08 15:41:43,849 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/905/src/.git/
+
+2018-04-08 15:41:43,852 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/905/src/auth0client-master/gradlew
+2018-04-08 15:41:43,855 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/905/src/auth0client-master/Auth0Client/build.gradle /tmp/rdisk/905/src/auth0client-master/app/build.gradle /tmp/rdisk/905/src/auth0client-master/build.gradle
+2018-04-08 15:41:43,858 INFO  ProjectBuildService - All script(s): /tmp/rdisk/905/src/auth0client-master/settings.gradle /tmp/rdisk/905/src/auth0client-master/maven_push.gradle /tmp/rdisk/905/src/auth0client-master/build.gradle /tmp/rdisk/905/src/auth0client-master/app/build.gradle /tmp/rdisk/905/src/auth0client-master/Auth0Client/build.gradle
+2018-04-08 15:41:43,858 INFO  ProjectBuildService - Remote scripts: none
+2018-04-08 15:41:43,858 INFO  ProjectFixService - Fixing project...
+2018-04-08 15:41:43,869 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/905/src/auth0client-master/Auth0Client/local.properties
+2018-04-08 15:41:43,870 INFO  ProjectFixService - Build info for "/tmp/rdisk/905/src/auth0client-master/Auth0Client/build.gradle": [buildToolsVersion=20.0.0,compileSdkVersion=20,minSdkVersion=7,targetSdkVersion=7]
+2018-04-08 15:41:43,870 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/905/src/auth0client-master/app/local.properties
+2018-04-08 15:41:43,870 INFO  ProjectFixService - Build info for "/tmp/rdisk/905/src/auth0client-master/app/build.gradle": [buildToolsVersion=20.0.0,compileSdkVersion=20,minSdkVersion=7,targetSdkVersion=7]
+2018-04-08 15:41:43,870 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/905/src/auth0client-master/local.properties
+2018-04-08 15:41:43,871 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-1.12-bin.zip
+2018-04-08 15:41:43,873 INFO  ProjectFixService - Build info for "/tmp/rdisk/905/src/auth0client-master/build.gradle": [buildToolsVersion=20.0.0,compileSdkVersion=20,minSdkVersion=7,targetSdkVersion=7]
+2018-04-08 15:41:43,873 INFO  ProjectFixService - Project was maybe fixed
+2018-04-08 15:41:43,873 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-08 15:41:43,873 INFO  SysUtils - Execute command: [/tmp/rdisk/905/src/auth0client-master/gradlew, -b, /tmp/rdisk/905/src/auth0client-master/Auth0Client/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-08 15:46:23,751 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-08 15:46:23,751 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-08 15:46:23,751 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-08 15:46:23,751 INFO  SysUtils - Execute command: [/tmp/rdisk/905/src/auth0client-master/gradlew, -b, /tmp/rdisk/905/src/auth0client-master/Auth0Client/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-08 15:50:44,374 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-08 15:50:44,374 INFO  SysUtils - Configuration on demand is an incubating feature.
+Error listing versions of com.android.tools.build:gradle using class org.gradle.api.internal.artifacts.repositories.resolver.MavenVersionLister$1. Will attempt an alternate way to list versions. This behaviour has been deprecated and is scheduled to be removed in Gradle 2.0
+DEBUG BUILD
+Relying on packaging to define the extension of the main artifact has been deprecated and is scheduled to be removed in Gradle 2.0
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Script '/tmp/rdisk/905/src/auth0client-master/maven_push.gradle' line: 22
+
+* What went wrong:
+A problem occurred configuring project ':Auth0Client'.
+> No such property: nexusUsername for class: org.gradle.api.publication.maven.internal.ant.DefaultGroovyMavenDeployer
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.ProjectConfigurationException: A problem occurred configuring project ':Auth0Client'.
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.addConfigurationFailure(LifecycleProjectEvaluator.java:79)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.notifyAfterEvaluate(LifecycleProjectEvaluator.java:74)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.evaluate(LifecycleProjectEvaluator.java:61)
+	at org.gradle.api.internal.project.AbstractProject.evaluate(AbstractProject.java:493)
+	at org.gradle.api.internal.project.AbstractProject.evaluate(AbstractProject.java:80)
+	at org.gradle.execution.TaskPathProjectEvaluator.evaluateByPath(TaskPathProjectEvaluator.java:41)
+	at org.gradle.execution.ProjectEvaluatingAction.configure(ProjectEvaluatingAction.java:50)
+	at org.gradle.execution.DefaultBuildExecuter.configure(DefaultBuildExecuter.java:42)
+	at org.gradle.execution.DefaultBuildExecuter.select(DefaultBuildExecuter.java:35)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:155)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:113)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:81)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:64)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:50)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:171)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:201)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:174)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:170)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:139)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:46)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.Main.main(Main.java:37)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:50)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:32)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:30)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:127)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:55)
+Caused by: groovy.lang.MissingPropertyException: No such property: nexusUsername for class: org.gradle.api.publication.maven.internal.ant.DefaultGroovyMavenDeployer
+	at maven_push_6mjja6eejdn2512eo62c7sj8ra$_run_closure1_closure2_closure8_closure9_closure11.doCall(/tmp/rdisk/905/src/auth0client-master/maven_push.gradle:22)
+	at maven_push_6mjja6eejdn2512eo62c7sj8ra$_run_closure1_closure2_closure8_closure9_closure11.doCall(/tmp/rdisk/905/src/auth0client-master/maven_push.gradle)
+	at org.gradle.api.publication.maven.internal.ant.DefaultGroovyMavenDeployer.methodMissing(DefaultGroovyMavenDeployer.groovy:36)
+	at org.gradle.api.publication.maven.internal.ant.DefaultGroovyMavenDeployer.invokeMethod(DefaultGroovyMavenDeployer.groovy)
+	at maven_push_6mjja6eejdn2512eo62c7sj8ra$_run_closure1_closure2_closure8_closure9.doCall(/tmp/rdisk/905/src/auth0client-master/maven_push.gradle:21)
+	at org.gradle.api.internal.ClosureBackedAction.execute(ClosureBackedAction.java:58)
+	at org.gradle.api.internal.artifacts.DefaultArtifactRepositoryContainer.addRepository(DefaultArtifactRepositoryContainer.java:185)
+	at org.gradle.api.publication.maven.internal.DefaultMavenRepositoryHandlerConvention.mavenDeployer(DefaultMavenRepositoryHandlerConvention.java:43)
+	at org.gradle.api.internal.BeanDynamicObject$MetaClassAdapter.invokeMethod(BeanDynamicObject.java:225)
+	at org.gradle.api.internal.BeanDynamicObject.invokeMethod(BeanDynamicObject.java:129)
+	at org.gradle.api.internal.plugins.DefaultConvention$ExtensionsDynamicObject.invokeMethod(DefaultConvention.java:218)
+	at org.gradle.api.internal.CompositeDynamicObject.invokeMethod(CompositeDynamicObject.java:147)
+	at org.gradle.api.internal.CompositeDynamicObject.invokeMethod(CompositeDynamicObject.java:147)
+	at org.gradle.api.internal.artifacts.dsl.DefaultRepositoryHandler_Decorated.invokeMethod(Unknown Source)
+	at maven_push_6mjja6eejdn2512eo62c7sj8ra$_run_closure1_closure2_closure8.doCall(/tmp/rdisk/905/src/auth0client-master/maven_push.gradle:16)
+	at org.gradle.api.internal.ClosureBackedAction.execute(ClosureBackedAction.java:58)
+	at org.gradle.util.ConfigureUtil.configure(ConfigureUtil.java:130)
+	at org.gradle.util.ConfigureUtil.configure(ConfigureUtil.java:110)
+	at org.gradle.api.internal.artifacts.DefaultArtifactRepositoryContainer.configure(DefaultArtifactRepositoryContainer.java:73)
+	at org.gradle.api.internal.artifacts.DefaultArtifactRepositoryContainer.configure(DefaultArtifactRepositoryContainer.java:41)
+	at org.gradle.api.internal.ClosureBackedAction.execute(ClosureBackedAction.java:50)
+	at org.gradle.util.ConfigureUtil.configure(ConfigureUtil.java:130)
+	at org.gradle.util.ConfigureUtil.configure(ConfigureUtil.java:91)
+	at org.gradle.api.tasks.Upload.repositories(Upload.java:118)
+	at maven_push_6mjja6eejdn2512eo62c7sj8ra$_run_closure1_closure2.doCall(/tmp/rdisk/905/src/auth0client-master/maven_push.gradle:15)
+	at org.gradle.api.internal.ClosureBackedAction.execute(ClosureBackedAction.java:58)
+	at org.gradle.util.ConfigureUtil.configure(ConfigureUtil.java:130)
+	at org.gradle.util.ConfigureUtil.configure(ConfigureUtil.java:110)
+	at org.gradle.api.internal.AbstractTask.configure(AbstractTask.java:439)
+	at org.gradle.api.internal.AbstractTask.configure(AbstractTask.java:59)
+	at org.gradle.api.internal.ClosureBackedAction.execute(ClosureBackedAction.java:50)
+	at org.gradle.util.ConfigureUtil.configure(ConfigureUtil.java:130)
+	at org.gradle.util.ConfigureUtil.configure(ConfigureUtil.java:91)
+	at org.gradle.api.internal.DefaultNamedDomainObjectCollection$ContainerElementsDynamicObject.invokeMethod(DefaultNamedDomainObjectCollection.java:324)
+	at org.gradle.api.internal.CompositeDynamicObject.invokeMethod(CompositeDynamicObject.java:147)
+	at org.gradle.groovy.scripts.BasicScript.methodMissing(BasicScript.java:79)
+	at maven_push_6mjja6eejdn2512eo62c7sj8ra$_run_closure1.doCall(/tmp/rdisk/905/src/auth0client-master/maven_push.gradle:14)
+	at org.gradle.listener.ClosureBackedMethodInvocationDispatch.dispatch(ClosureBackedMethodInvocationDispatch.java:40)
+	at org.gradle.listener.ClosureBackedMethodInvocationDispatch.dispatch(ClosureBackedMethodInvocationDispatch.java:25)
+	at org.gradle.listener.BroadcastDispatch.dispatch(BroadcastDispatch.java:83)
+	at org.gradle.listener.BroadcastDispatch.dispatch(BroadcastDispatch.java:31)
+	at org.gradle.messaging.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy12.afterEvaluate(Unknown Source)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.notifyAfterEvaluate(LifecycleProjectEvaluator.java:67)
+	... 32 more
+
+
+BUILD FAILED
+
+Total time: 4 mins 20.153 secs
+
+2018-04-08 15:50:44,377 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-08 15:50:44,377 INFO  SysUtils - Execute command: [/tmp/rdisk/905/src/auth0client-master/gradlew, -b, /tmp/rdisk/905/src/auth0client-master/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]

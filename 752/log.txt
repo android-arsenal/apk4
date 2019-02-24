@@ -1,0 +1,111 @@
+2018-04-09 17:33:52,162 INFO  DownloadService - Downloading "https://github.com/nhaarman/supertooltips/archive/master.zip", attempt 3
+2018-04-09 17:33:52,578 INFO  DownloadService - Downloaded https://github.com/nhaarman/supertooltips/archive/master.zip, attempt 3
+2018-04-09 17:33:52,578 INFO  DownloadService - Size of file "/tmp/rdisk/752/master.zip": 130 KB
+2018-04-09 17:33:52,578 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-09 17:33:52,579 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/752/master.zip: true
+2018-04-09 17:33:52,579 DEBUG ZipUtil - Extracting '/tmp/rdisk/752/master.zip' into '/tmp/rdisk/752/src'.
+2018-04-09 17:33:52,588 INFO  FullProcessService - Size of directory with sources: 167 KB
+2018-04-09 17:33:52,588 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/752/src]
+2018-04-09 17:33:52,600 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/752/src/.git/
+
+2018-04-09 17:33:52,603 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/752/src/supertooltips-master/gradlew
+2018-04-09 17:33:52,605 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/752/src/supertooltips-master/app/build.gradle /tmp/rdisk/752/src/supertooltips-master/lib/build.gradle /tmp/rdisk/752/src/supertooltips-master/build.gradle
+2018-04-09 17:33:52,607 INFO  ProjectBuildService - All script(s): /tmp/rdisk/752/src/supertooltips-master/settings.gradle /tmp/rdisk/752/src/supertooltips-master/lib/pushMaven.gradle /tmp/rdisk/752/src/supertooltips-master/lib/build.gradle /tmp/rdisk/752/src/supertooltips-master/build.gradle /tmp/rdisk/752/src/supertooltips-master/app/build.gradle
+2018-04-09 17:33:52,608 INFO  ProjectBuildService - Remote scripts: none
+2018-04-09 17:33:52,608 INFO  ProjectFixService - Fixing project...
+2018-04-09 17:33:52,615 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/752/src/supertooltips-master/app/local.properties
+2018-04-09 17:33:52,616 INFO  ProjectFixService - Build info for "/tmp/rdisk/752/src/supertooltips-master/app/build.gradle": [buildToolsVersion=19.0.3,compileSdkVersion=19,minSdkVersion=8,targetSdkVersion=19]
+2018-04-09 17:33:52,616 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/752/src/supertooltips-master/app/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=19,minSdkVersion=8,targetSdkVersion=19]
+2018-04-09 17:33:52,616 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/752/src/supertooltips-master/lib/local.properties
+2018-04-09 17:33:52,617 INFO  ProjectFixService - Build info for "/tmp/rdisk/752/src/supertooltips-master/lib/build.gradle": [buildToolsVersion=19.0.3,compileSdkVersion=19,minSdkVersion=8,targetSdkVersion=19]
+2018-04-09 17:33:52,617 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/752/src/supertooltips-master/lib/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=19,minSdkVersion=8,targetSdkVersion=19]
+2018-04-09 17:33:52,618 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/752/src/supertooltips-master/local.properties
+2018-04-09 17:33:52,618 INFO  WrapperPropertiesFixService - Gradle wrapper: http://services.gradle.org/distributions/gradle-1.10-all.zip
+2018-04-09 17:33:52,618 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (http://services.gradle.org/distributions/gradle-1.10-bin.zip)
+2018-04-09 17:33:52,620 INFO  ProjectFixService - Build info for "/tmp/rdisk/752/src/supertooltips-master/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=19,minSdkVersion=8,targetSdkVersion=19]
+2018-04-09 17:33:52,621 INFO  ProjectFixService - Project was maybe fixed
+2018-04-09 17:33:52,621 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-09 17:33:52,621 INFO  SysUtils - Execute command: [/tmp/rdisk/752/src/supertooltips-master/gradlew, -b, /tmp/rdisk/752/src/supertooltips-master/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-09 17:34:07,947 INFO  ProjectTaskService - Detected possible tasks: 49
+2018-04-09 17:34:07,947 INFO  ProjectTaskService - Excluded tasks (11): lintDebug deviceCheck lint uninstallRelease connectedCheck uninstallAll check connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-09 17:34:07,947 INFO  SysUtils - Execute command: [/tmp/rdisk/752/src/supertooltips-master/gradlew, -b, /tmp/rdisk/752/src/supertooltips-master/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-09 17:34:22,714 INFO  SysUtils - Configuration on demand is an incubating feature.
+DEBUG BUILD 3.0.0-SNAPSHOT
+:app:compileDebugNdk
+:app:preBuild
+:app:preDebugBuild
+:app:checkDebugManifest
+:app:preReleaseBuild
+:lib:compileLint
+:lib:copyReleaseLint UP-TO-DATE
+:lib:mergeReleaseProguardFiles
+:lib:packageReleaseAidl UP-TO-DATE
+:lib:preBuild
+:lib:preReleaseBuild
+:lib:checkReleaseManifest
+:lib:prepareReleaseDependencies
+:lib:compileReleaseAidl
+:lib:compileReleaseRenderscript
+:lib:generateReleaseBuildConfig
+:lib:mergeReleaseAssets
+:lib:generateReleaseResValues
+:lib:generateReleaseResources
+:lib:packageReleaseResources
+:lib:processReleaseManifest
+:lib:processReleaseResources
+:lib:generateReleaseSources
+:lib:compileReleaseJava
+:lib:processReleaseJavaRes UP-TO-DATE
+:lib:packageReleaseJar
+:lib:compileReleaseNdk
+:lib:packageReleaseJniLibs UP-TO-DATE
+:lib:packageReleaseLocalJar UP-TO-DATE
+:lib:packageReleaseRenderscript UP-TO-DATE
+:lib:bundleRelease
+:app:prepareComNhaarmanSupertooltipsLib300SNAPSHOTLibrary
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:compileDebugJava
+:app:preDexDebug
+:app:dexDebug
+:app:processDebugJavaRes UP-TO-DATE
+:app:validateDebugSigning
+:app:packageDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:compileReleaseJava
+:app:lintVitalRelease
+:app:compileReleaseNdk
+:app:preDexRelease
+:app:dexRelease
+:app:processReleaseJavaRes UP-TO-DATE
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 14.355 secs
+
+2018-04-09 17:34:22,727 INFO  FullProcessService - Found APK file: /tmp/rdisk/752/src/supertooltips-master/app/build/apk/app-release-unsigned.apk

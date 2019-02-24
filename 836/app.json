@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "org.kymjs.kjframe",
+    "label" : "爱看博客",
+    "icon" : "res/drawable-ldpi-v4/icon.png",
+    "versionName" : "1.5",
+    "versionCode" : 7,
+    "installLocation" : null,
+    "minSdkVersion" : "11",
+    "targetSdkVersion" : "23",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ "android.permission.INTERNET", "android.permission.WRITE_EXTERNAL_STORAGE", "android.permission.READ_PHONE_STATE", "android.permission.CHANGE_WIFI_STATE", "android.permission.ACCESS_NETWORK_STATE", "android.permission.RECORD_AUDIO", "android.permission.MOUNT_UNMOUNT_FILESYSTEMS", "android.permission.VIBRATE" ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-ldpi-v4/icon.png",
+    "density" : 0,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAABmFBMVEUAAADsTzjrTzjrTjnqUDjrTzjqUDj/AADrTzjrTzfsUDfrTzjrTzjjVTnrTzjrTznsTDnqUDjvUEDrTzjrTzjrTjvrTznpTznrTznpTjfrTzjqTjnrUDnrTjfrTjfrTzjqTzjqTznrTzfqTzjrTjvrTzjqUDnsUTjrTzjrTjbsTTrrTzjqUDr/QEDrTzjbSUnsTzjrTzjxVTnsTzjrTzfqUDjqUDjrTzjsUDnsTzjrTzjpUDroTTbrTjjrTzjrUDjtUDfsTzfpTjfrTzjoRi7/VSvrTjjrTzjrTzjrTzfrUDnqTzjrTjjtTTXfQEDrTzjuVTPrTzj/VVXuTTzpUTbsTzfrTzjrTjjqTzjqUDfsTjjsUDjqSjX/gADsUDnrUDfsUDnrTzjrTznsTjnqTzjrTzjrTzjrUDnqVUDrUDjrUjPsTzjrTzjrTzjrTzjrUDjrUDnrTjjsUDjqTjftUjfrTznrTjnrTjjsTTbpTznuUTrrTzjtSTfrTzjrTjjqTzftTjftUTrrUDfsUDfrUDfqTjjsUDnrTziOX2rAAAAAiHRSTlMAnvGCrfBtAcTvXP/lCfvLG7oQ/u0n1DrCLtFIvVimpYiUmHoa6WMp9Es1+TAE2wfSyBLfr0mT/Das9SMho/2NRngX4AsGjL5x2FnT6isI+g/3Ax4vuKiJV4ZfgxgCQ2aQ7uZs7Nm3cAzaGZ/o9uHNsKlpbxyi3U5CRyzODvKWSkU5c119fFC8SmQf2QAAAdBJREFUSMfVlOlT01AUR2MRSj1QalMBccO1YtkEUUHWIoKCYgUVwaK4AAoIKGKpG6DCv8170ZkASW7TGT/o/XImM78zb7s3hvGv14FAgcWDhUUaweLQITEfDFGiWRqmTDMCh0UhahLTPALlmhVQKQpHoUrzGBzXPAEnRaEITmlWw2nNM3BWyp87DxcU4xehRvFSArNWyNdVQn2DOnIjXA4aRlMzXJEWKACzRfEqXLuu2AptN4R8ewI69Mk7oUuxG+iRFuiBUPL3iXtvKnaou+2TBLWDW5r9MKB5G+6IdzoI3fq1h+Cu4r1hSIptEYCI4n2ThN5Ju9phUBIawqQeKI6oI+jv0T+v7ll9KQat1zN5qBmHR3JrtzyOWxx7MmJxfOLpXxub9OQzocadCz1HrClHf7yQBV7uF17lEBKx19Mzs3kIVr15m6fAXL7CvC0M+RIWbOGdL6HXFhZ9CUu2sOxLeG8LH/zkp6K2sBLOne8c2/3UH3PmVz/t6Y2VmJBtrcisZdP7uimT8sx//uI6EmtfPfLFTR5DVOve48ulnmOXDbjkv6WFQc1+d9S6+GPa2HTUD/FX8NPlhkThl1NYFIUtccjc/sYTob3x4e2k8T/UDtY/bpMSa11dAAAAAElFTkSuQmCC"
+  },
+  "dexClasses" : 2547,
+  "locales" : [ "", "az_AZ", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "sq_AL", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bn_BD", "fa", "gu_IN", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "pa_IN", "af", "en_AU", "in", "vi", "fr_CA", "sr", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"7\" android:versionName=\"1.5\" package=\"org.kymjs.kjframe\" platformBuildVersionCode=\"23\" platformBuildVersionName=\"6.0-2704002\">\n\t<uses-sdk android:minSdkVersion=\"11\" android:targetSdkVersion=\"23\" />\n\t<uses-permission android:name=\"android.permission.INTERNET\" />\n\t<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />\n\t<uses-permission android:name=\"android.permission.READ_PHONE_STATE\" />\n\t<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\" />\n\t<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />\n\t<uses-permission android:name=\"android.permission.RECORD_AUDIO\" />\n\t<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\" />\n\t<uses-permission android:name=\"android.permission.VIBRATE\" />\n\t<application android:theme=\"resourceId:0x7f07007f\" android:label=\"爱看博客\" android:icon=\"res/drawable-ldpi-v4/icon.png\" android:name=\"org.kymjs.blog.AppContext\" android:debuggable=\"true\" android:allowBackup=\"true\">\n\t\t<activity android:theme=\"@android:style/Theme.NoTitleBar\" android:label=\"爱看博客\" android:name=\"org.kymjs.blog.ui.AppStart\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<activity android:name=\"org.kymjs.blog.ui.Main\" />\n\t\t<activity android:name=\"org.kymjs.blog.ui.SimpleBackActivity\" />\n\t\t<activity android:name=\"org.kymjs.blog.ui.Browser\" />\n\t\t<activity android:name=\"org.kymjs.blog.ui.MyBlogBrowser\" />\n\t\t<activity android:theme=\"@android:style/Theme.NoTitleBar\" android:name=\"org.kymjs.blog.ui.Splash\" />\n\t\t<activity android:theme=\"@android:style/Theme.NoTitleBar\" android:name=\"org.kymjs.blog.ui.Login\" />\n\t\t<activity android:theme=\"@android:style/Theme.NoTitleBar\" android:name=\"org.kymjs.blog.ui.ImageActivity\" />\n\t\t<service android:name=\"org.kymjs.blog.service.CommonService\" />\n\t</application>\n</manifest>\n",
+  "fileSize" : 6026595,
+  "crc32" : 1847049056,
+  "sha256" : "2c349d49233b9fb144b6dba7133c1dcae5ab163da81a1eb9a4ab331d517922d3",
+  "buildTime" : 1523271869000
+}

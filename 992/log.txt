@@ -1,0 +1,393 @@
+2018-05-22 08:58:27,247 INFO  DownloadService - Downloading "https://github.com/siacs/Conversations/archive/master.zip", attempt 3
+2018-05-22 08:59:27,248 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-05-22 08:59:27,971 INFO  GithubDownloadService - Default branch of this repository: master
+2018-05-22 08:59:27,971 INFO  DownloadService - Downloading "https://github.com/siacs/Conversations/archive/master.zip", attempt 3
+2018-05-22 09:00:28,899 DEBUG FullProcessService - Repository https://github.com/siacs/Conversations available: true
+2018-05-22 09:00:28,900 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-05-22 09:00:28,900 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/siacs/Conversations, /tmp/rdisk/992/src]
+2018-05-22 09:00:34,212 INFO  SysUtils - 
+2018-05-22 09:00:34,228 INFO  GitService - Deleted "/tmp/rdisk/992/src/.git": true
+2018-05-22 09:00:34,260 INFO  FullProcessService - Size of directory with sources: 5 MB
+2018-05-22 09:00:34,261 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/992/src]
+2018-05-22 09:00:34,266 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/992/src/.git/
+
+2018-05-22 09:00:34,287 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/992/src/gradlew
+2018-05-22 09:00:34,307 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/992/src/build.gradle
+2018-05-22 09:00:34,326 INFO  ProjectBuildService - All script(s): /tmp/rdisk/992/src/settings.gradle /tmp/rdisk/992/src/build.gradle
+2018-05-22 09:00:34,326 INFO  ProjectBuildService - Remote scripts: none
+2018-05-22 09:00:34,326 INFO  ProjectFixService - Fixing project...
+2018-05-22 09:00:34,364 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/992/src/local.properties
+2018-05-22 09:00:34,365 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-4.4-all.zip
+2018-05-22 09:00:34,365 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-4.4-bin.zip)
+2018-05-22 09:00:34,366 INFO  ProjectFixService - Build info for "/tmp/rdisk/992/src/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=27,minSdkVersion=19,targetSdkVersion=25]
+2018-05-22 09:00:34,366 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/992/src/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=19,targetSdkVersion=25]
+2018-05-22 09:00:34,367 INFO  ProjectFixService - Project was maybe fixed
+2018-05-22 09:00:34,367 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-22 09:00:34,367 INFO  SysUtils - Execute command: [/tmp/rdisk/992/src/gradlew, -b, /tmp/rdisk/992/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-22 09:00:42,971 INFO  ProjectTaskService - Detected possible tasks: 87
+2018-05-22 09:00:42,971 INFO  ProjectTaskService - Excluded tasks (9): mockableAndroidJar deviceCheck lint deviceAndroidTest connectedCheck uninstallAll test check connectedAndroidTest
+2018-05-22 09:00:42,971 INFO  SysUtils - Execute command: [/tmp/rdisk/992/src/gradlew, -b, /tmp/rdisk/992/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, deviceAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, test, -x, check, -x, connectedAndroidTest, build]
+2018-05-22 09:02:30,556 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-05-22 09:02:30,556 INFO  SysUtils - Configuration on demand is an incubating feature.
+:preBuild UP-TO-DATE
+:extractProguardFiles
+:preFreeDebugBuild
+:compileFreeDebugAidl
+:compileFreeDebugRenderscript
+:generateFreeDebugResValues
+:generateFreeDebugResources
+:mergeFreeDebugResources
+:transformDataBindingBaseClassLogWithDataBindingMergeGenClassesForFreeDebug
+:dataBindingGenBaseClassesFreeDebug
+:checkFreeDebugManifest
+:generateFreeDebugBuildConfig
+:prepareLintJar
+:mainApkListPersistenceFreeDebug
+:createFreeDebugCompatibleScreenManifests
+:processFreeDebugManifest
+/tmp/rdisk/992/src/src/main/AndroidManifest.xml:33:5-35:30 Warning:
+	uses-permission#android.permission.READ_PHONE_STATE was tagged at AndroidManifest.xml:33 to remove other declarations but no other declaration present
+/tmp/rdisk/992/src/src/main/AndroidManifest.xml:51:5-271:19 Warning:
+	application@android:label was tagged at AndroidManifest.xml:51 to replace other declarations but no other declaration present
+:splitsDiscoveryTaskFreeDebug
+:processFreeDebugResources
+:generateFreeDebugSources
+:dataBindingExportBuildInfoFreeDebug
+:javaPreCompileFreeDebug
+:transformDataBindingWithDataBindingMergeArtifactsForFreeDebug
+:compileFreeDebugJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:compileFreeDebugNdk NO-SOURCE
+:compileFreeDebugSources
+:mergeFreeDebugShaders
+:compileFreeDebugShaders
+:generateFreeDebugAssets
+:mergeFreeDebugAssets
+:transformClassesWithStackFramesFixerForFreeDebug
+:transformClassesWithDesugarForFreeDebug
+:processFreeDebugJavaRes NO-SOURCE
+:transformResourcesWithMergeJavaResForFreeDebug
+:transformClassesAndResourcesWithProguardForFreeDebug
+Request to incrementing alive workforce from 0. Current workforce (dead or alive) 0
+thread-pool size=4
+ProGuard, version 5.3.3
+Reading input...
+Reading program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/1.jar] (filtered)
+Reading program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/2.jar] (filtered)
+Reading program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/3.jar] (filtered)
+Reading program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/4.jar] (filtered)
+Reading program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/5.jar] (filtered)
+Reading program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/6.jar] (filtered)
+Reading program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/7.jar] (filtered)
+Reading program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/8.jar] (filtered)
+Reading program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/9.jar] (filtered)
+Reading program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/10.jar] (filtered)
+Reading program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/11.jar] (filtered)
+Reading program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/12.jar] (filtered)
+Reading program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/13.jar] (filtered)
+Reading program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/14.jar] (filtered)
+Reading program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/15.jar] (filtered)
+Reading program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/16.jar] (filtered)
+Reading program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/17.jar] (filtered)
+Reading program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/18.jar] (filtered)
+Reading program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/19.jar] (filtered)
+Reading program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/20.jar] (filtered)
+Reading program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/21.jar] (filtered)
+Reading program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/22.jar] (filtered)
+Reading program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/23.jar] (filtered)
+Reading program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/24.jar] (filtered)
+Reading program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/25.jar] (filtered)
+Reading program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/26.jar] (filtered)
+Reading program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/27.jar] (filtered)
+Reading program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/28.jar] (filtered)
+Reading program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/29.jar] (filtered)
+Reading program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/30.jar] (filtered)
+Reading program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/31.jar] (filtered)
+Reading program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/32.jar] (filtered)
+Reading program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/33.jar] (filtered)
+Reading program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/34.jar] (filtered)
+Reading program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/35.jar] (filtered)
+Reading program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/36.jar] (filtered)
+Reading program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/37.jar] (filtered)
+Reading program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/38.jar] (filtered)
+Reading program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/39.jar] (filtered)
+Reading program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/40.jar] (filtered)
+Reading program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/41.jar] (filtered)
+Reading program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/42.jar] (filtered)
+Reading program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/43.jar] (filtered)
+Reading program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/44.jar] (filtered)
+Reading program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/45.jar] (filtered)
+Reading program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/46.jar] (filtered)
+Reading program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/47.jar] (filtered)
+Reading program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/48.jar] (filtered)
+Reading program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/49.jar] (filtered)
+Reading program directory [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/0] (filtered)
+Reading program jar [/tmp/rdisk/992/src/build/intermediates/transforms/mergeJavaRes/free/debug/0.jar] (filtered)
+Reading library jar [/root/Applications/android-sdk/platforms/android-27/android.jar]
+Reading library jar [/root/Applications/android-sdk/platforms/android-27/optional/org.apache.http.legacy.jar]
+Note: duplicate definition of library class [org.apache.http.params.HttpParams]
+Note: duplicate definition of library class [org.apache.http.params.HttpConnectionParams]
+Note: duplicate definition of library class [org.apache.http.params.CoreConnectionPNames]
+Note: duplicate definition of library class [org.apache.http.conn.ConnectTimeoutException]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.LayeredSocketFactory]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.HostNameResolver]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.SocketFactory]
+Note: duplicate definition of library class [android.net.http.SslCertificate$DName]
+Note: duplicate definition of library class [android.net.http.SslError]
+Note: duplicate definition of library class [android.net.http.SslCertificate]
+Note: duplicate definition of library class [android.net.http.HttpResponseCache]
+Note: there were 11 duplicate class definitions.
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#duplicateclass)
+Initializing...
+Note: the configuration refers to the unknown class 'com.kyleduo.switchbutton.Configuration'
+      Maybe you meant the fully qualified name 'org.osmdroid.config.Configuration'?
+      Maybe you meant the fully qualified name 'android.content.res.Configuration'?
+Note: the configuration refers to the unknown class 'me.leolin.shortcutbadger.impl.AsusHomeLauncher'
+Note: the configuration refers to the unknown class 'me.leolin.shortcutbadger.impl.SolidHomeBadger'
+Note: de.measite.minidns.dnsserverlookup.AndroidUsingReflection: can't find dynamically referenced class android.os.SystemProperties
+Note: eu.siacs.conversations.utils.PRNGFixes: can't find dynamically referenced class org.apache.harmony.xnet.provider.jsse.NativeCrypto
+Note: eu.siacs.conversations.utils.PRNGFixes: can't find dynamically referenced class org.apache.harmony.xnet.provider.jsse.NativeCrypto
+Note: me.leolin.shortcutbadger.impl.XiaomiHomeBadger: can't find dynamically referenced class android.app.MiuiNotification
+Note: the configuration keeps the entry point 'org.osmdroid.views.MapView { MapView(android.content.Context,org.osmdroid.tileprovider.MapTileProviderBase,android.os.Handler,android.util.AttributeSet); }', but not the descriptor class 'org.osmdroid.tileprovider.MapTileProviderBase'
+Note: the configuration keeps the entry point 'org.osmdroid.views.MapView { MapView(android.content.Context,org.osmdroid.tileprovider.MapTileProviderBase,android.os.Handler,android.util.AttributeSet,boolean); }', but not the descriptor class 'org.osmdroid.tileprovider.MapTileProviderBase'
+Note: the configuration keeps the entry point 'org.osmdroid.views.MapView { MapView(android.content.Context,org.osmdroid.tileprovider.MapTileProviderBase); }', but not the descriptor class 'org.osmdroid.tileprovider.MapTileProviderBase'
+Note: the configuration keeps the entry point 'org.osmdroid.views.MapView { MapView(android.content.Context,org.osmdroid.tileprovider.MapTileProviderBase,android.os.Handler); }', but not the descriptor class 'org.osmdroid.tileprovider.MapTileProviderBase'
+Note: the configuration keeps the entry point 'org.osmdroid.views.MapView { void setOverlayManager(org.osmdroid.views.overlay.OverlayManager); }', but not the descriptor class 'org.osmdroid.views.overlay.OverlayManager'
+Note: the configuration keeps the entry point 'org.osmdroid.views.MapView { void setProjection(org.osmdroid.views.Projection); }', but not the descriptor class 'org.osmdroid.views.Projection'
+Note: the configuration keeps the entry point 'org.osmdroid.views.MapView { void setMapCenter(org.osmdroid.api.IGeoPoint); }', but not the descriptor class 'org.osmdroid.api.IGeoPoint'
+Note: the configuration keeps the entry point 'org.osmdroid.views.MapView { void setTileSource(org.osmdroid.tileprovider.tilesource.ITileSource); }', but not the descriptor class 'org.osmdroid.tileprovider.tilesource.ITileSource'
+Note: the configuration keeps the entry point 'org.osmdroid.views.MapView { void setScrollableAreaLimitDouble(org.osmdroid.util.BoundingBox); }', but not the descriptor class 'org.osmdroid.util.BoundingBox'
+Note: the configuration keeps the entry point 'org.osmdroid.views.MapView { void setMapListener(org.osmdroid.events.MapListener); }', but not the descriptor class 'org.osmdroid.events.MapListener'
+Note: the configuration keeps the entry point 'org.osmdroid.views.MapView { void setTileProvider(org.osmdroid.tileprovider.MapTileProviderBase); }', but not the descriptor class 'org.osmdroid.tileprovider.MapTileProviderBase'
+Note: the configuration keeps the entry point 'org.osmdroid.views.MapView { void setInitCenter(org.osmdroid.api.IGeoPoint); }', but not the descriptor class 'org.osmdroid.api.IGeoPoint'
+Note: the configuration keeps the entry point 'org.osmdroid.views.MapView { void setExpectedCenter(org.osmdroid.api.IGeoPoint); }', but not the descriptor class 'org.osmdroid.api.IGeoPoint'
+Note: the configuration keeps the entry point 'org.osmdroid.views.overlay.ItemizedOverlayControlView { void setItemizedOverlayControlViewListener(org.osmdroid.views.overlay.ItemizedOverlayControlView$ItemizedOverlayControlViewListener); }', but not the descriptor class 'org.osmdroid.views.overlay.ItemizedOverlayControlView$ItemizedOverlayControlViewListener'
+Note: there were 3 references to unknown classes.
+      You should check your configuration for typos.
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#unknownclass)
+Note: there were 14 unkept descriptor classes in kept class members.
+      You should consider explicitly keeping the mentioned classes
+      (using '-keep').
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#descriptorclass)
+Note: there were 4 unresolved dynamic references to classes or interfaces.
+      You should check if you need to specify additional program jars.
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#dynamicalclass)
+Ignoring unused library classes...
+  Original number of library classes: 4610
+  Final number of library classes:    1676
+Printing kept classes, fields, and methods...
+Shrinking...
+Printing usage to [/tmp/rdisk/992/src/build/outputs/mapping/free/debug/usage.txt]...
+Removing unused program classes and class elements...
+  Original number of program classes: 8569
+  Final number of program classes:    3358
+Inlining subroutines...
+Preverifying...
+Writing output...
+Preparing output jar [/tmp/rdisk/992/src/build/intermediates/transforms/proguard/free/debug/0.jar]
+  Copying resources from program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/1.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/2.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/3.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/4.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/5.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/6.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/7.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/8.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/9.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/10.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/11.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/12.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/13.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/14.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/15.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/16.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/17.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/18.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/19.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/20.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/21.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/22.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/23.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/24.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/25.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/26.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/27.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/28.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/29.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/30.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/31.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/32.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/33.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/34.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/35.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/36.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/37.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/38.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/39.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/40.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/41.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/42.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/43.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/44.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/45.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/46.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/47.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/48.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/49.jar] (filtered)
+  Copying resources from program directory [/tmp/rdisk/992/src/build/intermediates/transforms/desugar/free/debug/0] (filtered)
+  Copying resources from program jar [/tmp/rdisk/992/src/build/intermediates/transforms/mergeJavaRes/free/debug/0.jar] (filtered)
+Printing classes to [/tmp/rdisk/992/src/build/outputs/mapping/free/debug/dump.txt]...
+:transformClassesWithShrinkResForFreeDebug
+Removed unused resources: Binary resource data reduced from 3555KB to 3459KB: Removed 2%
+:transformClassesWithDexBuilderForFreeDebug
+D8: Stripped invalid locals information from 1 method.
+:transformDexArchiveWithDexMergerForFreeDebug
+:mergeFreeDebugJniLibFolders
+:transformNativeLibsWithMergeJniLibsForFreeDebug
+:transformNativeLibsWithStripDebugSymbolForFreeDebug
+:validateSigningFreeDebug
+:packageFreeDebug
+:assembleFreeDebug
+:prePlaystoreDebugBuild
+Download https://maven.google.com/com/google/firebase/firebase-messaging/15.0.2/firebase-messaging-15.0.2.pom
+Download https://maven.google.com/com/google/firebase/firebase-measurement-connector/maven-metadata.xml
+Download https://maven.google.com/com/google/firebase/firebase-measurement-connector/15.0.0/firebase-measurement-connector-15.0.0.pom
+Download https://maven.google.com/com/google/firebase/firebase-iid-interop/maven-metadata.xml
+Download https://maven.google.com/com/google/firebase/firebase-messaging/15.0.2/firebase-messaging-15.0.2.aar
+Download https://maven.google.com/com/google/firebase/firebase-measurement-connector/15.0.0/firebase-measurement-connector-15.0.0.aar
+:compilePlaystoreDebugAidl
+:compilePlaystoreDebugRenderscript
+:generatePlaystoreDebugResValues
+:generatePlaystoreDebugResources
+:mergePlaystoreDebugResources
+:transformDataBindingBaseClassLogWithDataBindingMergeGenClassesForPlaystoreDebug
+:dataBindingGenBaseClassesPlaystoreDebug
+:checkPlaystoreDebugManifest
+:generatePlaystoreDebugBuildConfig
+:mainApkListPersistencePlaystoreDebug
+:createPlaystoreDebugCompatibleScreenManifests
+:processPlaystoreDebugManifest
+/tmp/rdisk/992/src/src/playstore/AndroidManifest.xml:6:5-32:19 Warning:
+	application@android:label was tagged at AndroidManifest.xml:6 to replace other declarations but no other declaration present
+/tmp/rdisk/992/src/src/playstore/AndroidManifest.xml:33:5-35:30 Warning:
+	uses-permission#android.permission.READ_PHONE_STATE was tagged at AndroidManifest.xml:33 to remove other declarations but no other declaration present
+:splitsDiscoveryTaskPlaystoreDebug
+:processPlaystoreDebugResources
+:generatePlaystoreDebugSources
+:dataBindingExportBuildInfoPlaystoreDebug
+:javaPreCompilePlaystoreDebug
+:transformDataBindingWithDataBindingMergeArtifactsForPlaystoreDebug
+:compilePlaystoreDebugJavaWithJavac/tmp/rdisk/992/src/src/playstore/java/eu/siacs/conversations/services/PushManagementService.java:32: error: cannot find symbol
+			final Jid appServer = Jid.of(mXmppConnectionService.getString(R.string.app_server));
+			                                                                      ^
+  symbol:   variable app_server
+  location: class string
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 error
+ FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compilePlaystoreDebugJavaWithJavac'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':compilePlaystoreDebugJavaWithJavac'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:100)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:70)
+	at org.gradle.api.internal.tasks.execution.OutputDirectoryCreatingTaskExecuter.execute(OutputDirectoryCreatingTaskExecuter.java:51)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:62)
+	at org.gradle.api.internal.tasks.execution.ResolveTaskOutputCachingStateExecuter.execute(ResolveTaskOutputCachingStateExecuter.java:54)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:60)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:97)
+	at org.gradle.api.internal.tasks.execution.CleanupStaleOutputsExecuter.execute(CleanupStaleOutputsExecuter.java:87)
+	at org.gradle.api.internal.tasks.execution.ResolveTaskArtifactStateTaskExecuter.execute(ResolveTaskArtifactStateTaskExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:54)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:34)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker$1.run(DefaultTaskGraphExecuter.java:248)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:336)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:328)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.execute(DefaultBuildOperationExecutor.java:199)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:110)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:241)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:230)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker.processTask(DefaultTaskPlanExecutor.java:123)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker.access$200(DefaultTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker$1.execute(DefaultTaskPlanExecutor.java:104)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker$1.execute(DefaultTaskPlanExecutor.java:98)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionPlan.execute(DefaultTaskExecutionPlan.java:626)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionPlan.executeWithTask(DefaultTaskExecutionPlan.java:581)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker.run(DefaultTaskPlanExecutor.java:98)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+Caused by: org.gradle.api.internal.tasks.compile.CompilationFailedException: Compilation failed; see the compiler error output for details.
+	at org.gradle.api.internal.tasks.compile.JdkJavaCompiler.execute(JdkJavaCompiler.java:50)
+	at org.gradle.api.internal.tasks.compile.JdkJavaCompiler.execute(JdkJavaCompiler.java:35)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.delegateAndHandleErrors(NormalizingJavaCompiler.java:98)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.execute(NormalizingJavaCompiler.java:51)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.execute(NormalizingJavaCompiler.java:37)
+	at org.gradle.api.internal.tasks.compile.CleaningJavaCompilerSupport.execute(CleaningJavaCompilerSupport.java:35)
+	at org.gradle.api.internal.tasks.compile.CleaningJavaCompilerSupport.execute(CleaningJavaCompilerSupport.java:25)
+	at org.gradle.api.tasks.compile.JavaCompile.performCompilation(JavaCompile.java:207)
+	at org.gradle.api.tasks.compile.JavaCompile.compile(JavaCompile.java:192)
+	at org.gradle.api.tasks.compile.JavaCompile.compile(JavaCompile.java:124)
+	at com.android.build.gradle.tasks.factory.AndroidJavaCompile.compile(AndroidJavaCompile.java:125)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:73)
+	at org.gradle.api.internal.project.taskfactory.IncrementalTaskAction.doExecute(IncrementalTaskAction.java:46)
+	at org.gradle.api.internal.project.taskfactory.StandardTaskAction.execute(StandardTaskAction.java:39)
+	at org.gradle.api.internal.project.taskfactory.StandardTaskAction.execute(StandardTaskAction.java:26)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter$1.run(ExecuteActionsTaskExecuter.java:121)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:336)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:328)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.execute(DefaultBuildOperationExecutor.java:199)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:110)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:110)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:92)
+	... 29 more
+
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 1m 46s
+53 actionable tasks: 53 executed
+
+2018-05-22 09:02:30,734 INFO  FullProcessService - Found APK file: /tmp/rdisk/992/src/build/outputs/apk/free/debug/Conversations-2.2.1-free-debug.apk

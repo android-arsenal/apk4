@@ -1,0 +1,603 @@
+2018-05-14 06:25:42,208 INFO  DownloadService - Downloading "https://github.com/oguzbilgener/CircularFloatingActionMenu/archive/master.zip", attempt 3
+2018-05-14 06:25:43,090 INFO  DownloadService - Downloaded https://github.com/oguzbilgener/CircularFloatingActionMenu/archive/master.zip, attempt 3
+2018-05-14 06:25:43,090 INFO  DownloadService - Size of file "/tmp/rdisk/753/master.zip": 2 MB
+2018-05-14 06:25:43,090 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-05-14 06:25:43,091 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/753/master.zip: true
+2018-05-14 06:25:43,091 DEBUG ZipUtil - Extracting '/tmp/rdisk/753/master.zip' into '/tmp/rdisk/753/src'.
+2018-05-14 06:25:43,133 INFO  FullProcessService - Size of directory with sources: 3 MB
+2018-05-14 06:25:43,133 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/753/src]
+2018-05-14 06:25:43,139 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/753/src/.git/
+
+2018-05-14 06:25:43,143 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/753/src/CircularFloatingActionMenu-master/gradlew
+2018-05-14 06:25:43,148 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/753/src/CircularFloatingActionMenu-master/library/build.gradle /tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build.gradle /tmp/rdisk/753/src/CircularFloatingActionMenu-master/build.gradle
+2018-05-14 06:25:43,151 INFO  ProjectBuildService - All script(s): /tmp/rdisk/753/src/CircularFloatingActionMenu-master/settings.gradle /tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build.gradle /tmp/rdisk/753/src/CircularFloatingActionMenu-master/library/build.gradle /tmp/rdisk/753/src/CircularFloatingActionMenu-master/gradle-mvn-push.gradle /tmp/rdisk/753/src/CircularFloatingActionMenu-master/build.gradle
+2018-05-14 06:25:43,152 INFO  ProjectBuildService - Remote scripts: none
+2018-05-14 06:25:43,152 INFO  ProjectFixService - Fixing project...
+2018-05-14 06:25:43,161 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/753/src/CircularFloatingActionMenu-master/library/local.properties
+2018-05-14 06:25:43,162 INFO  ProjectFixService - Build info for "/tmp/rdisk/753/src/CircularFloatingActionMenu-master/library/build.gradle": [buildToolsVersion=21.1.1,compileSdkVersion=21,minSdkVersion=15,targetSdkVersion=21]
+2018-05-14 06:25:43,162 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/local.properties
+2018-05-14 06:25:43,162 INFO  ProjectFixService - Build info for "/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build.gradle": [buildToolsVersion=21.1.1,compileSdkVersion=21,minSdkVersion=15,targetSdkVersion=21]
+2018-05-14 06:25:43,162 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/753/src/CircularFloatingActionMenu-master/local.properties
+2018-05-14 06:25:43,163 INFO  WrapperPropertiesFixService - Gradle wrapper: http://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-05-14 06:25:43,163 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (http://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-05-14 06:25:43,164 INFO  ProjectFixService - Build info for "/tmp/rdisk/753/src/CircularFloatingActionMenu-master/build.gradle": [buildToolsVersion=21.1.1,compileSdkVersion=21,minSdkVersion=15,targetSdkVersion=21]
+2018-05-14 06:25:43,164 INFO  ProjectFixService - Project was maybe fixed
+2018-05-14 06:25:43,164 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-14 06:25:43,164 INFO  SysUtils - Execute command: [/tmp/rdisk/753/src/CircularFloatingActionMenu-master/gradlew, -b, /tmp/rdisk/753/src/CircularFloatingActionMenu-master/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-14 06:25:51,424 INFO  ProjectTaskService - Detected possible tasks: 51
+2018-05-14 06:25:51,424 INFO  ProjectTaskService - Excluded tasks (8): lintDebug deviceCheck lint connectedCheck uninstallAll check connectedAndroidTest lintRelease
+2018-05-14 06:25:51,425 INFO  SysUtils - Execute command: [/tmp/rdisk/753/src/CircularFloatingActionMenu-master/gradlew, -b, /tmp/rdisk/753/src/CircularFloatingActionMenu-master/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-05-14 06:25:58,861 INFO  SysUtils - Configuration on demand is an incubating feature.
+:library:compileLint
+:library:copyDebugLint UP-TO-DATE
+:library:mergeDebugProguardFiles
+:library:preBuild
+:library:preDebugBuild
+:library:checkDebugManifest
+:library:prepareDebugDependencies
+:library:compileDebugAidl
+:library:compileDebugRenderscript
+:library:generateDebugBuildConfig
+:library:generateDebugAssets UP-TO-DATE
+:library:mergeDebugAssets
+:library:generateDebugResValues
+:library:generateDebugResources
+:library:packageDebugResources
+:library:processDebugManifest
+:library:processDebugResources
+:library:generateDebugSources
+:library:compileDebugJavaNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:library:processDebugJavaRes UP-TO-DATE
+:library:packageDebugJar
+:library:compileDebugNdk
+:library:packageDebugJniLibs UP-TO-DATE
+:library:packageDebugLocalJar UP-TO-DATE
+:library:packageDebugRenderscript UP-TO-DATE
+:library:bundleDebug
+:library:assembleDebug
+:library:copyReleaseLint UP-TO-DATE
+:library:mergeReleaseProguardFiles
+:library:preReleaseBuild
+:library:checkReleaseManifest
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl
+:library:compileReleaseRenderscript
+:library:generateReleaseBuildConfig
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets
+:library:generateReleaseResValues
+:library:generateReleaseResources
+:library:packageReleaseResources
+:library:processReleaseManifest
+:library:processReleaseResources
+:library:generateReleaseSources
+:library:compileReleaseJavaNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:library:processReleaseJavaRes UP-TO-DATE
+:library:packageReleaseJar
+:library:compileReleaseNdk
+:library:packageReleaseJniLibs UP-TO-DATE
+:library:packageReleaseLocalJar UP-TO-DATE
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:bundleRelease
+:library:assembleRelease
+:library:assemble
+:library:build
+
+BUILD SUCCESSFUL
+
+Total time: 6.964 secs
+
+2018-05-14 06:25:58,872 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-14 06:25:58,872 INFO  SysUtils - Execute command: [/tmp/rdisk/753/src/CircularFloatingActionMenu-master/gradlew, -b, /tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-14 06:26:04,868 INFO  ProjectTaskService - Detected possible tasks: 53
+2018-05-14 06:26:04,868 INFO  ProjectTaskService - Excluded tasks (11): lintDebug deviceCheck lint uninstallRelease connectedCheck uninstallAll check connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-05-14 06:26:04,868 INFO  SysUtils - Execute command: [/tmp/rdisk/753/src/CircularFloatingActionMenu-master/gradlew, -b, /tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-05-14 06:26:13,885 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-05-14 06:26:13,885 INFO  SysUtils - Configuration on demand is an incubating feature.
+:samples:preBuild
+:samples:compileDebugNdk
+:library:compileLint
+:library:copyReleaseLint UP-TO-DATE
+:library:mergeReleaseProguardFiles UP-TO-DATE
+:library:preBuild
+:library:preReleaseBuild
+:library:checkReleaseManifest
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl UP-TO-DATE
+:library:compileReleaseRenderscript UP-TO-DATE
+:library:generateReleaseBuildConfig UP-TO-DATE
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets UP-TO-DATE
+:library:generateReleaseResValues UP-TO-DATE
+:library:generateReleaseResources UP-TO-DATE
+:library:packageReleaseResources UP-TO-DATE
+:library:processReleaseManifest UP-TO-DATE
+:library:processReleaseResources UP-TO-DATE
+:library:generateReleaseSources UP-TO-DATE
+:library:compileReleaseJava UP-TO-DATE
+:library:processReleaseJavaRes UP-TO-DATE
+:library:packageReleaseJar UP-TO-DATE
+:library:compileReleaseNdk UP-TO-DATE
+:library:packageReleaseJniLibs UP-TO-DATE
+:library:packageReleaseLocalJar UP-TO-DATE
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:bundleRelease UP-TO-DATE
+:samples:preDebugBuild
+:samples:checkDebugManifest
+:samples:preReleaseBuild
+:samples:prepareCircularFloatingActionMenuMasterLibraryUnspecifiedLibrary
+:samples:prepareComAndroidSupportAnimatedVectorDrawable2600Alpha1Library
+:samples:prepareComAndroidSupportAppcompatV72600Alpha1Library
+:samples:prepareComAndroidSupportSupportCompat2600Alpha1Library
+:samples:prepareComAndroidSupportSupportCoreUi2600Alpha1Library
+:samples:prepareComAndroidSupportSupportCoreUtils2600Alpha1Library
+:samples:prepareComAndroidSupportSupportFragment2600Alpha1Library
+:samples:prepareComAndroidSupportSupportMediaCompat2600Alpha1Library
+:samples:prepareComAndroidSupportSupportV42600Alpha1Library
+:samples:prepareComAndroidSupportSupportVectorDrawable2600Alpha1Library
+:samples:prepareDebugDependencies
+:samples:compileDebugAidl
+:samples:compileDebugRenderscript
+:samples:generateDebugBuildConfig
+:samples:generateDebugAssets UP-TO-DATE
+:samples:mergeDebugAssets
+:samples:generateDebugResValues
+:samples:generateDebugResources
+:samples:mergeDebugResources/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/exploded-aar/CircularFloatingActionMenu-master/library/unspecified/res/drawable-xxhdpi-v4/button_sub_action_dark.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/exploded-aar/CircularFloatingActionMenu-master/library/unspecified/res/drawable-hdpi-v4/button_action.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/exploded-aar/CircularFloatingActionMenu-master/library/unspecified/res/drawable-hdpi-v4/button_sub_action.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/exploded-aar/CircularFloatingActionMenu-master/library/unspecified/res/drawable-xxxhdpi-v4/button_sub_action_dark_touch.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/exploded-aar/CircularFloatingActionMenu-master/library/unspecified/res/drawable-xxxhdpi-v4/button_action_touch.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/src/main/res/drawable-xxhdpi/button_action_red_touch.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/exploded-aar/CircularFloatingActionMenu-master/library/unspecified/res/drawable-xxxhdpi-v4/button_sub_action_touch.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/exploded-aar/CircularFloatingActionMenu-master/library/unspecified/res/drawable-xxhdpi-v4/button_sub_action.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/exploded-aar/CircularFloatingActionMenu-master/library/unspecified/res/drawable-hdpi-v4/button_action_dark.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/exploded-aar/CircularFloatingActionMenu-master/library/unspecified/res/drawable-xxxhdpi-v4/button_action_dark.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/exploded-aar/CircularFloatingActionMenu-master/library/unspecified/res/drawable-mdpi-v4/button_action_touch.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/exploded-aar/CircularFloatingActionMenu-master/library/unspecified/res/drawable-hdpi-v4/button_sub_action_dark.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/exploded-aar/CircularFloatingActionMenu-master/library/unspecified/res/drawable-hdpi-v4/button_sub_action_touch.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/exploded-aar/CircularFloatingActionMenu-master/library/unspecified/res/drawable-xxhdpi-v4/button_action_dark_touch.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/exploded-aar/CircularFloatingActionMenu-master/library/unspecified/res/drawable-xxhdpi-v4/button_action.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/exploded-aar/CircularFloatingActionMenu-master/library/unspecified/res/drawable-mdpi-v4/button_action_dark.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/exploded-aar/CircularFloatingActionMenu-master/library/unspecified/res/drawable-xhdpi-v4/button_sub_action_dark_touch.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/exploded-aar/CircularFloatingActionMenu-master/library/unspecified/res/drawable-xhdpi-v4/button_sub_action.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/exploded-aar/CircularFloatingActionMenu-master/library/unspecified/res/drawable-xxxhdpi-v4/button_action_dark_touch.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/exploded-aar/CircularFloatingActionMenu-master/library/unspecified/res/drawable-mdpi-v4/button_sub_action_dark_touch.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/src/main/res/drawable-xxhdpi/button_action_red.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/exploded-aar/CircularFloatingActionMenu-master/library/unspecified/res/drawable-hdpi-v4/button_sub_action_dark_touch.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/exploded-aar/CircularFloatingActionMenu-master/library/unspecified/res/drawable-xhdpi-v4/button_action_touch.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/exploded-aar/CircularFloatingActionMenu-master/library/unspecified/res/drawable-mdpi-v4/button_sub_action_dark.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/exploded-aar/CircularFloatingActionMenu-master/library/unspecified/res/drawable-xxhdpi-v4/button_action_touch.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/exploded-aar/CircularFloatingActionMenu-master/library/unspecified/res/drawable-xxhdpi-v4/button_action_dark.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/exploded-aar/CircularFloatingActionMenu-master/library/unspecified/res/drawable-mdpi-v4/button_action.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/exploded-aar/CircularFloatingActionMenu-master/library/unspecified/res/drawable-xhdpi-v4/button_sub_action_dark.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/exploded-aar/CircularFloatingActionMenu-master/library/unspecified/res/drawable-hdpi-v4/button_action_touch.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/exploded-aar/CircularFloatingActionMenu-master/library/unspecified/res/drawable-mdpi-v4/button_action_dark_touch.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/exploded-aar/CircularFloatingActionMenu-master/library/unspecified/res/drawable-mdpi-v4/button_sub_action.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/src/main/res/drawable-xxhdpi/button_action_blue_touch.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/exploded-aar/CircularFloatingActionMenu-master/library/unspecified/res/drawable-xhdpi-v4/button_sub_action_touch.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/exploded-aar/CircularFloatingActionMenu-master/library/unspecified/res/drawable-xhdpi-v4/button_action_dark.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/exploded-aar/CircularFloatingActionMenu-master/library/unspecified/res/drawable-xxhdpi-v4/button_sub_action_dark_touch.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/src/main/res/drawable-xxhdpi/button_action_blue.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/exploded-aar/CircularFloatingActionMenu-master/library/unspecified/res/drawable-xxxhdpi-v4/button_sub_action_dark.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/exploded-aar/CircularFloatingActionMenu-master/library/unspecified/res/drawable-xxxhdpi-v4/button_sub_action.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/exploded-aar/CircularFloatingActionMenu-master/library/unspecified/res/drawable-mdpi-v4/button_sub_action_touch.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/exploded-aar/CircularFloatingActionMenu-master/library/unspecified/res/drawable-xxxhdpi-v4/button_action.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/exploded-aar/CircularFloatingActionMenu-master/library/unspecified/res/drawable-hdpi-v4/button_action_dark_touch.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/exploded-aar/CircularFloatingActionMenu-master/library/unspecified/res/drawable-xhdpi-v4/button_action_dark_touch.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/exploded-aar/CircularFloatingActionMenu-master/library/unspecified/res/drawable-xxhdpi-v4/button_sub_action_touch.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/exploded-aar/CircularFloatingActionMenu-master/library/unspecified/res/drawable-xhdpi-v4/button_action.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+:samples:processDebugManifest
+:samples:processDebugResources/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/res/debug/values-v24/values.xml:5: error: Error retrieving parent for item: No resource found that matches the given name 'android:TextAppearance.Material.Widget.Button.Borderless.Colored'.
+
+/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/res/debug/values-v24/values.xml:6: error: Error retrieving parent for item: No resource found that matches the given name 'android:TextAppearance.Material.Widget.Button.Colored'.
+
+/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/res/debug/values-v23/values.xml:6: error: Error retrieving parent for item: No resource found that matches the given name 'android:TextAppearance.Material.Widget.Button.Inverse'.
+
+/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/res/debug/values-v23/values.xml:36: error: Error retrieving parent for item: No resource found that matches the given name 'android:Widget.Material.Button.Colored'.
+
+ FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':samples:processDebugResources'.
+> com.android.ide.common.internal.LoggedErrorException: Failed to run command:
+  	/root/Applications/android-sdk/build-tools/21.1.1/aapt package -f --no-crunch -I /root/Applications/android-sdk/platforms/android-21/android.jar -M /tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/manifests/full/debug/AndroidManifest.xml -S /tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/res/debug -A /tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/assets/debug -m -J /tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/generated/source/r/debug -F /tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/res/resources-debug.ap_ --debug-mode --custom-package com.oguzdev.circularfloatingactionmenu.samples -0 apk --output-text-symbols /tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/symbols/debug
+  Error Code:
+  	1
+  Output:
+  	/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/res/debug/values-v24/values.xml:5: error: Error retrieving parent for item: No resource found that matches the given name 'android:TextAppearance.Material.Widget.Button.Borderless.Colored'.
+  	
+  	/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/res/debug/values-v24/values.xml:6: error: Error retrieving parent for item: No resource found that matches the given name 'android:TextAppearance.Material.Widget.Button.Colored'.
+  	
+  	/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/res/debug/values-v23/values.xml:6: error: Error retrieving parent for item: No resource found that matches the given name 'android:TextAppearance.Material.Widget.Button.Inverse'.
+  	
+  	/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/res/debug/values-v23/values.xml:36: error: Error retrieving parent for item: No resource found that matches the given name 'android:Widget.Material.Button.Colored'.
+  	
+
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':samples:processDebugResources'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:69)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:305)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:88)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:29)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:68)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:55)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:149)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:80)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:36)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:51)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:171)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+Caused by: org.gradle.internal.UncheckedException: com.android.ide.common.internal.LoggedErrorException: Failed to run command:
+	/root/Applications/android-sdk/build-tools/21.1.1/aapt package -f --no-crunch -I /root/Applications/android-sdk/platforms/android-21/android.jar -M /tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/manifests/full/debug/AndroidManifest.xml -S /tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/res/debug -A /tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/assets/debug -m -J /tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/generated/source/r/debug -F /tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/res/resources-debug.ap_ --debug-mode --custom-package com.oguzdev.circularfloatingactionmenu.samples -0 apk --output-text-symbols /tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/symbols/debug
+Error Code:
+	1
+Output:
+	/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/res/debug/values-v24/values.xml:5: error: Error retrieving parent for item: No resource found that matches the given name 'android:TextAppearance.Material.Widget.Button.Borderless.Colored'.
+	
+	/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/res/debug/values-v24/values.xml:6: error: Error retrieving parent for item: No resource found that matches the given name 'android:TextAppearance.Material.Widget.Button.Colored'.
+	
+	/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/res/debug/values-v23/values.xml:6: error: Error retrieving parent for item: No resource found that matches the given name 'android:TextAppearance.Material.Widget.Button.Inverse'.
+	
+	/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/res/debug/values-v23/values.xml:36: error: Error retrieving parent for item: No resource found that matches the given name 'android:Widget.Material.Button.Colored'.
+	
+
+	at org.gradle.internal.UncheckedException.throwAsUncheckedException(UncheckedException.java:39)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:66)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$IncrementalTaskAction.doExecute(AnnotationProcessingTaskFactory.java:235)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:211)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$IncrementalTaskAction.execute(AnnotationProcessingTaskFactory.java:222)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:200)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	... 47 more
+Caused by: com.android.ide.common.internal.LoggedErrorException: Failed to run command:
+	/root/Applications/android-sdk/build-tools/21.1.1/aapt package -f --no-crunch -I /root/Applications/android-sdk/platforms/android-21/android.jar -M /tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/manifests/full/debug/AndroidManifest.xml -S /tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/res/debug -A /tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/assets/debug -m -J /tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/generated/source/r/debug -F /tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/res/resources-debug.ap_ --debug-mode --custom-package com.oguzdev.circularfloatingactionmenu.samples -0 apk --output-text-symbols /tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/symbols/debug
+Error Code:
+	1
+Output:
+	/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/res/debug/values-v24/values.xml:5: error: Error retrieving parent for item: No resource found that matches the given name 'android:TextAppearance.Material.Widget.Button.Borderless.Colored'.
+	
+	/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/res/debug/values-v24/values.xml:6: error: Error retrieving parent for item: No resource found that matches the given name 'android:TextAppearance.Material.Widget.Button.Colored'.
+	
+	/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/res/debug/values-v23/values.xml:6: error: Error retrieving parent for item: No resource found that matches the given name 'android:TextAppearance.Material.Widget.Button.Inverse'.
+	
+	/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/res/debug/values-v23/values.xml:36: error: Error retrieving parent for item: No resource found that matches the given name 'android:Widget.Material.Button.Colored'.
+	
+
+	at com.android.ide.common.internal.CommandLineRunner.runCmdLine(CommandLineRunner.java:123)
+	at com.android.ide.common.internal.CommandLineRunner.runCmdLine(CommandLineRunner.java:96)
+	at com.android.ide.common.internal.CommandLineRunner.runCmdLine(CommandLineRunner.java:76)
+	at com.android.builder.core.AndroidBuilder.processResources(AndroidBuilder.java:738)
+	at com.android.builder.core.AndroidBuilder$processResources$6.call(Unknown Source)
+	at com.android.build.gradle.tasks.ProcessAndroidResources.doFullTaskAction(ProcessAndroidResources.groovy:120)
+	at com.android.build.gradle.internal.tasks.IncrementalTask.taskAction(IncrementalTask.groovy:64)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:63)
+	... 53 more
+
+
+BUILD FAILED
+
+Total time: 8.541 secs
+
+2018-05-14 06:26:13,920 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-14 06:26:13,920 INFO  SysUtils - Execute command: [/tmp/rdisk/753/src/CircularFloatingActionMenu-master/gradlew, -b, /tmp/rdisk/753/src/CircularFloatingActionMenu-master/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-14 06:26:20,116 INFO  ProjectTaskService - Detected possible tasks: 54
+2018-05-14 06:26:20,116 INFO  ProjectTaskService - Excluded tasks (11): lintDebug deviceCheck lint uninstallRelease connectedCheck uninstallAll check connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-05-14 06:26:20,117 INFO  SysUtils - Execute command: [/tmp/rdisk/753/src/CircularFloatingActionMenu-master/gradlew, -b, /tmp/rdisk/753/src/CircularFloatingActionMenu-master/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-05-14 06:26:26,617 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-05-14 06:26:26,617 INFO  SysUtils - Configuration on demand is an incubating feature.
+:library:compileLint
+:library:copyDebugLint UP-TO-DATE
+:library:mergeDebugProguardFiles UP-TO-DATE
+:library:preBuild
+:library:preDebugBuild
+:library:checkDebugManifest
+:library:prepareDebugDependencies
+:library:compileDebugAidl UP-TO-DATE
+:library:compileDebugRenderscript UP-TO-DATE
+:library:generateDebugBuildConfig UP-TO-DATE
+:library:generateDebugAssets UP-TO-DATE
+:library:mergeDebugAssets UP-TO-DATE
+:library:generateDebugResValues UP-TO-DATE
+:library:generateDebugResources UP-TO-DATE
+:library:packageDebugResources UP-TO-DATE
+:library:processDebugManifest UP-TO-DATE
+:library:processDebugResources UP-TO-DATE
+:library:generateDebugSources UP-TO-DATE
+:library:compileDebugJava UP-TO-DATE
+:library:processDebugJavaRes UP-TO-DATE
+:library:packageDebugJar UP-TO-DATE
+:library:compileDebugNdk UP-TO-DATE
+:library:packageDebugJniLibs UP-TO-DATE
+:library:packageDebugLocalJar UP-TO-DATE
+:library:packageDebugRenderscript UP-TO-DATE
+:library:bundleDebug UP-TO-DATE
+:library:assembleDebug UP-TO-DATE
+:library:copyReleaseLint UP-TO-DATE
+:library:mergeReleaseProguardFiles UP-TO-DATE
+:library:preReleaseBuild
+:library:checkReleaseManifest
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl UP-TO-DATE
+:library:compileReleaseRenderscript UP-TO-DATE
+:library:generateReleaseBuildConfig UP-TO-DATE
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets UP-TO-DATE
+:library:generateReleaseResValues UP-TO-DATE
+:library:generateReleaseResources UP-TO-DATE
+:library:packageReleaseResources UP-TO-DATE
+:library:processReleaseManifest UP-TO-DATE
+:library:processReleaseResources UP-TO-DATE
+:library:generateReleaseSources UP-TO-DATE
+:library:compileReleaseJava UP-TO-DATE
+:library:processReleaseJavaRes UP-TO-DATE
+:library:packageReleaseJar UP-TO-DATE
+:library:compileReleaseNdk UP-TO-DATE
+:library:packageReleaseJniLibs UP-TO-DATE
+:library:packageReleaseLocalJar UP-TO-DATE
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:bundleRelease UP-TO-DATE
+:library:assembleRelease UP-TO-DATE
+:library:assemble UP-TO-DATE
+:library:build
+:samples:preBuild
+:samples:compileDebugNdk UP-TO-DATE
+:samples:preDebugBuild
+:samples:checkDebugManifest
+:samples:preReleaseBuild
+:samples:prepareCircularFloatingActionMenuMasterLibraryUnspecifiedLibrary UP-TO-DATE
+:samples:prepareComAndroidSupportAnimatedVectorDrawable2600Alpha1Library UP-TO-DATE
+:samples:prepareComAndroidSupportAppcompatV72600Alpha1Library UP-TO-DATE
+:samples:prepareComAndroidSupportSupportCompat2600Alpha1Library UP-TO-DATE
+:samples:prepareComAndroidSupportSupportCoreUi2600Alpha1Library UP-TO-DATE
+:samples:prepareComAndroidSupportSupportCoreUtils2600Alpha1Library UP-TO-DATE
+:samples:prepareComAndroidSupportSupportFragment2600Alpha1Library UP-TO-DATE
+:samples:prepareComAndroidSupportSupportMediaCompat2600Alpha1Library UP-TO-DATE
+:samples:prepareComAndroidSupportSupportV42600Alpha1Library UP-TO-DATE
+:samples:prepareComAndroidSupportSupportVectorDrawable2600Alpha1Library UP-TO-DATE
+:samples:prepareDebugDependencies
+:samples:compileDebugAidl UP-TO-DATE
+:samples:compileDebugRenderscript UP-TO-DATE
+:samples:generateDebugBuildConfig UP-TO-DATE
+:samples:generateDebugAssets UP-TO-DATE
+:samples:mergeDebugAssets UP-TO-DATE
+:samples:generateDebugResValues UP-TO-DATE
+:samples:generateDebugResources UP-TO-DATE
+:samples:mergeDebugResources UP-TO-DATE
+:samples:processDebugManifest UP-TO-DATE
+:samples:processDebugResources/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/res/debug/values-v24/values.xml:5: error: Error retrieving parent for item: No resource found that matches the given name 'android:TextAppearance.Material.Widget.Button.Borderless.Colored'.
+
+/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/res/debug/values-v24/values.xml:6: error: Error retrieving parent for item: No resource found that matches the given name 'android:TextAppearance.Material.Widget.Button.Colored'.
+
+/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/res/debug/values-v23/values.xml:6: error: Error retrieving parent for item: No resource found that matches the given name 'android:TextAppearance.Material.Widget.Button.Inverse'.
+
+/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/res/debug/values-v23/values.xml:36: error: Error retrieving parent for item: No resource found that matches the given name 'android:Widget.Material.Button.Colored'.
+
+ FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':samples:processDebugResources'.
+> com.android.ide.common.internal.LoggedErrorException: Failed to run command:
+  	/root/Applications/android-sdk/build-tools/21.1.1/aapt package -f --no-crunch -I /root/Applications/android-sdk/platforms/android-21/android.jar -M /tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/manifests/full/debug/AndroidManifest.xml -S /tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/res/debug -A /tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/assets/debug -m -J /tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/generated/source/r/debug -F /tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/res/resources-debug.ap_ --debug-mode --custom-package com.oguzdev.circularfloatingactionmenu.samples -0 apk --output-text-symbols /tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/symbols/debug
+  Error Code:
+  	1
+  Output:
+  	/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/res/debug/values-v24/values.xml:5: error: Error retrieving parent for item: No resource found that matches the given name 'android:TextAppearance.Material.Widget.Button.Borderless.Colored'.
+  	
+  	/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/res/debug/values-v24/values.xml:6: error: Error retrieving parent for item: No resource found that matches the given name 'android:TextAppearance.Material.Widget.Button.Colored'.
+  	
+  	/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/res/debug/values-v23/values.xml:6: error: Error retrieving parent for item: No resource found that matches the given name 'android:TextAppearance.Material.Widget.Button.Inverse'.
+  	
+  	/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/res/debug/values-v23/values.xml:36: error: Error retrieving parent for item: No resource found that matches the given name 'android:Widget.Material.Button.Colored'.
+  	
+
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':samples:processDebugResources'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:69)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:305)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:88)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:29)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:68)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:55)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:149)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:80)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:36)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:51)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:171)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+Caused by: org.gradle.internal.UncheckedException: com.android.ide.common.internal.LoggedErrorException: Failed to run command:
+	/root/Applications/android-sdk/build-tools/21.1.1/aapt package -f --no-crunch -I /root/Applications/android-sdk/platforms/android-21/android.jar -M /tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/manifests/full/debug/AndroidManifest.xml -S /tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/res/debug -A /tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/assets/debug -m -J /tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/generated/source/r/debug -F /tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/res/resources-debug.ap_ --debug-mode --custom-package com.oguzdev.circularfloatingactionmenu.samples -0 apk --output-text-symbols /tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/symbols/debug
+Error Code:
+	1
+Output:
+	/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/res/debug/values-v24/values.xml:5: error: Error retrieving parent for item: No resource found that matches the given name 'android:TextAppearance.Material.Widget.Button.Borderless.Colored'.
+	
+	/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/res/debug/values-v24/values.xml:6: error: Error retrieving parent for item: No resource found that matches the given name 'android:TextAppearance.Material.Widget.Button.Colored'.
+	
+	/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/res/debug/values-v23/values.xml:6: error: Error retrieving parent for item: No resource found that matches the given name 'android:TextAppearance.Material.Widget.Button.Inverse'.
+	
+	/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/res/debug/values-v23/values.xml:36: error: Error retrieving parent for item: No resource found that matches the given name 'android:Widget.Material.Button.Colored'.
+	
+
+	at org.gradle.internal.UncheckedException.throwAsUncheckedException(UncheckedException.java:39)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:66)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$IncrementalTaskAction.doExecute(AnnotationProcessingTaskFactory.java:235)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:211)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$IncrementalTaskAction.execute(AnnotationProcessingTaskFactory.java:222)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:200)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	... 47 more
+Caused by: com.android.ide.common.internal.LoggedErrorException: Failed to run command:
+	/root/Applications/android-sdk/build-tools/21.1.1/aapt package -f --no-crunch -I /root/Applications/android-sdk/platforms/android-21/android.jar -M /tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/manifests/full/debug/AndroidManifest.xml -S /tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/res/debug -A /tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/assets/debug -m -J /tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/generated/source/r/debug -F /tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/res/resources-debug.ap_ --debug-mode --custom-package com.oguzdev.circularfloatingactionmenu.samples -0 apk --output-text-symbols /tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/symbols/debug
+Error Code:
+	1
+Output:
+	/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/res/debug/values-v24/values.xml:5: error: Error retrieving parent for item: No resource found that matches the given name 'android:TextAppearance.Material.Widget.Button.Borderless.Colored'.
+	
+	/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/res/debug/values-v24/values.xml:6: error: Error retrieving parent for item: No resource found that matches the given name 'android:TextAppearance.Material.Widget.Button.Colored'.
+	
+	/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/res/debug/values-v23/values.xml:6: error: Error retrieving parent for item: No resource found that matches the given name 'android:TextAppearance.Material.Widget.Button.Inverse'.
+	
+	/tmp/rdisk/753/src/CircularFloatingActionMenu-master/samples/build/intermediates/res/debug/values-v23/values.xml:36: error: Error retrieving parent for item: No resource found that matches the given name 'android:Widget.Material.Button.Colored'.
+	
+
+	at com.android.ide.common.internal.CommandLineRunner.runCmdLine(CommandLineRunner.java:123)
+	at com.android.ide.common.internal.CommandLineRunner.runCmdLine(CommandLineRunner.java:96)
+	at com.android.ide.common.internal.CommandLineRunner.runCmdLine(CommandLineRunner.java:76)
+	at com.android.builder.core.AndroidBuilder.processResources(AndroidBuilder.java:738)
+	at com.android.builder.core.AndroidBuilder$processResources$3.call(Unknown Source)
+	at com.android.build.gradle.tasks.ProcessAndroidResources.doFullTaskAction(ProcessAndroidResources.groovy:120)
+	at com.android.build.gradle.internal.tasks.IncrementalTask.taskAction(IncrementalTask.groovy:64)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:63)
+	... 53 more
+
+
+BUILD FAILED
+
+Total time: 6.072 secs
+
+2018-05-14 06:26:26,655 ERROR FullProcessService - Project build has not produced APK file
+2018-05-14 06:26:26,692 ERROR FullProcessService - Could not find generated or existed APK file

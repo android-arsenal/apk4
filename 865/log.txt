@@ -1,0 +1,476 @@
+2018-04-09 09:31:30,228 INFO  DownloadService - Downloading "https://github.com/evant/gradle-retrolambda/archive/master.zip", attempt 3
+2018-04-09 09:31:31,903 INFO  DownloadService - Downloaded https://github.com/evant/gradle-retrolambda/archive/master.zip, attempt 3
+2018-04-09 09:31:31,903 INFO  DownloadService - Size of file "/tmp/rdisk/865/master.zip": 173 KB
+2018-04-09 09:31:31,903 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-09 09:31:31,904 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/865/master.zip: true
+2018-04-09 09:31:31,904 DEBUG ZipUtil - Extracting '/tmp/rdisk/865/master.zip' into '/tmp/rdisk/865/src'.
+2018-04-09 09:31:31,920 INFO  FullProcessService - Size of directory with sources: 269 KB
+2018-04-09 09:31:31,920 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/865/src]
+2018-04-09 09:31:31,924 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/865/src/.git/
+
+2018-04-09 09:31:31,929 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/865/src/gradle-retrolambda-master/gradlew
+2018-04-09 09:31:31,935 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/865/src/gradle-retrolambda-master/sample-android-app/build.gradle /tmp/rdisk/865/src/gradle-retrolambda-master/sample-android-feature/build.gradle /tmp/rdisk/865/src/gradle-retrolambda-master/sample-android-lib/build.gradle /tmp/rdisk/865/src/gradle-retrolambda-master/sample-android-test/build.gradle /tmp/rdisk/865/src/gradle-retrolambda-master/build.gradle /tmp/rdisk/865/src/gradle-retrolambda-master/gradle-retrolambda/build.gradle /tmp/rdisk/865/src/gradle-retrolambda-master/sample-java-default-methods/build.gradle /tmp/rdisk/865/src/gradle-retrolambda-master/sample-java/build.gradle
+2018-04-09 09:31:31,939 INFO  ProjectBuildService - All script(s): /tmp/rdisk/865/src/gradle-retrolambda-master/settings.gradle /tmp/rdisk/865/src/gradle-retrolambda-master/sample-java/build.gradle /tmp/rdisk/865/src/gradle-retrolambda-master/sample-java-default-methods/build.gradle /tmp/rdisk/865/src/gradle-retrolambda-master/sample-android-test/build.gradle /tmp/rdisk/865/src/gradle-retrolambda-master/sample-android-lib/build.gradle /tmp/rdisk/865/src/gradle-retrolambda-master/sample-android-feature/build.gradle /tmp/rdisk/865/src/gradle-retrolambda-master/sample-android-app/build.gradle /tmp/rdisk/865/src/gradle-retrolambda-master/gradle-retrolambda/settings.gradle /tmp/rdisk/865/src/gradle-retrolambda-master/gradle-retrolambda/build.gradle /tmp/rdisk/865/src/gradle-retrolambda-master/build.gradle
+2018-04-09 09:31:31,940 INFO  ProjectBuildService - Remote scripts: none
+2018-04-09 09:31:31,940 INFO  ProjectFixService - Fixing project...
+2018-04-09 09:31:31,951 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/865/src/gradle-retrolambda-master/sample-android-app/local.properties
+2018-04-09 09:31:31,951 INFO  ProjectFixService - Build info for "/tmp/rdisk/865/src/gradle-retrolambda-master/sample-android-app/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=25,minSdkVersion=15,targetSdkVersion=25]
+2018-04-09 09:31:31,952 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/865/src/gradle-retrolambda-master/sample-android-feature/local.properties
+2018-04-09 09:31:31,952 INFO  ProjectFixService - Build info for "/tmp/rdisk/865/src/gradle-retrolambda-master/sample-android-feature/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=25,minSdkVersion=15,targetSdkVersion=25]
+2018-04-09 09:31:31,952 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/865/src/gradle-retrolambda-master/sample-android-lib/local.properties
+2018-04-09 09:31:31,952 INFO  ProjectFixService - Build info for "/tmp/rdisk/865/src/gradle-retrolambda-master/sample-android-lib/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=25,minSdkVersion=15,targetSdkVersion=25]
+2018-04-09 09:31:31,953 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/865/src/gradle-retrolambda-master/sample-android-test/local.properties
+2018-04-09 09:31:31,953 INFO  ProjectFixService - Build info for "/tmp/rdisk/865/src/gradle-retrolambda-master/sample-android-test/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=25,minSdkVersion=15,targetSdkVersion=25]
+2018-04-09 09:31:31,953 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/865/src/gradle-retrolambda-master/local.properties
+2018-04-09 09:31:31,954 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-4.1-milestone-1-all.zip
+2018-04-09 09:31:31,954 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-4.1-bin.zip)
+2018-04-09 09:31:31,955 INFO  ProjectFixService - Build info for "/tmp/rdisk/865/src/gradle-retrolambda-master/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=25,minSdkVersion=15,targetSdkVersion=25]
+2018-04-09 09:31:31,956 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/865/src/gradle-retrolambda-master/gradle-retrolambda/local.properties
+2018-04-09 09:31:31,959 INFO  ProjectFixService - Build info for "/tmp/rdisk/865/src/gradle-retrolambda-master/gradle-retrolambda/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=25,minSdkVersion=15,targetSdkVersion=25]
+2018-04-09 09:31:31,959 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/865/src/gradle-retrolambda-master/sample-java-default-methods/local.properties
+2018-04-09 09:31:31,960 INFO  ProjectFixService - Build info for "/tmp/rdisk/865/src/gradle-retrolambda-master/sample-java-default-methods/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=25,minSdkVersion=15,targetSdkVersion=25]
+2018-04-09 09:31:31,961 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/865/src/gradle-retrolambda-master/sample-java/local.properties
+2018-04-09 09:31:31,962 INFO  ProjectFixService - Build info for "/tmp/rdisk/865/src/gradle-retrolambda-master/sample-java/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=25,minSdkVersion=15,targetSdkVersion=25]
+2018-04-09 09:31:31,962 INFO  ProjectFixService - Project was maybe fixed
+2018-04-09 09:31:31,962 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-09 09:31:31,962 INFO  SysUtils - Execute command: [/tmp/rdisk/865/src/gradle-retrolambda-master/gradlew, -b, /tmp/rdisk/865/src/gradle-retrolambda-master/sample-android-app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-09 09:32:02,731 INFO  ProjectTaskService - Detected possible tasks: 91
+2018-04-09 09:32:02,732 INFO  ProjectTaskService - Excluded tasks (9): mockableAndroidJar deviceCheck lint deviceAndroidTest connectedCheck uninstallAll test check connectedAndroidTest
+2018-04-09 09:32:02,732 INFO  SysUtils - Execute command: [/tmp/rdisk/865/src/gradle-retrolambda-master/gradlew, -b, /tmp/rdisk/865/src/gradle-retrolambda-master/sample-android-app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, deviceAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, test, -x, check, -x, connectedAndroidTest, build]
+2018-04-09 09:33:05,622 INFO  SysUtils - Configuration on demand is an incubating feature.
+:gradle-retrolambda:compileJava NO-SOURCE
+:gradle-retrolambda:compileGroovy UP-TO-DATE
+:gradle-retrolambda:processResources UP-TO-DATE
+:gradle-retrolambda:classes UP-TO-DATE
+:gradle-retrolambda:jar UP-TO-DATE
+WARNING: One of the plugins you are using supports Java 8 language features. To try the support built into the Android plugin, remove the following from your build.gradle:
+    apply plugin: 'me.tatarka.retrolambda'
+To learn more, go to https://d.android.com/r/tools/java-8-support-message.html
+
+WARNING: One of the plugins you are using supports Java 8 language features. To try the support built into the Android plugin, remove the following from your build.gradle:
+    apply plugin: 'me.tatarka.retrolambda'
+To learn more, go to https://d.android.com/r/tools/java-8-support-message.html
+
+WARNING: One of the plugins you are using supports Java 8 language features. To try the support built into the Android plugin, remove the following from your build.gradle:
+    apply plugin: 'me.tatarka.retrolambda'
+To learn more, go to https://d.android.com/r/tools/java-8-support-message.html
+
+WARNING: One of the plugins you are using supports Java 8 language features. To try the support built into the Android plugin, remove the following from your build.gradle:
+    apply plugin: 'me.tatarka.retrolambda'
+To learn more, go to https://d.android.com/r/tools/java-8-support-message.html
+
+WARNING: One of the plugins you are using supports Java 8 language features. To try the support built into the Android plugin, remove the following from your build.gradle:
+    apply plugin: 'me.tatarka.retrolambda'
+To learn more, go to https://d.android.com/r/tools/java-8-support-message.html
+
+WARNING: One of the plugins you are using supports Java 8 language features. To try the support built into the Android plugin, remove the following from your build.gradle:
+    apply plugin: 'me.tatarka.retrolambda'
+To learn more, go to https://d.android.com/r/tools/java-8-support-message.html
+
+:sample-android-app:preBuild UP-TO-DATE
+:sample-android-feature:preBuild UP-TO-DATE
+:sample-android-feature:preDebugBuild UP-TO-DATE
+:sample-android-feature:checkDebugManifest
+:sample-android-feature:processDebugManifest
+:sample-android-lib:preBuild UP-TO-DATE
+:sample-android-lib:preDebugBuild UP-TO-DATE
+:sample-android-lib:checkDebugManifest
+:sample-android-lib:processDebugManifest
+:sample-android-app:preFreeDebugBuild
+:sample-android-feature:compileDebugAidl
+:sample-android-lib:compileDebugAidl
+:sample-android-app:compileFreeDebugAidl
+:sample-android-feature:packageDebugRenderscript NO-SOURCE
+:sample-android-lib:packageDebugRenderscript NO-SOURCE
+:sample-android-app:compileFreeDebugRenderscript
+:sample-android-app:checkFreeDebugManifest
+:sample-android-app:generateFreeDebugBuildConfig
+:sample-android-app:generateFreeDebugResValues
+:sample-android-app:generateFreeDebugResources
+:sample-android-feature:compileDebugRenderscript
+:sample-android-feature:generateDebugResValues
+:sample-android-feature:generateDebugResources
+:sample-android-feature:packageDebugResources
+:sample-android-lib:compileDebugRenderscript
+:sample-android-lib:generateDebugResValues
+:sample-android-lib:generateDebugResources
+:sample-android-lib:packageDebugResources
+:sample-android-app:mergeFreeDebugResources
+:sample-android-app:createFreeDebugCompatibleScreenManifests
+:sample-android-app:processFreeDebugManifest
+:sample-android-app:splitsDiscoveryTaskFreeDebug
+:sample-android-feature:platformAttrExtractor
+:sample-android-lib:platformAttrExtractor
+:sample-android-feature:generateDebugBuildConfig
+:sample-android-feature:javaPreCompileDebug
+:sample-android-feature:processDebugJavaRes NO-SOURCE
+:sample-android-lib:generateDebugBuildConfig
+:sample-android-lib:javaPreCompileDebug
+:sample-android-lib:processDebugJavaRes NO-SOURCE
+:sample-android-app:compileFreeDebugNdk NO-SOURCE
+:sample-android-app:mergeFreeDebugShaders
+:sample-android-lib:processDebugResources
+:sample-android-lib:generateDebugSources
+:sample-android-feature:processDebugResources
+:sample-android-app:processFreeDebugResourcesW/ResourceType( 7129): For resource 0x0101053d, entry index(1341) is beyond type entryCount(1329)
+W/ResourceType( 7129): For resource 0x0101053e, entry index(1342) is beyond type entryCount(1329)
+W/ResourceType( 7129): For resource 0x0101053b, entry index(1339) is beyond type entryCount(1329)
+W/ResourceType( 7129): For resource 0x0101053c, entry index(1340) is beyond type entryCount(1329)
+
+:sample-android-app:generateFreeDebugSources
+:sample-android-feature:generateDebugSources
+:sample-android-feature:compileDebugJavaWithJavac
+:sample-android-feature:transformClassesWithRetrolambdaForDebug
+:sample-android-feature:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:sample-android-lib:compileDebugJavaWithJavac
+:sample-android-lib:transformClassesWithRetrolambdaForDebug
+:sample-android-lib:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:sample-android-app:javaPreCompileFreeDebug
+:sample-android-app:compileFreeDebugJavaWithJavac
+:sample-android-app:compileFreeDebugSources
+:sample-android-app:compileFreeDebugShaders
+:sample-android-app:generateFreeDebugAssets
+:sample-android-feature:mergeDebugShaders
+:sample-android-feature:compileDebugShaders
+:sample-android-feature:generateDebugAssets
+:sample-android-feature:mergeDebugAssets
+:sample-android-lib:mergeDebugShaders
+:sample-android-lib:compileDebugShaders
+:sample-android-lib:generateDebugAssets
+:sample-android-lib:mergeDebugAssets
+:sample-android-app:mergeFreeDebugAssets
+:sample-android-app:transformClassesWithJacocoForFreeDebug
+:sample-android-app:transformClassesWithRetrolambdaForFreeDebug
+:sample-android-app:transformClassesWithDexBuilderForFreeDebug
+:sample-android-app:transformDexArchiveWithDexMergerForFreeDebug
+:sample-android-app:mergeFreeDebugJniLibFolders
+:sample-android-feature:compileDebugNdk NO-SOURCE
+:sample-android-feature:mergeDebugJniLibFolders
+:sample-android-feature:transformNativeLibsWithMergeJniLibsForDebug
+:sample-android-feature:transformNativeLibsWithStripDebugSymbolForDebug
+:sample-android-feature:transformNativeLibsWithIntermediateJniLibsForDebug
+:sample-android-lib:compileDebugNdk NO-SOURCE
+:sample-android-lib:mergeDebugJniLibFolders
+:sample-android-lib:transformNativeLibsWithMergeJniLibsForDebug
+:sample-android-lib:transformNativeLibsWithStripDebugSymbolForDebug
+:sample-android-lib:transformNativeLibsWithIntermediateJniLibsForDebug
+:sample-android-app:transformNativeLibsWithMergeJniLibsForFreeDebug
+:sample-android-app:transformNativeLibsWithStripDebugSymbolForFreeDebug
+:sample-android-app:processFreeDebugJavaRes NO-SOURCE
+:sample-android-app:transformResourcesWithMergeJavaResForFreeDebug
+:sample-android-app:validateSigningFreeDebug
+:sample-android-app:packageFreeDebug
+:sample-android-app:assembleFreeDebug
+:sample-android-app:prePaidDebugBuild
+:sample-android-app:compilePaidDebugAidl
+:sample-android-app:compilePaidDebugRenderscript
+:sample-android-app:checkPaidDebugManifest
+:sample-android-app:generatePaidDebugBuildConfig
+:sample-android-app:generatePaidDebugResValues
+:sample-android-app:generatePaidDebugResources
+:sample-android-app:mergePaidDebugResources
+:sample-android-app:createPaidDebugCompatibleScreenManifests
+:sample-android-app:processPaidDebugManifest
+:sample-android-app:splitsDiscoveryTaskPaidDebug
+:sample-android-app:processPaidDebugResourcesW/ResourceType( 7129): For resource 0x0101053d, entry index(1341) is beyond type entryCount(1329)
+W/ResourceType( 7129): For resource 0x0101053e, entry index(1342) is beyond type entryCount(1329)
+W/ResourceType( 7129): For resource 0x0101053b, entry index(1339) is beyond type entryCount(1329)
+W/ResourceType( 7129): For resource 0x0101053c, entry index(1340) is beyond type entryCount(1329)
+
+:sample-android-app:generatePaidDebugSources
+:sample-android-app:javaPreCompilePaidDebug
+:sample-android-app:compilePaidDebugJavaWithJavac
+:sample-android-app:compilePaidDebugNdk NO-SOURCE
+:sample-android-app:compilePaidDebugSources
+:sample-android-app:mergePaidDebugShaders
+:sample-android-app:compilePaidDebugShaders
+:sample-android-app:generatePaidDebugAssets
+:sample-android-app:mergePaidDebugAssets
+:sample-android-app:transformClassesWithJacocoForPaidDebug
+:sample-android-app:transformClassesWithRetrolambdaForPaidDebug
+:sample-android-app:transformClassesWithDexBuilderForPaidDebug
+:sample-android-app:transformDexArchiveWithDexMergerForPaidDebug
+:sample-android-app:mergePaidDebugJniLibFolders
+:sample-android-app:transformNativeLibsWithMergeJniLibsForPaidDebug
+:sample-android-app:transformNativeLibsWithStripDebugSymbolForPaidDebug
+:sample-android-app:processPaidDebugJavaRes NO-SOURCE
+:sample-android-app:transformResourcesWithMergeJavaResForPaidDebug
+:sample-android-app:validateSigningPaidDebug
+:sample-android-app:packagePaidDebug
+:sample-android-app:assemblePaidDebug
+:sample-android-app:assembleDebug
+:sample-android-app:extractProguardFiles
+:sample-android-feature:preReleaseBuild UP-TO-DATE
+:sample-android-feature:checkReleaseManifest
+:sample-android-feature:processReleaseManifest
+:sample-android-lib:preReleaseBuild UP-TO-DATE
+:sample-android-lib:checkReleaseManifest
+:sample-android-lib:processReleaseManifest
+:sample-android-app:preFreeReleaseBuild
+:sample-android-feature:compileReleaseAidl
+:sample-android-lib:compileReleaseAidl
+:sample-android-app:compileFreeReleaseAidl
+:sample-android-feature:packageReleaseRenderscript NO-SOURCE
+:sample-android-lib:packageReleaseRenderscript NO-SOURCE
+:sample-android-app:compileFreeReleaseRenderscript
+:sample-android-app:checkFreeReleaseManifest
+:sample-android-app:generateFreeReleaseBuildConfig
+:sample-android-app:generateFreeReleaseResValues
+:sample-android-app:generateFreeReleaseResources
+:sample-android-feature:compileReleaseRenderscript
+:sample-android-feature:generateReleaseResValues
+:sample-android-feature:generateReleaseResources
+:sample-android-feature:packageReleaseResources
+:sample-android-lib:compileReleaseRenderscript
+:sample-android-lib:generateReleaseResValues
+:sample-android-lib:generateReleaseResources
+:sample-android-lib:packageReleaseResources
+:sample-android-app:mergeFreeReleaseResources
+:sample-android-app:createFreeReleaseCompatibleScreenManifests
+:sample-android-app:processFreeReleaseManifest
+:sample-android-app:splitsDiscoveryTaskFreeRelease
+:sample-android-feature:processReleaseResources
+:sample-android-lib:processReleaseResources
+:sample-android-app:processFreeReleaseResourcesW/ResourceType( 7129): For resource 0x0101053d, entry index(1341) is beyond type entryCount(1329)
+W/ResourceType( 7129): For resource 0x0101053e, entry index(1342) is beyond type entryCount(1329)
+W/ResourceType( 7129): For resource 0x0101053b, entry index(1339) is beyond type entryCount(1329)
+W/ResourceType( 7129): For resource 0x0101053c, entry index(1340) is beyond type entryCount(1329)
+
+:sample-android-app:generateFreeReleaseSources
+:sample-android-feature:generateReleaseBuildConfig
+:sample-android-feature:generateReleaseSources
+:sample-android-feature:javaPreCompileRelease
+:sample-android-feature:compileReleaseJavaWithJavac
+:sample-android-feature:processReleaseJavaRes NO-SOURCE
+:sample-android-feature:transformClassesWithRetrolambdaForRelease
+:sample-android-feature:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease
+:sample-android-lib:generateReleaseBuildConfig
+:sample-android-lib:generateReleaseSources
+:sample-android-lib:javaPreCompileRelease
+:sample-android-lib:compileReleaseJavaWithJavac
+:sample-android-lib:processReleaseJavaRes NO-SOURCE
+:sample-android-lib:transformClassesWithRetrolambdaForRelease
+:sample-android-lib:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease
+:sample-android-app:javaPreCompileFreeRelease
+:sample-android-app:compileFreeReleaseJavaWithJavac
+:sample-android-app:compileFreeReleaseNdk NO-SOURCE
+:sample-android-app:compileFreeReleaseSources
+:sample-android-app:lintVitalFreeRelease
+Download https://jcenter.bintray.com/org/mockito/mockito-core/2.0.23-beta/mockito-core-2.0.23-beta.pom
+Download https://jcenter.bintray.com/org/mockito/mockito-core/2.0.23-beta/mockito-core-2.0.23-beta.jar
+:sample-android-app:mergeFreeReleaseShaders
+:sample-android-app:compileFreeReleaseShaders
+:sample-android-app:generateFreeReleaseAssets
+:sample-android-feature:mergeReleaseShaders
+:sample-android-feature:compileReleaseShaders
+:sample-android-feature:generateReleaseAssets
+:sample-android-feature:mergeReleaseAssets
+:sample-android-lib:mergeReleaseShaders
+:sample-android-lib:compileReleaseShaders
+:sample-android-lib:generateReleaseAssets
+:sample-android-lib:mergeReleaseAssets
+:sample-android-app:mergeFreeReleaseAssets
+:sample-android-app:transformClassesWithRetrolambdaForFreeRelease
+:sample-android-app:processFreeReleaseJavaRes NO-SOURCE
+:sample-android-app:transformResourcesWithMergeJavaResForFreeRelease
+:sample-android-feature:mergeReleaseConsumerProguardFiles
+:sample-android-lib:mergeReleaseConsumerProguardFiles
+:sample-android-app:transformClassesAndResourcesWithProguardForFreeRelease
+ProGuard, version 5.3.3
+Reading input...
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/5d111b0ee62bc2fd987fd08adbc7fbc5/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/modules-2/files-2.1/com.google.dagger/dagger/2.6/a2e0fb833ba928689fb8b8d9cc92a81298da7c37/dagger-2.6.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/f51b17f29c8f9ab9f4f15edd4634f934/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/a9e1c4caf66f9babaf3ad3c0431bf9e0/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/7c26294be24b62cdbe046fe6f787d140/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.1.aar/e665fe874b1cb39b3826174026858ba5/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.1.aar/b35e19b57f692f67572385aca4644a68/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.1.aar/303aa7d37407654ce162ecd5cac30097/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.1.aar/7c9fbde0d5d0d26e11f33bc912c9aa39/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/637905e463c4fad066411f13acd2bd2f/jars/classes.jar] (filtered)
+Reading program jar [/root/Applications/android-sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.1/support-annotations-25.3.1.jar] (filtered)
+Reading program jar [/root/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar] (filtered)
+Reading program jar [/tmp/rdisk/865/src/gradle-retrolambda-master/sample-android-lib/build/intermediates/intermediate-jars/release/classes.jar] (filtered)
+Reading program jar [/tmp/rdisk/865/src/gradle-retrolambda-master/sample-android-feature/build/intermediates/intermediate-jars/release/classes.jar] (filtered)
+Reading program directory [/tmp/rdisk/865/src/gradle-retrolambda-master/sample-android-app/build/intermediates/transforms/retrolambda/free/release/0] (filtered)
+Reading library jar [/root/.gradle/caches/modules-2/files-2.1/javax.annotation/jsr250-api/1.0/5025422767732a1ab45d93abfea846513d742dcf/jsr250-api-1.0.jar] (filtered)
+Reading library jar [/root/Applications/android-sdk/platforms/android-25/android.jar]
+Reading library jar [/root/Applications/android-sdk/platforms/android-25/optional/org.apache.http.legacy.jar]
+Note: duplicate definition of library class [android.net.http.HttpResponseCache]
+Note: duplicate definition of library class [android.net.http.SslCertificate$DName]
+Note: duplicate definition of library class [android.net.http.SslError]
+Note: duplicate definition of library class [android.net.http.SslCertificate]
+Note: duplicate definition of library class [org.apache.http.params.CoreConnectionPNames]
+Note: duplicate definition of library class [org.apache.http.params.HttpConnectionParams]
+Note: duplicate definition of library class [org.apache.http.params.HttpParams]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.SocketFactory]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.LayeredSocketFactory]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.HostNameResolver]
+Note: duplicate definition of library class [org.apache.http.conn.ConnectTimeoutException]
+Note: there were 11 duplicate class definitions.
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#duplicateclass)
+Initializing...
+Ignoring unused library classes...
+  Original number of library classes: 4248
+  Final number of library classes:    972
+Printing kept classes, fields, and methods...
+Shrinking...
+Printing usage to [/tmp/rdisk/865/src/gradle-retrolambda-master/sample-android-app/build/outputs/mapping/free/release/usage.txt]...
+Removing unused program classes and class elements...
+  Original number of program classes: 1753
+  Final number of program classes:    707
+Inlining subroutines...
+Obfuscating...
+Printing mapping to [/tmp/rdisk/865/src/gradle-retrolambda-master/sample-android-app/build/outputs/mapping/free/release/mapping.txt]...
+Preverifying...
+Writing output...
+Preparing output jar [/tmp/rdisk/865/src/gradle-retrolambda-master/sample-android-app/build/intermediates/transforms/proguard/free/release/0.jar]
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/5d111b0ee62bc2fd987fd08adbc7fbc5/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/modules-2/files-2.1/com.google.dagger/dagger/2.6/a2e0fb833ba928689fb8b8d9cc92a81298da7c37/dagger-2.6.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/f51b17f29c8f9ab9f4f15edd4634f934/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/a9e1c4caf66f9babaf3ad3c0431bf9e0/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/7c26294be24b62cdbe046fe6f787d140/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.1.aar/e665fe874b1cb39b3826174026858ba5/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.1.aar/b35e19b57f692f67572385aca4644a68/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.1.aar/303aa7d37407654ce162ecd5cac30097/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.1.aar/7c9fbde0d5d0d26e11f33bc912c9aa39/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/637905e463c4fad066411f13acd2bd2f/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/Applications/android-sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.1/support-annotations-25.3.1.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/865/src/gradle-retrolambda-master/sample-android-lib/build/intermediates/intermediate-jars/release/classes.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/865/src/gradle-retrolambda-master/sample-android-feature/build/intermediates/intermediate-jars/release/classes.jar] (filtered)
+  Copying resources from program directory [/tmp/rdisk/865/src/gradle-retrolambda-master/sample-android-app/build/intermediates/transforms/retrolambda/free/release/0] (filtered)
+Printing classes to [/tmp/rdisk/865/src/gradle-retrolambda-master/sample-android-app/build/outputs/mapping/free/release/dump.txt]...
+:sample-android-app:transformClassesWithDexForFreeRelease
+:sample-android-app:mergeFreeReleaseJniLibFolders
+:sample-android-feature:compileReleaseNdk NO-SOURCE
+:sample-android-feature:mergeReleaseJniLibFolders
+:sample-android-feature:transformNativeLibsWithMergeJniLibsForRelease
+:sample-android-feature:transformNativeLibsWithStripDebugSymbolForRelease
+:sample-android-feature:transformNativeLibsWithIntermediateJniLibsForRelease
+:sample-android-lib:compileReleaseNdk NO-SOURCE
+:sample-android-lib:mergeReleaseJniLibFolders
+:sample-android-lib:transformNativeLibsWithMergeJniLibsForRelease
+:sample-android-lib:transformNativeLibsWithStripDebugSymbolForRelease
+:sample-android-lib:transformNativeLibsWithIntermediateJniLibsForRelease
+:sample-android-app:transformNativeLibsWithMergeJniLibsForFreeRelease
+:sample-android-app:transformNativeLibsWithStripDebugSymbolForFreeRelease
+:sample-android-app:packageFreeRelease
+:sample-android-app:assembleFreeRelease
+:sample-android-app:prePaidReleaseBuild
+:sample-android-app:compilePaidReleaseAidl
+:sample-android-app:compilePaidReleaseRenderscript
+:sample-android-app:checkPaidReleaseManifest
+:sample-android-app:generatePaidReleaseBuildConfig
+:sample-android-app:generatePaidReleaseResValues
+:sample-android-app:generatePaidReleaseResources
+:sample-android-app:mergePaidReleaseResources
+:sample-android-app:createPaidReleaseCompatibleScreenManifests
+:sample-android-app:processPaidReleaseManifest
+:sample-android-app:splitsDiscoveryTaskPaidRelease
+:sample-android-app:processPaidReleaseResourcesW/ResourceType( 7129): For resource 0x0101053d, entry index(1341) is beyond type entryCount(1329)
+W/ResourceType( 7129): For resource 0x0101053e, entry index(1342) is beyond type entryCount(1329)
+W/ResourceType( 7129): For resource 0x0101053b, entry index(1339) is beyond type entryCount(1329)
+W/ResourceType( 7129): For resource 0x0101053c, entry index(1340) is beyond type entryCount(1329)
+
+:sample-android-app:generatePaidReleaseSources
+:sample-android-app:javaPreCompilePaidRelease
+:sample-android-app:compilePaidReleaseJavaWithJavac
+:sample-android-app:compilePaidReleaseNdk NO-SOURCE
+:sample-android-app:compilePaidReleaseSources
+:sample-android-app:lintVitalPaidRelease
+:sample-android-app:mergePaidReleaseShaders
+:sample-android-app:compilePaidReleaseShaders
+:sample-android-app:generatePaidReleaseAssets
+:sample-android-app:mergePaidReleaseAssets
+:sample-android-app:transformClassesWithRetrolambdaForPaidRelease
+:sample-android-app:processPaidReleaseJavaRes NO-SOURCE
+:sample-android-app:transformResourcesWithMergeJavaResForPaidRelease
+:sample-android-app:transformClassesAndResourcesWithProguardForPaidRelease
+ProGuard, version 5.3.3
+Reading input...
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/5d111b0ee62bc2fd987fd08adbc7fbc5/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/modules-2/files-2.1/com.google.dagger/dagger/2.6/a2e0fb833ba928689fb8b8d9cc92a81298da7c37/dagger-2.6.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/f51b17f29c8f9ab9f4f15edd4634f934/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/a9e1c4caf66f9babaf3ad3c0431bf9e0/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/7c26294be24b62cdbe046fe6f787d140/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.1.aar/e665fe874b1cb39b3826174026858ba5/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.1.aar/b35e19b57f692f67572385aca4644a68/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.1.aar/303aa7d37407654ce162ecd5cac30097/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.1.aar/7c9fbde0d5d0d26e11f33bc912c9aa39/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/637905e463c4fad066411f13acd2bd2f/jars/classes.jar] (filtered)
+Reading program jar [/root/Applications/android-sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.1/support-annotations-25.3.1.jar] (filtered)
+Reading program jar [/root/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar] (filtered)
+Reading program jar [/tmp/rdisk/865/src/gradle-retrolambda-master/sample-android-lib/build/intermediates/intermediate-jars/release/classes.jar] (filtered)
+Reading program jar [/tmp/rdisk/865/src/gradle-retrolambda-master/sample-android-feature/build/intermediates/intermediate-jars/release/classes.jar] (filtered)
+Reading program directory [/tmp/rdisk/865/src/gradle-retrolambda-master/sample-android-app/build/intermediates/transforms/retrolambda/paid/release/0] (filtered)
+Reading library jar [/root/.gradle/caches/modules-2/files-2.1/javax.annotation/jsr250-api/1.0/5025422767732a1ab45d93abfea846513d742dcf/jsr250-api-1.0.jar] (filtered)
+Reading library jar [/root/Applications/android-sdk/platforms/android-25/android.jar]
+Reading library jar [/root/Applications/android-sdk/platforms/android-25/optional/org.apache.http.legacy.jar]
+Note: duplicate definition of library class [android.net.http.HttpResponseCache]
+Note: duplicate definition of library class [android.net.http.SslCertificate$DName]
+Note: duplicate definition of library class [android.net.http.SslError]
+Note: duplicate definition of library class [android.net.http.SslCertificate]
+Note: duplicate definition of library class [org.apache.http.params.CoreConnectionPNames]
+Note: duplicate definition of library class [org.apache.http.params.HttpConnectionParams]
+Note: duplicate definition of library class [org.apache.http.params.HttpParams]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.SocketFactory]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.LayeredSocketFactory]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.HostNameResolver]
+Note: duplicate definition of library class [org.apache.http.conn.ConnectTimeoutException]
+Note: there were 11 duplicate class definitions.
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#duplicateclass)
+Initializing...
+Ignoring unused library classes...
+  Original number of library classes: 4248
+  Final number of library classes:    972
+Printing kept classes, fields, and methods...
+Shrinking...
+Printing usage to [/tmp/rdisk/865/src/gradle-retrolambda-master/sample-android-app/build/outputs/mapping/paid/release/usage.txt]...
+Removing unused program classes and class elements...
+  Original number of program classes: 1753
+  Final number of program classes:    707
+Inlining subroutines...
+Obfuscating...
+Printing mapping to [/tmp/rdisk/865/src/gradle-retrolambda-master/sample-android-app/build/outputs/mapping/paid/release/mapping.txt]...
+Preverifying...
+Writing output...
+Preparing output jar [/tmp/rdisk/865/src/gradle-retrolambda-master/sample-android-app/build/intermediates/transforms/proguard/paid/release/0.jar]
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/5d111b0ee62bc2fd987fd08adbc7fbc5/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/modules-2/files-2.1/com.google.dagger/dagger/2.6/a2e0fb833ba928689fb8b8d9cc92a81298da7c37/dagger-2.6.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/f51b17f29c8f9ab9f4f15edd4634f934/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/a9e1c4caf66f9babaf3ad3c0431bf9e0/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/7c26294be24b62cdbe046fe6f787d140/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.1.aar/e665fe874b1cb39b3826174026858ba5/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.1.aar/b35e19b57f692f67572385aca4644a68/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.1.aar/303aa7d37407654ce162ecd5cac30097/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.1.aar/7c9fbde0d5d0d26e11f33bc912c9aa39/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/637905e463c4fad066411f13acd2bd2f/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/Applications/android-sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.1/support-annotations-25.3.1.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/865/src/gradle-retrolambda-master/sample-android-lib/build/intermediates/intermediate-jars/release/classes.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/865/src/gradle-retrolambda-master/sample-android-feature/build/intermediates/intermediate-jars/release/classes.jar] (filtered)
+  Copying resources from program directory [/tmp/rdisk/865/src/gradle-retrolambda-master/sample-android-app/build/intermediates/transforms/retrolambda/paid/release/0] (filtered)
+Printing classes to [/tmp/rdisk/865/src/gradle-retrolambda-master/sample-android-app/build/outputs/mapping/paid/release/dump.txt]...
+:sample-android-app:transformClassesWithDexForPaidRelease
+:sample-android-app:mergePaidReleaseJniLibFolders
+:sample-android-app:transformNativeLibsWithMergeJniLibsForPaidRelease
+:sample-android-app:transformNativeLibsWithStripDebugSymbolForPaidRelease
+:sample-android-app:packagePaidRelease
+:sample-android-app:assemblePaidRelease
+:sample-android-app:assembleRelease
+:sample-android-app:assemble
+:sample-android-app:build
+
+BUILD SUCCESSFUL in 1m 2s
+183 actionable tasks: 183 executed
+Exception in thread "Thread-21" java.lang.NoClassDefFoundError: com/android/builder/internal/aapt/v2/AaptV2Jni$TempDirCache$RecursiveDelete
+	at com.android.builder.internal.aapt.v2.AaptV2Jni$TempDirCache.lambda$getCachedDirectory$0(AaptV2Jni.java:252)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.ClassNotFoundException: com.android.builder.internal.aapt.v2.AaptV2Jni$TempDirCache$RecursiveDelete
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 2 more
+
+2018-04-09 09:33:05,730 INFO  FullProcessService - Found APK file: /tmp/rdisk/865/src/gradle-retrolambda-master/sample-android-app/build/outputs/apk/paid/release/sample-android-app-paid-release-unsigned.apk

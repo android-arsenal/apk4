@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.melnykov.fab.sample",
+    "label" : "Floating Action Button",
+    "icon" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "versionName" : "1.3.0",
+    "versionCode" : 13,
+    "installLocation" : null,
+    "minSdkVersion" : "7",
+    "targetSdkVersion" : "22",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "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"
+  },
+  "dexClasses" : 1308,
+  "locales" : [ "", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bn_BD", "fa", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "af", "in", "vi", "fr_CA", "sr", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"13\" android:versionName=\"1.3.0\" package=\"com.melnykov.fab.sample\" platformBuildVersionCode=\"22\" platformBuildVersionName=\"5.1-1756733\">\n\t<uses-sdk android:minSdkVersion=\"7\" android:targetSdkVersion=\"22\" />\n\t<application android:theme=\"resourceId:0x7f0c0000\" android:label=\"Floating Action Button\" android:icon=\"res/drawable-mdpi-v4/ic_launcher.png\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"Floating Action Button\" android:name=\"com.melnykov.fab.sample.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<activity android:label=\"RecyclerViewTestActivity\" android:name=\"android.support.v7.widget.TestActivity\" />\n\t</application>\n</manifest>\n",
+  "fileSize" : 1258058,
+  "crc32" : 3118180597,
+  "sha256" : "76b0540cd9f5648004d90ae106634968417b652c223b36e89cfc55f5e17e2a5f",
+  "buildTime" : 1526278740000
+}

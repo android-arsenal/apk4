@@ -1,0 +1,166 @@
+2018-04-09 14:15:07,996 INFO  DownloadService - Downloading "https://github.com/pavlospt/ActivityPassProtection/archive/master.zip", attempt 3
+2018-04-09 14:15:08,623 INFO  DownloadService - Downloaded https://github.com/pavlospt/ActivityPassProtection/archive/master.zip, attempt 3
+2018-04-09 14:15:08,623 INFO  DownloadService - Size of file "/tmp/rdisk/797/master.zip": 374 KB
+2018-04-09 14:15:08,623 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-09 14:15:08,623 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/797/master.zip: true
+2018-04-09 14:15:08,624 DEBUG ZipUtil - Extracting '/tmp/rdisk/797/master.zip' into '/tmp/rdisk/797/src'.
+2018-04-09 14:15:08,634 INFO  FullProcessService - Size of directory with sources: 421 KB
+2018-04-09 14:15:08,634 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/797/src]
+2018-04-09 14:15:08,640 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/797/src/.git/
+
+2018-04-09 14:15:08,643 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/797/src/ActivityPassProtection-master/gradlew
+2018-04-09 14:15:08,645 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/797/src/ActivityPassProtection-master/app/build.gradle /tmp/rdisk/797/src/ActivityPassProtection-master/build.gradle
+2018-04-09 14:15:08,647 INFO  ProjectBuildService - All script(s): /tmp/rdisk/797/src/ActivityPassProtection-master/settings.gradle /tmp/rdisk/797/src/ActivityPassProtection-master/gradle-mvn-push.gradle /tmp/rdisk/797/src/ActivityPassProtection-master/build.gradle /tmp/rdisk/797/src/ActivityPassProtection-master/app/build.gradle
+2018-04-09 14:15:08,647 INFO  ProjectBuildService - Remote scripts: none
+2018-04-09 14:15:08,647 INFO  ProjectFixService - Fixing project...
+2018-04-09 14:15:08,656 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/797/src/ActivityPassProtection-master/app/local.properties
+2018-04-09 14:15:08,657 INFO  ProjectFixService - Build info for "/tmp/rdisk/797/src/ActivityPassProtection-master/app/build.gradle": [buildToolsVersion=20.0.0,compileSdkVersion=20,minSdkVersion=14,targetSdkVersion=20]
+2018-04-09 14:15:08,657 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/797/src/ActivityPassProtection-master/local.properties
+2018-04-09 14:15:08,658 INFO  WrapperPropertiesFixService - Gradle wrapper: http://services.gradle.org/distributions/gradle-1.12-all.zip
+2018-04-09 14:15:08,658 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (http://services.gradle.org/distributions/gradle-1.12-bin.zip)
+2018-04-09 14:15:08,661 INFO  ProjectFixService - Build info for "/tmp/rdisk/797/src/ActivityPassProtection-master/build.gradle": [buildToolsVersion=20.0.0,compileSdkVersion=20,minSdkVersion=14,targetSdkVersion=20]
+2018-04-09 14:15:08,661 INFO  ProjectFixService - Project was maybe fixed
+2018-04-09 14:15:08,661 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-09 14:15:08,661 INFO  SysUtils - Execute command: [/tmp/rdisk/797/src/ActivityPassProtection-master/gradlew, -b, /tmp/rdisk/797/src/ActivityPassProtection-master/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-09 14:15:21,384 INFO  ProjectTaskService - Detected possible tasks: 50
+2018-04-09 14:15:21,385 INFO  ProjectTaskService - Excluded tasks (8): lintDebug deviceCheck lint connectedCheck uninstallAll check connectedAndroidTest lintRelease
+2018-04-09 14:15:21,385 INFO  SysUtils - Execute command: [/tmp/rdisk/797/src/ActivityPassProtection-master/gradlew, -b, /tmp/rdisk/797/src/ActivityPassProtection-master/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-09 14:15:28,564 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:androidJavadocs
+Converting class com.android.build.gradle.internal.api.DefaultAndroidSourceDirectorySet to File using toString() method has been deprecated and is scheduled to be removed in Gradle 2.0. Please use java.io.File, java.lang.String, java.net.URL, or java.net.URI instead.
+:app:androidJavadocs UP-TO-DATE
+:app:androidJavadocsJar
+:app:androidSourcesJar
+:app:compileLint
+:app:copyDebugLint UP-TO-DATE
+:app:mergeDebugProguardFiles
+:app:preBuild
+:app:preDebugBuild
+:app:checkDebugManifest
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:packageDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:compileDebugJava
+:app:processDebugJavaRes UP-TO-DATE
+:app:packageDebugJar
+:app:compileDebugNdk
+:app:packageDebugJniLibs UP-TO-DATE
+:app:packageDebugLocalJar UP-TO-DATE
+:app:packageDebugRenderscript UP-TO-DATE
+:app:bundleDebug
+:app:assembleDebug
+:app:copyReleaseLint UP-TO-DATE
+:app:mergeReleaseProguardFiles
+:app:preReleaseBuild
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:packageReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:compileReleaseJava
+:app:processReleaseJavaRes UP-TO-DATE
+:app:packageReleaseJar
+:app:compileReleaseNdk
+:app:packageReleaseJniLibs UP-TO-DATE
+:app:packageReleaseLocalJar UP-TO-DATE
+:app:packageReleaseRenderscript UP-TO-DATE
+:app:bundleRelease
+:app:assembleRelease
+:app:signArchives SKIPPED
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 6.729 secs
+
+2018-04-09 14:15:28,571 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-09 14:15:28,571 INFO  SysUtils - Execute command: [/tmp/rdisk/797/src/ActivityPassProtection-master/gradlew, -b, /tmp/rdisk/797/src/ActivityPassProtection-master/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-09 14:15:34,803 INFO  ProjectTaskService - Detected possible tasks: 50
+2018-04-09 14:15:34,804 INFO  ProjectTaskService - Excluded tasks (8): lintDebug deviceCheck lint connectedCheck uninstallAll check connectedAndroidTest lintRelease
+2018-04-09 14:15:34,804 INFO  SysUtils - Execute command: [/tmp/rdisk/797/src/ActivityPassProtection-master/gradlew, -b, /tmp/rdisk/797/src/ActivityPassProtection-master/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-09 14:15:40,918 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:androidJavadocs
+Converting class com.android.build.gradle.internal.api.DefaultAndroidSourceDirectorySet to File using toString() method has been deprecated and is scheduled to be removed in Gradle 2.0. Please use java.io.File, java.lang.String, java.net.URL, or java.net.URI instead.
+:app:androidJavadocs UP-TO-DATE
+:app:androidJavadocsJar UP-TO-DATE
+:app:androidSourcesJar UP-TO-DATE
+:app:compileLint
+:app:copyDebugLint UP-TO-DATE
+:app:mergeDebugProguardFiles UP-TO-DATE
+:app:preBuild
+:app:preDebugBuild
+:app:checkDebugManifest
+:app:prepareDebugDependencies
+:app:compileDebugAidl UP-TO-DATE
+:app:compileDebugRenderscript UP-TO-DATE
+:app:generateDebugBuildConfig UP-TO-DATE
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets UP-TO-DATE
+:app:generateDebugResValues UP-TO-DATE
+:app:generateDebugResources UP-TO-DATE
+:app:packageDebugResources UP-TO-DATE
+:app:processDebugManifest UP-TO-DATE
+:app:processDebugResources UP-TO-DATE
+:app:generateDebugSources UP-TO-DATE
+:app:compileDebugJava UP-TO-DATE
+:app:processDebugJavaRes UP-TO-DATE
+:app:packageDebugJar UP-TO-DATE
+:app:compileDebugNdk UP-TO-DATE
+:app:packageDebugJniLibs UP-TO-DATE
+:app:packageDebugLocalJar UP-TO-DATE
+:app:packageDebugRenderscript UP-TO-DATE
+:app:bundleDebug
+:app:assembleDebug
+:app:copyReleaseLint UP-TO-DATE
+:app:mergeReleaseProguardFiles UP-TO-DATE
+:app:preReleaseBuild
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl UP-TO-DATE
+:app:compileReleaseRenderscript UP-TO-DATE
+:app:generateReleaseBuildConfig UP-TO-DATE
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets UP-TO-DATE
+:app:generateReleaseResValues UP-TO-DATE
+:app:generateReleaseResources UP-TO-DATE
+:app:packageReleaseResources UP-TO-DATE
+:app:processReleaseManifest UP-TO-DATE
+:app:processReleaseResources UP-TO-DATE
+:app:generateReleaseSources UP-TO-DATE
+:app:compileReleaseJava UP-TO-DATE
+:app:processReleaseJavaRes UP-TO-DATE
+:app:packageReleaseJar UP-TO-DATE
+:app:compileReleaseNdk UP-TO-DATE
+:app:packageReleaseJniLibs UP-TO-DATE
+:app:packageReleaseLocalJar UP-TO-DATE
+:app:packageReleaseRenderscript UP-TO-DATE
+:app:bundleRelease
+:app:assembleRelease
+:app:signArchives SKIPPED
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 5.666 secs
+
+2018-04-09 14:15:40,925 ERROR FullProcessService - Project build has not produced APK file
+2018-04-09 14:15:40,930 ERROR FullProcessService - Could not find generated or existed APK file

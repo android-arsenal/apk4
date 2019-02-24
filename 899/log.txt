@@ -1,0 +1,206 @@
+2018-04-08 16:10:32,802 INFO  DownloadService - Downloading "https://github.com/greenhalolabs/facebooklogin/archive/master.zip", attempt 3
+2018-04-08 16:10:33,204 INFO  DownloadService - Downloaded https://github.com/greenhalolabs/facebooklogin/archive/master.zip, attempt 3
+2018-04-08 16:10:33,204 INFO  DownloadService - Size of file "/tmp/rdisk/899/master.zip": 212 KB
+2018-04-08 16:10:33,204 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-08 16:10:33,205 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/899/master.zip: true
+2018-04-08 16:10:33,205 DEBUG ZipUtil - Extracting '/tmp/rdisk/899/master.zip' into '/tmp/rdisk/899/src'.
+2018-04-08 16:10:33,217 INFO  FullProcessService - Size of directory with sources: 295 KB
+2018-04-08 16:10:33,217 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/899/src]
+2018-04-08 16:10:33,230 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/899/src/.git/
+
+2018-04-08 16:10:33,233 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/899/src/facebooklogin-master/gradlew
+2018-04-08 16:10:33,237 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/899/src/facebooklogin-master/facebooklogin/build.gradle /tmp/rdisk/899/src/facebooklogin-master/sample/build.gradle /tmp/rdisk/899/src/facebooklogin-master/build.gradle
+2018-04-08 16:10:33,239 INFO  ProjectBuildService - All script(s): /tmp/rdisk/899/src/facebooklogin-master/settings.gradle /tmp/rdisk/899/src/facebooklogin-master/sample/build.gradle /tmp/rdisk/899/src/facebooklogin-master/maven_push.gradle /tmp/rdisk/899/src/facebooklogin-master/facebooklogin/build.gradle /tmp/rdisk/899/src/facebooklogin-master/build.gradle
+2018-04-08 16:10:33,240 INFO  ProjectBuildService - Remote scripts: none
+2018-04-08 16:10:33,240 INFO  ProjectFixService - Fixing project...
+2018-04-08 16:10:33,248 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/899/src/facebooklogin-master/facebooklogin/local.properties
+2018-04-08 16:10:33,251 INFO  ProjectFixService - Build info for "/tmp/rdisk/899/src/facebooklogin-master/facebooklogin/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-08 16:10:33,251 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/899/src/facebooklogin-master/facebooklogin/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-08 16:10:33,251 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/899/src/facebooklogin-master/sample/local.properties
+2018-04-08 16:10:33,254 INFO  ProjectFixService - Build info for "/tmp/rdisk/899/src/facebooklogin-master/sample/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-08 16:10:33,254 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/899/src/facebooklogin-master/sample/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-08 16:10:33,254 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/899/src/facebooklogin-master/local.properties
+2018-04-08 16:10:33,255 INFO  WrapperPropertiesFixService - Gradle wrapper: http://services.gradle.org/distributions/gradle-1.12-all.zip
+2018-04-08 16:10:33,255 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (http://services.gradle.org/distributions/gradle-1.12-bin.zip)
+2018-04-08 16:10:33,257 INFO  ProjectFixService - Build info for "/tmp/rdisk/899/src/facebooklogin-master/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-08 16:10:33,257 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/899/src/facebooklogin-master/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-08 16:10:33,258 INFO  ProjectFixService - Project was maybe fixed
+2018-04-08 16:10:33,258 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-08 16:10:33,258 INFO  SysUtils - Execute command: [/tmp/rdisk/899/src/facebooklogin-master/gradlew, -b, /tmp/rdisk/899/src/facebooklogin-master/facebooklogin/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-08 16:10:47,526 INFO  ProjectTaskService - Detected possible tasks: 53
+2018-04-08 16:10:47,527 INFO  ProjectTaskService - Excluded tasks (8): lintDebug deviceCheck lint connectedCheck uninstallAll check connectedAndroidTest lintRelease
+2018-04-08 16:10:47,527 INFO  SysUtils - Execute command: [/tmp/rdisk/899/src/facebooklogin-master/gradlew, -b, /tmp/rdisk/899/src/facebooklogin-master/facebooklogin/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-08 16:10:57,951 INFO  SysUtils - Configuration on demand is an incubating feature.
+Relying on packaging to define the extension of the main artifact has been deprecated and is scheduled to be removed in Gradle 2.0
+:facebooklogin:androidJavadocs
+Converting class com.android.build.gradle.internal.api.DefaultAndroidSourceDirectorySet to File using toString() method has been deprecated and is scheduled to be removed in Gradle 2.0. Please use java.io.File, java.lang.String, java.net.URL, or java.net.URI instead.
+:facebooklogin:androidJavadocs UP-TO-DATE
+:facebooklogin:androidJavadocsJar
+:facebooklogin:androidSourcesJar
+:facebooklogin:compileLint
+:facebooklogin:copyDebugLint UP-TO-DATE
+:facebooklogin:preBuild
+:facebooklogin:preDebugBuild
+:facebooklogin:checkDebugManifest
+:facebooklogin:preDebugTestBuild
+:facebooklogin:preReleaseBuild
+:facebooklogin:prepareComAndroidSupportAppcompatV72000Library
+:facebooklogin:prepareComAndroidSupportSupportV42000Library
+:facebooklogin:prepareDebugDependencies
+:facebooklogin:compileDebugAidl
+:facebooklogin:compileDebugRenderscript
+:facebooklogin:generateDebugBuildConfig
+:facebooklogin:generateDebugAssets UP-TO-DATE
+:facebooklogin:mergeDebugAssets
+:facebooklogin:generateDebugResValues
+:facebooklogin:generateDebugResources
+:facebooklogin:mergeDebugResources
+:facebooklogin:processDebugManifest
+:facebooklogin:processDebugResources
+:facebooklogin:generateDebugSources
+:facebooklogin:compileDebugJavaNote: /tmp/rdisk/899/src/facebooklogin-master/facebooklogin/src/main/java/com/greenhalolabs/facebooklogin/WebDialog.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:facebooklogin:extractDebugAnnotations
+:facebooklogin:mergeDebugProguardFiles
+:facebooklogin:processDebugJavaRes UP-TO-DATE
+:facebooklogin:packageDebugJar
+:facebooklogin:compileDebugNdk
+:facebooklogin:packageDebugJniLibs UP-TO-DATE
+:facebooklogin:packageDebugLocalJar UP-TO-DATE
+:facebooklogin:packageDebugRenderscript UP-TO-DATE
+:facebooklogin:packageDebugResources
+:facebooklogin:bundleDebug
+:facebooklogin:assembleDebug
+:facebooklogin:copyReleaseLint UP-TO-DATE
+:facebooklogin:checkReleaseManifest
+:facebooklogin:prepareReleaseDependencies
+:facebooklogin:compileReleaseAidl
+:facebooklogin:compileReleaseRenderscript
+:facebooklogin:generateReleaseBuildConfig
+:facebooklogin:generateReleaseAssets UP-TO-DATE
+:facebooklogin:mergeReleaseAssets
+:facebooklogin:generateReleaseResValues
+:facebooklogin:generateReleaseResources
+:facebooklogin:mergeReleaseResources
+:facebooklogin:processReleaseManifest
+:facebooklogin:processReleaseResources
+:facebooklogin:generateReleaseSources
+:facebooklogin:compileReleaseJavaNote: /tmp/rdisk/899/src/facebooklogin-master/facebooklogin/src/main/java/com/greenhalolabs/facebooklogin/WebDialog.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:facebooklogin:extractReleaseAnnotations
+:facebooklogin:mergeReleaseProguardFiles
+:facebooklogin:processReleaseJavaRes UP-TO-DATE
+:facebooklogin:packageReleaseJar
+:facebooklogin:compileReleaseNdk
+:facebooklogin:packageReleaseJniLibs UP-TO-DATE
+:facebooklogin:packageReleaseLocalJar UP-TO-DATE
+:facebooklogin:packageReleaseRenderscript UP-TO-DATE
+:facebooklogin:packageReleaseResources
+:facebooklogin:bundleRelease
+:facebooklogin:assembleRelease
+:facebooklogin:signArchives SKIPPED
+:facebooklogin:assemble
+:facebooklogin:build
+
+BUILD SUCCESSFUL
+
+Total time: 9.97 secs
+
+2018-04-08 16:10:57,983 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-08 16:10:57,983 INFO  SysUtils - Execute command: [/tmp/rdisk/899/src/facebooklogin-master/gradlew, -b, /tmp/rdisk/899/src/facebooklogin-master/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-08 16:11:07,700 INFO  ProjectTaskService - Detected possible tasks: 49
+2018-04-08 16:11:07,701 INFO  ProjectTaskService - Excluded tasks (11): lintDebug deviceCheck lint uninstallRelease connectedCheck uninstallAll check connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-08 16:11:07,701 INFO  SysUtils - Execute command: [/tmp/rdisk/899/src/facebooklogin-master/gradlew, -b, /tmp/rdisk/899/src/facebooklogin-master/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-08 16:11:29,965 INFO  SysUtils - Configuration on demand is an incubating feature.
+Relying on packaging to define the extension of the main artifact has been deprecated and is scheduled to be removed in Gradle 2.0
+:sample:preBuild
+:sample:compileDebugNdk
+:facebooklogin:compileLint
+:facebooklogin:copyReleaseLint UP-TO-DATE
+:facebooklogin:preBuild
+:facebooklogin:preReleaseBuild
+:facebooklogin:checkReleaseManifest
+:facebooklogin:preDebugBuild
+:facebooklogin:preDebugTestBuild
+:facebooklogin:prepareComAndroidSupportAppcompatV72000Library UP-TO-DATE
+:facebooklogin:prepareComAndroidSupportSupportV42000Library UP-TO-DATE
+:facebooklogin:prepareReleaseDependencies
+:facebooklogin:compileReleaseAidl UP-TO-DATE
+:facebooklogin:compileReleaseRenderscript UP-TO-DATE
+:facebooklogin:generateReleaseBuildConfig UP-TO-DATE
+:facebooklogin:generateReleaseAssets UP-TO-DATE
+:facebooklogin:mergeReleaseAssets UP-TO-DATE
+:facebooklogin:generateReleaseResValues UP-TO-DATE
+:facebooklogin:generateReleaseResources UP-TO-DATE
+:facebooklogin:mergeReleaseResources UP-TO-DATE
+:facebooklogin:processReleaseManifest UP-TO-DATE
+:facebooklogin:processReleaseResources UP-TO-DATE
+:facebooklogin:generateReleaseSources UP-TO-DATE
+:facebooklogin:compileReleaseJava UP-TO-DATE
+:facebooklogin:extractReleaseAnnotations
+:facebooklogin:mergeReleaseProguardFiles UP-TO-DATE
+:facebooklogin:processReleaseJavaRes UP-TO-DATE
+:facebooklogin:packageReleaseJar UP-TO-DATE
+:facebooklogin:compileReleaseNdk UP-TO-DATE
+:facebooklogin:packageReleaseJniLibs UP-TO-DATE
+:facebooklogin:packageReleaseLocalJar UP-TO-DATE
+:facebooklogin:packageReleaseRenderscript UP-TO-DATE
+:facebooklogin:packageReleaseResources UP-TO-DATE
+:facebooklogin:bundleRelease UP-TO-DATE
+:sample:preDebugBuild
+:sample:checkDebugManifest
+:sample:preReleaseBuild
+:sample:prepareComAndroidSupportAppcompatV72000Library
+:sample:prepareComAndroidSupportSupportV42000Library
+:sample:prepareFacebookloginMasterFacebookloginUnspecifiedLibrary
+:sample:prepareDebugDependencies
+:sample:compileDebugAidl
+:sample:compileDebugRenderscript
+:sample:generateDebugBuildConfig
+:sample:generateDebugAssets UP-TO-DATE
+:sample:mergeDebugAssets
+:sample:generateDebugResValues
+:sample:generateDebugResources
+:sample:mergeDebugResources
+:sample:processDebugManifest
+:sample:processDebugResources
+:sample:generateDebugSources
+:sample:compileDebugJava
+:sample:preDexDebug
+:sample:dexDebug
+:sample:processDebugJavaRes UP-TO-DATE
+:sample:validateDebugSigning
+:sample:packageDebug
+:sample:zipalignDebug
+:sample:assembleDebug
+:sample:checkReleaseManifest
+:sample:prepareReleaseDependencies
+:sample:compileReleaseAidl
+:sample:compileReleaseRenderscript
+:sample:generateReleaseBuildConfig
+:sample:generateReleaseAssets UP-TO-DATE
+:sample:mergeReleaseAssets
+:sample:generateReleaseResValues
+:sample:generateReleaseResources
+:sample:mergeReleaseResources
+:sample:processReleaseManifest
+:sample:processReleaseResources
+:sample:generateReleaseSources
+:sample:compileReleaseJava
+:sample:lintVitalRelease
+:sample:compileReleaseNdk
+:sample:preDexRelease
+:sample:dexRelease
+:sample:processReleaseJavaRes UP-TO-DATE
+:sample:packageRelease
+:sample:assembleRelease
+:sample:assemble
+:sample:build
+
+BUILD SUCCESSFUL
+
+Total time: 21.833 secs
+
+2018-04-08 16:11:30,030 INFO  FullProcessService - Found APK file: /tmp/rdisk/899/src/facebooklogin-master/sample/build/outputs/apk/sample-release-unsigned.apk

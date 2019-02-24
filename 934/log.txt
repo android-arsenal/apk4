@@ -1,0 +1,181 @@
+2018-04-08 15:24:17,179 INFO  DownloadService - Downloading "https://github.com/erickok/mimicry/archive/master.zip", attempt 3
+2018-04-08 15:24:17,721 INFO  DownloadService - Downloaded https://github.com/erickok/mimicry/archive/master.zip, attempt 3
+2018-04-08 15:24:17,721 INFO  DownloadService - Size of file "/tmp/rdisk/934/master.zip": 298 KB
+2018-04-08 15:24:17,721 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-08 15:24:17,721 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/934/master.zip: true
+2018-04-08 15:24:17,721 DEBUG ZipUtil - Extracting '/tmp/rdisk/934/master.zip' into '/tmp/rdisk/934/src'.
+2018-04-08 15:24:17,729 INFO  FullProcessService - Size of directory with sources: 329 KB
+2018-04-08 15:24:17,729 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/934/src]
+2018-04-08 15:24:17,734 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/934/src/.git/
+
+2018-04-08 15:24:17,736 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/934/src/mimicry-master/gradlew
+2018-04-08 15:24:17,738 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/934/src/mimicry-master/library/build.gradle /tmp/rdisk/934/src/mimicry-master/sample/build.gradle /tmp/rdisk/934/src/mimicry-master/build.gradle
+2018-04-08 15:24:17,740 INFO  ProjectBuildService - All script(s): /tmp/rdisk/934/src/mimicry-master/settings.gradle /tmp/rdisk/934/src/mimicry-master/sample/build.gradle /tmp/rdisk/934/src/mimicry-master/maven_push.gradle /tmp/rdisk/934/src/mimicry-master/library/build.gradle /tmp/rdisk/934/src/mimicry-master/build.gradle
+2018-04-08 15:24:17,740 INFO  ProjectBuildService - Remote scripts: none
+2018-04-08 15:24:17,740 INFO  ProjectFixService - Fixing project...
+2018-04-08 15:24:17,748 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/934/src/mimicry-master/library/local.properties
+2018-04-08 15:24:17,748 INFO  ProjectFixService - Build info for "/tmp/rdisk/934/src/mimicry-master/library/build.gradle": [buildToolsVersion=20.0.0,compileSdkVersion=19,minSdkVersion=1,targetSdkVersion=19]
+2018-04-08 15:24:17,748 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/934/src/mimicry-master/library/build.gradle": [buildToolsVersion=20.0.0,compileSdkVersion=19,minSdkVersion=7,targetSdkVersion=19]
+2018-04-08 15:24:17,749 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/934/src/mimicry-master/sample/local.properties
+2018-04-08 15:24:17,749 INFO  ProjectFixService - Build info for "/tmp/rdisk/934/src/mimicry-master/sample/build.gradle": [buildToolsVersion=20.0.0,compileSdkVersion=19,minSdkVersion=8,targetSdkVersion=19]
+2018-04-08 15:24:17,750 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/934/src/mimicry-master/local.properties
+2018-04-08 15:24:17,750 INFO  WrapperPropertiesFixService - Gradle wrapper: http://services.gradle.org/distributions/gradle-2.1-all.zip
+2018-04-08 15:24:17,750 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (http://services.gradle.org/distributions/gradle-2.1-bin.zip)
+2018-04-08 15:24:17,751 INFO  ProjectFixService - Build info for "/tmp/rdisk/934/src/mimicry-master/build.gradle": [buildToolsVersion=20.0.0,compileSdkVersion=19,minSdkVersion=8,targetSdkVersion=19]
+2018-04-08 15:24:17,751 INFO  ProjectFixService - Project was maybe fixed
+2018-04-08 15:24:17,751 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-08 15:24:17,751 INFO  SysUtils - Execute command: [/tmp/rdisk/934/src/mimicry-master/gradlew, -b, /tmp/rdisk/934/src/mimicry-master/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-08 15:24:33,286 INFO  ProjectTaskService - Detected possible tasks: 54
+2018-04-08 15:24:33,287 INFO  ProjectTaskService - Excluded tasks (8): lintDebug deviceCheck lint connectedCheck uninstallAll check connectedAndroidTest lintRelease
+2018-04-08 15:24:33,287 INFO  SysUtils - Execute command: [/tmp/rdisk/934/src/mimicry-master/gradlew, -b, /tmp/rdisk/934/src/mimicry-master/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-08 15:24:42,227 INFO  SysUtils - Configuration on demand is an incubating feature.
+:library:androidJavadocs
+:library:androidJavadocsJar
+:library:androidSourcesJar
+:library:compileLint
+:library:copyDebugLint UP-TO-DATE
+:library:mergeDebugProguardFiles
+:library:preBuild
+:library:preDebugBuild
+:library:checkDebugManifest
+:library:prepareDebugDependencies
+:library:compileDebugAidl
+:library:compileDebugRenderscript
+:library:generateDebugBuildConfig
+:library:generateDebugAssets UP-TO-DATE
+:library:mergeDebugAssets
+:library:generateDebugResValues
+:library:generateDebugResources
+:library:packageDebugResources
+:library:processDebugManifest
+:library:processDebugResources
+:library:generateDebugSources
+:library:compileDebugJava
+:library:processDebugJavaRes UP-TO-DATE
+:library:packageDebugJar
+:library:compileDebugNdk
+:library:packageDebugJniLibs UP-TO-DATE
+:library:packageDebugLocalJar UP-TO-DATE
+:library:packageDebugRenderscript UP-TO-DATE
+:library:bundleDebug
+:library:assembleDebug
+:library:copyReleaseLint UP-TO-DATE
+:library:mergeReleaseProguardFiles
+:library:preReleaseBuild
+:library:checkReleaseManifest
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl
+:library:compileReleaseRenderscript
+:library:generateReleaseBuildConfig
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets
+:library:generateReleaseResValues
+:library:generateReleaseResources
+:library:packageReleaseResources
+:library:processReleaseManifest
+:library:processReleaseResources
+:library:generateReleaseSources
+:library:compileReleaseJava
+:library:processReleaseJavaRes UP-TO-DATE
+:library:packageReleaseJar
+:library:compileReleaseNdk
+:library:packageReleaseJniLibs UP-TO-DATE
+:library:packageReleaseLocalJar UP-TO-DATE
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:bundleRelease
+:library:assembleRelease
+:library:signArchives SKIPPED
+:library:assemble
+:library:build
+
+BUILD SUCCESSFUL
+
+Total time: 8.496 secs
+
+2018-04-08 15:24:42,233 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-08 15:24:42,233 INFO  SysUtils - Execute command: [/tmp/rdisk/934/src/mimicry-master/gradlew, -b, /tmp/rdisk/934/src/mimicry-master/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-08 15:24:49,031 INFO  ProjectTaskService - Detected possible tasks: 53
+2018-04-08 15:24:49,032 INFO  ProjectTaskService - Excluded tasks (11): lintDebug deviceCheck lint uninstallRelease connectedCheck uninstallAll check connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-08 15:24:49,032 INFO  SysUtils - Execute command: [/tmp/rdisk/934/src/mimicry-master/gradlew, -b, /tmp/rdisk/934/src/mimicry-master/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-08 15:25:00,759 INFO  SysUtils - Configuration on demand is an incubating feature.
+:sample:preBuild
+:sample:compileDebugNdk
+:library:compileLint
+:library:copyReleaseLint UP-TO-DATE
+:library:mergeReleaseProguardFiles UP-TO-DATE
+:library:preBuild
+:library:preReleaseBuild
+:library:checkReleaseManifest
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl UP-TO-DATE
+:library:compileReleaseRenderscript UP-TO-DATE
+:library:generateReleaseBuildConfig UP-TO-DATE
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets UP-TO-DATE
+:library:generateReleaseResValues UP-TO-DATE
+:library:generateReleaseResources UP-TO-DATE
+:library:packageReleaseResources UP-TO-DATE
+:library:processReleaseManifest UP-TO-DATE
+:library:processReleaseResources UP-TO-DATE
+:library:generateReleaseSources UP-TO-DATE
+:library:compileReleaseJava UP-TO-DATE
+:library:processReleaseJavaRes UP-TO-DATE
+:library:packageReleaseJar UP-TO-DATE
+:library:compileReleaseNdk UP-TO-DATE
+:library:packageReleaseJniLibs UP-TO-DATE
+:library:packageReleaseLocalJar UP-TO-DATE
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:bundleRelease UP-TO-DATE
+:sample:preDebugBuild
+:sample:checkDebugManifest
+:sample:preReleaseBuild
+:sample:prepareNl2312Library02Library
+:sample:prepareDebugDependencies
+:sample:compileDebugAidl
+:sample:compileDebugRenderscript
+:sample:generateDebugBuildConfig
+:sample:generateDebugAssets UP-TO-DATE
+:sample:mergeDebugAssets
+:sample:generateDebugResValues
+:sample:generateDebugResources
+:sample:mergeDebugResources
+:sample:processDebugManifest
+:sample:processDebugResources
+:sample:generateDebugSources
+:sample:compileDebugJava
+:sample:preDexDebug
+:sample:dexDebug
+:sample:processDebugJavaRes UP-TO-DATE
+:sample:validateDebugSigning
+:sample:packageDebug
+:sample:zipalignDebug
+:sample:assembleDebug
+:sample:checkReleaseManifest
+:sample:prepareReleaseDependencies
+:sample:compileReleaseAidl
+:sample:compileReleaseRenderscript
+:sample:generateReleaseBuildConfig
+:sample:generateReleaseAssets UP-TO-DATE
+:sample:mergeReleaseAssets
+:sample:generateReleaseResValues
+:sample:generateReleaseResources
+:sample:mergeReleaseResources
+:sample:processReleaseManifest
+:sample:processReleaseResources
+:sample:generateReleaseSources
+:sample:compileReleaseJava
+:sample:lintVitalRelease
+:sample:compileReleaseNdk
+:sample:preDexRelease
+:sample:dexRelease
+:sample:processReleaseJavaRes UP-TO-DATE
+:sample:packageRelease
+:sample:assembleRelease
+:sample:assemble
+:sample:build
+
+BUILD SUCCESSFUL
+
+Total time: 11.302 secs
+
+2018-04-08 15:25:00,769 INFO  FullProcessService - Found APK file: /tmp/rdisk/934/src/mimicry-master/sample/build/outputs/apk/sample-release-unsigned.apk

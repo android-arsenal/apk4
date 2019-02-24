@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.marvinlabs.widget.floatinglabel.demo",
+    "label" : "Floating Label Widgets",
+    "icon" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "versionName" : "0.0.0-SNAPSHOT",
+    "versionCode" : null,
+    "installLocation" : null,
+    "minSdkVersion" : "15",
+    "targetSdkVersion" : "20",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ "android.permission.INTERNET", "android.permission.WRITE_EXTERNAL_STORAGE" ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "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"
+  },
+  "dexClasses" : 938,
+  "locales" : [ "", "sl", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "pt", "ar", "ru", "fa", "sk", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "af", "in", "vi", "fr_CA", "sr", "da", "es", "hy_AM", "tr", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "fr", "ja", "lo_LA", "iw", "de", "en_IN", "es_US", "nb", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionName=\"0.0.0-SNAPSHOT\" package=\"com.marvinlabs.widget.floatinglabel.demo\">\n\t<uses-sdk android:minSdkVersion=\"15\" android:targetSdkVersion=\"20\" />\n\t<uses-permission android:name=\"android.permission.INTERNET\" />\n\t<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />\n\t<application android:theme=\"resourceId:0x7f0b0000\" android:label=\"Floating Label Widgets\" android:icon=\"res/drawable-mdpi-v4/ic_launcher.png\" android:debuggable=\"true\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"Floating Label Widgets\" android:name=\"com.marvinlabs.widget.floatinglabel.demo.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<activity android:label=\"Choose a product\" android:name=\"com.marvinlabs.widget.floatinglabel.demo.chooser.ItemChooserActivity\" />\n\t</application>\n</manifest>\n",
+  "fileSize" : 889622,
+  "crc32" : 2473902049,
+  "sha256" : "e65601dd503a7ed14c18495699e066cac8bf256cafdf21906ba25e82c52b19f3",
+  "buildTime" : 1523204508000
+}

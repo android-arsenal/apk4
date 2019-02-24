@@ -1,0 +1,312 @@
+2018-05-11 15:37:17,024 INFO  DownloadService - Downloading "https://github.com/futuresimple/android-floating-action-button/archive/master.zip", attempt 3
+2018-05-11 15:37:17,991 INFO  DownloadService - Downloaded https://github.com/futuresimple/android-floating-action-button/archive/master.zip, attempt 3
+2018-05-11 15:37:17,991 INFO  DownloadService - Size of file "/tmp/rdisk/965/master.zip": 286 KB
+2018-05-11 15:37:17,991 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-05-11 15:37:17,991 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/965/master.zip: true
+2018-05-11 15:37:17,991 DEBUG ZipUtil - Extracting '/tmp/rdisk/965/master.zip' into '/tmp/rdisk/965/src'.
+2018-05-11 15:37:18,007 INFO  FullProcessService - Size of directory with sources: 348 KB
+2018-05-11 15:37:18,007 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/965/src]
+2018-05-11 15:37:18,013 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/965/src/.git/
+
+2018-05-11 15:37:18,015 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/965/src/android-floating-action-button-master/gradlew
+2018-05-11 15:37:18,018 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/965/src/android-floating-action-button-master/library/build.gradle /tmp/rdisk/965/src/android-floating-action-button-master/sample/build.gradle /tmp/rdisk/965/src/android-floating-action-button-master/build.gradle
+2018-05-11 15:37:18,022 INFO  ProjectBuildService - All script(s): /tmp/rdisk/965/src/android-floating-action-button-master/settings.gradle /tmp/rdisk/965/src/android-floating-action-button-master/sample/build.gradle /tmp/rdisk/965/src/android-floating-action-button-master/library/gradle-mvn-push.gradle /tmp/rdisk/965/src/android-floating-action-button-master/library/build.gradle /tmp/rdisk/965/src/android-floating-action-button-master/build.gradle
+2018-05-11 15:37:18,022 INFO  ProjectBuildService - Remote scripts: none
+2018-05-11 15:37:18,022 INFO  ProjectFixService - Fixing project...
+2018-05-11 15:37:18,035 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/965/src/android-floating-action-button-master/library/local.properties
+2018-05-11 15:37:18,035 INFO  ProjectFixService - Build info for "/tmp/rdisk/965/src/android-floating-action-button-master/library/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=14,targetSdkVersion=22]
+2018-05-11 15:37:18,035 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/965/src/android-floating-action-button-master/sample/local.properties
+2018-05-11 15:37:18,036 INFO  ProjectFixService - Build info for "/tmp/rdisk/965/src/android-floating-action-button-master/sample/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=14,targetSdkVersion=22]
+2018-05-11 15:37:18,036 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/965/src/android-floating-action-button-master/local.properties
+2018-05-11 15:37:18,037 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-05-11 15:37:18,037 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-05-11 15:37:18,039 INFO  ProjectFixService - Build info for "/tmp/rdisk/965/src/android-floating-action-button-master/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=14,targetSdkVersion=22]
+2018-05-11 15:37:18,039 INFO  ProjectFixService - Project was maybe fixed
+2018-05-11 15:37:18,039 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-11 15:37:18,040 INFO  SysUtils - Execute command: [/tmp/rdisk/965/src/android-floating-action-button-master/gradlew, -b, /tmp/rdisk/965/src/android-floating-action-button-master/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-11 15:37:24,344 INFO  ProjectTaskService - Detected possible tasks: 64
+2018-05-11 15:37:24,344 INFO  ProjectTaskService - Excluded tasks (14): lintDebug mockableAndroidJar deviceCheck lint uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest lintRelease testDebug
+2018-05-11 15:37:24,345 INFO  SysUtils - Execute command: [/tmp/rdisk/965/src/android-floating-action-button-master/gradlew, -b, /tmp/rdisk/965/src/android-floating-action-button-master/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, lintRelease, -x, testDebug, build]
+2018-05-11 15:37:34,535 INFO  SysUtils - Configuration on demand is an incubating feature.
+:library:androidJavadocs/tmp/rdisk/965/src/android-floating-action-button-master/library/src/main/java/com/getbase/floatingactionbutton/TouchDelegateGroup.java:4: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/965/src/android-floating-action-button-master/library/src/main/java/com/getbase/floatingactionbutton/FloatingActionsMenu.java:15: error: package android.support.annotation does not exist
+import android.support.annotation.ColorRes;
+                                 ^
+/tmp/rdisk/965/src/android-floating-action-button-master/library/src/main/java/com/getbase/floatingactionbutton/FloatingActionsMenu.java:16: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/965/src/android-floating-action-button-master/library/src/main/java/com/getbase/floatingactionbutton/AddFloatingActionButton.java:11: error: package android.support.annotation does not exist
+import android.support.annotation.ColorRes;
+                                 ^
+/tmp/rdisk/965/src/android-floating-action-button-master/library/src/main/java/com/getbase/floatingactionbutton/AddFloatingActionButton.java:12: error: package android.support.annotation does not exist
+import android.support.annotation.DrawableRes;
+                                 ^
+/tmp/rdisk/965/src/android-floating-action-button-master/library/src/main/java/com/getbase/floatingactionbutton/FloatingActionButton.java:23: error: package android.support.annotation does not exist
+import android.support.annotation.ColorRes;
+                                 ^
+/tmp/rdisk/965/src/android-floating-action-button-master/library/src/main/java/com/getbase/floatingactionbutton/FloatingActionButton.java:24: error: package android.support.annotation does not exist
+import android.support.annotation.DimenRes;
+                                 ^
+/tmp/rdisk/965/src/android-floating-action-button-master/library/src/main/java/com/getbase/floatingactionbutton/FloatingActionButton.java:25: error: package android.support.annotation does not exist
+import android.support.annotation.DrawableRes;
+                                 ^
+/tmp/rdisk/965/src/android-floating-action-button-master/library/src/main/java/com/getbase/floatingactionbutton/FloatingActionButton.java:26: error: package android.support.annotation does not exist
+import android.support.annotation.IntDef;
+                                 ^
+/tmp/rdisk/965/src/android-floating-action-button-master/library/src/main/java/com/getbase/floatingactionbutton/FloatingActionButton.java:27: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/965/src/android-floating-action-button-master/library/src/main/java/com/getbase/floatingactionbutton/FloatingActionButton.java:41: error: cannot find symbol
+  @IntDef({ SIZE_NORMAL, SIZE_MINI })
+   ^
+  symbol:   class IntDef
+  location: class FloatingActionButton
+/tmp/rdisk/965/src/android-floating-action-button-master/library/src/main/java/com/getbase/floatingactionbutton/TouchDelegateGroup.java:21: error: cannot find symbol
+  public void addTouchDelegate(@NonNull TouchDelegate touchDelegate) {
+                                ^
+  symbol:   class NonNull
+  location: class TouchDelegateGroup
+/tmp/rdisk/965/src/android-floating-action-button-master/library/src/main/java/com/getbase/floatingactionbutton/TouchDelegateGroup.java:38: error: cannot find symbol
+  public boolean onTouchEvent(@NonNull MotionEvent event) {
+                               ^
+  symbol:   class NonNull
+  location: class TouchDelegateGroup
+/tmp/rdisk/965/src/android-floating-action-button-master/library/src/main/java/com/getbase/floatingactionbutton/FloatingActionsMenu.java:207: error: cannot find symbol
+  private int getColor(@ColorRes int id) {
+                        ^
+  symbol:   class ColorRes
+  location: class FloatingActionsMenu
+/tmp/rdisk/965/src/android-floating-action-button-master/library/src/main/java/com/getbase/floatingactionbutton/AddFloatingActionButton.java:46: error: cannot find symbol
+  public void setPlusColorResId(@ColorRes int plusColor) {
+                                 ^
+  symbol:   class ColorRes
+  location: class AddFloatingActionButton
+/tmp/rdisk/965/src/android-floating-action-button-master/library/src/main/java/com/getbase/floatingactionbutton/AddFloatingActionButton.java:58: error: cannot find symbol
+  public void setIcon(@DrawableRes int icon) {
+                       ^
+  symbol:   class DrawableRes
+  location: class AddFloatingActionButton
+/tmp/rdisk/965/src/android-floating-action-button-master/library/src/main/java/com/getbase/floatingactionbutton/FloatingActionButton.java:49: error: cannot find symbol
+  @DrawableRes
+   ^
+  symbol:   class DrawableRes
+  location: class FloatingActionButton
+/tmp/rdisk/965/src/android-floating-action-button-master/library/src/main/java/com/getbase/floatingactionbutton/FloatingActionButton.java:119: error: cannot find symbol
+  public void setIcon(@DrawableRes int icon) {
+                       ^
+  symbol:   class DrawableRes
+  location: class FloatingActionButton
+/tmp/rdisk/965/src/android-floating-action-button-master/library/src/main/java/com/getbase/floatingactionbutton/FloatingActionButton.java:127: error: cannot find symbol
+  public void setIconDrawable(@NonNull Drawable iconDrawable) {
+                               ^
+  symbol:   class NonNull
+  location: class FloatingActionButton
+/tmp/rdisk/965/src/android-floating-action-button-master/library/src/main/java/com/getbase/floatingactionbutton/FloatingActionButton.java:142: error: cannot find symbol
+  public void setColorNormalResId(@ColorRes int colorNormal) {
+                                   ^
+  symbol:   class ColorRes
+  location: class FloatingActionButton
+/tmp/rdisk/965/src/android-floating-action-button-master/library/src/main/java/com/getbase/floatingactionbutton/FloatingActionButton.java:160: error: cannot find symbol
+  public void setColorPressedResId(@ColorRes int colorPressed) {
+                                    ^
+  symbol:   class ColorRes
+  location: class FloatingActionButton
+/tmp/rdisk/965/src/android-floating-action-button-master/library/src/main/java/com/getbase/floatingactionbutton/FloatingActionButton.java:178: error: cannot find symbol
+  public void setColorDisabledResId(@ColorRes int colorDisabled) {
+                                     ^
+  symbol:   class ColorRes
+  location: class FloatingActionButton
+/tmp/rdisk/965/src/android-floating-action-button-master/library/src/main/java/com/getbase/floatingactionbutton/FloatingActionButton.java:200: error: cannot find symbol
+  int getColor(@ColorRes int id) {
+                ^
+  symbol:   class ColorRes
+  location: class FloatingActionButton
+/tmp/rdisk/965/src/android-floating-action-button-master/library/src/main/java/com/getbase/floatingactionbutton/FloatingActionButton.java:204: error: cannot find symbol
+  float getDimension(@DimenRes int id) {
+                      ^
+  symbol:   class DimenRes
+  location: class FloatingActionButton
+/tmp/rdisk/965/src/android-floating-action-button-master/library/src/main/java/com/getbase/floatingactionbutton/FloatingActionsMenu.java:624: error: cannot find symbol
+    public void writeToParcel(@NonNull Parcel out, int flags) {
+                               ^
+  symbol:   class NonNull
+  location: class SavedState
+javadoc: warning - Class ColorRes not found.
+javadoc: warning - Class DrawableRes not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class DrawableRes not found.
+javadoc: warning - Class NonNull not found.
+javadoc: warning - Class ColorRes not found.
+javadoc: warning - Class ColorRes not found.
+javadoc: warning - Class ColorRes not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class NonNull not found.
+javadoc: warning - Class NonNull not found.
+javadoc: warning - Class NonNull not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+
+43 warnings
+:library:androidJavadocsJar
+:library:androidSourcesJar
+:library:compileLint
+:library:copyDebugLint UP-TO-DATE
+:library:preBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:checkDebugManifest
+:library:prepareDebugDependencies
+:library:compileDebugAidl
+:library:compileDebugRenderscript
+:library:generateDebugBuildConfig
+:library:generateDebugAssets UP-TO-DATE
+:library:mergeDebugAssets
+:library:generateDebugResValues
+:library:generateDebugResources
+:library:packageDebugResources
+:library:processDebugManifest
+:library:processDebugResources
+:library:generateDebugSources
+:library:compileDebugJavaNote: /tmp/rdisk/965/src/android-floating-action-button-master/library/src/main/java/com/getbase/floatingactionbutton/FloatingActionButton.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:library:extractDebugAnnotations
+:library:mergeDebugProguardFiles
+:library:processDebugJavaRes UP-TO-DATE
+:library:packageDebugJar
+:library:compileDebugNdk UP-TO-DATE
+:library:packageDebugJniLibs UP-TO-DATE
+:library:packageDebugLocalJar UP-TO-DATE
+:library:packageDebugRenderscript UP-TO-DATE
+:library:bundleDebug
+:library:assembleDebug
+:library:copyReleaseLint UP-TO-DATE
+:library:preReleaseBuild UP-TO-DATE
+:library:checkReleaseManifest
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl
+:library:compileReleaseRenderscript
+:library:generateReleaseBuildConfig
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets
+:library:generateReleaseResValues
+:library:generateReleaseResources
+:library:packageReleaseResources
+:library:processReleaseManifest
+:library:processReleaseResources
+:library:generateReleaseSources
+:library:compileReleaseJavaNote: /tmp/rdisk/965/src/android-floating-action-button-master/library/src/main/java/com/getbase/floatingactionbutton/FloatingActionButton.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:library:extractReleaseAnnotations
+:library:mergeReleaseProguardFiles
+:library:processReleaseJavaRes UP-TO-DATE
+:library:packageReleaseJar
+:library:compileReleaseNdk UP-TO-DATE
+:library:packageReleaseJniLibs UP-TO-DATE
+:library:packageReleaseLocalJar UP-TO-DATE
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:bundleRelease
+:library:assembleRelease
+:library:signArchives SKIPPED
+:library:assemble
+:library:build
+
+BUILD SUCCESSFUL
+
+Total time: 9.766 secs
+
+2018-05-11 15:37:34,544 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-11 15:37:34,544 INFO  SysUtils - Execute command: [/tmp/rdisk/965/src/android-floating-action-button-master/gradlew, -b, /tmp/rdisk/965/src/android-floating-action-button-master/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-11 15:37:40,788 INFO  ProjectTaskService - Detected possible tasks: 60
+2018-05-11 15:37:40,789 INFO  ProjectTaskService - Excluded tasks (18): lintDebug mockableAndroidJar deviceCheck lint uninstallRelease uninstallDebugAndroidTest installRelease installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest installDebug lintRelease testDebug uninstallDebug
+2018-05-11 15:37:40,789 INFO  SysUtils - Execute command: [/tmp/rdisk/965/src/android-floating-action-button-master/gradlew, -b, /tmp/rdisk/965/src/android-floating-action-button-master/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, uninstallDebugAndroidTest, -x, installRelease, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, uninstallDebug, build]
+2018-05-11 15:37:53,035 INFO  SysUtils - Configuration on demand is an incubating feature.
+:sample:preBuild UP-TO-DATE
+:sample:preDebugBuild UP-TO-DATE
+:sample:compileDebugNdk UP-TO-DATE
+:library:compileLint
+:library:copyReleaseLint UP-TO-DATE
+:library:preBuild UP-TO-DATE
+:library:preReleaseBuild UP-TO-DATE
+:library:checkReleaseManifest
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl UP-TO-DATE
+:library:compileReleaseRenderscript UP-TO-DATE
+:library:generateReleaseBuildConfig UP-TO-DATE
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets UP-TO-DATE
+:library:generateReleaseResValues UP-TO-DATE
+:library:generateReleaseResources UP-TO-DATE
+:library:packageReleaseResources UP-TO-DATE
+:library:processReleaseManifest UP-TO-DATE
+:library:processReleaseResources UP-TO-DATE
+:library:generateReleaseSources UP-TO-DATE
+:library:compileReleaseJava UP-TO-DATE
+:library:extractReleaseAnnotations UP-TO-DATE
+:library:mergeReleaseProguardFiles UP-TO-DATE
+:library:processReleaseJavaRes UP-TO-DATE
+:library:packageReleaseJar UP-TO-DATE
+:library:compileReleaseNdk UP-TO-DATE
+:library:packageReleaseJniLibs UP-TO-DATE
+:library:packageReleaseLocalJar UP-TO-DATE
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:bundleRelease UP-TO-DATE
+:sample:checkDebugManifest
+:sample:preReleaseBuild UP-TO-DATE
+:sample:prepareAndroidFloatingActionButtonMasterLibraryUnspecifiedLibrary
+:sample:prepareDebugDependencies
+:sample:compileDebugAidl
+:sample:compileDebugRenderscript
+:sample:generateDebugBuildConfig
+:sample:generateDebugAssets UP-TO-DATE
+:sample:mergeDebugAssets
+:sample:generateDebugResValues
+:sample:generateDebugResources
+:sample:mergeDebugResources
+:sample:processDebugManifest
+:sample:processDebugResources
+:sample:generateDebugSources
+:sample:compileDebugJava
+:sample:preDexDebug
+:sample:dexDebug
+:sample:processDebugJavaRes UP-TO-DATE
+:sample:validateDebugSigning
+:sample:packageDebug
+:sample:zipalignDebug
+:sample:assembleDebug
+:sample:checkReleaseManifest
+:sample:prepareReleaseDependencies
+:sample:compileReleaseAidl
+:sample:compileReleaseRenderscript
+:sample:generateReleaseBuildConfig
+:sample:generateReleaseAssets UP-TO-DATE
+:sample:mergeReleaseAssets
+:sample:generateReleaseResValues
+:sample:generateReleaseResources
+:sample:mergeReleaseResources
+:sample:processReleaseManifest
+:sample:processReleaseResources
+:sample:generateReleaseSources
+:sample:compileReleaseJava
+:sample:lintVitalRelease
+:sample:compileReleaseNdk UP-TO-DATE
+:sample:proguardRelease
+:sample:dexRelease
+:sample:processReleaseJavaRes UP-TO-DATE
+:sample:packageRelease
+:sample:zipalignRelease
+:sample:assembleRelease
+:sample:assemble
+:sample:build
+
+BUILD SUCCESSFUL
+
+Total time: 11.838 secs
+
+2018-05-11 15:37:53,049 INFO  FullProcessService - Found APK file: /tmp/rdisk/965/src/android-floating-action-button-master/sample/build/outputs/apk/sample-release.apk

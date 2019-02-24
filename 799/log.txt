@@ -1,0 +1,179 @@
+2018-04-09 11:14:55,386 INFO  DownloadService - Downloading "https://github.com/vanniktech/VNTNumberPickerPreference/archive/master.zip", attempt 3
+2018-04-09 11:14:56,473 INFO  DownloadService - Downloaded https://github.com/vanniktech/VNTNumberPickerPreference/archive/master.zip, attempt 3
+2018-04-09 11:14:56,473 INFO  DownloadService - Size of file "/tmp/rdisk/799/master.zip": 808 KB
+2018-04-09 11:14:56,473 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-09 11:14:56,473 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/799/master.zip: true
+2018-04-09 11:14:56,473 DEBUG ZipUtil - Extracting '/tmp/rdisk/799/master.zip' into '/tmp/rdisk/799/src'.
+2018-04-09 11:14:56,490 INFO  FullProcessService - Size of directory with sources: 1 MB
+2018-04-09 11:14:56,491 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/799/src]
+2018-04-09 11:14:56,497 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/799/src/.git/
+
+2018-04-09 11:14:56,500 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/799/src/VNTNumberPickerPreference-master/gradlew
+2018-04-09 11:14:56,503 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/799/src/VNTNumberPickerPreference-master/app/build.gradle /tmp/rdisk/799/src/VNTNumberPickerPreference-master/library/build.gradle /tmp/rdisk/799/src/VNTNumberPickerPreference-master/build.gradle
+2018-04-09 11:14:56,505 INFO  ProjectBuildService - All script(s): /tmp/rdisk/799/src/VNTNumberPickerPreference-master/settings.gradle /tmp/rdisk/799/src/VNTNumberPickerPreference-master/library/build.gradle /tmp/rdisk/799/src/VNTNumberPickerPreference-master/gradle/gradle-mvn-push.gradle /tmp/rdisk/799/src/VNTNumberPickerPreference-master/build.gradle /tmp/rdisk/799/src/VNTNumberPickerPreference-master/app/build.gradle
+2018-04-09 11:14:56,506 INFO  ProjectBuildService - Remote scripts: none
+2018-04-09 11:14:56,506 INFO  ProjectFixService - Fixing project...
+2018-04-09 11:14:56,514 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/799/src/VNTNumberPickerPreference-master/app/local.properties
+2018-04-09 11:14:56,518 INFO  ProjectFixService - Build info for "/tmp/rdisk/799/src/VNTNumberPickerPreference-master/app/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=23]
+2018-04-09 11:14:56,518 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/799/src/VNTNumberPickerPreference-master/library/local.properties
+2018-04-09 11:14:56,521 INFO  ProjectFixService - Build info for "/tmp/rdisk/799/src/VNTNumberPickerPreference-master/library/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=23]
+2018-04-09 11:14:56,521 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/799/src/VNTNumberPickerPreference-master/local.properties
+2018-04-09 11:14:56,522 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.13-all.zip
+2018-04-09 11:14:56,522 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.13-bin.zip)
+2018-04-09 11:14:56,522 INFO  ProjectFixService - Build info for "/tmp/rdisk/799/src/VNTNumberPickerPreference-master/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=23]
+2018-04-09 11:14:56,522 INFO  ProjectFixService - Project was maybe fixed
+2018-04-09 11:14:56,522 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-09 11:14:56,523 INFO  SysUtils - Execute command: [/tmp/rdisk/799/src/VNTNumberPickerPreference-master/gradlew, -b, /tmp/rdisk/799/src/VNTNumberPickerPreference-master/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-09 11:15:08,972 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-09 11:15:08,972 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-09 11:15:08,972 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-09 11:15:08,972 INFO  SysUtils - Execute command: [/tmp/rdisk/799/src/VNTNumberPickerPreference-master/gradlew, -b, /tmp/rdisk/799/src/VNTNumberPickerPreference-master/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-09 11:15:15,989 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-09 11:15:15,990 INFO  SysUtils - Configuration on demand is an incubating feature.
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Build file '/tmp/rdisk/799/src/VNTNumberPickerPreference-master/app/build.gradle' line: 26
+
+* What went wrong:
+A problem occurred evaluating project ':app'.
+> Neither path nor baseDir may be null or empty string. path='' basedir='/tmp/rdisk/799/src/VNTNumberPickerPreference-master/app'
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.GradleScriptException: A problem occurred evaluating project ':app'.
+	at org.gradle.groovy.scripts.internal.DefaultScriptRunnerFactory$ScriptRunnerImpl.run(DefaultScriptRunnerFactory.java:93)
+	at org.gradle.configuration.DefaultScriptPluginFactory$ScriptPluginImpl$2.run(DefaultScriptPluginFactory.java:157)
+	at org.gradle.configuration.ProjectScriptTarget.addConfiguration(ProjectScriptTarget.java:72)
+	at org.gradle.configuration.DefaultScriptPluginFactory$ScriptPluginImpl.apply(DefaultScriptPluginFactory.java:162)
+	at org.gradle.configuration.project.BuildScriptProcessor.execute(BuildScriptProcessor.java:38)
+	at org.gradle.configuration.project.BuildScriptProcessor.execute(BuildScriptProcessor.java:25)
+	at org.gradle.configuration.project.ConfigureActionsProjectEvaluator.evaluate(ConfigureActionsProjectEvaluator.java:34)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.evaluate(LifecycleProjectEvaluator.java:55)
+	at org.gradle.api.internal.project.AbstractProject.evaluate(AbstractProject.java:529)
+	at org.gradle.api.internal.project.AbstractProject.evaluate(AbstractProject.java:90)
+	at org.gradle.execution.TaskPathProjectEvaluator.configureHierarchy(TaskPathProjectEvaluator.java:42)
+	at org.gradle.execution.TaskSelector.getSelection(TaskSelector.java:84)
+	at org.gradle.execution.TaskSelector.getSelection(TaskSelector.java:75)
+	at org.gradle.execution.commandline.CommandLineTaskParser.parseTasks(CommandLineTaskParser.java:42)
+	at org.gradle.execution.TaskNameResolvingBuildConfigurationAction.configure(TaskNameResolvingBuildConfigurationAction.java:44)
+	at org.gradle.execution.DefaultBuildConfigurationActionExecuter.configure(DefaultBuildConfigurationActionExecuter.java:48)
+	at org.gradle.execution.DefaultBuildConfigurationActionExecuter.access$000(DefaultBuildConfigurationActionExecuter.java:25)
+	at org.gradle.execution.DefaultBuildConfigurationActionExecuter$1.proceed(DefaultBuildConfigurationActionExecuter.java:54)
+	at org.gradle.execution.DefaultTasksBuildExecutionAction.configure(DefaultTasksBuildExecutionAction.java:44)
+	at org.gradle.execution.DefaultBuildConfigurationActionExecuter.configure(DefaultBuildConfigurationActionExecuter.java:48)
+	at org.gradle.execution.DefaultBuildConfigurationActionExecuter.access$000(DefaultBuildConfigurationActionExecuter.java:25)
+	at org.gradle.execution.DefaultBuildConfigurationActionExecuter$1.proceed(DefaultBuildConfigurationActionExecuter.java:54)
+	at org.gradle.execution.ExcludedTaskFilteringBuildConfigurationAction.configure(ExcludedTaskFilteringBuildConfigurationAction.java:47)
+	at org.gradle.execution.DefaultBuildConfigurationActionExecuter.configure(DefaultBuildConfigurationActionExecuter.java:48)
+	at org.gradle.execution.DefaultBuildConfigurationActionExecuter.select(DefaultBuildConfigurationActionExecuter.java:36)
+	at org.gradle.initialization.DefaultGradleLauncher$3.run(DefaultGradleLauncher.java:143)
+	at org.gradle.internal.Factories$1.create(Factories.java:22)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:90)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:52)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:140)
+	at org.gradle.initialization.DefaultGradleLauncher.access$200(DefaultGradleLauncher.java:32)
+	at org.gradle.initialization.DefaultGradleLauncher$1.create(DefaultGradleLauncher.java:99)
+	at org.gradle.initialization.DefaultGradleLauncher$1.create(DefaultGradleLauncher.java:93)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:90)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:62)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:93)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:82)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:94)
+	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:28)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:43)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:28)
+	at org.gradle.launcher.exec.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:81)
+	at org.gradle.launcher.exec.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:46)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:51)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:28)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:43)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:173)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:241)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:214)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:207)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:55)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:36)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:30)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:129)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:61)
+Caused by: java.lang.IllegalArgumentException: Neither path nor baseDir may be null or empty string. path='' basedir='/tmp/rdisk/799/src/VNTNumberPickerPreference-master/app'
+	at org.gradle.api.internal.file.BaseDirFileResolver.doResolve(BaseDirFileResolver.java:67)
+	at org.gradle.api.internal.file.AbstractFileResolver.resolve(AbstractFileResolver.java:84)
+	at org.gradle.api.internal.file.AbstractFileResolver.resolve(AbstractFileResolver.java:66)
+	at org.gradle.api.internal.file.DefaultFileOperations.file(DefaultFileOperations.java:76)
+	at org.gradle.api.internal.project.AbstractProject.file(AbstractProject.java:657)
+	at org.gradle.groovy.scripts.DefaultScript.file(DefaultScript.java:126)
+	at org.gradle.api.internal.BeanDynamicObject$GroovyObjectAdapter.invokeMethod(BeanDynamicObject.java:279)
+	at org.gradle.api.internal.BeanDynamicObject.invokeMethod(BeanDynamicObject.java:130)
+	at org.gradle.api.internal.ConfigureDelegate.invokeMethod(ConfigureDelegate.java:78)
+	at build_e881i0v0gwkmclu2gku0xanhd$_run_closure1$_closure5$_closure8.doCall(/tmp/rdisk/799/src/VNTNumberPickerPreference-master/app/build.gradle:26)
+	at org.gradle.api.internal.ClosureBackedAction.execute(ClosureBackedAction.java:67)
+	at org.gradle.api.internal.AbstractNamedDomainObjectContainer.create(AbstractNamedDomainObjectContainer.java:59)
+	at org.gradle.api.internal.AbstractNamedDomainObjectContainer.create(AbstractNamedDomainObjectContainer.java:52)
+	at org.gradle.api.internal.NamedDomainObjectContainerConfigureDelegate._configure(NamedDomainObjectContainerConfigureDelegate.java:39)
+	at org.gradle.api.internal.ConfigureDelegate.invokeMethod(ConfigureDelegate.java:73)
+	at build_e881i0v0gwkmclu2gku0xanhd$_run_closure1$_closure5.doCall(/tmp/rdisk/799/src/VNTNumberPickerPreference-master/app/build.gradle:24)
+	at org.gradle.api.internal.ClosureBackedAction.execute(ClosureBackedAction.java:67)
+	at org.gradle.util.ConfigureUtil.configure(ConfigureUtil.java:130)
+	at org.gradle.util.ConfigureUtil.configure(ConfigureUtil.java:91)
+	at org.gradle.api.internal.AbstractNamedDomainObjectContainer.configure(AbstractNamedDomainObjectContainer.java:68)
+	at org.gradle.api.internal.AbstractNamedDomainObjectContainer.configure(AbstractNamedDomainObjectContainer.java:24)
+	at org.gradle.api.internal.ClosureBackedAction.execute(ClosureBackedAction.java:59)
+	at com.android.build.gradle.BaseExtension.signingConfigs(BaseExtension.java:378)
+	at com.android.build.gradle.AppExtension_Decorated.signingConfigs(Unknown Source)
+	at build_e881i0v0gwkmclu2gku0xanhd$_run_closure1.doCall(/tmp/rdisk/799/src/VNTNumberPickerPreference-master/app/build.gradle:23)
+	at org.gradle.api.internal.ClosureBackedAction.execute(ClosureBackedAction.java:67)
+	at org.gradle.api.internal.plugins.ExtensionsStorage$ExtensionHolder.configure(ExtensionsStorage.java:145)
+	at org.gradle.api.internal.plugins.ExtensionsStorage.configureExtension(ExtensionsStorage.java:69)
+	at org.gradle.api.internal.plugins.DefaultConvention$ExtensionsDynamicObject.invokeMethod(DefaultConvention.java:207)
+	at org.gradle.api.internal.CompositeDynamicObject.invokeMethod(CompositeDynamicObject.java:150)
+	at org.gradle.groovy.scripts.BasicScript.methodMissing(BasicScript.java:79)
+	at build_e881i0v0gwkmclu2gku0xanhd.run(/tmp/rdisk/799/src/VNTNumberPickerPreference-master/app/build.gradle:3)
+	at org.gradle.groovy.scripts.internal.DefaultScriptRunnerFactory$ScriptRunnerImpl.run(DefaultScriptRunnerFactory.java:91)
+	... 63 more
+
+
+BUILD FAILED
+
+Total time: 5.664 secs
+
+2018-04-09 11:15:15,992 INFO  FullProcessService - Found APK file: /tmp/rdisk/799/src/VNTNumberPickerPreference-master/sample.apk

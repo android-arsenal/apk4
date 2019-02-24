@@ -1,0 +1,9 @@
+2018-04-08 16:41:51,680 INFO  DownloadService - Downloading "https://github.com/jaydeepw/poly-picker/archive/master.zip", attempt 3
+2018-04-08 16:41:51,680 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-08 16:41:52,055 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-08 16:41:52,055 INFO  DownloadService - Downloading "https://github.com/jaydeepw/poly-picker/archive/master.zip", attempt 3
+2018-04-08 16:41:52,056 DEBUG FullProcessService - Repository https://github.com/jaydeepw/poly-picker available: false
+2018-04-08 16:41:52,056 ERROR FullProcessService - Could not find directory with sources
+2018-04-08 16:41:52,056 ERROR FullProcessService - Project will not be processed
+2018-04-08 16:41:52,056 ERROR FullProcessService - Project build has not produced APK file
+2018-04-08 16:41:52,057 ERROR FullProcessService - Could not find generated or existed APK file

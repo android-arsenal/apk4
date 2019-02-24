@@ -1,0 +1,1320 @@
+2018-04-09 11:12:50,542 INFO  DownloadService - Downloading "https://github.com/lucasr/twoway-view/archive/master.zip", attempt 3
+2018-04-09 11:12:51,050 INFO  DownloadService - Downloaded https://github.com/lucasr/twoway-view/archive/master.zip, attempt 3
+2018-04-09 11:12:51,051 INFO  DownloadService - Size of file "/tmp/rdisk/801/master.zip": 163 KB
+2018-04-09 11:12:51,051 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-09 11:12:51,051 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/801/master.zip: true
+2018-04-09 11:12:51,051 DEBUG ZipUtil - Extracting '/tmp/rdisk/801/master.zip' into '/tmp/rdisk/801/src'.
+2018-04-09 11:12:51,065 INFO  FullProcessService - Size of directory with sources: 280 KB
+2018-04-09 11:12:51,065 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/801/src]
+2018-04-09 11:12:51,075 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/801/src/.git/
+
+2018-04-09 11:12:51,079 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/801/src/twoway-view-master/gradlew
+2018-04-09 11:12:51,082 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/801/src/twoway-view-master/core/build.gradle /tmp/rdisk/801/src/twoway-view-master/layouts/build.gradle /tmp/rdisk/801/src/twoway-view-master/sample/build.gradle /tmp/rdisk/801/src/twoway-view-master/build.gradle
+2018-04-09 11:12:51,085 INFO  ProjectBuildService - All script(s): /tmp/rdisk/801/src/twoway-view-master/settings.gradle /tmp/rdisk/801/src/twoway-view-master/sample/build.gradle /tmp/rdisk/801/src/twoway-view-master/layouts/build.gradle /tmp/rdisk/801/src/twoway-view-master/gradle/scripts/gradle-mvn-push.gradle /tmp/rdisk/801/src/twoway-view-master/core/build.gradle /tmp/rdisk/801/src/twoway-view-master/build.gradle
+2018-04-09 11:12:51,085 INFO  ProjectBuildService - Remote scripts: none
+2018-04-09 11:12:51,085 INFO  ProjectFixService - Fixing project...
+2018-04-09 11:12:51,095 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/801/src/twoway-view-master/core/local.properties
+2018-04-09 11:12:51,096 INFO  ProjectFixService - Build info for "/tmp/rdisk/801/src/twoway-view-master/core/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=10,targetSdkVersion=21]
+2018-04-09 11:12:51,096 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/801/src/twoway-view-master/layouts/local.properties
+2018-04-09 11:12:51,096 INFO  ProjectFixService - Build info for "/tmp/rdisk/801/src/twoway-view-master/layouts/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=10,targetSdkVersion=21]
+2018-04-09 11:12:51,097 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/801/src/twoway-view-master/sample/local.properties
+2018-04-09 11:12:51,097 INFO  ProjectFixService - Build info for "/tmp/rdisk/801/src/twoway-view-master/sample/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=10,targetSdkVersion=21]
+2018-04-09 11:12:51,097 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/801/src/twoway-view-master/local.properties
+2018-04-09 11:12:51,098 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-09 11:12:51,098 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-09 11:12:51,099 INFO  ProjectFixService - Build info for "/tmp/rdisk/801/src/twoway-view-master/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=10,targetSdkVersion=21]
+2018-04-09 11:12:51,099 INFO  ProjectFixService - Project was maybe fixed
+2018-04-09 11:12:51,099 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-09 11:12:51,099 INFO  SysUtils - Execute command: [/tmp/rdisk/801/src/twoway-view-master/gradlew, -b, /tmp/rdisk/801/src/twoway-view-master/core/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-09 11:13:03,494 INFO  ProjectTaskService - Detected possible tasks: 56
+2018-04-09 11:13:03,494 INFO  ProjectTaskService - Excluded tasks (8): lintDebug deviceCheck lint connectedCheck uninstallAll check connectedAndroidTest lintRelease
+2018-04-09 11:13:03,494 INFO  SysUtils - Execute command: [/tmp/rdisk/801/src/twoway-view-master/gradlew, -b, /tmp/rdisk/801/src/twoway-view-master/core/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-09 11:13:10,853 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-09 11:13:10,853 INFO  SysUtils - Configuration on demand is an incubating feature.
+:core:androidJavadocs/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/TwoWayLayoutManager.java:25: error: package android.support.v7.widget does not exist
+import android.support.v7.widget.LinearSmoothScroller;
+                                ^
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/TwoWayLayoutManager.java:26: error: package android.support.v7.widget does not exist
+import android.support.v7.widget.RecyclerView;
+                                ^
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/TwoWayLayoutManager.java:27: error: package android.support.v7.widget.RecyclerView does not exist
+import android.support.v7.widget.RecyclerView.Adapter;
+                                             ^
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/TwoWayLayoutManager.java:28: error: package android.support.v7.widget.RecyclerView does not exist
+import android.support.v7.widget.RecyclerView.LayoutManager;
+                                             ^
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/TwoWayLayoutManager.java:29: error: package android.support.v7.widget.RecyclerView does not exist
+import android.support.v7.widget.RecyclerView.LayoutParams;
+                                             ^
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/TwoWayLayoutManager.java:30: error: package android.support.v7.widget.RecyclerView does not exist
+import android.support.v7.widget.RecyclerView.Recycler;
+                                             ^
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/TwoWayLayoutManager.java:31: error: package android.support.v7.widget.RecyclerView does not exist
+import android.support.v7.widget.RecyclerView.State;
+                                             ^
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/TwoWayLayoutManager.java:32: error: package android.support.v7.widget.RecyclerView does not exist
+import android.support.v7.widget.RecyclerView.ViewHolder;
+                                             ^
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/TwoWayLayoutManager.java:39: error: cannot find symbol
+public abstract class TwoWayLayoutManager extends LayoutManager {
+                                                  ^
+  symbol: class LayoutManager
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/TwoWayLayoutManager.java:52: error: cannot find symbol
+    private RecyclerView mRecyclerView;
+            ^
+  symbol:   class RecyclerView
+  location: class TwoWayLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/TwoWayLayoutManager.java:119: error: cannot find symbol
+    protected Adapter getAdapter() {
+              ^
+  symbol:   class Adapter
+  location: class TwoWayLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/TwoWayLayoutManager.java:134: error: cannot find symbol
+    private void recycleChildrenOutOfBounds(Direction direction, Recycler recycler) {
+                                                                 ^
+  symbol:   class Recycler
+  location: class TwoWayLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/TwoWayLayoutManager.java:142: error: cannot find symbol
+    private void recycleChildrenFromStart(Direction direction, Recycler recycler) {
+                                                               ^
+  symbol:   class Recycler
+  location: class TwoWayLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/TwoWayLayoutManager.java:167: error: cannot find symbol
+    private void recycleChildrenFromEnd(Direction direction, Recycler recycler) {
+                                                             ^
+  symbol:   class Recycler
+  location: class TwoWayLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/TwoWayLayoutManager.java:194: error: cannot find symbol
+    private int scrollBy(int delta, Recycler recycler, State state) {
+                                    ^
+  symbol:   class Recycler
+  location: class TwoWayLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/TwoWayLayoutManager.java:194: error: cannot find symbol
+    private int scrollBy(int delta, Recycler recycler, State state) {
+                                                       ^
+  symbol:   class State
+  location: class TwoWayLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/TwoWayLayoutManager.java:234: error: cannot find symbol
+    private void fillGap(Direction direction, Recycler recycler, State state) {
+                                              ^
+  symbol:   class Recycler
+  location: class TwoWayLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/TwoWayLayoutManager.java:234: error: cannot find symbol
+    private void fillGap(Direction direction, Recycler recycler, State state) {
+                                                                 ^
+  symbol:   class State
+  location: class TwoWayLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/TwoWayLayoutManager.java:248: error: cannot find symbol
+    private void fillBefore(int pos, Recycler recycler) {
+                                     ^
+  symbol:   class Recycler
+  location: class TwoWayLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/TwoWayLayoutManager.java:252: error: cannot find symbol
+    private void fillBefore(int position, Recycler recycler, int extraSpace) {
+                                          ^
+  symbol:   class Recycler
+  location: class TwoWayLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/TwoWayLayoutManager.java:261: error: cannot find symbol
+    private void fillAfter(int pos, Recycler recycler, State state) {
+                                    ^
+  symbol:   class Recycler
+  location: class TwoWayLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/TwoWayLayoutManager.java:261: error: cannot find symbol
+    private void fillAfter(int pos, Recycler recycler, State state) {
+                                                       ^
+  symbol:   class State
+  location: class TwoWayLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/TwoWayLayoutManager.java:265: error: cannot find symbol
+    private void fillAfter(int position, Recycler recycler, State state, int extraSpace) {
+                                         ^
+  symbol:   class Recycler
+  location: class TwoWayLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/TwoWayLayoutManager.java:265: error: cannot find symbol
+    private void fillAfter(int position, Recycler recycler, State state, int extraSpace) {
+                                                            ^
+  symbol:   class State
+  location: class TwoWayLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/TwoWayLayoutManager.java:275: error: cannot find symbol
+    private void fillSpecific(int position, Recycler recycler, State state) {
+                                            ^
+  symbol:   class Recycler
+  location: class TwoWayLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/TwoWayLayoutManager.java:275: error: cannot find symbol
+    private void fillSpecific(int position, Recycler recycler, State state) {
+                                                               ^
+  symbol:   class State
+  location: class TwoWayLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/TwoWayLayoutManager.java:304: error: cannot find symbol
+    private void correctTooHigh(int childCount, Recycler recycler, State state) {
+                                                ^
+  symbol:   class Recycler
+  location: class TwoWayLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/TwoWayLayoutManager.java:304: error: cannot find symbol
+    private void correctTooHigh(int childCount, Recycler recycler, State state) {
+                                                                   ^
+  symbol:   class State
+  location: class TwoWayLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/TwoWayLayoutManager.java:343: error: cannot find symbol
+    private void correctTooLow(int childCount, Recycler recycler, State state) {
+                                               ^
+  symbol:   class Recycler
+  location: class TwoWayLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/TwoWayLayoutManager.java:343: error: cannot find symbol
+    private void correctTooLow(int childCount, Recycler recycler, State state) {
+                                                                  ^
+  symbol:   class State
+  location: class TwoWayLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/TwoWayLayoutManager.java:403: error: cannot find symbol
+    private static View findNextScrapView(List<ViewHolder> scrapList, Direction direction,
+                                               ^
+  symbol:   class ViewHolder
+  location: class TwoWayLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/TwoWayLayoutManager.java:437: error: cannot find symbol
+    private void fillFromScrapList(List<ViewHolder> scrapList, Direction direction) {
+                                        ^
+  symbol:   class ViewHolder
+  location: class TwoWayLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/TwoWayLayoutManager.java:465: error: cannot find symbol
+    private View makeAndAddView(int position, Direction direction, Recycler recycler) {
+                                                                   ^
+  symbol:   class Recycler
+  location: class TwoWayLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/TwoWayLayoutManager.java:575: error: cannot find symbol
+    protected int getExtraLayoutSpace(State state) {
+                                      ^
+  symbol:   class State
+  location: class TwoWayLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/TwoWayLayoutManager.java:612: error: cannot find symbol
+    protected int getAnchorItemPosition(State state) {
+                                        ^
+  symbol:   class State
+  location: class TwoWayLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/TwoWayLayoutManager.java:688: error: cannot find symbol
+    public void onAttachedToWindow(RecyclerView view) {
+                                   ^
+  symbol:   class RecyclerView
+  location: class TwoWayLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/TwoWayLayoutManager.java:694: error: cannot find symbol
+    public void onDetachedFromWindow(RecyclerView view, Recycler recycler) {
+                                     ^
+  symbol:   class RecyclerView
+  location: class TwoWayLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/TwoWayLayoutManager.java:694: error: cannot find symbol
+    public void onDetachedFromWindow(RecyclerView view, Recycler recycler) {
+                                                        ^
+  symbol:   class Recycler
+  location: class TwoWayLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/TwoWayLayoutManager.java:700: error: package RecyclerView does not exist
+    public void onAdapterChanged(RecyclerView.Adapter oldAdapter, RecyclerView.Adapter newAdapter) {
+                                             ^
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/TwoWayLayoutManager.java:700: error: package RecyclerView does not exist
+    public void onAdapterChanged(RecyclerView.Adapter oldAdapter, RecyclerView.Adapter newAdapter) {
+                                                                              ^
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/TwoWayLayoutManager.java:710: error: cannot find symbol
+    public void onLayoutChildren(Recycler recycler, State state) {
+                                 ^
+  symbol:   class Recycler
+  location: class TwoWayLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/TwoWayLayoutManager.java:710: error: cannot find symbol
+    public void onLayoutChildren(Recycler recycler, State state) {
+                                                    ^
+  symbol:   class State
+  location: class TwoWayLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/TwoWayLayoutManager.java:733: error: cannot find symbol
+    protected void onLayoutScrapList(Recycler recycler, State state) {
+                                     ^
+  symbol:   class Recycler
+  location: class TwoWayLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/TwoWayLayoutManager.java:733: error: cannot find symbol
+    protected void onLayoutScrapList(Recycler recycler, State state) {
+                                                        ^
+  symbol:   class State
+  location: class TwoWayLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/TwoWayLayoutManager.java:749: error: cannot find symbol
+    public void onItemsAdded(RecyclerView recyclerView, int positionStart, int itemCount) {
+                             ^
+  symbol:   class RecyclerView
+  location: class TwoWayLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/TwoWayLayoutManager.java:754: error: cannot find symbol
+    public void onItemsRemoved(RecyclerView recyclerView, int positionStart, int itemCount) {
+                               ^
+  symbol:   class RecyclerView
+  location: class TwoWayLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/TwoWayLayoutManager.java:759: error: cannot find symbol
+    public void onItemsUpdated(RecyclerView recyclerView, int positionStart, int itemCount) {
+                               ^
+  symbol:   class RecyclerView
+  location: class TwoWayLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/TwoWayLayoutManager.java:764: error: cannot find symbol
+    public void onItemsMoved(RecyclerView recyclerView, int from, int to, int itemCount) {
+                             ^
+  symbol:   class RecyclerView
+  location: class TwoWayLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/TwoWayLayoutManager.java:769: error: cannot find symbol
+    public void onItemsChanged(RecyclerView recyclerView) {
+                               ^
+  symbol:   class RecyclerView
+  location: class TwoWayLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/TwoWayLayoutManager.java:774: error: package RecyclerView does not exist
+    public RecyclerView.LayoutParams generateDefaultLayoutParams() {
+                       ^
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/TwoWayLayoutManager.java:788: error: cannot find symbol
+    public int scrollHorizontallyBy(int dx, Recycler recycler, State state) {
+                                            ^
+  symbol:   class Recycler
+  location: class TwoWayLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/TwoWayLayoutManager.java:788: error: cannot find symbol
+    public int scrollHorizontallyBy(int dx, Recycler recycler, State state) {
+                                                               ^
+  symbol:   class State
+  location: class TwoWayLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/TwoWayLayoutManager.java:797: error: cannot find symbol
+    public int scrollVerticallyBy(int dy, Recycler recycler, State state) {
+                                          ^
+  symbol:   class Recycler
+  location: class TwoWayLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/TwoWayLayoutManager.java:797: error: cannot find symbol
+    public int scrollVerticallyBy(int dy, Recycler recycler, State state) {
+                                                             ^
+  symbol:   class State
+  location: class TwoWayLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/TwoWayLayoutManager.java:826: error: cannot find symbol
+    public void smoothScrollToPosition(RecyclerView recyclerView, State state, int position) {
+                                       ^
+  symbol:   class RecyclerView
+  location: class TwoWayLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/TwoWayLayoutManager.java:826: error: cannot find symbol
+    public void smoothScrollToPosition(RecyclerView recyclerView, State state, int position) {
+                                                                  ^
+  symbol:   class State
+  location: class TwoWayLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/TwoWayLayoutManager.java:858: error: cannot find symbol
+    public int computeHorizontalScrollOffset(State state) {
+                                             ^
+  symbol:   class State
+  location: class TwoWayLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/TwoWayLayoutManager.java:867: error: cannot find symbol
+    public int computeVerticalScrollOffset(State state) {
+                                           ^
+  symbol:   class State
+  location: class TwoWayLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/TwoWayLayoutManager.java:876: error: cannot find symbol
+    public int computeHorizontalScrollExtent(State state) {
+                                             ^
+  symbol:   class State
+  location: class TwoWayLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/TwoWayLayoutManager.java:881: error: cannot find symbol
+    public int computeVerticalScrollExtent(State state) {
+                                           ^
+  symbol:   class State
+  location: class TwoWayLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/TwoWayLayoutManager.java:886: error: cannot find symbol
+    public int computeHorizontalScrollRange(State state) {
+                                            ^
+  symbol:   class State
+  location: class TwoWayLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/TwoWayLayoutManager.java:891: error: cannot find symbol
+    public int computeVerticalScrollRange(State state) {
+                                          ^
+  symbol:   class State
+  location: class TwoWayLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/TwoWayLayoutManager.java:896: error: cannot find symbol
+    public void onMeasure(Recycler recycler, State state, int widthSpec, int heightSpec) {
+                          ^
+  symbol:   class Recycler
+  location: class TwoWayLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/TwoWayLayoutManager.java:896: error: cannot find symbol
+    public void onMeasure(Recycler recycler, State state, int widthSpec, int heightSpec) {
+                                             ^
+  symbol:   class State
+  location: class TwoWayLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/ItemSelectionSupport.java:8: error: package android.support.v4.util does not exist
+import android.support.v4.util.LongSparseArray;
+                              ^
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/ItemSelectionSupport.java:9: error: package android.support.v7.widget does not exist
+import android.support.v7.widget.RecyclerView;
+                                ^
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/ItemSelectionSupport.java:10: error: package android.support.v7.widget.RecyclerView does not exist
+import android.support.v7.widget.RecyclerView.Adapter;
+                                             ^
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/ItemSelectionSupport.java:26: error: cannot find symbol
+    private final RecyclerView mRecyclerView;
+                  ^
+  symbol:   class RecyclerView
+  location: class ItemSelectionSupport
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/ClickItemTouchListener.java:5: error: package android.support.v4.view does not exist
+import android.support.v4.view.GestureDetectorCompat;
+                              ^
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/ClickItemTouchListener.java:6: error: package android.support.v4.view does not exist
+import android.support.v4.view.MotionEventCompat;
+                              ^
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/ClickItemTouchListener.java:7: error: package android.support.v7.widget does not exist
+import android.support.v7.widget.RecyclerView;
+                                ^
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/ClickItemTouchListener.java:8: error: package android.support.v7.widget.RecyclerView does not exist
+import android.support.v7.widget.RecyclerView.OnItemTouchListener;
+                                             ^
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/ClickItemTouchListener.java:13: error: cannot find symbol
+abstract class ClickItemTouchListener implements OnItemTouchListener {
+                                                 ^
+  symbol: class OnItemTouchListener
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/ItemSelectionSupport.java:425: error: cannot find symbol
+    private static class CheckedIdStates extends LongSparseArray<Integer> implements Parcelable {
+                                                 ^
+  symbol:   class LongSparseArray
+  location: class ItemSelectionSupport
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/ItemSelectionSupport.java:41: error: cannot find symbol
+    private ItemSelectionSupport(RecyclerView recyclerView) {
+                                 ^
+  symbol:   class RecyclerView
+  location: class ItemSelectionSupport
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/ItemSelectionSupport.java:343: error: cannot find symbol
+    public static ItemSelectionSupport addTo(RecyclerView recyclerView) {
+                                             ^
+  symbol:   class RecyclerView
+  location: class ItemSelectionSupport
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/ItemSelectionSupport.java:355: error: cannot find symbol
+    public static void removeFrom(RecyclerView recyclerView) {
+                                  ^
+  symbol:   class RecyclerView
+  location: class ItemSelectionSupport
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/ItemSelectionSupport.java:368: error: cannot find symbol
+    public static ItemSelectionSupport from(RecyclerView recyclerView) {
+                                            ^
+  symbol:   class RecyclerView
+  location: class ItemSelectionSupport
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/ItemSelectionSupport.java:472: error: cannot find symbol
+        TouchListener(RecyclerView recyclerView) {
+                      ^
+  symbol:   class RecyclerView
+  location: class ItemSelectionSupport.TouchListener
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/ItemSelectionSupport.java:477: error: cannot find symbol
+        boolean performItemClick(RecyclerView parent, View view, int position, long id) {
+                                 ^
+  symbol:   class RecyclerView
+  location: class ItemSelectionSupport.TouchListener
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/ItemSelectionSupport.java:527: error: cannot find symbol
+        boolean performItemLongClick(RecyclerView parent, View view, int position, long id) {
+                                     ^
+  symbol:   class RecyclerView
+  location: class ItemSelectionSupport.TouchListener
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/ClickItemTouchListener.java:16: error: cannot find symbol
+    private final GestureDetectorCompat mGestureDetector;
+                  ^
+  symbol:   class GestureDetectorCompat
+  location: class ClickItemTouchListener
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/ClickItemTouchListener.java:18: error: cannot find symbol
+    ClickItemTouchListener(RecyclerView hostView) {
+                           ^
+  symbol:   class RecyclerView
+  location: class ClickItemTouchListener
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/ClickItemTouchListener.java:23: error: cannot find symbol
+    private boolean isAttachedToWindow(RecyclerView hostView) {
+                                       ^
+  symbol:   class RecyclerView
+  location: class ClickItemTouchListener
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/ClickItemTouchListener.java:31: error: cannot find symbol
+    private boolean hasAdapter(RecyclerView hostView) {
+                               ^
+  symbol:   class RecyclerView
+  location: class ClickItemTouchListener
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/ClickItemTouchListener.java:36: error: cannot find symbol
+    public boolean onInterceptTouchEvent(RecyclerView recyclerView, MotionEvent event) {
+                                         ^
+  symbol:   class RecyclerView
+  location: class ClickItemTouchListener
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/ClickItemTouchListener.java:46: error: cannot find symbol
+    public void onTouchEvent(RecyclerView recyclerView, MotionEvent event) {
+                             ^
+  symbol:   class RecyclerView
+  location: class ClickItemTouchListener
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/ClickItemTouchListener.java:51: error: cannot find symbol
+    abstract boolean performItemClick(RecyclerView parent, View view, int position, long id);
+                                      ^
+  symbol:   class RecyclerView
+  location: class ClickItemTouchListener
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/ClickItemTouchListener.java:52: error: cannot find symbol
+    abstract boolean performItemLongClick(RecyclerView parent, View view, int position, long id);
+                                          ^
+  symbol:   class RecyclerView
+  location: class ClickItemTouchListener
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/ItemClickSupport.java:3: error: package android.support.v7.widget does not exist
+import android.support.v7.widget.RecyclerView;
+                                ^
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/ItemClickSupport.java:45: error: cannot find symbol
+    private final RecyclerView mRecyclerView;
+                  ^
+  symbol:   class RecyclerView
+  location: class ItemClickSupport
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/ItemClickSupport.java:51: error: cannot find symbol
+    private ItemClickSupport(RecyclerView recyclerView) {
+                             ^
+  symbol:   class RecyclerView
+  location: class ItemClickSupport
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/ItemClickSupport.java:82: error: cannot find symbol
+    public static ItemClickSupport addTo(RecyclerView recyclerView) {
+                                         ^
+  symbol:   class RecyclerView
+  location: class ItemClickSupport
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/ItemClickSupport.java:94: error: cannot find symbol
+    public static void removeFrom(RecyclerView recyclerView) {
+                                  ^
+  symbol:   class RecyclerView
+  location: class ItemClickSupport
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/ItemClickSupport.java:105: error: cannot find symbol
+    public static ItemClickSupport from(RecyclerView recyclerView) {
+                                        ^
+  symbol:   class RecyclerView
+  location: class ItemClickSupport
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/ItemClickSupport.java:114: error: cannot find symbol
+        TouchListener(RecyclerView recyclerView) {
+                      ^
+  symbol:   class RecyclerView
+  location: class ItemClickSupport.TouchListener
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/ItemClickSupport.java:119: error: cannot find symbol
+        boolean performItemClick(RecyclerView parent, View view, int position, long id) {
+                                 ^
+  symbol:   class RecyclerView
+  location: class ItemClickSupport.TouchListener
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/ItemClickSupport.java:130: error: cannot find symbol
+        boolean performItemLongClick(RecyclerView parent, View view, int position, long id) {
+                                     ^
+  symbol:   class RecyclerView
+  location: class ItemClickSupport.TouchListener
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/ItemClickSupport.java:23: error: cannot find symbol
+        void onItemClick(RecyclerView parent, View view, int position, long id);
+                         ^
+  symbol:   class RecyclerView
+  location: interface OnItemClickListener
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/ItemClickSupport.java:42: error: cannot find symbol
+        boolean onItemLongClick(RecyclerView parent, View view, int position, long id);
+                                ^
+  symbol:   class RecyclerView
+  location: interface OnItemLongClickListener
+/tmp/rdisk/801/src/twoway-view-master/core/src/main/java/org/lucasr/twowayview/ItemSelectionSupport.java:135: error: reference not found
+     * @see android.support.v7.widget.RecyclerView.Adapter#hasStableIds()
+            ^
+
+1 error
+100 warnings
+:core:androidJavadocs FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':core:androidJavadocs'.
+> Javadoc generation failed. Generated Javadoc options file (useful for troubleshooting): '/tmp/rdisk/801/src/twoway-view-master/core/build/tmp/androidJavadocs/javadoc.options'
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':core:androidJavadocs'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:69)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:305)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:88)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:29)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:68)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:55)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:149)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:80)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:36)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:51)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:171)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:30)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:127)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:58)
+Caused by: org.gradle.api.GradleException: Javadoc generation failed. Generated Javadoc options file (useful for troubleshooting): '/tmp/rdisk/801/src/twoway-view-master/core/build/tmp/androidJavadocs/javadoc.options'
+	at org.gradle.api.tasks.javadoc.internal.JavadocGenerator.execute(JavadocGenerator.java:55)
+	at org.gradle.api.tasks.javadoc.internal.JavadocGenerator.execute(JavadocGenerator.java:31)
+	at org.gradle.api.tasks.javadoc.Javadoc.executeExternalJavadoc(Javadoc.java:140)
+	at org.gradle.api.tasks.javadoc.Javadoc.generate(Javadoc.java:128)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:63)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.doExecute(AnnotationProcessingTaskFactory.java:218)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:211)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:200)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:579)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:562)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	... 47 more
+Caused by: org.gradle.process.internal.ExecException: Process 'command '/usr/lib/jvm/java-8-oracle/bin/javadoc'' finished with non-zero exit value 1
+	at org.gradle.process.internal.DefaultExecHandle$ExecResultImpl.assertNormalExitValue(DefaultExecHandle.java:365)
+	at org.gradle.process.internal.DefaultExecAction.execute(DefaultExecAction.java:31)
+	at org.gradle.api.tasks.javadoc.internal.JavadocGenerator.execute(JavadocGenerator.java:52)
+	... 58 more
+
+
+BUILD FAILED
+
+Total time: 6.933 secs
+
+2018-04-09 11:13:10,858 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-09 11:13:10,858 INFO  SysUtils - Execute command: [/tmp/rdisk/801/src/twoway-view-master/gradlew, -b, /tmp/rdisk/801/src/twoway-view-master/layouts/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-09 11:13:17,677 INFO  ProjectTaskService - Detected possible tasks: 56
+2018-04-09 11:13:17,677 INFO  ProjectTaskService - Excluded tasks (8): lintDebug deviceCheck lint connectedCheck uninstallAll check connectedAndroidTest lintRelease
+2018-04-09 11:13:17,678 INFO  SysUtils - Execute command: [/tmp/rdisk/801/src/twoway-view-master/gradlew, -b, /tmp/rdisk/801/src/twoway-view-master/layouts/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-09 11:13:25,484 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-09 11:13:25,484 INFO  SysUtils - Configuration on demand is an incubating feature.
+:layouts:androidJavadocs/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/TwoWayView.java:21: error: package android.support.v7.widget does not exist
+import android.support.v7.widget.RecyclerView;
+                                ^
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/TwoWayView.java:25: error: cannot find symbol
+import org.lucasr.twowayview.TwoWayLayoutManager;
+                            ^
+  symbol:   class TwoWayLayoutManager
+  location: package org.lucasr.twowayview
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/TwoWayView.java:26: error: package org.lucasr.twowayview.TwoWayLayoutManager does not exist
+import org.lucasr.twowayview.TwoWayLayoutManager.Orientation;
+                                                ^
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/TwoWayView.java:30: error: cannot find symbol
+public class TwoWayView extends RecyclerView {
+                                ^
+  symbol: class RecyclerView
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/TwoWayView.java:87: error: cannot find symbol
+    public void setLayoutManager(LayoutManager layout) {
+                                 ^
+  symbol:   class LayoutManager
+  location: class TwoWayView
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/TwoWayView.java:96: error: cannot find symbol
+    public Orientation getOrientation() {
+           ^
+  symbol:   class Orientation
+  location: class TwoWayView
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/TwoWayView.java:101: error: cannot find symbol
+    public void setOrientation(Orientation orientation) {
+                               ^
+  symbol:   class Orientation
+  location: class TwoWayView
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/StaggeredGridLayoutManager.java:24: error: package android.support.v7.widget does not exist
+import android.support.v7.widget.RecyclerView;
+                                ^
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/StaggeredGridLayoutManager.java:25: error: package android.support.v7.widget.RecyclerView does not exist
+import android.support.v7.widget.RecyclerView.Recycler;
+                                             ^
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/StaggeredGridLayoutManager.java:26: error: package android.support.v7.widget.RecyclerView does not exist
+import android.support.v7.widget.RecyclerView.State;
+                                             ^
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/Lanes.java:21: error: package org.lucasr.twowayview.TwoWayLayoutManager does not exist
+import org.lucasr.twowayview.TwoWayLayoutManager.Direction;
+                                                ^
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/Lanes.java:22: error: package org.lucasr.twowayview.TwoWayLayoutManager does not exist
+import org.lucasr.twowayview.TwoWayLayoutManager.Orientation;
+                                                ^
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/GridLayoutManager.java:21: error: package android.support.v7.widget.RecyclerView does not exist
+import android.support.v7.widget.RecyclerView.Recycler;
+                                             ^
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/GridLayoutManager.java:22: error: package android.support.v7.widget.RecyclerView does not exist
+import android.support.v7.widget.RecyclerView.State;
+                                             ^
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/BaseLayoutManager.java:23: error: package android.support.v7.widget does not exist
+import android.support.v7.widget.RecyclerView;
+                                ^
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/BaseLayoutManager.java:24: error: package android.support.v7.widget.RecyclerView does not exist
+import android.support.v7.widget.RecyclerView.Adapter;
+                                             ^
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/BaseLayoutManager.java:25: error: package android.support.v7.widget.RecyclerView does not exist
+import android.support.v7.widget.RecyclerView.LayoutParams;
+                                             ^
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/BaseLayoutManager.java:26: error: package android.support.v7.widget.RecyclerView does not exist
+import android.support.v7.widget.RecyclerView.Recycler;
+                                             ^
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/BaseLayoutManager.java:27: error: package android.support.v7.widget.RecyclerView does not exist
+import android.support.v7.widget.RecyclerView.State;
+                                             ^
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/BaseLayoutManager.java:33: error: cannot find symbol
+import org.lucasr.twowayview.TwoWayLayoutManager;
+                            ^
+  symbol:   class TwoWayLayoutManager
+  location: package org.lucasr.twowayview
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/BaseLayoutManager.java:38: error: cannot find symbol
+public abstract class BaseLayoutManager extends TwoWayLayoutManager {
+                                                ^
+  symbol: class TwoWayLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/StaggeredGridLayoutManager.java:90: error: cannot find symbol
+    public StaggeredGridLayoutManager(Orientation orientation, int numColumns, int numRows) {
+                                      ^
+  symbol:   class Orientation
+  location: class StaggeredGridLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/StaggeredGridLayoutManager.java:111: error: cannot find symbol
+    void getLaneForPosition(LaneInfo outInfo, int position, Direction direction) {
+                                                            ^
+  symbol:   class Direction
+  location: class StaggeredGridLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/StaggeredGridLayoutManager.java:122: error: cannot find symbol
+    void getLaneForChild(LaneInfo outInfo, View child, Direction direction) {
+                                                       ^
+  symbol:   class Direction
+  location: class StaggeredGridLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/StaggeredGridLayoutManager.java:130: error: cannot find symbol
+    void moveLayoutToPosition(int position, int offset, Recycler recycler, State state) {
+                                                        ^
+  symbol:   class Recycler
+  location: class StaggeredGridLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/StaggeredGridLayoutManager.java:130: error: cannot find symbol
+    void moveLayoutToPosition(int position, int offset, Recycler recycler, State state) {
+                                                                           ^
+  symbol:   class State
+  location: class StaggeredGridLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/StaggeredGridLayoutManager.java:183: error: cannot find symbol
+    ItemEntry cacheChildLaneAndSpan(View child, Direction direction) {
+                                                ^
+  symbol:   class Direction
+  location: class StaggeredGridLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/StaggeredGridLayoutManager.java:225: error: package RecyclerView does not exist
+    public boolean checkLayoutParams(RecyclerView.LayoutParams lp) {
+                                                 ^
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/StaggeredGridLayoutManager.java:268: error: cannot find symbol
+    public static class LayoutParams extends TwoWayView.LayoutParams {
+                                                       ^
+  symbol:   class LayoutParams
+  location: class TwoWayView
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/Lanes.java:58: error: cannot find symbol
+    public Lanes(BaseLayoutManager layout, Orientation orientation, Rect[] lanes, int laneSize) {
+                                           ^
+  symbol:   class Orientation
+  location: class Lanes
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/Lanes.java:117: error: cannot find symbol
+    public Orientation getOrientation() {
+           ^
+  symbol:   class Orientation
+  location: class Lanes
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/Lanes.java:163: error: cannot find symbol
+    public int pushChildFrame(Rect outRect, int lane, int margin, Direction direction) {
+                                                                  ^
+  symbol:   class Direction
+  location: class Lanes
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/Lanes.java:190: error: cannot find symbol
+    public void popChildFrame(Rect outRect, int lane, int margin, Direction direction) {
+                                                                  ^
+  symbol:   class Direction
+  location: class Lanes
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/Lanes.java:210: error: cannot find symbol
+                              Direction direction) {
+                              ^
+  symbol:   class Direction
+  location: class Lanes
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/Lanes.java:244: error: cannot find symbol
+    private int findLaneThatFitsSpan(int anchorLane, int laneSpan, Direction direction) {
+                                                                   ^
+  symbol:   class Direction
+  location: class Lanes
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/Lanes.java:261: error: cannot find symbol
+    public void findLane(LaneInfo outInfo, int laneSpan, Direction direction) {
+                                                         ^
+  symbol:   class Direction
+  location: class Lanes
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/Lanes.java:285: error: cannot find symbol
+    public void reset(Direction direction) {
+                      ^
+  symbol:   class Direction
+  location: class Lanes
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/GridLayoutManager.java:60: error: cannot find symbol
+    public GridLayoutManager(Orientation orientation, int numColumns, int numRows) {
+                             ^
+  symbol:   class Orientation
+  location: class GridLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/GridLayoutManager.java:80: error: cannot find symbol
+    void getLaneForPosition(LaneInfo outInfo, int position, Direction direction) {
+                                                            ^
+  symbol:   class Direction
+  location: class GridLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/GridLayoutManager.java:86: error: cannot find symbol
+    void moveLayoutToPosition(int position, int offset, Recycler recycler, State state) {
+                                                        ^
+  symbol:   class Recycler
+  location: class GridLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/GridLayoutManager.java:86: error: cannot find symbol
+    void moveLayoutToPosition(int position, int offset, Recycler recycler, State state) {
+                                                                           ^
+  symbol:   class State
+  location: class GridLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/BaseLayoutManager.java:153: error: cannot find symbol
+    public BaseLayoutManager(Orientation orientation) {
+                             ^
+  symbol:   class Orientation
+  location: class BaseLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/BaseLayoutManager.java:158: error: cannot find symbol
+                                  Direction direction) {
+                                  ^
+  symbol:   class Direction
+  location: class BaseLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/BaseLayoutManager.java:178: error: cannot find symbol
+                               Direction direction) {
+                               ^
+  symbol:   class Direction
+  location: class BaseLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/BaseLayoutManager.java:336: error: cannot find symbol
+    public void onLayoutChildren(Recycler recycler, State state) {
+                                 ^
+  symbol:   class Recycler
+  location: class BaseLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/BaseLayoutManager.java:336: error: cannot find symbol
+    public void onLayoutChildren(Recycler recycler, State state) {
+                                                    ^
+  symbol:   class State
+  location: class BaseLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/BaseLayoutManager.java:373: error: cannot find symbol
+    protected void onLayoutScrapList(Recycler recycler, State state) {
+                                     ^
+  symbol:   class Recycler
+  location: class BaseLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/BaseLayoutManager.java:373: error: cannot find symbol
+    protected void onLayoutScrapList(Recycler recycler, State state) {
+                                                        ^
+  symbol:   class State
+  location: class BaseLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/BaseLayoutManager.java:380: error: cannot find symbol
+    public void onItemsAdded(RecyclerView recyclerView, int positionStart, int itemCount) {
+                             ^
+  symbol:   class RecyclerView
+  location: class BaseLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/BaseLayoutManager.java:386: error: cannot find symbol
+    public void onItemsRemoved(RecyclerView recyclerView, int positionStart, int itemCount) {
+                               ^
+  symbol:   class RecyclerView
+  location: class BaseLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/BaseLayoutManager.java:392: error: cannot find symbol
+    public void onItemsUpdated(RecyclerView recyclerView, int positionStart, int itemCount) {
+                               ^
+  symbol:   class RecyclerView
+  location: class BaseLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/BaseLayoutManager.java:398: error: cannot find symbol
+    public void onItemsMoved(RecyclerView recyclerView, int from, int to, int itemCount) {
+                             ^
+  symbol:   class RecyclerView
+  location: class BaseLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/BaseLayoutManager.java:404: error: cannot find symbol
+    public void onItemsChanged(RecyclerView recyclerView) {
+                               ^
+  symbol:   class RecyclerView
+  location: class BaseLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/BaseLayoutManager.java:442: error: cannot find symbol
+    protected boolean canAddMoreViews(Direction direction, int limit) {
+                                      ^
+  symbol:   class Direction
+  location: class BaseLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/BaseLayoutManager.java:473: error: cannot find symbol
+    protected void measureChild(View child, Direction direction) {
+                                            ^
+  symbol:   class Direction
+  location: class BaseLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/BaseLayoutManager.java:479: error: cannot find symbol
+    protected void layoutChild(View child, Direction direction) {
+                                           ^
+  symbol:   class Direction
+  location: class BaseLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/BaseLayoutManager.java:497: error: cannot find symbol
+    protected void detachChild(View child, Direction direction) {
+                                           ^
+  symbol:   class Direction
+  location: class BaseLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/BaseLayoutManager.java:506: error: cannot find symbol
+    void getLaneForChild(LaneInfo outInfo, View child, Direction direction) {
+                                                       ^
+  symbol:   class Direction
+  location: class BaseLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/BaseLayoutManager.java:518: error: cannot find symbol
+    ItemEntry cacheChildLaneAndSpan(View child, Direction direction) {
+                                                ^
+  symbol:   class Direction
+  location: class BaseLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/BaseLayoutManager.java:529: error: cannot find symbol
+    public boolean checkLayoutParams(LayoutParams lp) {
+                                     ^
+  symbol:   class LayoutParams
+  location: class BaseLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/BaseLayoutManager.java:538: error: cannot find symbol
+    public LayoutParams generateDefaultLayoutParams() {
+           ^
+  symbol:   class LayoutParams
+  location: class BaseLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/BaseLayoutManager.java:547: error: cannot find symbol
+    public LayoutParams generateLayoutParams(ViewGroup.LayoutParams lp) {
+           ^
+  symbol:   class LayoutParams
+  location: class BaseLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/BaseLayoutManager.java:561: error: cannot find symbol
+    public LayoutParams generateLayoutParams(Context c, AttributeSet attrs) {
+           ^
+  symbol:   class LayoutParams
+  location: class BaseLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/BaseLayoutManager.java:566: error: cannot find symbol
+    abstract void getLaneForPosition(LaneInfo outInfo, int position, Direction direction);
+                                                                     ^
+  symbol:   class Direction
+  location: class BaseLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/BaseLayoutManager.java:567: error: cannot find symbol
+    abstract void moveLayoutToPosition(int position, int offset, Recycler recycler, State state);
+                                                                 ^
+  symbol:   class Recycler
+  location: class BaseLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/BaseLayoutManager.java:567: error: cannot find symbol
+    abstract void moveLayoutToPosition(int position, int offset, Recycler recycler, State state);
+                                                                                    ^
+  symbol:   class State
+  location: class BaseLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/SpannableGridLayoutManager.java:23: error: package android.support.v7.widget does not exist
+import android.support.v7.widget.RecyclerView;
+                                ^
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/SpannableGridLayoutManager.java:24: error: package android.support.v7.widget.RecyclerView does not exist
+import android.support.v7.widget.RecyclerView.Recycler;
+                                             ^
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/SpannableGridLayoutManager.java:25: error: package android.support.v7.widget.RecyclerView does not exist
+import android.support.v7.widget.RecyclerView.State;
+                                             ^
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/SpannableGridLayoutManager.java:90: error: cannot find symbol
+    public SpannableGridLayoutManager(Orientation orientation, int numColumns, int numRows) {
+                                      ^
+  symbol:   class Orientation
+  location: class SpannableGridLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/SpannableGridLayoutManager.java:289: error: cannot find symbol
+    public static class LayoutParams extends TwoWayView.LayoutParams {
+                                                       ^
+  symbol:   class LayoutParams
+  location: class TwoWayView
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/SpannableGridLayoutManager.java:136: error: cannot find symbol
+    void getLaneForPosition(LaneInfo outInfo, int position, Direction direction) {
+                                                            ^
+  symbol:   class Direction
+  location: class SpannableGridLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/SpannableGridLayoutManager.java:147: error: cannot find symbol
+    void getLaneForChild(LaneInfo outInfo, View child, Direction direction) {
+                                                       ^
+  symbol:   class Direction
+  location: class SpannableGridLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/SpannableGridLayoutManager.java:174: error: cannot find symbol
+    protected void moveLayoutToPosition(int position, int offset, Recycler recycler, State state) {
+                                                                  ^
+  symbol:   class Recycler
+  location: class SpannableGridLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/SpannableGridLayoutManager.java:174: error: cannot find symbol
+    protected void moveLayoutToPosition(int position, int offset, Recycler recycler, State state) {
+                                                                                     ^
+  symbol:   class State
+  location: class SpannableGridLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/SpannableGridLayoutManager.java:211: error: cannot find symbol
+    ItemEntry cacheChildLaneAndSpan(View child, Direction direction) {
+                                                ^
+  symbol:   class Direction
+  location: class SpannableGridLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/SpannableGridLayoutManager.java:238: error: package RecyclerView does not exist
+    public boolean checkLayoutParams(RecyclerView.LayoutParams lp) {
+                                                 ^
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/SpacingItemDecoration.java:6: error: package android.support.v7.widget does not exist
+import android.support.v7.widget.RecyclerView;
+                                ^
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/SpacingItemDecoration.java:7: error: package android.support.v7.widget.RecyclerView does not exist
+import android.support.v7.widget.RecyclerView.ItemDecoration;
+                                             ^
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/SpacingItemDecoration.java:15: error: cannot find symbol
+public class SpacingItemDecoration extends ItemDecoration {
+                                           ^
+  symbol: class ItemDecoration
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/ItemSpacingOffsets.java:4: error: package android.support.v7.widget does not exist
+import android.support.v7.widget.RecyclerView;
+                                ^
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/ItemSpacingOffsets.java:7: error: package org.lucasr.twowayview.TwoWayLayoutManager does not exist
+import org.lucasr.twowayview.TwoWayLayoutManager.Direction;
+                                                ^
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/SpacingItemDecoration.java:41: error: cannot find symbol
+    public void getItemOffsets(Rect outRect, int itemPosition, RecyclerView parent) {
+                                                               ^
+  symbol:   class RecyclerView
+  location: class SpacingItemDecoration
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/ItemSpacingOffsets.java:110: error: cannot find symbol
+    public void getItemOffsets(Rect outRect, int itemPosition, RecyclerView parent) {
+                                                               ^
+  symbol:   class RecyclerView
+  location: class ItemSpacingOffsets
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/ListLayoutManager.java:20: error: package android.support.v7.widget.RecyclerView does not exist
+import android.support.v7.widget.RecyclerView.Recycler;
+                                             ^
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/ListLayoutManager.java:21: error: package android.support.v7.widget.RecyclerView does not exist
+import android.support.v7.widget.RecyclerView.State;
+                                             ^
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/ListLayoutManager.java:37: error: cannot find symbol
+    public ListLayoutManager(Context context, Orientation orientation) {
+                                              ^
+  symbol:   class Orientation
+  location: class ListLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/ListLayoutManager.java:47: error: cannot find symbol
+    void getLaneForPosition(LaneInfo outInfo, int position, Direction direction) {
+                                                            ^
+  symbol:   class Direction
+  location: class ListLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/ListLayoutManager.java:52: error: cannot find symbol
+    void moveLayoutToPosition(int position, int offset, Recycler recycler, State state) {
+                                                        ^
+  symbol:   class Recycler
+  location: class ListLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/ListLayoutManager.java:52: error: cannot find symbol
+    void moveLayoutToPosition(int position, int offset, Recycler recycler, State state) {
+                                                                           ^
+  symbol:   class State
+  location: class ListLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/DividerItemDecoration.java:8: error: package android.support.v7.widget does not exist
+import android.support.v7.widget.RecyclerView;
+                                ^
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/DividerItemDecoration.java:9: error: package android.support.v7.widget.RecyclerView does not exist
+import android.support.v7.widget.RecyclerView.ItemDecoration;
+                                             ^
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/DividerItemDecoration.java:19: error: cannot find symbol
+public class DividerItemDecoration extends ItemDecoration {
+                                           ^
+  symbol: class ItemDecoration
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/DividerItemDecoration.java:79: error: cannot find symbol
+    public void onDrawOver(Canvas c, RecyclerView parent) {
+                                     ^
+  symbol:   class RecyclerView
+  location: class DividerItemDecoration
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/DividerItemDecoration.java:121: error: cannot find symbol
+    public void getItemOffsets(Rect outRect, int itemPosition, RecyclerView parent) {
+                                                               ^
+  symbol:   class RecyclerView
+  location: class DividerItemDecoration
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/BaseLayoutManager.java:569: error: cannot find symbol
+    protected static class LanedSavedState extends SavedState {
+                                                   ^
+  symbol:   class SavedState
+  location: class BaseLayoutManager
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/BaseLayoutManager.java:570: error: cannot find symbol
+        private Orientation orientation;
+                ^
+  symbol:   class Orientation
+  location: class LanedSavedState
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/DividerItemDecoration.java:15: error: reference not found
+ * {@link android.support.v7.widget.RecyclerView.ItemDecoration} that draws
+          ^
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/DividerItemDecoration.java:17: error: reference not found
+ * {@link android.support.v7.widget.RecyclerView}.
+          ^
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/SpacingItemDecoration.java:11: error: reference not found
+ * {@link android.support.v7.widget.RecyclerView.ItemDecoration} that applies a
+          ^
+/tmp/rdisk/801/src/twoway-view-master/layouts/src/main/java/org/lucasr/twowayview/widget/SpacingItemDecoration.java:13: error: reference not found
+ * {@link android.support.v7.widget.RecyclerView}.
+          ^
+
+4 errors
+97 warnings
+:layouts:androidJavadocs FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':layouts:androidJavadocs'.
+> Javadoc generation failed. Generated Javadoc options file (useful for troubleshooting): '/tmp/rdisk/801/src/twoway-view-master/layouts/build/tmp/androidJavadocs/javadoc.options'
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':layouts:androidJavadocs'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:69)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:305)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:88)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:29)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:68)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:55)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:149)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:80)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:36)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:51)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:171)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:30)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:127)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:58)
+Caused by: org.gradle.api.GradleException: Javadoc generation failed. Generated Javadoc options file (useful for troubleshooting): '/tmp/rdisk/801/src/twoway-view-master/layouts/build/tmp/androidJavadocs/javadoc.options'
+	at org.gradle.api.tasks.javadoc.internal.JavadocGenerator.execute(JavadocGenerator.java:55)
+	at org.gradle.api.tasks.javadoc.internal.JavadocGenerator.execute(JavadocGenerator.java:31)
+	at org.gradle.api.tasks.javadoc.Javadoc.executeExternalJavadoc(Javadoc.java:140)
+	at org.gradle.api.tasks.javadoc.Javadoc.generate(Javadoc.java:128)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:63)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.doExecute(AnnotationProcessingTaskFactory.java:218)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:211)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:200)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:579)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:562)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	... 47 more
+Caused by: org.gradle.process.internal.ExecException: Process 'command '/usr/lib/jvm/java-8-oracle/bin/javadoc'' finished with non-zero exit value 1
+	at org.gradle.process.internal.DefaultExecHandle$ExecResultImpl.assertNormalExitValue(DefaultExecHandle.java:365)
+	at org.gradle.process.internal.DefaultExecAction.execute(DefaultExecAction.java:31)
+	at org.gradle.api.tasks.javadoc.internal.JavadocGenerator.execute(JavadocGenerator.java:52)
+	... 58 more
+
+
+BUILD FAILED
+
+Total time: 7.352 secs
+
+2018-04-09 11:13:25,490 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-09 11:13:25,490 INFO  SysUtils - Execute command: [/tmp/rdisk/801/src/twoway-view-master/gradlew, -b, /tmp/rdisk/801/src/twoway-view-master/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-09 11:13:32,858 INFO  ProjectTaskService - Detected possible tasks: 53
+2018-04-09 11:13:32,858 INFO  ProjectTaskService - Excluded tasks (11): lintDebug deviceCheck lint uninstallRelease connectedCheck uninstallAll check connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-09 11:13:32,858 INFO  SysUtils - Execute command: [/tmp/rdisk/801/src/twoway-view-master/gradlew, -b, /tmp/rdisk/801/src/twoway-view-master/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-09 11:13:59,870 INFO  SysUtils - Configuration on demand is an incubating feature.
+:sample:preBuild
+:sample:compileDebugNdk
+:core:compileLint
+:core:copyReleaseLint UP-TO-DATE
+:core:preBuild
+:core:preReleaseBuild
+:core:checkReleaseManifest
+:core:preDebugBuild
+:core:preDebugTestBuild
+:core:prepareComAndroidSupportRecyclerviewV72100Library
+:core:prepareComAndroidSupportSupportV42100Library
+:core:prepareReleaseDependencies
+:core:compileReleaseAidl
+:core:compileReleaseRenderscript
+:core:generateReleaseBuildConfig
+:core:generateReleaseAssets UP-TO-DATE
+:core:mergeReleaseAssets
+:core:generateReleaseResValues
+:core:generateReleaseResources
+:core:mergeReleaseResources
+:core:processReleaseManifest
+:core:processReleaseResources
+:core:generateReleaseSources
+:core:compileReleaseJava
+:core:extractReleaseAnnotations
+:core:mergeReleaseProguardFiles
+:core:processReleaseJavaRes UP-TO-DATE
+:core:packageReleaseJar
+:core:compileReleaseNdk
+:core:packageReleaseJniLibs UP-TO-DATE
+:core:packageReleaseLocalJar UP-TO-DATE
+:core:packageReleaseRenderscript UP-TO-DATE
+:core:packageReleaseResources
+:core:bundleRelease
+:layouts:compileLint
+:layouts:copyReleaseLint UP-TO-DATE
+:layouts:preBuild
+:layouts:preReleaseBuild
+:layouts:checkReleaseManifest
+:layouts:preDebugBuild
+:layouts:preDebugTestBuild
+:layouts:prepareComAndroidSupportRecyclerviewV72100Library
+:layouts:prepareComAndroidSupportSupportV42100Library
+:layouts:prepareTwowayViewMasterCoreUnspecifiedLibrary
+:layouts:prepareReleaseDependencies
+:layouts:compileReleaseAidl
+:layouts:compileReleaseRenderscript
+:layouts:generateReleaseBuildConfig
+:layouts:generateReleaseAssets UP-TO-DATE
+:layouts:mergeReleaseAssets
+:layouts:generateReleaseResValues
+:layouts:generateReleaseResources
+:layouts:mergeReleaseResources
+:layouts:processReleaseManifest
+:layouts:processReleaseResources
+:layouts:generateReleaseSources
+:layouts:compileReleaseJavaNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:layouts:extractReleaseAnnotations
+:layouts:mergeReleaseProguardFiles
+:layouts:processReleaseJavaRes UP-TO-DATE
+:layouts:packageReleaseJar
+:layouts:compileReleaseNdk
+:layouts:packageReleaseJniLibs UP-TO-DATE
+:layouts:packageReleaseLocalJar UP-TO-DATE
+:layouts:packageReleaseRenderscript UP-TO-DATE
+:layouts:packageReleaseResources
+:layouts:bundleRelease
+:sample:preDebugBuild
+:sample:checkDebugManifest
+:sample:preReleaseBuild
+:sample:prepareComAndroidSupportAppcompatV72100Library
+:sample:prepareComAndroidSupportRecyclerviewV72100Library
+:sample:prepareComAndroidSupportSupportV42100Library
+:sample:prepareTwowayViewMasterCoreUnspecifiedLibrary
+:sample:prepareTwowayViewMasterLayoutsUnspecifiedLibrary
+:sample:prepareDebugDependencies
+:sample:compileDebugAidl
+:sample:compileDebugRenderscript
+:sample:generateDebugBuildConfig
+:sample:generateDebugAssets UP-TO-DATE
+:sample:mergeDebugAssets
+:sample:generateDebugResValues
+:sample:generateDebugResources
+:sample:mergeDebugResources/tmp/rdisk/801/src/twoway-view-master/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/drawable-xhdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/801/src/twoway-view-master/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/drawable-hdpi/abc_spinner_mtrl_am_alpha.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/801/src/twoway-view-master/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/drawable-mdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/801/src/twoway-view-master/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/drawable-hdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/801/src/twoway-view-master/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/drawable-hdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/801/src/twoway-view-master/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/drawable-xhdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+:sample:processDebugManifest
+:sample:processDebugResources
+:sample:generateDebugSources
+:sample:compileDebugJavaNote: /tmp/rdisk/801/src/twoway-view-master/sample/src/main/java/org/lucasr/twowayview/sample/MainActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:sample:preDexDebug
+:sample:dexDebug
+:sample:processDebugJavaRes UP-TO-DATE
+:sample:validateDebugSigning
+:sample:packageDebug
+:sample:zipalignDebug
+:sample:assembleDebug
+:sample:checkReleaseManifest
+:sample:prepareReleaseDependencies
+:sample:compileReleaseAidl
+:sample:compileReleaseRenderscript
+:sample:generateReleaseBuildConfig
+:sample:generateReleaseAssets UP-TO-DATE
+:sample:mergeReleaseAssets
+:sample:generateReleaseResValues
+:sample:generateReleaseResources
+:sample:mergeReleaseResources/tmp/rdisk/801/src/twoway-view-master/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/drawable-xhdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/801/src/twoway-view-master/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/drawable-hdpi/abc_spinner_mtrl_am_alpha.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/801/src/twoway-view-master/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/drawable-mdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/801/src/twoway-view-master/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/drawable-hdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/801/src/twoway-view-master/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/drawable-hdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/801/src/twoway-view-master/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/drawable-xhdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+:sample:processReleaseManifest
+:sample:processReleaseResources
+:sample:generateReleaseSources
+:sample:compileReleaseJavaNote: /tmp/rdisk/801/src/twoway-view-master/sample/src/main/java/org/lucasr/twowayview/sample/MainActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:sample:lintVitalRelease
+:sample:compileReleaseNdk
+:sample:preDexRelease
+:sample:dexRelease
+:sample:processReleaseJavaRes UP-TO-DATE
+:sample:packageRelease
+:sample:assembleRelease
+:sample:assemble
+:sample:build
+
+BUILD SUCCESSFUL
+
+Total time: 26.563 secs
+
+2018-04-09 11:13:59,914 INFO  FullProcessService - Found APK file: /tmp/rdisk/801/src/twoway-view-master/sample/build/outputs/apk/sample-release-unsigned.apk

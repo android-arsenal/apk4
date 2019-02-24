@@ -1,0 +1,161 @@
+2018-04-08 16:34:25,266 INFO  DownloadService - Downloading "https://github.com/dkmeteor/Bubble-Notification/archive/master.zip", attempt 3
+2018-04-08 16:35:25,918 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-08 16:35:26,736 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-08 16:35:26,737 INFO  DownloadService - Downloading "https://github.com/dkmeteor/Bubble-Notification/archive/master.zip", attempt 3
+2018-04-08 16:36:27,964 DEBUG FullProcessService - Repository https://github.com/dkmeteor/Bubble-Notification available: true
+2018-04-08 16:36:27,966 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-08 16:36:27,966 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/dkmeteor/Bubble-Notification, /tmp/rdisk/875/src]
+2018-04-08 16:36:30,165 INFO  SysUtils - 
+2018-04-08 16:36:30,171 INFO  GitService - Deleted "/tmp/rdisk/875/src/.git": true
+2018-04-08 16:36:30,175 INFO  FullProcessService - Size of directory with sources: 3 MB
+2018-04-08 16:36:30,175 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/875/src]
+2018-04-08 16:36:30,183 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/875/src/.git/
+
+2018-04-08 16:36:30,186 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/875/src/gradlew
+2018-04-08 16:36:30,190 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/875/src/Sample/build.gradle /tmp/rdisk/875/src/library/build.gradle /tmp/rdisk/875/src/build.gradle
+2018-04-08 16:36:30,193 INFO  ProjectBuildService - All script(s): /tmp/rdisk/875/src/settings.gradle /tmp/rdisk/875/src/library/build.gradle /tmp/rdisk/875/src/build.gradle /tmp/rdisk/875/src/Sample/build.gradle
+2018-04-08 16:36:30,193 INFO  ProjectBuildService - Remote scripts: none
+2018-04-08 16:36:30,193 INFO  ProjectFixService - Fixing project...
+2018-04-08 16:36:30,201 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/875/src/Sample/local.properties
+2018-04-08 16:36:30,202 INFO  ProjectFixService - Build info for "/tmp/rdisk/875/src/Sample/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=15,targetSdkVersion=21]
+2018-04-08 16:36:30,202 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/875/src/library/local.properties
+2018-04-08 16:36:30,202 INFO  ProjectFixService - Build info for "/tmp/rdisk/875/src/library/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=15,targetSdkVersion=21]
+2018-04-08 16:36:30,203 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/875/src/local.properties
+2018-04-08 16:36:30,203 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-08 16:36:30,203 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-08 16:36:30,204 INFO  ProjectFixService - Build info for "/tmp/rdisk/875/src/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=15,targetSdkVersion=21]
+2018-04-08 16:36:30,205 INFO  ProjectFixService - Project was maybe fixed
+2018-04-08 16:36:30,205 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-08 16:36:30,205 INFO  SysUtils - Execute command: [/tmp/rdisk/875/src/gradlew, -b, /tmp/rdisk/875/src/Sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-08 16:36:38,502 INFO  ProjectTaskService - Detected possible tasks: 65
+2018-04-08 16:36:38,502 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-08 16:36:38,502 INFO  SysUtils - Execute command: [/tmp/rdisk/875/src/gradlew, -b, /tmp/rdisk/875/src/Sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-08 16:37:01,848 INFO  SysUtils - Configuration on demand is an incubating feature.
+:Sample:preBuild UP-TO-DATE
+:Sample:preDebugBuild UP-TO-DATE
+:Sample:checkDebugManifest
+:Sample:preReleaseBuild UP-TO-DATE
+:library:compileLint
+:library:copyReleaseLint UP-TO-DATE
+:library:preBuild UP-TO-DATE
+:library:preReleaseBuild UP-TO-DATE
+:library:checkReleaseManifest
+:library:preDebugAndroidTestBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:preDebugUnitTestBuild UP-TO-DATE
+:library:preReleaseUnitTestBuild UP-TO-DATE
+:library:prepareComAndroidSupportAppcompatV72103Library
+:library:prepareComAndroidSupportSupportV42103Library
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl
+:library:compileReleaseRenderscript
+:library:generateReleaseBuildConfig
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets
+:library:generateReleaseResValues
+:library:generateReleaseResources
+:library:mergeReleaseResourcesUnknown source file : /tmp/rdisk/875/src/library/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-mdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/875/src/library/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/875/src/library/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/875/src/library/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/875/src/library/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_spinner_mtrl_am_alpha.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/875/src/library/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+
+:library:processReleaseManifest
+:library:processReleaseResources
+:library:generateReleaseSources
+:library:processReleaseJavaRes UP-TO-DATE
+:library:compileReleaseJavaWithJavac
+:library:extractReleaseAnnotations
+:library:mergeReleaseProguardFiles
+:library:packageReleaseJar
+:library:compileReleaseNdk UP-TO-DATE
+:library:packageReleaseJniLibs UP-TO-DATE
+:library:packageReleaseLocalJar UP-TO-DATE
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:packageReleaseResources
+:library:bundleRelease
+:Sample:prepareComAndroidSupportAppcompatV72103Library
+:Sample:prepareComAndroidSupportSupportV42103Library
+:Sample:prepareSrcLibraryUnspecifiedLibrary
+:Sample:prepareDebugDependencies
+:Sample:compileDebugAidl
+:Sample:compileDebugRenderscript
+:Sample:generateDebugBuildConfig
+:Sample:generateDebugAssets UP-TO-DATE
+:Sample:mergeDebugAssets
+:Sample:generateDebugResValues
+:Sample:generateDebugResources
+:Sample:mergeDebugResourcesUnknown source file : /tmp/rdisk/875/src/Sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-mdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/875/src/Sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/875/src/Sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/875/src/Sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/875/src/Sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_spinner_mtrl_am_alpha.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/875/src/Sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+
+:Sample:processDebugManifest
+:Sample:processDebugResources
+:Sample:generateDebugSources
+:Sample:processDebugJavaRes UP-TO-DATE
+:Sample:compileDebugJavaWithJavac
+:Sample:compileDebugNdk UP-TO-DATE
+:Sample:compileDebugSources
+:Sample:preDexDebug
+:Sample:dexDebug
+:Sample:validateDebugSigning
+:Sample:packageDebug
+:Sample:zipalignDebug
+:Sample:assembleDebug
+:Sample:checkReleaseManifest
+:Sample:prepareReleaseDependencies
+:Sample:compileReleaseAidl
+:Sample:compileReleaseRenderscript
+:Sample:generateReleaseBuildConfig
+:Sample:generateReleaseAssets UP-TO-DATE
+:Sample:mergeReleaseAssets
+:Sample:generateReleaseResValues
+:Sample:generateReleaseResources
+:Sample:mergeReleaseResourcesUnknown source file : /tmp/rdisk/875/src/Sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-mdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/875/src/Sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/875/src/Sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/875/src/Sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/875/src/Sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_spinner_mtrl_am_alpha.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/875/src/Sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+
+:Sample:processReleaseManifest
+:Sample:processReleaseResources
+:Sample:generateReleaseSources
+:Sample:processReleaseJavaRes UP-TO-DATE
+:Sample:compileReleaseJavaWithJavac
+:Sample:compileReleaseNdk UP-TO-DATE
+:Sample:compileReleaseSources
+:Sample:preDexRelease
+:Sample:dexRelease
+:Sample:packageRelease
+:Sample:assembleRelease
+:Sample:assemble
+:Sample:build
+
+BUILD SUCCESSFUL
+
+Total time: 22.913 secs
+
+2018-04-08 16:37:01,902 INFO  FullProcessService - Found APK file: /tmp/rdisk/875/src/Sample/build/outputs/apk/Sample-release-unsigned.apk

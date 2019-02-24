@@ -1,0 +1,43 @@
+2018-04-08 16:09:21,162 INFO  DownloadService - Downloading "https://github.com/koral--/android-gradle-localization-plugin/archive/master.zip", attempt 3
+2018-04-08 16:09:21,563 INFO  DownloadService - Downloaded https://github.com/koral--/android-gradle-localization-plugin/archive/master.zip, attempt 3
+2018-04-08 16:09:21,563 INFO  DownloadService - Size of file "/tmp/rdisk/902/master.zip": 101 KB
+2018-04-08 16:09:21,563 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-08 16:09:21,564 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/902/master.zip: true
+2018-04-08 16:09:21,564 DEBUG ZipUtil - Extracting '/tmp/rdisk/902/master.zip' into '/tmp/rdisk/902/src'.
+2018-04-08 16:09:21,572 INFO  FullProcessService - Size of directory with sources: 128 KB
+2018-04-08 16:09:21,572 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/902/src]
+2018-04-08 16:09:21,576 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/902/src/.git/
+
+2018-04-08 16:09:21,578 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/902/src/android-gradle-localization-plugin-master/gradlew
+2018-04-08 16:09:21,581 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/902/src/android-gradle-localization-plugin-master/build.gradle
+2018-04-08 16:09:21,582 INFO  ProjectBuildService - All script(s): /tmp/rdisk/902/src/android-gradle-localization-plugin-master/mvn-push.gradle /tmp/rdisk/902/src/android-gradle-localization-plugin-master/build.gradle
+2018-04-08 16:09:21,583 INFO  ProjectBuildService - Remote scripts: none
+2018-04-08 16:09:21,583 INFO  ProjectFixService - Fixing project...
+2018-04-08 16:09:21,588 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/902/src/android-gradle-localization-plugin-master/local.properties
+2018-04-08 16:09:21,588 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-3.3-bin.zip
+2018-04-08 16:09:21,590 INFO  ProjectFixService - Build info for "/tmp/rdisk/902/src/android-gradle-localization-plugin-master/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-08 16:09:21,590 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/902/src/android-gradle-localization-plugin-master/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-08 16:09:21,591 INFO  ProjectFixService - Project was maybe fixed
+2018-04-08 16:09:21,591 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-08 16:09:21,591 INFO  SysUtils - Execute command: [/tmp/rdisk/902/src/android-gradle-localization-plugin-master/gradlew, -b, /tmp/rdisk/902/src/android-gradle-localization-plugin-master/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-08 16:09:27,104 INFO  ProjectTaskService - Detected possible tasks: 53
+2018-04-08 16:09:27,104 INFO  ProjectTaskService - Excluded tasks (3): javadoc test check
+2018-04-08 16:09:27,104 INFO  SysUtils - Execute command: [/tmp/rdisk/902/src/android-gradle-localization-plugin-master/gradlew, -b, /tmp/rdisk/902/src/android-gradle-localization-plugin-master/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, javadoc, -x, test, -x, check, build]
+2018-04-08 16:09:35,857 INFO  SysUtils - Configuration on demand is an incubating feature.
+:compileJava UP-TO-DATE
+:compileGroovy
+:processResources
+:classes
+:jar
+:javadocsJar
+:sourcesJar
+:signArchives SKIPPED
+:assemble
+:build
+
+BUILD SUCCESSFUL
+
+Total time: 8.584 secs
+
+2018-04-08 16:09:35,863 ERROR FullProcessService - Project build has not produced APK file
+2018-04-08 16:09:35,866 ERROR FullProcessService - Could not find generated or existed APK file

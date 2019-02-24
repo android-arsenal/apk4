@@ -1,0 +1,187 @@
+2018-04-09 14:22:26,441 INFO  DownloadService - Downloading "https://github.com/applidium/HeaderListView/archive/master.zip", attempt 3
+2018-04-09 14:22:27,836 INFO  DownloadService - Downloaded https://github.com/applidium/HeaderListView/archive/master.zip, attempt 3
+2018-04-09 14:22:27,837 INFO  DownloadService - Size of file "/tmp/rdisk/778/master.zip": 112 KB
+2018-04-09 14:22:27,837 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-09 14:22:27,837 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/778/master.zip: true
+2018-04-09 14:22:27,837 DEBUG ZipUtil - Extracting '/tmp/rdisk/778/master.zip' into '/tmp/rdisk/778/src'.
+2018-04-09 14:22:27,844 INFO  FullProcessService - Size of directory with sources: 137 KB
+2018-04-09 14:22:27,844 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/778/src]
+2018-04-09 14:22:27,853 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/778/src/.git/
+
+2018-04-09 14:22:27,855 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/778/src/HeaderListView-master/gradlew
+2018-04-09 14:22:27,857 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/778/src/HeaderListView-master/HeaderListView/build.gradle /tmp/rdisk/778/src/HeaderListView-master/HeaderListViewDemo/build.gradle /tmp/rdisk/778/src/HeaderListView-master/build.gradle
+2018-04-09 14:22:27,859 INFO  ProjectBuildService - All script(s): /tmp/rdisk/778/src/HeaderListView-master/settings.gradle /tmp/rdisk/778/src/HeaderListView-master/build.gradle /tmp/rdisk/778/src/HeaderListView-master/HeaderListViewDemo/build.gradle /tmp/rdisk/778/src/HeaderListView-master/HeaderListView/build.gradle
+2018-04-09 14:22:27,860 INFO  ProjectBuildService - Remote scripts: none
+2018-04-09 14:22:27,860 INFO  ProjectFixService - Fixing project...
+2018-04-09 14:22:27,865 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/778/src/HeaderListView-master/HeaderListView/local.properties
+2018-04-09 14:22:27,865 INFO  ProjectFixService - Build info for "/tmp/rdisk/778/src/HeaderListView-master/HeaderListView/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=19,minSdkVersion=7,targetSdkVersion=19]
+2018-04-09 14:22:27,867 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/778/src/HeaderListView-master/HeaderListViewDemo/local.properties
+2018-04-09 14:22:27,867 INFO  ProjectFixService - Build info for "/tmp/rdisk/778/src/HeaderListView-master/HeaderListViewDemo/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=19,minSdkVersion=7,targetSdkVersion=19]
+2018-04-09 14:22:27,868 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/778/src/HeaderListView-master/local.properties
+2018-04-09 14:22:27,869 INFO  WrapperPropertiesFixService - Gradle wrapper: http://services.gradle.org/distributions/gradle-1.12-all.zip
+2018-04-09 14:22:27,870 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (http://services.gradle.org/distributions/gradle-1.12-bin.zip)
+2018-04-09 14:22:27,871 INFO  ProjectFixService - Build info for "/tmp/rdisk/778/src/HeaderListView-master/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=19,minSdkVersion=7,targetSdkVersion=19]
+2018-04-09 14:22:27,872 INFO  ProjectFixService - Project was maybe fixed
+2018-04-09 14:22:27,872 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-09 14:22:27,872 INFO  SysUtils - Execute command: [/tmp/rdisk/778/src/HeaderListView-master/gradlew, -b, /tmp/rdisk/778/src/HeaderListView-master/HeaderListView/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-09 14:22:35,960 INFO  ProjectTaskService - Detected possible tasks: 54
+2018-04-09 14:22:35,960 INFO  ProjectTaskService - Excluded tasks (8): lintDebug deviceCheck lint connectedCheck uninstallAll check connectedAndroidTest lintRelease
+2018-04-09 14:22:35,960 INFO  SysUtils - Execute command: [/tmp/rdisk/778/src/HeaderListView-master/gradlew, -b, /tmp/rdisk/778/src/HeaderListView-master/HeaderListView/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-09 14:22:44,442 INFO  SysUtils - Configuration on demand is an incubating feature.
+Relying on packaging to define the extension of the main artifact has been deprecated and is scheduled to be removed in Gradle 2.0
+:HeaderListView:compileLint
+:HeaderListView:copyDebugLint UP-TO-DATE
+:HeaderListView:mergeDebugProguardFiles
+:HeaderListView:preBuild
+:HeaderListView:preDebugBuild
+:HeaderListView:checkDebugManifest
+:HeaderListView:preDebugTestBuild
+:HeaderListView:preReleaseBuild
+:HeaderListView:prepareComAndroidSupportAppcompatV71910Library
+:HeaderListView:prepareDebugDependencies
+:HeaderListView:compileDebugAidl
+:HeaderListView:compileDebugRenderscript
+:HeaderListView:generateDebugBuildConfig
+:HeaderListView:generateDebugAssets UP-TO-DATE
+:HeaderListView:mergeDebugAssets
+:HeaderListView:generateDebugResValues
+:HeaderListView:generateDebugResources
+:HeaderListView:mergeDebugResources
+:HeaderListView:processDebugManifest
+:HeaderListView:processDebugResources
+:HeaderListView:generateDebugSources
+:HeaderListView:compileDebugJava
+:HeaderListView:processDebugJavaRes UP-TO-DATE
+:HeaderListView:packageDebugJar
+:HeaderListView:compileDebugNdk
+:HeaderListView:packageDebugJniLibs UP-TO-DATE
+:HeaderListView:packageDebugLocalJar UP-TO-DATE
+:HeaderListView:packageDebugRenderscript UP-TO-DATE
+:HeaderListView:packageDebugResources
+:HeaderListView:bundleDebug
+:HeaderListView:assembleDebug
+:HeaderListView:copyReleaseLint UP-TO-DATE
+:HeaderListView:mergeReleaseProguardFiles
+:HeaderListView:checkReleaseManifest
+:HeaderListView:prepareReleaseDependencies
+:HeaderListView:compileReleaseAidl
+:HeaderListView:compileReleaseRenderscript
+:HeaderListView:generateReleaseBuildConfig
+:HeaderListView:generateReleaseAssets UP-TO-DATE
+:HeaderListView:mergeReleaseAssets
+:HeaderListView:generateReleaseResValues
+:HeaderListView:generateReleaseResources
+:HeaderListView:mergeReleaseResources
+:HeaderListView:processReleaseManifest
+:HeaderListView:processReleaseResources
+:HeaderListView:generateReleaseSources
+:HeaderListView:compileReleaseJava
+:HeaderListView:processReleaseJavaRes UP-TO-DATE
+:HeaderListView:packageReleaseJar
+:HeaderListView:compileReleaseNdk
+:HeaderListView:packageReleaseJniLibs UP-TO-DATE
+:HeaderListView:packageReleaseLocalJar UP-TO-DATE
+:HeaderListView:packageReleaseRenderscript UP-TO-DATE
+:HeaderListView:packageReleaseResources
+:HeaderListView:bundleRelease
+:HeaderListView:assembleRelease
+:HeaderListView:assemble
+:HeaderListView:build
+
+BUILD SUCCESSFUL
+
+Total time: 8.022 secs
+
+2018-04-09 14:22:44,472 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-09 14:22:44,472 INFO  SysUtils - Execute command: [/tmp/rdisk/778/src/HeaderListView-master/gradlew, -b, /tmp/rdisk/778/src/HeaderListView-master/HeaderListViewDemo/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-09 14:22:51,911 INFO  ProjectTaskService - Detected possible tasks: 49
+2018-04-09 14:22:51,911 INFO  ProjectTaskService - Excluded tasks (11): lintDebug deviceCheck lint uninstallRelease connectedCheck uninstallAll check connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-09 14:22:51,911 INFO  SysUtils - Execute command: [/tmp/rdisk/778/src/HeaderListView-master/gradlew, -b, /tmp/rdisk/778/src/HeaderListView-master/HeaderListViewDemo/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-09 14:23:11,509 INFO  SysUtils - Configuration on demand is an incubating feature.
+Relying on packaging to define the extension of the main artifact has been deprecated and is scheduled to be removed in Gradle 2.0
+:HeaderListViewDemo:preBuild
+:HeaderListViewDemo:compileDebugNdk
+:HeaderListView:compileLint
+:HeaderListView:copyReleaseLint UP-TO-DATE
+:HeaderListView:mergeReleaseProguardFiles UP-TO-DATE
+:HeaderListView:preBuild
+:HeaderListView:preReleaseBuild
+:HeaderListView:checkReleaseManifest
+:HeaderListView:preDebugBuild
+:HeaderListView:preDebugTestBuild
+:HeaderListView:prepareComAndroidSupportAppcompatV71910Library UP-TO-DATE
+:HeaderListView:prepareReleaseDependencies
+:HeaderListView:compileReleaseAidl UP-TO-DATE
+:HeaderListView:compileReleaseRenderscript UP-TO-DATE
+:HeaderListView:generateReleaseBuildConfig UP-TO-DATE
+:HeaderListView:generateReleaseAssets UP-TO-DATE
+:HeaderListView:mergeReleaseAssets UP-TO-DATE
+:HeaderListView:generateReleaseResValues UP-TO-DATE
+:HeaderListView:generateReleaseResources UP-TO-DATE
+:HeaderListView:mergeReleaseResources UP-TO-DATE
+:HeaderListView:processReleaseManifest UP-TO-DATE
+:HeaderListView:processReleaseResources UP-TO-DATE
+:HeaderListView:generateReleaseSources UP-TO-DATE
+:HeaderListView:compileReleaseJava UP-TO-DATE
+:HeaderListView:processReleaseJavaRes UP-TO-DATE
+:HeaderListView:packageReleaseJar UP-TO-DATE
+:HeaderListView:compileReleaseNdk UP-TO-DATE
+:HeaderListView:packageReleaseJniLibs UP-TO-DATE
+:HeaderListView:packageReleaseLocalJar UP-TO-DATE
+:HeaderListView:packageReleaseRenderscript UP-TO-DATE
+:HeaderListView:packageReleaseResources UP-TO-DATE
+:HeaderListView:bundleRelease UP-TO-DATE
+:HeaderListViewDemo:preDebugBuild
+:HeaderListViewDemo:checkDebugManifest
+:HeaderListViewDemo:preReleaseBuild
+:HeaderListViewDemo:prepareComAndroidSupportAppcompatV71910Library
+:HeaderListViewDemo:prepareComApplidiumHeaderListView10Library
+:HeaderListViewDemo:prepareDebugDependencies
+:HeaderListViewDemo:compileDebugAidl
+:HeaderListViewDemo:compileDebugRenderscript
+:HeaderListViewDemo:generateDebugBuildConfig
+:HeaderListViewDemo:generateDebugAssets UP-TO-DATE
+:HeaderListViewDemo:mergeDebugAssets
+:HeaderListViewDemo:generateDebugResValues
+:HeaderListViewDemo:generateDebugResources
+:HeaderListViewDemo:mergeDebugResources
+:HeaderListViewDemo:processDebugManifest
+:HeaderListViewDemo:processDebugResources
+:HeaderListViewDemo:generateDebugSources
+:HeaderListViewDemo:compileDebugJava
+:HeaderListViewDemo:preDexDebug
+:HeaderListViewDemo:dexDebug
+:HeaderListViewDemo:processDebugJavaRes UP-TO-DATE
+:HeaderListViewDemo:validateDebugSigning
+:HeaderListViewDemo:packageDebug
+:HeaderListViewDemo:zipalignDebug
+:HeaderListViewDemo:assembleDebug
+:HeaderListViewDemo:checkReleaseManifest
+:HeaderListViewDemo:prepareReleaseDependencies
+:HeaderListViewDemo:compileReleaseAidl
+:HeaderListViewDemo:compileReleaseRenderscript
+:HeaderListViewDemo:generateReleaseBuildConfig
+:HeaderListViewDemo:generateReleaseAssets UP-TO-DATE
+:HeaderListViewDemo:mergeReleaseAssets
+:HeaderListViewDemo:generateReleaseResValues
+:HeaderListViewDemo:generateReleaseResources
+:HeaderListViewDemo:mergeReleaseResources
+:HeaderListViewDemo:processReleaseManifest
+:HeaderListViewDemo:processReleaseResources
+:HeaderListViewDemo:generateReleaseSources
+:HeaderListViewDemo:compileReleaseJava
+:HeaderListViewDemo:lintVitalRelease
+:HeaderListViewDemo:compileReleaseNdk
+:HeaderListViewDemo:preDexRelease
+:HeaderListViewDemo:dexRelease
+:HeaderListViewDemo:processReleaseJavaRes UP-TO-DATE
+:HeaderListViewDemo:packageRelease
+:HeaderListViewDemo:assembleRelease
+:HeaderListViewDemo:assemble
+:HeaderListViewDemo:build
+
+BUILD SUCCESSFUL
+
+Total time: 19.141 secs
+
+2018-04-09 14:23:11,564 INFO  FullProcessService - Found APK file: /tmp/rdisk/778/src/HeaderListView-master/HeaderListViewDemo/build/outputs/apk/HeaderListViewDemo-release-unsigned.apk

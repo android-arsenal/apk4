@@ -1,0 +1,99 @@
+2018-04-09 14:15:40,955 INFO  DownloadService - Downloading "https://github.com/pavlospt/CircleView/archive/master.zip", attempt 3
+2018-04-09 14:15:41,337 INFO  DownloadService - Downloaded https://github.com/pavlospt/CircleView/archive/master.zip, attempt 3
+2018-04-09 14:15:41,338 INFO  DownloadService - Size of file "/tmp/rdisk/796/master.zip": 51 KB
+2018-04-09 14:15:41,338 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-09 14:15:41,338 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/796/master.zip: true
+2018-04-09 14:15:41,338 DEBUG ZipUtil - Extracting '/tmp/rdisk/796/master.zip' into '/tmp/rdisk/796/src'.
+2018-04-09 14:15:41,343 INFO  FullProcessService - Size of directory with sources: 78 KB
+2018-04-09 14:15:41,343 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/796/src]
+2018-04-09 14:15:41,353 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/796/src/.git/
+
+2018-04-09 14:15:41,355 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/796/src/CircleView-master/gradlew
+2018-04-09 14:15:41,357 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/796/src/CircleView-master/app/build.gradle /tmp/rdisk/796/src/CircleView-master/build.gradle
+2018-04-09 14:15:41,358 INFO  ProjectBuildService - All script(s): /tmp/rdisk/796/src/CircleView-master/settings.gradle /tmp/rdisk/796/src/CircleView-master/build.gradle /tmp/rdisk/796/src/CircleView-master/app/build.gradle
+2018-04-09 14:15:41,359 INFO  DownloadService - Downloading "https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle", attempt 3
+2018-04-09 14:15:42,604 INFO  DownloadService - Downloaded https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle, attempt 3
+2018-04-09 14:15:42,605 INFO  DownloadService - Downloading "https://raw.githubusercontent.com/ArthurHub/release-android-library/master/android-release-aar.gradle", attempt 3
+2018-04-09 14:15:42,770 INFO  DownloadService - Downloaded https://raw.githubusercontent.com/ArthurHub/release-android-library/master/android-release-aar.gradle, attempt 3
+2018-04-09 14:15:42,770 INFO  ProjectBuildService - Remote scripts: https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle https://raw.githubusercontent.com/ArthurHub/release-android-library/master/android-release-aar.gradle
+2018-04-09 14:15:42,770 INFO  ProjectFixService - Fixing project...
+2018-04-09 14:15:42,779 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/796/src/CircleView-master/app/local.properties
+2018-04-09 14:15:42,780 INFO  ProjectFixService - Build info for "/tmp/rdisk/796/src/CircleView-master/app/build.gradle": [buildToolsVersion=24,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=23]
+2018-04-09 14:15:42,780 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/796/src/CircleView-master/app/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=23]
+2018-04-09 14:15:42,781 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/796/src/CircleView-master/local.properties
+2018-04-09 14:15:42,782 INFO  ProjectFixService - Build info for "/tmp/rdisk/796/src/CircleView-master/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=23]
+2018-04-09 14:15:42,782 INFO  ProjectFixService - Project was maybe fixed
+2018-04-09 14:15:42,782 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-09 14:15:42,782 INFO  SysUtils - Execute command: [/tmp/rdisk/796/src/CircleView-master/gradlew, -b, /tmp/rdisk/796/src/CircleView-master/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-09 14:15:42,888 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-09 14:15:42,888 INFO  ProjectTaskService - Detected possible tasks: 5
+2018-04-09 14:15:42,888 INFO  ProjectTaskService - Excluded tasks (3): androidJavadocsJar androidJavadocs androidSourcesJar
+2018-04-09 14:15:42,888 INFO  SysUtils - Execute command: [/tmp/rdisk/796/src/CircleView-master/gradlew, -b, /tmp/rdisk/796/src/CircleView-master/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, androidJavadocsJar, -x, androidJavadocs, -x, androidSourcesJar, build]
+2018-04-09 14:15:42,986 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-09 14:15:42,987 INFO  SysUtils - Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain
+
+2018-04-09 14:15:42,988 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-09 14:15:42,989 INFO  SysUtils - Execute command: [/tmp/rdisk/796/src/CircleView-master/gradlew, -b, /tmp/rdisk/796/src/CircleView-master/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-09 14:15:43,085 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-09 14:15:43,085 INFO  ProjectTaskService - Detected possible tasks: 5
+2018-04-09 14:15:43,085 INFO  ProjectTaskService - Excluded tasks (3): androidJavadocsJar androidJavadocs androidSourcesJar
+2018-04-09 14:15:43,086 INFO  SysUtils - Execute command: [/tmp/rdisk/796/src/CircleView-master/gradlew, -b, /tmp/rdisk/796/src/CircleView-master/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, androidJavadocsJar, -x, androidJavadocs, -x, androidSourcesJar, build]
+2018-04-09 14:15:43,200 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-09 14:15:43,200 INFO  SysUtils - Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain
+
+2018-04-09 14:15:43,202 ERROR FullProcessService - Project build has not produced APK file
+2018-04-09 14:15:43,203 ERROR FullProcessService - Could not find generated or existed APK file

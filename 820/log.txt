@@ -1,0 +1,112 @@
+2018-04-09 11:10:39,658 INFO  DownloadService - Downloading "https://github.com/romainguy/ViewServer/archive/master.zip", attempt 3
+2018-04-09 11:10:40,044 INFO  DownloadService - Downloaded https://github.com/romainguy/ViewServer/archive/master.zip, attempt 3
+2018-04-09 11:10:40,045 INFO  DownloadService - Size of file "/tmp/rdisk/820/master.zip": 72 KB
+2018-04-09 11:10:40,045 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-09 11:10:40,045 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/820/master.zip: true
+2018-04-09 11:10:40,045 DEBUG ZipUtil - Extracting '/tmp/rdisk/820/master.zip' into '/tmp/rdisk/820/src'.
+2018-04-09 11:10:40,050 INFO  FullProcessService - Size of directory with sources: 97 KB
+2018-04-09 11:10:40,050 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/820/src]
+2018-04-09 11:10:40,062 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/820/src/.git/
+
+2018-04-09 11:10:40,064 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/820/src/ViewServer-master/gradlew
+2018-04-09 11:10:40,066 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/820/src/ViewServer-master/viewserver-sample/build.gradle /tmp/rdisk/820/src/ViewServer-master/viewserver/build.gradle /tmp/rdisk/820/src/ViewServer-master/build.gradle
+2018-04-09 11:10:40,067 INFO  ProjectBuildService - All script(s): /tmp/rdisk/820/src/ViewServer-master/viewserver/build.gradle /tmp/rdisk/820/src/ViewServer-master/viewserver-sample/build.gradle /tmp/rdisk/820/src/ViewServer-master/settings.gradle /tmp/rdisk/820/src/ViewServer-master/build.gradle
+2018-04-09 11:10:40,068 INFO  ProjectBuildService - Remote scripts: none
+2018-04-09 11:10:40,068 INFO  ProjectFixService - Fixing project...
+2018-04-09 11:10:40,072 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/820/src/ViewServer-master/viewserver-sample/local.properties
+2018-04-09 11:10:40,073 INFO  ProjectFixService - Build info for "/tmp/rdisk/820/src/ViewServer-master/viewserver-sample/build.gradle": [buildToolsVersion=21.1.1,compileSdkVersion=21,minSdkVersion=4,targetSdkVersion=21]
+2018-04-09 11:10:40,073 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/820/src/ViewServer-master/viewserver-sample/build.gradle": [buildToolsVersion=21.1.1,compileSdkVersion=21,minSdkVersion=7,targetSdkVersion=21]
+2018-04-09 11:10:40,074 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/820/src/ViewServer-master/viewserver/local.properties
+2018-04-09 11:10:40,075 INFO  ProjectFixService - Build info for "/tmp/rdisk/820/src/ViewServer-master/viewserver/build.gradle": [buildToolsVersion=21.1.1,compileSdkVersion=21,minSdkVersion=7,targetSdkVersion=21]
+2018-04-09 11:10:40,076 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/820/src/ViewServer-master/local.properties
+2018-04-09 11:10:40,079 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-09 11:10:40,079 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-09 11:10:40,080 INFO  ProjectFixService - Build info for "/tmp/rdisk/820/src/ViewServer-master/build.gradle": [buildToolsVersion=21.1.1,compileSdkVersion=21,minSdkVersion=7,targetSdkVersion=21]
+2018-04-09 11:10:40,080 INFO  ProjectFixService - Project was maybe fixed
+2018-04-09 11:10:40,081 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-09 11:10:40,081 INFO  SysUtils - Execute command: [/tmp/rdisk/820/src/ViewServer-master/gradlew, -b, /tmp/rdisk/820/src/ViewServer-master/viewserver-sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-09 11:10:48,052 INFO  ProjectTaskService - Detected possible tasks: 53
+2018-04-09 11:10:48,053 INFO  ProjectTaskService - Excluded tasks (11): lintDebug deviceCheck lint uninstallRelease connectedCheck uninstallAll check connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-09 11:10:48,054 INFO  SysUtils - Execute command: [/tmp/rdisk/820/src/ViewServer-master/gradlew, -b, /tmp/rdisk/820/src/ViewServer-master/viewserver-sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-09 11:10:57,973 INFO  SysUtils - Configuration on demand is an incubating feature.
+:viewserver-sample:preBuild
+:viewserver-sample:compileDebugNdk
+:viewserver:compileLint
+:viewserver:copyReleaseLint UP-TO-DATE
+:viewserver:mergeReleaseProguardFiles
+:viewserver:preBuild
+:viewserver:preReleaseBuild
+:viewserver:checkReleaseManifest
+:viewserver:prepareReleaseDependencies
+:viewserver:compileReleaseAidl
+:viewserver:compileReleaseRenderscript
+:viewserver:generateReleaseBuildConfig
+:viewserver:generateReleaseAssets UP-TO-DATE
+:viewserver:mergeReleaseAssets
+:viewserver:generateReleaseResValues
+:viewserver:generateReleaseResources
+:viewserver:packageReleaseResources
+:viewserver:processReleaseManifest
+:viewserver:processReleaseResources
+:viewserver:generateReleaseSources
+:viewserver:compileReleaseJava
+:viewserver:processReleaseJavaRes UP-TO-DATE
+:viewserver:packageReleaseJar
+:viewserver:compileReleaseNdk
+:viewserver:packageReleaseJniLibs UP-TO-DATE
+:viewserver:packageReleaseLocalJar UP-TO-DATE
+:viewserver:packageReleaseRenderscript UP-TO-DATE
+:viewserver:bundleRelease
+:viewserver-sample:preDebugBuild
+:viewserver-sample:checkDebugManifest
+:viewserver-sample:preReleaseBuild
+:viewserver-sample:prepareViewServerMasterViewserverUnspecifiedLibrary
+:viewserver-sample:prepareDebugDependencies
+:viewserver-sample:compileDebugAidl
+:viewserver-sample:compileDebugRenderscript
+:viewserver-sample:generateDebugBuildConfig
+:viewserver-sample:generateDebugAssets UP-TO-DATE
+:viewserver-sample:mergeDebugAssets
+:viewserver-sample:generateDebugResValues
+:viewserver-sample:generateDebugResources
+:viewserver-sample:mergeDebugResources
+:viewserver-sample:processDebugManifest
+:viewserver-sample:processDebugResources
+:viewserver-sample:generateDebugSources
+:viewserver-sample:compileDebugJava
+:viewserver-sample:preDexDebug
+:viewserver-sample:dexDebug
+:viewserver-sample:processDebugJavaRes UP-TO-DATE
+:viewserver-sample:validateDebugSigning
+:viewserver-sample:packageDebug
+:viewserver-sample:zipalignDebug
+:viewserver-sample:assembleDebug
+:viewserver-sample:checkReleaseManifest
+:viewserver-sample:prepareReleaseDependencies
+:viewserver-sample:compileReleaseAidl
+:viewserver-sample:compileReleaseRenderscript
+:viewserver-sample:generateReleaseBuildConfig
+:viewserver-sample:generateReleaseAssets UP-TO-DATE
+:viewserver-sample:mergeReleaseAssets
+:viewserver-sample:generateReleaseResValues
+:viewserver-sample:generateReleaseResources
+:viewserver-sample:mergeReleaseResources
+:viewserver-sample:processReleaseManifest
+:viewserver-sample:processReleaseResources
+:viewserver-sample:generateReleaseSources
+:viewserver-sample:compileReleaseJava
+:viewserver-sample:lintVitalRelease
+:viewserver-sample:compileReleaseNdk
+:viewserver-sample:preDexRelease
+:viewserver-sample:dexRelease
+:viewserver-sample:processReleaseJavaRes UP-TO-DATE
+:viewserver-sample:packageRelease
+:viewserver-sample:assembleRelease
+:viewserver-sample:assemble
+:viewserver-sample:build
+
+BUILD SUCCESSFUL
+
+Total time: 9.497 secs
+
+2018-04-09 11:10:57,982 INFO  FullProcessService - Found APK file: /tmp/rdisk/820/src/ViewServer-master/viewserver-sample/build/outputs/apk/viewserver-sample-release-unsigned.apk

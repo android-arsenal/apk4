@@ -1,0 +1,233 @@
+2018-04-09 14:28:50,498 INFO  DownloadService - Downloading "https://github.com/Udinic/AccountAuthenticator/archive/master.zip", attempt 3
+2018-04-09 14:28:51,012 INFO  DownloadService - Downloaded https://github.com/Udinic/AccountAuthenticator/archive/master.zip, attempt 3
+2018-04-09 14:28:51,012 INFO  DownloadService - Size of file "/tmp/rdisk/764/master.zip": 195 KB
+2018-04-09 14:28:51,013 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-09 14:28:51,013 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/764/master.zip: true
+2018-04-09 14:28:51,013 DEBUG ZipUtil - Extracting '/tmp/rdisk/764/master.zip' into '/tmp/rdisk/764/src'.
+2018-04-09 14:28:51,022 INFO  FullProcessService - Size of directory with sources: 230 KB
+2018-04-09 14:28:51,022 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/764/src]
+2018-04-09 14:28:51,027 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/764/src/.git/
+
+2018-04-09 14:28:51,030 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/764/src/AccountAuthenticator-master/gradlew
+2018-04-09 14:28:51,032 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/764/src/AccountAuthenticator-master/accountAuthenticator/build.gradle /tmp/rdisk/764/src/AccountAuthenticator-master/exampleApp/build.gradle /tmp/rdisk/764/src/AccountAuthenticator-master/exampleApp2/build.gradle /tmp/rdisk/764/src/AccountAuthenticator-master/build.gradle
+2018-04-09 14:28:51,035 INFO  ProjectBuildService - All script(s): /tmp/rdisk/764/src/AccountAuthenticator-master/settings.gradle /tmp/rdisk/764/src/AccountAuthenticator-master/exampleApp2/build.gradle /tmp/rdisk/764/src/AccountAuthenticator-master/exampleApp/build.gradle /tmp/rdisk/764/src/AccountAuthenticator-master/build.gradle /tmp/rdisk/764/src/AccountAuthenticator-master/accountAuthenticator/build.gradle
+2018-04-09 14:28:51,035 INFO  ProjectBuildService - Remote scripts: none
+2018-04-09 14:28:51,035 INFO  ProjectFixService - Fixing project...
+2018-04-09 14:28:51,041 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/764/src/AccountAuthenticator-master/accountAuthenticator/local.properties
+2018-04-09 14:28:51,041 INFO  ProjectFixService - Build info for "/tmp/rdisk/764/src/AccountAuthenticator-master/accountAuthenticator/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=8,targetSdkVersion=23]
+2018-04-09 14:28:51,041 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/764/src/AccountAuthenticator-master/exampleApp/local.properties
+2018-04-09 14:28:51,042 INFO  ProjectFixService - Build info for "/tmp/rdisk/764/src/AccountAuthenticator-master/exampleApp/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=8,targetSdkVersion=23]
+2018-04-09 14:28:51,042 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/764/src/AccountAuthenticator-master/exampleApp2/local.properties
+2018-04-09 14:28:51,042 INFO  ProjectFixService - Build info for "/tmp/rdisk/764/src/AccountAuthenticator-master/exampleApp2/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=8,targetSdkVersion=23]
+2018-04-09 14:28:51,042 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/764/src/AccountAuthenticator-master/local.properties
+2018-04-09 14:28:51,043 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.8-all.zip
+2018-04-09 14:28:51,043 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.8-bin.zip)
+2018-04-09 14:28:51,044 INFO  ProjectFixService - Build info for "/tmp/rdisk/764/src/AccountAuthenticator-master/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=8,targetSdkVersion=23]
+2018-04-09 14:28:51,044 INFO  ProjectFixService - Project was maybe fixed
+2018-04-09 14:28:51,044 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-09 14:28:51,044 INFO  SysUtils - Execute command: [/tmp/rdisk/764/src/AccountAuthenticator-master/gradlew, -b, /tmp/rdisk/764/src/AccountAuthenticator-master/accountAuthenticator/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-09 14:28:59,178 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-09 14:28:59,179 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-09 14:28:59,179 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-09 14:28:59,179 INFO  SysUtils - Execute command: [/tmp/rdisk/764/src/AccountAuthenticator-master/gradlew, -b, /tmp/rdisk/764/src/AccountAuthenticator-master/accountAuthenticator/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-09 14:29:15,475 INFO  SysUtils - Configuration on demand is an incubating feature.
+:accountAuthenticator:compileLint
+:accountAuthenticator:copyDebugLint UP-TO-DATE
+:accountAuthenticator:mergeDebugProguardFiles
+:accountAuthenticator:preBuild UP-TO-DATE
+:accountAuthenticator:preDebugBuild UP-TO-DATE
+:accountAuthenticator:checkDebugManifest
+:accountAuthenticator:prepareDebugDependencies
+:accountAuthenticator:compileDebugAidl
+:accountAuthenticator:compileDebugRenderscript
+:accountAuthenticator:generateDebugBuildConfig
+:accountAuthenticator:generateDebugAssets UP-TO-DATE
+:accountAuthenticator:mergeDebugAssets
+:accountAuthenticator:generateDebugResValues
+:accountAuthenticator:generateDebugResources
+:accountAuthenticator:packageDebugResources
+:accountAuthenticator:processDebugManifest
+:accountAuthenticator:processDebugResources
+:accountAuthenticator:generateDebugSources
+:accountAuthenticator:processDebugJavaRes UP-TO-DATE
+:accountAuthenticator:compileDebugJavaWithJavacNote: /tmp/rdisk/764/src/AccountAuthenticator-master/accountAuthenticator/src/main/java/com/udinic/accounts_authenticator_example/authentication/ParseComServerAuthenticate.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:accountAuthenticator:packageDebugJar
+:accountAuthenticator:compileDebugNdk UP-TO-DATE
+:accountAuthenticator:packageDebugJniLibs UP-TO-DATE
+:accountAuthenticator:packageDebugLocalJar UP-TO-DATE
+:accountAuthenticator:packageDebugRenderscript UP-TO-DATE
+:accountAuthenticator:bundleDebug
+:accountAuthenticator:compileDebugSources
+:accountAuthenticator:assembleDebug
+:accountAuthenticator:copyReleaseLint UP-TO-DATE
+:accountAuthenticator:mergeReleaseProguardFiles
+:accountAuthenticator:preReleaseBuild UP-TO-DATE
+:accountAuthenticator:checkReleaseManifest
+:accountAuthenticator:prepareReleaseDependencies
+:accountAuthenticator:compileReleaseAidl
+:accountAuthenticator:compileReleaseRenderscript
+:accountAuthenticator:generateReleaseBuildConfig
+:accountAuthenticator:generateReleaseAssets UP-TO-DATE
+:accountAuthenticator:mergeReleaseAssets
+:accountAuthenticator:generateReleaseResValues
+:accountAuthenticator:generateReleaseResources
+:accountAuthenticator:packageReleaseResources
+:accountAuthenticator:processReleaseManifest
+:accountAuthenticator:processReleaseResources
+:accountAuthenticator:generateReleaseSources
+:accountAuthenticator:processReleaseJavaRes UP-TO-DATE
+:accountAuthenticator:compileReleaseJavaWithJavacNote: /tmp/rdisk/764/src/AccountAuthenticator-master/accountAuthenticator/src/main/java/com/udinic/accounts_authenticator_example/authentication/ParseComServerAuthenticate.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:accountAuthenticator:packageReleaseJar
+:accountAuthenticator:compileReleaseNdk UP-TO-DATE
+:accountAuthenticator:packageReleaseJniLibs UP-TO-DATE
+:accountAuthenticator:packageReleaseLocalJar UP-TO-DATE
+:accountAuthenticator:packageReleaseRenderscript UP-TO-DATE
+:accountAuthenticator:bundleRelease
+:accountAuthenticator:compileReleaseSources
+:accountAuthenticator:assembleRelease
+:accountAuthenticator:assemble
+:accountAuthenticator:lint
+Ran lint on variant debug: 17 issues found
+Ran lint on variant release: 17 issues found
+Wrote HTML report to file:/tmp/rdisk/764/src/AccountAuthenticator-master/accountAuthenticator/build/outputs/lint-results.html
+Wrote XML report to /tmp/rdisk/764/src/AccountAuthenticator-master/accountAuthenticator/build/outputs/lint-results.xml
+:accountAuthenticator:preDebugUnitTestBuild UP-TO-DATE
+:accountAuthenticator:prepareDebugUnitTestDependencies
+:accountAuthenticator:processDebugUnitTestJavaRes UP-TO-DATE
+:accountAuthenticator:compileDebugUnitTestJavaWithJavac UP-TO-DATE
+:accountAuthenticator:compileDebugUnitTestSources UP-TO-DATE
+:accountAuthenticator:mockableAndroidJar
+:accountAuthenticator:assembleDebugUnitTest
+:accountAuthenticator:testDebugUnitTest
+:accountAuthenticator:preReleaseUnitTestBuild UP-TO-DATE
+:accountAuthenticator:prepareReleaseUnitTestDependencies
+:accountAuthenticator:processReleaseUnitTestJavaRes UP-TO-DATE
+:accountAuthenticator:compileReleaseUnitTestJavaWithJavac UP-TO-DATE
+:accountAuthenticator:compileReleaseUnitTestSources UP-TO-DATE
+:accountAuthenticator:assembleReleaseUnitTest
+:accountAuthenticator:testReleaseUnitTest
+:accountAuthenticator:test
+:accountAuthenticator:check
+:accountAuthenticator:build
+
+BUILD SUCCESSFUL
+
+Total time: 15.884 secs
+
+2018-04-09 14:29:15,483 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-09 14:29:15,483 INFO  SysUtils - Execute command: [/tmp/rdisk/764/src/AccountAuthenticator-master/gradlew, -b, /tmp/rdisk/764/src/AccountAuthenticator-master/exampleApp/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-09 14:29:22,033 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-09 14:29:22,033 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-09 14:29:22,033 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-09 14:29:22,033 INFO  SysUtils - Execute command: [/tmp/rdisk/764/src/AccountAuthenticator-master/gradlew, -b, /tmp/rdisk/764/src/AccountAuthenticator-master/exampleApp/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-09 14:29:40,442 INFO  SysUtils - Configuration on demand is an incubating feature.
+:accountAuthenticator:compileLint
+:accountAuthenticator:copyReleaseLint UP-TO-DATE
+:accountAuthenticator:mergeReleaseProguardFiles UP-TO-DATE
+:accountAuthenticator:preBuild UP-TO-DATE
+:accountAuthenticator:preReleaseBuild UP-TO-DATE
+:accountAuthenticator:checkReleaseManifest
+:accountAuthenticator:prepareReleaseDependencies
+:accountAuthenticator:compileReleaseAidl UP-TO-DATE
+:accountAuthenticator:compileReleaseRenderscript UP-TO-DATE
+:accountAuthenticator:generateReleaseBuildConfig UP-TO-DATE
+:accountAuthenticator:generateReleaseAssets UP-TO-DATE
+:accountAuthenticator:mergeReleaseAssets UP-TO-DATE
+:accountAuthenticator:generateReleaseResValues UP-TO-DATE
+:accountAuthenticator:generateReleaseResources UP-TO-DATE
+:accountAuthenticator:packageReleaseResources UP-TO-DATE
+:accountAuthenticator:processReleaseManifest UP-TO-DATE
+:accountAuthenticator:processReleaseResources UP-TO-DATE
+:accountAuthenticator:generateReleaseSources UP-TO-DATE
+:accountAuthenticator:processReleaseJavaRes UP-TO-DATE
+:accountAuthenticator:compileReleaseJavaWithJavac UP-TO-DATE
+:accountAuthenticator:packageReleaseJar UP-TO-DATE
+:accountAuthenticator:compileReleaseNdk UP-TO-DATE
+:accountAuthenticator:packageReleaseJniLibs UP-TO-DATE
+:accountAuthenticator:packageReleaseLocalJar UP-TO-DATE
+:accountAuthenticator:packageReleaseRenderscript UP-TO-DATE
+:accountAuthenticator:bundleRelease UP-TO-DATE
+:exampleApp:preBuild UP-TO-DATE
+:exampleApp:preDebugBuild UP-TO-DATE
+:exampleApp:checkDebugManifest
+:exampleApp:preReleaseBuild UP-TO-DATE
+:exampleApp:prepareAccountAuthenticatorMasterAccountAuthenticatorUnspecifiedLibrary
+:exampleApp:prepareDebugDependencies
+:exampleApp:compileDebugAidl
+:exampleApp:compileDebugRenderscript
+:exampleApp:generateDebugBuildConfig
+:exampleApp:generateDebugAssets UP-TO-DATE
+:exampleApp:mergeDebugAssets
+:exampleApp:generateDebugResValues
+:exampleApp:generateDebugResources
+:exampleApp:mergeDebugResources
+:exampleApp:processDebugManifest
+:exampleApp:processDebugResources
+:exampleApp:generateDebugSources
+:exampleApp:processDebugJavaRes UP-TO-DATE
+:exampleApp:compileDebugJavaWithJavac
+:exampleApp:compileDebugNdk UP-TO-DATE
+:exampleApp:compileDebugSources
+:exampleApp:preDexDebug
+:exampleApp:dexDebug
+:exampleApp:validateDebugSigning
+:exampleApp:packageDebug
+:exampleApp:zipalignDebug
+:exampleApp:assembleDebug
+:exampleApp:checkReleaseManifest
+:exampleApp:prepareReleaseDependencies
+:exampleApp:compileReleaseAidl
+:exampleApp:compileReleaseRenderscript
+:exampleApp:generateReleaseBuildConfig
+:exampleApp:generateReleaseAssets UP-TO-DATE
+:exampleApp:mergeReleaseAssets
+:exampleApp:generateReleaseResValues
+:exampleApp:generateReleaseResources
+:exampleApp:mergeReleaseResources
+:exampleApp:processReleaseManifest
+:exampleApp:processReleaseResources
+:exampleApp:generateReleaseSources
+:exampleApp:processReleaseJavaRes UP-TO-DATE
+:exampleApp:compileReleaseJavaWithJavac
+:exampleApp:compileReleaseNdk UP-TO-DATE
+:exampleApp:compileReleaseSources
+:exampleApp:lintVitalRelease
+:exampleApp:preDexRelease
+:exampleApp:dexRelease
+:exampleApp:packageRelease
+:exampleApp:assembleRelease
+:exampleApp:assemble
+:exampleApp:compileLint
+:exampleApp:lint
+Ran lint on variant release: 12 issues found
+Ran lint on variant debug: 12 issues found
+Wrote HTML report to file:/tmp/rdisk/764/src/AccountAuthenticator-master/exampleApp/build/outputs/lint-results.html
+Wrote XML report to /tmp/rdisk/764/src/AccountAuthenticator-master/exampleApp/build/outputs/lint-results.xml
+:exampleApp:preDebugUnitTestBuild UP-TO-DATE
+:exampleApp:prepareDebugUnitTestDependencies
+:exampleApp:processDebugUnitTestJavaRes UP-TO-DATE
+:exampleApp:compileDebugUnitTestJavaWithJavac UP-TO-DATE
+:exampleApp:compileDebugUnitTestSources UP-TO-DATE
+:exampleApp:mockableAndroidJar
+:exampleApp:assembleDebugUnitTest
+:exampleApp:testDebugUnitTest
+:exampleApp:preReleaseUnitTestBuild UP-TO-DATE
+:exampleApp:prepareReleaseUnitTestDependencies
+:exampleApp:processReleaseUnitTestJavaRes UP-TO-DATE
+:exampleApp:compileReleaseUnitTestJavaWithJavac UP-TO-DATE
+:exampleApp:compileReleaseUnitTestSources UP-TO-DATE
+:exampleApp:assembleReleaseUnitTest
+:exampleApp:testReleaseUnitTest
+:exampleApp:test
+:exampleApp:check
+:exampleApp:build
+
+BUILD SUCCESSFUL
+
+Total time: 17.972 secs
+
+2018-04-09 14:29:40,457 INFO  FullProcessService - Found APK file: /tmp/rdisk/764/src/AccountAuthenticator-master/exampleApp/build/outputs/apk/exampleApp-release-unsigned.apk

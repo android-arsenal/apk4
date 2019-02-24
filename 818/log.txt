@@ -1,0 +1,160 @@
+2018-04-09 11:10:59,241 INFO  DownloadService - Downloading "https://github.com/lewisjdeane/L-Dialogs/archive/master.zip", attempt 3
+2018-04-09 11:11:00,268 INFO  DownloadService - Downloaded https://github.com/lewisjdeane/L-Dialogs/archive/master.zip, attempt 3
+2018-04-09 11:11:00,268 INFO  DownloadService - Size of file "/tmp/rdisk/818/master.zip": 2 MB
+2018-04-09 11:11:00,268 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-09 11:11:00,269 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/818/master.zip: true
+2018-04-09 11:11:00,269 DEBUG ZipUtil - Extracting '/tmp/rdisk/818/master.zip' into '/tmp/rdisk/818/src'.
+2018-04-09 11:11:00,302 INFO  FullProcessService - Size of directory with sources: 2 MB
+2018-04-09 11:11:00,302 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/818/src]
+2018-04-09 11:11:00,313 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/818/src/.git/
+
+2018-04-09 11:11:00,315 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/818/src/L-Dialogs-master/gradlew
+2018-04-09 11:11:00,318 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/818/src/L-Dialogs-master/app/build.gradle /tmp/rdisk/818/src/L-Dialogs-master/build.gradle
+2018-04-09 11:11:00,320 INFO  ProjectBuildService - All script(s): /tmp/rdisk/818/src/L-Dialogs-master/settings.gradle /tmp/rdisk/818/src/L-Dialogs-master/build.gradle /tmp/rdisk/818/src/L-Dialogs-master/app/build.gradle
+2018-04-09 11:11:00,320 INFO  ProjectBuildService - Remote scripts: none
+2018-04-09 11:11:00,320 INFO  ProjectFixService - Fixing project...
+2018-04-09 11:11:00,326 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/818/src/L-Dialogs-master/app/local.properties
+2018-04-09 11:11:00,327 INFO  ProjectFixService - Build info for "/tmp/rdisk/818/src/L-Dialogs-master/app/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=10,targetSdkVersion=<null>]
+2018-04-09 11:11:00,328 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/818/src/L-Dialogs-master/app/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=10,targetSdkVersion=27]
+2018-04-09 11:11:00,328 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/818/src/L-Dialogs-master/local.properties
+2018-04-09 11:11:00,329 INFO  WrapperPropertiesFixService - Gradle wrapper: http://services.gradle.org/distributions/gradle-1.12-all.zip
+2018-04-09 11:11:00,330 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (http://services.gradle.org/distributions/gradle-1.12-bin.zip)
+2018-04-09 11:11:00,331 INFO  ProjectFixService - Build info for "/tmp/rdisk/818/src/L-Dialogs-master/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=10,targetSdkVersion=<null>]
+2018-04-09 11:11:00,332 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/818/src/L-Dialogs-master/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=10,targetSdkVersion=27]
+2018-04-09 11:11:00,332 INFO  ProjectFixService - Project was maybe fixed
+2018-04-09 11:11:00,332 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-09 11:11:00,332 INFO  SysUtils - Execute command: [/tmp/rdisk/818/src/L-Dialogs-master/gradlew, -b, /tmp/rdisk/818/src/L-Dialogs-master/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-09 11:11:11,027 INFO  ProjectTaskService - Detected possible tasks: 47
+2018-04-09 11:11:11,027 INFO  ProjectTaskService - Excluded tasks (8): lintDebug deviceCheck lint connectedCheck uninstallAll check connectedAndroidTest lintRelease
+2018-04-09 11:11:11,027 INFO  SysUtils - Execute command: [/tmp/rdisk/818/src/L-Dialogs-master/gradlew, -b, /tmp/rdisk/818/src/L-Dialogs-master/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-09 11:11:18,153 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:compileLint
+:app:copyDebugLint UP-TO-DATE
+:app:mergeDebugProguardFiles
+:app:preBuild
+:app:preDebugBuild
+:app:checkDebugManifest
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:packageDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:compileDebugJavaNote: /tmp/rdisk/818/src/L-Dialogs-master/app/src/main/java/uk/me/lewisdeane/ldialogs/CustomDialog.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:app:processDebugJavaRes UP-TO-DATE
+:app:packageDebugJar
+:app:compileDebugNdk
+:app:packageDebugJniLibs UP-TO-DATE
+:app:packageDebugLocalJar UP-TO-DATE
+:app:packageDebugRenderscript UP-TO-DATE
+:app:bundleDebug
+:app:assembleDebug
+:app:copyReleaseLint UP-TO-DATE
+:app:mergeReleaseProguardFiles
+:app:preReleaseBuild
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:packageReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:compileReleaseJavaNote: /tmp/rdisk/818/src/L-Dialogs-master/app/src/main/java/uk/me/lewisdeane/ldialogs/CustomDialog.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:app:processReleaseJavaRes UP-TO-DATE
+:app:packageReleaseJar
+:app:compileReleaseNdk
+:app:packageReleaseJniLibs UP-TO-DATE
+:app:packageReleaseLocalJar UP-TO-DATE
+:app:packageReleaseRenderscript UP-TO-DATE
+:app:bundleRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 6.621 secs
+
+2018-04-09 11:11:18,160 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-09 11:11:18,161 INFO  SysUtils - Execute command: [/tmp/rdisk/818/src/L-Dialogs-master/gradlew, -b, /tmp/rdisk/818/src/L-Dialogs-master/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-09 11:11:23,127 INFO  ProjectTaskService - Detected possible tasks: 47
+2018-04-09 11:11:23,127 INFO  ProjectTaskService - Excluded tasks (8): lintDebug deviceCheck lint connectedCheck uninstallAll check connectedAndroidTest lintRelease
+2018-04-09 11:11:23,127 INFO  SysUtils - Execute command: [/tmp/rdisk/818/src/L-Dialogs-master/gradlew, -b, /tmp/rdisk/818/src/L-Dialogs-master/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-09 11:11:28,317 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:compileLint
+:app:copyDebugLint UP-TO-DATE
+:app:mergeDebugProguardFiles UP-TO-DATE
+:app:preBuild
+:app:preDebugBuild
+:app:checkDebugManifest
+:app:prepareDebugDependencies
+:app:compileDebugAidl UP-TO-DATE
+:app:compileDebugRenderscript UP-TO-DATE
+:app:generateDebugBuildConfig UP-TO-DATE
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets UP-TO-DATE
+:app:generateDebugResValues UP-TO-DATE
+:app:generateDebugResources UP-TO-DATE
+:app:packageDebugResources UP-TO-DATE
+:app:processDebugManifest UP-TO-DATE
+:app:processDebugResources UP-TO-DATE
+:app:generateDebugSources UP-TO-DATE
+:app:compileDebugJava UP-TO-DATE
+:app:processDebugJavaRes UP-TO-DATE
+:app:packageDebugJar UP-TO-DATE
+:app:compileDebugNdk UP-TO-DATE
+:app:packageDebugJniLibs UP-TO-DATE
+:app:packageDebugLocalJar UP-TO-DATE
+:app:packageDebugRenderscript UP-TO-DATE
+:app:bundleDebug
+:app:assembleDebug
+:app:copyReleaseLint UP-TO-DATE
+:app:mergeReleaseProguardFiles UP-TO-DATE
+:app:preReleaseBuild
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl UP-TO-DATE
+:app:compileReleaseRenderscript UP-TO-DATE
+:app:generateReleaseBuildConfig UP-TO-DATE
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets UP-TO-DATE
+:app:generateReleaseResValues UP-TO-DATE
+:app:generateReleaseResources UP-TO-DATE
+:app:packageReleaseResources UP-TO-DATE
+:app:processReleaseManifest UP-TO-DATE
+:app:processReleaseResources UP-TO-DATE
+:app:generateReleaseSources UP-TO-DATE
+:app:compileReleaseJava UP-TO-DATE
+:app:processReleaseJavaRes UP-TO-DATE
+:app:packageReleaseJar UP-TO-DATE
+:app:compileReleaseNdk UP-TO-DATE
+:app:packageReleaseJniLibs UP-TO-DATE
+:app:packageReleaseLocalJar UP-TO-DATE
+:app:packageReleaseRenderscript UP-TO-DATE
+:app:bundleRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 4.728 secs
+
+2018-04-09 11:11:28,324 ERROR FullProcessService - Project build has not produced APK file
+2018-04-09 11:11:28,330 ERROR FullProcessService - Could not find generated or existed APK file

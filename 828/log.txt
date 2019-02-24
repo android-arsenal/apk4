@@ -1,0 +1,1457 @@
+2018-05-11 16:08:32,314 INFO  DownloadService - Downloading "https://github.com/serso/android-checkout/archive/master.zip", attempt 3
+2018-05-11 16:09:33,782 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-05-11 16:09:34,524 INFO  GithubDownloadService - Default branch of this repository: master
+2018-05-11 16:09:34,524 INFO  DownloadService - Downloading "https://github.com/serso/android-checkout/archive/master.zip", attempt 3
+2018-05-11 16:10:35,931 DEBUG FullProcessService - Repository https://github.com/serso/android-checkout available: true
+2018-05-11 16:10:35,931 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-05-11 16:10:35,931 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/serso/android-checkout, /tmp/rdisk/828/src]
+2018-05-11 16:10:38,030 INFO  SysUtils - 
+2018-05-11 16:10:38,035 INFO  GitService - Deleted "/tmp/rdisk/828/src/.git": true
+2018-05-11 16:10:38,039 INFO  FullProcessService - Size of directory with sources: 1 MB
+2018-05-11 16:10:38,039 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/828/src]
+2018-05-11 16:10:38,044 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/828/src/.git/
+
+2018-05-11 16:10:38,048 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/828/src/gradlew
+2018-05-11 16:10:38,052 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/828/src/app/build.gradle /tmp/rdisk/828/src/lib/build.gradle /tmp/rdisk/828/src/build.gradle
+2018-05-11 16:10:38,055 INFO  ProjectBuildService - All script(s): /tmp/rdisk/828/src/settings.gradle /tmp/rdisk/828/src/lib/build.gradle /tmp/rdisk/828/src/build.gradle /tmp/rdisk/828/src/app/build.gradle
+2018-05-11 16:10:38,055 INFO  ProjectBuildService - Remote scripts: none
+2018-05-11 16:10:38,055 INFO  ProjectFixService - Fixing project...
+2018-05-11 16:10:38,064 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/828/src/app/local.properties
+2018-05-11 16:10:38,068 INFO  ProjectFixService - Build info for "/tmp/rdisk/828/src/app/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-05-11 16:10:38,068 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/828/src/app/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-11 16:10:38,070 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/828/src/lib/local.properties
+2018-05-11 16:10:38,073 INFO  ProjectFixService - Build info for "/tmp/rdisk/828/src/lib/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-05-11 16:10:38,073 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/828/src/lib/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-11 16:10:38,074 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/828/src/local.properties
+2018-05-11 16:10:38,075 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-4.4-all.zip
+2018-05-11 16:10:38,075 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-4.4-bin.zip)
+2018-05-11 16:10:38,080 INFO  ProjectFixService - Build info for "/tmp/rdisk/828/src/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-05-11 16:10:38,080 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/828/src/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-11 16:10:38,082 INFO  ProjectFixService - Project was maybe fixed
+2018-05-11 16:10:38,082 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-11 16:10:38,082 INFO  SysUtils - Execute command: [/tmp/rdisk/828/src/gradlew, -b, /tmp/rdisk/828/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-11 16:10:46,356 INFO  ProjectTaskService - Detected possible tasks: 69
+2018-05-11 16:10:46,357 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-05-11 16:10:46,357 INFO  SysUtils - Execute command: [/tmp/rdisk/828/src/gradlew, -b, /tmp/rdisk/828/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-05-11 16:11:01,069 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-05-11 16:11:01,069 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:androidSourcesJar
+:app:preBuild UP-TO-DATE
+:lib:preBuild UP-TO-DATE
+:lib:preDebugBuild UP-TO-DATE
+:lib:checkDebugManifest
+:lib:processDebugManifest
+:app:preDebugBuild
+:lib:compileDebugAidl
+:app:compileDebugAidl
+:lib:packageDebugRenderscript NO-SOURCE
+:app:compileDebugRenderscript
+:app:checkDebugManifest
+:app:generateDebugBuildConfig
+:app:prepareLintJar
+:app:mainApkListPersistenceDebug
+:app:generateDebugResValues
+:app:generateDebugResources
+:lib:compileDebugRenderscript
+:lib:generateDebugResValues
+:lib:generateDebugResources
+:lib:packageDebugResources
+:app:mergeDebugResources
+:app:createDebugCompatibleScreenManifests
+:app:processDebugManifest
+:app:splitsDiscoveryTaskDebug
+:lib:platformAttrExtractor
+:lib:generateDebugBuildConfig
+:lib:prepareLintJar
+:lib:javaPreCompileDebug
+:lib:processDebugJavaRes NO-SOURCE
+:app:compileDebugNdk NO-SOURCE
+:app:mergeDebugShaders
+:app:compileDebugShaders
+:app:generateDebugAssets
+:lib:mergeDebugShaders
+:lib:compileDebugShaders
+:lib:generateDebugAssets
+:lib:packageDebugAssets
+:app:mergeDebugAssets
+:app:mergeDebugJniLibFolders
+:lib:compileDebugNdk NO-SOURCE
+:lib:mergeDebugJniLibFolders
+:lib:transformNativeLibsWithMergeJniLibsForDebug
+:lib:transformNativeLibsWithStripDebugSymbolForDebug
+:lib:transformNativeLibsWithIntermediateJniLibsForDebug
+:app:processDebugJavaRes NO-SOURCE
+:app:validateSigningDebug
+:app:extractProguardFiles
+:lib:preReleaseBuild UP-TO-DATE
+:lib:checkReleaseManifest
+:lib:processReleaseManifest
+:app:preReleaseBuild
+:lib:compileReleaseAidl
+:app:compileReleaseAidl
+:lib:packageReleaseRenderscript NO-SOURCE
+:app:compileReleaseRenderscript
+:app:checkReleaseManifest
+:app:generateReleaseBuildConfig
+:app:mainApkListPersistenceRelease
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:lib:compileReleaseRenderscript
+:lib:generateReleaseResValues
+:lib:generateReleaseResources
+:lib:packageReleaseResources
+:app:mergeReleaseResources
+:app:createReleaseCompatibleScreenManifests
+:app:processReleaseManifest
+:app:splitsDiscoveryTaskRelease
+:lib:generateReleaseBuildConfig
+:lib:javaPreCompileRelease
+:lib:processReleaseJavaRes NO-SOURCE
+:app:compileReleaseNdk NO-SOURCE
+:app:mergeReleaseShaders
+:app:compileReleaseShaders
+:app:generateReleaseAssets
+:lib:mergeReleaseShaders
+:lib:compileReleaseShaders
+:lib:generateReleaseAssets
+:lib:packageReleaseAssets
+:app:mergeReleaseAssets
+:app:processReleaseJavaRes NO-SOURCE
+:lib:mergeReleaseConsumerProguardFiles
+:app:mergeReleaseJniLibFolders
+:lib:compileReleaseNdk NO-SOURCE
+:lib:mergeReleaseJniLibFolders
+:lib:transformNativeLibsWithMergeJniLibsForRelease
+:lib:transformNativeLibsWithStripDebugSymbolForRelease
+:lib:transformNativeLibsWithIntermediateJniLibsForRelease
+:app:signArchives FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:signArchives'.
+> Cannot perform signing task ':app:signArchives' because it has no configured signatory
+
+* Try:
+Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':app:signArchives'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:100)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:70)
+	at org.gradle.api.internal.tasks.execution.OutputDirectoryCreatingTaskExecuter.execute(OutputDirectoryCreatingTaskExecuter.java:51)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:62)
+	at org.gradle.api.internal.tasks.execution.ResolveTaskOutputCachingStateExecuter.execute(ResolveTaskOutputCachingStateExecuter.java:54)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:60)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:97)
+	at org.gradle.api.internal.tasks.execution.CleanupStaleOutputsExecuter.execute(CleanupStaleOutputsExecuter.java:87)
+	at org.gradle.api.internal.tasks.execution.ResolveTaskArtifactStateTaskExecuter.execute(ResolveTaskArtifactStateTaskExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:54)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:34)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker$1.run(DefaultTaskGraphExecuter.java:248)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:336)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:328)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.execute(DefaultBuildOperationExecutor.java:199)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:110)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:241)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:230)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker.processTask(DefaultTaskPlanExecutor.java:123)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker.access$200(DefaultTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker$1.execute(DefaultTaskPlanExecutor.java:104)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker$1.execute(DefaultTaskPlanExecutor.java:98)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionPlan.execute(DefaultTaskExecutionPlan.java:626)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionPlan.executeWithTask(DefaultTaskExecutionPlan.java:581)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker.run(DefaultTaskPlanExecutor.java:98)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:59)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:128)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.access$000(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$1.proceed(DefaultBuildExecuter.java:43)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:46)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:30)
+	at org.gradle.initialization.DefaultGradleLauncher$ExecuteTasks.run(DefaultGradleLauncher.java:314)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:336)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:328)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.execute(DefaultBuildOperationExecutor.java:199)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:110)
+	at org.gradle.initialization.DefaultGradleLauncher.runTasks(DefaultGradleLauncher.java:204)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:134)
+	at org.gradle.initialization.DefaultGradleLauncher.executeTasks(DefaultGradleLauncher.java:109)
+	at org.gradle.internal.invocation.GradleBuildController$1.call(GradleBuildController.java:78)
+	at org.gradle.internal.invocation.GradleBuildController$1.call(GradleBuildController.java:75)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:152)
+	at org.gradle.internal.invocation.GradleBuildController.doBuild(GradleBuildController.java:100)
+	at org.gradle.internal.invocation.GradleBuildController.run(GradleBuildController.java:75)
+	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:28)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.tooling.internal.provider.ValidatingBuildActionRunner.run(ValidatingBuildActionRunner.java:32)
+	at org.gradle.launcher.exec.RunAsBuildOperationBuildActionRunner$1.run(RunAsBuildOperationBuildActionRunner.java:43)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:336)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:328)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.execute(DefaultBuildOperationExecutor.java:199)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:110)
+	at org.gradle.launcher.exec.RunAsBuildOperationBuildActionRunner.run(RunAsBuildOperationBuildActionRunner.java:40)
+	at org.gradle.tooling.internal.provider.SubscribableBuildActionRunner.run(SubscribableBuildActionRunner.java:51)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:47)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:30)
+	at org.gradle.launcher.exec.BuildTreeScopeBuildActionExecuter.execute(BuildTreeScopeBuildActionExecuter.java:39)
+	at org.gradle.launcher.exec.BuildTreeScopeBuildActionExecuter.execute(BuildTreeScopeBuildActionExecuter.java:25)
+	at org.gradle.tooling.internal.provider.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:80)
+	at org.gradle.tooling.internal.provider.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:53)
+	at org.gradle.tooling.internal.provider.ServicesSetupBuildActionExecuter.execute(ServicesSetupBuildActionExecuter.java:57)
+	at org.gradle.tooling.internal.provider.ServicesSetupBuildActionExecuter.execute(ServicesSetupBuildActionExecuter.java:32)
+	at org.gradle.tooling.internal.provider.GradleThreadBuildActionExecuter.execute(GradleThreadBuildActionExecuter.java:36)
+	at org.gradle.tooling.internal.provider.GradleThreadBuildActionExecuter.execute(GradleThreadBuildActionExecuter.java:25)
+	at org.gradle.tooling.internal.provider.ParallelismConfigurationBuildActionExecuter.execute(ParallelismConfigurationBuildActionExecuter.java:43)
+	at org.gradle.tooling.internal.provider.ParallelismConfigurationBuildActionExecuter.execute(ParallelismConfigurationBuildActionExecuter.java:29)
+	at org.gradle.tooling.internal.provider.StartParamsValidatingActionExecuter.execute(StartParamsValidatingActionExecuter.java:69)
+	at org.gradle.tooling.internal.provider.StartParamsValidatingActionExecuter.execute(StartParamsValidatingActionExecuter.java:30)
+	at org.gradle.tooling.internal.provider.SessionFailureReportingActionExecuter.execute(SessionFailureReportingActionExecuter.java:59)
+	at org.gradle.tooling.internal.provider.SessionFailureReportingActionExecuter.execute(SessionFailureReportingActionExecuter.java:44)
+	at org.gradle.tooling.internal.provider.SetupLoggingActionExecuter.execute(SetupLoggingActionExecuter.java:45)
+	at org.gradle.tooling.internal.provider.SetupLoggingActionExecuter.execute(SetupLoggingActionExecuter.java:30)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:51)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:173)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:291)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:264)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:33)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:257)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:191)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:60)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:37)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:30)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:127)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:58)
+Caused by: org.gradle.api.InvalidUserDataException: Cannot perform signing task ':app:signArchives' because it has no configured signatory
+	at org.gradle.plugins.signing.Sign.generate(Sign.java:260)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:73)
+	at org.gradle.api.internal.project.taskfactory.StandardTaskAction.doExecute(StandardTaskAction.java:46)
+	at org.gradle.api.internal.project.taskfactory.StandardTaskAction.execute(StandardTaskAction.java:39)
+	at org.gradle.api.internal.project.taskfactory.StandardTaskAction.execute(StandardTaskAction.java:26)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:780)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:747)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter$1.run(ExecuteActionsTaskExecuter.java:121)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:336)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:328)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.execute(DefaultBuildOperationExecutor.java:199)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:110)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:110)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:92)
+	... 94 more
+
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 14s
+68 actionable tasks: 68 executed
+
+2018-05-11 16:11:01,105 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-11 16:11:01,105 INFO  SysUtils - Execute command: [/tmp/rdisk/828/src/gradlew, -b, /tmp/rdisk/828/src/lib/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-11 16:11:08,395 INFO  ProjectTaskService - Detected possible tasks: 67
+2018-05-11 16:11:08,395 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-05-11 16:11:08,395 INFO  SysUtils - Execute command: [/tmp/rdisk/828/src/gradlew, -b, /tmp/rdisk/828/src/lib/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-05-11 16:11:24,550 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-05-11 16:11:24,550 INFO  SysUtils - Configuration on demand is an incubating feature.
+:lib:androidJavadocs/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/UiCheckout.java:9: error: cannot find symbol
+import javax.annotation.Nonnull;
+                       ^
+  symbol:   class Nonnull
+  location: package javax.annotation
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/UiCheckout.java:10: error: cannot find symbol
+import javax.annotation.Nullable;
+                       ^
+  symbol:   class Nullable
+  location: package javax.annotation
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/Checkout.java:36: error: cannot find symbol
+import javax.annotation.Nonnull;
+                       ^
+  symbol:   class Nonnull
+  location: package javax.annotation
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/Checkout.java:37: error: cannot find symbol
+import javax.annotation.Nullable;
+                       ^
+  symbol:   class Nullable
+  location: package javax.annotation
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/Checkout.java:38: error: package javax.annotation.concurrent does not exist
+import javax.annotation.concurrent.GuardedBy;
+                                  ^
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/PurchaseFlow.java:34: error: cannot find symbol
+import javax.annotation.Nonnull;
+                       ^
+  symbol:   class Nonnull
+  location: package javax.annotation
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/PurchaseFlow.java:35: error: cannot find symbol
+import javax.annotation.Nullable;
+                       ^
+  symbol:   class Nullable
+  location: package javax.annotation
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/RequestListener.java:25: error: cannot find symbol
+import javax.annotation.Nonnull;
+                       ^
+  symbol:   class Nonnull
+  location: package javax.annotation
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/Billing.java:25: error: package com.android.vending.billing does not exist
+import com.android.vending.billing.IInAppBillingService;
+                                  ^
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/Billing.java:46: error: cannot find symbol
+import javax.annotation.Nonnull;
+                       ^
+  symbol:   class Nonnull
+  location: package javax.annotation
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/Billing.java:47: error: cannot find symbol
+import javax.annotation.Nullable;
+                       ^
+  symbol:   class Nullable
+  location: package javax.annotation
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/Billing.java:48: error: package javax.annotation.concurrent does not exist
+import javax.annotation.concurrent.GuardedBy;
+                                  ^
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/Purchase.java:30: error: cannot find symbol
+import javax.annotation.Nonnull;
+                       ^
+  symbol:   class Nonnull
+  location: package javax.annotation
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/Purchase.java:31: error: package javax.annotation.concurrent does not exist
+import javax.annotation.concurrent.Immutable;
+                                  ^
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/Purchase.java:36: error: cannot find symbol
+@Immutable
+ ^
+  symbol: class Immutable
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/IntentStarter.java:7: error: cannot find symbol
+import javax.annotation.Nonnull;
+                       ^
+  symbol:   class Nonnull
+  location: package javax.annotation
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/Sku.java:30: error: cannot find symbol
+import javax.annotation.Nonnull;
+                       ^
+  symbol:   class Nonnull
+  location: package javax.annotation
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/Sku.java:31: error: cannot find symbol
+import javax.annotation.Nullable;
+                       ^
+  symbol:   class Nullable
+  location: package javax.annotation
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/Sku.java:32: error: package javax.annotation.concurrent does not exist
+import javax.annotation.concurrent.Immutable;
+                                  ^
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/Sku.java:37: error: cannot find symbol
+@Immutable
+ ^
+  symbol: class Immutable
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/BillingRequests.java:29: error: cannot find symbol
+import javax.annotation.Nonnull;
+                       ^
+  symbol:   class Nonnull
+  location: package javax.annotation
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/BillingRequests.java:30: error: cannot find symbol
+import javax.annotation.Nullable;
+                       ^
+  symbol:   class Nullable
+  location: package javax.annotation
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/ActivityCheckout.java:29: error: cannot find symbol
+import javax.annotation.Nonnull;
+                       ^
+  symbol:   class Nonnull
+  location: package javax.annotation
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/Inventory.java:34: error: cannot find symbol
+import javax.annotation.Nonnull;
+                       ^
+  symbol:   class Nonnull
+  location: package javax.annotation
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/Inventory.java:35: error: cannot find symbol
+import javax.annotation.Nullable;
+                       ^
+  symbol:   class Nullable
+  location: package javax.annotation
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/Inventory.java:36: error: package javax.annotation.concurrent does not exist
+import javax.annotation.concurrent.Immutable;
+                                  ^
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/PurchaseVerifier.java:27: error: cannot find symbol
+import javax.annotation.Nonnull;
+                       ^
+  symbol:   class Nonnull
+  location: package javax.annotation
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/EmptyRequestListener.java:25: error: cannot find symbol
+import javax.annotation.Nonnull;
+                       ^
+  symbol:   class Nonnull
+  location: package javax.annotation
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/Logger.java:3: error: cannot find symbol
+import javax.annotation.Nonnull;
+                       ^
+  symbol:   class Nonnull
+  location: package javax.annotation
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/ConcurrentCache.java:25: error: cannot find symbol
+import javax.annotation.Nonnull;
+                       ^
+  symbol:   class Nonnull
+  location: package javax.annotation
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/ConcurrentCache.java:26: error: cannot find symbol
+import javax.annotation.Nullable;
+                       ^
+  symbol:   class Nullable
+  location: package javax.annotation
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/ConcurrentCache.java:27: error: package javax.annotation.concurrent does not exist
+import javax.annotation.concurrent.GuardedBy;
+                                  ^
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/ConcurrentCache.java:28: error: package javax.annotation.concurrent does not exist
+import javax.annotation.concurrent.ThreadSafe;
+                                  ^
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/Cache.java:25: error: cannot find symbol
+import javax.annotation.Nonnull;
+                       ^
+  symbol:   class Nonnull
+  location: package javax.annotation
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/Cache.java:26: error: cannot find symbol
+import javax.annotation.Nullable;
+                       ^
+  symbol:   class Nullable
+  location: package javax.annotation
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/ConcurrentCache.java:32: error: cannot find symbol
+@ThreadSafe
+ ^
+  symbol: class ThreadSafe
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/PendingRequests.java:29: error: cannot find symbol
+import javax.annotation.Nonnull;
+                       ^
+  symbol:   class Nonnull
+  location: package javax.annotation
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/PendingRequests.java:30: error: cannot find symbol
+import javax.annotation.Nullable;
+                       ^
+  symbol:   class Nullable
+  location: package javax.annotation
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/PendingRequests.java:31: error: package javax.annotation.concurrent does not exist
+import javax.annotation.concurrent.GuardedBy;
+                                  ^
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/PlayStoreBroadcastReceiver.java:12: error: cannot find symbol
+import javax.annotation.Nonnull;
+                       ^
+  symbol:   class Nonnull
+  location: package javax.annotation
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/PlayStoreBroadcastReceiver.java:13: error: package javax.annotation.concurrent does not exist
+import javax.annotation.concurrent.GuardedBy;
+                                  ^
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/Billing.java:123: error: cannot find symbol
+    private IInAppBillingService mService;
+            ^
+  symbol:   class IInAppBillingService
+  location: class Billing
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/CancellableExecutor.java:27: error: cannot find symbol
+import javax.annotation.Nonnull;
+                       ^
+  symbol:   class Nonnull
+  location: package javax.annotation
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/Billing.java:289: error: cannot find symbol
+    void setService(@Nullable IInAppBillingService service, boolean connecting) {
+                              ^
+  symbol:   class IInAppBillingService
+  location: class Billing
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/Request.java:25: error: package com.android.vending.billing does not exist
+import com.android.vending.billing.IInAppBillingService;
+                                  ^
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/Request.java:33: error: cannot find symbol
+import javax.annotation.Nonnull;
+                       ^
+  symbol:   class Nonnull
+  location: package javax.annotation
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/Request.java:34: error: cannot find symbol
+import javax.annotation.Nullable;
+                       ^
+  symbol:   class Nullable
+  location: package javax.annotation
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/Request.java:35: error: package javax.annotation.concurrent does not exist
+import javax.annotation.concurrent.GuardedBy;
+                                  ^
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/RequestRunnable.java:25: error: cannot find symbol
+import javax.annotation.Nullable;
+                       ^
+  symbol:   class Nullable
+  location: package javax.annotation
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/Purchases.java:36: error: cannot find symbol
+import javax.annotation.Nonnull;
+                       ^
+  symbol:   class Nonnull
+  location: package javax.annotation
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/Purchases.java:37: error: cannot find symbol
+import javax.annotation.Nullable;
+                       ^
+  symbol:   class Nullable
+  location: package javax.annotation
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/Purchases.java:38: error: package javax.annotation.concurrent does not exist
+import javax.annotation.concurrent.Immutable;
+                                  ^
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/Purchases.java:45: error: cannot find symbol
+@Immutable
+ ^
+  symbol: class Immutable
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/Skus.java:33: error: cannot find symbol
+import javax.annotation.Nonnull;
+                       ^
+  symbol:   class Nonnull
+  location: package javax.annotation
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/Skus.java:34: error: cannot find symbol
+import javax.annotation.Nullable;
+                       ^
+  symbol:   class Nullable
+  location: package javax.annotation
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/Skus.java:35: error: package javax.annotation.concurrent does not exist
+import javax.annotation.concurrent.Immutable;
+                                  ^
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/Skus.java:41: error: cannot find symbol
+@Immutable
+ ^
+  symbol: class Immutable
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/Inventory.java:159: error: cannot find symbol
+    @Immutable
+     ^
+  symbol:   class Immutable
+  location: interface Inventory
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/Inventory.java:94: error: cannot find symbol
+    @Immutable
+     ^
+  symbol:   class Immutable
+  location: interface Inventory
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/RequestType.java:25: error: cannot find symbol
+import javax.annotation.Nonnull;
+                       ^
+  symbol:   class Nonnull
+  location: package javax.annotation
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/Request.java:85: error: cannot find symbol
+    abstract void start(@Nonnull IInAppBillingService service, @Nonnull String packageName)
+                                 ^
+  symbol:   class IInAppBillingService
+  location: class Request<R>
+  where R is a type-variable:
+    R extends Object declared in class Request
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/RequestException.java:25: error: cannot find symbol
+import javax.annotation.Nonnull;
+                       ^
+  symbol:   class Nonnull
+  location: package javax.annotation
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/RequestListenerWrapper.java:25: error: cannot find symbol
+import javax.annotation.Nonnull;
+                       ^
+  symbol:   class Nonnull
+  location: package javax.annotation
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/SameThreadExecutor.java:25: error: cannot find symbol
+import javax.annotation.Nonnull;
+                       ^
+  symbol:   class Nonnull
+  location: package javax.annotation
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/SafeCache.java:25: error: cannot find symbol
+import javax.annotation.Nonnull;
+                       ^
+  symbol:   class Nonnull
+  location: package javax.annotation
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/SafeCache.java:26: error: cannot find symbol
+import javax.annotation.Nullable;
+                       ^
+  symbol:   class Nullable
+  location: package javax.annotation
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/RobotmediaInventory.java:30: error: cannot find symbol
+import javax.annotation.Nonnull;
+                       ^
+  symbol:   class Nonnull
+  location: package javax.annotation
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/BaseInventory.java:29: error: cannot find symbol
+import javax.annotation.Nonnull;
+                       ^
+  symbol:   class Nonnull
+  location: package javax.annotation
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/BaseInventory.java:30: error: cannot find symbol
+import javax.annotation.Nullable;
+                       ^
+  symbol:   class Nullable
+  location: package javax.annotation
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/BaseInventory.java:31: error: package javax.annotation.concurrent does not exist
+import javax.annotation.concurrent.GuardedBy;
+                                  ^
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/RobotmediaDatabase.java:34: error: cannot find symbol
+import javax.annotation.Nonnull;
+                       ^
+  symbol:   class Nonnull
+  location: package javax.annotation
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/RobotmediaDatabase.java:35: error: cannot find symbol
+import javax.annotation.Nullable;
+                       ^
+  symbol:   class Nullable
+  location: package javax.annotation
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/PurchaseRequest.java:25: error: package com.android.vending.billing does not exist
+import com.android.vending.billing.IInAppBillingService;
+                                  ^
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/PurchaseRequest.java:31: error: cannot find symbol
+import javax.annotation.Nonnull;
+                       ^
+  symbol:   class Nonnull
+  location: package javax.annotation
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/PurchaseRequest.java:32: error: cannot find symbol
+import javax.annotation.Nullable;
+                       ^
+  symbol:   class Nullable
+  location: package javax.annotation
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/PurchaseRequest.java:58: error: cannot find symbol
+    void start(@Nonnull IInAppBillingService service, @Nonnull String packageName) throws RemoteException, RequestException {
+                        ^
+  symbol:   class IInAppBillingService
+  location: class PurchaseRequest
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/PurchaseComparator.java:27: error: cannot find symbol
+import javax.annotation.Nonnull;
+                       ^
+  symbol:   class Nonnull
+  location: package javax.annotation
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/ProductTypes.java:28: error: cannot find symbol
+import javax.annotation.Nonnull;
+                       ^
+  symbol:   class Nonnull
+  location: package javax.annotation
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/MapCache.java:30: error: cannot find symbol
+import javax.annotation.Nonnull;
+                       ^
+  symbol:   class Nonnull
+  location: package javax.annotation
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/MapCache.java:31: error: cannot find symbol
+import javax.annotation.Nullable;
+                       ^
+  symbol:   class Nullable
+  location: package javax.annotation
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/MainThreadRequestListener.java:25: error: cannot find symbol
+import javax.annotation.Nonnull;
+                       ^
+  symbol:   class Nonnull
+  location: package javax.annotation
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/MainThreadRequestListener.java:26: error: cannot find symbol
+import javax.annotation.Nullable;
+                       ^
+  symbol:   class Nullable
+  location: package javax.annotation
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/MainThreadLogger.java:6: error: cannot find symbol
+import javax.annotation.Nonnull;
+                       ^
+  symbol:   class Nonnull
+  location: package javax.annotation
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/MainThreadLogger.java:7: error: package javax.annotation.concurrent does not exist
+import javax.annotation.concurrent.ThreadSafe;
+                                  ^
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/MainThreadLogger.java:9: error: cannot find symbol
+@ThreadSafe
+ ^
+  symbol: class ThreadSafe
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/MainThread.java:28: error: cannot find symbol
+import javax.annotation.Nonnull;
+                       ^
+  symbol:   class Nonnull
+  location: package javax.annotation
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/GetSkuDetailsRequest.java:25: error: package com.android.vending.billing does not exist
+import com.android.vending.billing.IInAppBillingService;
+                                  ^
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/GetSkuDetailsRequest.java:34: error: cannot find symbol
+import javax.annotation.Nonnull;
+                       ^
+  symbol:   class Nonnull
+  location: package javax.annotation
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/GetSkuDetailsRequest.java:35: error: cannot find symbol
+import javax.annotation.Nullable;
+                       ^
+  symbol:   class Nullable
+  location: package javax.annotation
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/GetSkuDetailsRequest.java:58: error: cannot find symbol
+    void start(@Nonnull IInAppBillingService service, @Nonnull String packageName) throws RemoteException, RequestException {
+                        ^
+  symbol:   class IInAppBillingService
+  location: class GetSkuDetailsRequest
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/GetSkuDetailsRequest.java:75: error: cannot find symbol
+    private Skus getSkuDetails(@Nonnull IInAppBillingService service, @Nonnull String packageName,
+                                        ^
+  symbol:   class IInAppBillingService
+  location: class GetSkuDetailsRequest
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/GetPurchasesRequest.java:25: error: package com.android.vending.billing does not exist
+import com.android.vending.billing.IInAppBillingService;
+                                  ^
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/GetPurchasesRequest.java:32: error: cannot find symbol
+import javax.annotation.Nonnull;
+                       ^
+  symbol:   class Nonnull
+  location: package javax.annotation
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/GetPurchasesRequest.java:33: error: cannot find symbol
+import javax.annotation.Nullable;
+                       ^
+  symbol:   class Nullable
+  location: package javax.annotation
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/BasePurchasesRequest.java:3: error: package com.android.vending.billing does not exist
+import com.android.vending.billing.IInAppBillingService;
+                                  ^
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/BasePurchasesRequest.java:12: error: cannot find symbol
+import javax.annotation.Nonnull;
+                       ^
+  symbol:   class Nonnull
+  location: package javax.annotation
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/BasePurchasesRequest.java:13: error: cannot find symbol
+import javax.annotation.Nullable;
+                       ^
+  symbol:   class Nullable
+  location: package javax.annotation
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/GetPurchasesRequest.java:62: error: cannot find symbol
+    protected Bundle request(@Nonnull IInAppBillingService service, @Nonnull String packageName) throws RemoteException {
+                                      ^
+  symbol:   class IInAppBillingService
+  location: class GetPurchasesRequest
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/BasePurchasesRequest.java:44: error: cannot find symbol
+    final void start(@Nonnull IInAppBillingService service, @Nonnull String packageName) throws RemoteException {
+                              ^
+  symbol:   class IInAppBillingService
+  location: class BasePurchasesRequest
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/BasePurchasesRequest.java:63: error: cannot find symbol
+    protected abstract Bundle request(@Nonnull IInAppBillingService service, @Nonnull String packageName) throws RemoteException;
+                                               ^
+  symbol:   class IInAppBillingService
+  location: class BasePurchasesRequest
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/UiCheckout.java:181: error: self-closing element not allowed
+     * <p/>
+       ^
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/Checkout.java:157: error: unexpected end tag: </p>
+     * </p>
+       ^
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/ActivityCheckout.java:38: error: reference not found
+ * android.support.v4.app.Fragment}) a special version of {@link UiCheckout} should be used - it can
+   ^
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/BillingRequests.java:34: error: reference not found
+ * methods that come directly from {@link com.android.vending.billing.IInAppBillingService}
+                                          ^
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/Checkout.java:45: error: self-closing element not allowed
+ * should be called from the appropriate methods of activity:<br/>
+                                                             ^
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/Checkout.java:84: error: self-closing element not allowed
+ * <br/>
+   ^
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/Checkout.java:89: error: unexpected end tag: </p>
+ * </p>
+   ^
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/IntentStarter.java:17: error: reference not found
+ * {@link android.support.v4.app.Fragment#startIntentSenderForResult(IntentSender, int, Intent, int,
+          ^
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/Purchase.java:68: error: reference not found
+     * Raw data returned from {@link com.android.vending.billing.IInAppBillingService#getPurchases}
+                                     ^
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/Purchases.java:42: error: reference not found
+ * {@link com.android.vending.billing.IInAppBillingService#getPurchases(int, String, String,
+          ^
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/RequestListener.java:31: error: self-closing element not allowed
+ * thread. See {@link Billing} for more information.<p/>
+                                                    ^
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/ResponseCodes.java:26: error: bad use of '>'
+ * Billing response codes, codes >= 10000 are defined by this library.
+                                 ^
+/tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/Skus.java:38: error: reference not found
+ * List of SKUs as returned from {@link com.android.vending.billing.IInAppBillingService#getSkuDetails(int,
+                                        ^
+
+13 errors
+100 warnings
+:lib:androidJavadocsJar
+:lib:androidSourcesJar
+:lib:preBuild UP-TO-DATE
+:lib:preDebugBuild UP-TO-DATE
+:lib:compileDebugAidl UP-TO-DATE
+:lib:compileDebugRenderscript UP-TO-DATE
+:lib:checkDebugManifest UP-TO-DATE
+:lib:generateDebugBuildConfig UP-TO-DATE
+:lib:generateDebugResValues UP-TO-DATE
+:lib:generateDebugResources UP-TO-DATE
+:lib:packageDebugResources UP-TO-DATE
+:lib:platformAttrExtractor UP-TO-DATE
+:lib:processDebugManifest UP-TO-DATE
+:lib:generateDebugRFile
+:lib:prepareLintJar UP-TO-DATE
+:lib:generateDebugSources
+:lib:javaPreCompileDebug UP-TO-DATE
+:lib:compileDebugJavaWithJavacNote: /tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/Billing.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:lib:extractDebugAnnotations
+:lib:mergeDebugConsumerProguardFiles
+:lib:mergeDebugShaders UP-TO-DATE
+:lib:compileDebugShaders UP-TO-DATE
+:lib:generateDebugAssets UP-TO-DATE
+:lib:packageDebugAssets UP-TO-DATE
+:lib:packageDebugRenderscript NO-SOURCE
+:lib:processDebugJavaRes NO-SOURCE
+:lib:transformResourcesWithMergeJavaResForDebug
+:lib:transformClassesAndResourcesWithSyncLibJarsForDebug
+:lib:compileDebugNdk NO-SOURCE
+:lib:mergeDebugJniLibFolders UP-TO-DATE
+:lib:transformNativeLibsWithMergeJniLibsForDebug UP-TO-DATE
+:lib:transformNativeLibsWithStripDebugSymbolForDebug UP-TO-DATE
+:lib:transformNativeLibsWithSyncJniLibsForDebug
+:lib:bundleDebug
+:lib:compileDebugSources
+:lib:assembleDebug
+:lib:preReleaseBuild UP-TO-DATE
+:lib:compileReleaseAidl UP-TO-DATE
+:lib:compileReleaseRenderscript UP-TO-DATE
+:lib:checkReleaseManifest UP-TO-DATE
+:lib:generateReleaseBuildConfig UP-TO-DATE
+:lib:generateReleaseResValues UP-TO-DATE
+:lib:generateReleaseResources UP-TO-DATE
+:lib:packageReleaseResources UP-TO-DATE
+:lib:processReleaseManifest UP-TO-DATE
+:lib:generateReleaseRFile
+:lib:generateReleaseSources
+:lib:javaPreCompileRelease UP-TO-DATE
+:lib:compileReleaseJavaWithJavacNote: /tmp/rdisk/828/src/lib/src/main/java/org/solovyev/android/checkout/Billing.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:lib:extractReleaseAnnotations
+:lib:mergeReleaseConsumerProguardFiles UP-TO-DATE
+:lib:mergeReleaseShaders UP-TO-DATE
+:lib:compileReleaseShaders UP-TO-DATE
+:lib:generateReleaseAssets UP-TO-DATE
+:lib:packageReleaseAssets UP-TO-DATE
+:lib:packageReleaseRenderscript NO-SOURCE
+:lib:processReleaseJavaRes NO-SOURCE
+:lib:transformResourcesWithMergeJavaResForRelease
+:lib:transformClassesAndResourcesWithSyncLibJarsForRelease
+:lib:compileReleaseNdk NO-SOURCE
+:lib:mergeReleaseJniLibFolders UP-TO-DATE
+:lib:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:lib:transformNativeLibsWithStripDebugSymbolForRelease UP-TO-DATE
+:lib:transformNativeLibsWithSyncJniLibsForRelease
+:lib:bundleRelease
+:lib:compileReleaseSources
+:lib:mergeReleaseResources
+:lib:verifyReleaseResources
+:lib:assembleRelease
+:lib:signArchives FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':lib:signArchives'.
+> Cannot perform signing task ':lib:signArchives' because it has no configured signatory
+
+* Try:
+Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':lib:signArchives'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:100)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:70)
+	at org.gradle.api.internal.tasks.execution.OutputDirectoryCreatingTaskExecuter.execute(OutputDirectoryCreatingTaskExecuter.java:51)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:62)
+	at org.gradle.api.internal.tasks.execution.ResolveTaskOutputCachingStateExecuter.execute(ResolveTaskOutputCachingStateExecuter.java:54)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:60)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:97)
+	at org.gradle.api.internal.tasks.execution.CleanupStaleOutputsExecuter.execute(CleanupStaleOutputsExecuter.java:87)
+	at org.gradle.api.internal.tasks.execution.ResolveTaskArtifactStateTaskExecuter.execute(ResolveTaskArtifactStateTaskExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:54)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:34)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker$1.run(DefaultTaskGraphExecuter.java:248)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:336)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:328)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.execute(DefaultBuildOperationExecutor.java:199)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:110)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:241)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:230)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker.processTask(DefaultTaskPlanExecutor.java:123)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker.access$200(DefaultTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker$1.execute(DefaultTaskPlanExecutor.java:104)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker$1.execute(DefaultTaskPlanExecutor.java:98)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionPlan.execute(DefaultTaskExecutionPlan.java:626)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionPlan.executeWithTask(DefaultTaskExecutionPlan.java:581)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker.run(DefaultTaskPlanExecutor.java:98)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+Caused by: org.gradle.api.InvalidUserDataException: Cannot perform signing task ':lib:signArchives' because it has no configured signatory
+	at org.gradle.plugins.signing.Sign.generate(Sign.java:260)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:73)
+	at org.gradle.api.internal.project.taskfactory.StandardTaskAction.doExecute(StandardTaskAction.java:46)
+	at org.gradle.api.internal.project.taskfactory.StandardTaskAction.execute(StandardTaskAction.java:39)
+	at org.gradle.api.internal.project.taskfactory.StandardTaskAction.execute(StandardTaskAction.java:26)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:780)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:747)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter$1.run(ExecuteActionsTaskExecuter.java:121)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:336)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:328)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.execute(DefaultBuildOperationExecutor.java:199)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:110)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:110)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:92)
+	... 29 more
+
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 15s
+52 actionable tasks: 21 executed, 31 up-to-date
+
+2018-05-11 16:11:24,592 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-11 16:11:24,592 INFO  SysUtils - Execute command: [/tmp/rdisk/828/src/gradlew, -b, /tmp/rdisk/828/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-11 16:11:32,258 INFO  ProjectTaskService - Detected possible tasks: 71
+2018-05-11 16:11:32,258 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-05-11 16:11:32,258 INFO  SysUtils - Execute command: [/tmp/rdisk/828/src/gradlew, -b, /tmp/rdisk/828/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-05-11 16:12:48,827 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-05-11 16:12:48,827 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:androidSourcesJar UP-TO-DATE
+:app:preBuild UP-TO-DATE
+:lib:preBuild UP-TO-DATE
+:lib:preDebugBuild UP-TO-DATE
+:lib:checkDebugManifest UP-TO-DATE
+:lib:processDebugManifest UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:lib:compileDebugAidl UP-TO-DATE
+:app:compileDebugAidl UP-TO-DATE
+:lib:packageDebugRenderscript NO-SOURCE
+:app:compileDebugRenderscript UP-TO-DATE
+:app:checkDebugManifest UP-TO-DATE
+:app:generateDebugBuildConfig UP-TO-DATE
+:app:prepareLintJar UP-TO-DATE
+:app:mainApkListPersistenceDebug UP-TO-DATE
+:app:generateDebugResValues UP-TO-DATE
+:app:generateDebugResources UP-TO-DATE
+:lib:compileDebugRenderscript UP-TO-DATE
+:lib:generateDebugResValues UP-TO-DATE
+:lib:generateDebugResources UP-TO-DATE
+:lib:packageDebugResources UP-TO-DATE
+:app:mergeDebugResources UP-TO-DATE
+:app:createDebugCompatibleScreenManifests UP-TO-DATE
+:app:processDebugManifest UP-TO-DATE
+:app:splitsDiscoveryTaskDebug UP-TO-DATE
+:lib:platformAttrExtractor UP-TO-DATE
+:lib:generateDebugRFile UP-TO-DATE
+:app:processDebugResources
+:app:generateDebugSources
+:lib:generateDebugBuildConfig UP-TO-DATE
+:lib:prepareLintJar UP-TO-DATE
+:lib:generateDebugSources UP-TO-DATE
+:lib:javaPreCompileDebug UP-TO-DATE
+:lib:compileDebugJavaWithJavac UP-TO-DATE
+:lib:processDebugJavaRes NO-SOURCE
+:lib:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:app:javaPreCompileDebug
+:app:compileDebugJavaWithJavac
+:app:compileDebugNdk NO-SOURCE
+:app:compileDebugSources
+:app:mergeDebugShaders UP-TO-DATE
+:app:compileDebugShaders UP-TO-DATE
+:app:generateDebugAssets UP-TO-DATE
+:lib:mergeDebugShaders UP-TO-DATE
+:lib:compileDebugShaders UP-TO-DATE
+:lib:generateDebugAssets UP-TO-DATE
+:lib:packageDebugAssets UP-TO-DATE
+:app:mergeDebugAssets UP-TO-DATE
+:app:transformClassesWithDexBuilderForDebug
+:app:transformDexArchiveWithExternalLibsDexMergerForDebug
+:app:transformDexArchiveWithDexMergerForDebug
+:app:mergeDebugJniLibFolders UP-TO-DATE
+:lib:compileDebugNdk NO-SOURCE
+:lib:mergeDebugJniLibFolders UP-TO-DATE
+:lib:transformNativeLibsWithMergeJniLibsForDebug UP-TO-DATE
+:lib:transformNativeLibsWithStripDebugSymbolForDebug UP-TO-DATE
+:lib:transformNativeLibsWithIntermediateJniLibsForDebug UP-TO-DATE
+:app:transformNativeLibsWithMergeJniLibsForDebug
+:app:transformNativeLibsWithStripDebugSymbolForDebug
+:app:processDebugJavaRes NO-SOURCE
+:app:transformResourcesWithMergeJavaResForDebug
+:app:validateSigningDebug UP-TO-DATE
+:app:packageDebug
+:app:assembleDebug
+:app:extractProguardFiles UP-TO-DATE
+:lib:preReleaseBuild UP-TO-DATE
+:lib:checkReleaseManifest UP-TO-DATE
+:lib:processReleaseManifest UP-TO-DATE
+:app:preReleaseBuild UP-TO-DATE
+:lib:compileReleaseAidl UP-TO-DATE
+:app:compileReleaseAidl UP-TO-DATE
+:lib:packageReleaseRenderscript NO-SOURCE
+:app:compileReleaseRenderscript UP-TO-DATE
+:app:checkReleaseManifest UP-TO-DATE
+:app:generateReleaseBuildConfig UP-TO-DATE
+:app:mainApkListPersistenceRelease UP-TO-DATE
+:app:generateReleaseResValues UP-TO-DATE
+:app:generateReleaseResources UP-TO-DATE
+:lib:compileReleaseRenderscript UP-TO-DATE
+:lib:generateReleaseResValues UP-TO-DATE
+:lib:generateReleaseResources UP-TO-DATE
+:lib:packageReleaseResources UP-TO-DATE
+:app:mergeReleaseResources UP-TO-DATE
+:app:createReleaseCompatibleScreenManifests UP-TO-DATE
+:app:processReleaseManifest UP-TO-DATE
+:app:splitsDiscoveryTaskRelease UP-TO-DATE
+:lib:generateReleaseRFile UP-TO-DATE
+:app:processReleaseResources
+:app:generateReleaseSources
+:lib:generateReleaseBuildConfig UP-TO-DATE
+:lib:generateReleaseSources UP-TO-DATE
+:lib:javaPreCompileRelease UP-TO-DATE
+:lib:compileReleaseJavaWithJavac UP-TO-DATE
+:lib:processReleaseJavaRes NO-SOURCE
+:lib:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease
+:app:javaPreCompileRelease
+:app:compileReleaseJavaWithJavac
+:app:compileReleaseNdk NO-SOURCE
+:app:compileReleaseSources
+:app:lintVitalRelease/tmp/rdisk/828/src/app/src/main/res/values/strings.xml:23: Error: "use_case_title_fragment" is not translated in "ru" (Russian) [MissingTranslation]
+    <string name="use_case_title_fragment">Use case #5. Fragments</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/rdisk/828/src/app/src/main/res/values/strings.xml:24: Error: "use_case_desc_fragment" is not translated in "ru" (Russian) [MissingTranslation]
+    <string name="use_case_desc_fragment">Buy and consume from a fragment</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/rdisk/828/src/app/src/main/res/values/strings.xml:25: Error: "use_case_title_history" is not translated in "ru" (Russian) [MissingTranslation]
+    <string name="use_case_title_history">Use case #6. History</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/rdisk/828/src/app/src/main/res/values/strings.xml:26: Error: "use_case_desc_history" is not translated in "ru" (Russian) [MissingTranslation]
+    <string name="use_case_desc_history">Show billing history</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "MissingTranslation":
+   If an application has more than one locale, then all the strings declared
+   in one language should also be translated in all other languages.
+
+   If the string should not be translated, you can add the attribute
+   translatable="false" on the <string> element, or you can define all your
+   non-translatable strings in a resource file called donottranslate.xml. Or,
+   you can ignore the issue with a tools:ignore="MissingTranslation"
+   attribute.
+
+   By default this detector allows regions of a language to just provide a
+   subset of the strings and fall back to the standard language strings. You
+   can require all regions to provide a full translation by setting the
+   environment variable ANDROID_LINT_COMPLETE_REGIONS.
+
+   You can tell lint (and other tools) which language is the default language
+   in your res/values/ folder by specifying tools:locale="languageCode" for
+   the root <resources> element in your resource file. (The tools prefix
+   refers to the namespace declaration http://schemas.android.com/tools.)
+
+4 errors, 0 warnings
+
+:app:mergeReleaseShaders UP-TO-DATE
+:app:compileReleaseShaders UP-TO-DATE
+:app:generateReleaseAssets UP-TO-DATE
+:lib:mergeReleaseShaders UP-TO-DATE
+:lib:compileReleaseShaders UP-TO-DATE
+:lib:generateReleaseAssets UP-TO-DATE
+:lib:packageReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets UP-TO-DATE
+:app:processReleaseJavaRes NO-SOURCE
+:app:transformResourcesWithMergeJavaResForRelease
+:lib:mergeReleaseConsumerProguardFiles UP-TO-DATE
+:app:transformClassesAndResourcesWithProguardForRelease
+Request to incrementing alive workforce from 0. Current workforce (dead or alive) 0
+thread-pool size=4
+ProGuard, version 5.3.3
+Note: the configuration specifies that none of the methods of class 'org.solovyev.android.checkout.Check' have any side effects
+Note: there were 1 '-assumenosideeffects' options that try to match all
+      methods with wildcards. This will likely cause problems with methods like
+      'wait()' and 'notify()'. You should specify the methods more precisely.
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#nosideeffects)
+Reading input...
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-v4-27.0.2.aar/1ba14d62ef31c2982362ac0c87c24e3e/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/6f2c87bfd4e7a62e5aaebee1e7eb7662/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.0.2.aar/21d69b7b5729aefa2d541dd67216f152/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/butterknife-8.4.0.aar/0de3b067bd3ba280ccdd0278a7c921fb/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/5e44f76fb8bbc480f875a35239646cfe/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-fragment-27.0.2.aar/29506461dfcb458c052612c37b473912/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.0.2.aar/6231076b9e7fcd2b3e5a807220714dc5/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.0.2.aar/5f839704a71bfe4a902b31e14658f048/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.0.2.aar/e47b0bfc4655a07d2c1414e7196e8913/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.0.2.aar/c94e7bbaa3d0e1fcee61dea0f5a1d593/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/03e1b2b9edb4a6d3c0489c96ece73e39/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife-annotations/8.4.0/ea392375cf9ff59234a82e7928a204215ccc98cd/butterknife-annotations-8.4.0.jar] (filtered)
+Reading program jar [/root/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/27.0.2/b9ef4342c934a1a8b107506273dc8061662a322/support-annotations-27.0.2.jar] (filtered)
+Reading program jar [/root/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/2.0.3/5871fb60dc68d67da54a663c3fd636a10a532948/jsr305-2.0.3.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/runtime-1.0.3.aar/e61b993f7045ab3dca8ae2bedbb04dfd/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/common/1.0.3/7d7f60c4783872861222166f6164215f8951c7b1/common-1.0.3.jar] (filtered)
+Reading program jar [/root/.gradle/caches/modules-2/files-2.1/android.arch.core/common/1.0.0/a2d487452376193fc8c103dd2b9bd5f2b1b44563/common-1.0.0.jar] (filtered)
+Reading program jar [/tmp/rdisk/828/src/lib/build/intermediates/intermediate-jars/release/classes.jar] (filtered)
+Reading program directory [/tmp/rdisk/828/src/app/build/intermediates/classes/release] (filtered)
+Reading program jar [/tmp/rdisk/828/src/app/build/intermediates/transforms/mergeJavaRes/release/0.jar] (filtered)
+Reading library jar [/root/Applications/android-sdk/platforms/android-27/android.jar]
+Reading library jar [/root/Applications/android-sdk/platforms/android-27/optional/org.apache.http.legacy.jar]
+Note: duplicate definition of library class [org.apache.http.params.HttpParams]
+Note: duplicate definition of library class [org.apache.http.params.HttpConnectionParams]
+Note: duplicate definition of library class [org.apache.http.params.CoreConnectionPNames]
+Note: duplicate definition of library class [org.apache.http.conn.ConnectTimeoutException]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.LayeredSocketFactory]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.HostNameResolver]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.SocketFactory]
+Note: duplicate definition of library class [android.net.http.SslCertificate$DName]
+Note: duplicate definition of library class [android.net.http.SslError]
+Note: duplicate definition of library class [android.net.http.SslCertificate]
+Note: duplicate definition of library class [android.net.http.HttpResponseCache]
+Note: there were 11 duplicate class definitions.
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#duplicateclass)
+Initializing...
+Ignoring unused library classes...
+  Original number of library classes: 4610
+  Final number of library classes:    1105
+Printing kept classes, fields, and methods...
+Shrinking...
+Printing usage to [/tmp/rdisk/828/src/app/build/outputs/mapping/release/usage.txt]...
+Removing unused program classes and class elements...
+  Original number of program classes: 1946
+  Final number of program classes:    998
+Inlining subroutines...
+Optimizing...
+  Number of finalized classes:                 470
+  Number of unboxed enum classes:              1
+  Number of vertically merged classes:         0   (disabled)
+  Number of horizontally merged classes:       0   (disabled)
+  Number of removed write-only fields:         0   (disabled)
+  Number of privatized fields:                 0   (disabled)
+  Number of inlined constant fields:           0   (disabled)
+  Number of privatized methods:                504
+  Number of staticized methods:                246
+  Number of finalized methods:                 3584
+  Number of removed method parameters:         317
+  Number of inlined constant parameters:       96
+  Number of inlined constant return values:    46
+  Number of inlined short method calls:        929
+  Number of inlined unique method calls:       1418
+  Number of inlined tail recursion calls:      13
+  Number of merged code blocks:                53
+  Number of variable peephole optimizations:   4686
+  Number of arithmetic peephole optimizations: 0   (disabled)
+  Number of cast peephole optimizations:       0   (disabled)
+  Number of field peephole optimizations:      22
+  Number of branch peephole optimizations:     1375
+  Number of string peephole optimizations:     408
+  Number of simplified instructions:           505
+  Number of removed instructions:              2806
+  Number of removed local variables:           171
+  Number of removed exception blocks:          102
+  Number of optimized local variable frames:   1671
+Shrinking...
+Removing unused program classes and class elements...
+  Original number of program classes: 998
+  Final number of program classes:    947
+Optimizing...
+  Number of finalized classes:                 0
+  Number of unboxed enum classes:              0
+  Number of vertically merged classes:         0   (disabled)
+  Number of horizontally merged classes:       0   (disabled)
+  Number of removed write-only fields:         0   (disabled)
+  Number of privatized fields:                 0   (disabled)
+  Number of inlined constant fields:           0   (disabled)
+  Number of privatized methods:                5
+  Number of staticized methods:                9
+  Number of finalized methods:                 40
+  Number of removed method parameters:         118
+  Number of inlined constant parameters:       90
+  Number of inlined constant return values:    14
+  Number of inlined short method calls:        16
+  Number of inlined unique method calls:       21
+  Number of inlined tail recursion calls:      3
+  Number of merged code blocks:                6
+  Number of variable peephole optimizations:   341
+  Number of arithmetic peephole optimizations: 0   (disabled)
+  Number of cast peephole optimizations:       0   (disabled)
+  Number of field peephole optimizations:      0
+  Number of branch peephole optimizations:     39
+  Number of string peephole optimizations:     3
+  Number of simplified instructions:           168
+  Number of removed instructions:              3939
+  Number of removed local variables:           94
+  Number of removed exception blocks:          0
+  Number of optimized local variable frames:   108
+Shrinking...
+Removing unused program classes and class elements...
+  Original number of program classes: 947
+  Final number of program classes:    946
+Optimizing...
+  Number of finalized classes:                 0
+  Number of unboxed enum classes:              0
+  Number of vertically merged classes:         0   (disabled)
+  Number of horizontally merged classes:       0   (disabled)
+  Number of removed write-only fields:         0   (disabled)
+  Number of privatized fields:                 0   (disabled)
+  Number of inlined constant fields:           0   (disabled)
+  Number of privatized methods:                0
+  Number of staticized methods:                1
+  Number of finalized methods:                 3
+  Number of removed method parameters:         48
+  Number of inlined constant parameters:       37
+  Number of inlined constant return values:    14
+  Number of inlined short method calls:        0
+  Number of inlined unique method calls:       4
+  Number of inlined tail recursion calls:      0
+  Number of merged code blocks:                0
+  Number of variable peephole optimizations:   57
+  Number of arithmetic peephole optimizations: 0   (disabled)
+  Number of cast peephole optimizations:       0   (disabled)
+  Number of field peephole optimizations:      0
+  Number of branch peephole optimizations:     6
+  Number of string peephole optimizations:     1
+  Number of simplified instructions:           30
+  Number of removed instructions:              496
+  Number of removed local variables:           4
+  Number of removed exception blocks:          0
+  Number of optimized local variable frames:   18
+Shrinking...
+Removing unused program classes and class elements...
+  Original number of program classes: 946
+  Final number of program classes:    946
+Optimizing...
+  Number of finalized classes:                 0
+  Number of unboxed enum classes:              0
+  Number of vertically merged classes:         0   (disabled)
+  Number of horizontally merged classes:       0   (disabled)
+  Number of removed write-only fields:         0   (disabled)
+  Number of privatized fields:                 0   (disabled)
+  Number of inlined constant fields:           0   (disabled)
+  Number of privatized methods:                0
+  Number of staticized methods:                0
+  Number of finalized methods:                 1
+  Number of removed method parameters:         15
+  Number of inlined constant parameters:       11
+  Number of inlined constant return values:    14
+  Number of inlined short method calls:        0
+  Number of inlined unique method calls:       0
+  Number of inlined tail recursion calls:      0
+  Number of merged code blocks:                0
+  Number of variable peephole optimizations:   9
+  Number of arithmetic peephole optimizations: 0   (disabled)
+  Number of cast peephole optimizations:       0   (disabled)
+  Number of field peephole optimizations:      0
+  Number of branch peephole optimizations:     0
+  Number of string peephole optimizations:     1
+  Number of simplified instructions:           4
+  Number of removed instructions:              85
+  Number of removed local variables:           2
+  Number of removed exception blocks:          0
+  Number of optimized local variable frames:   1
+Shrinking...
+Removing unused program classes and class elements...
+  Original number of program classes: 946
+  Final number of program classes:    946
+Optimizing...
+  Number of finalized classes:                 0
+  Number of unboxed enum classes:              0
+  Number of vertically merged classes:         0   (disabled)
+  Number of horizontally merged classes:       0   (disabled)
+  Number of removed write-only fields:         0   (disabled)
+  Number of privatized fields:                 0   (disabled)
+  Number of inlined constant fields:           0   (disabled)
+  Number of privatized methods:                0
+  Number of staticized methods:                0
+  Number of finalized methods:                 0
+  Number of removed method parameters:         2
+  Number of inlined constant parameters:       3
+  Number of inlined constant return values:    14
+  Number of inlined short method calls:        0
+  Number of inlined unique method calls:       0
+  Number of inlined tail recursion calls:      0
+  Number of merged code blocks:                0
+  Number of variable peephole optimizations:   6
+  Number of arithmetic peephole optimizations: 0   (disabled)
+  Number of cast peephole optimizations:       0   (disabled)
+  Number of field peephole optimizations:      0
+  Number of branch peephole optimizations:     0
+  Number of string peephole optimizations:     0
+  Number of simplified instructions:           1
+  Number of removed instructions:              7
+  Number of removed local variables:           0
+  Number of removed exception blocks:          0
+  Number of optimized local variable frames:   0
+Shrinking...
+Removing unused program classes and class elements...
+  Original number of program classes: 946
+  Final number of program classes:    946
+Obfuscating...
+Printing mapping to [/tmp/rdisk/828/src/app/build/outputs/mapping/release/mapping.txt]...
+Preverifying...
+Writing output...
+Preparing output jar [/tmp/rdisk/828/src/app/build/intermediates/transforms/proguard/release/0.jar]
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-v4-27.0.2.aar/1ba14d62ef31c2982362ac0c87c24e3e/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/6f2c87bfd4e7a62e5aaebee1e7eb7662/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.0.2.aar/21d69b7b5729aefa2d541dd67216f152/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/butterknife-8.4.0.aar/0de3b067bd3ba280ccdd0278a7c921fb/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/5e44f76fb8bbc480f875a35239646cfe/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-fragment-27.0.2.aar/29506461dfcb458c052612c37b473912/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.0.2.aar/6231076b9e7fcd2b3e5a807220714dc5/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.0.2.aar/5f839704a71bfe4a902b31e14658f048/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.0.2.aar/e47b0bfc4655a07d2c1414e7196e8913/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.0.2.aar/c94e7bbaa3d0e1fcee61dea0f5a1d593/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/03e1b2b9edb4a6d3c0489c96ece73e39/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife-annotations/8.4.0/ea392375cf9ff59234a82e7928a204215ccc98cd/butterknife-annotations-8.4.0.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/27.0.2/b9ef4342c934a1a8b107506273dc8061662a322/support-annotations-27.0.2.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/2.0.3/5871fb60dc68d67da54a663c3fd636a10a532948/jsr305-2.0.3.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/runtime-1.0.3.aar/e61b993f7045ab3dca8ae2bedbb04dfd/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/common/1.0.3/7d7f60c4783872861222166f6164215f8951c7b1/common-1.0.3.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/modules-2/files-2.1/android.arch.core/common/1.0.0/a2d487452376193fc8c103dd2b9bd5f2b1b44563/common-1.0.0.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/828/src/lib/build/intermediates/intermediate-jars/release/classes.jar] (filtered)
+  Copying resources from program directory [/tmp/rdisk/828/src/app/build/intermediates/classes/release] (filtered)
+  Copying resources from program jar [/tmp/rdisk/828/src/app/build/intermediates/transforms/mergeJavaRes/release/0.jar] (filtered)
+Printing classes to [/tmp/rdisk/828/src/app/build/outputs/mapping/release/dump.txt]...
+:app:transformClassesWithDexBuilderForRelease
+:app:transformDexArchiveWithDexMergerForRelease
+:app:mergeReleaseJniLibFolders UP-TO-DATE
+:lib:compileReleaseNdk NO-SOURCE
+:lib:mergeReleaseJniLibFolders UP-TO-DATE
+:lib:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:lib:transformNativeLibsWithStripDebugSymbolForRelease UP-TO-DATE
+:lib:transformNativeLibsWithIntermediateJniLibsForRelease UP-TO-DATE
+:app:transformNativeLibsWithMergeJniLibsForRelease
+:app:transformNativeLibsWithStripDebugSymbolForRelease
+:app:packageRelease
+:app:assembleRelease
+:app:signArchives FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:signArchives'.
+> Cannot perform signing task ':app:signArchives' because it has no configured signatory
+
+* Try:
+Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Exception is:
+95 actionable tasks: 24 executed, 71 up-to-date
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':app:signArchives'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:100)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:70)
+	at org.gradle.api.internal.tasks.execution.OutputDirectoryCreatingTaskExecuter.execute(OutputDirectoryCreatingTaskExecuter.java:51)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:62)
+	at org.gradle.api.internal.tasks.execution.ResolveTaskOutputCachingStateExecuter.execute(ResolveTaskOutputCachingStateExecuter.java:54)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:60)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:97)
+	at org.gradle.api.internal.tasks.execution.CleanupStaleOutputsExecuter.execute(CleanupStaleOutputsExecuter.java:87)
+	at org.gradle.api.internal.tasks.execution.ResolveTaskArtifactStateTaskExecuter.execute(ResolveTaskArtifactStateTaskExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:54)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:34)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker$1.run(DefaultTaskGraphExecuter.java:248)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:336)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:328)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.execute(DefaultBuildOperationExecutor.java:199)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:110)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:241)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:230)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker.processTask(DefaultTaskPlanExecutor.java:123)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker.access$200(DefaultTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker$1.execute(DefaultTaskPlanExecutor.java:104)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker$1.execute(DefaultTaskPlanExecutor.java:98)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionPlan.execute(DefaultTaskExecutionPlan.java:626)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionPlan.executeWithTask(DefaultTaskExecutionPlan.java:581)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker.run(DefaultTaskPlanExecutor.java:98)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+Caused by: org.gradle.api.InvalidUserDataException: Cannot perform signing task ':app:signArchives' because it has no configured signatory
+	at org.gradle.plugins.signing.Sign.generate(Sign.java:260)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:73)
+	at org.gradle.api.internal.project.taskfactory.StandardTaskAction.doExecute(StandardTaskAction.java:46)
+	at org.gradle.api.internal.project.taskfactory.StandardTaskAction.execute(StandardTaskAction.java:39)
+	at org.gradle.api.internal.project.taskfactory.StandardTaskAction.execute(StandardTaskAction.java:26)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:780)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:747)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter$1.run(ExecuteActionsTaskExecuter.java:121)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:336)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:328)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.execute(DefaultBuildOperationExecutor.java:199)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:110)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:110)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:92)
+	... 29 more
+
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 1m 16s
+
+2018-05-11 16:12:48,885 INFO  FullProcessService - Found APK file: /tmp/rdisk/828/src/app/build/outputs/apk/debug/app-debug.apk

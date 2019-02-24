@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.haarman.supertooltips",
+    "label" : "SuperToolTips",
+    "icon" : "res/drawable-mdpi/ic_launcher.png",
+    "versionName" : "3.0.0",
+    "versionCode" : 2018040917,
+    "installLocation" : null,
+    "minSdkVersion" : "8",
+    "targetSdkVersion" : "19",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-mdpi/ic_launcher.png",
+    "density" : 0,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAABrVBMVEUAAABVtdpgw+hlx+tmyOxmx+sAAABWt9ZaxOpDuuc2tuUzteVHnLVTwek0teUAAABQsdUAAABBtN5Cs98AAAA1sd4AAAAysN4xsN5uyuyt4fTI6/jL7Pi25PaB0e87uOa45fb////U7/lIveie3PPE6feE0u+A0e+04/X+/v+75vY3tuXr9/y35fY1tuWo3/T7/v5Lvug/uea95/a95/dnx+tpyOxqyexlx+uh3PP2+/5Du+dgxev3/P5Pv+jk9fve8/tEu+dNvuji9Pvr+PxVwek8uObY8fru+f1exOqG0+9aw+pZwuqL1PBBuudYwuqO1vFixutdxOqR1/FJvegxsN0tocwjfZ8ytOQAAAAdXXQsnccAAAAJMToZW3MqlbwAAAAAAAAQNkYXVWscZX8jf6Emh6stocsAAAAAAAAABQUVSl8YVGwYVmwcZH4ysuEAAAAAAAAAAAAAAAAVSVwojrMAAAAAAAAaYHkxrdwbYHgAAAAZR1skf6EXR1sAAAAZWnMvqNQvqNUQNUUhd5Yhd5cAAAAbWXEtoMsaWnIFISseaoYbVmwAAAAAAADeQgLDAAAAj3RSTlMARbzx/v8Bcfj///9I9v8Duwnr7A34Dvn5////////////////////////////////////////////////////////////////////////////////+ffm/wy4/wc56P8CEVDg/////wQUL4a/zer/GiUqLXr8CB3P/9ALWvhaF7v//z/x8hOp/6gv6YYFFSgjVE0AAAHDSURBVEjHzdZnMwNRFAZghCUu1iIk+tF77713gii7sUgQIjqJ3ntJ/GZJNmbchN17Z5jxftmZM+eZLR/2vUFB/zjBIarQsG8TqgoJDlhnwiPUkeiHRKojwhk/EBUdg2QSEx2F77OxsvtuEctigItDConnMJCgUQKaBAwkJimBpEQcaLEH1iWnpKalZ3ydaWVARiZ4k5VNCHIAcvPyCwqhiAwUl0BpmftaDhWVRKCquqbWc60DqCN7JF/qARqoQCM0NdOAllZIRhSgrR06OilAVzf09CJy0NcPA4OIAugAhhANyAMYpgIjo6NjVCAwCqBZr++jAuMAE38LJg2GqV9+6WklMO0HZpTAjB+Y5eX3+VkcCMY5eTBnFDAgzi8sytyDX1yYFzFgMi8tr1hWpax97q35BpaV5SWzCf99W9dtG5tbUrZ3pP2dbd9gc8O2bvVvFFbY3dv35sDukIDDfiBN9nYFNrCyGKt4yHkiHB2fePZPTo8E7+BQtDKybXd2fuH+APzF5RlhPbJX1zcI3V5fsaSFyt3d8/zDHUfcwKbHp+fnl0cTeWeLr29vryJFyTNmp9PM0BwLXO/vLrqDBMv+1pHkA9xRiOJjZN3mAAAAAElFTkSuQmCC"
+  },
+  "dexClasses" : 106,
+  "locales" : [ "" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"2018040917\" android:versionName=\"3.0.0\" package=\"com.haarman.supertooltips\">\n\t<uses-sdk android:minSdkVersion=\"8\" android:targetSdkVersion=\"19\" />\n\t<application android:theme=\"resourceId:0x7f070001\" android:label=\"SuperToolTips\" android:icon=\"res/drawable-mdpi/ic_launcher.png\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"SuperToolTips\" android:name=\"com.haarman.supertooltips.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 103385,
+  "crc32" : 2790652355,
+  "sha256" : "fcf62f3421c3d50582d65a48a11689d9350fe0608f1bde736ae18de85f9b537b",
+  "buildTime" : 1523295262000
+}

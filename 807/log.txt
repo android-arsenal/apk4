@@ -1,0 +1,835 @@
+2018-04-09 11:12:00,708 INFO  DownloadService - Downloading "https://github.com/lsjwzh/loadingeverywhere/archive/master.zip", attempt 3
+2018-04-09 11:12:01,331 INFO  DownloadService - Downloaded https://github.com/lsjwzh/loadingeverywhere/archive/master.zip, attempt 3
+2018-04-09 11:12:01,331 INFO  DownloadService - Size of file "/tmp/rdisk/807/master.zip": 129 KB
+2018-04-09 11:12:01,331 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-09 11:12:01,332 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/807/master.zip: true
+2018-04-09 11:12:01,332 DEBUG ZipUtil - Extracting '/tmp/rdisk/807/master.zip' into '/tmp/rdisk/807/src'.
+2018-04-09 11:12:01,341 INFO  FullProcessService - Size of directory with sources: 169 KB
+2018-04-09 11:12:01,341 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/807/src]
+2018-04-09 11:12:01,346 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/807/src/.git/
+
+2018-04-09 11:12:01,349 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/807/src/MaskEverywhere-master/gradlew
+2018-04-09 11:12:01,351 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/807/src/MaskEverywhere-master/library/build.gradle /tmp/rdisk/807/src/MaskEverywhere-master/sample/build.gradle /tmp/rdisk/807/src/MaskEverywhere-master/build.gradle
+2018-04-09 11:12:01,353 INFO  ProjectBuildService - All script(s): /tmp/rdisk/807/src/MaskEverywhere-master/settings.gradle /tmp/rdisk/807/src/MaskEverywhere-master/sample/build.gradle /tmp/rdisk/807/src/MaskEverywhere-master/library/build.gradle /tmp/rdisk/807/src/MaskEverywhere-master/gradle-mvn-push.gradle /tmp/rdisk/807/src/MaskEverywhere-master/build.gradle
+2018-04-09 11:12:01,354 INFO  ProjectBuildService - Remote scripts: none
+2018-04-09 11:12:01,354 INFO  ProjectFixService - Fixing project...
+2018-04-09 11:12:01,363 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/807/src/MaskEverywhere-master/library/local.properties
+2018-04-09 11:12:01,364 INFO  ProjectFixService - Build info for "/tmp/rdisk/807/src/MaskEverywhere-master/library/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=11,targetSdkVersion=19]
+2018-04-09 11:12:01,369 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/807/src/MaskEverywhere-master/sample/local.properties
+2018-04-09 11:12:01,370 INFO  ProjectFixService - Build info for "/tmp/rdisk/807/src/MaskEverywhere-master/sample/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=19,minSdkVersion=11,targetSdkVersion=19]
+2018-04-09 11:12:01,370 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/807/src/MaskEverywhere-master/local.properties
+2018-04-09 11:12:01,371 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-09 11:12:01,371 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-09 11:12:01,372 INFO  ProjectFixService - Build info for "/tmp/rdisk/807/src/MaskEverywhere-master/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=19,minSdkVersion=11,targetSdkVersion=19]
+2018-04-09 11:12:01,372 INFO  ProjectFixService - Project was maybe fixed
+2018-04-09 11:12:01,372 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-09 11:12:01,372 INFO  SysUtils - Execute command: [/tmp/rdisk/807/src/MaskEverywhere-master/gradlew, -b, /tmp/rdisk/807/src/MaskEverywhere-master/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-09 11:12:13,797 INFO  ProjectTaskService - Detected possible tasks: 65
+2018-04-09 11:12:13,797 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-09 11:12:13,798 INFO  SysUtils - Execute command: [/tmp/rdisk/807/src/MaskEverywhere-master/gradlew, -b, /tmp/rdisk/807/src/MaskEverywhere-master/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-09 11:12:21,511 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-09 11:12:21,511 INFO  SysUtils - Configuration on demand is an incubating feature.
+:library:androidSourcesJar
+:library:compileLint
+:library:copyDebugLint UP-TO-DATE
+:library:preBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:checkDebugManifest
+:library:prepareDebugDependencies
+:library:compileDebugAidl
+:library:compileDebugRenderscript
+:library:generateDebugBuildConfig
+:library:generateDebugAssets UP-TO-DATE
+:library:mergeDebugAssets
+:library:generateDebugResValues
+:library:generateDebugResources
+:library:packageDebugResources
+:library:processDebugManifest
+:library:processDebugResources
+:library:generateDebugSources
+:library:processDebugJavaRes UP-TO-DATE
+:library:compileDebugJavaWithJavac/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/LoadingLayout.java:12: error: package com.lsjwzh.widget does not exist
+import com.lsjwzh.widget.OverlayLayout;
+                        ^
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/LoadingLayout.java:18: error: cannot find symbol
+public class LoadingLayout extends OverlayLayout {
+                                   ^
+  symbol: class OverlayLayout
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/GenericStatusLayout.java:9: error: package com.lsjwzh.widget does not exist
+import com.lsjwzh.widget.MultiOverlayAdapter;
+                        ^
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/GenericStatusLayout.java:10: error: package com.lsjwzh.widget does not exist
+import com.lsjwzh.widget.MultiOverlayLayout;
+                        ^
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/GenericStatusLayout.java:16: error: cannot find symbol
+public class GenericStatusLayout extends MultiOverlayLayout {
+                                         ^
+  symbol: class MultiOverlayLayout
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/GenericStatusLayout.java:88: error: cannot find symbol
+    public void setAdapter(MultiOverlayAdapter multiOverlayAdapter) {
+                           ^
+  symbol:   class MultiOverlayAdapter
+  location: class GenericStatusLayout
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/LoadingLayout.java:45: error: cannot find symbol
+                return new ProgressBar(getContext(),null,progressBarStyle);
+                                       ^
+  symbol: method getContext()
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/LoadingLayout.java:48: error: cannot find symbol
+        loadingLayout.attachTo(targetView);
+                     ^
+  symbol:   method attachTo(View)
+  location: variable loadingLayout of type LoadingLayout
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/LoadingLayout.java:77: error: cannot find symbol
+        showOverlay();
+        ^
+  symbol:   method showOverlay()
+  location: class LoadingLayout
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/LoadingLayout.java:81: error: cannot find symbol
+        hideOverlay();
+        ^
+  symbol:   method hideOverlay()
+  location: class LoadingLayout
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/LoadingLayout.java:85: error: cannot find symbol
+        setIsHideTargetViewWhenOverlayShown(isHideTargetViewWhenLoading);
+        ^
+  symbol:   method setIsHideTargetViewWhenOverlayShown(boolean)
+  location: class LoadingLayout
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/LoadingLayout.java:89: error: cannot find symbol
+        return isOverlayShown();
+               ^
+  symbol:   method isOverlayShown()
+  location: class LoadingLayout
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/LoadingLayout.java:93: error: cannot find symbol
+        return super.mOverlay;
+               ^
+  symbol:   variable super
+  location: class LoadingLayout
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/LoadingLayout.java:100: error: method does not override or implement a method from a supertype
+    @Override
+    ^
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/LoadingLayout.java:102: error: cannot find symbol
+        LinearLayout ll = new LinearLayout(getContext());
+                                           ^
+  symbol:   method getContext()
+  location: class LoadingLayout
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/LoadingLayout.java:111: error: cannot find symbol
+        return new ProgressBar(getContext(),null,mProgressBarStyle);
+                               ^
+  symbol:   method getContext()
+  location: class LoadingLayout
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/ProgressLayout.java:28: error: cannot find symbol
+        progressLayout.attachTo(targetView);
+                      ^
+  symbol:   method attachTo(View)
+  location: variable progressLayout of type ProgressLayout
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/ProgressLayout.java:39: error: cannot find symbol
+                mProgressBar = new ProgressBar(getContext(), null, progressBarStyle);
+                                               ^
+  symbol: method getContext()
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/ProgressLayout.java:49: error: cannot find symbol
+        progressLayout.attachTo(targetView);
+                      ^
+  symbol:   method attachTo(View)
+  location: variable progressLayout of type ProgressLayout
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/ProgressLayout.java:89: error: cannot find symbol
+        mProgressBar = new ProgressBar(getContext(), null, android.R.attr.progressBarStyleHorizontal);
+                                       ^
+  symbol:   method getContext()
+  location: class ProgressLayout
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/GenericStatusLayout.java:44: error: cannot find symbol
+        super.setAdapter(new MultiOverlayAdapter() {
+                             ^
+  symbol:   class MultiOverlayAdapter
+  location: class GenericStatusLayout
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/GenericStatusLayout.java:44: error: cannot find symbol
+        super.setAdapter(new MultiOverlayAdapter() {
+        ^
+  symbol:   variable super
+  location: class GenericStatusLayout
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/GenericStatusLayout.java:87: error: method does not override or implement a method from a supertype
+    @Override
+    ^
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/GenericStatusLayout.java:97: error: cannot find symbol
+        showOverlay(POSITION_LOADING);
+        ^
+  symbol:   method showOverlay(int)
+  location: class GenericStatusLayout
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/GenericStatusLayout.java:100: error: cannot find symbol
+        showOverlay(POSITION_EMPTY);
+        ^
+  symbol:   method showOverlay(int)
+  location: class GenericStatusLayout
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/GenericStatusLayout.java:103: error: cannot find symbol
+        showOverlay(POSITION_ERROR);
+        ^
+  symbol:   method showOverlay(int)
+  location: class GenericStatusLayout
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/GenericStatusLayout.java:108: error: cannot find symbol
+        hideOverlay(POSITION_LOADING);
+        ^
+  symbol:   method hideOverlay(int)
+  location: class GenericStatusLayout
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/GenericStatusLayout.java:111: error: cannot find symbol
+        hideOverlay(POSITION_EMPTY);
+        ^
+  symbol:   method hideOverlay(int)
+  location: class GenericStatusLayout
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/GenericStatusLayout.java:114: error: cannot find symbol
+        hideOverlay(POSITION_ERROR);
+        ^
+  symbol:   method hideOverlay(int)
+  location: class GenericStatusLayout
+29 errors
+ FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':library:compileDebugJavaWithJavac'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':library:compileDebugJavaWithJavac'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:69)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:305)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:88)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:29)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:68)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:55)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:149)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:80)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:36)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:51)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:171)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+Caused by: org.gradle.api.internal.tasks.compile.CompilationFailedException: Compilation failed; see the compiler error output for details.
+	at org.gradle.api.internal.tasks.compile.JdkJavaCompiler.execute(JdkJavaCompiler.java:44)
+	at org.gradle.api.internal.tasks.compile.JdkJavaCompiler.execute(JdkJavaCompiler.java:35)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.delegateAndHandleErrors(NormalizingJavaCompiler.java:97)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.execute(NormalizingJavaCompiler.java:50)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.execute(NormalizingJavaCompiler.java:36)
+	at org.gradle.api.internal.tasks.compile.CleaningJavaCompilerSupport.execute(CleaningJavaCompilerSupport.java:34)
+	at org.gradle.api.internal.tasks.compile.CleaningJavaCompilerSupport.execute(CleaningJavaCompilerSupport.java:25)
+	at org.gradle.api.tasks.compile.JavaCompile.performCompilation(JavaCompile.java:158)
+	at org.gradle.api.tasks.compile.JavaCompile.compile(JavaCompile.java:138)
+	at org.gradle.api.tasks.compile.JavaCompile.compile(JavaCompile.java:92)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:63)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$IncrementalTaskAction.doExecute(AnnotationProcessingTaskFactory.java:235)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:211)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$IncrementalTaskAction.execute(AnnotationProcessingTaskFactory.java:222)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:200)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	... 47 more
+
+
+BUILD FAILED
+
+Total time: 7.243 secs
+
+2018-04-09 11:12:21,516 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-09 11:12:21,516 INFO  SysUtils - Execute command: [/tmp/rdisk/807/src/MaskEverywhere-master/gradlew, -b, /tmp/rdisk/807/src/MaskEverywhere-master/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-09 11:12:28,374 INFO  ProjectTaskService - Detected possible tasks: 64
+2018-04-09 11:12:28,375 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-09 11:12:28,375 INFO  SysUtils - Execute command: [/tmp/rdisk/807/src/MaskEverywhere-master/gradlew, -b, /tmp/rdisk/807/src/MaskEverywhere-master/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-09 11:12:35,896 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-09 11:12:35,897 INFO  SysUtils - Configuration on demand is an incubating feature.
+:library:compileLint
+:library:copyReleaseLint UP-TO-DATE
+:library:preBuild UP-TO-DATE
+:library:preReleaseBuild UP-TO-DATE
+:library:checkReleaseManifest
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl
+:library:compileReleaseRenderscript
+:library:generateReleaseBuildConfig
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets
+:library:generateReleaseResValues
+:library:generateReleaseResources
+:library:packageReleaseResources
+:library:processReleaseManifest
+:library:processReleaseResources
+:library:generateReleaseSources
+:library:processReleaseJavaRes UP-TO-DATE
+:library:compileReleaseJavaWithJavac/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/LoadingLayout.java:12: error: package com.lsjwzh.widget does not exist
+import com.lsjwzh.widget.OverlayLayout;
+                        ^
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/LoadingLayout.java:18: error: cannot find symbol
+public class LoadingLayout extends OverlayLayout {
+                                   ^
+  symbol: class OverlayLayout
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/GenericStatusLayout.java:9: error: package com.lsjwzh.widget does not exist
+import com.lsjwzh.widget.MultiOverlayAdapter;
+                        ^
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/GenericStatusLayout.java:10: error: package com.lsjwzh.widget does not exist
+import com.lsjwzh.widget.MultiOverlayLayout;
+                        ^
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/GenericStatusLayout.java:16: error: cannot find symbol
+public class GenericStatusLayout extends MultiOverlayLayout {
+                                         ^
+  symbol: class MultiOverlayLayout
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/GenericStatusLayout.java:88: error: cannot find symbol
+    public void setAdapter(MultiOverlayAdapter multiOverlayAdapter) {
+                           ^
+  symbol:   class MultiOverlayAdapter
+  location: class GenericStatusLayout
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/LoadingLayout.java:45: error: cannot find symbol
+                return new ProgressBar(getContext(),null,progressBarStyle);
+                                       ^
+  symbol: method getContext()
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/LoadingLayout.java:48: error: cannot find symbol
+        loadingLayout.attachTo(targetView);
+                     ^
+  symbol:   method attachTo(View)
+  location: variable loadingLayout of type LoadingLayout
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/LoadingLayout.java:77: error: cannot find symbol
+        showOverlay();
+        ^
+  symbol:   method showOverlay()
+  location: class LoadingLayout
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/LoadingLayout.java:81: error: cannot find symbol
+        hideOverlay();
+        ^
+  symbol:   method hideOverlay()
+  location: class LoadingLayout
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/LoadingLayout.java:85: error: cannot find symbol
+        setIsHideTargetViewWhenOverlayShown(isHideTargetViewWhenLoading);
+        ^
+  symbol:   method setIsHideTargetViewWhenOverlayShown(boolean)
+  location: class LoadingLayout
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/LoadingLayout.java:89: error: cannot find symbol
+        return isOverlayShown();
+               ^
+  symbol:   method isOverlayShown()
+  location: class LoadingLayout
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/LoadingLayout.java:93: error: cannot find symbol
+        return super.mOverlay;
+               ^
+  symbol:   variable super
+  location: class LoadingLayout
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/LoadingLayout.java:100: error: method does not override or implement a method from a supertype
+    @Override
+    ^
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/LoadingLayout.java:102: error: cannot find symbol
+        LinearLayout ll = new LinearLayout(getContext());
+                                           ^
+  symbol:   method getContext()
+  location: class LoadingLayout
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/LoadingLayout.java:111: error: cannot find symbol
+        return new ProgressBar(getContext(),null,mProgressBarStyle);
+                               ^
+  symbol:   method getContext()
+  location: class LoadingLayout
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/ProgressLayout.java:28: error: cannot find symbol
+        progressLayout.attachTo(targetView);
+                      ^
+  symbol:   method attachTo(View)
+  location: variable progressLayout of type ProgressLayout
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/ProgressLayout.java:39: error: cannot find symbol
+                mProgressBar = new ProgressBar(getContext(), null, progressBarStyle);
+                                               ^
+  symbol: method getContext()
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/ProgressLayout.java:49: error: cannot find symbol
+        progressLayout.attachTo(targetView);
+                      ^
+  symbol:   method attachTo(View)
+  location: variable progressLayout of type ProgressLayout
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/ProgressLayout.java:89: error: cannot find symbol
+        mProgressBar = new ProgressBar(getContext(), null, android.R.attr.progressBarStyleHorizontal);
+                                       ^
+  symbol:   method getContext()
+  location: class ProgressLayout
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/GenericStatusLayout.java:44: error: cannot find symbol
+        super.setAdapter(new MultiOverlayAdapter() {
+                             ^
+  symbol:   class MultiOverlayAdapter
+  location: class GenericStatusLayout
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/GenericStatusLayout.java:44: error: cannot find symbol
+        super.setAdapter(new MultiOverlayAdapter() {
+        ^
+  symbol:   variable super
+  location: class GenericStatusLayout
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/GenericStatusLayout.java:87: error: method does not override or implement a method from a supertype
+    @Override
+    ^
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/GenericStatusLayout.java:97: error: cannot find symbol
+        showOverlay(POSITION_LOADING);
+        ^
+  symbol:   method showOverlay(int)
+  location: class GenericStatusLayout
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/GenericStatusLayout.java:100: error: cannot find symbol
+        showOverlay(POSITION_EMPTY);
+        ^
+  symbol:   method showOverlay(int)
+  location: class GenericStatusLayout
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/GenericStatusLayout.java:103: error: cannot find symbol
+        showOverlay(POSITION_ERROR);
+        ^
+  symbol:   method showOverlay(int)
+  location: class GenericStatusLayout
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/GenericStatusLayout.java:108: error: cannot find symbol
+        hideOverlay(POSITION_LOADING);
+        ^
+  symbol:   method hideOverlay(int)
+  location: class GenericStatusLayout
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/GenericStatusLayout.java:111: error: cannot find symbol
+        hideOverlay(POSITION_EMPTY);
+        ^
+  symbol:   method hideOverlay(int)
+  location: class GenericStatusLayout
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/GenericStatusLayout.java:114: error: cannot find symbol
+        hideOverlay(POSITION_ERROR);
+        ^
+  symbol:   method hideOverlay(int)
+  location: class GenericStatusLayout
+29 errors
+ FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':library:compileReleaseJavaWithJavac'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':library:compileReleaseJavaWithJavac'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:69)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:305)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:88)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:29)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:68)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:55)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:149)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:80)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:36)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:51)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:171)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+Caused by: org.gradle.api.internal.tasks.compile.CompilationFailedException: Compilation failed; see the compiler error output for details.
+	at org.gradle.api.internal.tasks.compile.JdkJavaCompiler.execute(JdkJavaCompiler.java:44)
+	at org.gradle.api.internal.tasks.compile.JdkJavaCompiler.execute(JdkJavaCompiler.java:35)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.delegateAndHandleErrors(NormalizingJavaCompiler.java:97)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.execute(NormalizingJavaCompiler.java:50)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.execute(NormalizingJavaCompiler.java:36)
+	at org.gradle.api.internal.tasks.compile.CleaningJavaCompilerSupport.execute(CleaningJavaCompilerSupport.java:34)
+	at org.gradle.api.internal.tasks.compile.CleaningJavaCompilerSupport.execute(CleaningJavaCompilerSupport.java:25)
+	at org.gradle.api.tasks.compile.JavaCompile.performCompilation(JavaCompile.java:158)
+	at org.gradle.api.tasks.compile.JavaCompile.compile(JavaCompile.java:138)
+	at org.gradle.api.tasks.compile.JavaCompile.compile(JavaCompile.java:92)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:63)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$IncrementalTaskAction.doExecute(AnnotationProcessingTaskFactory.java:235)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:211)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$IncrementalTaskAction.execute(AnnotationProcessingTaskFactory.java:222)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:200)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	... 47 more
+
+
+BUILD FAILED
+
+Total time: 7.054 secs
+
+2018-04-09 11:12:35,902 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-09 11:12:35,902 INFO  SysUtils - Execute command: [/tmp/rdisk/807/src/MaskEverywhere-master/gradlew, -b, /tmp/rdisk/807/src/MaskEverywhere-master/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-09 11:12:42,619 INFO  ProjectTaskService - Detected possible tasks: 71
+2018-04-09 11:12:42,620 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-09 11:12:42,620 INFO  SysUtils - Execute command: [/tmp/rdisk/807/src/MaskEverywhere-master/gradlew, -b, /tmp/rdisk/807/src/MaskEverywhere-master/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-09 11:12:49,569 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-09 11:12:49,569 INFO  SysUtils - Configuration on demand is an incubating feature.
+:library:androidSourcesJar UP-TO-DATE
+:library:compileLint
+:library:copyDebugLint UP-TO-DATE
+:library:preBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:checkDebugManifest
+:library:prepareDebugDependencies
+:library:compileDebugAidl UP-TO-DATE
+:library:compileDebugRenderscript UP-TO-DATE
+:library:generateDebugBuildConfig UP-TO-DATE
+:library:generateDebugAssets UP-TO-DATE
+:library:mergeDebugAssets UP-TO-DATE
+:library:generateDebugResValues UP-TO-DATE
+:library:generateDebugResources UP-TO-DATE
+:library:packageDebugResources UP-TO-DATE
+:library:processDebugManifest UP-TO-DATE
+:library:processDebugResources UP-TO-DATE
+:library:generateDebugSources UP-TO-DATE
+:library:processDebugJavaRes UP-TO-DATE
+:library:compileDebugJavaWithJavac/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/LoadingLayout.java:12: error: package com.lsjwzh.widget does not exist
+import com.lsjwzh.widget.OverlayLayout;
+                        ^
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/LoadingLayout.java:18: error: cannot find symbol
+public class LoadingLayout extends OverlayLayout {
+                                   ^
+  symbol: class OverlayLayout
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/GenericStatusLayout.java:9: error: package com.lsjwzh.widget does not exist
+import com.lsjwzh.widget.MultiOverlayAdapter;
+                        ^
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/GenericStatusLayout.java:10: error: package com.lsjwzh.widget does not exist
+import com.lsjwzh.widget.MultiOverlayLayout;
+                        ^
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/GenericStatusLayout.java:16: error: cannot find symbol
+public class GenericStatusLayout extends MultiOverlayLayout {
+                                         ^
+  symbol: class MultiOverlayLayout
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/GenericStatusLayout.java:88: error: cannot find symbol
+    public void setAdapter(MultiOverlayAdapter multiOverlayAdapter) {
+                           ^
+  symbol:   class MultiOverlayAdapter
+  location: class GenericStatusLayout
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/LoadingLayout.java:45: error: cannot find symbol
+                return new ProgressBar(getContext(),null,progressBarStyle);
+                                       ^
+  symbol: method getContext()
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/LoadingLayout.java:48: error: cannot find symbol
+        loadingLayout.attachTo(targetView);
+                     ^
+  symbol:   method attachTo(View)
+  location: variable loadingLayout of type LoadingLayout
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/LoadingLayout.java:77: error: cannot find symbol
+        showOverlay();
+        ^
+  symbol:   method showOverlay()
+  location: class LoadingLayout
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/LoadingLayout.java:81: error: cannot find symbol
+        hideOverlay();
+        ^
+  symbol:   method hideOverlay()
+  location: class LoadingLayout
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/LoadingLayout.java:85: error: cannot find symbol
+        setIsHideTargetViewWhenOverlayShown(isHideTargetViewWhenLoading);
+        ^
+  symbol:   method setIsHideTargetViewWhenOverlayShown(boolean)
+  location: class LoadingLayout
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/LoadingLayout.java:89: error: cannot find symbol
+        return isOverlayShown();
+               ^
+  symbol:   method isOverlayShown()
+  location: class LoadingLayout
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/LoadingLayout.java:93: error: cannot find symbol
+        return super.mOverlay;
+               ^
+  symbol:   variable super
+  location: class LoadingLayout
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/LoadingLayout.java:100: error: method does not override or implement a method from a supertype
+    @Override
+    ^
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/LoadingLayout.java:102: error: cannot find symbol
+        LinearLayout ll = new LinearLayout(getContext());
+                                           ^
+  symbol:   method getContext()
+  location: class LoadingLayout
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/LoadingLayout.java:111: error: cannot find symbol
+        return new ProgressBar(getContext(),null,mProgressBarStyle);
+                               ^
+  symbol:   method getContext()
+  location: class LoadingLayout
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/ProgressLayout.java:28: error: cannot find symbol
+        progressLayout.attachTo(targetView);
+                      ^
+  symbol:   method attachTo(View)
+  location: variable progressLayout of type ProgressLayout
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/ProgressLayout.java:39: error: cannot find symbol
+                mProgressBar = new ProgressBar(getContext(), null, progressBarStyle);
+                                               ^
+  symbol: method getContext()
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/ProgressLayout.java:49: error: cannot find symbol
+        progressLayout.attachTo(targetView);
+                      ^
+  symbol:   method attachTo(View)
+  location: variable progressLayout of type ProgressLayout
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/ProgressLayout.java:89: error: cannot find symbol
+        mProgressBar = new ProgressBar(getContext(), null, android.R.attr.progressBarStyleHorizontal);
+                                       ^
+  symbol:   method getContext()
+  location: class ProgressLayout
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/GenericStatusLayout.java:44: error: cannot find symbol
+        super.setAdapter(new MultiOverlayAdapter() {
+                             ^
+  symbol:   class MultiOverlayAdapter
+  location: class GenericStatusLayout
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/GenericStatusLayout.java:44: error: cannot find symbol
+        super.setAdapter(new MultiOverlayAdapter() {
+        ^
+  symbol:   variable super
+  location: class GenericStatusLayout
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/GenericStatusLayout.java:87: error: method does not override or implement a method from a supertype
+    @Override
+    ^
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/GenericStatusLayout.java:97: error: cannot find symbol
+        showOverlay(POSITION_LOADING);
+        ^
+  symbol:   method showOverlay(int)
+  location: class GenericStatusLayout
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/GenericStatusLayout.java:100: error: cannot find symbol
+        showOverlay(POSITION_EMPTY);
+        ^
+  symbol:   method showOverlay(int)
+  location: class GenericStatusLayout
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/GenericStatusLayout.java:103: error: cannot find symbol
+        showOverlay(POSITION_ERROR);
+        ^
+  symbol:   method showOverlay(int)
+  location: class GenericStatusLayout
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/GenericStatusLayout.java:108: error: cannot find symbol
+        hideOverlay(POSITION_LOADING);
+        ^
+  symbol:   method hideOverlay(int)
+  location: class GenericStatusLayout
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/GenericStatusLayout.java:111: error: cannot find symbol
+        hideOverlay(POSITION_EMPTY);
+        ^
+  symbol:   method hideOverlay(int)
+  location: class GenericStatusLayout
+/tmp/rdisk/807/src/MaskEverywhere-master/library/src/main/java/com/lsjwzh/loadingeverywhere/GenericStatusLayout.java:114: error: cannot find symbol
+        hideOverlay(POSITION_ERROR);
+        ^
+  symbol:   method hideOverlay(int)
+  location: class GenericStatusLayout
+29 errors
+ FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':library:compileDebugJavaWithJavac'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':library:compileDebugJavaWithJavac'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:69)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:305)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:88)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:29)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:68)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:55)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:149)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:80)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:36)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:51)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:171)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+Caused by: org.gradle.api.internal.tasks.compile.CompilationFailedException: Compilation failed; see the compiler error output for details.
+	at org.gradle.api.internal.tasks.compile.JdkJavaCompiler.execute(JdkJavaCompiler.java:44)
+	at org.gradle.api.internal.tasks.compile.JdkJavaCompiler.execute(JdkJavaCompiler.java:35)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.delegateAndHandleErrors(NormalizingJavaCompiler.java:97)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.execute(NormalizingJavaCompiler.java:50)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.execute(NormalizingJavaCompiler.java:36)
+	at org.gradle.api.internal.tasks.compile.CleaningJavaCompilerSupport.execute(CleaningJavaCompilerSupport.java:34)
+	at org.gradle.api.internal.tasks.compile.CleaningJavaCompilerSupport.execute(CleaningJavaCompilerSupport.java:25)
+	at org.gradle.api.tasks.compile.JavaCompile.performCompilation(JavaCompile.java:158)
+	at org.gradle.api.tasks.compile.JavaCompile.compile(JavaCompile.java:138)
+	at org.gradle.api.tasks.compile.JavaCompile.compile(JavaCompile.java:92)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:63)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$IncrementalTaskAction.doExecute(AnnotationProcessingTaskFactory.java:235)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:211)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$IncrementalTaskAction.execute(AnnotationProcessingTaskFactory.java:222)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:200)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	... 47 more
+
+
+BUILD FAILED
+
+Total time: 6.468 secs
+
+2018-04-09 11:12:49,575 ERROR FullProcessService - Project build has not produced APK file
+2018-04-09 11:12:49,580 ERROR FullProcessService - Could not find generated or existed APK file

@@ -1,0 +1,192 @@
+2018-04-08 13:20:26,327 INFO  DownloadService - Downloading "https://github.com/emmano/LittleKnife/archive/master.zip", attempt 3
+2018-04-08 13:20:26,723 INFO  DownloadService - Downloaded https://github.com/emmano/LittleKnife/archive/master.zip, attempt 3
+2018-04-08 13:20:26,723 INFO  DownloadService - Size of file "/tmp/rdisk/988/master.zip": 187 KB
+2018-04-08 13:20:26,724 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-08 13:20:26,724 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/988/master.zip: true
+2018-04-08 13:20:26,724 DEBUG ZipUtil - Extracting '/tmp/rdisk/988/master.zip' into '/tmp/rdisk/988/src'.
+2018-04-08 13:20:26,736 INFO  FullProcessService - Size of directory with sources: 314 KB
+2018-04-08 13:20:26,736 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/988/src]
+2018-04-08 13:20:26,749 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/988/src/.git/
+
+2018-04-08 13:20:26,752 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/988/src/LittleKnife-master/gradlew
+2018-04-08 13:20:26,756 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/988/src/LittleKnife-master/LittleKnifeAPI/build.gradle /tmp/rdisk/988/src/LittleKnife-master/app/build.gradle /tmp/rdisk/988/src/LittleKnife-master/build.gradle /tmp/rdisk/988/src/LittleKnife-master/LittleKnifeCompiler/build.gradle
+2018-04-08 13:20:26,758 INFO  ProjectBuildService - All script(s): /tmp/rdisk/988/src/LittleKnife-master/settings.gradle /tmp/rdisk/988/src/LittleKnife-master/build.gradle /tmp/rdisk/988/src/LittleKnife-master/app/build.gradle /tmp/rdisk/988/src/LittleKnife-master/LittleKnifeCompiler/build.gradle /tmp/rdisk/988/src/LittleKnife-master/LittleKnifeAPI/build.gradle
+2018-04-08 13:20:26,759 INFO  ProjectBuildService - Remote scripts: none
+2018-04-08 13:20:26,763 INFO  ProjectFixService - Fixing project...
+2018-04-08 13:20:26,774 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/988/src/LittleKnife-master/LittleKnifeAPI/local.properties
+2018-04-08 13:20:26,775 INFO  ProjectFixService - Build info for "/tmp/rdisk/988/src/LittleKnife-master/LittleKnifeAPI/build.gradle": [buildToolsVersion=20.0.0,compileSdkVersion=20,minSdkVersion=8,targetSdkVersion=20]
+2018-04-08 13:20:26,775 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/988/src/LittleKnife-master/app/local.properties
+2018-04-08 13:20:26,775 INFO  ProjectFixService - Build info for "/tmp/rdisk/988/src/LittleKnife-master/app/build.gradle": [buildToolsVersion=20.0.0,compileSdkVersion=20,minSdkVersion=8,targetSdkVersion=20]
+2018-04-08 13:20:26,776 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/988/src/LittleKnife-master/local.properties
+2018-04-08 13:20:26,777 INFO  WrapperPropertiesFixService - Gradle wrapper: http://services.gradle.org/distributions/gradle-2.1-all.zip
+2018-04-08 13:20:26,777 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (http://services.gradle.org/distributions/gradle-2.1-bin.zip)
+2018-04-08 13:20:26,778 INFO  ProjectFixService - Build info for "/tmp/rdisk/988/src/LittleKnife-master/build.gradle": [buildToolsVersion=20.0.0,compileSdkVersion=20,minSdkVersion=8,targetSdkVersion=20]
+2018-04-08 13:20:26,780 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/988/src/LittleKnife-master/LittleKnifeCompiler/local.properties
+2018-04-08 13:20:26,782 INFO  ProjectFixService - Build info for "/tmp/rdisk/988/src/LittleKnife-master/LittleKnifeCompiler/build.gradle": [buildToolsVersion=20.0.0,compileSdkVersion=20,minSdkVersion=8,targetSdkVersion=20]
+2018-04-08 13:20:26,782 INFO  ProjectFixService - Project was maybe fixed
+2018-04-08 13:20:26,782 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-08 13:20:26,785 INFO  SysUtils - Execute command: [/tmp/rdisk/988/src/LittleKnife-master/gradlew, -b, /tmp/rdisk/988/src/LittleKnife-master/LittleKnifeAPI/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-08 13:20:41,164 INFO  ProjectTaskService - Detected possible tasks: 51
+2018-04-08 13:20:41,165 INFO  ProjectTaskService - Excluded tasks (8): lintDebug deviceCheck lint connectedCheck uninstallAll check connectedAndroidTest lintRelease
+2018-04-08 13:20:41,165 INFO  SysUtils - Execute command: [/tmp/rdisk/988/src/LittleKnife-master/gradlew, -b, /tmp/rdisk/988/src/LittleKnife-master/LittleKnifeAPI/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-08 13:20:48,569 INFO  SysUtils - Configuration on demand is an incubating feature.
+:LittleKnifeAPI:compileLint
+:LittleKnifeAPI:copyDebugLint UP-TO-DATE
+:LittleKnifeAPI:mergeDebugProguardFiles
+:LittleKnifeAPI:preBuild
+:LittleKnifeAPI:preDebugBuild
+:LittleKnifeAPI:checkDebugManifest
+:LittleKnifeAPI:prepareDebugDependencies
+:LittleKnifeAPI:compileDebugAidl
+:LittleKnifeAPI:compileDebugRenderscript
+:LittleKnifeAPI:generateDebugBuildConfig
+:LittleKnifeAPI:generateDebugAssets UP-TO-DATE
+:LittleKnifeAPI:mergeDebugAssets
+:LittleKnifeAPI:generateDebugResValues
+:LittleKnifeAPI:generateDebugResources
+:LittleKnifeAPI:packageDebugResources
+:LittleKnifeAPI:processDebugManifest
+:LittleKnifeAPI:processDebugResources
+:LittleKnifeAPI:generateDebugSources
+:LittleKnifeAPI:compileDebugJavaNote: /tmp/rdisk/988/src/LittleKnife-master/LittleKnifeAPI/src/main/api/me/emmano/littleknife/LittleKnife.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:LittleKnifeAPI:processDebugJavaRes UP-TO-DATE
+:LittleKnifeAPI:packageDebugJar
+:LittleKnifeAPI:compileDebugNdk
+:LittleKnifeAPI:packageDebugJniLibs UP-TO-DATE
+:LittleKnifeAPI:packageDebugLocalJar UP-TO-DATE
+:LittleKnifeAPI:packageDebugRenderscript UP-TO-DATE
+:LittleKnifeAPI:bundleDebug
+:LittleKnifeAPI:assembleDebug
+:LittleKnifeAPI:copyReleaseLint UP-TO-DATE
+:LittleKnifeAPI:mergeReleaseProguardFiles
+:LittleKnifeAPI:preReleaseBuild
+:LittleKnifeAPI:checkReleaseManifest
+:LittleKnifeAPI:prepareReleaseDependencies
+:LittleKnifeAPI:compileReleaseAidl
+:LittleKnifeAPI:compileReleaseRenderscript
+:LittleKnifeAPI:generateReleaseBuildConfig
+:LittleKnifeAPI:generateReleaseAssets UP-TO-DATE
+:LittleKnifeAPI:mergeReleaseAssets
+:LittleKnifeAPI:generateReleaseResValues
+:LittleKnifeAPI:generateReleaseResources
+:LittleKnifeAPI:packageReleaseResources
+:LittleKnifeAPI:processReleaseManifest
+:LittleKnifeAPI:processReleaseResources
+:LittleKnifeAPI:generateReleaseSources
+:LittleKnifeAPI:compileReleaseJavaNote: /tmp/rdisk/988/src/LittleKnife-master/LittleKnifeAPI/src/main/api/me/emmano/littleknife/LittleKnife.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:LittleKnifeAPI:processReleaseJavaRes UP-TO-DATE
+:LittleKnifeAPI:packageReleaseJar
+:LittleKnifeAPI:compileReleaseNdk
+:LittleKnifeAPI:packageReleaseJniLibs UP-TO-DATE
+:LittleKnifeAPI:packageReleaseLocalJar UP-TO-DATE
+:LittleKnifeAPI:packageReleaseRenderscript UP-TO-DATE
+:LittleKnifeAPI:bundleRelease
+:LittleKnifeAPI:assembleRelease
+:LittleKnifeAPI:assemble
+:LittleKnifeAPI:build
+
+BUILD SUCCESSFUL
+
+Total time: 6.91 secs
+
+2018-04-08 13:20:48,577 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-08 13:20:48,577 INFO  SysUtils - Execute command: [/tmp/rdisk/988/src/LittleKnife-master/gradlew, -b, /tmp/rdisk/988/src/LittleKnife-master/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-08 13:20:55,503 INFO  ProjectTaskService - Detected possible tasks: 53
+2018-04-08 13:20:55,503 INFO  ProjectTaskService - Excluded tasks (11): lintDebug deviceCheck lint uninstallRelease connectedCheck uninstallAll check connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-08 13:20:55,503 INFO  SysUtils - Execute command: [/tmp/rdisk/988/src/LittleKnife-master/gradlew, -b, /tmp/rdisk/988/src/LittleKnife-master/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-08 13:21:19,558 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:preBuild
+:app:compileDebugNdk
+:LittleKnifeAPI:compileLint
+:LittleKnifeAPI:copyReleaseLint UP-TO-DATE
+:LittleKnifeAPI:mergeReleaseProguardFiles UP-TO-DATE
+:LittleKnifeAPI:preBuild
+:LittleKnifeAPI:preReleaseBuild
+:LittleKnifeAPI:checkReleaseManifest
+:LittleKnifeAPI:prepareReleaseDependencies
+:LittleKnifeAPI:compileReleaseAidl UP-TO-DATE
+:LittleKnifeAPI:compileReleaseRenderscript UP-TO-DATE
+:LittleKnifeAPI:generateReleaseBuildConfig UP-TO-DATE
+:LittleKnifeAPI:generateReleaseAssets UP-TO-DATE
+:LittleKnifeAPI:mergeReleaseAssets UP-TO-DATE
+:LittleKnifeAPI:generateReleaseResValues UP-TO-DATE
+:LittleKnifeAPI:generateReleaseResources UP-TO-DATE
+:LittleKnifeAPI:packageReleaseResources UP-TO-DATE
+:LittleKnifeAPI:processReleaseManifest UP-TO-DATE
+:LittleKnifeAPI:processReleaseResources UP-TO-DATE
+:LittleKnifeAPI:generateReleaseSources UP-TO-DATE
+:LittleKnifeAPI:compileReleaseJava UP-TO-DATE
+:LittleKnifeAPI:processReleaseJavaRes UP-TO-DATE
+:LittleKnifeAPI:packageReleaseJar UP-TO-DATE
+:LittleKnifeAPI:compileReleaseNdk UP-TO-DATE
+:LittleKnifeAPI:packageReleaseJniLibs UP-TO-DATE
+:LittleKnifeAPI:packageReleaseLocalJar UP-TO-DATE
+:LittleKnifeAPI:packageReleaseRenderscript UP-TO-DATE
+:LittleKnifeAPI:bundleRelease UP-TO-DATE
+:LittleKnifeCompiler:compileJava
+:LittleKnifeCompiler:processResources
+:LittleKnifeCompiler:classes
+:LittleKnifeCompiler:jar
+:app:preDebugBuild
+:app:checkDebugManifest
+:app:preReleaseBuild
+:app:prepareComAndroidSupportAppcompatV72000Library
+:app:prepareComAndroidSupportSupportV42000Library
+:app:prepareLittleKnifeMasterLittleKnifeAPIUnspecifiedLibrary
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:compileDebugJavawarning: No SupportedSourceVersion annotation found on me.emmano.littleknife.processor.LittleKnifeProcessor, returning RELEASE_6.
+1 warning
+
+:app:preDexDebug
+:app:dexDebug
+:app:processDebugJavaRes UP-TO-DATE
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:compileReleaseJavawarning: No SupportedSourceVersion annotation found on me.emmano.littleknife.processor.LittleKnifeProcessor, returning RELEASE_6.
+1 warning
+
+:app:lintVitalRelease
+:app:compileReleaseNdk
+:app:preDexRelease
+:app:dexRelease
+:app:processReleaseJavaRes UP-TO-DATE
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 23.583 secs
+
+2018-04-08 13:21:19,601 INFO  FullProcessService - Found APK file: /tmp/rdisk/988/src/LittleKnife-master/app/build/outputs/apk/app-debug.apk

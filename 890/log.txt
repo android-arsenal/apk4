@@ -1,0 +1,281 @@
+2018-04-08 16:18:30,604 INFO  DownloadService - Downloading "https://github.com/DayS/EnhancedEditText/archive/master.zip", attempt 3
+2018-04-08 16:18:31,059 INFO  DownloadService - Downloaded https://github.com/DayS/EnhancedEditText/archive/master.zip, attempt 3
+2018-04-08 16:18:31,059 INFO  DownloadService - Size of file "/tmp/rdisk/890/master.zip": 198 KB
+2018-04-08 16:18:31,059 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-08 16:18:31,060 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/890/master.zip: true
+2018-04-08 16:18:31,060 DEBUG ZipUtil - Extracting '/tmp/rdisk/890/master.zip' into '/tmp/rdisk/890/src'.
+2018-04-08 16:18:31,071 INFO  FullProcessService - Size of directory with sources: 236 KB
+2018-04-08 16:18:31,071 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/890/src]
+2018-04-08 16:18:31,076 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/890/src/.git/
+
+2018-04-08 16:18:31,079 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/890/src/EnhancedEditText-master/gradlew
+2018-04-08 16:18:31,082 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/890/src/EnhancedEditText-master/enhanced-edittext/build.gradle /tmp/rdisk/890/src/EnhancedEditText-master/sample/build.gradle /tmp/rdisk/890/src/EnhancedEditText-master/build.gradle
+2018-04-08 16:18:31,084 INFO  ProjectBuildService - All script(s): /tmp/rdisk/890/src/EnhancedEditText-master/settings.gradle /tmp/rdisk/890/src/EnhancedEditText-master/sample/build.gradle /tmp/rdisk/890/src/EnhancedEditText-master/enhanced-edittext/build.gradle /tmp/rdisk/890/src/EnhancedEditText-master/build.gradle
+2018-04-08 16:18:31,085 INFO  ProjectBuildService - Remote scripts: none
+2018-04-08 16:18:31,085 INFO  ProjectFixService - Fixing project...
+2018-04-08 16:18:31,092 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/890/src/EnhancedEditText-master/enhanced-edittext/local.properties
+2018-04-08 16:18:31,094 INFO  ProjectFixService - Build info for "/tmp/rdisk/890/src/EnhancedEditText-master/enhanced-edittext/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=19,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-08 16:18:31,094 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/890/src/EnhancedEditText-master/enhanced-edittext/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=19,minSdkVersion=27,targetSdkVersion=27]
+2018-04-08 16:18:31,095 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/890/src/EnhancedEditText-master/sample/local.properties
+2018-04-08 16:18:31,096 INFO  ProjectFixService - Build info for "/tmp/rdisk/890/src/EnhancedEditText-master/sample/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=19,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-08 16:18:31,096 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/890/src/EnhancedEditText-master/sample/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=19,minSdkVersion=27,targetSdkVersion=27]
+2018-04-08 16:18:31,097 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/890/src/EnhancedEditText-master/local.properties
+2018-04-08 16:18:31,097 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-08 16:18:31,098 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-08 16:18:31,100 INFO  ProjectFixService - Build info for "/tmp/rdisk/890/src/EnhancedEditText-master/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=19,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-08 16:18:31,101 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/890/src/EnhancedEditText-master/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=19,minSdkVersion=27,targetSdkVersion=27]
+2018-04-08 16:18:31,101 INFO  ProjectFixService - Project was maybe fixed
+2018-04-08 16:18:31,101 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-08 16:18:31,102 INFO  SysUtils - Execute command: [/tmp/rdisk/890/src/EnhancedEditText-master/gradlew, -b, /tmp/rdisk/890/src/EnhancedEditText-master/enhanced-edittext/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-08 16:18:45,239 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-08 16:18:45,239 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-08 16:18:45,239 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-08 16:18:45,240 INFO  SysUtils - Execute command: [/tmp/rdisk/890/src/EnhancedEditText-master/gradlew, -b, /tmp/rdisk/890/src/EnhancedEditText-master/enhanced-edittext/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-08 16:19:06,547 INFO  SysUtils - Configuration on demand is an incubating feature.
+:enhanced-edittext:apklib
+:enhanced-edittext:compileLint
+:enhanced-edittext:copyDebugLint UP-TO-DATE
+:enhanced-edittext:mergeDebugProguardFiles
+:enhanced-edittext:preBuild UP-TO-DATE
+:enhanced-edittext:preDebugBuild UP-TO-DATE
+:enhanced-edittext:checkDebugManifest
+:enhanced-edittext:preDebugAndroidTestBuild UP-TO-DATE
+:enhanced-edittext:preDebugUnitTestBuild UP-TO-DATE
+:enhanced-edittext:preReleaseBuild UP-TO-DATE
+:enhanced-edittext:preReleaseUnitTestBuild UP-TO-DATE
+:enhanced-edittext:prepareComJoanzapataIconifyAndroidIconify206Library
+:enhanced-edittext:prepareDebugDependencies
+:enhanced-edittext:compileDebugAidl
+:enhanced-edittext:compileDebugRenderscript
+:enhanced-edittext:generateDebugBuildConfig
+:enhanced-edittext:generateDebugAssets UP-TO-DATE
+:enhanced-edittext:mergeDebugAssets
+:enhanced-edittext:generateDebugResValues
+:enhanced-edittext:generateDebugResources
+:enhanced-edittext:mergeDebugResources
+:enhanced-edittext:processDebugManifest
+:enhanced-edittext:processDebugResources
+:enhanced-edittext:generateDebugSources
+:enhanced-edittext:processDebugJavaRes UP-TO-DATE
+:enhanced-edittext:compileDebugJava
+:enhanced-edittext:packageDebugJar
+:enhanced-edittext:compileDebugNdk UP-TO-DATE
+:enhanced-edittext:packageDebugJniLibs UP-TO-DATE
+:enhanced-edittext:packageDebugLocalJar UP-TO-DATE
+:enhanced-edittext:packageDebugRenderscript UP-TO-DATE
+:enhanced-edittext:packageDebugResources
+:enhanced-edittext:bundleDebug
+:enhanced-edittext:compileDebugSources
+:enhanced-edittext:assembleDebug
+:enhanced-edittext:copyReleaseLint UP-TO-DATE
+:enhanced-edittext:mergeReleaseProguardFiles
+:enhanced-edittext:checkReleaseManifest
+:enhanced-edittext:prepareReleaseDependencies
+:enhanced-edittext:compileReleaseAidl
+:enhanced-edittext:compileReleaseRenderscript
+:enhanced-edittext:generateReleaseBuildConfig
+:enhanced-edittext:generateReleaseAssets UP-TO-DATE
+:enhanced-edittext:mergeReleaseAssets
+:enhanced-edittext:generateReleaseResValues
+:enhanced-edittext:generateReleaseResources
+:enhanced-edittext:mergeReleaseResources
+:enhanced-edittext:processReleaseManifest
+:enhanced-edittext:processReleaseResources
+:enhanced-edittext:generateReleaseSources
+:enhanced-edittext:processReleaseJavaRes UP-TO-DATE
+:enhanced-edittext:compileReleaseJava
+:enhanced-edittext:packageReleaseJar
+:enhanced-edittext:compileReleaseNdk UP-TO-DATE
+:enhanced-edittext:packageReleaseJniLibs UP-TO-DATE
+:enhanced-edittext:packageReleaseLocalJar UP-TO-DATE
+:enhanced-edittext:packageReleaseRenderscript UP-TO-DATE
+:enhanced-edittext:packageReleaseResources
+:enhanced-edittext:bundleRelease
+:enhanced-edittext:compileReleaseSources
+:enhanced-edittext:assembleRelease
+:enhanced-edittext:signArchives SKIPPED
+:enhanced-edittext:assemble
+:enhanced-edittext:license UP-TO-DATE
+:enhanced-edittext:lint
+Ran lint on variant debug: 2 issues found
+Ran lint on variant release: 2 issues found
+Wrote HTML report to file:/tmp/rdisk/890/src/EnhancedEditText-master/enhanced-edittext/build/outputs/lint-results.html
+Wrote XML report to /tmp/rdisk/890/src/EnhancedEditText-master/enhanced-edittext/build/outputs/lint-results.xml
+:enhanced-edittext:preCompileDebugUnitTestJava
+:enhanced-edittext:prepareDebugUnitTestDependencies
+:enhanced-edittext:processDebugUnitTestJavaRes UP-TO-DATE
+:enhanced-edittext:compileDebugUnitTestJava UP-TO-DATE
+:enhanced-edittext:compileDebugUnitTestSources UP-TO-DATE
+:enhanced-edittext:mockableAndroidJar
+:enhanced-edittext:assembleDebugUnitTest
+:enhanced-edittext:testDebug
+:enhanced-edittext:preCompileReleaseUnitTestJava
+:enhanced-edittext:prepareReleaseUnitTestDependencies
+:enhanced-edittext:processReleaseUnitTestJavaRes UP-TO-DATE
+:enhanced-edittext:compileReleaseUnitTestJava UP-TO-DATE
+:enhanced-edittext:compileReleaseUnitTestSources UP-TO-DATE
+:enhanced-edittext:assembleReleaseUnitTest
+:enhanced-edittext:testRelease
+:enhanced-edittext:test
+:enhanced-edittext:check
+:enhanced-edittext:build
+
+BUILD SUCCESSFUL
+
+Total time: 20.84 secs
+
+2018-04-08 16:19:06,556 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-08 16:19:06,556 INFO  SysUtils - Execute command: [/tmp/rdisk/890/src/EnhancedEditText-master/gradlew, -b, /tmp/rdisk/890/src/EnhancedEditText-master/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-08 16:19:14,137 INFO  ProjectTaskService - Detected possible tasks: 66
+2018-04-08 16:19:14,137 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest installDebug lintRelease testDebug connectedAndroidTestDebug uninstallDebug
+2018-04-08 16:19:14,138 INFO  SysUtils - Execute command: [/tmp/rdisk/890/src/EnhancedEditText-master/gradlew, -b, /tmp/rdisk/890/src/EnhancedEditText-master/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, -x, uninstallDebug, build]
+2018-04-08 16:19:34,862 INFO  SysUtils - Configuration on demand is an incubating feature.
+:enhanced-edittext:compileLint
+:enhanced-edittext:copyReleaseLint UP-TO-DATE
+:enhanced-edittext:mergeReleaseProguardFiles UP-TO-DATE
+:enhanced-edittext:preBuild UP-TO-DATE
+:enhanced-edittext:preReleaseBuild UP-TO-DATE
+:enhanced-edittext:checkReleaseManifest
+:enhanced-edittext:preDebugAndroidTestBuild UP-TO-DATE
+:enhanced-edittext:preDebugBuild UP-TO-DATE
+:enhanced-edittext:preDebugUnitTestBuild UP-TO-DATE
+:enhanced-edittext:preReleaseUnitTestBuild UP-TO-DATE
+:enhanced-edittext:prepareComJoanzapataIconifyAndroidIconify206Library UP-TO-DATE
+:enhanced-edittext:prepareReleaseDependencies
+:enhanced-edittext:compileReleaseAidl UP-TO-DATE
+:enhanced-edittext:compileReleaseRenderscript UP-TO-DATE
+:enhanced-edittext:generateReleaseBuildConfig UP-TO-DATE
+:enhanced-edittext:generateReleaseAssets UP-TO-DATE
+:enhanced-edittext:mergeReleaseAssets UP-TO-DATE
+:enhanced-edittext:generateReleaseResValues UP-TO-DATE
+:enhanced-edittext:generateReleaseResources UP-TO-DATE
+:enhanced-edittext:mergeReleaseResources UP-TO-DATE
+:enhanced-edittext:processReleaseManifest UP-TO-DATE
+:enhanced-edittext:processReleaseResources UP-TO-DATE
+:enhanced-edittext:generateReleaseSources UP-TO-DATE
+:enhanced-edittext:processReleaseJavaRes UP-TO-DATE
+:enhanced-edittext:compileReleaseJava UP-TO-DATE
+:enhanced-edittext:packageReleaseJar UP-TO-DATE
+:enhanced-edittext:compileReleaseNdk UP-TO-DATE
+:enhanced-edittext:packageReleaseJniLibs UP-TO-DATE
+:enhanced-edittext:packageReleaseLocalJar UP-TO-DATE
+:enhanced-edittext:packageReleaseRenderscript UP-TO-DATE
+:enhanced-edittext:packageReleaseResources UP-TO-DATE
+:enhanced-edittext:bundleRelease UP-TO-DATE
+:enhanced-edittext-sample:preBuild UP-TO-DATE
+:enhanced-edittext-sample:preDebugBuild UP-TO-DATE
+:enhanced-edittext-sample:checkDebugManifest
+:enhanced-edittext-sample:preReleaseBuild UP-TO-DATE
+:enhanced-edittext-sample:prepareComActionbarsherlockActionbarsherlock440Library
+:enhanced-edittext-sample:prepareComJoanzapataIconifyAndroidIconify206Library
+:enhanced-edittext-sample:prepareComJoanzapataIconifyAndroidIconifyFontawesome206Library
+:enhanced-edittext-sample:prepareFrDvilleneuveAndroidEnhancedEdittext13SNAPSHOTLibrary
+:enhanced-edittext-sample:prepareDebugDependencies
+:enhanced-edittext-sample:compileDebugAidl
+:enhanced-edittext-sample:compileDebugRenderscript
+:enhanced-edittext-sample:generateDebugBuildConfig
+:enhanced-edittext-sample:generateDebugAssets UP-TO-DATE
+:enhanced-edittext-sample:mergeDebugAssets
+:enhanced-edittext-sample:generateDebugResValues
+:enhanced-edittext-sample:generateDebugResources
+:enhanced-edittext-sample:mergeDebugResources
+:enhanced-edittext-sample:processDebugManifest
+:enhanced-edittext-sample:processDebugResources
+:enhanced-edittext-sample:generateDebugSources
+:enhanced-edittext-sample:processDebugJavaRes UP-TO-DATE
+:enhanced-edittext-sample:compileDebugJavaNote: Resolve log file to /tmp/rdisk/890/src/EnhancedEditText-master/sample/build/intermediates/classes/androidannotations.log
+Note: Initialize AndroidAnnotations 3.0.1 with options {}
+Note: Start processing for 4 annotations on 6 elements
+Note: AndroidManifest.xml file found in parent folder /tmp/rdisk/890/src/EnhancedEditText-master/sample: /tmp/rdisk/890/src/EnhancedEditText-master/sample/AndroidManifest.xml
+Note: AndroidManifest.xml found: AndroidManifest [applicationPackage=fr.dvilleneuve.android.sample, componentQualifiedNames=[fr.dvilleneuve.android.sample.MainActivity_], permissionQualifiedNames=[], applicationClassName=fr.dvilleneuve.android.sample.SampleApplication, libraryProject=false, debugabble=false, minSdkVersion=10, maxSdkVersion=18, targetSdkVersion=18]
+Note: Found project R class: fr.dvilleneuve.android.sample.R
+Note: Found Android class: android.R
+Note: Validating elements
+Note: Validating with EActivityHandler: [fr.dvilleneuve.android.sample.MainActivity]
+Note: Validating with ViewByIdHandler: [edittext1, edittext2, edittext3]
+Note: Validating with ClickHandler: [buttonToggleDrawablesClicked(), buttonToggleEnableClicked()]
+Note: Validating with AfterViewsHandler: [init()]
+Note: Processing root elements
+Note: Processing root elements EActivityHandler: [fr.dvilleneuve.android.sample.MainActivity]
+Note: Processing enclosed elements
+Note: Number of files generated by AndroidAnnotations: 1
+Note: Writting following API classes in project: []
+Note: Generating class: fr.dvilleneuve.android.sample.MainActivity_
+Note: Time measurements: [Whole Processing = 267 ms], [Extract Manifest = 152 ms], [Process Annotations = 37 ms], [Generate Sources = 28 ms], [Find R Classes = 23 ms], [Validate Annotations = 11 ms], [Extract Annotations = 8 ms], 
+Note: Finish processing
+Note: Start processing for 0 annotations on 1 elements
+Note: Time measurements: [Whole Processing = 1 ms], 
+Note: Finish processing
+Note: Start processing for 0 annotations on 0 elements
+Note: Time measurements: [Whole Processing = 0 ms], 
+Note: Finish processing
+warning: Unclosed files for the types '[dummy1523204363337, dummy1523204363407]'; these types will not undergo annotation processing
+1 warning
+
+:enhanced-edittext-sample:compileDebugNdk UP-TO-DATE
+:enhanced-edittext-sample:compileDebugSources
+:enhanced-edittext-sample:preDexDebug
+:enhanced-edittext-sample:dexDebug
+:enhanced-edittext-sample:validateDebugSigning
+:enhanced-edittext-sample:packageDebug
+:enhanced-edittext-sample:zipalignDebug
+:enhanced-edittext-sample:assembleDebug
+:enhanced-edittext-sample:checkReleaseManifest
+:enhanced-edittext-sample:prepareReleaseDependencies
+:enhanced-edittext-sample:compileReleaseAidl
+:enhanced-edittext-sample:compileReleaseRenderscript
+:enhanced-edittext-sample:generateReleaseBuildConfig
+:enhanced-edittext-sample:generateReleaseAssets UP-TO-DATE
+:enhanced-edittext-sample:mergeReleaseAssets
+:enhanced-edittext-sample:generateReleaseResValues
+:enhanced-edittext-sample:generateReleaseResources
+:enhanced-edittext-sample:mergeReleaseResources
+:enhanced-edittext-sample:processReleaseManifest
+:enhanced-edittext-sample:processReleaseResources
+:enhanced-edittext-sample:generateReleaseSources
+:enhanced-edittext-sample:processReleaseJavaRes UP-TO-DATE
+:enhanced-edittext-sample:compileReleaseJavaNote: Resolve log file to /tmp/rdisk/890/src/EnhancedEditText-master/sample/build/intermediates/classes/androidannotations.log
+Note: Initialize AndroidAnnotations 3.0.1 with options {}
+Note: Start processing for 4 annotations on 6 elements
+Note: AndroidManifest.xml file found in parent folder /tmp/rdisk/890/src/EnhancedEditText-master/sample: /tmp/rdisk/890/src/EnhancedEditText-master/sample/AndroidManifest.xml
+Note: AndroidManifest.xml found: AndroidManifest [applicationPackage=fr.dvilleneuve.android.sample, componentQualifiedNames=[fr.dvilleneuve.android.sample.MainActivity_], permissionQualifiedNames=[], applicationClassName=fr.dvilleneuve.android.sample.SampleApplication, libraryProject=false, debugabble=false, minSdkVersion=10, maxSdkVersion=18, targetSdkVersion=18]
+Note: Found project R class: fr.dvilleneuve.android.sample.R
+Note: Found Android class: android.R
+Note: Validating elements
+Note: Validating with EActivityHandler: [fr.dvilleneuve.android.sample.MainActivity]
+Note: Validating with ViewByIdHandler: [edittext1, edittext2, edittext3]
+Note: Validating with ClickHandler: [buttonToggleDrawablesClicked(), buttonToggleEnableClicked()]
+Note: Validating with AfterViewsHandler: [init()]
+Note: Processing root elements
+Note: Processing root elements EActivityHandler: [fr.dvilleneuve.android.sample.MainActivity]
+Note: Processing enclosed elements
+Note: Number of files generated by AndroidAnnotations: 1
+Note: Writting following API classes in project: []
+Note: Generating class: fr.dvilleneuve.android.sample.MainActivity_
+Note: Time measurements: [Whole Processing = 104 ms], [Process Annotations = 35 ms], [Generate Sources = 27 ms], [Find R Classes = 13 ms], [Validate Annotations = 9 ms], [Extract Manifest = 7 ms], [Extract Annotations = 4 ms], 
+Note: Finish processing
+Note: Start processing for 0 annotations on 1 elements
+Note: Time measurements: [Whole Processing = 0 ms], 
+Note: Finish processing
+Note: Start processing for 0 annotations on 0 elements
+Note: Time measurements: [Whole Processing = 1 ms], 
+Note: Finish processing
+warning: Unclosed files for the types '[dummy1523204371294, dummy1523204371359]'; these types will not undergo annotation processing
+1 warning
+
+:enhanced-edittext-sample:compileReleaseNdk UP-TO-DATE
+:enhanced-edittext-sample:compileReleaseSources
+:enhanced-edittext-sample:lintVitalRelease
+:enhanced-edittext-sample:preDexRelease
+:enhanced-edittext-sample:dexRelease
+:enhanced-edittext-sample:packageRelease
+:enhanced-edittext-sample:assembleRelease
+:enhanced-edittext-sample:signArchives SKIPPED
+:enhanced-edittext-sample:assemble
+:enhanced-edittext-sample:build
+
+BUILD SUCCESSFUL
+
+Total time: 20.303 secs
+
+2018-04-08 16:19:34,898 INFO  FullProcessService - Found APK file: /tmp/rdisk/890/src/EnhancedEditText-master/sample/build/outputs/apk/enhanced-edittext-sample-release-unsigned.apk

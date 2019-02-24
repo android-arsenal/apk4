@@ -1,0 +1,310 @@
+2018-04-08 13:43:15,290 INFO  DownloadService - Downloading "https://github.com/chalup/microorm/archive/master.zip", attempt 3
+2018-04-08 13:43:15,673 INFO  DownloadService - Downloaded https://github.com/chalup/microorm/archive/master.zip, attempt 3
+2018-04-08 13:43:15,673 INFO  DownloadService - Size of file "/tmp/rdisk/967/master.zip": 97 KB
+2018-04-08 13:43:15,673 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-08 13:43:15,674 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/967/master.zip: true
+2018-04-08 13:43:15,674 DEBUG ZipUtil - Extracting '/tmp/rdisk/967/master.zip' into '/tmp/rdisk/967/src'.
+2018-04-08 13:43:15,682 INFO  FullProcessService - Size of directory with sources: 173 KB
+2018-04-08 13:43:15,682 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/967/src]
+2018-04-08 13:43:15,686 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/967/src/.git/
+
+2018-04-08 13:43:15,688 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/967/src/microorm-master/gradlew
+2018-04-08 13:43:15,690 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/967/src/microorm-master/library/build.gradle /tmp/rdisk/967/src/microorm-master/build.gradle
+2018-04-08 13:43:15,692 INFO  ProjectBuildService - All script(s): /tmp/rdisk/967/src/microorm-master/settings.gradle /tmp/rdisk/967/src/microorm-master/library/gradle-mvn-push.gradle /tmp/rdisk/967/src/microorm-master/library/build.gradle /tmp/rdisk/967/src/microorm-master/build.gradle
+2018-04-08 13:43:15,692 INFO  ProjectBuildService - Remote scripts: none
+2018-04-08 13:43:15,692 INFO  ProjectFixService - Fixing project...
+2018-04-08 13:43:15,699 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/967/src/microorm-master/library/local.properties
+2018-04-08 13:43:15,700 INFO  ProjectFixService - Build info for "/tmp/rdisk/967/src/microorm-master/library/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=10,targetSdkVersion=22]
+2018-04-08 13:43:15,700 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/967/src/microorm-master/local.properties
+2018-04-08 13:43:15,700 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-08 13:43:15,701 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-08 13:43:15,704 INFO  ProjectFixService - Build info for "/tmp/rdisk/967/src/microorm-master/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=10,targetSdkVersion=22]
+2018-04-08 13:43:15,704 INFO  ProjectFixService - Project was maybe fixed
+2018-04-08 13:43:15,704 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-08 13:43:15,704 INFO  SysUtils - Execute command: [/tmp/rdisk/967/src/microorm-master/gradlew, -b, /tmp/rdisk/967/src/microorm-master/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-08 13:43:29,909 INFO  ProjectTaskService - Detected possible tasks: 71
+2018-04-08 13:43:29,910 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-08 13:43:29,910 INFO  SysUtils - Execute command: [/tmp/rdisk/967/src/microorm-master/gradlew, -b, /tmp/rdisk/967/src/microorm-master/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-08 13:43:40,429 INFO  SysUtils - Configuration on demand is an incubating feature.
+:library:androidJavadocs/tmp/rdisk/967/src/microorm-master/library/src/main/java/org/chalup/microorm/ReflectiveDaoAdapter.java:19: error: package com.google.common.base does not exist
+import com.google.common.base.Joiner;
+                             ^
+/tmp/rdisk/967/src/microorm-master/library/src/main/java/org/chalup/microorm/ReflectiveDaoAdapter.java:20: error: package com.google.common.collect does not exist
+import com.google.common.collect.ImmutableList;
+                                ^
+/tmp/rdisk/967/src/microorm-master/library/src/main/java/org/chalup/microorm/ReflectiveDaoAdapter.java:21: error: package com.google.common.collect does not exist
+import com.google.common.collect.ImmutableSet;
+                                ^
+/tmp/rdisk/967/src/microorm-master/library/src/main/java/org/chalup/microorm/ReflectiveDaoAdapter.java:22: error: package com.google.common.collect.ImmutableSet does not exist
+import com.google.common.collect.ImmutableSet.Builder;
+                                             ^
+/tmp/rdisk/967/src/microorm-master/library/src/main/java/org/chalup/microorm/ReflectiveDaoAdapter.java:23: error: package com.google.common.collect does not exist
+import com.google.common.collect.Sets;
+                                ^
+/tmp/rdisk/967/src/microorm-master/library/src/main/java/org/chalup/microorm/ReflectiveDaoAdapter.java:35: error: cannot find symbol
+  private final ImmutableList<FieldAdapter> mFieldAdapters;
+                ^
+  symbol:   class ImmutableList
+  location: class ReflectiveDaoAdapter<T>
+  where T is a type-variable:
+    T extends Object declared in class ReflectiveDaoAdapter
+/tmp/rdisk/967/src/microorm-master/library/src/main/java/org/chalup/microorm/ReflectiveDaoAdapter.java:36: error: cannot find symbol
+  private final ImmutableList<EmbeddedFieldInitializer> mFieldInitializers;
+                ^
+  symbol:   class ImmutableList
+  location: class ReflectiveDaoAdapter<T>
+  where T is a type-variable:
+    T extends Object declared in class ReflectiveDaoAdapter
+/tmp/rdisk/967/src/microorm-master/library/src/main/java/org/chalup/microorm/ReflectiveDaoAdapter.java:39: error: cannot find symbol
+  private final ImmutableSet<String> mWritableDuplicates;
+                ^
+  symbol:   class ImmutableSet
+  location: class ReflectiveDaoAdapter<T>
+  where T is a type-variable:
+    T extends Object declared in class ReflectiveDaoAdapter
+/tmp/rdisk/967/src/microorm-master/library/src/main/java/org/chalup/microorm/ReflectiveDaoAdapter.java:41: error: cannot find symbol
+  ReflectiveDaoAdapter(Class<T> klass, ImmutableList<FieldAdapter> fieldAdapters, ImmutableList<EmbeddedFieldInitializer> fieldInitializers) {
+                                       ^
+  symbol:   class ImmutableList
+  location: class ReflectiveDaoAdapter<T>
+  where T is a type-variable:
+    T extends Object declared in class ReflectiveDaoAdapter
+/tmp/rdisk/967/src/microorm-master/library/src/main/java/org/chalup/microorm/ReflectiveDaoAdapter.java:41: error: cannot find symbol
+  ReflectiveDaoAdapter(Class<T> klass, ImmutableList<FieldAdapter> fieldAdapters, ImmutableList<EmbeddedFieldInitializer> fieldInitializers) {
+                                                                                  ^
+  symbol:   class ImmutableList
+  location: class ReflectiveDaoAdapter<T>
+  where T is a type-variable:
+    T extends Object declared in class ReflectiveDaoAdapter
+/tmp/rdisk/967/src/microorm-master/library/src/main/java/org/chalup/microorm/ReflectiveDaoAdapter.java:62: error: cannot find symbol
+  private static <T> ImmutableSet<T> findDuplicates(T[] array) {
+                     ^
+  symbol:   class ImmutableSet
+  location: class ReflectiveDaoAdapter<T>
+  where T is a type-variable:
+    T extends Object declared in class ReflectiveDaoAdapter
+/tmp/rdisk/967/src/microorm-master/library/src/main/java/org/chalup/microorm/MicroOrm.java:19: error: package com.google.common.base does not exist
+import com.google.common.base.Function;
+                             ^
+/tmp/rdisk/967/src/microorm-master/library/src/main/java/org/chalup/microorm/MicroOrm.java:20: error: package com.google.common.base does not exist
+import com.google.common.base.Preconditions;
+                             ^
+/tmp/rdisk/967/src/microorm-master/library/src/main/java/org/chalup/microorm/MicroOrm.java:21: error: package com.google.common.collect does not exist
+import com.google.common.collect.ImmutableList;
+                                ^
+/tmp/rdisk/967/src/microorm-master/library/src/main/java/org/chalup/microorm/MicroOrm.java:22: error: package com.google.common.collect does not exist
+import com.google.common.collect.ImmutableMap;
+                                ^
+/tmp/rdisk/967/src/microorm-master/library/src/main/java/org/chalup/microorm/MicroOrm.java:23: error: package com.google.common.collect does not exist
+import com.google.common.collect.Lists;
+                                ^
+/tmp/rdisk/967/src/microorm-master/library/src/main/java/org/chalup/microorm/MicroOrm.java:24: error: package com.google.common.collect does not exist
+import com.google.common.collect.Maps;
+                                ^
+/tmp/rdisk/967/src/microorm-master/library/src/main/java/org/chalup/microorm/MicroOrm.java:122: error: cannot find symbol
+  public <T> Function<Cursor, T> getFunctionFor(final Class<T> klass) {
+             ^
+  symbol:   class Function
+  location: class MicroOrm
+/tmp/rdisk/967/src/microorm-master/library/src/main/java/org/chalup/microorm/MicroOrm.java:238: error: cannot find symbol
+  private MicroOrm(ImmutableMap<Class<?>, TypeAdapter<?>> typeAdapters) {
+                   ^
+  symbol:   class ImmutableMap
+  location: class MicroOrm
+/tmp/rdisk/967/src/microorm-master/library/src/main/java/org/chalup/microorm/MicroOrm.java:286: error: cannot find symbol
+  private static final ImmutableMap<Class<?>, TypeAdapter<?>> TYPE_ADAPTERS;
+                       ^
+  symbol:   class ImmutableMap
+  location: class MicroOrm
+/tmp/rdisk/967/src/microorm-master/library/src/main/java/org/chalup/microorm/MicroOrm.java:311: error: cannot find symbol
+  private final ImmutableMap<Class<?>, TypeAdapter<?>> mTypeAdapters;
+                ^
+  symbol:   class ImmutableMap
+  location: class MicroOrm
+/tmp/rdisk/967/src/microorm-master/library/src/main/java/org/chalup/microorm/MicroOrm.java:145: error: cannot find symbol
+    <T> Function<Cursor, T> as(Class<T> klass);
+        ^
+  symbol:   class Function
+  location: interface ColumnFunctionBuilder
+/tmp/rdisk/967/src/microorm-master/library/src/main/java/org/chalup/microorm/Fields.java:19: error: package com.google.common.collect does not exist
+import com.google.common.collect.Lists;
+                                ^
+/tmp/rdisk/967/src/microorm-master/library/src/main/java/org/chalup/microorm/MicroOrm.java:114: error: reference not found
+   * Method for acquiring the {@link Function} converting the {@link Cursor}
+                                     ^
+/tmp/rdisk/967/src/microorm-master/library/src/main/java/org/chalup/microorm/MicroOrm.java:119: error: reference not found
+   * @return the {@link Function} converting {@link Cursor} row into object
+                        ^
+/tmp/rdisk/967/src/microorm-master/library/src/main/java/org/chalup/microorm/MicroOrm.java:152: warning: no @param for columnName
+  public ColumnFunctionBuilder getColumn(final String columnName) {
+                               ^
+/tmp/rdisk/967/src/microorm-master/library/src/main/java/org/chalup/microorm/MicroOrm.java:152: warning: no @return
+  public ColumnFunctionBuilder getColumn(final String columnName) {
+                               ^
+/tmp/rdisk/967/src/microorm-master/library/src/main/java/org/chalup/microorm/MicroOrm.java:181: warning: no @param for <T>
+  public <T> String[] getProjection(Class<T> klass) {
+                      ^
+/tmp/rdisk/967/src/microorm-master/library/src/main/java/org/chalup/microorm/MicroOrm.java:248: error: unexpected end tag: </p>
+   * finally calling {@link #build()}.</p>
+                                      ^
+/tmp/rdisk/967/src/microorm-master/library/src/main/java/org/chalup/microorm/MicroOrm.java:134: error: reference not found
+   * Constructs {@link Function} converting single column in {@link Cursor}
+                       ^
+/tmp/rdisk/967/src/microorm-master/library/src/main/java/org/chalup/microorm/MicroOrm.java:267: warning: no @param for <T>
+    public <T> Builder registerTypeAdapter(Class<T> klass, TypeAdapter<T> typeAdapter) {
+                       ^
+/tmp/rdisk/967/src/microorm-master/library/src/main/java/org/chalup/microorm/MicroOrm.java:142: error: reference not found
+     * @return the {@link Function} converting {@link Cursor} row into object
+                          ^
+
+5 errors
+27 warnings
+:library:androidJavadocsJar
+:library:androidSourcesJar
+:library:compileLint
+:library:copyDebugLint UP-TO-DATE
+:library:preBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:checkDebugManifest
+:library:prepareDebugDependencies
+:library:compileDebugAidl
+:library:compileDebugRenderscript
+:library:generateDebugBuildConfig
+:library:generateDebugAssets UP-TO-DATE
+:library:mergeDebugAssets
+:library:generateDebugResValues
+:library:generateDebugResources
+:library:packageDebugResources
+:library:processDebugManifest
+:library:processDebugResources
+:library:generateDebugSources
+:library:processDebugJavaRes UP-TO-DATE
+:library:compileDebugKotlin
+:library:compileDebugJavaWithJavac
+:library:copyDebugKotlinClasses
+:library:extractDebugAnnotations
+:library:mergeDebugProguardFiles
+:library:packageDebugJar
+:library:compileDebugNdk UP-TO-DATE
+:library:packageDebugJniLibs UP-TO-DATE
+:library:packageDebugLocalJar UP-TO-DATE
+:library:packageDebugRenderscript UP-TO-DATE
+:library:bundleDebug
+:library:compileDebugSources
+:library:assembleDebug
+:library:copyReleaseLint UP-TO-DATE
+:library:preReleaseBuild UP-TO-DATE
+:library:checkReleaseManifest
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl
+:library:compileReleaseRenderscript
+:library:generateReleaseBuildConfig
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets
+:library:generateReleaseResValues
+:library:generateReleaseResources
+:library:packageReleaseResources
+:library:processReleaseManifest
+:library:processReleaseResources
+:library:generateReleaseSources
+:library:processReleaseJavaRes UP-TO-DATE
+:library:compileReleaseKotlin
+:library:compileReleaseJavaWithJavac
+:library:copyReleaseKotlinClasses
+:library:extractReleaseAnnotations
+:library:mergeReleaseProguardFiles
+:library:packageReleaseJar
+:library:compileReleaseNdk UP-TO-DATE
+:library:packageReleaseJniLibs UP-TO-DATE
+:library:packageReleaseLocalJar UP-TO-DATE
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:bundleRelease
+:library:compileReleaseSources
+:library:assembleRelease
+:library:signArchives SKIPPED
+:library:assemble
+:library:build
+
+BUILD SUCCESSFUL
+
+Total time: 10.083 secs
+
+2018-04-08 13:43:40,437 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-08 13:43:40,441 INFO  SysUtils - Execute command: [/tmp/rdisk/967/src/microorm-master/gradlew, -b, /tmp/rdisk/967/src/microorm-master/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-08 13:43:47,401 INFO  ProjectTaskService - Detected possible tasks: 71
+2018-04-08 13:43:47,401 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-08 13:43:47,401 INFO  SysUtils - Execute command: [/tmp/rdisk/967/src/microorm-master/gradlew, -b, /tmp/rdisk/967/src/microorm-master/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-08 13:43:54,423 INFO  SysUtils - Configuration on demand is an incubating feature.
+:library:androidJavadocs UP-TO-DATE
+:library:androidJavadocsJar UP-TO-DATE
+:library:androidSourcesJar UP-TO-DATE
+:library:compileLint
+:library:copyDebugLint UP-TO-DATE
+:library:preBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:checkDebugManifest
+:library:prepareDebugDependencies
+:library:compileDebugAidl UP-TO-DATE
+:library:compileDebugRenderscript UP-TO-DATE
+:library:generateDebugBuildConfig UP-TO-DATE
+:library:generateDebugAssets UP-TO-DATE
+:library:mergeDebugAssets UP-TO-DATE
+:library:generateDebugResValues UP-TO-DATE
+:library:generateDebugResources UP-TO-DATE
+:library:packageDebugResources UP-TO-DATE
+:library:processDebugManifest UP-TO-DATE
+:library:processDebugResources UP-TO-DATE
+:library:generateDebugSources UP-TO-DATE
+:library:processDebugJavaRes UP-TO-DATE
+:library:compileDebugKotlin UP-TO-DATE
+:library:compileDebugJavaWithJavac UP-TO-DATE
+:library:copyDebugKotlinClasses UP-TO-DATE
+:library:extractDebugAnnotations UP-TO-DATE
+:library:mergeDebugProguardFiles UP-TO-DATE
+:library:packageDebugJar UP-TO-DATE
+:library:compileDebugNdk UP-TO-DATE
+:library:packageDebugJniLibs UP-TO-DATE
+:library:packageDebugLocalJar UP-TO-DATE
+:library:packageDebugRenderscript UP-TO-DATE
+:library:bundleDebug UP-TO-DATE
+:library:compileDebugSources UP-TO-DATE
+:library:assembleDebug UP-TO-DATE
+:library:copyReleaseLint UP-TO-DATE
+:library:preReleaseBuild UP-TO-DATE
+:library:checkReleaseManifest
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl UP-TO-DATE
+:library:compileReleaseRenderscript UP-TO-DATE
+:library:generateReleaseBuildConfig UP-TO-DATE
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets UP-TO-DATE
+:library:generateReleaseResValues UP-TO-DATE
+:library:generateReleaseResources UP-TO-DATE
+:library:packageReleaseResources UP-TO-DATE
+:library:processReleaseManifest UP-TO-DATE
+:library:processReleaseResources UP-TO-DATE
+:library:generateReleaseSources UP-TO-DATE
+:library:processReleaseJavaRes UP-TO-DATE
+:library:compileReleaseKotlin UP-TO-DATE
+:library:compileReleaseJavaWithJavac UP-TO-DATE
+:library:copyReleaseKotlinClasses UP-TO-DATE
+:library:extractReleaseAnnotations UP-TO-DATE
+:library:mergeReleaseProguardFiles UP-TO-DATE
+:library:packageReleaseJar UP-TO-DATE
+:library:compileReleaseNdk UP-TO-DATE
+:library:packageReleaseJniLibs UP-TO-DATE
+:library:packageReleaseLocalJar UP-TO-DATE
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:bundleRelease UP-TO-DATE
+:library:compileReleaseSources UP-TO-DATE
+:library:assembleRelease UP-TO-DATE
+:library:signArchives SKIPPED
+:library:assemble UP-TO-DATE
+:library:build
+
+BUILD SUCCESSFUL
+
+Total time: 6.577 secs
+
+2018-04-08 13:43:54,430 ERROR FullProcessService - Project build has not produced APK file
+2018-04-08 13:43:54,436 ERROR FullProcessService - Could not find generated or existed APK file

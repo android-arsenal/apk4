@@ -1,0 +1,7 @@
+{
+  "com.microsoft.onedrivesdk" : [ "BuildConfig" ],
+  "com.microsoft.onedrivesdk.common" : [ "Client", "ClientTests", "TestActivity", "TestActivity$1", "TestActivity$QueryIntentActivitiesAction", "TestActivity$StartActivityAction", "TestActivity$StartActivityForResultAction" ],
+  "com.microsoft.onedrivesdk.picker" : [ "IPicker", "IPickerResult", "LinkType", "Picker", "PickerResult", "PickerResultTests", "PickerTests", "PickerTests$1", "PickerTests$2", "PickerTests$3", "PickerTests$4", "PickerTests$5", "PickerTests$6", "PickerTests$7", "PickerTests$8" ],
+  "com.microsoft.onedrivesdk.saver" : [ "ISaver", "Saver", "SaverError", "SaverException", "SaverTests", "SaverTests$1", "SaverTests$2", "SaverTests$3", "SaverTests$4", "SaverTests$5", "SaverTests$6", "SaverTests$7", "SaverTests$8" ],
+  "com.microsoft.onedrivesdk.tests" : [ "BuildConfig" ]
+}

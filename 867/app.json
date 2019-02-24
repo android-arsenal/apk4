@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "me.storm.ninegag",
+    "label" : "9GAG",
+    "icon" : "res/drawable-xhdpi-v4/icon.png",
+    "versionName" : "1.1.0-debug",
+    "versionCode" : 2,
+    "installLocation" : null,
+    "minSdkVersion" : "14",
+    "targetSdkVersion" : "22",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ "android.permission.INTERNET", "android.permission.ACCESS_NETWORK_STATE", "android.permission.ACCESS_WIFI_STATE", "android.permission.WRITE_EXTERNAL_STORAGE" ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-xhdpi-v4/icon.png",
+    "density" : 0,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAAB71BMVEX///8AAAAXWawXWawXWawXWawXWaxdi8WOrtejvd/T3+/8/f7////+///S3+/6/P3+/v/3+vz1+Pz4+vzI2OszbbYZWq07c7n7/P75+/01brc8dLn6+/32+fzz9vs2b7e1yuXi6vVjj8fy9vokYrGUstnE1epAdrtwmczr8fifutwnZbL09/tPgcDw9Pl4n88bXK00brayyOPX4vFSg8EiYbCQsNe0yuQYWqxtl8vo7/ePr9chYLBMf7/P3O7m7fZplMkxbLWvxuLK2exFer0gYK+LrNb3+fxlkch7odClv98rZ7NqlMr1+PuHqdQfX6+cuNyApNEcXK7M2+2qwuEvarQ9dLq/0ejc5vPL2uxIfL5bisQmY7Hw9fp9otBEerzH1+v5+v2SsdgjYbAtabSnwN+RsNjq8Phul8sdXq6Ep9O3zOXR3u5Nf79ijsfh6vRXh8PZ5PGwxuPG1up8odAqZ7Oivd7x9fpEebz9/v6gu91ok8lBd7thjsa2y+VVhcLJ2exGe72bt9tnkskcXa6uxeI5cbjc5vJYh8OYtdp2nc7u8/mKq9UeXq9ZicTY4/EpZrPV4fDg6fTA0uk6crm90Oi8z+c3cLekvt4oZbKIqtQ+dbqFqNPb5fKpweAuabQ4cLhJfb77/P3S3u9He71nuGJaAAAApXRSTlMAADC5+v/2//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8tXOpCAAADLElEQVRo3u2a6VdSQRjGFXhFusPlBkqEpBiFqYRUZpQWbVaWltGipFiaVthim5mmmWXZJq1Wtm9/aCCyzGVYnDv3hOfwfBxmnt+5s7zvLBQU5JUTKlQoVcBYKqWiMAZQFIEMKlLEAEqQRcoYQCUPQBUDgEzKA3IVoFbTO4ra5gEUAHVIxZoVHEJaCnG8pjjskAGg0WkFbuWSpdcbOEGnyQAIi9eWlFL1j3EVL/BZjIFptZl2CMospiwAWj39IK/RZgMopweULweAUV5AhbVyrWSALWX7destCCF7lUwA44ZqtCCuplYSwEFuvJFHMTnrXKwBmzYjTFvqmQK2NhiQWNvMzADu7TsQQYbGJjaAnbtQCnl2u6UD9uxFabRvv0RA84GDmGHloRYnViAcPiIB4G71YG5tR48B1LZzWKHtuJcacALvj5OnIsWnO/DyzuZoA9sSAZiN70y8Tlcn9lM3A4C/FZsw3h4dCeCQ8AVWbF2dPYdYA1Bv3/loef+AgJgALvRiPhcvLWSbwKBDtBqoAVBxGXe6chXg2lDScqMHAFy/gXvdvEVYz1IA4LrtR5kkCQAwfEcg+44wAgDcLSHYj44NMwOA+55H7G8fj09j6QCApkZsyg5NJK4TFgAA8/2YvWMwAOwBAJORKSsM9ItWOitAZMo+mEoKJcwAoSn78FFCVJUBgGu5AOp9g9Mk+9LHTABPwgF15mnyTrvPwCIWdT9bTI1W/OTpel7NIti56l7EN4ovZ+N1gq+YRNPXbzCbt9ETdtU7PCz5m2i/4P0c7vThYzghfxrFCrmaeaAfg+AMZmZpmP8sSsgdXxKqU8wibw+e0ES5p7MLa0u1DobHuFSp0tkiOklRruRxO9Gea086C1KHionkrQqaK0uuRx+LAl9FY/stSIoeUoJd/3chTecziaZTvtSdzyZcL+4tSJ3PKh+EjmzkzmeXcH64QF5AeuUIQO+i9Z/N6lLQZPlJC/j1O5trTV74Mz5NYx/4O5PxYjZytSxY2mwEjYzY0kpvyXy1HLkc501aKpkyX47nHyhyA7D839HyABJA9gdr2Z/cZf/TgOx/e8jrv+ofbawpHTXMBVcAAAAASUVORK5CYII="
+  },
+  "dexClasses" : 1797,
+  "locales" : [ "" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"2\" android:versionName=\"1.1.0-debug\" package=\"me.storm.ninegag\" platformBuildVersionCode=\"23\" platformBuildVersionName=\"6.0-2704002\">\n\t<uses-sdk android:minSdkVersion=\"14\" android:targetSdkVersion=\"22\" />\n\t<uses-permission android:name=\"android.permission.INTERNET\" />\n\t<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />\n\t<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\" />\n\t<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />\n\t<application android:theme=\"resourceId:0x7f090003\" android:label=\"9GAG\" android:icon=\"res/drawable-xhdpi-v4/icon.png\" android:name=\"me.storm.ninegag.App\" android:debuggable=\"true\" android:allowBackup=\"true\">\n\t\t<provider android:name=\"me.storm.ninegag.dao.DataProvider\" android:exported=\"false\" android:authorities=\"com.storm.9gag.provider\">\n\t\t\t<grant-uri-permission android:pathPattern=\".*\" />\n\t\t</provider>\n\t\t<activity android:label=\"9GAG\" android:name=\"me.storm.ninegag.ui.MainActivity\" android:configChanges=\"0x80\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<activity android:theme=\"resourceId:0x7f090005\" android:name=\"me.storm.ninegag.ui.ImageViewActivity\" />\n\t\t<activity android:theme=\"resourceId:0x7f090005\" android:name=\"me.storm.ninegag.ui.PreferenceActivity\" />\n\t</application>\n</manifest>\n",
+  "fileSize" : 863113,
+  "crc32" : 3752000093,
+  "sha256" : "b0129cc7baf6c199b04b7c050b8a46c11fd863761e207d2875581b87bdae2a78",
+  "buildTime" : 1526054097000
+}

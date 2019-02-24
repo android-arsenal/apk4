@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "it.gcacace.signaturepad",
+    "label" : "SignaturePad",
+    "icon" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "versionName" : "1.2.1",
+    "versionCode" : 121,
+    "installLocation" : null,
+    "minSdkVersion" : "9",
+    "targetSdkVersion" : "25",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ "android.permission.WRITE_EXTERNAL_STORAGE", "android.permission.INTERNET" ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAD2ElEQVR42u2ZSWgTURiA44ZVcUEQNxCXKq61zUxbay89qKAIouJFKx704MGLC1pwqyCKgiIeK9YFhNKDWto3k1qwiqAIVbAguKAVxCbvvaQLKFXRjv8/894kjWmbLryZah78lzdJ+P5//j2BQOZkzr9xtNrWiZpBz2gGewvSAdIcNNjZfMJm+R6+sIbO1Ah9DtBWCumEZ/sDljXKl/Bg4VzN4J96gY8LYTe0Jmucr+D1ULQA4Fi/8K7QCt+9gWzj/XjdZJsAMJSOErrBNnpLXG6N1kx6CUCqNJPtyamPTHLfiKNIa18KQGAb3mYbwg8lQYUBfK8M0rwHfA7cvexDiVbP3SbPiC0HkFsgv10wk98vNGJT8HnuvfZpfSjxzhPooElz0NIF9ZEFbgaqo2tF3pdwL/KM8Ax8tro2OhffTgoFrqq3OOE6ZJCYAOhGP0aF7BoAVocUWRd/E6ypuIZPtmOCRLYkwUe0EJ+tXIGSxpYshIHAfZwA81M36FH0/ZJGaywoeCch01S5gR3/TpdGIoXqqAEsP0TXSZeQdzqh221LxmErUQFHCUbcbGPSrcL1Sp1CxvcphdcJvygtDVIdrIsuc13KyTTPElLjdfyOHbyEfRT3zXin1bbNA7e6prbCxuETq+gPsPZxrAPx5i1evHSTH7TvDbrBvauLrHTeTkuWwjzPzvddiGgNwkslQKmn0sdza9li+95kD4UbbVObKqH9TaunQUChhHAnJhs253f4LtvFGtqm+g8+LnelO0Fg75atM7pMUahzulJ4aIdPDRBevokytz8y6Gu8Uz7AAPzJQcE78r2A8CXC78uCJj+tFt5kJ4YAL/I9v42/JauvQsuzY9gWDFUBkK9K02QCvDVMEsagVenzh4fJ8padPklklboKC9VyOOFlR6oG3mAHRiy8XahCLFv0OE9A3oB8Gxw8jeEqRfnW7O9YoEcGoUAUBpKg2sVTKLwCV31BwhtwjoWyvx7vi6o/T5DVM13LK4cXKfNKEswr7Ffs4dsMz8chOw0F2j2BF1aOpehhzsnPOBsEWgH3v3qFVzoK9twklPa6ISO0XHaTyYNIIjyuD73bXfYcwlNJPcaIWJEsTHrW4ZnlE5ZP6eT9bnQ1MZR3yL5eN2ixp9uzIKGX080wuH0Qb6zSF/BO8DI+gPx+U2Yl3LZ5vrsUM+lACtSXVMXOQwXYozRHwibcdyauyD0/Wn10aT/B24VTVNCIrAn48eCfD72Af8BBpseq0G8HR7uk4MX9PYE+aPOOamtMwO9HI3ynAOdO60wXBUbSgexzAf+3wjQayJzM+T/OHxFBsdU2fe3ZAAAAAElFTkSuQmCC"
+  },
+  "dexClasses" : 1860,
+  "locales" : [ "", "az_AZ", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "sq_AL", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bs_BA", "bn_BD", "fa", "gu_IN", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "pa_IN", "af", "en_AU", "in", "vi", "fr_CA", "sr", "pt_BR", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "be_BY", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"121\" android:versionName=\"1.2.1\" package=\"it.gcacace.signaturepad\" platformBuildVersionCode=\"25\" platformBuildVersionName=\"7.1.1\">\n\t<uses-sdk android:minSdkVersion=\"9\" android:targetSdkVersion=\"25\" />\n\t<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />\n\t<uses-permission android:name=\"android.permission.INTERNET\" />\n\t<meta-data android:name=\"android.support.VERSION\" android:value=\"25.3.1\" />\n\t<application android:theme=\"resourceId:0x7f0700a4\" android:label=\"SignaturePad\" android:icon=\"res/drawable-mdpi-v4/ic_launcher.png\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"SignaturePad\" android:name=\"com.github.gcacace.signaturepad.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 1392009,
+  "crc32" : 3411917933,
+  "sha256" : "ea47eb22436383efab11d2be90c26e0e63a488f53eb916557b10220eb1c1b164",
+  "buildTime" : 1526278651000
+}

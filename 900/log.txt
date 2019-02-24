@@ -1,0 +1,184 @@
+2018-04-08 16:09:36,265 INFO  DownloadService - Downloading "https://github.com/greenhalolabs/EmailAutoCompleteTextView/archive/master.zip", attempt 3
+2018-04-08 16:09:36,656 INFO  DownloadService - Downloaded https://github.com/greenhalolabs/EmailAutoCompleteTextView/archive/master.zip, attempt 3
+2018-04-08 16:09:36,656 INFO  DownloadService - Size of file "/tmp/rdisk/900/master.zip": 151 KB
+2018-04-08 16:09:36,656 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-08 16:09:36,656 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/900/master.zip: true
+2018-04-08 16:09:36,656 DEBUG ZipUtil - Extracting '/tmp/rdisk/900/master.zip' into '/tmp/rdisk/900/src'.
+2018-04-08 16:09:36,664 INFO  FullProcessService - Size of directory with sources: 192 KB
+2018-04-08 16:09:36,665 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/900/src]
+2018-04-08 16:09:36,669 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/900/src/.git/
+
+2018-04-08 16:09:36,672 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/900/src/EmailAutoCompleteTextView-master/gradlew
+2018-04-08 16:09:36,674 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/900/src/EmailAutoCompleteTextView-master/emailautocompletetextview/build.gradle /tmp/rdisk/900/src/EmailAutoCompleteTextView-master/example/build.gradle /tmp/rdisk/900/src/EmailAutoCompleteTextView-master/build.gradle
+2018-04-08 16:09:36,676 INFO  ProjectBuildService - All script(s): /tmp/rdisk/900/src/EmailAutoCompleteTextView-master/settings.gradle /tmp/rdisk/900/src/EmailAutoCompleteTextView-master/gradle-mvn-push.gradle /tmp/rdisk/900/src/EmailAutoCompleteTextView-master/example/build.gradle /tmp/rdisk/900/src/EmailAutoCompleteTextView-master/emailautocompletetextview/build.gradle /tmp/rdisk/900/src/EmailAutoCompleteTextView-master/build.gradle
+2018-04-08 16:09:36,676 INFO  ProjectBuildService - Remote scripts: none
+2018-04-08 16:09:36,676 INFO  ProjectFixService - Fixing project...
+2018-04-08 16:09:36,683 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/900/src/EmailAutoCompleteTextView-master/emailautocompletetextview/local.properties
+2018-04-08 16:09:36,683 INFO  ProjectFixService - Build info for "/tmp/rdisk/900/src/EmailAutoCompleteTextView-master/emailautocompletetextview/build.gradle": [buildToolsVersion=20.0.0,compileSdkVersion=20,minSdkVersion=8,targetSdkVersion=19]
+2018-04-08 16:09:36,683 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/900/src/EmailAutoCompleteTextView-master/example/local.properties
+2018-04-08 16:09:36,684 INFO  ProjectFixService - Build info for "/tmp/rdisk/900/src/EmailAutoCompleteTextView-master/example/build.gradle": [buildToolsVersion=20.0.0,compileSdkVersion=20,minSdkVersion=8,targetSdkVersion=19]
+2018-04-08 16:09:36,684 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/900/src/EmailAutoCompleteTextView-master/local.properties
+2018-04-08 16:09:36,684 INFO  WrapperPropertiesFixService - Gradle wrapper: http://services.gradle.org/distributions/gradle-1.10-all.zip
+2018-04-08 16:09:36,684 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (http://services.gradle.org/distributions/gradle-1.10-bin.zip)
+2018-04-08 16:09:36,686 INFO  ProjectFixService - Build info for "/tmp/rdisk/900/src/EmailAutoCompleteTextView-master/build.gradle": [buildToolsVersion=20.0.0,compileSdkVersion=20,minSdkVersion=8,targetSdkVersion=19]
+2018-04-08 16:09:36,686 INFO  ProjectFixService - Project was maybe fixed
+2018-04-08 16:09:36,686 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-08 16:09:36,686 INFO  SysUtils - Execute command: [/tmp/rdisk/900/src/EmailAutoCompleteTextView-master/gradlew, -b, /tmp/rdisk/900/src/EmailAutoCompleteTextView-master/emailautocompletetextview/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-08 16:09:51,286 INFO  ProjectTaskService - Detected possible tasks: 50
+2018-04-08 16:09:51,286 INFO  ProjectTaskService - Excluded tasks (8): lintDebug deviceCheck lint connectedCheck uninstallAll check connectedAndroidTest lintRelease
+2018-04-08 16:09:51,286 INFO  SysUtils - Execute command: [/tmp/rdisk/900/src/EmailAutoCompleteTextView-master/gradlew, -b, /tmp/rdisk/900/src/EmailAutoCompleteTextView-master/emailautocompletetextview/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-08 16:09:58,954 INFO  SysUtils - Configuration on demand is an incubating feature.
+:emailautocompletetextview:androidJavadocs
+Converting class com.android.build.gradle.internal.api.DefaultAndroidSourceDirectorySet to File using toString() method has been deprecated and is scheduled to be removed in Gradle 2.0. Please use java.io.File, java.lang.String, java.net.URL, or java.net.URI instead.
+:emailautocompletetextview:androidJavadocs UP-TO-DATE
+:emailautocompletetextview:androidJavadocsJar
+:emailautocompletetextview:androidSourcesJar
+:emailautocompletetextview:compileLint
+:emailautocompletetextview:copyDebugLint UP-TO-DATE
+:emailautocompletetextview:mergeDebugProguardFiles
+:emailautocompletetextview:preBuild
+:emailautocompletetextview:preDebugBuild
+:emailautocompletetextview:checkDebugManifest
+:emailautocompletetextview:prepareDebugDependencies
+:emailautocompletetextview:compileDebugAidl
+:emailautocompletetextview:compileDebugRenderscript
+:emailautocompletetextview:generateDebugBuildConfig
+:emailautocompletetextview:generateDebugAssets UP-TO-DATE
+:emailautocompletetextview:mergeDebugAssets
+:emailautocompletetextview:generateDebugResValues
+:emailautocompletetextview:generateDebugResources
+:emailautocompletetextview:packageDebugResources
+:emailautocompletetextview:processDebugManifest
+:emailautocompletetextview:processDebugResources
+:emailautocompletetextview:generateDebugSources
+:emailautocompletetextview:compileDebugJava
+:emailautocompletetextview:processDebugJavaRes UP-TO-DATE
+:emailautocompletetextview:packageDebugJar
+:emailautocompletetextview:compileDebugNdk
+:emailautocompletetextview:packageDebugJniLibs UP-TO-DATE
+:emailautocompletetextview:packageDebugLocalJar UP-TO-DATE
+:emailautocompletetextview:packageDebugRenderscript UP-TO-DATE
+:emailautocompletetextview:bundleDebug
+:emailautocompletetextview:assembleDebug
+:emailautocompletetextview:copyReleaseLint UP-TO-DATE
+:emailautocompletetextview:mergeReleaseProguardFiles
+:emailautocompletetextview:preReleaseBuild
+:emailautocompletetextview:checkReleaseManifest
+:emailautocompletetextview:prepareReleaseDependencies
+:emailautocompletetextview:compileReleaseAidl
+:emailautocompletetextview:compileReleaseRenderscript
+:emailautocompletetextview:generateReleaseBuildConfig
+:emailautocompletetextview:generateReleaseAssets UP-TO-DATE
+:emailautocompletetextview:mergeReleaseAssets
+:emailautocompletetextview:generateReleaseResValues
+:emailautocompletetextview:generateReleaseResources
+:emailautocompletetextview:packageReleaseResources
+:emailautocompletetextview:processReleaseManifest
+:emailautocompletetextview:processReleaseResources
+:emailautocompletetextview:generateReleaseSources
+:emailautocompletetextview:compileReleaseJava
+:emailautocompletetextview:processReleaseJavaRes UP-TO-DATE
+:emailautocompletetextview:packageReleaseJar
+:emailautocompletetextview:compileReleaseNdk
+:emailautocompletetextview:packageReleaseJniLibs UP-TO-DATE
+:emailautocompletetextview:packageReleaseLocalJar UP-TO-DATE
+:emailautocompletetextview:packageReleaseRenderscript UP-TO-DATE
+:emailautocompletetextview:bundleRelease
+:emailautocompletetextview:assembleRelease
+:emailautocompletetextview:signArchives SKIPPED
+:emailautocompletetextview:assemble
+:emailautocompletetextview:build
+
+BUILD SUCCESSFUL
+
+Total time: 7.197 secs
+
+2018-04-08 16:09:58,960 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-08 16:09:58,960 INFO  SysUtils - Execute command: [/tmp/rdisk/900/src/EmailAutoCompleteTextView-master/gradlew, -b, /tmp/rdisk/900/src/EmailAutoCompleteTextView-master/example/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-08 16:10:07,260 INFO  ProjectTaskService - Detected possible tasks: 49
+2018-04-08 16:10:07,261 INFO  ProjectTaskService - Excluded tasks (11): lintDebug deviceCheck lint uninstallRelease connectedCheck uninstallAll check connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-08 16:10:07,261 INFO  SysUtils - Execute command: [/tmp/rdisk/900/src/EmailAutoCompleteTextView-master/gradlew, -b, /tmp/rdisk/900/src/EmailAutoCompleteTextView-master/example/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-08 16:10:28,168 INFO  SysUtils - Configuration on demand is an incubating feature.
+Relying on packaging to define the extension of the main artifact has been deprecated and is scheduled to be removed in Gradle 2.0
+:example:preBuild
+:example:compileDebugNdk
+:emailautocompletetextview:compileLint
+:emailautocompletetextview:copyReleaseLint UP-TO-DATE
+:emailautocompletetextview:mergeReleaseProguardFiles UP-TO-DATE
+:emailautocompletetextview:preBuild
+:emailautocompletetextview:preReleaseBuild
+:emailautocompletetextview:checkReleaseManifest
+:emailautocompletetextview:prepareReleaseDependencies
+:emailautocompletetextview:compileReleaseAidl UP-TO-DATE
+:emailautocompletetextview:compileReleaseRenderscript UP-TO-DATE
+:emailautocompletetextview:generateReleaseBuildConfig UP-TO-DATE
+:emailautocompletetextview:generateReleaseAssets UP-TO-DATE
+:emailautocompletetextview:mergeReleaseAssets UP-TO-DATE
+:emailautocompletetextview:generateReleaseResValues UP-TO-DATE
+:emailautocompletetextview:generateReleaseResources UP-TO-DATE
+:emailautocompletetextview:packageReleaseResources UP-TO-DATE
+:emailautocompletetextview:processReleaseManifest UP-TO-DATE
+:emailautocompletetextview:processReleaseResources UP-TO-DATE
+:emailautocompletetextview:generateReleaseSources UP-TO-DATE
+:emailautocompletetextview:compileReleaseJava UP-TO-DATE
+:emailautocompletetextview:processReleaseJavaRes UP-TO-DATE
+:emailautocompletetextview:packageReleaseJar UP-TO-DATE
+:emailautocompletetextview:compileReleaseNdk UP-TO-DATE
+:emailautocompletetextview:packageReleaseJniLibs UP-TO-DATE
+:emailautocompletetextview:packageReleaseLocalJar UP-TO-DATE
+:emailautocompletetextview:packageReleaseRenderscript UP-TO-DATE
+:emailautocompletetextview:bundleRelease UP-TO-DATE
+:example:preDebugBuild
+:example:checkDebugManifest
+:example:preReleaseBuild
+:example:prepareComAndroidSupportAppcompatV71910Library
+:example:prepareEmailAutoCompleteTextViewMasterEmailautocompletetextviewUnspecifiedLibrary
+:example:prepareDebugDependencies
+:example:compileDebugAidl
+:example:compileDebugRenderscript
+:example:generateDebugBuildConfig
+:example:generateDebugAssets UP-TO-DATE
+:example:mergeDebugAssets
+:example:generateDebugResValues
+:example:generateDebugResources
+:example:mergeDebugResources
+:example:processDebugManifest
+:example:processDebugResources
+:example:generateDebugSources
+:example:compileDebugJava
+:example:preDexDebug
+:example:dexDebug
+:example:processDebugJavaRes UP-TO-DATE
+:example:validateDebugSigning
+:example:packageDebug
+:example:zipalignDebug
+:example:assembleDebug
+:example:checkReleaseManifest
+:example:prepareReleaseDependencies
+:example:compileReleaseAidl
+:example:compileReleaseRenderscript
+:example:generateReleaseBuildConfig
+:example:generateReleaseAssets UP-TO-DATE
+:example:mergeReleaseAssets
+:example:generateReleaseResValues
+:example:generateReleaseResources
+:example:mergeReleaseResources
+:example:processReleaseManifest
+:example:processReleaseResources
+:example:generateReleaseSources
+:example:compileReleaseJava
+:example:lintVitalRelease
+:example:compileReleaseNdk
+:example:preDexRelease
+:example:dexRelease
+:example:processReleaseJavaRes UP-TO-DATE
+:example:packageRelease
+:example:assembleRelease
+:example:assemble
+:example:build
+
+BUILD SUCCESSFUL
+
+Total time: 20.468 secs
+
+2018-04-08 16:10:28,202 INFO  FullProcessService - Found APK file: /tmp/rdisk/900/src/EmailAutoCompleteTextView-master/example/build/outputs/apk/example-release-unsigned.apk

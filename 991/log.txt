@@ -1,0 +1,117 @@
+2018-04-08 13:19:04,236 INFO  DownloadService - Downloading "https://github.com/moondroid/ColorMixer/archive/master.zip", attempt 3
+2018-04-08 13:19:05,936 INFO  DownloadService - Downloaded https://github.com/moondroid/ColorMixer/archive/master.zip, attempt 3
+2018-04-08 13:19:05,936 INFO  DownloadService - Size of file "/tmp/rdisk/991/master.zip": 490 KB
+2018-04-08 13:19:05,937 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-08 13:19:05,937 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/991/master.zip: true
+2018-04-08 13:19:05,937 DEBUG ZipUtil - Extracting '/tmp/rdisk/991/master.zip' into '/tmp/rdisk/991/src'.
+2018-04-08 13:19:05,954 INFO  FullProcessService - Size of directory with sources: 557 KB
+2018-04-08 13:19:05,955 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/991/src]
+2018-04-08 13:19:05,962 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/991/src/.git/
+
+2018-04-08 13:19:05,965 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/991/src/ColorMixer-master/gradlew
+2018-04-08 13:19:05,969 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/991/src/ColorMixer-master/demo/build.gradle /tmp/rdisk/991/src/ColorMixer-master/library/build.gradle /tmp/rdisk/991/src/ColorMixer-master/build.gradle
+2018-04-08 13:19:05,972 INFO  ProjectBuildService - All script(s): /tmp/rdisk/991/src/ColorMixer-master/settings.gradle /tmp/rdisk/991/src/ColorMixer-master/maven_push.gradle /tmp/rdisk/991/src/ColorMixer-master/library/build.gradle /tmp/rdisk/991/src/ColorMixer-master/demo/build.gradle /tmp/rdisk/991/src/ColorMixer-master/build.gradle
+2018-04-08 13:19:05,977 INFO  ProjectBuildService - Remote scripts: none
+2018-04-08 13:19:05,977 INFO  ProjectFixService - Fixing project...
+2018-04-08 13:19:05,988 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/991/src/ColorMixer-master/demo/local.properties
+2018-04-08 13:19:05,989 INFO  ProjectFixService - Build info for "/tmp/rdisk/991/src/ColorMixer-master/demo/build.gradle": [buildToolsVersion=20.0.0,compileSdkVersion=19,minSdkVersion=11,targetSdkVersion=19]
+2018-04-08 13:19:05,989 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/991/src/ColorMixer-master/library/local.properties
+2018-04-08 13:19:05,989 INFO  ProjectFixService - Build info for "/tmp/rdisk/991/src/ColorMixer-master/library/build.gradle": [buildToolsVersion=20.0.0,compileSdkVersion=19,minSdkVersion=11,targetSdkVersion=19]
+2018-04-08 13:19:05,990 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/991/src/ColorMixer-master/local.properties
+2018-04-08 13:19:05,990 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-08 13:19:05,991 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-08 13:19:05,993 INFO  ProjectFixService - Build info for "/tmp/rdisk/991/src/ColorMixer-master/build.gradle": [buildToolsVersion=20.0.0,compileSdkVersion=19,minSdkVersion=11,targetSdkVersion=19]
+2018-04-08 13:19:05,993 INFO  ProjectFixService - Project was maybe fixed
+2018-04-08 13:19:05,993 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-08 13:19:05,994 INFO  SysUtils - Execute command: [/tmp/rdisk/991/src/ColorMixer-master/gradlew, -b, /tmp/rdisk/991/src/ColorMixer-master/demo/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-08 13:19:22,731 INFO  ProjectTaskService - Detected possible tasks: 54
+2018-04-08 13:19:22,731 INFO  ProjectTaskService - Excluded tasks (11): lintDebug deviceCheck lint uninstallRelease connectedCheck uninstallAll check connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-08 13:19:22,731 INFO  SysUtils - Execute command: [/tmp/rdisk/991/src/ColorMixer-master/gradlew, -b, /tmp/rdisk/991/src/ColorMixer-master/demo/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-08 13:19:43,430 INFO  SysUtils - Configuration on demand is an incubating feature.
+RELEASE BUILD
+:demo:preBuild
+:demo:compileDebugNdk
+:demo:preDebugBuild
+:demo:checkDebugManifest
+:demo:preReleaseBuild
+:library:compileLint
+:library:copyReleaseLint UP-TO-DATE
+:library:mergeReleaseProguardFiles
+:library:preBuild
+:library:preReleaseBuild
+:library:checkReleaseManifest
+:library:preDebugBuild
+:library:preDebugTestBuild
+:library:prepareComAndroidSupportAppcompatV71900Library
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl
+:library:compileReleaseRenderscript
+:library:generateReleaseBuildConfig
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets
+:library:generateReleaseResValues
+:library:generateReleaseResources
+:library:mergeReleaseResources
+:library:processReleaseManifest
+:library:processReleaseResources
+:library:generateReleaseSources
+:library:compileReleaseJava
+:library:processReleaseJavaRes UP-TO-DATE
+:library:packageReleaseJar
+:library:compileReleaseNdk
+:library:packageReleaseJniLibs UP-TO-DATE
+:library:packageReleaseLocalJar UP-TO-DATE
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:packageReleaseResources
+:library:bundleRelease
+:demo:prepareComAndroidSupportAppcompatV71900Library
+:demo:prepareComGithubMoondroidColormixerLibrary10Library
+:demo:prepareDebugDependencies
+:demo:compileDebugAidl
+:demo:compileDebugRenderscript
+:demo:generateDebugBuildConfig
+:demo:generateDebugAssets UP-TO-DATE
+:demo:mergeDebugAssets
+:demo:generateDebugResValues
+:demo:generateDebugResources
+:demo:mergeDebugResources
+:demo:processDebugManifest
+:demo:processDebugResources
+:demo:generateDebugSources
+:demo:compileDebugJava
+:demo:preDexDebug
+:demo:dexDebug
+:demo:processDebugJavaRes UP-TO-DATE
+:demo:validateDebugSigning
+:demo:packageDebug
+:demo:zipalignDebug
+:demo:assembleDebug
+:demo:checkReleaseManifest
+:demo:prepareReleaseDependencies
+:demo:compileReleaseAidl
+:demo:compileReleaseRenderscript
+:demo:generateReleaseBuildConfig
+:demo:generateReleaseAssets UP-TO-DATE
+:demo:mergeReleaseAssets
+:demo:generateReleaseResValues
+:demo:generateReleaseResources
+:demo:mergeReleaseResources
+:demo:processReleaseManifest
+:demo:processReleaseResources
+:demo:generateReleaseSources
+:demo:compileReleaseJava
+:demo:lintVitalRelease
+:demo:compileReleaseNdk
+:demo:preDexRelease
+:demo:dexRelease
+:demo:processReleaseJavaRes UP-TO-DATE
+:demo:packageRelease
+:demo:assembleRelease
+:demo:assemble
+:demo:build
+
+BUILD SUCCESSFUL
+
+Total time: 20.255 secs
+
+2018-04-08 13:19:43,477 INFO  FullProcessService - Found APK file: /tmp/rdisk/991/src/ColorMixer-master/demo/build/outputs/apk/demo-release-unsigned.apk

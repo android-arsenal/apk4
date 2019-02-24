@@ -1,0 +1,11 @@
+2018-04-08 13:46:47,099 INFO  DownloadService - Downloading "https://github.com/cymcsg/UltimateAndroid/archive/master.zip", attempt 3
+2018-04-08 13:46:53,727 INFO  DownloadService - Downloaded https://github.com/cymcsg/UltimateAndroid/archive/master.zip, attempt 3
+2018-04-08 13:46:53,727 INFO  DownloadService - Size of file "/tmp/rdisk/959/master.zip": 67 MB
+2018-04-08 13:46:53,727 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-08 13:46:53,739 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/959/master.zip: true
+2018-04-08 13:46:53,740 DEBUG ZipUtil - Extracting '/tmp/rdisk/959/master.zip' into '/tmp/rdisk/959/src'.
+2018-04-08 13:46:54,939 INFO  FullProcessService - Size of directory with sources: 79 MB
+2018-04-08 13:46:54,939 ERROR FullProcessService - Source directory should be less than 50 MB
+2018-04-08 13:46:54,939 ERROR FullProcessService - Project will not be processed
+2018-04-08 13:46:54,940 ERROR FullProcessService - Project build has not produced APK file
+2018-04-08 13:46:55,054 ERROR FullProcessService - Could not find generated or existed APK file

@@ -1,0 +1,6 @@
+{
+  "com.plattysoft.leonids" : [ "AnimatedParticle", "BuildConfig", "Particle", "ParticleField", "ParticleSystem", "ParticleSystem$1", "ParticleSystem$2", "ParticleSystem$3", "R" ],
+  "com.plattysoft.leonids.examples" : [ "AnimatedParticlesExampleActivity", "BuildConfig", "ConfettiExampleActivity", "DustExampleActivity", "EmiterBackgroundSimpleExampleActivity", "EmiterIntermediateExampleActivity", "EmiterSimpleExampleActivity", "EmiterTimeLimitedExampleActivity", "EmiterWithGravityExampleActivity", "ExampleListActivity", "FireworksExampleActivity", "FollowCursorExampleActivity", "OneShotAdvancedExampleActivity", "OneShotSimpleExampleActivity", "R", "R$attr", "R$dimen", "R$drawable", "R$id", "R$layout", "R$string", "R$style", "StarsExampleActivity" ],
+  "com.plattysoft.leonids.initializers" : [ "AccelerationInitializer", "ParticleInitializer", "RotationInitiazer", "RotationSpeedInitializer", "ScaleInitializer", "SpeeddByComponentsInitializer", "SpeeddModuleAndRangeInitializer" ],
+  "com.plattysoft.leonids.modifiers" : [ "AccelerationModifier", "AlphaModifier", "ParticleModifier", "ScaleModifier" ]
+}

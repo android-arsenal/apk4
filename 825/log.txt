@@ -1,0 +1,81 @@
+2018-04-09 11:09:30,143 INFO  DownloadService - Downloading "https://github.com/makovkastar/LetterImageView/archive/master.zip", attempt 3
+2018-04-09 11:09:30,526 INFO  DownloadService - Downloaded https://github.com/makovkastar/LetterImageView/archive/master.zip, attempt 3
+2018-04-09 11:09:30,526 INFO  DownloadService - Size of file "/tmp/rdisk/825/master.zip": 215 KB
+2018-04-09 11:09:30,526 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-09 11:09:30,527 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/825/master.zip: true
+2018-04-09 11:09:30,527 DEBUG ZipUtil - Extracting '/tmp/rdisk/825/master.zip' into '/tmp/rdisk/825/src'.
+2018-04-09 11:09:30,533 INFO  FullProcessService - Size of directory with sources: 224 KB
+2018-04-09 11:09:30,533 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/825/src]
+2018-04-09 11:09:30,539 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/825/src/.git/
+
+2018-04-09 11:09:30,540 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/825/src/LetterImageView-master/gradlew
+2018-04-09 11:09:30,542 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/825/src/LetterImageView-master/app/build.gradle /tmp/rdisk/825/src/LetterImageView-master/build.gradle
+2018-04-09 11:09:30,544 INFO  ProjectBuildService - All script(s): /tmp/rdisk/825/src/LetterImageView-master/settings.gradle /tmp/rdisk/825/src/LetterImageView-master/build.gradle /tmp/rdisk/825/src/LetterImageView-master/app/build.gradle
+2018-04-09 11:09:30,544 INFO  ProjectBuildService - Remote scripts: none
+2018-04-09 11:09:30,544 INFO  ProjectFixService - Fixing project...
+2018-04-09 11:09:30,549 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/825/src/LetterImageView-master/app/local.properties
+2018-04-09 11:09:30,549 INFO  ProjectFixService - Build info for "/tmp/rdisk/825/src/LetterImageView-master/app/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=19,minSdkVersion=8,targetSdkVersion=19]
+2018-04-09 11:09:30,549 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/825/src/LetterImageView-master/local.properties
+2018-04-09 11:09:30,550 INFO  WrapperPropertiesFixService - Gradle wrapper: http://services.gradle.org/distributions/gradle-1.10-all.zip
+2018-04-09 11:09:30,550 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (http://services.gradle.org/distributions/gradle-1.10-bin.zip)
+2018-04-09 11:09:30,551 INFO  ProjectFixService - Build info for "/tmp/rdisk/825/src/LetterImageView-master/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=19,minSdkVersion=8,targetSdkVersion=19]
+2018-04-09 11:09:30,551 INFO  ProjectFixService - Project was maybe fixed
+2018-04-09 11:09:30,551 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-09 11:09:30,552 INFO  SysUtils - Execute command: [/tmp/rdisk/825/src/LetterImageView-master/gradlew, -b, /tmp/rdisk/825/src/LetterImageView-master/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-09 11:09:39,151 INFO  ProjectTaskService - Detected possible tasks: 49
+2018-04-09 11:09:39,152 INFO  ProjectTaskService - Excluded tasks (11): lintDebug deviceCheck lint uninstallRelease connectedCheck uninstallAll check connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-09 11:09:39,152 INFO  SysUtils - Execute command: [/tmp/rdisk/825/src/LetterImageView-master/gradlew, -b, /tmp/rdisk/825/src/LetterImageView-master/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-09 11:10:02,596 INFO  SysUtils - Configuration on demand is an incubating feature.
+Relying on packaging to define the extension of the main artifact has been deprecated and is scheduled to be removed in Gradle 2.0
+:app:compileDebugNdk
+:app:preBuild
+:app:preDebugBuild
+:app:checkDebugManifest
+:app:preReleaseBuild
+:app:prepareComAndroidSupportAppcompatV71910Library
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:compileDebugJava
+:app:preDexDebug
+:app:dexDebug
+:app:processDebugJavaRes UP-TO-DATE
+:app:validateDebugSigning
+:app:packageDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:compileReleaseJava
+:app:lintVitalRelease
+:app:compileReleaseNdk
+:app:preDexRelease
+:app:dexRelease
+:app:processReleaseJavaRes UP-TO-DATE
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 22.99 secs
+
+2018-04-09 11:10:02,627 INFO  FullProcessService - Found APK file: /tmp/rdisk/825/src/LetterImageView-master/app/build/apk/app-release-unsigned.apk

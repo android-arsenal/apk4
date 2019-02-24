@@ -1,0 +1,117 @@
+2018-04-08 16:20:36,867 INFO  DownloadService - Downloading "https://github.com/moondroid/SeekBarHint/archive/master.zip", attempt 3
+2018-04-08 16:20:37,408 INFO  DownloadService - Downloaded https://github.com/moondroid/SeekBarHint/archive/master.zip, attempt 3
+2018-04-08 16:20:37,409 INFO  DownloadService - Size of file "/tmp/rdisk/884/master.zip": 533 KB
+2018-04-08 16:20:37,409 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-08 16:20:37,409 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/884/master.zip: true
+2018-04-08 16:20:37,409 DEBUG ZipUtil - Extracting '/tmp/rdisk/884/master.zip' into '/tmp/rdisk/884/src'.
+2018-04-08 16:20:37,426 INFO  FullProcessService - Size of directory with sources: 604 KB
+2018-04-08 16:20:37,426 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/884/src]
+2018-04-08 16:20:37,434 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/884/src/.git/
+
+2018-04-08 16:20:37,437 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/884/src/SeekBarHint-master/gradlew
+2018-04-08 16:20:37,441 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/884/src/SeekBarHint-master/app/build.gradle /tmp/rdisk/884/src/SeekBarHint-master/library/build.gradle /tmp/rdisk/884/src/SeekBarHint-master/build.gradle
+2018-04-08 16:20:37,444 INFO  ProjectBuildService - All script(s): /tmp/rdisk/884/src/SeekBarHint-master/settings.gradle /tmp/rdisk/884/src/SeekBarHint-master/library/build.gradle /tmp/rdisk/884/src/SeekBarHint-master/build.gradle /tmp/rdisk/884/src/SeekBarHint-master/app/build.gradle
+2018-04-08 16:20:37,445 INFO  ProjectBuildService - Remote scripts: none
+2018-04-08 16:20:37,445 INFO  ProjectFixService - Fixing project...
+2018-04-08 16:20:37,453 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/884/src/SeekBarHint-master/app/local.properties
+2018-04-08 16:20:37,453 INFO  ProjectFixService - Build info for "/tmp/rdisk/884/src/SeekBarHint-master/app/build.gradle": [buildToolsVersion=20.0.0,compileSdkVersion=19,minSdkVersion=11,targetSdkVersion=19]
+2018-04-08 16:20:37,454 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/884/src/SeekBarHint-master/library/local.properties
+2018-04-08 16:20:37,454 INFO  ProjectFixService - Build info for "/tmp/rdisk/884/src/SeekBarHint-master/library/build.gradle": [buildToolsVersion=20.0.0,compileSdkVersion=19,minSdkVersion=11,targetSdkVersion=19]
+2018-04-08 16:20:37,455 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/884/src/SeekBarHint-master/local.properties
+2018-04-08 16:20:37,455 INFO  WrapperPropertiesFixService - Gradle wrapper: http://services.gradle.org/distributions/gradle-1.12-all.zip
+2018-04-08 16:20:37,455 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (http://services.gradle.org/distributions/gradle-1.12-bin.zip)
+2018-04-08 16:20:37,456 INFO  ProjectFixService - Build info for "/tmp/rdisk/884/src/SeekBarHint-master/build.gradle": [buildToolsVersion=20.0.0,compileSdkVersion=19,minSdkVersion=11,targetSdkVersion=19]
+2018-04-08 16:20:37,457 INFO  ProjectFixService - Project was maybe fixed
+2018-04-08 16:20:37,457 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-08 16:20:37,457 INFO  SysUtils - Execute command: [/tmp/rdisk/884/src/SeekBarHint-master/gradlew, -b, /tmp/rdisk/884/src/SeekBarHint-master/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-08 16:20:45,553 INFO  ProjectTaskService - Detected possible tasks: 49
+2018-04-08 16:20:45,553 INFO  ProjectTaskService - Excluded tasks (11): lintDebug deviceCheck lint uninstallRelease connectedCheck uninstallAll check connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-08 16:20:45,553 INFO  SysUtils - Execute command: [/tmp/rdisk/884/src/SeekBarHint-master/gradlew, -b, /tmp/rdisk/884/src/SeekBarHint-master/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-08 16:21:05,826 INFO  SysUtils - Configuration on demand is an incubating feature.
+Relying on packaging to define the extension of the main artifact has been deprecated and is scheduled to be removed in Gradle 2.0
+:app:preBuild
+:app:compileDebugNdk
+:app:preDebugBuild
+:app:checkDebugManifest
+:app:preReleaseBuild
+:library:compileLint
+:library:copyReleaseLint UP-TO-DATE
+:library:mergeReleaseProguardFiles
+:library:preBuild
+:library:preReleaseBuild
+:library:checkReleaseManifest
+:library:preDebugBuild
+:library:preDebugTestBuild
+:library:prepareComAndroidSupportAppcompatV71910Library
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl
+:library:compileReleaseRenderscript
+:library:generateReleaseBuildConfig
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets
+:library:generateReleaseResValues
+:library:generateReleaseResources
+:library:mergeReleaseResources
+:library:processReleaseManifest
+:library:processReleaseResources
+:library:generateReleaseSources
+:library:compileReleaseJava
+:library:processReleaseJavaRes UP-TO-DATE
+:library:packageReleaseJar
+:library:compileReleaseNdk
+:library:packageReleaseJniLibs UP-TO-DATE
+:library:packageReleaseLocalJar UP-TO-DATE
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:packageReleaseResources
+:library:bundleRelease
+:app:prepareComAndroidSupportAppcompatV71910Library
+:app:prepareSeekBarHintMasterLibraryUnspecifiedLibrary
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:compileDebugJava
+:app:preDexDebug
+:app:dexDebug
+:app:processDebugJavaRes UP-TO-DATE
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:compileReleaseJava
+:app:lintVitalRelease
+:app:compileReleaseNdk
+:app:preDexRelease
+:app:dexRelease
+:app:processReleaseJavaRes UP-TO-DATE
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 19.811 secs
+
+2018-04-08 16:21:05,881 INFO  FullProcessService - Found APK file: /tmp/rdisk/884/src/SeekBarHint-master/app/build/outputs/apk/app-debug.apk

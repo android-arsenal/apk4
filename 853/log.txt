@@ -1,0 +1,171 @@
+2018-05-11 15:59:56,317 INFO  DownloadService - Downloading "https://github.com/Jearil/SimpleNoSQL/archive/master.zip", attempt 3
+2018-05-11 16:00:56,978 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-05-11 16:00:57,749 INFO  GithubDownloadService - Default branch of this repository: master
+2018-05-11 16:00:57,749 INFO  DownloadService - Downloading "https://github.com/Jearil/SimpleNoSQL/archive/master.zip", attempt 3
+2018-05-11 16:01:59,075 DEBUG FullProcessService - Repository https://github.com/Jearil/SimpleNoSQL available: true
+2018-05-11 16:01:59,075 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-05-11 16:01:59,075 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/Jearil/SimpleNoSQL, /tmp/rdisk/853/src]
+2018-05-11 16:02:00,818 INFO  SysUtils - 
+2018-05-11 16:02:00,830 INFO  GitService - Deleted "/tmp/rdisk/853/src/.git": true
+2018-05-11 16:02:00,831 INFO  FullProcessService - Size of directory with sources: 148 KB
+2018-05-11 16:02:00,838 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/853/src]
+2018-05-11 16:02:00,843 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/853/src/.git/
+
+2018-05-11 16:02:00,845 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/853/src/gradlew
+2018-05-11 16:02:00,846 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/853/src/SimpleNoSQL/build.gradle /tmp/rdisk/853/src/build.gradle
+2018-05-11 16:02:00,848 INFO  ProjectBuildService - All script(s): /tmp/rdisk/853/src/settings.gradle /tmp/rdisk/853/src/maven_push.gradle /tmp/rdisk/853/src/build.gradle /tmp/rdisk/853/src/SimpleNoSQL/build.gradle
+2018-05-11 16:02:00,848 INFO  ProjectBuildService - Remote scripts: none
+2018-05-11 16:02:00,848 INFO  ProjectFixService - Fixing project...
+2018-05-11 16:02:00,854 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/853/src/SimpleNoSQL/local.properties
+2018-05-11 16:02:00,854 INFO  ProjectFixService - Build info for "/tmp/rdisk/853/src/SimpleNoSQL/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=8,targetSdkVersion=21]
+2018-05-11 16:02:00,854 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/853/src/local.properties
+2018-05-11 16:02:00,855 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-05-11 16:02:00,855 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-05-11 16:02:00,857 INFO  ProjectFixService - Build info for "/tmp/rdisk/853/src/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=8,targetSdkVersion=21]
+2018-05-11 16:02:00,857 INFO  ProjectFixService - Project was maybe fixed
+2018-05-11 16:02:00,857 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-11 16:02:00,857 INFO  SysUtils - Execute command: [/tmp/rdisk/853/src/gradlew, -b, /tmp/rdisk/853/src/SimpleNoSQL/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-11 16:02:12,495 INFO  ProjectTaskService - Detected possible tasks: 69
+2018-05-11 16:02:12,495 INFO  ProjectTaskService - Excluded tasks (17): lintDebug mockableAndroidJar androidJavadocs deviceCheck lint deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest lintRelease testDebug connectedAndroidTestDebug
+2018-05-11 16:02:12,495 INFO  SysUtils - Execute command: [/tmp/rdisk/853/src/gradlew, -b, /tmp/rdisk/853/src/SimpleNoSQL/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, androidJavadocs, -x, deviceCheck, -x, lint, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, build]
+2018-05-11 16:02:20,321 INFO  SysUtils - Configuration on demand is an incubating feature.
+RELEASE BUILD
+/tmp/rdisk/853/src/SimpleNoSQL/build/intermediates/classes/release:SimpleNoSQL:preBuild UP-TO-DATE
+:SimpleNoSQL:preReleaseBuild UP-TO-DATE
+:SimpleNoSQL:checkReleaseManifest
+:SimpleNoSQL:prepareReleaseDependencies
+:SimpleNoSQL:compileReleaseAidl
+:SimpleNoSQL:compileReleaseRenderscript
+:SimpleNoSQL:generateReleaseBuildConfig
+:SimpleNoSQL:generateReleaseAssets UP-TO-DATE
+:SimpleNoSQL:mergeReleaseAssets
+:SimpleNoSQL:generateReleaseResValues
+:SimpleNoSQL:generateReleaseResources
+:SimpleNoSQL:packageReleaseResources
+:SimpleNoSQL:processReleaseManifest
+:SimpleNoSQL:processReleaseResources
+:SimpleNoSQL:generateReleaseSources
+:SimpleNoSQL:processReleaseJavaRes UP-TO-DATE
+:SimpleNoSQL:compileReleaseJava
+:SimpleNoSQL:_jarRelease
+:SimpleNoSQL:androidJavadocsJar
+:SimpleNoSQL:androidSourcesJar
+:SimpleNoSQL:compileLint
+:SimpleNoSQL:copyDebugLint UP-TO-DATE
+:SimpleNoSQL:mergeDebugProguardFiles
+:SimpleNoSQL:preDebugBuild UP-TO-DATE
+:SimpleNoSQL:checkDebugManifest
+:SimpleNoSQL:prepareDebugDependencies
+:SimpleNoSQL:compileDebugAidl
+:SimpleNoSQL:compileDebugRenderscript
+:SimpleNoSQL:generateDebugBuildConfig
+:SimpleNoSQL:generateDebugAssets UP-TO-DATE
+:SimpleNoSQL:mergeDebugAssets
+:SimpleNoSQL:generateDebugResValues
+:SimpleNoSQL:generateDebugResources
+:SimpleNoSQL:packageDebugResources
+:SimpleNoSQL:processDebugManifest
+:SimpleNoSQL:processDebugResources
+:SimpleNoSQL:generateDebugSources
+:SimpleNoSQL:processDebugJavaRes UP-TO-DATE
+:SimpleNoSQL:compileDebugJava
+:SimpleNoSQL:packageDebugJar
+:SimpleNoSQL:compileDebugNdk UP-TO-DATE
+:SimpleNoSQL:packageDebugJniLibs UP-TO-DATE
+:SimpleNoSQL:packageDebugLocalJar UP-TO-DATE
+:SimpleNoSQL:packageDebugRenderscript UP-TO-DATE
+:SimpleNoSQL:bundleDebug
+:SimpleNoSQL:compileDebugSources
+:SimpleNoSQL:assembleDebug
+:SimpleNoSQL:copyReleaseLint UP-TO-DATE
+:SimpleNoSQL:mergeReleaseProguardFiles
+:SimpleNoSQL:packageReleaseJar
+:SimpleNoSQL:compileReleaseNdk UP-TO-DATE
+:SimpleNoSQL:packageReleaseJniLibs UP-TO-DATE
+:SimpleNoSQL:packageReleaseLocalJar UP-TO-DATE
+:SimpleNoSQL:packageReleaseRenderscript UP-TO-DATE
+:SimpleNoSQL:bundleRelease
+:SimpleNoSQL:compileReleaseSources
+:SimpleNoSQL:assembleRelease
+:SimpleNoSQL:signArchives SKIPPED
+:SimpleNoSQL:assemble
+:SimpleNoSQL:build
+
+BUILD SUCCESSFUL
+
+Total time: 7.4 secs
+
+2018-05-11 16:02:20,327 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-11 16:02:20,327 INFO  SysUtils - Execute command: [/tmp/rdisk/853/src/gradlew, -b, /tmp/rdisk/853/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-11 16:02:26,767 INFO  ProjectTaskService - Detected possible tasks: 70
+2018-05-11 16:02:26,767 INFO  ProjectTaskService - Excluded tasks (17): lintDebug mockableAndroidJar androidJavadocs deviceCheck lint deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest lintRelease testDebug connectedAndroidTestDebug
+2018-05-11 16:02:26,768 INFO  SysUtils - Execute command: [/tmp/rdisk/853/src/gradlew, -b, /tmp/rdisk/853/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, androidJavadocs, -x, deviceCheck, -x, lint, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, build]
+2018-05-11 16:02:33,096 INFO  SysUtils - Configuration on demand is an incubating feature.
+RELEASE BUILD
+/tmp/rdisk/853/src/SimpleNoSQL/build/intermediates/classes/release:SimpleNoSQL:preBuild UP-TO-DATE
+:SimpleNoSQL:preReleaseBuild UP-TO-DATE
+:SimpleNoSQL:checkReleaseManifest
+:SimpleNoSQL:prepareReleaseDependencies
+:SimpleNoSQL:compileReleaseAidl UP-TO-DATE
+:SimpleNoSQL:compileReleaseRenderscript UP-TO-DATE
+:SimpleNoSQL:generateReleaseBuildConfig UP-TO-DATE
+:SimpleNoSQL:generateReleaseAssets UP-TO-DATE
+:SimpleNoSQL:mergeReleaseAssets UP-TO-DATE
+:SimpleNoSQL:generateReleaseResValues UP-TO-DATE
+:SimpleNoSQL:generateReleaseResources UP-TO-DATE
+:SimpleNoSQL:packageReleaseResources UP-TO-DATE
+:SimpleNoSQL:processReleaseManifest UP-TO-DATE
+:SimpleNoSQL:processReleaseResources UP-TO-DATE
+:SimpleNoSQL:generateReleaseSources UP-TO-DATE
+:SimpleNoSQL:processReleaseJavaRes UP-TO-DATE
+:SimpleNoSQL:compileReleaseJava UP-TO-DATE
+:SimpleNoSQL:_jarRelease UP-TO-DATE
+:SimpleNoSQL:androidJavadocsJar UP-TO-DATE
+:SimpleNoSQL:androidSourcesJar UP-TO-DATE
+:SimpleNoSQL:compileLint
+:SimpleNoSQL:copyDebugLint UP-TO-DATE
+:SimpleNoSQL:mergeDebugProguardFiles UP-TO-DATE
+:SimpleNoSQL:preDebugBuild UP-TO-DATE
+:SimpleNoSQL:checkDebugManifest
+:SimpleNoSQL:prepareDebugDependencies
+:SimpleNoSQL:compileDebugAidl UP-TO-DATE
+:SimpleNoSQL:compileDebugRenderscript UP-TO-DATE
+:SimpleNoSQL:generateDebugBuildConfig UP-TO-DATE
+:SimpleNoSQL:generateDebugAssets UP-TO-DATE
+:SimpleNoSQL:mergeDebugAssets UP-TO-DATE
+:SimpleNoSQL:generateDebugResValues UP-TO-DATE
+:SimpleNoSQL:generateDebugResources UP-TO-DATE
+:SimpleNoSQL:packageDebugResources UP-TO-DATE
+:SimpleNoSQL:processDebugManifest UP-TO-DATE
+:SimpleNoSQL:processDebugResources UP-TO-DATE
+:SimpleNoSQL:generateDebugSources UP-TO-DATE
+:SimpleNoSQL:processDebugJavaRes UP-TO-DATE
+:SimpleNoSQL:compileDebugJava UP-TO-DATE
+:SimpleNoSQL:packageDebugJar UP-TO-DATE
+:SimpleNoSQL:compileDebugNdk UP-TO-DATE
+:SimpleNoSQL:packageDebugJniLibs UP-TO-DATE
+:SimpleNoSQL:packageDebugLocalJar UP-TO-DATE
+:SimpleNoSQL:packageDebugRenderscript UP-TO-DATE
+:SimpleNoSQL:bundleDebug UP-TO-DATE
+:SimpleNoSQL:compileDebugSources UP-TO-DATE
+:SimpleNoSQL:assembleDebug UP-TO-DATE
+:SimpleNoSQL:copyReleaseLint UP-TO-DATE
+:SimpleNoSQL:mergeReleaseProguardFiles UP-TO-DATE
+:SimpleNoSQL:packageReleaseJar UP-TO-DATE
+:SimpleNoSQL:compileReleaseNdk UP-TO-DATE
+:SimpleNoSQL:packageReleaseJniLibs UP-TO-DATE
+:SimpleNoSQL:packageReleaseLocalJar UP-TO-DATE
+:SimpleNoSQL:packageReleaseRenderscript UP-TO-DATE
+:SimpleNoSQL:bundleRelease UP-TO-DATE
+:SimpleNoSQL:compileReleaseSources UP-TO-DATE
+:SimpleNoSQL:assembleRelease UP-TO-DATE
+:SimpleNoSQL:signArchives SKIPPED
+:SimpleNoSQL:assemble UP-TO-DATE
+:SimpleNoSQL:build
+
+BUILD SUCCESSFUL
+
+Total time: 5.893 secs
+
+2018-05-11 16:02:33,101 ERROR FullProcessService - Project build has not produced APK file
+2018-05-11 16:02:33,106 ERROR FullProcessService - Could not find generated or existed APK file

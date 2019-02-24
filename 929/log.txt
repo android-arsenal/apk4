@@ -1,0 +1,458 @@
+2018-04-08 15:27:28,299 INFO  DownloadService - Downloading "https://github.com/johnjohndoe/TypedPreferences/archive/master.zip", attempt 3
+2018-04-08 15:27:29,090 INFO  DownloadService - Downloaded https://github.com/johnjohndoe/TypedPreferences/archive/master.zip, attempt 3
+2018-04-08 15:27:29,090 INFO  DownloadService - Size of file "/tmp/rdisk/929/master.zip": 136 KB
+2018-04-08 15:27:29,090 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-08 15:27:29,091 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/929/master.zip: true
+2018-04-08 15:27:29,091 DEBUG ZipUtil - Extracting '/tmp/rdisk/929/master.zip' into '/tmp/rdisk/929/src'.
+2018-04-08 15:27:29,100 INFO  FullProcessService - Size of directory with sources: 171 KB
+2018-04-08 15:27:29,100 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/929/src]
+2018-04-08 15:27:29,109 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/929/src/.git/
+
+2018-04-08 15:27:29,112 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/929/src/TypedPreferences-master/gradlew
+2018-04-08 15:27:29,114 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/929/src/TypedPreferences-master/Library/build.gradle /tmp/rdisk/929/src/TypedPreferences-master/TypedPreferencesDemo/build.gradle /tmp/rdisk/929/src/TypedPreferences-master/build.gradle
+2018-04-08 15:27:29,119 INFO  ProjectBuildService - All script(s): /tmp/rdisk/929/src/TypedPreferences-master/settings.gradle /tmp/rdisk/929/src/TypedPreferences-master/build.gradle /tmp/rdisk/929/src/TypedPreferences-master/TypedPreferencesDemo/build.gradle /tmp/rdisk/929/src/TypedPreferences-master/Library/build.gradle
+2018-04-08 15:27:29,119 INFO  ProjectBuildService - Remote scripts: none
+2018-04-08 15:27:29,120 INFO  ProjectFixService - Fixing project...
+2018-04-08 15:27:29,126 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/929/src/TypedPreferences-master/Library/local.properties
+2018-04-08 15:27:29,129 INFO  ProjectFixService - Build info for "/tmp/rdisk/929/src/TypedPreferences-master/Library/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-08 15:27:29,129 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/929/src/TypedPreferences-master/Library/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-08 15:27:29,131 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/929/src/TypedPreferences-master/TypedPreferencesDemo/local.properties
+2018-04-08 15:27:29,134 INFO  ProjectFixService - Build info for "/tmp/rdisk/929/src/TypedPreferences-master/TypedPreferencesDemo/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-08 15:27:29,134 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/929/src/TypedPreferences-master/TypedPreferencesDemo/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-08 15:27:29,135 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/929/src/TypedPreferences-master/local.properties
+2018-04-08 15:27:29,135 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.12-all.zip
+2018-04-08 15:27:29,136 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.12-bin.zip)
+2018-04-08 15:27:29,139 INFO  ProjectFixService - Build info for "/tmp/rdisk/929/src/TypedPreferences-master/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-08 15:27:29,139 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/929/src/TypedPreferences-master/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-08 15:27:29,139 INFO  ProjectFixService - Project was maybe fixed
+2018-04-08 15:27:29,139 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-08 15:27:29,139 INFO  SysUtils - Execute command: [/tmp/rdisk/929/src/TypedPreferences-master/gradlew, -b, /tmp/rdisk/929/src/TypedPreferences-master/Library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-08 15:27:41,447 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-08 15:27:41,447 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-08 15:27:41,447 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-08 15:27:41,448 INFO  SysUtils - Execute command: [/tmp/rdisk/929/src/TypedPreferences-master/gradlew, -b, /tmp/rdisk/929/src/TypedPreferences-master/Library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-08 15:28:06,295 INFO  SysUtils - Configuration on demand is an incubating feature.
+Incremental java compilation is an incubating feature.
+:Library:androidJavadocsJar
+:Library:androidSourcesJar
+:Library:preBuild UP-TO-DATE
+:Library:preDebugBuild UP-TO-DATE
+:Library:compileDebugNdk UP-TO-DATE
+:Library:compileLint
+:Library:copyDebugLint UP-TO-DATE
+:Library:mergeDebugProguardFiles
+:Library:packageDebugRenderscript UP-TO-DATE
+:Library:checkDebugManifest
+:Library:prepareDebugDependencies
+:Library:compileDebugRenderscript
+:Library:generateDebugResValues
+:Library:generateDebugResources
+:Library:packageDebugResources
+:Library:compileDebugAidl
+:Library:generateDebugBuildConfig
+:Library:generateDebugAssets UP-TO-DATE
+:Library:mergeDebugAssets
+:Library:processDebugManifest
+:Library:processDebugResources
+:Library:generateDebugSources
+:Library:compileDebugJavaWithJavac
+:Library:processDebugJavaRes UP-TO-DATE
+:Library:transformResourcesWithMergeJavaResForDebug
+:Library:transformClassesAndResourcesWithSyncLibJarsForDebug
+:Library:mergeDebugJniLibFolders
+:Library:transformNative_libsWithMergeJniLibsForDebug
+:Library:transformNative_libsWithSyncJniLibsForDebug
+:Library:bundleDebug
+:Library:compileDebugSources
+:Library:assembleDebug
+:Library:preReleaseBuild UP-TO-DATE
+:Library:compileReleaseNdk UP-TO-DATE
+:Library:copyReleaseLint UP-TO-DATE
+:Library:mergeReleaseProguardFiles
+:Library:packageReleaseRenderscript UP-TO-DATE
+:Library:checkReleaseManifest
+:Library:prepareReleaseDependencies
+:Library:compileReleaseRenderscript
+:Library:generateReleaseResValues
+:Library:generateReleaseResources
+:Library:packageReleaseResources
+:Library:compileReleaseAidl
+:Library:generateReleaseBuildConfig
+:Library:generateReleaseAssets UP-TO-DATE
+:Library:mergeReleaseAssets
+:Library:processReleaseManifest
+:Library:processReleaseResources
+:Library:generateReleaseSources
+:Library:compileReleaseJavaWithJavac
+:Library:processReleaseJavaRes UP-TO-DATE
+:Library:transformResourcesWithMergeJavaResForRelease
+:Library:transformClassesAndResourcesWithSyncLibJarsForRelease
+:Library:mergeReleaseJniLibFolders
+:Library:transformNative_libsWithMergeJniLibsForRelease
+:Library:transformNative_libsWithSyncJniLibsForRelease
+:Library:bundleRelease
+:Library:compileReleaseSources
+:Library:assembleRelease
+:Library:jar
+:Library:signArchives SKIPPED
+:Library:assemble
+:Library:lint
+Ran lint on variant debug: 0 issues found
+Ran lint on variant release: 0 issues found
+Wrote HTML report to file:///tmp/rdisk/929/src/TypedPreferences-master/Library/build/outputs/lint-results-debug.html
+Wrote XML report to file:///tmp/rdisk/929/src/TypedPreferences-master/Library/build/outputs/lint-results-debug.xml
+:Library:preDebugUnitTestBuild UP-TO-DATE
+:Library:prepareDebugUnitTestDependencies
+:Library:compileDebugUnitTestJavaWithJavac
+:Library:processDebugUnitTestJavaRes UP-TO-DATE
+:Library:compileDebugUnitTestSources
+:Library:mockableAndroidJar
+:Library:assembleDebugUnitTest
+:Library:testDebugUnitTest
+
+info.metadude.android.typedpreferences.BooleanPreferenceTest > expect_Preference_To_EqualValue PASSED
+
+info.metadude.android.typedpreferences.BooleanPreferenceTest > expect_Preference_NotTo_EqualValue PASSED
+
+info.metadude.android.typedpreferences.BooleanPreferenceTest > expect_Preference_To_EqualDefaultValue_BeforeBeingSet PASSED
+
+info.metadude.android.typedpreferences.BooleanPreferenceTest > expect_Preference_To_BeUnset PASSED
+
+info.metadude.android.typedpreferences.BooleanPreferenceTest > expect_Preference_To_EqualDefaultValue PASSED
+
+info.metadude.android.typedpreferences.BooleanPreferenceTest > expect_Preference_To_BeInitialized PASSED
+
+info.metadude.android.typedpreferences.BooleanPreferenceTest > expect_Preference_NotTo_BeSet PASSED
+
+info.metadude.android.typedpreferences.BooleanPreferenceTest > expect_Preference_To_BeSet PASSED
+
+info.metadude.android.typedpreferences.DoublePreferenceTest > expect_Preference_To_EqualValue PASSED
+
+info.metadude.android.typedpreferences.DoublePreferenceTest > expect_Preference_NotTo_EqualValue PASSED
+
+info.metadude.android.typedpreferences.DoublePreferenceTest > expect_Preference_To_EqualDefaultValue_BeforeBeingSet PASSED
+
+info.metadude.android.typedpreferences.DoublePreferenceTest > expect_Preference_To_BeUnset PASSED
+
+info.metadude.android.typedpreferences.DoublePreferenceTest > expect_Preference_To_EqualDefaultValue PASSED
+
+info.metadude.android.typedpreferences.DoublePreferenceTest > expect_Preference_To_BeInitialized PASSED
+
+info.metadude.android.typedpreferences.DoublePreferenceTest > expect_Preference_NotTo_BeSet PASSED
+
+info.metadude.android.typedpreferences.DoublePreferenceTest > expect_Preference_To_BeSet PASSED
+
+info.metadude.android.typedpreferences.FloatPreferenceTest > expect_Preference_To_EqualValue PASSED
+
+info.metadude.android.typedpreferences.FloatPreferenceTest > expect_Preference_NotTo_EqualValue PASSED
+
+info.metadude.android.typedpreferences.FloatPreferenceTest > expect_Preference_To_EqualDefaultValue_BeforeBeingSet PASSED
+
+info.metadude.android.typedpreferences.FloatPreferenceTest > expect_Preference_To_BeUnset PASSED
+
+info.metadude.android.typedpreferences.FloatPreferenceTest > expect_Preference_To_EqualDefaultValue PASSED
+
+info.metadude.android.typedpreferences.FloatPreferenceTest > expect_Preference_To_BeInitialized PASSED
+
+info.metadude.android.typedpreferences.FloatPreferenceTest > expect_Preference_NotTo_BeSet PASSED
+
+info.metadude.android.typedpreferences.FloatPreferenceTest > expect_Preference_To_BeSet PASSED
+
+info.metadude.android.typedpreferences.IntPreferenceTest > expect_Preference_To_EqualValue PASSED
+
+info.metadude.android.typedpreferences.IntPreferenceTest > expect_Preference_NotTo_EqualValue PASSED
+
+info.metadude.android.typedpreferences.IntPreferenceTest > expect_Preference_To_EqualDefaultValue_BeforeBeingSet PASSED
+
+info.metadude.android.typedpreferences.IntPreferenceTest > expect_Preference_To_BeUnset PASSED
+
+info.metadude.android.typedpreferences.IntPreferenceTest > expect_Preference_To_EqualDefaultValue PASSED
+
+info.metadude.android.typedpreferences.IntPreferenceTest > expect_Preference_To_BeInitialized PASSED
+
+info.metadude.android.typedpreferences.IntPreferenceTest > expect_Preference_NotTo_BeSet PASSED
+
+info.metadude.android.typedpreferences.IntPreferenceTest > expect_Preference_To_BeSet PASSED
+
+info.metadude.android.typedpreferences.LongPreferenceTest > expect_Preference_To_EqualValue PASSED
+
+info.metadude.android.typedpreferences.LongPreferenceTest > expect_Preference_NotTo_EqualValue PASSED
+
+info.metadude.android.typedpreferences.LongPreferenceTest > expect_Preference_To_EqualDefaultValue_BeforeBeingSet PASSED
+
+info.metadude.android.typedpreferences.LongPreferenceTest > expect_Preference_To_BeUnset PASSED
+
+info.metadude.android.typedpreferences.LongPreferenceTest > expect_Preference_To_EqualDefaultValue PASSED
+
+info.metadude.android.typedpreferences.LongPreferenceTest > expect_Preference_To_BeInitialized PASSED
+
+info.metadude.android.typedpreferences.LongPreferenceTest > expect_Preference_NotTo_BeSet PASSED
+
+info.metadude.android.typedpreferences.LongPreferenceTest > expect_Preference_To_BeSet PASSED
+
+info.metadude.android.typedpreferences.RoboTest > testTrueIsTrue PASSED
+
+info.metadude.android.typedpreferences.ShortPreferenceTest > expect_Preference_To_EqualValue PASSED
+
+info.metadude.android.typedpreferences.ShortPreferenceTest > expect_Preference_NotTo_EqualValue PASSED
+
+info.metadude.android.typedpreferences.ShortPreferenceTest > expect_Preference_To_EqualDefaultValue_BeforeBeingSet PASSED
+
+info.metadude.android.typedpreferences.ShortPreferenceTest > expect_Preference_To_BeUnset PASSED
+
+info.metadude.android.typedpreferences.ShortPreferenceTest > expect_Preference_To_EqualDefaultValue PASSED
+
+info.metadude.android.typedpreferences.ShortPreferenceTest > expect_Preference_To_BeInitialized PASSED
+
+info.metadude.android.typedpreferences.ShortPreferenceTest > expect_Preference_NotTo_BeSet PASSED
+
+info.metadude.android.typedpreferences.ShortPreferenceTest > expect_Preference_To_BeSet PASSED
+
+info.metadude.android.typedpreferences.StringPreferenceTest > expect_Preference_To_EqualValue PASSED
+
+info.metadude.android.typedpreferences.StringPreferenceTest > expect_Preference_NotTo_EqualValue PASSED
+
+info.metadude.android.typedpreferences.StringPreferenceTest > expect_Preference_To_EqualDefaultValue_BeforeBeingSet PASSED
+
+info.metadude.android.typedpreferences.StringPreferenceTest > expect_Preference_To_BeUnset PASSED
+
+info.metadude.android.typedpreferences.StringPreferenceTest > expect_Preference_To_EqualDefaultValue PASSED
+
+info.metadude.android.typedpreferences.StringPreferenceTest > expect_Preference_To_BeInitialized PASSED
+
+info.metadude.android.typedpreferences.StringPreferenceTest > expect_Preference_NotTo_BeSet PASSED
+
+info.metadude.android.typedpreferences.StringPreferenceTest > expect_Preference_To_BeSet PASSED
+:Library:preReleaseUnitTestBuild UP-TO-DATE
+:Library:prepareReleaseUnitTestDependencies
+:Library:compileReleaseUnitTestJavaWithJavac
+:Library:processReleaseUnitTestJavaRes UP-TO-DATE
+:Library:compileReleaseUnitTestSources
+:Library:assembleReleaseUnitTest
+:Library:testReleaseUnitTest
+
+info.metadude.android.typedpreferences.BooleanPreferenceTest > expect_Preference_To_EqualValue PASSED
+
+info.metadude.android.typedpreferences.BooleanPreferenceTest > expect_Preference_NotTo_EqualValue PASSED
+
+info.metadude.android.typedpreferences.BooleanPreferenceTest > expect_Preference_To_EqualDefaultValue_BeforeBeingSet PASSED
+
+info.metadude.android.typedpreferences.BooleanPreferenceTest > expect_Preference_To_BeUnset PASSED
+
+info.metadude.android.typedpreferences.BooleanPreferenceTest > expect_Preference_To_EqualDefaultValue PASSED
+
+info.metadude.android.typedpreferences.BooleanPreferenceTest > expect_Preference_To_BeInitialized PASSED
+
+info.metadude.android.typedpreferences.BooleanPreferenceTest > expect_Preference_NotTo_BeSet PASSED
+
+info.metadude.android.typedpreferences.BooleanPreferenceTest > expect_Preference_To_BeSet PASSED
+
+info.metadude.android.typedpreferences.DoublePreferenceTest > expect_Preference_To_EqualValue PASSED
+
+info.metadude.android.typedpreferences.DoublePreferenceTest > expect_Preference_NotTo_EqualValue PASSED
+
+info.metadude.android.typedpreferences.DoublePreferenceTest > expect_Preference_To_EqualDefaultValue_BeforeBeingSet PASSED
+
+info.metadude.android.typedpreferences.DoublePreferenceTest > expect_Preference_To_BeUnset PASSED
+
+info.metadude.android.typedpreferences.DoublePreferenceTest > expect_Preference_To_EqualDefaultValue PASSED
+
+info.metadude.android.typedpreferences.DoublePreferenceTest > expect_Preference_To_BeInitialized PASSED
+
+info.metadude.android.typedpreferences.DoublePreferenceTest > expect_Preference_NotTo_BeSet PASSED
+
+info.metadude.android.typedpreferences.DoublePreferenceTest > expect_Preference_To_BeSet PASSED
+
+info.metadude.android.typedpreferences.FloatPreferenceTest > expect_Preference_To_EqualValue PASSED
+
+info.metadude.android.typedpreferences.FloatPreferenceTest > expect_Preference_NotTo_EqualValue PASSED
+
+info.metadude.android.typedpreferences.FloatPreferenceTest > expect_Preference_To_EqualDefaultValue_BeforeBeingSet PASSED
+
+info.metadude.android.typedpreferences.FloatPreferenceTest > expect_Preference_To_BeUnset PASSED
+
+info.metadude.android.typedpreferences.FloatPreferenceTest > expect_Preference_To_EqualDefaultValue PASSED
+
+info.metadude.android.typedpreferences.FloatPreferenceTest > expect_Preference_To_BeInitialized PASSED
+
+info.metadude.android.typedpreferences.FloatPreferenceTest > expect_Preference_NotTo_BeSet PASSED
+
+info.metadude.android.typedpreferences.FloatPreferenceTest > expect_Preference_To_BeSet PASSED
+
+info.metadude.android.typedpreferences.IntPreferenceTest > expect_Preference_To_EqualValue PASSED
+
+info.metadude.android.typedpreferences.IntPreferenceTest > expect_Preference_NotTo_EqualValue PASSED
+
+info.metadude.android.typedpreferences.IntPreferenceTest > expect_Preference_To_EqualDefaultValue_BeforeBeingSet PASSED
+
+info.metadude.android.typedpreferences.IntPreferenceTest > expect_Preference_To_BeUnset PASSED
+
+info.metadude.android.typedpreferences.IntPreferenceTest > expect_Preference_To_EqualDefaultValue PASSED
+
+info.metadude.android.typedpreferences.IntPreferenceTest > expect_Preference_To_BeInitialized PASSED
+
+info.metadude.android.typedpreferences.IntPreferenceTest > expect_Preference_NotTo_BeSet PASSED
+
+info.metadude.android.typedpreferences.IntPreferenceTest > expect_Preference_To_BeSet PASSED
+
+info.metadude.android.typedpreferences.LongPreferenceTest > expect_Preference_To_EqualValue PASSED
+
+info.metadude.android.typedpreferences.LongPreferenceTest > expect_Preference_NotTo_EqualValue PASSED
+
+info.metadude.android.typedpreferences.LongPreferenceTest > expect_Preference_To_EqualDefaultValue_BeforeBeingSet PASSED
+
+info.metadude.android.typedpreferences.LongPreferenceTest > expect_Preference_To_BeUnset PASSED
+
+info.metadude.android.typedpreferences.LongPreferenceTest > expect_Preference_To_EqualDefaultValue PASSED
+
+info.metadude.android.typedpreferences.LongPreferenceTest > expect_Preference_To_BeInitialized PASSED
+
+info.metadude.android.typedpreferences.LongPreferenceTest > expect_Preference_NotTo_BeSet PASSED
+
+info.metadude.android.typedpreferences.LongPreferenceTest > expect_Preference_To_BeSet PASSED
+
+info.metadude.android.typedpreferences.RoboTest > testTrueIsTrue PASSED
+
+info.metadude.android.typedpreferences.ShortPreferenceTest > expect_Preference_To_EqualValue PASSED
+
+info.metadude.android.typedpreferences.ShortPreferenceTest > expect_Preference_NotTo_EqualValue PASSED
+
+info.metadude.android.typedpreferences.ShortPreferenceTest > expect_Preference_To_EqualDefaultValue_BeforeBeingSet PASSED
+
+info.metadude.android.typedpreferences.ShortPreferenceTest > expect_Preference_To_BeUnset PASSED
+
+info.metadude.android.typedpreferences.ShortPreferenceTest > expect_Preference_To_EqualDefaultValue PASSED
+
+info.metadude.android.typedpreferences.ShortPreferenceTest > expect_Preference_To_BeInitialized PASSED
+
+info.metadude.android.typedpreferences.ShortPreferenceTest > expect_Preference_NotTo_BeSet PASSED
+
+info.metadude.android.typedpreferences.ShortPreferenceTest > expect_Preference_To_BeSet PASSED
+
+info.metadude.android.typedpreferences.StringPreferenceTest > expect_Preference_To_EqualValue PASSED
+
+info.metadude.android.typedpreferences.StringPreferenceTest > expect_Preference_NotTo_EqualValue PASSED
+
+info.metadude.android.typedpreferences.StringPreferenceTest > expect_Preference_To_EqualDefaultValue_BeforeBeingSet PASSED
+
+info.metadude.android.typedpreferences.StringPreferenceTest > expect_Preference_To_BeUnset PASSED
+
+info.metadude.android.typedpreferences.StringPreferenceTest > expect_Preference_To_EqualDefaultValue PASSED
+
+info.metadude.android.typedpreferences.StringPreferenceTest > expect_Preference_To_BeInitialized PASSED
+
+info.metadude.android.typedpreferences.StringPreferenceTest > expect_Preference_NotTo_BeSet PASSED
+
+info.metadude.android.typedpreferences.StringPreferenceTest > expect_Preference_To_BeSet PASSED
+:Library:test
+:Library:check
+:Library:build
+
+BUILD SUCCESSFUL
+
+Total time: 24.415 secs
+
+2018-04-08 15:28:06,304 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-08 15:28:06,304 INFO  SysUtils - Execute command: [/tmp/rdisk/929/src/TypedPreferences-master/gradlew, -b, /tmp/rdisk/929/src/TypedPreferences-master/TypedPreferencesDemo/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-08 15:28:13,874 INFO  ProjectTaskService - Detected possible tasks: 69
+2018-04-08 15:28:13,875 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-08 15:28:13,875 INFO  SysUtils - Execute command: [/tmp/rdisk/929/src/TypedPreferences-master/gradlew, -b, /tmp/rdisk/929/src/TypedPreferences-master/TypedPreferencesDemo/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-08 15:28:43,195 INFO  SysUtils - Configuration on demand is an incubating feature.
+Incremental java compilation is an incubating feature.
+:Library:preBuild UP-TO-DATE
+:Library:preReleaseBuild UP-TO-DATE
+:Library:compileReleaseNdk UP-TO-DATE
+:Library:compileLint
+:Library:copyReleaseLint UP-TO-DATE
+:Library:mergeReleaseProguardFiles UP-TO-DATE
+:Library:packageReleaseRenderscript UP-TO-DATE
+:Library:checkReleaseManifest
+:Library:prepareReleaseDependencies
+:Library:compileReleaseRenderscript UP-TO-DATE
+:Library:generateReleaseResValues UP-TO-DATE
+:Library:generateReleaseResources UP-TO-DATE
+:Library:packageReleaseResources UP-TO-DATE
+:Library:compileReleaseAidl UP-TO-DATE
+:Library:generateReleaseBuildConfig UP-TO-DATE
+:Library:generateReleaseAssets UP-TO-DATE
+:Library:mergeReleaseAssets UP-TO-DATE
+:Library:processReleaseManifest UP-TO-DATE
+:Library:processReleaseResources UP-TO-DATE
+:Library:generateReleaseSources UP-TO-DATE
+:Library:compileReleaseJavaWithJavac UP-TO-DATE
+:Library:processReleaseJavaRes UP-TO-DATE
+:Library:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:Library:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:Library:mergeReleaseJniLibFolders UP-TO-DATE
+:Library:transformNative_libsWithMergeJniLibsForRelease UP-TO-DATE
+:Library:transformNative_libsWithSyncJniLibsForRelease UP-TO-DATE
+:Library:bundleRelease UP-TO-DATE
+:TypedPreferencesDemo:preBuild UP-TO-DATE
+:TypedPreferencesDemo:preDebugBuild UP-TO-DATE
+:TypedPreferencesDemo:checkDebugManifest
+:TypedPreferencesDemo:preReleaseBuild UP-TO-DATE
+:TypedPreferencesDemo:prepareComAndroidSupportAnimatedVectorDrawable2330Library
+:TypedPreferencesDemo:prepareComAndroidSupportAppcompatV72330Library
+:TypedPreferencesDemo:prepareComAndroidSupportDesign2330Library
+:TypedPreferencesDemo:prepareComAndroidSupportRecyclerviewV72330Library
+:TypedPreferencesDemo:prepareComAndroidSupportSupportV42330Library
+:TypedPreferencesDemo:prepareComAndroidSupportSupportVectorDrawable2330Library
+:TypedPreferencesDemo:prepareInfoMetadudeAndroidLibrary210Library
+:TypedPreferencesDemo:prepareDebugDependencies
+:TypedPreferencesDemo:compileDebugAidl
+:TypedPreferencesDemo:compileDebugRenderscript
+:TypedPreferencesDemo:generateDebugBuildConfig
+:TypedPreferencesDemo:generateDebugAssets UP-TO-DATE
+:TypedPreferencesDemo:mergeDebugAssets
+:TypedPreferencesDemo:generateDebugResValues
+:TypedPreferencesDemo:generateDebugResources
+:TypedPreferencesDemo:mergeDebugResources
+:TypedPreferencesDemo:processDebugManifest
+:TypedPreferencesDemo:processDebugResources
+:TypedPreferencesDemo:generateDebugSources
+:TypedPreferencesDemo:compileDebugJavaWithJavac
+:TypedPreferencesDemo:compileDebugNdk UP-TO-DATE
+:TypedPreferencesDemo:compileDebugSources
+:TypedPreferencesDemo:prePackageMarkerForDebug
+:TypedPreferencesDemo:transformClassesWithDexForDebug
+:TypedPreferencesDemo:mergeDebugJniLibFolders
+:TypedPreferencesDemo:transformNative_libsWithMergeJniLibsForDebug
+:TypedPreferencesDemo:processDebugJavaRes UP-TO-DATE
+:TypedPreferencesDemo:transformResourcesWithMergeJavaResForDebug
+:TypedPreferencesDemo:validateDebugSigning
+:TypedPreferencesDemo:packageDebug
+:TypedPreferencesDemo:zipalignDebug
+:TypedPreferencesDemo:assembleDebug
+:TypedPreferencesDemo:checkReleaseManifest
+:TypedPreferencesDemo:prepareReleaseDependencies
+:TypedPreferencesDemo:compileReleaseAidl
+:TypedPreferencesDemo:compileReleaseRenderscript
+:TypedPreferencesDemo:generateReleaseBuildConfig
+:TypedPreferencesDemo:generateReleaseAssets UP-TO-DATE
+:TypedPreferencesDemo:mergeReleaseAssets
+:TypedPreferencesDemo:generateReleaseResValues
+:TypedPreferencesDemo:generateReleaseResources
+:TypedPreferencesDemo:mergeReleaseResources
+:TypedPreferencesDemo:processReleaseManifest
+:TypedPreferencesDemo:processReleaseResources
+:TypedPreferencesDemo:generateReleaseSources
+:TypedPreferencesDemo:compileReleaseJavaWithJavac
+:TypedPreferencesDemo:compileReleaseNdk UP-TO-DATE
+:TypedPreferencesDemo:compileReleaseSources
+:TypedPreferencesDemo:lintVitalRelease
+:TypedPreferencesDemo:prePackageMarkerForRelease
+:TypedPreferencesDemo:transformClassesWithDexForRelease
+:TypedPreferencesDemo:mergeReleaseJniLibFolders
+:TypedPreferencesDemo:transformNative_libsWithMergeJniLibsForRelease
+:TypedPreferencesDemo:processReleaseJavaRes UP-TO-DATE
+:TypedPreferencesDemo:transformResourcesWithMergeJavaResForRelease
+:TypedPreferencesDemo:packageRelease
+:TypedPreferencesDemo:assembleRelease
+:TypedPreferencesDemo:assemble
+:TypedPreferencesDemo:build
+
+BUILD SUCCESSFUL
+
+Total time: 28.867 secs
+
+2018-04-08 15:28:43,247 INFO  FullProcessService - Found APK file: /tmp/rdisk/929/src/TypedPreferences-master/TypedPreferencesDemo/build/outputs/apk/TypedPreferencesDemo-release-unsigned.apk

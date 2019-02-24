@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.fourmob.poppyview.sample",
+    "label" : "poppyview-sample",
+    "icon" : "res/drawable-mdpi/ic_launcher.png",
+    "versionName" : "1.0.0",
+    "versionCode" : 100,
+    "installLocation" : null,
+    "minSdkVersion" : "8",
+    "targetSdkVersion" : "17",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-mdpi/ic_launcher.png",
+    "density" : 0,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAI0klEQVRo3u2ZbWxT5xXHf/Z1nJsXOwlNGigkhCTVIMUOSRZK20FIUVjp+FCp3VaJfQC0L+ukSm21StM2bao0CaqqaGLSEKIFaev2obSdGGuZNsZCh9WRLCFtRxIVkhCzvDvg3Ni+788+XJuaNE5CG0g+7JGufH3t5z7//zn/c+45z4X/j6UdrsW4SSgUypFl+VuWZe0yTbPGsqxyy7IKhRDZAC6XS5Mk6YYkSWGPx3NZkqQPVFX986OPPppYUgIdHR07NE17MZFIbBdC5AIIITIv5nKWE0Lgdrvjubm553Jycl6vra39+z0l0NHR0RSLxV5XVbXOweWisLCQoqIi8vPzycvLIzs7G7fbDYBt22iaRiwWY3p6mhs3bhCNRrFtG0DIstyZl5f3Yn19fetdJdDV1ZUXi8WOR6PRpwG3z+ejvLyc0tJSvF7vHS1sGAYjIyMMDg6iKAqA7ff738nPz99XW1sbW3QCly5dqhsfH/+jqqrlPp+P9evXU1pauiiBODo6Sk9PD4qiIMvyYElJyVObNm3qXDQC7e3tO4eHh98RQuRv2LCBqqqqW3perCGE4MqVK3R3dyNJUmzVqlXPNDQ0nPnKBNra2naFw+H3ZFnO3rJlC0VFRXc1Ld68eZOPPvoIVVW11atXP7V58+YzX5pAZ2fnpr6+vg99Pl/+tm3byM7Ovie5XdM0zp8/j6Io05WVlVvr6uou3TGBrq6uvP7+/ster7d8x44ddxykX3Xous7Zs2cxDGOwoqKiJlNguzPdYGxs7E3TNMubm5vvOXgAr9dLc3MzhmGUj4+Pv5Hpf7MSuHjx4raRkZFnmpqakGV5ycoEWZZpampiaGjo2+3t7d9YMIGRkZFDgUDAXVxcvOS1TnFxMcFg0D00NHRoQQTa2tq2m6ZZFwwGl03BFggEsCyroa2tbfu8BCKRyMv19fWuxc7zX2W43W7q6upcExMTP5qTQDgczjFNc/vatWuXXdm8du1aTNNsDoVCORkJDA4O7qyqqspZrrV/dXV1jtvt3pmRgKZpT1ZWVi7b5mXdunVMT0/vykhAluWNS5HzFzqys7PJzc3dmJGAz+crW+4tpN/vL0//7pnxY2Gmif9tg4lukLIgOggbnoYV1WDGofs9mB6G4hqo3gWxEfjsA+f3kU5YswVWPwzXWkGfhti487nxO6AMw7V/QsP3wdKh4xhUtsD9G2fH4fP5CjN6wO/3Z3zsjn0CFw9D4gZEw/CXl5wFz/8S+v4G/jLofAM+/T3EJ+DySbj+LxA2tL4CNwec7+1HHSMMt8O5X4BcCJ/8Doba4dqH0PVbyJ3j+VlQUCBnJJCbm5uVuWAHjwyNz8Hm5yA+BqMfw+AFqHkGHvoulG+F/nMgBNimY+GHn3emD7U7ZArKILAHHnrWmZ9zH9z3Nbh2HgbOwap6yF+ZmcBMjOkEXB6PZ46GA2wrOcnjnFu6AzS9prUNh6xtggBc7uRcwyEgUveQnHPbhOonYKDVkdKDT84dA5Ik3VZFpyN2CSEMIUTWbE9hYTu67XzTsVxWDpTWwgON8OkfwEhA319h/VOfe6D7pOM1PQalAZi84kjp8ttOjBSUOxKq2gkXDjrmrGqZt3MzkgTETA+4LcuKz+UBKQtMzQH1xK/AmwePv+IE6fC/IfA92LT/cw9482F6FLb+GEo2gm2DXOQkgcIKaHnVuXfOCicBVGwDr2/utjOJ0T1rFtJ1PeLxeArS93DSY0AIaPzBjLrdB40/nEVuJlTuhKJ1adctkLLhkZdm9Ny/gdFLsPno/H2zruuRTDFgq6p6LdPGVGkQgnsWlqvz7oeNz4Lsv/162SNQvfP2a5bqyGrrT6DssbnBCyHQNG0AsGdtL69evfprXdeFZVnCtm2xXIZt28KyLGEYhujr6zucHsTpHhD9/f3/sG0b27bn3CJcipHUP/39/edTAfyF0dLS8kA0Go1pmiZM01wWXkhZX9d1MTU1FW9paXlgTvl2d3efjsfjYjlIKV06iURC9Pb2ngby5urItFAo9IZpmliWdUtKSyGn1Lq2bWNZFqZpEgqF3gS0+eaW9Pb2diqKIlRVFYZh3HNPpFteVVWhKIro7e3tBEoWsiuhnDp16qCmaZZhGPfcE7NZXtd169133z0AKAvqoYGVra2tpyKRiFAURSQSCaHrujBN8655I2V10zSFrusikUgIRVHE5OSkaG1tPQWUzrUR94U9pUAg0NDT0xOORCJiampKxONxoWnabZJaDCKp+6Qko2maSCQSYmpqSkQiEdHT0xMOBAINwKylvpSBgDU2NpZQVbW/sbHxmx6PZ94+8063YVJyTJdMSjaGYaDrOlNTU9MHDx58/syZM21A7E4IAJgdHR0TsixHgsFgs8vlktIXXej7sJmAM4E2TRPTNG+Bj8VixpEjR352+PDh08CNTOXDXARsQL9w4UI4KytrpKam5jFJkrLSF0+dpwf4TMumH6k5qcSQDj4FXNM0otFo/MiRIz9/7bXXTgJjgJGxP5jH0xaghkKh6xMTE1cDgUCD1+v1pZcb6cBS19N/T4FMfaaOdIsbhoGmaei6zujo6PCBAwd+evTo0T8Bw/Pl/YUKVwZWrlmzpubQoUMvB4PBrV6v1+3xePB4PEiShNvtxu1243K5bh2zpcc5pGN3dXV9+MILL7x6/fr1/wCjgLpoL/kAL7ACqNi7d+/je/bs2VtWVvZgisBsJFKxkAl8ikA4HP7srbfeOnHixImzwDVgEtAX7SXfDMnlJ3Pymv379z+2e/fu3RUVFUFZluUUiZlemEnAsixUVVUHBgY+fv/9908fO3bsAnA9afXppHS5GwRSc7yADygG7l+xYsXKffv2fb2+vr62pKSkzO/3l3i93nxJkrxJ0Lqu69OKooyPjY2FOzo6uo4fP94+OTk5kgzSieRTVs9YKi8igfS5WUBukkwB4E96KCdJUkpLBjqQSFp4CogmQceTWUZ8WRCLsoWfJJOdBO5JHq7PO2rM5KEnM4uRKbffyfgfw1LOggycytEAAAAASUVORK5CYII="
+  },
+  "dexClasses" : 549,
+  "locales" : [ "" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"100\" android:versionName=\"1.0.0\" package=\"com.fourmob.poppyview.sample\">\n\t<uses-sdk android:minSdkVersion=\"8\" android:targetSdkVersion=\"17\" />\n\t<application android:theme=\"resourceId:0x7f0a0059\" android:label=\"poppyview-sample\" android:icon=\"res/drawable-mdpi/ic_launcher.png\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"poppyview-sample\" android:name=\"com.fourmob.poppyview.sample.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<activity android:name=\"com.fourmob.poppyview.sample.ListViewActivity\" />\n\t\t<activity android:name=\"com.fourmob.poppyview.sample.ScrollViewActivity\" />\n\t</application>\n</manifest>\n",
+  "fileSize" : 634417,
+  "crc32" : 1873621861,
+  "sha256" : "103727dc9086bf0c42f7b2ead65e0d4e83cec36150f6d6e974d3e7f1a27535cc",
+  "buildTime" : 1512289587000
+}

@@ -1,0 +1,8 @@
+21:46:09.238 [main] INFO  c.g.v.a.s.n.DownloadService - Downloading "https://github.com/WritingMinds/ffmpeg-android-java/archive/master.zip", attempt 3
+21:46:13.442 [main] INFO  c.g.v.a.s.n.DownloadService - Downloaded https://github.com/WritingMinds/ffmpeg-android-java/archive/master.zip, attempt 3
+21:46:36.528 [main] DEBUG o.z.z.ZipUtil - Extracting '/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1465055168537-0/master.zip' into '/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1465055168537-0/src'.
+21:46:37.190 [main] INFO  c.g.v.a.s.FullProcessService - Size of directory with sources: 42 MB
+21:46:37.190 [main] ERROR c.g.v.a.s.FullProcessService - Source directory should be less than 40 MB
+21:46:37.190 [main] ERROR c.g.v.a.s.FullProcessService - Project will not be processed
+21:46:37.190 [main] ERROR c.g.v.a.s.FullProcessService - Project build has not produced APK file
+21:46:37.231 [main] ERROR c.g.v.a.s.FullProcessService - Could not find generated or existed APK file

@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.sromku.simple.fb.example",
+    "label" : "Simple Facebook Sample",
+    "icon" : "res/drawable-xhdpi-v4/ic_launcher.png",
+    "versionName" : "1.0",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "15",
+    "targetSdkVersion" : "23",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ "android.permission.INTERNET" ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-xhdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAACQ1BMVEUAAABVqv81uOczt+oztusytuo0teszteo0tuoztukztukyt+k5quMA//80tekztukztuoztuoztuoztuoytekytuowr+8xtesztekztuoztegzt+oztuouuegztOsztuoztuoAgP8ztuo0tuozuOsztuoytuozt+ozt+szteozteoyt+kytekytuoztuoztuoztuoztuoytOxAv98zzP8ztuo0t+szs+Yztukztuokttszt+o3sekztuoytuozs+40tuo0tuozt+o0tukztukztuoztuk7ses0tekztuo0tuoztukxuOk0tuoztuoztesxtucztukztuoytuoytusztuo0tuoztuoztegzteoztuoxtu0yteoztuozu+4ws+oztuoztuoytuoztuoztuk0tuoztuoztuoytug3tu0ztuk1tOkztuoztuowt+c0t+s0t+oytuw0tuszteo0tuoyuOoztuoytuozt+o0t+s0tukztusyt+k0tOhAv/8ztuo0tekztuoztukztuo0t+ottPA0t+ouuegyt+s1teoztus1ue0ztuoyteo0tuoxt+kzteoxuusztuorv+o3tu0ztuozuOszt+oztekyt+sztuoztuorqv8yt+szt+kztuo0tuo0t+sztusztuo2uegytus2tes5uPEztuozteoyteoytOsyteo1uOkytus0tukztuszteoztuszt+orqtU0tuoytuo1tus0tesztuoztesyt+kzteoyuOozt+k0tekyt+nd5dXTAAAAwXRSTlMAAytVc4SKh3tpUC4JAUWl7v/70ZhXEDTJ+jd8+AtB/c8CzZ4ybXo8sLSDdY6s0/bW3ykIBexOCvnvB8wXurYeSWyGmaSqmg1d6saCL7LnWhWM8cpNiI/iLZXrKmvdDyX1oKf84cHO/jgc7SLj0iBZSkK8ecsk951uQF6LXCwE3FPH1diUEWMWohjIHehIVDnXGvAMDpIZX6Z/q+UGZo2zMVh+uCFbJhLa3lYzYUSJdtTQlr4GYsA/o/JyUpw9aoBRF/svgAAAAytJREFUaN5jYBgFo2AUjIJRMAqoBxiZmFlY2dg5OLm4eahvOi8fv4AgHAgJi4iKUdV8cQlBdMBJTfNZJDHMF5SiovnSmMYLyshSz3w5eSwWKFDPfEUlLOYLKlPPAhVs5guqUs8CNawWqFPPAg1kcyU1tbSldXT19KmYDQyQzDc0ggoaU898E1MkC8xoUASZWyDMt7SigQViSB6wpkUhaoNkgS2tLbAbVBbw2js4Ojm7uLq6uLGxiHKbUNcCdw9XT7TS0cvbB02RqisI+CIp8nOFAn/8xgcEBmHN/sEhKMpcBHGCULzmewjg1KhpQ7kFimGCeEB4BKUW8EYK4gVR0RRaECNIAMTGUWRBfAIhCwQTKbIgCUVdcop1ampaFKrm9AwKLMhEan9ksWdAS/VslhyUpESBBaoINbnIKdJdF0m3fB5EMJ8NBJATRSwbFBTgsoAfobgQtVopQjKnmPyiogThzExUmVIZsHCZdXlFpRj5FsQiFFehSen62VbX1NZRWNjVIxQHNfCiBhJVStNG5KTQVFxK9fogES25NbdwtVLVgjbMJC0v3JJvTzUL2vWxZ5yUDo9O6tRozjgzp3yXdjcVLLDpwVPMJWsW8FJcJ/NZ4C1KFXoprvT7yvCX1q6tlLYq+g3x2zBhIqXNFnetSXhtyJ1McbtoCmdJOh4bplKjZRfPYY3TDgt76rRNp02f4YndhplUa/wqRqjOmo1pQRd1W9d5/i16qMGVMIfqzffsUJT2zDRKLOCdVjl33nyM9nEh8oBBPHkWmC9YuMilBNKyXowha41k0hLyLFiKpFZoGbqsJlLJOpk8C5Yj1wa+aAWn4gqE3EpeMuNghiCu1g8DwyokqXJyk+lqlJGfSHck969BTkVryc4HqG3fqHXq4MA2F1+/AVl8oyLZFkxDLxvSTVNSBNAKpXQ+Cgo7ByGC/QPBTRTVB3PlCZm/eQtlFc5WSfzmb3OntMrcHo7P/B3GlPf0xSJxRsRsf+oMJcRv2om1g7lLlmqDIea796xASZ0WJYF7FbE2ESIRYB9pdcCUjPxdrDqRLfP2qx6opcVg2SgYBaNgFIyCEQUAfYAT6Pcn+V0AAAAASUVORK5CYII="
+  },
+  "dexClasses" : 943,
+  "locales" : [ "", "in", "vi", "mr", "zh_HK", "zh_TW", "it", "ko", "da", "fi", "es", "tr", "pt_PT", "tl", "hr", "th", "pl", "zh_CN", "es_ES", "bn", "pt", "ar", "fr", "ru", "ja", "kn", "sk", "ms", "de", "ml", "gu", "nb", "hi", "cs", "sv", "pa", "el", "ta", "nl", "hu", "af", "te" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"1.0\" package=\"com.sromku.simple.fb.example\" platformBuildVersionCode=\"23\" platformBuildVersionName=\"6.0-2704002\">\n\t<uses-sdk android:minSdkVersion=\"15\" android:targetSdkVersion=\"23\" />\n\t<uses-permission android:name=\"android.permission.INTERNET\" />\n\t<application android:theme=\"@android:style/Theme.Light\" android:label=\"Simple Facebook Sample\" android:icon=\"res/drawable-xhdpi-v4/ic_launcher.png\" android:name=\"com.sromku.simple.fb.example.SampleApplication\">\n\t\t<activity android:label=\"Simple Facebook Sample\" android:name=\"com.sromku.simple.fb.example.MainActivity\" android:screenOrientation=\"portrait\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<meta-data android:name=\"com.facebook.sdk.ApplicationId\" android:value=\"728615400528729\" />\n\t\t<provider android:name=\"com.facebook.FacebookContentProvider\" android:exported=\"true\" android:authorities=\"com.facebook.app.FacebookContentProvider728615400528729\" />\n\t\t<activity android:theme=\"@android:style/Theme.Translucent.NoTitleBar\" android:label=\"Simple Facebook Sample\" android:name=\"com.facebook.FacebookActivity\" android:configChanges=\"0x5b0\" />\n\t</application>\n</manifest>\n",
+  "fileSize" : 423564,
+  "crc32" : 1997029003,
+  "sha256" : "64bcc8b7e3a224beb4065c2d92cdb5d6226ce88e72edcd830f8abc600ce5f5b3",
+  "buildTime" : 1523195485000
+}

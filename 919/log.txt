@@ -1,0 +1,519 @@
+2018-04-08 15:33:59,111 INFO  DownloadService - Downloading "https://github.com/ademar111190/android-phased-seek-bar/archive/master.zip", attempt 3
+2018-04-08 15:34:00,010 INFO  DownloadService - Downloaded https://github.com/ademar111190/android-phased-seek-bar/archive/master.zip, attempt 3
+2018-04-08 15:34:00,010 INFO  DownloadService - Size of file "/tmp/rdisk/919/master.zip": 3 MB
+2018-04-08 15:34:00,010 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-08 15:34:00,011 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/919/master.zip: true
+2018-04-08 15:34:00,011 DEBUG ZipUtil - Extracting '/tmp/rdisk/919/master.zip' into '/tmp/rdisk/919/src'.
+2018-04-08 15:34:00,061 INFO  FullProcessService - Size of directory with sources: 4 MB
+2018-04-08 15:34:00,061 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/919/src]
+2018-04-08 15:34:00,068 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/919/src/.git/
+
+2018-04-08 15:34:00,072 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/919/src/android-phased-seek-bar-master/gradlew
+2018-04-08 15:34:00,075 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/919/src/android-phased-seek-bar-master/phased-seekbar/build.gradle /tmp/rdisk/919/src/android-phased-seek-bar-master/sample/build.gradle /tmp/rdisk/919/src/android-phased-seek-bar-master/build.gradle
+2018-04-08 15:34:00,078 INFO  ProjectBuildService - All script(s): /tmp/rdisk/919/src/android-phased-seek-bar-master/settings.gradle /tmp/rdisk/919/src/android-phased-seek-bar-master/sample/build.gradle /tmp/rdisk/919/src/android-phased-seek-bar-master/phased-seekbar/build.gradle /tmp/rdisk/919/src/android-phased-seek-bar-master/build.gradle
+2018-04-08 15:34:00,079 INFO  ProjectBuildService - Remote scripts: none
+2018-04-08 15:34:00,079 INFO  ProjectFixService - Fixing project...
+2018-04-08 15:34:00,086 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/919/src/android-phased-seek-bar-master/phased-seekbar/local.properties
+2018-04-08 15:34:00,086 INFO  ProjectFixService - Build info for "/tmp/rdisk/919/src/android-phased-seek-bar-master/phased-seekbar/build.gradle": [buildToolsVersion=23.0.3,compileSdkVersion=23,minSdkVersion=7,targetSdkVersion=23]
+2018-04-08 15:34:00,086 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/919/src/android-phased-seek-bar-master/sample/local.properties
+2018-04-08 15:34:00,087 INFO  ProjectFixService - Build info for "/tmp/rdisk/919/src/android-phased-seek-bar-master/sample/build.gradle": [buildToolsVersion=23.0.3,compileSdkVersion=23,minSdkVersion=7,targetSdkVersion=23]
+2018-04-08 15:34:00,087 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/919/src/android-phased-seek-bar-master/local.properties
+2018-04-08 15:34:00,087 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.10-all.zip
+2018-04-08 15:34:00,087 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.10-bin.zip)
+2018-04-08 15:34:00,088 INFO  ProjectFixService - Build info for "/tmp/rdisk/919/src/android-phased-seek-bar-master/build.gradle": [buildToolsVersion=23.0.3,compileSdkVersion=23,minSdkVersion=7,targetSdkVersion=23]
+2018-04-08 15:34:00,088 INFO  ProjectFixService - Project was maybe fixed
+2018-04-08 15:34:00,088 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-08 15:34:00,088 INFO  SysUtils - Execute command: [/tmp/rdisk/919/src/android-phased-seek-bar-master/gradlew, -b, /tmp/rdisk/919/src/android-phased-seek-bar-master/phased-seekbar/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-08 15:34:09,616 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-08 15:34:09,616 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-08 15:34:09,616 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-08 15:34:09,616 INFO  SysUtils - Execute command: [/tmp/rdisk/919/src/android-phased-seek-bar-master/gradlew, -b, /tmp/rdisk/919/src/android-phased-seek-bar-master/phased-seekbar/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-08 15:34:26,379 INFO  SysUtils - Configuration on demand is an incubating feature.
+Incremental java compilation is an incubating feature.
+:phased-seekbar:preBuild UP-TO-DATE
+:phased-seekbar:preDebugBuild UP-TO-DATE
+:phased-seekbar:compileDebugNdk UP-TO-DATE
+:phased-seekbar:compileLint
+:phased-seekbar:copyDebugLint UP-TO-DATE
+:phased-seekbar:mergeDebugProguardFiles
+:phased-seekbar:packageDebugRenderscript UP-TO-DATE
+:phased-seekbar:checkDebugManifest
+:phased-seekbar:prepareDebugDependencies
+:phased-seekbar:compileDebugRenderscript
+:phased-seekbar:generateDebugResValues
+:phased-seekbar:generateDebugResources
+:phased-seekbar:packageDebugResources
+:phased-seekbar:compileDebugAidl
+:phased-seekbar:generateDebugBuildConfig
+:phased-seekbar:mergeDebugShaders
+:phased-seekbar:compileDebugShaders
+:phased-seekbar:generateDebugAssets
+:phased-seekbar:mergeDebugAssets
+:phased-seekbar:processDebugManifest
+:phased-seekbar:processDebugResources
+:phased-seekbar:generateDebugSources
+:phased-seekbar:incrementalDebugJavaCompilationSafeguard
+:phased-seekbar:compileDebugJavaWithJavac
+:phased-seekbar:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: /tmp/rdisk/919/src/android-phased-seek-bar-master/phased-seekbar/src/main/java/ademar/phasedseekbar/SimplePhasedAdapter.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+:phased-seekbar:processDebugJavaRes UP-TO-DATE
+:phased-seekbar:transformResourcesWithMergeJavaResForDebug
+:phased-seekbar:transformClassesAndResourcesWithSyncLibJarsForDebug
+:phased-seekbar:mergeDebugJniLibFolders
+:phased-seekbar:transformNative_libsWithMergeJniLibsForDebug
+:phased-seekbar:transformNative_libsWithSyncJniLibsForDebug
+:phased-seekbar:bundleDebug
+:phased-seekbar:compileDebugSources
+:phased-seekbar:assembleDebug
+:phased-seekbar:preReleaseBuild UP-TO-DATE
+:phased-seekbar:compileReleaseNdk UP-TO-DATE
+:phased-seekbar:copyReleaseLint UP-TO-DATE
+:phased-seekbar:mergeReleaseProguardFiles
+:phased-seekbar:packageReleaseRenderscript UP-TO-DATE
+:phased-seekbar:checkReleaseManifest
+:phased-seekbar:prepareReleaseDependencies
+:phased-seekbar:compileReleaseRenderscript
+:phased-seekbar:generateReleaseResValues
+:phased-seekbar:generateReleaseResources
+:phased-seekbar:packageReleaseResources
+:phased-seekbar:compileReleaseAidl
+:phased-seekbar:generateReleaseBuildConfig
+:phased-seekbar:mergeReleaseShaders
+:phased-seekbar:compileReleaseShaders
+:phased-seekbar:generateReleaseAssets
+:phased-seekbar:mergeReleaseAssets
+:phased-seekbar:processReleaseManifest
+:phased-seekbar:processReleaseResources
+:phased-seekbar:generateReleaseSources
+:phased-seekbar:incrementalReleaseJavaCompilationSafeguard
+:phased-seekbar:compileReleaseJavaWithJavac
+:phased-seekbar:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: /tmp/rdisk/919/src/android-phased-seek-bar-master/phased-seekbar/src/main/java/ademar/phasedseekbar/SimplePhasedAdapter.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+:phased-seekbar:processReleaseJavaRes UP-TO-DATE
+:phased-seekbar:transformResourcesWithMergeJavaResForRelease
+:phased-seekbar:transformClassesAndResourcesWithSyncLibJarsForRelease
+:phased-seekbar:mergeReleaseJniLibFolders
+:phased-seekbar:transformNative_libsWithMergeJniLibsForRelease
+:phased-seekbar:transformNative_libsWithSyncJniLibsForRelease
+:phased-seekbar:bundleRelease
+:phased-seekbar:compileReleaseSources
+:phased-seekbar:assembleRelease
+:phased-seekbar:assemble
+:phased-seekbar:lint
+Ran lint on variant debug: 1 issues found
+Ran lint on variant release: 1 issues found
+Wrote HTML report to file:///tmp/rdisk/919/src/android-phased-seek-bar-master/phased-seekbar/build/outputs/lint-results-debug.html
+Wrote XML report to file:///tmp/rdisk/919/src/android-phased-seek-bar-master/phased-seekbar/build/outputs/lint-results-debug.xml
+:phased-seekbar:incrementalDebugUnitTestJavaCompilationSafeguard UP-TO-DATE
+:phased-seekbar:preDebugUnitTestBuild UP-TO-DATE
+:phased-seekbar:prepareDebugUnitTestDependencies
+:phased-seekbar:compileDebugUnitTestJavaWithJavac UP-TO-DATE
+:phased-seekbar:processDebugUnitTestJavaRes UP-TO-DATE
+:phased-seekbar:compileDebugUnitTestSources UP-TO-DATE
+:phased-seekbar:mockableAndroidJar
+:phased-seekbar:assembleDebugUnitTest
+:phased-seekbar:testDebugUnitTest
+:phased-seekbar:incrementalReleaseUnitTestJavaCompilationSafeguard UP-TO-DATE
+:phased-seekbar:preReleaseUnitTestBuild UP-TO-DATE
+:phased-seekbar:prepareReleaseUnitTestDependencies
+:phased-seekbar:compileReleaseUnitTestJavaWithJavac UP-TO-DATE
+:phased-seekbar:processReleaseUnitTestJavaRes UP-TO-DATE
+:phased-seekbar:compileReleaseUnitTestSources UP-TO-DATE
+:phased-seekbar:assembleReleaseUnitTest
+:phased-seekbar:testReleaseUnitTest
+:phased-seekbar:test
+:phased-seekbar:check
+:phased-seekbar:build
+
+BUILD SUCCESSFUL
+
+Total time: 16.345 secs
+
+2018-04-08 15:34:26,389 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-08 15:34:26,389 INFO  SysUtils - Execute command: [/tmp/rdisk/919/src/android-phased-seek-bar-master/gradlew, -b, /tmp/rdisk/919/src/android-phased-seek-bar-master/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-08 15:34:33,149 INFO  ProjectTaskService - Detected possible tasks: 69
+2018-04-08 15:34:33,149 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-08 15:34:33,150 INFO  SysUtils - Execute command: [/tmp/rdisk/919/src/android-phased-seek-bar-master/gradlew, -b, /tmp/rdisk/919/src/android-phased-seek-bar-master/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-08 15:34:59,808 INFO  SysUtils - Configuration on demand is an incubating feature.
+Incremental java compilation is an incubating feature.
+:phased-seekbar:preBuild UP-TO-DATE
+:phased-seekbar:preReleaseBuild UP-TO-DATE
+:phased-seekbar:compileReleaseNdk UP-TO-DATE
+:phased-seekbar:compileLint
+:phased-seekbar:copyReleaseLint UP-TO-DATE
+:phased-seekbar:mergeReleaseProguardFiles UP-TO-DATE
+:phased-seekbar:packageReleaseRenderscript UP-TO-DATE
+:phased-seekbar:checkReleaseManifest
+:phased-seekbar:prepareReleaseDependencies
+:phased-seekbar:compileReleaseRenderscript UP-TO-DATE
+:phased-seekbar:generateReleaseResValues UP-TO-DATE
+:phased-seekbar:generateReleaseResources UP-TO-DATE
+:phased-seekbar:packageReleaseResources UP-TO-DATE
+:phased-seekbar:compileReleaseAidl UP-TO-DATE
+:phased-seekbar:generateReleaseBuildConfig UP-TO-DATE
+:phased-seekbar:mergeReleaseShaders UP-TO-DATE
+:phased-seekbar:compileReleaseShaders UP-TO-DATE
+:phased-seekbar:generateReleaseAssets UP-TO-DATE
+:phased-seekbar:mergeReleaseAssets UP-TO-DATE
+:phased-seekbar:processReleaseManifest UP-TO-DATE
+:phased-seekbar:processReleaseResources UP-TO-DATE
+:phased-seekbar:generateReleaseSources UP-TO-DATE
+:phased-seekbar:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:phased-seekbar:compileReleaseJavaWithJavac UP-TO-DATE
+:phased-seekbar:processReleaseJavaRes UP-TO-DATE
+:phased-seekbar:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:phased-seekbar:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:phased-seekbar:mergeReleaseJniLibFolders UP-TO-DATE
+:phased-seekbar:transformNative_libsWithMergeJniLibsForRelease UP-TO-DATE
+:phased-seekbar:transformNative_libsWithSyncJniLibsForRelease UP-TO-DATE
+:phased-seekbar:bundleRelease UP-TO-DATE
+:sample:preBuild UP-TO-DATE
+:sample:preDebugBuild UP-TO-DATE
+:sample:checkDebugManifest
+:sample:preReleaseBuild UP-TO-DATE
+:sample:prepareAndroidPhasedSeekBarMasterPhasedSeekbarUnspecifiedLibrary
+:sample:prepareComAndroidSupportAnimatedVectorDrawable2340Library
+:sample:prepareComAndroidSupportAppcompatV72340Library
+:sample:prepareComAndroidSupportSupportV42340Library
+:sample:prepareComAndroidSupportSupportVectorDrawable2340Library
+:sample:prepareDebugDependencies
+:sample:compileDebugAidl
+:sample:compileDebugRenderscript
+:sample:generateDebugBuildConfig
+:sample:mergeDebugShaders
+:sample:compileDebugShaders
+:sample:generateDebugAssets
+:sample:mergeDebugAssets
+:sample:generateDebugResValues
+:sample:generateDebugResources
+:sample:mergeDebugResources
+:sample:processDebugManifest
+:sample:processDebugResources
+:sample:generateDebugSources
+:sample:incrementalDebugJavaCompilationSafeguard
+:sample:compileDebugJavaWithJavac
+:sample:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: /tmp/rdisk/919/src/android-phased-seek-bar-master/sample/src/main/java/ademar/phasedseekbar/sample/SampleActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+:sample:compileDebugNdk UP-TO-DATE
+:sample:compileDebugSources
+:sample:prePackageMarkerForDebug
+:sample:processDebugJavaRes UP-TO-DATE
+:sample:transformResourcesWithMergeJavaResForDebug
+:sample:transformClassesAndResourcesWithProguardForDebug
+ProGuard, version 5.2.1
+Reading input...
+Reading program jar [/root/Applications/android-sdk/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar] (filtered)
+Reading program jar [/tmp/rdisk/919/src/android-phased-seek-bar-master/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/jars/classes.jar] (filtered)
+Reading program jar [/tmp/rdisk/919/src/android-phased-seek-bar-master/sample/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/jars/classes.jar] (filtered)
+Reading program jar [/tmp/rdisk/919/src/android-phased-seek-bar-master/sample/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/jars/classes.jar] (filtered)
+Reading program jar [/tmp/rdisk/919/src/android-phased-seek-bar-master/sample/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar] (filtered)
+Reading program jar [/tmp/rdisk/919/src/android-phased-seek-bar-master/sample/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/libs/internal_impl-23.4.0.jar] (filtered)
+Reading program jar [/tmp/rdisk/919/src/android-phased-seek-bar-master/sample/build/intermediates/exploded-aar/android-phased-seek-bar-master/phased-seekbar/unspecified/jars/classes.jar] (filtered)
+Reading program directory [/tmp/rdisk/919/src/android-phased-seek-bar-master/sample/build/intermediates/classes/debug] (filtered)
+Reading library jar [/root/Applications/android-sdk/platforms/android-23/android.jar]
+Reading library jar [/root/Applications/android-sdk/platforms/android-23/optional/org.apache.http.legacy.jar]
+Note: duplicate definition of library class [android.net.http.SslCertificate]
+Note: duplicate definition of library class [android.net.http.SslError]
+Note: duplicate definition of library class [android.net.http.SslCertificate$DName]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.SocketFactory]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.HostNameResolver]
+Note: duplicate definition of library class [org.apache.http.conn.ConnectTimeoutException]
+Note: duplicate definition of library class [org.apache.http.params.HttpParams]
+Note: there were 7 duplicate class definitions.
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#duplicateclass)
+Initializing...
+Note: the configuration refers to the unknown class 'com.google.vending.licensing.ILicensingService'
+Note: the configuration refers to the unknown class 'com.android.vending.licensing.ILicensingService'
+Note: android.support.v4.app.NotificationCompatJellybean calls 'Field.getType'
+Note: android.support.v4.media.IMediaBrowserServiceCallbacksAdapterApi21: can't find dynamically referenced class android.service.media.IMediaBrowserServiceCallbacks
+Note: android.support.v4.media.IMediaBrowserServiceCallbacksAdapterApi21: can't find dynamically referenced class android.content.pm.ParceledListSlice
+Note: android.support.v4.media.IMediaBrowserServiceCallbacksAdapterApi21$Stub: can't find dynamically referenced class android.service.media.IMediaBrowserServiceCallbacks$Stub
+Note: android.support.v4.media.ParceledListSliceAdapterApi21: can't find dynamically referenced class android.content.pm.ParceledListSlice
+Note: android.support.v4.text.ICUCompatApi23: can't find dynamically referenced class libcore.icu.ICU
+Note: android.support.v4.text.ICUCompatIcs: can't find dynamically referenced class libcore.icu.ICU
+Note: android.support.v7.widget.DrawableUtils: can't find dynamically referenced class android.graphics.Insets
+Note: android.support.v4.app.NotificationCompatJellybean accesses a declared field 'icon' dynamically
+      Maybe this is program field 'ademar.phasedseekbar.sample.R$attr { int icon; }'
+      Maybe this is program field 'ademar.phasedseekbar.sample.R$id { int icon; }'
+      Maybe this is program field 'android.support.v4.app.NotificationCompat$Action { int icon; }'
+      Maybe this is program field 'android.support.v7.appcompat.R$attr { int icon; }'
+      Maybe this is program field 'android.support.v7.appcompat.R$id { int icon; }'
+      Maybe this is library field 'android.R$attr { int icon; }'
+      Maybe this is library field 'android.R$id { int icon; }'
+      Maybe this is library field 'android.app.LauncherActivity$ListItem { android.graphics.drawable.Drawable icon; }'
+      Maybe this is library field 'android.app.Notification { int icon; }'
+      Maybe this is library field 'android.app.Notification$Action { int icon; }'
+      Maybe this is library field 'android.appwidget.AppWidgetProviderInfo { int icon; }'
+      Maybe this is library field 'android.content.pm.PackageItemInfo { int icon; }'
+      Maybe this is library field 'android.content.pm.ResolveInfo { int icon; }'
+      Maybe this is library field 'android.inputmethodservice.Keyboard$Key { android.graphics.drawable.Drawable icon; }'
+      Maybe this is library field 'android.speech.tts.TextToSpeech$EngineInfo { int icon; }'
+Note: android.support.v4.app.NotificationCompatJellybean accesses a declared field 'title' dynamically
+      Maybe this is program field 'ademar.phasedseekbar.sample.R$attr { int title; }'
+      Maybe this is program field 'ademar.phasedseekbar.sample.R$id { int title; }'
+      Maybe this is program field 'android.support.v4.app.NotificationCompat$Action { java.lang.CharSequence title; }'
+      Maybe this is program field 'android.support.v7.appcompat.R$attr { int title; }'
+      Maybe this is program field 'android.support.v7.appcompat.R$id { int title; }'
+      Maybe this is library field 'android.R$attr { int title; }'
+      Maybe this is library field 'android.R$id { int title; }'
+      Maybe this is library field 'android.app.Notification$Action { java.lang.CharSequence title; }'
+      Maybe this is library field 'android.preference.PreferenceActivity$Header { java.lang.CharSequence title; }'
+Note: android.support.v4.app.NotificationCompatJellybean accesses a declared field 'actionIntent' dynamically
+      Maybe this is program field 'android.support.v4.app.NotificationCompat$Action { android.app.PendingIntent actionIntent; }'
+      Maybe this is library field 'android.app.Notification$Action { android.app.PendingIntent actionIntent; }'
+Note: the configuration keeps the entry point 'ademar.phasedseekbar.PhasedSeekBar { void setAdapter(ademar.phasedseekbar.PhasedAdapter); }', but not the descriptor class 'ademar.phasedseekbar.PhasedAdapter'
+Note: the configuration keeps the entry point 'ademar.phasedseekbar.PhasedSeekBar { void setListener(ademar.phasedseekbar.PhasedListener); }', but not the descriptor class 'ademar.phasedseekbar.PhasedListener'
+Note: the configuration keeps the entry point 'ademar.phasedseekbar.PhasedSeekBar { void setInteractionListener(ademar.phasedseekbar.PhasedInteractionListener); }', but not the descriptor class 'ademar.phasedseekbar.PhasedInteractionListener'
+Note: the configuration keeps the entry point 'android.support.v4.view.ViewPager { void setAdapter(android.support.v4.view.PagerAdapter); }', but not the descriptor class 'android.support.v4.view.PagerAdapter'
+Note: the configuration keeps the entry point 'android.support.v4.view.ViewPager { void setOnAdapterChangeListener(android.support.v4.view.ViewPager$OnAdapterChangeListener); }', but not the descriptor class 'android.support.v4.view.ViewPager$OnAdapterChangeListener'
+Note: the configuration keeps the entry point 'android.support.v4.view.ViewPager { void setOnPageChangeListener(android.support.v4.view.ViewPager$OnPageChangeListener); }', but not the descriptor class 'android.support.v4.view.ViewPager$OnPageChangeListener'
+Note: the configuration keeps the entry point 'android.support.v4.widget.DrawerLayout { void setDrawerListener(android.support.v4.widget.DrawerLayout$DrawerListener); }', but not the descriptor class 'android.support.v4.widget.DrawerLayout$DrawerListener'
+Note: the configuration keeps the entry point 'android.support.v4.widget.NestedScrollView { void setOnScrollChangeListener(android.support.v4.widget.NestedScrollView$OnScrollChangeListener); }', but not the descriptor class 'android.support.v4.widget.NestedScrollView$OnScrollChangeListener'
+Note: the configuration keeps the entry point 'android.support.v4.widget.SlidingPaneLayout { void setPanelSlideListener(android.support.v4.widget.SlidingPaneLayout$PanelSlideListener); }', but not the descriptor class 'android.support.v4.widget.SlidingPaneLayout$PanelSlideListener'
+Note: the configuration keeps the entry point 'android.support.v4.widget.SwipeRefreshLayout { void setOnRefreshListener(android.support.v4.widget.SwipeRefreshLayout$OnRefreshListener); }', but not the descriptor class 'android.support.v4.widget.SwipeRefreshLayout$OnRefreshListener'
+Note: the configuration keeps the entry point 'android.support.v7.view.menu.ActionMenuItemView { void setItemInvoker(android.support.v7.view.menu.MenuBuilder$ItemInvoker); }', but not the descriptor class 'android.support.v7.view.menu.MenuBuilder$ItemInvoker'
+Note: the configuration keeps the entry point 'android.support.v7.view.menu.ActionMenuItemView { void setPopupCallback(android.support.v7.view.menu.ActionMenuItemView$PopupCallback); }', but not the descriptor class 'android.support.v7.view.menu.ActionMenuItemView$PopupCallback'
+Note: the configuration keeps the entry point 'android.support.v7.widget.ActionBarContainer { void setTabContainer(android.support.v7.widget.ScrollingTabContainerView); }', but not the descriptor class 'android.support.v7.widget.ScrollingTabContainerView'
+Note: the configuration keeps the entry point 'android.support.v7.widget.ActionBarOverlayLayout { void setActionBarVisibilityCallback(android.support.v7.widget.ActionBarOverlayLayout$ActionBarVisibilityCallback); }', but not the descriptor class 'android.support.v7.widget.ActionBarOverlayLayout$ActionBarVisibilityCallback'
+Note: the configuration keeps the entry point 'android.support.v7.widget.ActionMenuView { void setPresenter(android.support.v7.widget.ActionMenuPresenter); }', but not the descriptor class 'android.support.v7.widget.ActionMenuPresenter'
+Note: the configuration keeps the entry point 'android.support.v7.widget.ActionMenuView { void setOnMenuItemClickListener(android.support.v7.widget.ActionMenuView$OnMenuItemClickListener); }', but not the descriptor class 'android.support.v7.widget.ActionMenuView$OnMenuItemClickListener'
+Note: the configuration keeps the entry point 'android.support.v7.widget.ActivityChooserView { void setActivityChooserModel(android.support.v7.widget.ActivityChooserModel); }', but not the descriptor class 'android.support.v7.widget.ActivityChooserModel'
+Note: the configuration keeps the entry point 'android.support.v7.widget.ActivityChooserView { void setProvider(android.support.v4.view.ActionProvider); }', but not the descriptor class 'android.support.v4.view.ActionProvider'
+Note: the configuration keeps the entry point 'android.support.v7.widget.ContentFrameLayout { void setAttachListener(android.support.v7.widget.ContentFrameLayout$OnAttachListener); }', but not the descriptor class 'android.support.v7.widget.ContentFrameLayout$OnAttachListener'
+Note: the configuration keeps the entry point 'android.support.v7.widget.FitWindowsFrameLayout { void setOnFitSystemWindowsListener(android.support.v7.widget.FitWindowsViewGroup$OnFitSystemWindowsListener); }', but not the descriptor class 'android.support.v7.widget.FitWindowsViewGroup$OnFitSystemWindowsListener'
+Note: the configuration keeps the entry point 'android.support.v7.widget.FitWindowsLinearLayout { void setOnFitSystemWindowsListener(android.support.v7.widget.FitWindowsViewGroup$OnFitSystemWindowsListener); }', but not the descriptor class 'android.support.v7.widget.FitWindowsViewGroup$OnFitSystemWindowsListener'
+Note: the configuration keeps the entry point 'android.support.v7.widget.SearchView { void setOnQueryTextListener(android.support.v7.widget.SearchView$OnQueryTextListener); }', but not the descriptor class 'android.support.v7.widget.SearchView$OnQueryTextListener'
+Note: the configuration keeps the entry point 'android.support.v7.widget.SearchView { void setOnCloseListener(android.support.v7.widget.SearchView$OnCloseListener); }', but not the descriptor class 'android.support.v7.widget.SearchView$OnCloseListener'
+Note: the configuration keeps the entry point 'android.support.v7.widget.SearchView { void setOnSuggestionListener(android.support.v7.widget.SearchView$OnSuggestionListener); }', but not the descriptor class 'android.support.v7.widget.SearchView$OnSuggestionListener'
+Note: the configuration keeps the entry point 'android.support.v7.widget.SearchView { void setSuggestionsAdapter(android.support.v4.widget.CursorAdapter); }', but not the descriptor class 'android.support.v4.widget.CursorAdapter'
+Note: the configuration keeps the entry point 'android.support.v7.widget.SearchView$SearchAutoComplete { void setSearchView(android.support.v7.widget.SearchView); }', but not the descriptor class 'android.support.v7.widget.SearchView'
+Note: the configuration keeps the entry point 'android.support.v7.widget.Toolbar { void setOnMenuItemClickListener(android.support.v7.widget.Toolbar$OnMenuItemClickListener); }', but not the descriptor class 'android.support.v7.widget.Toolbar$OnMenuItemClickListener'
+Note: the configuration keeps the entry point 'android.support.v7.widget.ViewStubCompat { void setOnInflateListener(android.support.v7.widget.ViewStubCompat$OnInflateListener); }', but not the descriptor class 'android.support.v7.widget.ViewStubCompat$OnInflateListener'
+Note: there were 2 references to unknown classes.
+      You should check your configuration for typos.
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#unknownclass)
+Note: there were 1 classes trying to access generic signatures using reflection.
+      You should consider keeping the signature attributes
+      (using '-keepattributes Signature').
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#attributes)
+Note: there were 28 unkept descriptor classes in kept class members.
+      You should consider explicitly keeping the mentioned classes
+      (using '-keep').
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#descriptorclass)
+Note: there were 7 unresolved dynamic references to classes or interfaces.
+      You should check if you need to specify additional program jars.
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#dynamicalclass)
+Note: there were 3 accesses to class members by means of introspection.
+      You should consider explicitly keeping the mentioned class members
+      (using '-keep' or '-keepclassmembers').
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#dynamicalclassmember)
+Ignoring unused library classes...
+  Original number of library classes: 3880
+  Final number of library classes:    871
+Printing kept classes, fields, and methods...
+Shrinking...
+Printing usage to [/tmp/rdisk/919/src/android-phased-seek-bar-master/sample/build/outputs/mapping/debug/usage.txt]...
+Removing unused program classes and class elements...
+  Original number of program classes: 1539
+  Final number of program classes:    667
+Obfuscating...
+Printing mapping to [/tmp/rdisk/919/src/android-phased-seek-bar-master/sample/build/outputs/mapping/debug/mapping.txt]...
+Writing output...
+Preparing output jar [/tmp/rdisk/919/src/android-phased-seek-bar-master/sample/build/intermediates/transforms/proguard/debug/jars/3/1f/main.jar]
+  Copying resources from program jar [/root/Applications/android-sdk/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/919/src/android-phased-seek-bar-master/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/jars/classes.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/919/src/android-phased-seek-bar-master/sample/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/jars/classes.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/919/src/android-phased-seek-bar-master/sample/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/jars/classes.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/919/src/android-phased-seek-bar-master/sample/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/919/src/android-phased-seek-bar-master/sample/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/libs/internal_impl-23.4.0.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/919/src/android-phased-seek-bar-master/sample/build/intermediates/exploded-aar/android-phased-seek-bar-master/phased-seekbar/unspecified/jars/classes.jar] (filtered)
+  Copying resources from program directory [/tmp/rdisk/919/src/android-phased-seek-bar-master/sample/build/intermediates/classes/debug] (filtered)
+Printing classes to [/tmp/rdisk/919/src/android-phased-seek-bar-master/sample/build/outputs/mapping/debug/dump.txt]...
+:sample:transformClassesWithDexForDebug
+To run dex in process, the Gradle daemon needs a larger heap.
+It currently has approximately 1623 MB.
+For faster builds, increase the maximum heap size for the Gradle daemon to more than 2048 MB.
+To do this set org.gradle.jvmargs=-Xmx2048M in the project gradle.properties.
+For more information see https://docs.gradle.org/current/userguide/build_environment.html
+:sample:transformClassesWithShrinkResForDebug
+Removed unused resources: Binary resource data reduced from 674KB to 666KB: Removed 1%
+:sample:mergeDebugJniLibFolders
+:sample:transformNative_libsWithMergeJniLibsForDebug
+:sample:validateDebugSigning
+:sample:packageDebug
+:sample:zipalignDebug
+:sample:assembleDebug
+:sample:checkReleaseManifest
+:sample:prepareReleaseDependencies
+:sample:compileReleaseAidl
+:sample:compileReleaseRenderscript
+:sample:generateReleaseBuildConfig
+:sample:mergeReleaseShaders
+:sample:compileReleaseShaders
+:sample:generateReleaseAssets
+:sample:mergeReleaseAssets
+:sample:generateReleaseResValues
+:sample:generateReleaseResources
+:sample:mergeReleaseResources
+:sample:processReleaseManifest
+:sample:processReleaseResources
+:sample:generateReleaseSources
+:sample:incrementalReleaseJavaCompilationSafeguard
+:sample:compileReleaseJavaWithJavac
+:sample:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: /tmp/rdisk/919/src/android-phased-seek-bar-master/sample/src/main/java/ademar/phasedseekbar/sample/SampleActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+:sample:compileReleaseNdk UP-TO-DATE
+:sample:compileReleaseSources
+:sample:lintVitalRelease
+:sample:prePackageMarkerForRelease
+:sample:processReleaseJavaRes UP-TO-DATE
+:sample:transformResourcesWithMergeJavaResForRelease
+:sample:transformClassesAndResourcesWithProguardForRelease
+ProGuard, version 5.2.1
+Reading input...
+Reading program jar [/root/Applications/android-sdk/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar] (filtered)
+Reading program jar [/tmp/rdisk/919/src/android-phased-seek-bar-master/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/jars/classes.jar] (filtered)
+Reading program jar [/tmp/rdisk/919/src/android-phased-seek-bar-master/sample/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/jars/classes.jar] (filtered)
+Reading program jar [/tmp/rdisk/919/src/android-phased-seek-bar-master/sample/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/jars/classes.jar] (filtered)
+Reading program jar [/tmp/rdisk/919/src/android-phased-seek-bar-master/sample/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar] (filtered)
+Reading program jar [/tmp/rdisk/919/src/android-phased-seek-bar-master/sample/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/libs/internal_impl-23.4.0.jar] (filtered)
+Reading program jar [/tmp/rdisk/919/src/android-phased-seek-bar-master/sample/build/intermediates/exploded-aar/android-phased-seek-bar-master/phased-seekbar/unspecified/jars/classes.jar] (filtered)
+Reading program directory [/tmp/rdisk/919/src/android-phased-seek-bar-master/sample/build/intermediates/classes/release] (filtered)
+Reading library jar [/root/Applications/android-sdk/platforms/android-23/android.jar]
+Reading library jar [/root/Applications/android-sdk/platforms/android-23/optional/org.apache.http.legacy.jar]
+Note: duplicate definition of library class [android.net.http.SslCertificate]
+Note: duplicate definition of library class [android.net.http.SslError]
+Note: duplicate definition of library class [android.net.http.SslCertificate$DName]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.SocketFactory]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.HostNameResolver]
+Note: duplicate definition of library class [org.apache.http.conn.ConnectTimeoutException]
+Note: duplicate definition of library class [org.apache.http.params.HttpParams]
+Note: there were 7 duplicate class definitions.
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#duplicateclass)
+Initializing...
+Note: the configuration refers to the unknown class 'com.google.vending.licensing.ILicensingService'
+Note: the configuration refers to the unknown class 'com.android.vending.licensing.ILicensingService'
+Note: android.support.v4.app.NotificationCompatJellybean calls 'Field.getType'
+Note: android.support.v4.media.IMediaBrowserServiceCallbacksAdapterApi21: can't find dynamically referenced class android.service.media.IMediaBrowserServiceCallbacks
+Note: android.support.v4.media.IMediaBrowserServiceCallbacksAdapterApi21: can't find dynamically referenced class android.content.pm.ParceledListSlice
+Note: android.support.v4.media.IMediaBrowserServiceCallbacksAdapterApi21$Stub: can't find dynamically referenced class android.service.media.IMediaBrowserServiceCallbacks$Stub
+Note: android.support.v4.media.ParceledListSliceAdapterApi21: can't find dynamically referenced class android.content.pm.ParceledListSlice
+Note: android.support.v4.text.ICUCompatApi23: can't find dynamically referenced class libcore.icu.ICU
+Note: android.support.v4.text.ICUCompatIcs: can't find dynamically referenced class libcore.icu.ICU
+Note: android.support.v7.widget.DrawableUtils: can't find dynamically referenced class android.graphics.Insets
+Note: android.support.v4.app.NotificationCompatJellybean accesses a declared field 'icon' dynamically
+      Maybe this is program field 'ademar.phasedseekbar.sample.R$attr { int icon; }'
+      Maybe this is program field 'ademar.phasedseekbar.sample.R$id { int icon; }'
+      Maybe this is program field 'android.support.v4.app.NotificationCompat$Action { int icon; }'
+      Maybe this is program field 'android.support.v7.appcompat.R$attr { int icon; }'
+      Maybe this is program field 'android.support.v7.appcompat.R$id { int icon; }'
+      Maybe this is library field 'android.R$attr { int icon; }'
+      Maybe this is library field 'android.R$id { int icon; }'
+      Maybe this is library field 'android.app.LauncherActivity$ListItem { android.graphics.drawable.Drawable icon; }'
+      Maybe this is library field 'android.app.Notification { int icon; }'
+      Maybe this is library field 'android.app.Notification$Action { int icon; }'
+      Maybe this is library field 'android.appwidget.AppWidgetProviderInfo { int icon; }'
+      Maybe this is library field 'android.content.pm.PackageItemInfo { int icon; }'
+      Maybe this is library field 'android.content.pm.ResolveInfo { int icon; }'
+      Maybe this is library field 'android.inputmethodservice.Keyboard$Key { android.graphics.drawable.Drawable icon; }'
+      Maybe this is library field 'android.speech.tts.TextToSpeech$EngineInfo { int icon; }'
+Note: android.support.v4.app.NotificationCompatJellybean accesses a declared field 'title' dynamically
+      Maybe this is program field 'ademar.phasedseekbar.sample.R$attr { int title; }'
+      Maybe this is program field 'ademar.phasedseekbar.sample.R$id { int title; }'
+      Maybe this is program field 'android.support.v4.app.NotificationCompat$Action { java.lang.CharSequence title; }'
+      Maybe this is program field 'android.support.v7.appcompat.R$attr { int title; }'
+      Maybe this is program field 'android.support.v7.appcompat.R$id { int title; }'
+      Maybe this is library field 'android.R$attr { int title; }'
+      Maybe this is library field 'android.R$id { int title; }'
+      Maybe this is library field 'android.app.Notification$Action { java.lang.CharSequence title; }'
+      Maybe this is library field 'android.preference.PreferenceActivity$Header { java.lang.CharSequence title; }'
+Note: android.support.v4.app.NotificationCompatJellybean accesses a declared field 'actionIntent' dynamically
+      Maybe this is program field 'android.support.v4.app.NotificationCompat$Action { android.app.PendingIntent actionIntent; }'
+      Maybe this is library field 'android.app.Notification$Action { android.app.PendingIntent actionIntent; }'
+Note: the configuration keeps the entry point 'ademar.phasedseekbar.PhasedSeekBar { void setAdapter(ademar.phasedseekbar.PhasedAdapter); }', but not the descriptor class 'ademar.phasedseekbar.PhasedAdapter'
+Note: the configuration keeps the entry point 'ademar.phasedseekbar.PhasedSeekBar { void setListener(ademar.phasedseekbar.PhasedListener); }', but not the descriptor class 'ademar.phasedseekbar.PhasedListener'
+Note: the configuration keeps the entry point 'ademar.phasedseekbar.PhasedSeekBar { void setInteractionListener(ademar.phasedseekbar.PhasedInteractionListener); }', but not the descriptor class 'ademar.phasedseekbar.PhasedInteractionListener'
+Note: the configuration keeps the entry point 'android.support.v4.view.ViewPager { void setAdapter(android.support.v4.view.PagerAdapter); }', but not the descriptor class 'android.support.v4.view.PagerAdapter'
+Note: the configuration keeps the entry point 'android.support.v4.view.ViewPager { void setOnAdapterChangeListener(android.support.v4.view.ViewPager$OnAdapterChangeListener); }', but not the descriptor class 'android.support.v4.view.ViewPager$OnAdapterChangeListener'
+Note: the configuration keeps the entry point 'android.support.v4.view.ViewPager { void setOnPageChangeListener(android.support.v4.view.ViewPager$OnPageChangeListener); }', but not the descriptor class 'android.support.v4.view.ViewPager$OnPageChangeListener'
+Note: the configuration keeps the entry point 'android.support.v4.widget.DrawerLayout { void setDrawerListener(android.support.v4.widget.DrawerLayout$DrawerListener); }', but not the descriptor class 'android.support.v4.widget.DrawerLayout$DrawerListener'
+Note: the configuration keeps the entry point 'android.support.v4.widget.NestedScrollView { void setOnScrollChangeListener(android.support.v4.widget.NestedScrollView$OnScrollChangeListener); }', but not the descriptor class 'android.support.v4.widget.NestedScrollView$OnScrollChangeListener'
+Note: the configuration keeps the entry point 'android.support.v4.widget.SlidingPaneLayout { void setPanelSlideListener(android.support.v4.widget.SlidingPaneLayout$PanelSlideListener); }', but not the descriptor class 'android.support.v4.widget.SlidingPaneLayout$PanelSlideListener'
+Note: the configuration keeps the entry point 'android.support.v4.widget.SwipeRefreshLayout { void setOnRefreshListener(android.support.v4.widget.SwipeRefreshLayout$OnRefreshListener); }', but not the descriptor class 'android.support.v4.widget.SwipeRefreshLayout$OnRefreshListener'
+Note: the configuration keeps the entry point 'android.support.v7.view.menu.ActionMenuItemView { void setItemInvoker(android.support.v7.view.menu.MenuBuilder$ItemInvoker); }', but not the descriptor class 'android.support.v7.view.menu.MenuBuilder$ItemInvoker'
+Note: the configuration keeps the entry point 'android.support.v7.view.menu.ActionMenuItemView { void setPopupCallback(android.support.v7.view.menu.ActionMenuItemView$PopupCallback); }', but not the descriptor class 'android.support.v7.view.menu.ActionMenuItemView$PopupCallback'
+Note: the configuration keeps the entry point 'android.support.v7.widget.ActionBarContainer { void setTabContainer(android.support.v7.widget.ScrollingTabContainerView); }', but not the descriptor class 'android.support.v7.widget.ScrollingTabContainerView'
+Note: the configuration keeps the entry point 'android.support.v7.widget.ActionBarOverlayLayout { void setActionBarVisibilityCallback(android.support.v7.widget.ActionBarOverlayLayout$ActionBarVisibilityCallback); }', but not the descriptor class 'android.support.v7.widget.ActionBarOverlayLayout$ActionBarVisibilityCallback'
+Note: the configuration keeps the entry point 'android.support.v7.widget.ActionMenuView { void setPresenter(android.support.v7.widget.ActionMenuPresenter); }', but not the descriptor class 'android.support.v7.widget.ActionMenuPresenter'
+Note: the configuration keeps the entry point 'android.support.v7.widget.ActionMenuView { void setOnMenuItemClickListener(android.support.v7.widget.ActionMenuView$OnMenuItemClickListener); }', but not the descriptor class 'android.support.v7.widget.ActionMenuView$OnMenuItemClickListener'
+Note: the configuration keeps the entry point 'android.support.v7.widget.ActivityChooserView { void setActivityChooserModel(android.support.v7.widget.ActivityChooserModel); }', but not the descriptor class 'android.support.v7.widget.ActivityChooserModel'
+Note: the configuration keeps the entry point 'android.support.v7.widget.ActivityChooserView { void setProvider(android.support.v4.view.ActionProvider); }', but not the descriptor class 'android.support.v4.view.ActionProvider'
+Note: the configuration keeps the entry point 'android.support.v7.widget.ContentFrameLayout { void setAttachListener(android.support.v7.widget.ContentFrameLayout$OnAttachListener); }', but not the descriptor class 'android.support.v7.widget.ContentFrameLayout$OnAttachListener'
+Note: the configuration keeps the entry point 'android.support.v7.widget.FitWindowsFrameLayout { void setOnFitSystemWindowsListener(android.support.v7.widget.FitWindowsViewGroup$OnFitSystemWindowsListener); }', but not the descriptor class 'android.support.v7.widget.FitWindowsViewGroup$OnFitSystemWindowsListener'
+Note: the configuration keeps the entry point 'android.support.v7.widget.FitWindowsLinearLayout { void setOnFitSystemWindowsListener(android.support.v7.widget.FitWindowsViewGroup$OnFitSystemWindowsListener); }', but not the descriptor class 'android.support.v7.widget.FitWindowsViewGroup$OnFitSystemWindowsListener'
+Note: the configuration keeps the entry point 'android.support.v7.widget.SearchView { void setOnQueryTextListener(android.support.v7.widget.SearchView$OnQueryTextListener); }', but not the descriptor class 'android.support.v7.widget.SearchView$OnQueryTextListener'
+Note: the configuration keeps the entry point 'android.support.v7.widget.SearchView { void setOnCloseListener(android.support.v7.widget.SearchView$OnCloseListener); }', but not the descriptor class 'android.support.v7.widget.SearchView$OnCloseListener'
+Note: the configuration keeps the entry point 'android.support.v7.widget.SearchView { void setOnSuggestionListener(android.support.v7.widget.SearchView$OnSuggestionListener); }', but not the descriptor class 'android.support.v7.widget.SearchView$OnSuggestionListener'
+Note: the configuration keeps the entry point 'android.support.v7.widget.SearchView { void setSuggestionsAdapter(android.support.v4.widget.CursorAdapter); }', but not the descriptor class 'android.support.v4.widget.CursorAdapter'
+Note: the configuration keeps the entry point 'android.support.v7.widget.SearchView$SearchAutoComplete { void setSearchView(android.support.v7.widget.SearchView); }', but not the descriptor class 'android.support.v7.widget.SearchView'
+Note: the configuration keeps the entry point 'android.support.v7.widget.Toolbar { void setOnMenuItemClickListener(android.support.v7.widget.Toolbar$OnMenuItemClickListener); }', but not the descriptor class 'android.support.v7.widget.Toolbar$OnMenuItemClickListener'
+Note: the configuration keeps the entry point 'android.support.v7.widget.ViewStubCompat { void setOnInflateListener(android.support.v7.widget.ViewStubCompat$OnInflateListener); }', but not the descriptor class 'android.support.v7.widget.ViewStubCompat$OnInflateListener'
+Note: there were 2 references to unknown classes.
+      You should check your configuration for typos.
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#unknownclass)
+Note: there were 1 classes trying to access generic signatures using reflection.
+      You should consider keeping the signature attributes
+      (using '-keepattributes Signature').
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#attributes)
+Note: there were 28 unkept descriptor classes in kept class members.
+      You should consider explicitly keeping the mentioned classes
+      (using '-keep').
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#descriptorclass)
+Note: there were 7 unresolved dynamic references to classes or interfaces.
+      You should check if you need to specify additional program jars.
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#dynamicalclass)
+Note: there were 3 accesses to class members by means of introspection.
+      You should consider explicitly keeping the mentioned class members
+      (using '-keep' or '-keepclassmembers').
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#dynamicalclassmember)
+Ignoring unused library classes...
+  Original number of library classes: 3880
+  Final number of library classes:    871
+Printing kept classes, fields, and methods...
+Shrinking...
+Printing usage to [/tmp/rdisk/919/src/android-phased-seek-bar-master/sample/build/outputs/mapping/release/usage.txt]...
+Removing unused program classes and class elements...
+  Original number of program classes: 1539
+  Final number of program classes:    667
+Obfuscating...
+Printing mapping to [/tmp/rdisk/919/src/android-phased-seek-bar-master/sample/build/outputs/mapping/release/mapping.txt]...
+Writing output...
+Preparing output jar [/tmp/rdisk/919/src/android-phased-seek-bar-master/sample/build/intermediates/transforms/proguard/release/jars/3/1f/main.jar]
+  Copying resources from program jar [/root/Applications/android-sdk/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/919/src/android-phased-seek-bar-master/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/jars/classes.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/919/src/android-phased-seek-bar-master/sample/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/jars/classes.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/919/src/android-phased-seek-bar-master/sample/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/jars/classes.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/919/src/android-phased-seek-bar-master/sample/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/919/src/android-phased-seek-bar-master/sample/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/libs/internal_impl-23.4.0.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/919/src/android-phased-seek-bar-master/sample/build/intermediates/exploded-aar/android-phased-seek-bar-master/phased-seekbar/unspecified/jars/classes.jar] (filtered)
+  Copying resources from program directory [/tmp/rdisk/919/src/android-phased-seek-bar-master/sample/build/intermediates/classes/release] (filtered)
+Printing classes to [/tmp/rdisk/919/src/android-phased-seek-bar-master/sample/build/outputs/mapping/release/dump.txt]...
+:sample:transformClassesWithDexForRelease
+:sample:transformClassesWithShrinkResForRelease
+Removed unused resources: Binary resource data reduced from 674KB to 666KB: Removed 1%
+:sample:mergeReleaseJniLibFolders
+:sample:transformNative_libsWithMergeJniLibsForRelease
+:sample:packageRelease
+:sample:assembleRelease
+:sample:assemble
+:sample:build
+
+BUILD SUCCESSFUL
+
+Total time: 26.241 secs
+
+2018-04-08 15:34:59,860 INFO  FullProcessService - Found APK file: /tmp/rdisk/919/src/android-phased-seek-bar-master/sample/build/outputs/apk/sample-release-unsigned.apk

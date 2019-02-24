@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.devpaul.filepicker",
+    "label" : "FilePickerDemo",
+    "icon" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "versionName" : "1.0",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "16",
+    "targetSdkVersion" : "23",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ "android.permission.WRITE_EXTERNAL_STORAGE", "android.permission.READ_EXTERNAL_STORAGE" ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "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"
+  },
+  "dexClasses" : 1985,
+  "locales" : [ "", "az_AZ", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "sq_AL", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bn_BD", "fa", "gu_IN", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "pa_IN", "af", "en_AU", "in", "vi", "fr_CA", "sr", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"1.0\" package=\"com.devpaul.filepicker\" platformBuildVersionCode=\"23\" platformBuildVersionName=\"6.0-2438415\">\n\t<uses-sdk android:minSdkVersion=\"16\" android:targetSdkVersion=\"23\" />\n\t<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />\n\t<uses-permission android:name=\"android.permission.READ_EXTERNAL_STORAGE\" />\n\t<application android:theme=\"resourceId:0x7f080085\" android:label=\"FilePickerDemo\" android:icon=\"res/drawable-mdpi-v4/ic_launcher.png\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"FilePickerDemo\" android:name=\"com.devpaul.filepicker.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<activity android:theme=\"@android:style/Theme.Holo.Light.Dialog.NoActionBar\" android:name=\"com.devpaul.filepickerlibrary.FilePickerActivity\" android:configChanges=\"0x5a0\" />\n\t\t<activity android:name=\"com.devpaul.filepickerlibrary.FilePicker\" android:configChanges=\"0x5a0\" />\n\t</application>\n</manifest>\n",
+  "fileSize" : 1664399,
+  "crc32" : 2393207801,
+  "sha256" : "cb379e4275b404842406d436a7f47e9849c948e338aa22823e5941dcd32bb65f",
+  "buildTime" : 1523283558000
+}

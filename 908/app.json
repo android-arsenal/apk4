@@ -1,0 +1,29 @@
+{
+  "meta" : {
+    "packageName" : "com.microsoft.onedrivesdk.tests",
+    "label" : null,
+    "icon" : null,
+    "versionName" : "1.0",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "14",
+    "targetSdkVersion" : "19",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : null,
+  "dexClasses" : 37,
+  "locales" : [ ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"1.0\" package=\"com.microsoft.onedrivesdk.tests\" platformBuildVersionCode=\"23\" platformBuildVersionName=\"6.0-2704002\">\n\t<uses-sdk android:minSdkVersion=\"14\" android:targetSdkVersion=\"19\" />\n\t<instrumentation android:name=\"android.test.InstrumentationTestRunner\" android:targetPackage=\"com.microsoft.onedrivesdk.tests\" android:functionalTest=\"false\" />\n\t<application android:icon=\"resourceId:0x1080093\" android:allowBackup=\"false\">\n\t\t<uses-library android:name=\"android.test.runner\" />\n\t</application>\n</manifest>\n",
+  "fileSize" : 12319,
+  "crc32" : 775834324,
+  "sha256" : "fbb86bc43ac8a0af3c540382437bc7cc96ca8ec1847b5525bf2c86a1ee500344",
+  "buildTime" : 1523201973000
+}

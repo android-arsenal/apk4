@@ -1,0 +1,126 @@
+2018-04-09 14:16:48,599 INFO  DownloadService - Downloading "https://github.com/daimajia/AndroidImageSlider/archive/master.zip", attempt 3
+2018-04-09 14:16:50,695 INFO  DownloadService - Downloaded https://github.com/daimajia/AndroidImageSlider/archive/master.zip, attempt 3
+2018-04-09 14:16:50,696 INFO  DownloadService - Size of file "/tmp/rdisk/791/master.zip": 1 MB
+2018-04-09 14:16:50,696 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-09 14:16:50,697 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/791/master.zip: true
+2018-04-09 14:16:50,697 DEBUG ZipUtil - Extracting '/tmp/rdisk/791/master.zip' into '/tmp/rdisk/791/src'.
+2018-04-09 14:16:50,721 INFO  FullProcessService - Size of directory with sources: 1 MB
+2018-04-09 14:16:50,721 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/791/src]
+2018-04-09 14:16:50,730 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/791/src/.git/
+
+2018-04-09 14:16:50,733 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/791/src/AndroidImageSlider-master/gradlew
+2018-04-09 14:16:50,737 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/791/src/AndroidImageSlider-master/demo/build.gradle /tmp/rdisk/791/src/AndroidImageSlider-master/library/build.gradle /tmp/rdisk/791/src/AndroidImageSlider-master/build.gradle
+2018-04-09 14:16:50,740 INFO  ProjectBuildService - All script(s): /tmp/rdisk/791/src/AndroidImageSlider-master/settings.gradle /tmp/rdisk/791/src/AndroidImageSlider-master/library/gradle-mvn-push.gradle /tmp/rdisk/791/src/AndroidImageSlider-master/library/build.gradle /tmp/rdisk/791/src/AndroidImageSlider-master/demo/build.gradle /tmp/rdisk/791/src/AndroidImageSlider-master/build.gradle
+2018-04-09 14:16:50,741 INFO  ProjectBuildService - Remote scripts: none
+2018-04-09 14:16:50,741 INFO  ProjectFixService - Fixing project...
+2018-04-09 14:16:50,751 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/791/src/AndroidImageSlider-master/demo/local.properties
+2018-04-09 14:16:50,752 INFO  ProjectFixService - Build info for "/tmp/rdisk/791/src/AndroidImageSlider-master/demo/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=8,targetSdkVersion=22]
+2018-04-09 14:16:50,752 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/791/src/AndroidImageSlider-master/library/local.properties
+2018-04-09 14:16:50,753 INFO  ProjectFixService - Build info for "/tmp/rdisk/791/src/AndroidImageSlider-master/library/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=8,targetSdkVersion=22]
+2018-04-09 14:16:50,753 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/791/src/AndroidImageSlider-master/local.properties
+2018-04-09 14:16:50,754 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-09 14:16:50,754 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-09 14:16:50,757 INFO  ProjectFixService - Build info for "/tmp/rdisk/791/src/AndroidImageSlider-master/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=8,targetSdkVersion=22]
+2018-04-09 14:16:50,757 INFO  ProjectFixService - Project was maybe fixed
+2018-04-09 14:16:50,757 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-09 14:16:50,758 INFO  SysUtils - Execute command: [/tmp/rdisk/791/src/AndroidImageSlider-master/gradlew, -b, /tmp/rdisk/791/src/AndroidImageSlider-master/demo/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-09 14:17:07,251 INFO  ProjectTaskService - Detected possible tasks: 59
+2018-04-09 14:17:07,251 INFO  ProjectTaskService - Excluded tasks (17): lintDebug mockableAndroidJar deviceCheck lint uninstallRelease uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest installDebug lintRelease testDebug uninstallDebug
+2018-04-09 14:17:07,251 INFO  SysUtils - Execute command: [/tmp/rdisk/791/src/AndroidImageSlider-master/gradlew, -b, /tmp/rdisk/791/src/AndroidImageSlider-master/demo/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, uninstallDebug, build]
+2018-04-09 14:17:37,540 INFO  SysUtils - Configuration on demand is an incubating feature.
+:demo:preBuild UP-TO-DATE
+:demo:preDebugBuild UP-TO-DATE
+:demo:compileDebugNdk UP-TO-DATE
+:demo:checkDebugManifest
+:demo:preReleaseBuild UP-TO-DATE
+:library:compileLint
+:library:copyReleaseLint UP-TO-DATE
+:library:preBuild UP-TO-DATE
+:library:preReleaseBuild UP-TO-DATE
+:library:checkReleaseManifest
+:library:preDebugAndroidTestBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:prepareComAndroidSupportAppcompatV72211Library
+:library:prepareComAndroidSupportSupportV42211Library
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl
+:library:compileReleaseRenderscript
+:library:generateReleaseBuildConfig
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets
+:library:generateReleaseResValues
+:library:generateReleaseResources
+:library:mergeReleaseResources
+:library:processReleaseManifest
+:library:processReleaseResources
+:library:generateReleaseSources
+:library:compileReleaseJavaNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:library:extractReleaseAnnotations
+:library:mergeReleaseProguardFiles
+:library:processReleaseJavaRes UP-TO-DATE
+:library:packageReleaseJar
+:library:compileReleaseNdk UP-TO-DATE
+:library:packageReleaseJniLibs UP-TO-DATE
+:library:packageReleaseLocalJar UP-TO-DATE
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:packageReleaseResources
+:library:bundleRelease
+:demo:prepareAndroidImageSliderMasterLibraryUnspecifiedLibrary
+:demo:prepareComAndroidSupportAppcompatV72221Library
+:demo:prepareComAndroidSupportSupportV42221Library
+:demo:prepareComDaimajiaAndroidanimationsLibrary103Library
+:demo:prepareDebugDependencies
+:demo:compileDebugAidl
+:demo:compileDebugRenderscript
+:demo:generateDebugBuildConfig
+:demo:generateDebugAssets UP-TO-DATE
+:demo:mergeDebugAssets
+:demo:generateDebugResValues
+:demo:generateDebugResources
+:demo:mergeDebugResources
+:demo:processDebugManifest
+:demo:processDebugResources
+:demo:generateDebugSources
+:demo:compileDebugJavaNote: /tmp/rdisk/791/src/AndroidImageSlider-master/demo/src/main/java/com/daimajia/slider/demo/MainActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:demo:preDexDebug
+:demo:dexDebug
+:demo:processDebugJavaRes UP-TO-DATE
+:demo:validateDebugSigning
+:demo:packageDebug
+:demo:zipalignDebug
+:demo:assembleDebug
+:demo:checkReleaseManifest
+:demo:prepareReleaseDependencies
+:demo:compileReleaseAidl
+:demo:compileReleaseRenderscript
+:demo:generateReleaseBuildConfig
+:demo:generateReleaseAssets UP-TO-DATE
+:demo:mergeReleaseAssets
+:demo:generateReleaseResValues
+:demo:generateReleaseResources
+:demo:mergeReleaseResources
+:demo:processReleaseManifest
+:demo:processReleaseResources
+:demo:generateReleaseSources
+:demo:compileReleaseJavaNote: /tmp/rdisk/791/src/AndroidImageSlider-master/demo/src/main/java/com/daimajia/slider/demo/MainActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:demo:lintVitalRelease
+:demo:compileReleaseNdk UP-TO-DATE
+:demo:preDexRelease
+:demo:dexRelease
+:demo:processReleaseJavaRes UP-TO-DATE
+:demo:packageRelease
+:demo:assembleRelease
+:demo:assemble
+:demo:build
+
+BUILD SUCCESSFUL
+
+Total time: 29.84 secs
+
+2018-04-09 14:17:37,599 INFO  FullProcessService - Found APK file: /tmp/rdisk/791/src/AndroidImageSlider-master/demo/build/outputs/apk/demo-release-unsigned.apk

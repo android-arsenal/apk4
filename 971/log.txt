@@ -1,0 +1,640 @@
+2018-04-08 13:40:22,728 INFO  DownloadService - Downloading "https://github.com/lucasr/probe/archive/master.zip", attempt 3
+2018-04-08 13:40:23,429 INFO  DownloadService - Downloaded https://github.com/lucasr/probe/archive/master.zip, attempt 3
+2018-04-08 13:40:23,429 INFO  DownloadService - Size of file "/tmp/rdisk/971/master.zip": 149 KB
+2018-04-08 13:40:23,429 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-08 13:40:23,430 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/971/master.zip: true
+2018-04-08 13:40:23,430 DEBUG ZipUtil - Extracting '/tmp/rdisk/971/master.zip' into '/tmp/rdisk/971/src'.
+2018-04-08 13:40:23,439 INFO  FullProcessService - Size of directory with sources: 220 KB
+2018-04-08 13:40:23,439 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/971/src]
+2018-04-08 13:40:23,445 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/971/src/.git/
+
+2018-04-08 13:40:23,448 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/971/src/probe-master/gradlew
+2018-04-08 13:40:23,451 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/971/src/probe-master/library/build.gradle /tmp/rdisk/971/src/probe-master/sample/build.gradle /tmp/rdisk/971/src/probe-master/build.gradle /tmp/rdisk/971/src/probe-master/probe-gradle/build.gradle
+2018-04-08 13:40:23,453 INFO  ProjectBuildService - All script(s): /tmp/rdisk/971/src/probe-master/settings.gradle /tmp/rdisk/971/src/probe-master/sample/build.gradle /tmp/rdisk/971/src/probe-master/probe-gradle/build.gradle /tmp/rdisk/971/src/probe-master/library/build.gradle /tmp/rdisk/971/src/probe-master/gradle/scripts/gradle-plugin-mvn-push.gradle /tmp/rdisk/971/src/probe-master/gradle/scripts/gradle-mvn-push.gradle /tmp/rdisk/971/src/probe-master/build.gradle
+2018-04-08 13:40:23,454 INFO  ProjectBuildService - Remote scripts: none
+2018-04-08 13:40:23,454 INFO  ProjectFixService - Fixing project...
+2018-04-08 13:40:23,464 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/971/src/probe-master/library/local.properties
+2018-04-08 13:40:23,466 INFO  ProjectFixService - Build info for "/tmp/rdisk/971/src/probe-master/library/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=19,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-08 13:40:23,466 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/971/src/probe-master/library/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=19,minSdkVersion=27,targetSdkVersion=27]
+2018-04-08 13:40:23,467 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/971/src/probe-master/sample/local.properties
+2018-04-08 13:40:23,469 INFO  ProjectFixService - Build info for "/tmp/rdisk/971/src/probe-master/sample/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=19,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-08 13:40:23,469 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/971/src/probe-master/sample/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=19,minSdkVersion=27,targetSdkVersion=27]
+2018-04-08 13:40:23,470 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/971/src/probe-master/local.properties
+2018-04-08 13:40:23,470 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-08 13:40:23,470 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-08 13:40:23,473 INFO  ProjectFixService - Build info for "/tmp/rdisk/971/src/probe-master/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=19,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-08 13:40:23,473 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/971/src/probe-master/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=19,minSdkVersion=27,targetSdkVersion=27]
+2018-04-08 13:40:23,474 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/971/src/probe-master/probe-gradle/local.properties
+2018-04-08 13:40:23,476 INFO  ProjectFixService - Build info for "/tmp/rdisk/971/src/probe-master/probe-gradle/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=19,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-08 13:40:23,476 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/971/src/probe-master/probe-gradle/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=19,minSdkVersion=27,targetSdkVersion=27]
+2018-04-08 13:40:23,477 INFO  ProjectFixService - Project was maybe fixed
+2018-04-08 13:40:23,477 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-08 13:40:23,477 INFO  SysUtils - Execute command: [/tmp/rdisk/971/src/probe-master/gradlew, -b, /tmp/rdisk/971/src/probe-master/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-08 13:40:42,788 INFO  ProjectTaskService - Detected possible tasks: 54
+2018-04-08 13:40:42,788 INFO  ProjectTaskService - Excluded tasks (8): lintDebug deviceCheck lint connectedCheck uninstallAll check connectedAndroidTest lintRelease
+2018-04-08 13:40:42,789 INFO  SysUtils - Execute command: [/tmp/rdisk/971/src/probe-master/gradlew, -b, /tmp/rdisk/971/src/probe-master/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-08 13:40:50,291 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-08 13:40:50,291 INFO  SysUtils - Configuration on demand is an incubating feature.
+:library:androidJavadocs/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/DexProxyBuilder.java:27: error: package com.google.dexmaker does not exist
+import com.google.dexmaker.Code;
+                          ^
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/DexProxyBuilder.java:28: error: package com.google.dexmaker does not exist
+import com.google.dexmaker.Comparison;
+                          ^
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/DexProxyBuilder.java:29: error: package com.google.dexmaker does not exist
+import com.google.dexmaker.DexMaker;
+                          ^
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/DexProxyBuilder.java:30: error: package com.google.dexmaker does not exist
+import com.google.dexmaker.FieldId;
+                          ^
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/DexProxyBuilder.java:31: error: package com.google.dexmaker does not exist
+import com.google.dexmaker.Label;
+                          ^
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/DexProxyBuilder.java:32: error: package com.google.dexmaker does not exist
+import com.google.dexmaker.Local;
+                          ^
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/DexProxyBuilder.java:33: error: package com.google.dexmaker does not exist
+import com.google.dexmaker.MethodId;
+                          ^
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/DexProxyBuilder.java:34: error: package com.google.dexmaker does not exist
+import com.google.dexmaker.TypeId;
+                          ^
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/DexProxyBuilder.java:84: error: cannot find symbol
+    private static final TypeId<Canvas> CANVAS_TYPE = TypeId.get(Canvas.class);
+                         ^
+  symbol:   class TypeId
+  location: class DexProxyBuilder
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/DexProxyBuilder.java:85: error: cannot find symbol
+    private static final TypeId<Interceptor> INTERCEPTOR_TYPE = TypeId.get(Interceptor.class);
+                         ^
+  symbol:   class TypeId
+  location: class DexProxyBuilder
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/DexProxyBuilder.java:86: error: cannot find symbol
+    private static final TypeId<View> VIEW_TYPE = TypeId.get(View.class);
+                         ^
+  symbol:   class TypeId
+  location: class DexProxyBuilder
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/DexProxyBuilder.java:87: error: cannot find symbol
+    private static final TypeId<ViewProxy> INTERCEPTABLE_VIEW_TYPE =
+                         ^
+  symbol:   class TypeId
+  location: class DexProxyBuilder
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/DexProxyBuilder.java:89: error: cannot find symbol
+    private static final TypeId<Void> VOID_TYPE = TypeId.get(void.class);
+                         ^
+  symbol:   class TypeId
+  location: class DexProxyBuilder
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/DexProxyBuilder.java:98: error: cannot find symbol
+    private static <T, G extends T> void generateConstructorAndFields(DexMaker dexMaker,
+                                                                      ^
+  symbol:   class DexMaker
+  location: class DexProxyBuilder
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/DexProxyBuilder.java:99: error: cannot find symbol
+                                                                      TypeId<G> generatedType,
+                                                                      ^
+  symbol:   class TypeId
+  location: class DexProxyBuilder
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/DexProxyBuilder.java:100: error: cannot find symbol
+                                                                      TypeId<T> baseType) {
+                                                                      ^
+  symbol:   class TypeId
+  location: class DexProxyBuilder
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/DexProxyBuilder.java:123: error: cannot find symbol
+    private static <T, G extends T> void generateOnMeasureMethod(DexMaker dexMaker,
+                                                                 ^
+  symbol:   class DexMaker
+  location: class DexProxyBuilder
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/DexProxyBuilder.java:124: error: cannot find symbol
+                                                                 TypeId<G> generatedType,
+                                                                 ^
+  symbol:   class TypeId
+  location: class DexProxyBuilder
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/DexProxyBuilder.java:125: error: cannot find symbol
+                                                                 TypeId<T> baseType) {
+                                                                 ^
+  symbol:   class TypeId
+  location: class DexProxyBuilder
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/DexProxyBuilder.java:177: error: cannot find symbol
+    private static <T, G extends T> void generateOnLayoutMethod(DexMaker dexMaker,
+                                                                ^
+  symbol:   class DexMaker
+  location: class DexProxyBuilder
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/DexProxyBuilder.java:178: error: cannot find symbol
+                                                                TypeId<G> generatedType,
+                                                                ^
+  symbol:   class TypeId
+  location: class DexProxyBuilder
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/DexProxyBuilder.java:179: error: cannot find symbol
+                                                                TypeId<T> baseType) {
+                                                                ^
+  symbol:   class TypeId
+  location: class DexProxyBuilder
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/DexProxyBuilder.java:240: error: cannot find symbol
+    private static <T, G extends T> void generateDrawMethod(DexMaker dexMaker,
+                                                            ^
+  symbol:   class DexMaker
+  location: class DexProxyBuilder
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/DexProxyBuilder.java:241: error: cannot find symbol
+                                                            TypeId<G> generatedType,
+                                                            ^
+  symbol:   class TypeId
+  location: class DexProxyBuilder
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/DexProxyBuilder.java:242: error: cannot find symbol
+                                                            TypeId<T> baseType,
+                                                            ^
+  symbol:   class TypeId
+  location: class DexProxyBuilder
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/DexProxyBuilder.java:289: error: cannot find symbol
+    private static <T, G extends T> void generateDrawMethods(DexMaker dexMaker,
+                                                             ^
+  symbol:   class DexMaker
+  location: class DexProxyBuilder
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/DexProxyBuilder.java:290: error: cannot find symbol
+                                                             TypeId<G> generatedType,
+                                                             ^
+  symbol:   class TypeId
+  location: class DexProxyBuilder
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/DexProxyBuilder.java:291: error: cannot find symbol
+                                                             TypeId<T> baseType) {
+                                                             ^
+  symbol:   class TypeId
+  location: class DexProxyBuilder
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/DexProxyBuilder.java:299: error: cannot find symbol
+    private static <T, G extends T> void generateRequestLayoutMethod(DexMaker dexMaker,
+                                                                     ^
+  symbol:   class DexMaker
+  location: class DexProxyBuilder
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/DexProxyBuilder.java:300: error: cannot find symbol
+                                                                     TypeId<G> generatedType,
+                                                                     ^
+  symbol:   class TypeId
+  location: class DexProxyBuilder
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/DexProxyBuilder.java:301: error: cannot find symbol
+                                                                     TypeId<T> baseType) {
+                                                                     ^
+  symbol:   class TypeId
+  location: class DexProxyBuilder
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/DexProxyBuilder.java:345: error: cannot find symbol
+    private static <T, G extends T> void generateForceLayoutMethod(DexMaker dexMaker,
+                                                                   ^
+  symbol:   class DexMaker
+  location: class DexProxyBuilder
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/DexProxyBuilder.java:346: error: cannot find symbol
+                                                                   TypeId<G> generatedType,
+                                                                   ^
+  symbol:   class TypeId
+  location: class DexProxyBuilder
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/DexProxyBuilder.java:347: error: cannot find symbol
+                                                                   TypeId<T> baseType) {
+                                                                   ^
+  symbol:   class TypeId
+  location: class DexProxyBuilder
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/DexProxyBuilder.java:392: error: cannot find symbol
+    private static <T, G extends T> void generateSetMeasuredDimension(DexMaker dexMaker,
+                                                                      ^
+  symbol:   class DexMaker
+  location: class DexProxyBuilder
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/DexProxyBuilder.java:393: error: cannot find symbol
+                                                                      TypeId<G> generatedType,
+                                                                      ^
+  symbol:   class TypeId
+  location: class DexProxyBuilder
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/DexProxyBuilder.java:394: error: cannot find symbol
+                                                                      TypeId<T> baseType) {
+                                                                      ^
+  symbol:   class TypeId
+  location: class DexProxyBuilder
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/DexProxyBuilder.java:416: error: cannot find symbol
+    private static <T, G extends T> void generateSetInterceptor(DexMaker dexMaker,
+                                                                ^
+  symbol:   class DexMaker
+  location: class DexProxyBuilder
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/DexProxyBuilder.java:417: error: cannot find symbol
+                                                                TypeId<G> generatedType,
+                                                                ^
+  symbol:   class TypeId
+  location: class DexProxyBuilder
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/DexProxyBuilder.java:418: error: cannot find symbol
+                                                                TypeId<T> baseType) {
+                                                                ^
+  symbol:   class TypeId
+  location: class DexProxyBuilder
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/DexProxyBuilder.java:438: error: cannot find symbol
+    private static TypeId<?>[] classArrayToTypeArray(Class<?>[] input) {
+                   ^
+  symbol:   class TypeId
+  location: class DexProxyBuilder
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/Interceptor.java:51: warning: no @param for view
+    public void onMeasure(View view, int widthMeasureSpec, int heightMeasureSpec) {
+                ^
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/Interceptor.java:51: warning: no @param for widthMeasureSpec
+    public void onMeasure(View view, int widthMeasureSpec, int heightMeasureSpec) {
+                ^
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/Interceptor.java:51: warning: no @param for heightMeasureSpec
+    public void onMeasure(View view, int widthMeasureSpec, int heightMeasureSpec) {
+                ^
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/Interceptor.java:58: warning: no @param for view
+    protected final void invokeOnMeasure(View view, int widthMeasureSpec, int heightMeasureSpec) {
+                         ^
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/Interceptor.java:58: warning: no @param for widthMeasureSpec
+    protected final void invokeOnMeasure(View view, int widthMeasureSpec, int heightMeasureSpec) {
+                         ^
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/Interceptor.java:58: warning: no @param for heightMeasureSpec
+    protected final void invokeOnMeasure(View view, int widthMeasureSpec, int heightMeasureSpec) {
+                         ^
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/Interceptor.java:67: warning: no @param for view
+    public void onLayout(View view, boolean changed, int l, int t, int r, int b) {
+                ^
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/Interceptor.java:67: warning: no @param for changed
+    public void onLayout(View view, boolean changed, int l, int t, int r, int b) {
+                ^
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/Interceptor.java:67: warning: no @param for l
+    public void onLayout(View view, boolean changed, int l, int t, int r, int b) {
+                ^
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/Interceptor.java:67: warning: no @param for t
+    public void onLayout(View view, boolean changed, int l, int t, int r, int b) {
+                ^
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/Interceptor.java:67: warning: no @param for r
+    public void onLayout(View view, boolean changed, int l, int t, int r, int b) {
+                ^
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/Interceptor.java:67: warning: no @param for b
+    public void onLayout(View view, boolean changed, int l, int t, int r, int b) {
+                ^
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/Interceptor.java:75: warning: no @param for view
+    protected final void invokeOnLayout(View view, boolean changed, int l, int t, int r, int b) {
+                         ^
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/Interceptor.java:75: warning: no @param for changed
+    protected final void invokeOnLayout(View view, boolean changed, int l, int t, int r, int b) {
+                         ^
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/Interceptor.java:75: warning: no @param for l
+    protected final void invokeOnLayout(View view, boolean changed, int l, int t, int r, int b) {
+                         ^
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/Interceptor.java:75: warning: no @param for t
+    protected final void invokeOnLayout(View view, boolean changed, int l, int t, int r, int b) {
+                         ^
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/Interceptor.java:75: warning: no @param for r
+    protected final void invokeOnLayout(View view, boolean changed, int l, int t, int r, int b) {
+                         ^
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/Interceptor.java:75: warning: no @param for b
+    protected final void invokeOnLayout(View view, boolean changed, int l, int t, int r, int b) {
+                         ^
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/Interceptor.java:84: warning: no @param for view
+    public void draw(View view, Canvas canvas) {
+                ^
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/Interceptor.java:84: warning: no @param for canvas
+    public void draw(View view, Canvas canvas) {
+                ^
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/Interceptor.java:91: warning: no @param for view
+    protected final void invokeDraw(View view, Canvas canvas) {
+                         ^
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/Interceptor.java:91: warning: no @param for canvas
+    protected final void invokeDraw(View view, Canvas canvas) {
+                         ^
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/Interceptor.java:100: warning: no @param for view
+    public void onDraw(View view, Canvas canvas) {
+                ^
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/Interceptor.java:100: warning: no @param for canvas
+    public void onDraw(View view, Canvas canvas) {
+                ^
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/Interceptor.java:107: warning: no @param for view
+    protected final void invokeOnDraw(View view, Canvas canvas) {
+                         ^
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/Interceptor.java:107: warning: no @param for canvas
+    protected final void invokeOnDraw(View view, Canvas canvas) {
+                         ^
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/Interceptor.java:116: warning: no @param for view
+    public void requestLayout(View view) {
+                ^
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/Interceptor.java:123: warning: no @param for view
+    protected final void invokeRequestLayout(View view) {
+                         ^
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/Interceptor.java:132: warning: no @param for view
+    public void forceLayout(View view) {
+                ^
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/Interceptor.java:139: warning: no @param for view
+    protected final void invokeForceLayout(View view) {
+                         ^
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/Interceptor.java:149: warning: no @param for view
+    protected final void setMeasuredDimension(View view, int width, int height) {
+                         ^
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/Interceptor.java:149: warning: no @param for width
+    protected final void setMeasuredDimension(View view, int width, int height) {
+                         ^
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/Interceptor.java:149: warning: no @param for height
+    protected final void setMeasuredDimension(View view, int width, int height) {
+                         ^
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/Interceptor.java:31: error: malformed HTML
+ * <p></>You should override one or more methods in your {@link Interceptor} subclass to
+      ^
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/Interceptor.java:31: error: bad use of '>'
+ * <p></>You should override one or more methods in your {@link Interceptor} subclass to
+        ^
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/Probe.java:96: warning: no @param for context
+    public static void deploy(Context context, Interceptor interceptor) {
+                       ^
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/Probe.java:96: warning: no @param for interceptor
+    public static void deploy(Context context, Interceptor interceptor) {
+                       ^
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/Probe.java:103: warning: no @param for context
+    public static void deploy(Context context, Interceptor interceptor, Filter filter) {
+                       ^
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/Probe.java:103: warning: no @param for interceptor
+    public static void deploy(Context context, Interceptor interceptor, Filter filter) {
+                       ^
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/Probe.java:103: warning: no @param for filter
+    public static void deploy(Context context, Interceptor interceptor, Filter filter) {
+                       ^
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/Probe.java:34: error: unknown tag: Override
+ *     @Override
+       ^
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/ViewProxy.java:33: warning: no @param for interceptor
+    void setInterceptor(Interceptor interceptor);
+         ^
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/ViewProxy.java:38: warning: no @param for widthMeasureSpec
+    void invokeOnMeasure(int widthMeasureSpec, int heightMeasureSpec);
+         ^
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/ViewProxy.java:38: warning: no @param for heightMeasureSpec
+    void invokeOnMeasure(int widthMeasureSpec, int heightMeasureSpec);
+         ^
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/ViewProxy.java:43: warning: no @param for changed
+    void invokeOnLayout(boolean changed, int l, int t, int r, int b);
+         ^
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/ViewProxy.java:43: warning: no @param for l
+    void invokeOnLayout(boolean changed, int l, int t, int r, int b);
+         ^
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/ViewProxy.java:43: warning: no @param for t
+    void invokeOnLayout(boolean changed, int l, int t, int r, int b);
+         ^
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/ViewProxy.java:43: warning: no @param for r
+    void invokeOnLayout(boolean changed, int l, int t, int r, int b);
+         ^
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/ViewProxy.java:43: warning: no @param for b
+    void invokeOnLayout(boolean changed, int l, int t, int r, int b);
+         ^
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/ViewProxy.java:48: warning: no @param for canvas
+    void invokeDraw(Canvas canvas);
+         ^
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/ViewProxy.java:53: warning: no @param for canvas
+    void invokeOnDraw(Canvas canvas);
+         ^
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/ViewProxy.java:68: warning: no @param for width
+    void invokeSetMeasuredDimension(int width, int height);
+         ^
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/ViewProxy.java:68: warning: no @param for height
+    void invokeSetMeasuredDimension(int width, int height);
+         ^
+/tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/interceptors/OvermeasureInterceptor.java:32: warning: empty <p> tag
+ * <p>
+   ^
+
+3 errors
+92 warnings
+:library:androidJavadocs FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':library:androidJavadocs'.
+> Javadoc generation failed. Generated Javadoc options file (useful for troubleshooting): '/tmp/rdisk/971/src/probe-master/library/build/tmp/androidJavadocs/javadoc.options'
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':library:androidJavadocs'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:69)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:305)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:88)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:29)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:68)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:55)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:149)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:80)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:36)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:51)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:171)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+Caused by: org.gradle.api.GradleException: Javadoc generation failed. Generated Javadoc options file (useful for troubleshooting): '/tmp/rdisk/971/src/probe-master/library/build/tmp/androidJavadocs/javadoc.options'
+	at org.gradle.api.tasks.javadoc.internal.JavadocGenerator.execute(JavadocGenerator.java:55)
+	at org.gradle.api.tasks.javadoc.internal.JavadocGenerator.execute(JavadocGenerator.java:31)
+	at org.gradle.api.tasks.javadoc.Javadoc.executeExternalJavadoc(Javadoc.java:140)
+	at org.gradle.api.tasks.javadoc.Javadoc.generate(Javadoc.java:128)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:63)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.doExecute(AnnotationProcessingTaskFactory.java:218)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:211)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:200)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:579)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:562)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	... 47 more
+Caused by: org.gradle.process.internal.ExecException: Process 'command '/usr/lib/jvm/java-8-oracle/bin/javadoc'' finished with non-zero exit value 1
+	at org.gradle.process.internal.DefaultExecHandle$ExecResultImpl.assertNormalExitValue(DefaultExecHandle.java:365)
+	at org.gradle.process.internal.DefaultExecAction.execute(DefaultExecAction.java:31)
+	at org.gradle.api.tasks.javadoc.internal.JavadocGenerator.execute(JavadocGenerator.java:52)
+	... 58 more
+
+
+BUILD FAILED
+
+Total time: 7.07 secs
+
+2018-04-08 13:40:50,296 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-08 13:40:50,296 INFO  SysUtils - Execute command: [/tmp/rdisk/971/src/probe-master/gradlew, -b, /tmp/rdisk/971/src/probe-master/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-08 13:40:57,551 INFO  ProjectTaskService - Detected possible tasks: 53
+2018-04-08 13:40:57,551 INFO  ProjectTaskService - Excluded tasks (11): lintDebug deviceCheck lint uninstallRelease connectedCheck uninstallAll check connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-08 13:40:57,551 INFO  SysUtils - Execute command: [/tmp/rdisk/971/src/probe-master/gradlew, -b, /tmp/rdisk/971/src/probe-master/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-08 13:41:24,848 INFO  SysUtils - Configuration on demand is an incubating feature.
+:sample:preBuild
+:sample:compileDebugNdk
+:library:compileLint
+:library:copyReleaseLint UP-TO-DATE
+:library:mergeReleaseProguardFiles
+:library:preBuild
+:library:preReleaseBuild
+:library:checkReleaseManifest
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl
+:library:compileReleaseRenderscript
+:library:generateReleaseBuildConfig
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets
+:library:generateReleaseResValues
+:library:generateReleaseResources
+:library:packageReleaseResources
+:library:processReleaseManifest
+:library:processReleaseResources
+:library:generateReleaseSources
+:library:compileReleaseJavaNote: /tmp/rdisk/971/src/probe-master/library/src/main/java/org/lucasr/probe/ViewProxyBuilder.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:library:processReleaseJavaRes UP-TO-DATE
+:library:packageReleaseJar
+:library:compileReleaseNdk
+:library:packageReleaseJniLibs UP-TO-DATE
+:library:packageReleaseLocalJar UP-TO-DATE
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:bundleRelease
+:sample:preDebugBuild
+:sample:checkDebugManifest
+:sample:preReleaseBuild
+:sample:prepareComAndroidSupportAppcompatV72000Library
+:sample:prepareComAndroidSupportSupportV42000Library
+:sample:prepareProbeMasterLibraryUnspecifiedLibrary
+:sample:prepareDebugDependencies
+:sample:compileDebugAidl
+:sample:compileDebugRenderscript
+:sample:generateDebugBuildConfig
+:sample:generateDebugAssets UP-TO-DATE
+:sample:mergeDebugAssets
+:sample:generateDebugResValues
+:sample:generateDebugResources
+:sample:mergeDebugResources/tmp/rdisk/971/src/probe-master/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-mdpi/abc_ic_search.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/971/src/probe-master/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-hdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/971/src/probe-master/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-xxhdpi/abc_ic_voice_search.png: libpng warning: iCCP: profile 'icc': 'GRAY': Gray color space not permitted on RGB PNG
+/tmp/rdisk/971/src/probe-master/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-xxhdpi/abc_ic_clear_disabled.png: libpng warning: iCCP: profile 'icc': 'GRAY': Gray color space not permitted on RGB PNG
+/tmp/rdisk/971/src/probe-master/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-hdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/971/src/probe-master/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-mdpi/abc_ic_voice_search.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/971/src/probe-master/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-hdpi/abc_ic_clear_disabled.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/971/src/probe-master/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-xhdpi/abc_ic_clear_disabled.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/971/src/probe-master/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-xhdpi/abc_ic_search.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/971/src/probe-master/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-mdpi/abc_ic_go.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/971/src/probe-master/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-xxhdpi/abc_ic_go.png: libpng warning: iCCP: profile 'icc': 'GRAY': Gray color space not permitted on RGB PNG
+/tmp/rdisk/971/src/probe-master/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-hdpi/abc_ic_go.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/971/src/probe-master/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-xhdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/971/src/probe-master/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-xhdpi/abc_ic_go.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/971/src/probe-master/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-xhdpi/abc_ic_voice_search.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/971/src/probe-master/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-xxhdpi/abc_ic_search.png: libpng warning: iCCP: profile 'icc': 'GRAY': Gray color space not permitted on RGB PNG
+/tmp/rdisk/971/src/probe-master/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-mdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/971/src/probe-master/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-hdpi/abc_ic_clear_normal.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/971/src/probe-master/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-xxhdpi/abc_ic_clear_normal.png: libpng warning: iCCP: profile 'icc': 'GRAY': Gray color space not permitted on RGB PNG
+/tmp/rdisk/971/src/probe-master/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-mdpi/abc_ic_clear_disabled.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/971/src/probe-master/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-hdpi/abc_ic_search.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/971/src/probe-master/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-xhdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/971/src/probe-master/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-hdpi/abc_ic_voice_search.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+:sample:processDebugManifest
+:sample:processDebugResources
+:sample:generateDebugSources
+:sample:compileDebugJava
+:sample:preDexDebug
+:sample:dexDebug
+:sample:processDebugJavaRes UP-TO-DATE
+:sample:validateDebugSigning
+:sample:packageDebug
+:sample:zipalignDebug
+:sample:assembleDebug
+:sample:checkReleaseManifest
+:sample:prepareReleaseDependencies
+:sample:compileReleaseAidl
+:sample:compileReleaseRenderscript
+:sample:generateReleaseBuildConfig
+:sample:generateReleaseAssets UP-TO-DATE
+:sample:mergeReleaseAssets
+:sample:generateReleaseResValues
+:sample:generateReleaseResources
+:sample:mergeReleaseResources/tmp/rdisk/971/src/probe-master/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-mdpi/abc_ic_search.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/971/src/probe-master/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-hdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/971/src/probe-master/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-xxhdpi/abc_ic_voice_search.png: libpng warning: iCCP: profile 'icc': 'GRAY': Gray color space not permitted on RGB PNG
+/tmp/rdisk/971/src/probe-master/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-hdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/971/src/probe-master/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-mdpi/abc_ic_voice_search.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/971/src/probe-master/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-xxhdpi/abc_ic_clear_disabled.png: libpng warning: iCCP: profile 'icc': 'GRAY': Gray color space not permitted on RGB PNG
+/tmp/rdisk/971/src/probe-master/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-hdpi/abc_ic_clear_disabled.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/971/src/probe-master/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-xhdpi/abc_ic_clear_disabled.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/971/src/probe-master/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-mdpi/abc_ic_go.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/971/src/probe-master/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-xhdpi/abc_ic_search.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/971/src/probe-master/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-xxhdpi/abc_ic_go.png: libpng warning: iCCP: profile 'icc': 'GRAY': Gray color space not permitted on RGB PNG
+/tmp/rdisk/971/src/probe-master/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-hdpi/abc_ic_go.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/971/src/probe-master/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-xhdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/971/src/probe-master/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-xhdpi/abc_ic_go.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/971/src/probe-master/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-xhdpi/abc_ic_voice_search.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/971/src/probe-master/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-xxhdpi/abc_ic_search.png: libpng warning: iCCP: profile 'icc': 'GRAY': Gray color space not permitted on RGB PNG
+/tmp/rdisk/971/src/probe-master/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-mdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/971/src/probe-master/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-hdpi/abc_ic_clear_normal.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/971/src/probe-master/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-xxhdpi/abc_ic_clear_normal.png: libpng warning: iCCP: profile 'icc': 'GRAY': Gray color space not permitted on RGB PNG
+/tmp/rdisk/971/src/probe-master/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-mdpi/abc_ic_clear_disabled.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/971/src/probe-master/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-hdpi/abc_ic_search.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/971/src/probe-master/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-xhdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/971/src/probe-master/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-hdpi/abc_ic_voice_search.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+:sample:processReleaseManifest
+:sample:processReleaseResources
+:sample:generateReleaseSources
+:sample:compileReleaseJava
+:sample:lintVitalRelease
+:sample:compileReleaseNdk
+:sample:preDexRelease
+:sample:dexRelease
+:sample:processReleaseJavaRes UP-TO-DATE
+:sample:packageRelease
+:sample:assembleRelease
+:sample:assemble
+:sample:build
+
+BUILD SUCCESSFUL
+
+Total time: 26.844 secs
+
+2018-04-08 13:41:24,884 INFO  FullProcessService - Found APK file: /tmp/rdisk/971/src/probe-master/sample/build/outputs/apk/sample-release-unsigned.apk

@@ -1,0 +1,5 @@
+{
+  "com.enrique.apprater" : [ "AppRater", "AppRater$1", "AppRater$2", "AppRater$3" ],
+  "com.enrique.mymodule.app" : [ "BuildConfig", "R", "R$drawable", "R$string" ],
+  "demo.apprate.enrique.com.appratedemo" : [ "AppRateDemo", "BuildConfig", "R", "R$attr", "R$drawable", "R$string", "R$style" ]
+}

@@ -1,0 +1,260 @@
+2018-04-08 15:38:37,059 INFO  DownloadService - Downloading "https://github.com/OneDrive/OneDrive-Picker-Android/archive/master.zip", attempt 3
+2018-04-08 15:38:39,118 INFO  DownloadService - Downloaded https://github.com/OneDrive/OneDrive-Picker-Android/archive/master.zip, attempt 3
+2018-04-08 15:38:39,119 INFO  DownloadService - Size of file "/tmp/rdisk/908/master.zip": 1 MB
+2018-04-08 15:38:39,119 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-08 15:38:39,119 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/908/master.zip: true
+2018-04-08 15:38:39,119 DEBUG ZipUtil - Extracting '/tmp/rdisk/908/master.zip' into '/tmp/rdisk/908/src'.
+2018-04-08 15:38:39,145 INFO  FullProcessService - Size of directory with sources: 1 MB
+2018-04-08 15:38:39,145 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/908/src]
+2018-04-08 15:38:39,150 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/908/src/.git/
+
+2018-04-08 15:38:39,154 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/908/src/onedrive-picker-android-master/gradlew
+2018-04-08 15:38:39,157 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/908/src/onedrive-picker-android-master/OneDriveSDK/build.gradle /tmp/rdisk/908/src/onedrive-picker-android-master/OneDriveSDKTests/build.gradle /tmp/rdisk/908/src/onedrive-picker-android-master/PickerSample/build.gradle /tmp/rdisk/908/src/onedrive-picker-android-master/SaverSample/build.gradle /tmp/rdisk/908/src/onedrive-picker-android-master/build.gradle
+2018-04-08 15:38:39,161 INFO  ProjectBuildService - All script(s): /tmp/rdisk/908/src/onedrive-picker-android-master/settings.gradle /tmp/rdisk/908/src/onedrive-picker-android-master/build.gradle /tmp/rdisk/908/src/onedrive-picker-android-master/SaverSample/build.gradle /tmp/rdisk/908/src/onedrive-picker-android-master/PickerSample/build.gradle /tmp/rdisk/908/src/onedrive-picker-android-master/OneDriveSDKTests/build.gradle /tmp/rdisk/908/src/onedrive-picker-android-master/OneDriveSDK/build.gradle
+2018-04-08 15:38:39,161 INFO  ProjectBuildService - Remote scripts: none
+2018-04-08 15:38:39,161 INFO  ProjectFixService - Fixing project...
+2018-04-08 15:38:39,170 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/908/src/onedrive-picker-android-master/OneDriveSDK/local.properties
+2018-04-08 15:38:39,171 INFO  ProjectFixService - Build info for "/tmp/rdisk/908/src/onedrive-picker-android-master/OneDriveSDK/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-08 15:38:39,171 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/908/src/onedrive-picker-android-master/OneDriveSDK/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=27,targetSdkVersion=27]
+2018-04-08 15:38:39,172 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/908/src/onedrive-picker-android-master/OneDriveSDKTests/local.properties
+2018-04-08 15:38:39,173 INFO  ProjectFixService - Build info for "/tmp/rdisk/908/src/onedrive-picker-android-master/OneDriveSDKTests/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-08 15:38:39,173 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/908/src/onedrive-picker-android-master/OneDriveSDKTests/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=27,targetSdkVersion=27]
+2018-04-08 15:38:39,174 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/908/src/onedrive-picker-android-master/PickerSample/local.properties
+2018-04-08 15:38:39,175 INFO  ProjectFixService - Build info for "/tmp/rdisk/908/src/onedrive-picker-android-master/PickerSample/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-08 15:38:39,175 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/908/src/onedrive-picker-android-master/PickerSample/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=27,targetSdkVersion=27]
+2018-04-08 15:38:39,176 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/908/src/onedrive-picker-android-master/SaverSample/local.properties
+2018-04-08 15:38:39,177 INFO  ProjectFixService - Build info for "/tmp/rdisk/908/src/onedrive-picker-android-master/SaverSample/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-08 15:38:39,177 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/908/src/onedrive-picker-android-master/SaverSample/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=27,targetSdkVersion=27]
+2018-04-08 15:38:39,178 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/908/src/onedrive-picker-android-master/local.properties
+2018-04-08 15:38:39,178 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.8-all.zip
+2018-04-08 15:38:39,178 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.8-bin.zip)
+2018-04-08 15:38:39,180 INFO  ProjectFixService - Build info for "/tmp/rdisk/908/src/onedrive-picker-android-master/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-08 15:38:39,180 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/908/src/onedrive-picker-android-master/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=27,targetSdkVersion=27]
+2018-04-08 15:38:39,180 INFO  ProjectFixService - Project was maybe fixed
+2018-04-08 15:38:39,180 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-08 15:38:39,181 INFO  SysUtils - Execute command: [/tmp/rdisk/908/src/onedrive-picker-android-master/gradlew, -b, /tmp/rdisk/908/src/onedrive-picker-android-master/OneDriveSDK/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-08 15:38:56,132 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-08 15:38:56,133 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-08 15:38:56,133 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-08 15:38:56,133 INFO  SysUtils - Execute command: [/tmp/rdisk/908/src/onedrive-picker-android-master/gradlew, -b, /tmp/rdisk/908/src/onedrive-picker-android-master/OneDriveSDK/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-08 15:39:15,347 INFO  SysUtils - Configuration on demand is an incubating feature.
+:OneDriveSDK:compileLint
+:OneDriveSDK:copyDebugLint UP-TO-DATE
+:OneDriveSDK:mergeDebugProguardFiles
+:OneDriveSDK:preBuild UP-TO-DATE
+:OneDriveSDK:preDebugBuild UP-TO-DATE
+:OneDriveSDK:checkDebugManifest
+:OneDriveSDK:prepareDebugDependencies
+:OneDriveSDK:compileDebugAidl
+:OneDriveSDK:compileDebugRenderscript
+:OneDriveSDK:generateDebugBuildConfig
+:OneDriveSDK:generateDebugAssets UP-TO-DATE
+:OneDriveSDK:mergeDebugAssets
+:OneDriveSDK:generateDebugResValues
+:OneDriveSDK:generateDebugResources
+:OneDriveSDK:packageDebugResources
+:OneDriveSDK:processDebugManifest
+:OneDriveSDK:processDebugResources
+:OneDriveSDK:generateDebugSources
+:OneDriveSDK:processDebugJavaRes UP-TO-DATE
+:OneDriveSDK:compileDebugJavaWithJavac
+:OneDriveSDK:packageDebugJar
+:OneDriveSDK:compileDebugNdk UP-TO-DATE
+:OneDriveSDK:packageDebugJniLibs UP-TO-DATE
+:OneDriveSDK:packageDebugLocalJar UP-TO-DATE
+:OneDriveSDK:packageDebugRenderscript UP-TO-DATE
+:OneDriveSDK:bundleDebug
+:OneDriveSDK:compileDebugSources
+:OneDriveSDK:assembleDebug
+:OneDriveSDK:copyReleaseLint UP-TO-DATE
+:OneDriveSDK:mergeReleaseProguardFiles
+:OneDriveSDK:preReleaseBuild UP-TO-DATE
+:OneDriveSDK:checkReleaseManifest
+:OneDriveSDK:prepareReleaseDependencies
+:OneDriveSDK:compileReleaseAidl
+:OneDriveSDK:compileReleaseRenderscript
+:OneDriveSDK:generateReleaseBuildConfig
+:OneDriveSDK:generateReleaseAssets UP-TO-DATE
+:OneDriveSDK:mergeReleaseAssets
+:OneDriveSDK:generateReleaseResValues
+:OneDriveSDK:generateReleaseResources
+:OneDriveSDK:packageReleaseResources
+:OneDriveSDK:processReleaseManifest
+:OneDriveSDK:processReleaseResources
+:OneDriveSDK:generateReleaseSources
+:OneDriveSDK:processReleaseJavaRes UP-TO-DATE
+:OneDriveSDK:compileReleaseJavaWithJavac
+:OneDriveSDK:packageReleaseJar
+:OneDriveSDK:compileReleaseNdk UP-TO-DATE
+:OneDriveSDK:packageReleaseJniLibs UP-TO-DATE
+:OneDriveSDK:packageReleaseLocalJar UP-TO-DATE
+:OneDriveSDK:packageReleaseRenderscript UP-TO-DATE
+:OneDriveSDK:bundleRelease
+:OneDriveSDK:compileReleaseSources
+:OneDriveSDK:assembleRelease
+:OneDriveSDK:javadoc/tmp/rdisk/908/src/onedrive-picker-android-master/OneDriveSDK/src/com/microsoft/onedrivesdk/picker/IPicker.java:58: warning - Missing closing '}' character for inline tag: "{@code
+      // Create a picker instance
+      private IPicker mPicker = Picker.createPicker(123456789); 
+      
+      // Trigger the opening of the picker
+      private OnClickListener startPickerOnClick = new View.OnClickListener() {"
+/tmp/rdisk/908/src/onedrive-picker-android-master/OneDriveSDK/src/com/microsoft/onedrivesdk/picker/IPicker.java:58: warning - @Override is an unknown tag.
+/tmp/rdisk/908/src/onedrive-picker-android-master/OneDriveSDK/src/com/microsoft/onedrivesdk/picker/IPicker.java:58: warning - @Override is an unknown tag.
+/tmp/rdisk/908/src/onedrive-picker-android-master/OneDriveSDK/src/com/microsoft/onedrivesdk/saver/ISaver.java:61: warning - Missing closing '}' character for inline tag: "{@code
+      // Create a saver instance
+      private ISaver mSaver = Saver.createSaver(123456789);
+
+      // Trigger the opening of the saver
+      private OnClickListener startSaverOnClick = new View.OnClickListener() {"
+/tmp/rdisk/908/src/onedrive-picker-android-master/OneDriveSDK/src/com/microsoft/onedrivesdk/saver/ISaver.java:61: warning - @Override is an unknown tag.
+/tmp/rdisk/908/src/onedrive-picker-android-master/OneDriveSDK/src/com/microsoft/onedrivesdk/saver/ISaver.java:61: warning - @Override is an unknown tag.
+/tmp/rdisk/908/src/onedrive-picker-android-master/OneDriveSDK/src/com/microsoft/onedrivesdk/saver/Saver.java:39: warning - Tag @see:illegal character: "123" in "{@link ISaver} for detailed usage information"
+/tmp/rdisk/908/src/onedrive-picker-android-master/OneDriveSDK/src/com/microsoft/onedrivesdk/saver/Saver.java:39: warning - Tag @see:illegal character: "64" in "{@link ISaver} for detailed usage information"
+/tmp/rdisk/908/src/onedrive-picker-android-master/OneDriveSDK/src/com/microsoft/onedrivesdk/saver/Saver.java:39: warning - Tag @see: reference not found: {@link ISaver} for detailed usage information
+
+9 warnings
+:OneDriveSDK:javadocJar
+:OneDriveSDK:sourcesJar
+:OneDriveSDK:assemble
+:OneDriveSDK:checkstyle
+:OneDriveSDK:lint
+Ran lint on variant debug: 1 issues found
+Ran lint on variant release: 1 issues found
+Wrote HTML report to file:/tmp/rdisk/908/src/onedrive-picker-android-master/OneDriveSDK/build/outputs/lint-results.html
+Wrote XML report to /tmp/rdisk/908/src/onedrive-picker-android-master/OneDriveSDK/build/outputs/lint-results.xml
+:OneDriveSDK:preDebugUnitTestBuild UP-TO-DATE
+:OneDriveSDK:prepareDebugUnitTestDependencies
+:OneDriveSDK:processDebugUnitTestJavaRes UP-TO-DATE
+:OneDriveSDK:compileDebugUnitTestJavaWithJavac UP-TO-DATE
+:OneDriveSDK:compileDebugUnitTestSources UP-TO-DATE
+:OneDriveSDK:mockableAndroidJar
+:OneDriveSDK:assembleDebugUnitTest
+:OneDriveSDK:testDebugUnitTest
+:OneDriveSDK:preReleaseUnitTestBuild UP-TO-DATE
+:OneDriveSDK:prepareReleaseUnitTestDependencies
+:OneDriveSDK:processReleaseUnitTestJavaRes UP-TO-DATE
+:OneDriveSDK:compileReleaseUnitTestJavaWithJavac UP-TO-DATE
+:OneDriveSDK:compileReleaseUnitTestSources UP-TO-DATE
+:OneDriveSDK:assembleReleaseUnitTest
+:OneDriveSDK:testReleaseUnitTest
+:OneDriveSDK:test
+:OneDriveSDK:check
+:OneDriveSDK:build
+
+BUILD SUCCESSFUL
+
+Total time: 18.77 secs
+
+2018-04-08 15:39:15,359 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-08 15:39:15,359 INFO  SysUtils - Execute command: [/tmp/rdisk/908/src/onedrive-picker-android-master/gradlew, -b, /tmp/rdisk/908/src/onedrive-picker-android-master/OneDriveSDKTests/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-08 15:39:23,797 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-08 15:39:23,797 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-08 15:39:23,797 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-08 15:39:23,797 INFO  SysUtils - Execute command: [/tmp/rdisk/908/src/onedrive-picker-android-master/gradlew, -b, /tmp/rdisk/908/src/onedrive-picker-android-master/OneDriveSDKTests/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-08 15:39:45,140 INFO  SysUtils - Configuration on demand is an incubating feature.
+:OneDriveSDK:compileLint
+:OneDriveSDK:copyReleaseLint UP-TO-DATE
+:OneDriveSDK:mergeReleaseProguardFiles UP-TO-DATE
+:OneDriveSDK:preBuild UP-TO-DATE
+:OneDriveSDK:preReleaseBuild UP-TO-DATE
+:OneDriveSDK:checkReleaseManifest
+:OneDriveSDK:prepareReleaseDependencies
+:OneDriveSDK:compileReleaseAidl UP-TO-DATE
+:OneDriveSDK:compileReleaseRenderscript UP-TO-DATE
+:OneDriveSDK:generateReleaseBuildConfig UP-TO-DATE
+:OneDriveSDK:generateReleaseAssets UP-TO-DATE
+:OneDriveSDK:mergeReleaseAssets UP-TO-DATE
+:OneDriveSDK:generateReleaseResValues UP-TO-DATE
+:OneDriveSDK:generateReleaseResources UP-TO-DATE
+:OneDriveSDK:packageReleaseResources UP-TO-DATE
+:OneDriveSDK:processReleaseManifest UP-TO-DATE
+:OneDriveSDK:processReleaseResources UP-TO-DATE
+:OneDriveSDK:generateReleaseSources UP-TO-DATE
+:OneDriveSDK:processReleaseJavaRes UP-TO-DATE
+:OneDriveSDK:compileReleaseJavaWithJavac UP-TO-DATE
+:OneDriveSDK:packageReleaseJar UP-TO-DATE
+:OneDriveSDK:compileReleaseNdk UP-TO-DATE
+:OneDriveSDK:packageReleaseJniLibs UP-TO-DATE
+:OneDriveSDK:packageReleaseLocalJar UP-TO-DATE
+:OneDriveSDK:packageReleaseRenderscript UP-TO-DATE
+:OneDriveSDK:bundleRelease UP-TO-DATE
+:OneDriveSDKTests:preBuild UP-TO-DATE
+:OneDriveSDKTests:preDebugBuild UP-TO-DATE
+:OneDriveSDKTests:checkDebugManifest
+:OneDriveSDKTests:preReleaseBuild UP-TO-DATE
+:OneDriveSDKTests:prepareOnedrivePickerAndroidMasterOneDriveSDKUnspecifiedLibrary
+:OneDriveSDKTests:prepareDebugDependencies
+:OneDriveSDKTests:compileDebugAidl
+:OneDriveSDKTests:compileDebugRenderscript
+:OneDriveSDKTests:generateDebugBuildConfig
+:OneDriveSDKTests:generateDebugAssets UP-TO-DATE
+:OneDriveSDKTests:mergeDebugAssets
+:OneDriveSDKTests:generateDebugResValues
+:OneDriveSDKTests:generateDebugResources
+:OneDriveSDKTests:mergeDebugResources
+:OneDriveSDKTests:processDebugManifest
+:OneDriveSDKTests:processDebugResources
+:OneDriveSDKTests:generateDebugSources
+:OneDriveSDKTests:processDebugJavaRes UP-TO-DATE
+:OneDriveSDKTests:compileDebugJavaWithJavac
+:OneDriveSDKTests:compileDebugNdk UP-TO-DATE
+:OneDriveSDKTests:compileDebugSources
+:OneDriveSDKTests:preDexDebug
+:OneDriveSDKTests:dexDebug
+:OneDriveSDKTests:validateDebugSigning
+:OneDriveSDKTests:packageDebug
+:OneDriveSDKTests:zipalignDebug
+:OneDriveSDKTests:assembleDebug
+:OneDriveSDKTests:checkReleaseManifest
+:OneDriveSDKTests:prepareReleaseDependencies
+:OneDriveSDKTests:compileReleaseAidl
+:OneDriveSDKTests:compileReleaseRenderscript
+:OneDriveSDKTests:generateReleaseBuildConfig
+:OneDriveSDKTests:generateReleaseAssets UP-TO-DATE
+:OneDriveSDKTests:mergeReleaseAssets
+:OneDriveSDKTests:generateReleaseResValues
+:OneDriveSDKTests:generateReleaseResources
+:OneDriveSDKTests:mergeReleaseResources
+:OneDriveSDKTests:processReleaseManifest
+:OneDriveSDKTests:processReleaseResources
+:OneDriveSDKTests:generateReleaseSources
+:OneDriveSDKTests:processReleaseJavaRes UP-TO-DATE
+:OneDriveSDKTests:compileReleaseJavaWithJavac
+:OneDriveSDKTests:compileReleaseNdk UP-TO-DATE
+:OneDriveSDKTests:compileReleaseSources
+:OneDriveSDKTests:preDexRelease
+:OneDriveSDKTests:dexRelease
+:OneDriveSDKTests:packageRelease
+:OneDriveSDKTests:assembleRelease
+:OneDriveSDKTests:assemble
+:OneDriveSDKTests:checkstyle
+:OneDriveSDKTests:compileLint
+:OneDriveSDKTests:lint
+Ran lint on variant debug: 1 issues found
+Ran lint on variant release: 1 issues found
+Wrote HTML report to file:/tmp/rdisk/908/src/onedrive-picker-android-master/OneDriveSDKTests/build/outputs/lint-results.html
+Wrote XML report to /tmp/rdisk/908/src/onedrive-picker-android-master/OneDriveSDKTests/build/outputs/lint-results.xml
+:OneDriveSDKTests:preDebugUnitTestBuild UP-TO-DATE
+:OneDriveSDKTests:prepareDebugUnitTestDependencies
+:OneDriveSDKTests:processDebugUnitTestJavaRes UP-TO-DATE
+:OneDriveSDKTests:compileDebugUnitTestJavaWithJavac UP-TO-DATE
+:OneDriveSDKTests:compileDebugUnitTestSources UP-TO-DATE
+:OneDriveSDKTests:mockableAndroidJar
+:OneDriveSDKTests:assembleDebugUnitTest
+:OneDriveSDKTests:testDebugUnitTest
+:OneDriveSDKTests:preReleaseUnitTestBuild UP-TO-DATE
+:OneDriveSDKTests:prepareReleaseUnitTestDependencies
+:OneDriveSDKTests:processReleaseUnitTestJavaRes UP-TO-DATE
+:OneDriveSDKTests:compileReleaseUnitTestJavaWithJavac UP-TO-DATE
+:OneDriveSDKTests:compileReleaseUnitTestSources UP-TO-DATE
+:OneDriveSDKTests:assembleReleaseUnitTest
+:OneDriveSDKTests:testReleaseUnitTest
+:OneDriveSDKTests:test
+:OneDriveSDKTests:check
+:OneDriveSDKTests:build
+
+BUILD SUCCESSFUL
+
+Total time: 20.907 secs
+
+2018-04-08 15:39:45,157 INFO  FullProcessService - Found APK file: /tmp/rdisk/908/src/onedrive-picker-android-master/OneDriveSDKTests/build/outputs/apk/OneDriveSDKTests-release-unsigned.apk

@@ -1,0 +1,10 @@
+2018-04-09 09:33:15,072 INFO  DownloadService - Downloading "https://github.com/gabrielemariotti/colorpickercollection/archive/master.zip", attempt 3
+2018-04-09 09:33:15,779 INFO  DownloadService - Downloaded https://github.com/gabrielemariotti/colorpickercollection/archive/master.zip, attempt 3
+2018-04-09 09:33:15,779 INFO  DownloadService - Size of file "/tmp/rdisk/862/master.zip": 445 KB
+2018-04-09 09:33:15,779 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-09 09:33:15,780 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/862/master.zip: false
+2018-04-09 09:33:15,780 INFO  FullProcessService - Archive with sources does not contain any build script
+2018-04-09 09:33:15,780 ERROR FullProcessService - Could not find directory with sources
+2018-04-09 09:33:15,780 ERROR FullProcessService - Project will not be processed
+2018-04-09 09:33:15,780 ERROR FullProcessService - Project build has not produced APK file
+2018-04-09 09:33:15,780 ERROR FullProcessService - Could not find generated or existed APK file

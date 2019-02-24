@@ -1,0 +1,111 @@
+2018-05-14 06:23:54,588 INFO  DownloadService - Downloading "https://github.com/MoraisIgor/SlidingDrawer/archive/master.zip", attempt 3
+2018-05-14 06:23:56,608 INFO  DownloadService - Downloaded https://github.com/MoraisIgor/SlidingDrawer/archive/master.zip, attempt 3
+2018-05-14 06:23:56,608 INFO  DownloadService - Size of file "/tmp/rdisk/765/master.zip": 170 KB
+2018-05-14 06:23:56,608 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-05-14 06:23:56,609 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/765/master.zip: true
+2018-05-14 06:23:56,609 DEBUG ZipUtil - Extracting '/tmp/rdisk/765/master.zip' into '/tmp/rdisk/765/src'.
+2018-05-14 06:23:56,621 INFO  FullProcessService - Size of directory with sources: 240 KB
+2018-05-14 06:23:56,621 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/765/src]
+2018-05-14 06:23:56,629 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/765/src/.git/
+
+2018-05-14 06:23:56,631 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/765/src/SlidingDrawer-master/SlidingDrawer/gradlew /tmp/rdisk/765/src/SlidingDrawer-master/Sample/gradlew
+2018-05-14 06:23:56,634 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/765/src/SlidingDrawer-master/Sample/app/build.gradle /tmp/rdisk/765/src/SlidingDrawer-master/SlidingDrawer/slidingdrawer/build.gradle /tmp/rdisk/765/src/SlidingDrawer-master/Sample/build.gradle /tmp/rdisk/765/src/SlidingDrawer-master/SlidingDrawer/build.gradle
+2018-05-14 06:23:56,636 INFO  ProjectBuildService - All script(s): /tmp/rdisk/765/src/SlidingDrawer-master/SlidingDrawer/slidingdrawer/build.gradle /tmp/rdisk/765/src/SlidingDrawer-master/SlidingDrawer/settings.gradle /tmp/rdisk/765/src/SlidingDrawer-master/SlidingDrawer/build.gradle /tmp/rdisk/765/src/SlidingDrawer-master/Sample/settings.gradle /tmp/rdisk/765/src/SlidingDrawer-master/Sample/build.gradle /tmp/rdisk/765/src/SlidingDrawer-master/Sample/app/build.gradle
+2018-05-14 06:23:56,636 INFO  ProjectBuildService - Remote scripts: none
+2018-05-14 06:23:56,637 INFO  ProjectFixService - Fixing project...
+2018-05-14 06:23:56,643 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/765/src/SlidingDrawer-master/Sample/app/local.properties
+2018-05-14 06:23:56,643 INFO  ProjectFixService - Build info for "/tmp/rdisk/765/src/SlidingDrawer-master/Sample/app/build.gradle": [buildToolsVersion=27.0.3,compileSdkVersion=27,minSdkVersion=14,targetSdkVersion=27]
+2018-05-14 06:23:56,644 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/765/src/SlidingDrawer-master/SlidingDrawer/slidingdrawer/local.properties
+2018-05-14 06:23:56,644 INFO  ProjectFixService - Build info for "/tmp/rdisk/765/src/SlidingDrawer-master/SlidingDrawer/slidingdrawer/build.gradle": [buildToolsVersion=27.0.3,compileSdkVersion=27,minSdkVersion=14,targetSdkVersion=27]
+2018-05-14 06:23:56,644 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/765/src/SlidingDrawer-master/Sample/local.properties
+2018-05-14 06:23:56,645 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-4.4-all.zip
+2018-05-14 06:23:56,645 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-4.4-bin.zip)
+2018-05-14 06:23:56,648 INFO  ProjectFixService - Build info for "/tmp/rdisk/765/src/SlidingDrawer-master/Sample/build.gradle": [buildToolsVersion=27.0.3,compileSdkVersion=27,minSdkVersion=14,targetSdkVersion=27]
+2018-05-14 06:23:56,648 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/765/src/SlidingDrawer-master/SlidingDrawer/local.properties
+2018-05-14 06:23:56,648 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-4.4-all.zip
+2018-05-14 06:23:56,648 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-4.4-bin.zip)
+2018-05-14 06:23:56,649 INFO  ProjectFixService - Build info for "/tmp/rdisk/765/src/SlidingDrawer-master/SlidingDrawer/build.gradle": [buildToolsVersion=27.0.3,compileSdkVersion=27,minSdkVersion=14,targetSdkVersion=27]
+2018-05-14 06:23:56,649 INFO  ProjectFixService - Project was maybe fixed
+2018-05-14 06:23:56,649 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-14 06:23:56,649 INFO  SysUtils - Execute command: [/tmp/rdisk/765/src/SlidingDrawer-master/Sample/gradlew, -b, /tmp/rdisk/765/src/SlidingDrawer-master/Sample/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-14 06:24:04,749 INFO  ProjectTaskService - Detected possible tasks: 66
+2018-05-14 06:24:04,750 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-05-14 06:24:04,750 INFO  SysUtils - Execute command: [/tmp/rdisk/765/src/SlidingDrawer-master/Sample/gradlew, -b, /tmp/rdisk/765/src/SlidingDrawer-master/Sample/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-05-14 06:24:34,209 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild
+Download https://jcenter.bintray.com/com/github/moraisigor/slidingdrawer/1.7.0/slidingdrawer-1.7.0.pom
+Download https://jcenter.bintray.com/com/github/moraisigor/slidingdrawer/1.7.0/slidingdrawer-1.7.0.aar
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:checkDebugManifest
+:app:generateDebugBuildConfig
+:app:prepareLintJar
+:app:mainApkListPersistenceDebug
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:createDebugCompatibleScreenManifests
+:app:processDebugManifest
+:app:splitsDiscoveryTaskDebug
+:app:processDebugResources
+:app:generateDebugSources
+:app:javaPreCompileDebug
+:app:compileDebugJavaWithJavac
+:app:compileDebugNdk NO-SOURCE
+:app:compileDebugSources
+:app:mergeDebugShaders
+:app:compileDebugShaders
+:app:generateDebugAssets
+:app:mergeDebugAssets
+:app:transformClassesWithDexBuilderForDebug
+:app:transformDexArchiveWithExternalLibsDexMergerForDebug
+:app:transformDexArchiveWithDexMergerForDebug
+:app:mergeDebugJniLibFolders
+:app:transformNativeLibsWithMergeJniLibsForDebug
+:app:transformNativeLibsWithStripDebugSymbolForDebug
+:app:processDebugJavaRes NO-SOURCE
+:app:transformResourcesWithMergeJavaResForDebug
+:app:validateSigningDebug
+:app:packageDebug
+:app:assembleDebug
+:app:preReleaseBuild
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:checkReleaseManifest
+:app:generateReleaseBuildConfig
+:app:mainApkListPersistenceRelease
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:createReleaseCompatibleScreenManifests
+:app:processReleaseManifest
+:app:splitsDiscoveryTaskRelease
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:javaPreCompileRelease
+:app:compileReleaseJavaWithJavac
+:app:compileReleaseNdk NO-SOURCE
+:app:compileReleaseSources
+:app:lintVitalRelease
+:app:mergeReleaseShaders
+:app:compileReleaseShaders
+:app:generateReleaseAssets
+:app:mergeReleaseAssets
+:app:transformClassesWithDexBuilderForRelease
+:app:transformDexArchiveWithExternalLibsDexMergerForRelease
+:app:transformDexArchiveWithDexMergerForRelease
+:app:mergeReleaseJniLibFolders
+:app:transformNativeLibsWithMergeJniLibsForRelease
+:app:transformNativeLibsWithStripDebugSymbolForRelease
+:app:processReleaseJavaRes NO-SOURCE
+:app:transformResourcesWithMergeJavaResForRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL in 28s
+53 actionable tasks: 53 executed
+
+2018-05-14 06:24:34,254 INFO  FullProcessService - Found APK file: /tmp/rdisk/765/src/SlidingDrawer-master/Sample/app/build/outputs/apk/debug/app-debug.apk

@@ -1,0 +1,116 @@
+2018-04-09 14:23:15,043 INFO  DownloadService - Downloading "https://github.com/championswimmer/SimpleFingerGestures_Android_Library/archive/master.zip", attempt 3
+2018-04-09 14:23:16,252 INFO  DownloadService - Downloaded https://github.com/championswimmer/SimpleFingerGestures_Android_Library/archive/master.zip, attempt 3
+2018-04-09 14:23:16,252 INFO  DownloadService - Size of file "/tmp/rdisk/777/master.zip": 3 MB
+2018-04-09 14:23:16,252 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-09 14:23:16,253 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/777/master.zip: true
+2018-04-09 14:23:16,253 DEBUG ZipUtil - Extracting '/tmp/rdisk/777/master.zip' into '/tmp/rdisk/777/src'.
+2018-04-09 14:23:16,304 INFO  FullProcessService - Size of directory with sources: 4 MB
+2018-04-09 14:23:16,304 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/777/src]
+2018-04-09 14:23:16,310 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/777/src/.git/
+
+2018-04-09 14:23:16,313 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/777/src/SimpleFingerGestures_Android_Library-master/gradlew
+2018-04-09 14:23:16,317 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/777/src/SimpleFingerGestures_Android_Library-master/libSFG/build.gradle /tmp/rdisk/777/src/SimpleFingerGestures_Android_Library-master/sample/build.gradle /tmp/rdisk/777/src/SimpleFingerGestures_Android_Library-master/build.gradle
+2018-04-09 14:23:16,320 INFO  ProjectBuildService - All script(s): /tmp/rdisk/777/src/SimpleFingerGestures_Android_Library-master/settings.gradle /tmp/rdisk/777/src/SimpleFingerGestures_Android_Library-master/sample/build.gradle /tmp/rdisk/777/src/SimpleFingerGestures_Android_Library-master/libSFG/build.gradle /tmp/rdisk/777/src/SimpleFingerGestures_Android_Library-master/build.gradle
+2018-04-09 14:23:16,320 INFO  ProjectBuildService - Remote scripts: none
+2018-04-09 14:23:16,320 INFO  ProjectFixService - Fixing project...
+2018-04-09 14:23:16,328 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/777/src/SimpleFingerGestures_Android_Library-master/libSFG/local.properties
+2018-04-09 14:23:16,328 INFO  ProjectFixService - Build info for "/tmp/rdisk/777/src/SimpleFingerGestures_Android_Library-master/libSFG/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=23]
+2018-04-09 14:23:16,329 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/777/src/SimpleFingerGestures_Android_Library-master/sample/local.properties
+2018-04-09 14:23:16,329 INFO  ProjectFixService - Build info for "/tmp/rdisk/777/src/SimpleFingerGestures_Android_Library-master/sample/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=23]
+2018-04-09 14:23:16,330 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/777/src/SimpleFingerGestures_Android_Library-master/local.properties
+2018-04-09 14:23:16,331 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.6-bin.zip
+2018-04-09 14:23:16,332 INFO  ProjectFixService - Build info for "/tmp/rdisk/777/src/SimpleFingerGestures_Android_Library-master/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=23]
+2018-04-09 14:23:16,332 INFO  ProjectFixService - Project was maybe fixed
+2018-04-09 14:23:16,332 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-09 14:23:16,332 INFO  SysUtils - Execute command: [/tmp/rdisk/777/src/SimpleFingerGestures_Android_Library-master/gradlew, -b, /tmp/rdisk/777/src/SimpleFingerGestures_Android_Library-master/libSFG/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-09 14:23:24,671 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-09 14:23:24,671 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-09 14:23:24,672 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-09 14:23:24,672 INFO  SysUtils - Execute command: [/tmp/rdisk/777/src/SimpleFingerGestures_Android_Library-master/gradlew, -b, /tmp/rdisk/777/src/SimpleFingerGestures_Android_Library-master/libSFG/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-09 14:23:39,534 INFO  SysUtils - Configuration on demand is an incubating feature.
+:libSFG:compileLint
+:libSFG:copyDebugLint UP-TO-DATE
+:libSFG:mergeDebugProguardFiles
+:libSFG:preBuild UP-TO-DATE
+:libSFG:preDebugBuild UP-TO-DATE
+:libSFG:checkDebugManifest
+:libSFG:prepareDebugDependencies
+:libSFG:compileDebugAidl
+:libSFG:compileDebugRenderscript
+:libSFG:generateDebugBuildConfig
+:libSFG:generateDebugAssets UP-TO-DATE
+:libSFG:mergeDebugAssets
+:libSFG:generateDebugResValues
+:libSFG:generateDebugResources
+:libSFG:packageDebugResources
+:libSFG:processDebugManifest
+:libSFG:processDebugResources
+:libSFG:generateDebugSources
+:libSFG:processDebugJavaRes UP-TO-DATE
+:libSFG:compileDebugJava
+:libSFG:packageDebugJar
+:libSFG:compileDebugNdk UP-TO-DATE
+:libSFG:packageDebugJniLibs UP-TO-DATE
+:libSFG:packageDebugLocalJar UP-TO-DATE
+:libSFG:packageDebugRenderscript UP-TO-DATE
+:libSFG:bundleDebug
+:libSFG:compileDebugSources
+:libSFG:assembleDebug
+:libSFG:copyReleaseLint UP-TO-DATE
+:libSFG:mergeReleaseProguardFiles
+:libSFG:preReleaseBuild UP-TO-DATE
+:libSFG:checkReleaseManifest
+:libSFG:prepareReleaseDependencies
+:libSFG:compileReleaseAidl
+:libSFG:compileReleaseRenderscript
+:libSFG:generateReleaseBuildConfig
+:libSFG:generateReleaseAssets UP-TO-DATE
+:libSFG:mergeReleaseAssets
+:libSFG:generateReleaseResValues
+:libSFG:generateReleaseResources
+:libSFG:packageReleaseResources
+:libSFG:processReleaseManifest
+:libSFG:processReleaseResources
+:libSFG:generateReleaseSources
+:libSFG:processReleaseJavaRes UP-TO-DATE
+:libSFG:compileReleaseJava
+:libSFG:packageReleaseJar
+:libSFG:compileReleaseNdk UP-TO-DATE
+:libSFG:packageReleaseJniLibs UP-TO-DATE
+:libSFG:packageReleaseLocalJar UP-TO-DATE
+:libSFG:packageReleaseRenderscript UP-TO-DATE
+:libSFG:bundleRelease
+:libSFG:compileReleaseSources
+:libSFG:assembleRelease
+:libSFG:assemble
+:libSFG:lint
+Ran lint on variant debug: 4 issues found
+Ran lint on variant release: 4 issues found
+Wrote HTML report to file:/tmp/rdisk/777/src/SimpleFingerGestures_Android_Library-master/libSFG/build/outputs/lint-results.html
+Wrote XML report to /tmp/rdisk/777/src/SimpleFingerGestures_Android_Library-master/libSFG/build/outputs/lint-results.xml
+:libSFG:preCompileDebugUnitTestJava
+:libSFG:preDebugUnitTestBuild UP-TO-DATE
+:libSFG:prepareDebugUnitTestDependencies
+:libSFG:processDebugUnitTestJavaRes UP-TO-DATE
+:libSFG:compileDebugUnitTestJava UP-TO-DATE
+:libSFG:compileDebugUnitTestSources UP-TO-DATE
+:libSFG:mockableAndroidJar
+:libSFG:assembleDebugUnitTest
+:libSFG:testDebug
+:libSFG:preCompileReleaseUnitTestJava
+:libSFG:preReleaseUnitTestBuild UP-TO-DATE
+:libSFG:prepareReleaseUnitTestDependencies
+:libSFG:processReleaseUnitTestJavaRes UP-TO-DATE
+:libSFG:compileReleaseUnitTestJava UP-TO-DATE
+:libSFG:compileReleaseUnitTestSources UP-TO-DATE
+:libSFG:assembleReleaseUnitTest
+:libSFG:testRelease
+:libSFG:test
+:libSFG:check
+:libSFG:build
+
+BUILD SUCCESSFUL
+
+Total time: 14.451 secs
+
+2018-04-09 14:23:39,543 INFO  FullProcessService - Found APK file: /tmp/rdisk/777/src/SimpleFingerGestures_Android_Library-master/sample/sample-release.apk

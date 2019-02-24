@@ -1,0 +1,259 @@
+2018-04-08 13:31:55,812 INFO  DownloadService - Downloading "https://github.com/chalup/thneed/archive/master.zip", attempt 3
+2018-04-08 13:31:57,220 INFO  DownloadService - Downloaded https://github.com/chalup/thneed/archive/master.zip, attempt 3
+2018-04-08 13:31:57,221 INFO  DownloadService - Size of file "/tmp/rdisk/986/master.zip": 84 KB
+2018-04-08 13:31:57,221 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-08 13:31:57,221 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/986/master.zip: true
+2018-04-08 13:31:57,221 DEBUG ZipUtil - Extracting '/tmp/rdisk/986/master.zip' into '/tmp/rdisk/986/src'.
+2018-04-08 13:31:57,229 INFO  FullProcessService - Size of directory with sources: 142 KB
+2018-04-08 13:31:57,229 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/986/src]
+2018-04-08 13:31:57,238 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/986/src/.git/
+
+2018-04-08 13:31:57,240 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/986/src/thneed-master/gradlew
+2018-04-08 13:31:57,249 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/986/src/thneed-master/library/build.gradle /tmp/rdisk/986/src/thneed-master/build.gradle
+2018-04-08 13:31:57,251 INFO  ProjectBuildService - All script(s): /tmp/rdisk/986/src/thneed-master/settings.gradle /tmp/rdisk/986/src/thneed-master/library/gradle-mvn-push.gradle /tmp/rdisk/986/src/thneed-master/library/build.gradle /tmp/rdisk/986/src/thneed-master/build.gradle
+2018-04-08 13:31:57,252 INFO  ProjectBuildService - Remote scripts: none
+2018-04-08 13:31:57,252 INFO  ProjectFixService - Fixing project...
+2018-04-08 13:31:57,270 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/986/src/thneed-master/library/local.properties
+2018-04-08 13:31:57,271 INFO  ProjectFixService - Build info for "/tmp/rdisk/986/src/thneed-master/library/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=10,targetSdkVersion=21]
+2018-04-08 13:31:57,271 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/986/src/thneed-master/local.properties
+2018-04-08 13:31:57,272 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-08 13:31:57,273 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-08 13:31:57,276 INFO  ProjectFixService - Build info for "/tmp/rdisk/986/src/thneed-master/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=10,targetSdkVersion=21]
+2018-04-08 13:31:57,276 INFO  ProjectFixService - Project was maybe fixed
+2018-04-08 13:31:57,276 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-08 13:31:57,276 INFO  SysUtils - Execute command: [/tmp/rdisk/986/src/thneed-master/gradlew, -b, /tmp/rdisk/986/src/thneed-master/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-08 13:32:10,902 INFO  ProjectTaskService - Detected possible tasks: 60
+2018-04-08 13:32:10,903 INFO  ProjectTaskService - Excluded tasks (10): lintDebug deviceCheck lint connectedCheck uninstallAll test check connectedAndroidTest lintRelease testDebug
+2018-04-08 13:32:10,903 INFO  SysUtils - Execute command: [/tmp/rdisk/986/src/thneed-master/gradlew, -b, /tmp/rdisk/986/src/thneed-master/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, connectedCheck, -x, uninstallAll, -x, test, -x, check, -x, connectedAndroidTest, -x, lintRelease, -x, testDebug, build]
+2018-04-08 13:32:21,761 INFO  SysUtils - Configuration on demand is an incubating feature.
+:library:androidJavadocs/tmp/rdisk/986/src/thneed-master/library/src/main/java/org/chalup/thneed/Thneeds.java:3: error: package com.google.common.base does not exist
+import com.google.common.base.Preconditions;
+                             ^
+/tmp/rdisk/986/src/thneed-master/library/src/main/java/org/chalup/thneed/Thneeds.java:4: error: package com.google.common.collect does not exist
+import com.google.common.collect.Maps;
+                                ^
+/tmp/rdisk/986/src/thneed-master/library/src/main/java/org/chalup/thneed/ModelGraph.java:19: error: package com.google.common.collect does not exist
+import com.google.common.collect.ImmutableList;
+                                ^
+/tmp/rdisk/986/src/thneed-master/library/src/main/java/org/chalup/thneed/ModelGraph.java:20: error: package com.google.common.collect does not exist
+import com.google.common.collect.Lists;
+                                ^
+/tmp/rdisk/986/src/thneed-master/library/src/main/java/org/chalup/thneed/ModelGraph.java:21: error: package com.google.common.collect does not exist
+import com.google.common.collect.Sets;
+                                ^
+/tmp/rdisk/986/src/thneed-master/library/src/main/java/org/chalup/thneed/OneToManyRelationship.java:19: error: package com.google.common.base does not exist
+import com.google.common.base.Objects;
+                             ^
+/tmp/rdisk/986/src/thneed-master/library/src/main/java/org/chalup/thneed/OneToOneRelationship.java:19: error: package com.google.common.base does not exist
+import com.google.common.base.Objects;
+                             ^
+/tmp/rdisk/986/src/thneed-master/library/src/main/java/org/chalup/thneed/RecursiveModelRelationship.java:19: error: package com.google.common.base does not exist
+import com.google.common.base.Objects;
+                             ^
+/tmp/rdisk/986/src/thneed-master/library/src/main/java/org/chalup/thneed/ManyToManyRelationship.java:19: error: package com.google.common.base does not exist
+import com.google.common.base.Objects;
+                             ^
+/tmp/rdisk/986/src/thneed-master/library/src/main/java/org/chalup/thneed/PolymorphicRelationship.java:19: error: package com.google.common.base does not exist
+import com.google.common.base.Objects;
+                             ^
+/tmp/rdisk/986/src/thneed-master/library/src/main/java/org/chalup/thneed/PolymorphicRelationship.java:20: error: package com.google.common.collect does not exist
+import com.google.common.collect.ImmutableList;
+                                ^
+/tmp/rdisk/986/src/thneed-master/library/src/main/java/org/chalup/thneed/PolymorphicRelationship.java:21: error: package com.google.common.collect does not exist
+import com.google.common.collect.ImmutableMap;
+                                ^
+/tmp/rdisk/986/src/thneed-master/library/src/main/java/org/chalup/thneed/PolymorphicRelationship.java:26: error: cannot find symbol
+  public final ImmutableMap<String, TModel> mPolymorphicModels;
+               ^
+  symbol:   class ImmutableMap
+  location: class PolymorphicRelationship<TModel>
+  where TModel is a type-variable:
+    TModel extends Object declared in class PolymorphicRelationship
+/tmp/rdisk/986/src/thneed-master/library/src/main/java/org/chalup/thneed/PolymorphicRelationship.java:31: error: cannot find symbol
+  PolymorphicRelationship(TModel model, ImmutableList<? extends PolymorphicType<? extends TModel>> types, String polymorphicModelIdColumn, String typeColumnName, String idColumnName) {
+                                        ^
+  symbol:   class ImmutableList
+  location: class PolymorphicRelationship<TModel>
+  where TModel is a type-variable:
+    TModel extends Object declared in class PolymorphicRelationship
+/tmp/rdisk/986/src/thneed-master/library/src/main/java/org/chalup/thneed/ModelGraph.java:240: error: cannot find symbol
+        public PolymorphicColumnSelector<RelationshipAdder<TModel>> references(final ImmutableList<? extends PolymorphicType<? extends TModel>> models) {
+                                                                                     ^
+  symbol:   class ImmutableList
+  location: class RelationshipBuilder<TModel>
+  where TModel is a type-variable:
+    TModel extends Object declared in class RelationshipBuilder
+/tmp/rdisk/986/src/thneed-master/library/src/main/java/org/chalup/thneed/ModelGraph.java:282: error: cannot find symbol
+        public PolymorphicColumnSelector<ManyToManyRelationshipBuilder<TModel>> links(final ImmutableList<? extends PolymorphicType<? extends TModel>> models) {
+                                                                                            ^
+  symbol:   class ImmutableList
+  location: class RelationshipBuilder<TModel>
+  where TModel is a type-variable:
+    TModel extends Object declared in class RelationshipBuilder
+/tmp/rdisk/986/src/thneed-master/library/src/main/java/org/chalup/thneed/ModelGraph.java:235: error: cannot find symbol
+          public PolymorphicColumnSelector<RelationshipAdder<TModel>> in(final ImmutableList<? extends PolymorphicType<? extends TModel>> models) {
+                                                                               ^
+  symbol:   class ImmutableList
+  location: class OneToManyRelationshipWithCustomIdBuilder<TModel>
+  where TModel is a type-variable:
+    TModel extends Object declared in class OneToManyRelationshipWithCustomIdBuilder
+/tmp/rdisk/986/src/thneed-master/library/src/main/java/org/chalup/thneed/ModelGraph.java:267: error: cannot find symbol
+          public PolymorphicColumnSelector<ManyToManyRelationshipBuilder<TModel>> in(final ImmutableList<? extends PolymorphicType<? extends TModel>> models) {
+                                                                                           ^
+  symbol:   class ImmutableList
+  location: class ManyToManyRelationshipWithCustomIdBuilder<TModel>
+  where TModel is a type-variable:
+    TModel extends Object declared in class ManyToManyRelationshipWithCustomIdBuilder
+/tmp/rdisk/986/src/thneed-master/library/src/main/java/org/chalup/thneed/ModelGraph.java:340: error: cannot find symbol
+          public PolymorphicColumnSelector<RelationshipAdder<TModel>> with(final ImmutableList<? extends PolymorphicType<? extends TModel>> models) {
+                                                                                 ^
+  symbol:   class ImmutableList
+  location: class ManyToManyRelationshipBuilder<TModel>
+  where TModel is a type-variable:
+    TModel extends Object declared in class ManyToManyRelationshipBuilder
+/tmp/rdisk/986/src/thneed-master/library/src/main/java/org/chalup/thneed/ModelGraph.java:321: error: cannot find symbol
+            public PolymorphicColumnSelector<RelationshipAdder<TModel>> in(final ImmutableList<? extends PolymorphicType<? extends TModel>> models) {
+                                                                                 ^
+  symbol:   class ImmutableList
+  location: class WithCustomIdColumn<TModel>
+  where TModel is a type-variable:
+    TModel extends Object declared in class WithCustomIdColumn
+
+20 warnings
+:library:androidJavadocsJar
+:library:androidSourcesJar
+:library:compileLint
+:library:copyDebugLint UP-TO-DATE
+:library:preBuild
+:library:preDebugBuild
+:library:checkDebugManifest
+:library:prepareDebugDependencies
+:library:compileDebugAidl
+:library:compileDebugRenderscript
+:library:generateDebugBuildConfig
+:library:generateDebugAssets UP-TO-DATE
+:library:mergeDebugAssets
+:library:generateDebugResValues
+:library:generateDebugResources
+:library:packageDebugResources
+:library:processDebugManifest
+:library:processDebugResources
+:library:generateDebugSources
+:library:compileDebugJava
+:library:extractDebugAnnotations
+:library:mergeDebugProguardFiles
+:library:processDebugJavaRes UP-TO-DATE
+:library:packageDebugJar
+:library:compileDebugNdk
+:library:packageDebugJniLibs UP-TO-DATE
+:library:packageDebugLocalJar UP-TO-DATE
+:library:packageDebugRenderscript UP-TO-DATE
+:library:bundleDebug
+:library:assembleDebug
+:library:copyReleaseLint UP-TO-DATE
+:library:preReleaseBuild
+:library:checkReleaseManifest
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl
+:library:compileReleaseRenderscript
+:library:generateReleaseBuildConfig
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets
+:library:generateReleaseResValues
+:library:generateReleaseResources
+:library:packageReleaseResources
+:library:processReleaseManifest
+:library:processReleaseResources
+:library:generateReleaseSources
+:library:compileReleaseJava
+:library:extractReleaseAnnotations
+:library:mergeReleaseProguardFiles
+:library:processReleaseJavaRes UP-TO-DATE
+:library:packageReleaseJar
+:library:compileReleaseNdk
+:library:packageReleaseJniLibs UP-TO-DATE
+:library:packageReleaseLocalJar UP-TO-DATE
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:bundleRelease
+:library:assembleRelease
+:library:signArchives SKIPPED
+:library:assemble
+:library:build
+
+BUILD SUCCESSFUL
+
+Total time: 10.32 secs
+
+2018-04-08 13:32:21,770 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-08 13:32:21,771 INFO  SysUtils - Execute command: [/tmp/rdisk/986/src/thneed-master/gradlew, -b, /tmp/rdisk/986/src/thneed-master/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-08 13:32:28,529 INFO  ProjectTaskService - Detected possible tasks: 60
+2018-04-08 13:32:28,530 INFO  ProjectTaskService - Excluded tasks (10): lintDebug deviceCheck lint connectedCheck uninstallAll test check connectedAndroidTest lintRelease testDebug
+2018-04-08 13:32:28,530 INFO  SysUtils - Execute command: [/tmp/rdisk/986/src/thneed-master/gradlew, -b, /tmp/rdisk/986/src/thneed-master/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, connectedCheck, -x, uninstallAll, -x, test, -x, check, -x, connectedAndroidTest, -x, lintRelease, -x, testDebug, build]
+2018-04-08 13:32:35,337 INFO  SysUtils - Configuration on demand is an incubating feature.
+:library:androidJavadocs UP-TO-DATE
+:library:androidJavadocsJar UP-TO-DATE
+:library:androidSourcesJar UP-TO-DATE
+:library:compileLint
+:library:copyDebugLint UP-TO-DATE
+:library:preBuild
+:library:preDebugBuild
+:library:checkDebugManifest
+:library:prepareDebugDependencies
+:library:compileDebugAidl UP-TO-DATE
+:library:compileDebugRenderscript UP-TO-DATE
+:library:generateDebugBuildConfig UP-TO-DATE
+:library:generateDebugAssets UP-TO-DATE
+:library:mergeDebugAssets UP-TO-DATE
+:library:generateDebugResValues UP-TO-DATE
+:library:generateDebugResources UP-TO-DATE
+:library:packageDebugResources UP-TO-DATE
+:library:processDebugManifest UP-TO-DATE
+:library:processDebugResources UP-TO-DATE
+:library:generateDebugSources UP-TO-DATE
+:library:compileDebugJava UP-TO-DATE
+:library:extractDebugAnnotations UP-TO-DATE
+:library:mergeDebugProguardFiles UP-TO-DATE
+:library:processDebugJavaRes UP-TO-DATE
+:library:packageDebugJar UP-TO-DATE
+:library:compileDebugNdk UP-TO-DATE
+:library:packageDebugJniLibs UP-TO-DATE
+:library:packageDebugLocalJar UP-TO-DATE
+:library:packageDebugRenderscript UP-TO-DATE
+:library:bundleDebug UP-TO-DATE
+:library:assembleDebug UP-TO-DATE
+:library:copyReleaseLint UP-TO-DATE
+:library:preReleaseBuild
+:library:checkReleaseManifest
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl UP-TO-DATE
+:library:compileReleaseRenderscript UP-TO-DATE
+:library:generateReleaseBuildConfig UP-TO-DATE
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets UP-TO-DATE
+:library:generateReleaseResValues UP-TO-DATE
+:library:generateReleaseResources UP-TO-DATE
+:library:packageReleaseResources UP-TO-DATE
+:library:processReleaseManifest UP-TO-DATE
+:library:processReleaseResources UP-TO-DATE
+:library:generateReleaseSources UP-TO-DATE
+:library:compileReleaseJava UP-TO-DATE
+:library:extractReleaseAnnotations UP-TO-DATE
+:library:mergeReleaseProguardFiles UP-TO-DATE
+:library:processReleaseJavaRes UP-TO-DATE
+:library:packageReleaseJar UP-TO-DATE
+:library:compileReleaseNdk UP-TO-DATE
+:library:packageReleaseJniLibs UP-TO-DATE
+:library:packageReleaseLocalJar UP-TO-DATE
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:bundleRelease UP-TO-DATE
+:library:assembleRelease UP-TO-DATE
+:library:signArchives SKIPPED
+:library:assemble UP-TO-DATE
+:library:build
+
+BUILD SUCCESSFUL
+
+Total time: 6.362 secs
+
+2018-04-08 13:32:35,344 ERROR FullProcessService - Project build has not produced APK file
+2018-04-08 13:32:35,352 ERROR FullProcessService - Could not find generated or existed APK file

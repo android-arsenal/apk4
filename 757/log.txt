@@ -1,0 +1,10 @@
+2018-04-09 17:31:05,483 INFO  DownloadService - Downloading "https://github.com/rameshvoltella/Android-Image-Animator-Frame-Library/archive/master.zip", attempt 3
+2018-04-09 17:31:07,106 INFO  DownloadService - Downloaded https://github.com/rameshvoltella/Android-Image-Animator-Frame-Library/archive/master.zip, attempt 3
+2018-04-09 17:31:07,107 INFO  DownloadService - Size of file "/tmp/rdisk/757/master.zip": 272 KB
+2018-04-09 17:31:07,107 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-09 17:31:07,107 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/757/master.zip: false
+2018-04-09 17:31:07,107 INFO  FullProcessService - Archive with sources does not contain any build script
+2018-04-09 17:31:07,107 ERROR FullProcessService - Could not find directory with sources
+2018-04-09 17:31:07,107 ERROR FullProcessService - Project will not be processed
+2018-04-09 17:31:07,107 ERROR FullProcessService - Project build has not produced APK file
+2018-04-09 17:31:07,108 ERROR FullProcessService - Could not find generated or existed APK file

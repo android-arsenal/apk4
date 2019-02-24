@@ -1,0 +1,166 @@
+2018-04-08 15:33:13,601 INFO  DownloadService - Downloading "https://github.com/aguilarguisado/LoadingComponentView/archive/master.zip", attempt 3
+2018-04-08 15:33:14,275 INFO  DownloadService - Downloaded https://github.com/aguilarguisado/LoadingComponentView/archive/master.zip, attempt 3
+2018-04-08 15:33:14,276 INFO  DownloadService - Size of file "/tmp/rdisk/920/master.zip": 2 MB
+2018-04-08 15:33:14,276 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-08 15:33:14,276 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/920/master.zip: true
+2018-04-08 15:33:14,276 DEBUG ZipUtil - Extracting '/tmp/rdisk/920/master.zip' into '/tmp/rdisk/920/src'.
+2018-04-08 15:33:14,303 INFO  FullProcessService - Size of directory with sources: 2 MB
+2018-04-08 15:33:14,303 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/920/src]
+2018-04-08 15:33:14,307 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/920/src/.git/
+
+2018-04-08 15:33:14,310 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/920/src/LoadingComponentView-master/gradlew
+2018-04-08 15:33:14,313 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/920/src/LoadingComponentView-master/app/build.gradle /tmp/rdisk/920/src/LoadingComponentView-master/loadingcomponent/build.gradle /tmp/rdisk/920/src/LoadingComponentView-master/build.gradle
+2018-04-08 15:33:14,316 INFO  ProjectBuildService - All script(s): /tmp/rdisk/920/src/LoadingComponentView-master/settings.gradle /tmp/rdisk/920/src/LoadingComponentView-master/loadingcomponent/build.gradle /tmp/rdisk/920/src/LoadingComponentView-master/build.gradle /tmp/rdisk/920/src/LoadingComponentView-master/app/build.gradle
+2018-04-08 15:33:14,316 INFO  ProjectBuildService - Remote scripts: none
+2018-04-08 15:33:14,316 INFO  ProjectFixService - Fixing project...
+2018-04-08 15:33:14,322 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/920/src/LoadingComponentView-master/app/local.properties
+2018-04-08 15:33:14,322 INFO  ProjectFixService - Build info for "/tmp/rdisk/920/src/LoadingComponentView-master/app/build.gradle": [buildToolsVersion=23.0.0,compileSdkVersion=23,minSdkVersion=15,targetSdkVersion=23]
+2018-04-08 15:33:14,322 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/920/src/LoadingComponentView-master/app/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=15,targetSdkVersion=23]
+2018-04-08 15:33:14,323 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/920/src/LoadingComponentView-master/loadingcomponent/local.properties
+2018-04-08 15:33:14,323 INFO  ProjectFixService - Build info for "/tmp/rdisk/920/src/LoadingComponentView-master/loadingcomponent/build.gradle": [buildToolsVersion=23.0.0,compileSdkVersion=23,minSdkVersion=15,targetSdkVersion=23]
+2018-04-08 15:33:14,323 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/920/src/LoadingComponentView-master/loadingcomponent/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=15,targetSdkVersion=23]
+2018-04-08 15:33:14,324 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/920/src/LoadingComponentView-master/local.properties
+2018-04-08 15:33:14,324 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.4-all.zip
+2018-04-08 15:33:14,324 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.4-bin.zip)
+2018-04-08 15:33:14,325 INFO  ProjectFixService - Build info for "/tmp/rdisk/920/src/LoadingComponentView-master/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=15,targetSdkVersion=23]
+2018-04-08 15:33:14,325 INFO  ProjectFixService - Project was maybe fixed
+2018-04-08 15:33:14,325 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-08 15:33:14,325 INFO  SysUtils - Execute command: [/tmp/rdisk/920/src/LoadingComponentView-master/gradlew, -b, /tmp/rdisk/920/src/LoadingComponentView-master/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-08 15:33:22,690 INFO  ProjectTaskService - Detected possible tasks: 66
+2018-04-08 15:33:22,690 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-08 15:33:22,690 INFO  SysUtils - Execute command: [/tmp/rdisk/920/src/LoadingComponentView-master/gradlew, -b, /tmp/rdisk/920/src/LoadingComponentView-master/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-08 15:33:48,938 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:loadingcomponent:compileLint
+:loadingcomponent:copyReleaseLint UP-TO-DATE
+:loadingcomponent:preBuild UP-TO-DATE
+:loadingcomponent:preReleaseBuild UP-TO-DATE
+:loadingcomponent:checkReleaseManifest
+:loadingcomponent:preDebugAndroidTestBuild UP-TO-DATE
+:loadingcomponent:preDebugBuild UP-TO-DATE
+:loadingcomponent:preDebugUnitTestBuild UP-TO-DATE
+:loadingcomponent:preReleaseUnitTestBuild UP-TO-DATE
+:loadingcomponent:prepareComAndroidSupportAppcompatV72300Library
+:loadingcomponent:prepareComAndroidSupportSupportV42300Library
+:loadingcomponent:prepareReleaseDependencies
+:loadingcomponent:compileReleaseAidl
+:loadingcomponent:compileReleaseRenderscript
+:loadingcomponent:generateReleaseBuildConfig
+:loadingcomponent:generateReleaseAssets UP-TO-DATE
+:loadingcomponent:mergeReleaseAssets
+:loadingcomponent:generateReleaseResValues
+:loadingcomponent:generateReleaseResources
+:loadingcomponent:mergeReleaseResources
+:loadingcomponent:processReleaseManifest
+:loadingcomponent:processReleaseResources
+:loadingcomponent:generateReleaseSources
+:loadingcomponent:processReleaseJavaRes UP-TO-DATE
+:loadingcomponent:compileReleaseJavaWithJavac
+:loadingcomponent:extractReleaseAnnotations
+:loadingcomponent:mergeReleaseProguardFiles
+:loadingcomponent:packageReleaseJar
+:loadingcomponent:compileReleaseNdk UP-TO-DATE
+:loadingcomponent:packageReleaseJniLibs UP-TO-DATE
+:loadingcomponent:packageReleaseLocalJar UP-TO-DATE
+:loadingcomponent:packageReleaseRenderscript UP-TO-DATE
+:loadingcomponent:packageReleaseResources
+:loadingcomponent:bundleRelease
+:app:prepareComAndroidSupportAppcompatV72300Library
+:app:prepareComAndroidSupportSupportV42300Library
+:app:prepareLoadingComponentViewMasterLoadingcomponentUnspecifiedLibrary
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+AAPT: /tmp/rdisk/920/src/LoadingComponentView-master/app/src/main/res/drawable/mss_logo.png: libpng warning: iCCP: profile 'ICC profile': 'CMYK': invalid ICC profile color space
+AAPT: /tmp/rdisk/920/src/LoadingComponentView-master/app/src/main/res/drawable/scene19.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/920/src/LoadingComponentView-master/app/src/main/res/drawable/scene18.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/920/src/LoadingComponentView-master/app/src/main/res/drawable/scene20.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/920/src/LoadingComponentView-master/app/src/main/res/drawable/scene16.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/920/src/LoadingComponentView-master/app/src/main/res/drawable/scene17.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/920/src/LoadingComponentView-master/app/src/main/res/drawable/scene09.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/920/src/LoadingComponentView-master/app/src/main/res/drawable/scene08.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/920/src/LoadingComponentView-master/app/src/main/res/drawable/scene07.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/920/src/LoadingComponentView-master/app/src/main/res/drawable/scene06.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/920/src/LoadingComponentView-master/app/src/main/res/drawable/scene15.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/920/src/LoadingComponentView-master/app/src/main/res/drawable/scene05.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/920/src/LoadingComponentView-master/app/src/main/res/drawable/scene14.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/920/src/LoadingComponentView-master/app/src/main/res/drawable/scene12.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/920/src/LoadingComponentView-master/app/src/main/res/drawable/scene13.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/920/src/LoadingComponentView-master/app/src/main/res/drawable/scene11.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/920/src/LoadingComponentView-master/app/src/main/res/drawable/scene10.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/920/src/LoadingComponentView-master/app/src/main/res/drawable/scene03.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/920/src/LoadingComponentView-master/app/src/main/res/drawable/scene02.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/920/src/LoadingComponentView-master/app/src/main/res/drawable/scene01.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/920/src/LoadingComponentView-master/app/src/main/res/drawable/scene04.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:processDebugJavaRes UP-TO-DATE
+:app:compileDebugJavaWithJavac
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources
+:app:preDexDebug
+:app:dexDebug
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+AAPT: /tmp/rdisk/920/src/LoadingComponentView-master/app/src/main/res/drawable/mss_logo.png: libpng warning: iCCP: profile 'ICC profile': 'CMYK': invalid ICC profile color space
+AAPT: /tmp/rdisk/920/src/LoadingComponentView-master/app/src/main/res/drawable/scene19.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/920/src/LoadingComponentView-master/app/src/main/res/drawable/scene17.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/920/src/LoadingComponentView-master/app/src/main/res/drawable/scene16.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/920/src/LoadingComponentView-master/app/src/main/res/drawable/scene20.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/920/src/LoadingComponentView-master/app/src/main/res/drawable/scene09.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/920/src/LoadingComponentView-master/app/src/main/res/drawable/scene08.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/920/src/LoadingComponentView-master/app/src/main/res/drawable/scene07.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/920/src/LoadingComponentView-master/app/src/main/res/drawable/scene18.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/920/src/LoadingComponentView-master/app/src/main/res/drawable/scene06.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/920/src/LoadingComponentView-master/app/src/main/res/drawable/scene05.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/920/src/LoadingComponentView-master/app/src/main/res/drawable/scene15.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/920/src/LoadingComponentView-master/app/src/main/res/drawable/scene14.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/920/src/LoadingComponentView-master/app/src/main/res/drawable/scene13.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/920/src/LoadingComponentView-master/app/src/main/res/drawable/scene12.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/920/src/LoadingComponentView-master/app/src/main/res/drawable/scene11.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/920/src/LoadingComponentView-master/app/src/main/res/drawable/scene10.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/920/src/LoadingComponentView-master/app/src/main/res/drawable/scene04.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/920/src/LoadingComponentView-master/app/src/main/res/drawable/scene03.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/920/src/LoadingComponentView-master/app/src/main/res/drawable/scene02.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/920/src/LoadingComponentView-master/app/src/main/res/drawable/scene01.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:processReleaseJavaRes UP-TO-DATE
+:app:compileReleaseJavaWithJavac
+:app:compileReleaseNdk UP-TO-DATE
+:app:compileReleaseSources
+:app:preDexRelease
+:app:dexRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 25.772 secs
+
+2018-04-08 15:33:48,995 INFO  FullProcessService - Found APK file: /tmp/rdisk/920/src/LoadingComponentView-master/app/build/outputs/apk/app-debug.apk
